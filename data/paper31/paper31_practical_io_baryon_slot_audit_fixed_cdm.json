@@ -1,0 +1,527 @@
+{
+  "keep_cdm_fixed": true,
+  "sanity": {
+    "one_number_struct": {
+      "chi2": 2135.7229871928344,
+      "theta_s_100": 1.0561060334115546
+    },
+    "explicit_all_struct": {
+      "chi2": 2135.7229871928344,
+      "theta_s_100": 1.0561060334115546
+    }
+  },
+  "rows": [
+    {
+      "geom": "struct",
+      "eff": "struct",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 1924.535754993541,
+      "theta_s_100": 1.0517601801454022
+    },
+    {
+      "geom": "struct",
+      "eff": "struct",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 2135.7229871928344,
+      "theta_s_100": 1.0561060334115546
+    },
+    {
+      "geom": "struct",
+      "eff": "struct",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 2138.257830220126,
+      "theta_s_100": 1.048018048410271
+    },
+    {
+      "geom": "struct",
+      "eff": "struct",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 2521.0339568085305,
+      "theta_s_100": 1.0588348012955684
+    },
+    {
+      "geom": "eff",
+      "eff": "struct",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 2617.4343540729133,
+      "theta_s_100": 1.0534281212219399
+    },
+    {
+      "geom": "eff",
+      "eff": "struct",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 2678.119871296834,
+      "theta_s_100": 1.0496695061971353
+    },
+    {
+      "geom": "eff",
+      "eff": "struct",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3016.7052910387047,
+      "theta_s_100": 1.0577932864707522
+    },
+    {
+      "geom": "geom",
+      "eff": "struct",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3204.8149612803095,
+      "theta_s_100": 1.0526010384800164
+    },
+    {
+      "geom": "geom",
+      "eff": "struct",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3300.5734532884103,
+      "theta_s_100": 1.0482942431281268
+    },
+    {
+      "geom": "eff",
+      "eff": "eff",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3307.138234973578,
+      "theta_s_100": 1.0471506023829897
+    },
+    {
+      "geom": "geom",
+      "eff": "struct",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3384.0565686589407,
+      "theta_s_100": 1.055304850845504
+    },
+    {
+      "geom": "eff",
+      "eff": "struct",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3526.8559785873535,
+      "theta_s_100": 1.0605346223183436
+    },
+    {
+      "geom": "geom",
+      "eff": "struct",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3761.171420171627,
+      "theta_s_100": 1.044585020325348
+    },
+    {
+      "geom": "struct",
+      "eff": "eff",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3785.2230102185194,
+      "theta_s_100": 1.045492194197287
+    },
+    {
+      "geom": "eff",
+      "eff": "eff",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 3833.3460089560144,
+      "theta_s_100": 1.0444270702245988
+    },
+    {
+      "geom": "struct",
+      "eff": "eff",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 4395.345822703656,
+      "theta_s_100": 1.042780929533198
+    },
+    {
+      "geom": "eff",
+      "eff": "eff",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 5078.52044557277,
+      "theta_s_100": 1.0400907714347927
+    },
+    {
+      "geom": "geom",
+      "eff": "geom",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 5676.83846941575,
+      "theta_s_100": 1.066272305809841
+    },
+    {
+      "geom": "struct",
+      "eff": "eff",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 5759.767251849863,
+      "theta_s_100": 1.0384634810106264
+    },
+    {
+      "geom": "eff",
+      "eff": "eff",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 6561.257346152065,
+      "theta_s_100": 1.0363575130840215
+    },
+    {
+      "geom": "clustering",
+      "eff": "geom",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 6671.520130198028,
+      "theta_s_100": 1.0619245220731104
+    },
+    {
+      "geom": "geom",
+      "eff": "eff",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 7228.152845154311,
+      "theta_s_100": 1.0420480646547285
+    },
+    {
+      "geom": "geom",
+      "eff": "geom",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 7315.71776964146,
+      "theta_s_100": 1.0700201452346738
+    },
+    {
+      "geom": "struct",
+      "eff": "eff",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 7333.618908883922,
+      "theta_s_100": 1.0347463116161544
+    },
+    {
+      "geom": "clustering",
+      "eff": "geom",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 7946.427684488167,
+      "theta_s_100": 1.0656328432599467
+    },
+    {
+      "geom": "geom",
+      "eff": "eff",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 7966.229456561802,
+      "theta_s_100": 1.0393611619219612
+    },
+    {
+      "geom": "clustering",
+      "eff": "struct",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 8524.031680353122,
+      "theta_s_100": 1.0483420286160885
+    },
+    {
+      "geom": "clustering",
+      "eff": "struct",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 8526.615043409989,
+      "theta_s_100": 1.051017066884134
+    },
+    {
+      "geom": "clustering",
+      "eff": "struct",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 8881.815292945845,
+      "theta_s_100": 1.0440803455378997
+    },
+    {
+      "geom": "struct",
+      "eff": "geom",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 9107.019139116257,
+      "theta_s_100": 1.0698471176272353
+    },
+    {
+      "geom": "geom",
+      "eff": "eff",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 9508.943098358131,
+      "theta_s_100": 1.0350818418772312
+    },
+    {
+      "geom": "clustering",
+      "eff": "struct",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 9547.18926247248,
+      "theta_s_100": 1.0404091203114818
+    },
+    {
+      "geom": "geom",
+      "eff": "geom",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 9629.45501214972,
+      "theta_s_100": 1.0743707711110204
+    },
+    {
+      "geom": "clustering",
+      "eff": "geom",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 9828.316092192747,
+      "theta_s_100": 1.069936552450978
+    },
+    {
+      "geom": "struct",
+      "eff": "geom",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 11138.773515645753,
+      "theta_s_100": 1.0736291937712756
+    },
+    {
+      "geom": "geom",
+      "eff": "eff",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 11213.344360028095,
+      "theta_s_100": 1.031396797969698
+    },
+    {
+      "geom": "clustering",
+      "eff": "geom",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 11243.995886389139,
+      "theta_s_100": 1.0726373864214953
+    },
+    {
+      "geom": "geom",
+      "eff": "geom",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 11320.999446892636,
+      "theta_s_100": 1.0771015293857473
+    },
+    {
+      "geom": "eff",
+      "eff": "geom",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 12521.73505185919,
+      "theta_s_100": 1.071566933722968
+    },
+    {
+      "geom": "struct",
+      "eff": "geom",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 13910.479222040964,
+      "theta_s_100": 1.0780204527123534
+    },
+    {
+      "geom": "clustering",
+      "eff": "eff",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 14771.321578787682,
+      "theta_s_100": 1.0378641998041578
+    },
+    {
+      "geom": "eff",
+      "eff": "geom",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 14781.346224349363,
+      "theta_s_100": 1.0753661618037043
+    },
+    {
+      "geom": "clustering",
+      "eff": "eff",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 15602.854878497092,
+      "theta_s_100": 1.0352053919271629
+    },
+    {
+      "geom": "struct",
+      "eff": "geom",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 15892.389876121557,
+      "theta_s_100": 1.0807771724381192
+    },
+    {
+      "geom": "clustering",
+      "eff": "eff",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 17272.083114497902,
+      "theta_s_100": 1.0309701186376004
+    },
+    {
+      "geom": "eff",
+      "eff": "geom",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 17816.840340891744,
+      "theta_s_100": 1.0797775155877165
+    },
+    {
+      "geom": "clustering",
+      "eff": "clustering",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 18980.978777086384,
+      "theta_s_100": 1.0811841609221498
+    },
+    {
+      "geom": "clustering",
+      "eff": "eff",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 19061.07434152781,
+      "theta_s_100": 1.0273221743872518
+    },
+    {
+      "geom": "eff",
+      "eff": "geom",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 19966.09496040961,
+      "theta_s_100": 1.0825473127332137
+    },
+    {
+      "geom": "clustering",
+      "eff": "clustering",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 22037.32451689619,
+      "theta_s_100": 1.0849244399616749
+    },
+    {
+      "geom": "geom",
+      "eff": "clustering",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 23589.870544306716,
+      "theta_s_100": 1.0856917764404972
+    },
+    {
+      "geom": "clustering",
+      "eff": "clustering",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 25945.959001573035,
+      "theta_s_100": 1.089264293988852
+    },
+    {
+      "geom": "geom",
+      "eff": "clustering",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 27076.747588361242,
+      "theta_s_100": 1.0894729839689907
+    },
+    {
+      "geom": "clustering",
+      "eff": "clustering",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 28627.64528011994,
+      "theta_s_100": 1.0919872789438134
+    },
+    {
+      "geom": "geom",
+      "eff": "clustering",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 31474.620921075377,
+      "theta_s_100": 1.0938614279794199
+    },
+    {
+      "geom": "struct",
+      "eff": "clustering",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 32763.97151201219,
+      "theta_s_100": 1.0893984834603387
+    },
+    {
+      "geom": "geom",
+      "eff": "clustering",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 34457.5855853402,
+      "theta_s_100": 1.0966154037969191
+    },
+    {
+      "geom": "struct",
+      "eff": "clustering",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 36692.75928328664,
+      "theta_s_100": 1.09321516024572
+    },
+    {
+      "geom": "eff",
+      "eff": "clustering",
+      "clust": "clustering",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 39393.537363148425,
+      "theta_s_100": 1.091181907329497
+    },
+    {
+      "geom": "struct",
+      "eff": "clustering",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 41582.42500228963,
+      "theta_s_100": 1.0976456994040127
+    },
+    {
+      "geom": "eff",
+      "eff": "clustering",
+      "clust": "geom",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 43570.83677274751,
+      "theta_s_100": 1.0950163571174776
+    },
+    {
+      "geom": "struct",
+      "eff": "clustering",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 44865.35254585571,
+      "theta_s_100": 1.100426570348419
+    },
+    {
+      "geom": "eff",
+      "eff": "clustering",
+      "clust": "struct",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 48735.719141793306,
+      "theta_s_100": 1.099467718221059
+    },
+    {
+      "geom": "eff",
+      "eff": "clustering",
+      "clust": "eff",
+      "omega_cdm": 0.13344916634250142,
+      "chi2": 52185.28232922532,
+      "theta_s_100": 1.1022621397518308
+    }
+  ]
+}

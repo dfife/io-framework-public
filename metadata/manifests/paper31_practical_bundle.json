@@ -1,0 +1,69 @@
+{
+  "bundle": "paper31_practical_bundle",
+  "date": "2026-04-04",
+  "source_root": "/opt/cosmology-lab/results/paper31",
+  "description": "Initial curated public Paper 31 bundle for the practical fixed-IO Cl confrontation and baryon-slot audit.",
+  "artifacts": [
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation.py",
+      "destination": "scripts/paper31/paper31_practical_io_cl_confrontation.py",
+      "kind": "script",
+      "status": "conditional / scoped practical"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_baryon_slot_audit.py",
+      "destination": "scripts/paper31/paper31_practical_io_baryon_slot_audit.py",
+      "kind": "script",
+      "status": "verified / diagnostic"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_report.md",
+      "destination": "reports/paper31/paper31_practical_io_cl_confrontation_report.md",
+      "kind": "report",
+      "status": "conditional / scoped practical"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_baryon_slot_audit.md",
+      "destination": "reports/paper31/paper31_practical_io_baryon_slot_audit.md",
+      "kind": "report",
+      "status": "verified / diagnostic"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_results.json",
+      "destination": "data/paper31/paper31_practical_io_cl_confrontation_results.json",
+      "kind": "data",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_cls.csv",
+      "destination": "data/paper31/paper31_practical_io_cl_confrontation_cls.csv",
+      "kind": "data",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_residual_bins.csv",
+      "destination": "data/paper31/paper31_practical_io_cl_confrontation_residual_bins.csv",
+      "kind": "data",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_baryon_slot_audit_fixed_cdm.json",
+      "destination": "data/paper31/paper31_practical_io_baryon_slot_audit_fixed_cdm.json",
+      "kind": "data",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_baryon_slot_audit_variable_cdm.json",
+      "destination": "data/paper31/paper31_practical_io_baryon_slot_audit_variable_cdm.json",
+      "kind": "data",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_residuals.png",
+      "destination": "figures/paper31/paper31_practical_io_cl_confrontation_residuals.png",
+      "kind": "figure",
+      "status": "verified"
+    }
+  ]
+}
+

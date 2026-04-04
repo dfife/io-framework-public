@@ -1,0 +1,1320 @@
+{
+  "planck_data_files": {
+    "plik_lite": "/opt/cosmology-lab/tmp/planck-lite-py/data/planck2018_plik_lite/cl_cmb_plik_v22.dat",
+    "plik_covariance": "/opt/cosmology-lab/tmp/planck-lite-py/data/planck2018_plik_lite/c_matrix_plik_v22.dat",
+    "commander_low_ell_tt_bins": "/opt/cosmology-lab/tmp/planck-lite-py/data/planck2018_low_ell/CTT_bin_low_ell_2018.dat",
+    "commander_low_ell_readme": "/opt/cosmology-lab/tmp/planck-lite-py/data/planck2018_low_ell/readme.txt"
+  },
+  "constants": {
+    "x": 1.519,
+    "gamma": 0.2375,
+    "f_gamma": 0.946605531726076,
+    "f_gamma_squared": 0.896062032694407,
+    "f_gamma_cubed": 0.8482172769182377,
+    "K_gauge": 0.05487281774291466,
+    "tau_cov_proxy": 0.02743640887145733,
+    "A_s_native": 2.0072459972737347e-09,
+    "j_phi": 0.8113740489243784,
+    "eta_io": 0.6227480978487567,
+    "omega_b_geom": 0.02108,
+    "omega_b_eff": 0.0291,
+    "omega_b_control": 0.0271,
+    "omega_b_struct": 0.02594110201749857,
+    "omega_b_clustering": 0.017053042566349
+  },
+  "cases": {
+    "io_backbone_control": {
+      "label": "IO derived backbone + inherited recombination (control compression)",
+      "status": "conditional / scoped practical",
+      "notes": "Closed S^3 background and exact curved Weyl kernel are fixed. A_s is the native IO value. No astrophysical reionization history is inserted into the CLASS layer here, because Paper 31 does not license identifying the source-side tau_cov proxy with CLASS tau_reio. Exact Stage-2 local renormalization and exact R-loading slot remain open. The background package is the active Schur branch, not the retired 67.58 mixed branch.",
+      "params": {
+        "output": "tCl,pCl,lCl",
+        "lensing": "yes",
+        "l_max_scalars": 2508,
+        "H0": 68.91,
+        "T_cmb": 2.7253,
+        "Omega_k": -0.005613722564239,
+        "N_ur": 3.044,
+        "N_ncdm": 0,
+        "YHe": 0.2477,
+        "n_s": 0.9639,
+        "alpha_s": 5e-05,
+        "reio_parametrization": "reio_none",
+        "A_s": 2.0072459972737347e-09,
+        "lcmb_rescale": 0.8113740489243784,
+        "lcmb_tilt": 0.0,
+        "lcmb_pivot": 0.05,
+        "lcmb_curved_shift": -3.0,
+        "lcmb_curved_order": -0.25,
+        "omega_b": 0.0271,
+        "omega_cdm": 0.13229026836000002
+      },
+      "analysis": {
+        "status": "conditional / scoped practical",
+        "notes": "Closed S^3 background and exact curved Weyl kernel are fixed. A_s is the native IO value. No astrophysical reionization history is inserted into the CLASS layer here, because Paper 31 does not license identifying the source-side tau_cov proxy with CLASS tau_reio. Exact Stage-2 local renormalization and exact R-loading slot remain open. The background package is the active Schur branch, not the retired 67.58 mixed branch.",
+        "chi2_total": 3445.2838615131695,
+        "A_eff_proxy": 1.9000701645543414e-09,
+        "derived": {
+          "100*theta_s": 1.051794671644796,
+          "z_rec": 1085.2423231876292,
+          "rs_rec": 138.0495917799076,
+          "age": 13.270566862171677
+        },
+        "diagonal_summary": {
+          "tt_low": {
+            "chi2_diag": 10.112964393117238,
+            "mean_signed_sigma": 1.8632140359172582,
+            "mean_abs_sigma": 1.8632140359172582,
+            "rms_sigma": 2.2486623127002905,
+            "max_abs_sigma": 3.1221483681679683,
+            "n_bins": 2
+          },
+          "tt_high": {
+            "chi2_diag": 1355.53563239929,
+            "mean_signed_sigma": 0.8546640783510188,
+            "mean_abs_sigma": 2.0373819734227707,
+            "rms_sigma": 2.510939444686076,
+            "max_abs_sigma": 6.227336152596219,
+            "n_bins": 215
+          },
+          "tt_all": {
+            "chi2_diag": 1365.6485967924075,
+            "mean_signed_sigma": 0.8639594696649933,
+            "mean_abs_sigma": 2.035776738975715,
+            "rms_sigma": 2.508647345873029,
+            "max_abs_sigma": 6.227336152596219,
+            "n_bins": 217
+          },
+          "te": {
+            "chi2_diag": 1192.652462724059,
+            "mean_signed_sigma": 0.7688277806849692,
+            "mean_abs_sigma": 1.9439220697029609,
+            "rms_sigma": 2.448107116917026,
+            "max_abs_sigma": 6.679759471866564,
+            "n_bins": 199
+          },
+          "ee": {
+            "chi2_diag": 631.2918937617997,
+            "mean_signed_sigma": -0.4557733651132873,
+            "mean_abs_sigma": 1.3775974251215894,
+            "rms_sigma": 1.7811010847730957,
+            "max_abs_sigma": 5.058381624619128,
+            "n_bins": 199
+          }
+        },
+        "block_covariance": {
+          "tt_low": 10.112964393117238,
+          "tt_high": 1630.6516217532194,
+          "te": 1500.558209494329,
+          "ee": 751.4612017211863,
+          "tt_low__tt_high_cross": 0.0,
+          "tt_low__te_cross": 0.0,
+          "tt_low__ee_cross": 0.0,
+          "tt_high__te_cross": -260.451548671386,
+          "tt_high__ee_cross": -19.050449844620992,
+          "te__ee_cross": -167.99813733267433,
+          "sum_all_terms": 3445.2838615131705
+        },
+        "top_residual_bins": {
+          "tt": [
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 1382.0,
+              "planck_data_bin": 0.002544369535161182,
+              "model_bin": 0.0028015927759005243,
+              "model_minus_planck": 0.0002572232407393421,
+              "sigma": 4.130550117036864e-05,
+              "io_minus_planck_sigma": 6.227336152596219
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 779.0,
+              "planck_data_bin": 0.02431014801866934,
+              "model_bin": 0.026729602104249565,
+              "model_minus_planck": 0.002419454085580225,
+              "sigma": 0.0003981181091193325,
+              "io_minus_planck_sigma": 6.077226908698631
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 464.0,
+              "planck_data_bin": 0.06478587456759065,
+              "model_bin": 0.0573221343940266,
+              "model_minus_planck": -0.0074637401735640485,
+              "sigma": 0.001242923212029189,
+              "io_minus_planck_sigma": -6.004988965793624
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 1346.0,
+              "planck_data_bin": 0.002556390828237403,
+              "model_bin": 0.002802569478143752,
+              "model_minus_planck": 0.0002461786499063489,
+              "sigma": 4.134350260110006e-05,
+              "io_minus_planck_sigma": 5.954470096101597
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 734.0,
+              "planck_data_bin": 0.02387604389151558,
+              "model_bin": 0.026232989644824973,
+              "model_minus_planck": 0.002356945753309393,
+              "sigma": 0.0003988729791192698,
+              "io_minus_planck_sigma": 5.909013336811232
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 716.0,
+              "planck_data_bin": 0.02336150088305026,
+              "model_bin": 0.025676434946298073,
+              "model_minus_planck": 0.002314934063247811,
+              "sigma": 0.0003986082078299454,
+              "io_minus_planck_sigma": 5.807542388177341
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 725.0,
+              "planck_data_bin": 0.02380640044993535,
+              "model_bin": 0.025948837195519492,
+              "model_minus_planck": 0.0021424367455841406,
+              "sigma": 0.000398036493129882,
+              "io_minus_planck_sigma": 5.382513368906225
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TT",
+              "ell_eff": 1328.0,
+              "planck_data_bin": 0.002575372216564603,
+              "model_bin": 0.002798317568491642,
+              "model_minus_planck": 0.00022294535192703916,
+              "sigma": 4.170894536617223e-05,
+              "io_minus_planck_sigma": 5.3452646661226195
+            }
+          ],
+          "te": [
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 824.0,
+              "planck_data_bin": -0.0004619819724800182,
+              "model_bin": -0.00019754978996998565,
+              "model_minus_planck": 0.0002644321825100326,
+              "sigma": 3.958708148455842e-05,
+              "io_minus_planck_sigma": 6.679759471866564
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 842.0,
+              "planck_data_bin": -0.0001581509173892687,
+              "model_bin": 9.23664134507704e-05,
+              "model_minus_planck": 0.0002505173308400391,
+              "sigma": 3.787213279423686e-05,
+              "io_minus_planck_sigma": 6.614819719848501
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 815.0,
+              "planck_data_bin": -0.0006115981803977047,
+              "model_bin": -0.0003583354529613023,
+              "model_minus_planck": 0.0002532627274364024,
+              "sigma": 4.073796645306632e-05,
+              "io_minus_planck_sigma": 6.216872109416239
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 860.0,
+              "planck_data_bin": 0.0001165648237245247,
+              "model_bin": 0.00031588467469080995,
+              "model_minus_planck": 0.00019931985096628525,
+              "sigma": 3.645268940413719e-05,
+              "io_minus_planck_sigma": 5.467905227965526
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 464.0,
+              "planck_data_bin": -0.002331409028702183,
+              "model_bin": -0.0017756457668821367,
+              "model_minus_planck": 0.0005557632618200462,
+              "sigma": 0.0001023175790834662,
+              "io_minus_planck_sigma": 5.4317475725914015
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 833.0,
+              "planck_data_bin": -0.0002524095934821962,
+              "model_bin": -4.595603785816993e-05,
+              "model_minus_planck": 0.00020645355562402628,
+              "sigma": 3.857849083442e-05,
+              "io_minus_planck_sigma": 5.351519749959399
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 491.0,
+              "planck_data_bin": -0.001849797421530122,
+              "model_bin": -0.001378751999785527,
+              "model_minus_planck": 0.000471045421744595,
+              "sigma": 8.858407597085498e-05,
+              "io_minus_planck_sigma": 5.317495459337111
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "TE",
+              "ell_eff": 806.0,
+              "planck_data_bin": -0.0007439582238685107,
+              "model_bin": -0.0005242320030075772,
+              "model_minus_planck": 0.00021972622086093355,
+              "sigma": 4.187500616707523e-05,
+              "io_minus_planck_sigma": 5.247192561220353
+            }
+          ],
+          "ee": [
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 437.0,
+              "planck_data_bin": 0.0006346861106978031,
+              "model_bin": 0.0005282087008664242,
+              "model_minus_planck": -0.00010647740983137891,
+              "sigma": 2.104969884303582e-05,
+              "io_minus_planck_sigma": -5.058381624619128
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 464.0,
+              "planck_data_bin": 0.0004246250354194781,
+              "model_bin": 0.0003483381979317203,
+              "model_minus_planck": -7.628683748775781e-05,
+              "sigma": 1.683254491308525e-05,
+              "io_minus_planck_sigma": -4.532103605346931
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 716.0,
+              "planck_data_bin": 0.0004458601721439045,
+              "model_bin": 0.00038518259583014816,
+              "model_minus_planck": -6.067757631375635e-05,
+              "sigma": 1.462822646355679e-05,
+              "io_minus_planck_sigma": -4.147979009275118
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 698.0,
+              "planck_data_bin": 0.0005014673181957332,
+              "model_bin": 0.0004378051429603117,
+              "model_minus_planck": -6.366217523542153e-05,
+              "sigma": 1.542786456257546e-05,
+              "io_minus_planck_sigma": -4.126441153097214
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 446.0,
+              "planck_data_bin": 0.000546028396502952,
+              "model_bin": 0.0004656612504635522,
+              "model_minus_planck": -8.036714603939984e-05,
+              "sigma": 1.954649711691967e-05,
+              "io_minus_planck_sigma": -4.1115881561117735
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 392.0,
+              "planck_data_bin": 0.0009119247240306576,
+              "model_bin": 0.000797907113618068,
+              "model_minus_planck": -0.00011401761041258962,
+              "sigma": 2.792943862036818e-05,
+              "io_minus_planck_sigma": -4.082345225852111
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 482.0,
+              "planck_data_bin": 0.000309173811620567,
+              "model_bin": 0.00025184169808599677,
+              "model_minus_planck": -5.7332113534570254e-05,
+              "sigma": 1.464696152797286e-05,
+              "io_minus_planck_sigma": -3.9142666842591907
+            },
+            {
+              "case": "io_backbone_control",
+              "spectrum": "EE",
+              "ell_eff": 491.0,
+              "planck_data_bin": 0.0002680264316682005,
+              "model_bin": 0.00021460102841417748,
+              "model_minus_planck": -5.342540325402304e-05,
+              "sigma": 1.38202219917821e-05,
+              "io_minus_planck_sigma": -3.86574132353238
+            }
+          ]
+        },
+        "sample_Dl": {
+          "TT": [
+            {
+              "target_ell": 220.0,
+              "ell": 220.0,
+              "Dl": 6246.606962911099
+            },
+            {
+              "target_ell": 546.0,
+              "ell": 546.0,
+              "Dl": 2437.8797190770474
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": 2644.842201705827
+            },
+            {
+              "target_ell": 1000.0,
+              "ell": 1000.0,
+              "Dl": 1068.6557891156483
+            },
+            {
+              "target_ell": 1500.0,
+              "ell": 1500.0,
+              "Dl": 684.8724018840389
+            },
+            {
+              "target_ell": 2000.0,
+              "ell": 2000.0,
+              "Dl": 252.06878196710767
+            }
+          ],
+          "TE": [
+            {
+              "target_ell": 150.0,
+              "ell": 150.0,
+              "Dl": -52.30358789246855
+            },
+            {
+              "target_ell": 300.0,
+              "ell": 300.0,
+              "Dl": 124.25669527674286
+            },
+            {
+              "target_ell": 450.0,
+              "ell": 450.0,
+              "Dl": -56.03713379662324
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": -64.86390771602704
+            },
+            {
+              "target_ell": 1200.0,
+              "ell": 1200.0,
+              "Dl": 6.12012075779379
+            }
+          ],
+          "EE": [
+            {
+              "target_ell": 150.0,
+              "ell": 150.0,
+              "Dl": 1.2382442193133452
+            },
+            {
+              "target_ell": 300.0,
+              "ell": 300.0,
+              "Dl": 8.431638596104012
+            },
+            {
+              "target_ell": 450.0,
+              "ell": 450.0,
+              "Dl": 14.162109717989557
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": 14.059040553183427
+            },
+            {
+              "target_ell": 1200.0,
+              "ell": 1200.0,
+              "Dl": 20.610596194385188
+            }
+          ]
+        }
+      }
+    },
+    "io_conditional_structured": {
+      "label": "IO practical structured branch + optical-history complement candidate",
+      "status": "conditional / scoped practical",
+      "notes": "Uses the Paper 31 structured branch candidate: omega_b,struct plus (c_vis, d_drag, h_hier) = (f_Gamma^2, 1, f_Gamma^3). This is the best current practical high-ell CMB branch. No astrophysical reionization history is inserted into the CLASS layer here. It remains conditional because the post-bridge optical-history complement and exact typed thermodynamics law are not derived. The background package is the active Schur branch, not the retired 67.58 mixed branch.",
+      "params": {
+        "output": "tCl,pCl,lCl",
+        "lensing": "yes",
+        "l_max_scalars": 2508,
+        "H0": 68.91,
+        "T_cmb": 2.7253,
+        "Omega_k": -0.005613722564239,
+        "N_ur": 3.044,
+        "N_ncdm": 0,
+        "YHe": 0.2477,
+        "n_s": 0.9639,
+        "alpha_s": 5e-05,
+        "reio_parametrization": "reio_none",
+        "A_s": 2.0072459972737347e-09,
+        "lcmb_rescale": 0.8113740489243784,
+        "lcmb_tilt": 0.0,
+        "lcmb_pivot": 0.05,
+        "lcmb_curved_shift": -3.0,
+        "lcmb_curved_order": -0.25,
+        "omega_b": 0.02594110201749857,
+        "omega_cdm": 0.13344916634250142,
+        "io_visibility_opacity_factor": 0.896062032694407,
+        "io_acoustic_drag_factor": 1.0,
+        "io_acoustic_hierarchy_factor": 0.8482172769182377
+      },
+      "analysis": {
+        "status": "conditional / scoped practical",
+        "notes": "Uses the Paper 31 structured branch candidate: omega_b,struct plus (c_vis, d_drag, h_hier) = (f_Gamma^2, 1, f_Gamma^3). This is the best current practical high-ell CMB branch. No astrophysical reionization history is inserted into the CLASS layer here. It remains conditional because the post-bridge optical-history complement and exact typed thermodynamics law are not derived. The background package is the active Schur branch, not the retired 67.58 mixed branch.",
+        "chi2_total": 2135.7229871928344,
+        "A_eff_proxy": 1.9000701645543414e-09,
+        "derived": {
+          "100*theta_s": 1.0561060334115546,
+          "z_rec": 1086.2865334928435,
+          "rs_rec": 138.61745055268096,
+          "age": 13.270566862171707
+        },
+        "diagonal_summary": {
+          "tt_low": {
+            "chi2_diag": 9.749728967701836,
+            "mean_signed_sigma": 1.8402782570715488,
+            "mean_abs_sigma": 1.8402782570715488,
+            "rms_sigma": 2.2079095280040164,
+            "max_abs_sigma": 3.060212853843286,
+            "n_bins": 2
+          },
+          "tt_high": {
+            "chi2_diag": 912.7029388523931,
+            "mean_signed_sigma": -0.15564749501856417,
+            "mean_abs_sigma": 1.675572209664576,
+            "rms_sigma": 2.060371313174076,
+            "max_abs_sigma": 5.328952206929262,
+            "n_bins": 215
+          },
+          "tt_all": {
+            "chi2_diag": 922.452667820095,
+            "mean_signed_sigma": -0.13725186596704245,
+            "mean_abs_sigma": 1.677090237751276,
+            "rms_sigma": 2.0617793172616694,
+            "max_abs_sigma": 5.328952206929262,
+            "n_bins": 217
+          },
+          "te": {
+            "chi2_diag": 748.5609848262188,
+            "mean_signed_sigma": -0.045088437813620166,
+            "mean_abs_sigma": 1.5762697025395316,
+            "rms_sigma": 1.9394878161711862,
+            "max_abs_sigma": 5.103519488433642,
+            "n_bins": 199
+          },
+          "ee": {
+            "chi2_diag": 384.4970046786291,
+            "mean_signed_sigma": 0.24676062040590072,
+            "mean_abs_sigma": 1.0868062636117464,
+            "rms_sigma": 1.390016457511894,
+            "max_abs_sigma": 4.660567426095032,
+            "n_bins": 199
+          }
+        },
+        "block_covariance": {
+          "tt_low": 9.749728967701836,
+          "tt_high": 1137.9247715878016,
+          "te": 960.563859049218,
+          "ee": 439.89940716592366,
+          "tt_low__tt_high_cross": 0.0,
+          "tt_low__te_cross": 0.0,
+          "tt_low__ee_cross": 0.0,
+          "tt_high__te_cross": -314.4230878646608,
+          "tt_high__ee_cross": 19.32338165795352,
+          "te__ee_cross": -117.31507337110398,
+          "sum_all_terms": 2135.722987192834
+        },
+        "top_residual_bins": {
+          "tt": [
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 779.0,
+              "planck_data_bin": 0.02431014801866934,
+              "model_bin": 0.026431700394879312,
+              "model_minus_planck": 0.0021215523762099717,
+              "sigma": 0.0003981181091193325,
+              "io_minus_planck_sigma": 5.328952206929262
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 464.0,
+              "planck_data_bin": 0.06478587456759065,
+              "model_bin": 0.05834626403252204,
+              "model_minus_planck": -0.006439610535068606,
+              "sigma": 0.001242923212029189,
+              "io_minus_planck_sigma": -5.181020414411069
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 734.0,
+              "planck_data_bin": 0.02387604389151558,
+              "model_bin": 0.02593979338739052,
+              "model_minus_planck": 0.002063749495874942,
+              "sigma": 0.0003988729791192698,
+              "io_minus_planck_sigma": 5.173951618462091
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 716.0,
+              "planck_data_bin": 0.02336150088305026,
+              "model_bin": 0.025423043979768373,
+              "model_minus_planck": 0.0020615430967181117,
+              "sigma": 0.0003986082078299454,
+              "io_minus_planck_sigma": 5.1718531034303465
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 1184.0,
+              "planck_data_bin": 0.005089812287678942,
+              "model_bin": 0.00474385707535288,
+              "model_minus_planck": -0.00034595521232606233,
+              "sigma": 7.294051536202931e-05,
+              "io_minus_planck_sigma": -4.742977350913487
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 725.0,
+              "planck_data_bin": 0.02380640044993535,
+              "model_bin": 0.025672671211927407,
+              "model_minus_planck": 0.001866270761992056,
+              "sigma": 0.000398036493129882,
+              "io_minus_planck_sigma": 4.688692605336263
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 770.0,
+              "planck_data_bin": 0.02485440715008229,
+              "model_bin": 0.0265396550888492,
+              "model_minus_planck": 0.0016852479387669123,
+              "sigma": 0.0003994689003938222,
+              "io_minus_planck_sigma": 4.2187212499032745
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TT",
+              "ell_eff": 1157.0,
+              "planck_data_bin": 0.005724065270291641,
+              "model_bin": 0.005395396922984557,
+              "model_minus_planck": -0.000328668347307084,
+              "sigma": 8.166367528317411e-05,
+              "io_minus_planck_sigma": -4.02465779512623
+            }
+          ],
+          "te": [
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 653.0,
+              "planck_data_bin": -0.0002262107564763694,
+              "model_bin": -0.0005332446605431471,
+              "model_minus_planck": -0.00030703390406677767,
+              "sigma": 6.016120929147498e-05,
+              "io_minus_planck_sigma": -5.103519488433642
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 662.0,
+              "planck_data_bin": -0.000428549853731005,
+              "model_bin": -0.0007291461965261579,
+              "model_minus_planck": -0.0003005963427951529,
+              "sigma": 5.923615662239421e-05,
+              "io_minus_planck_sigma": -5.074541630229814
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 194.0,
+              "planck_data_bin": -0.003013468022313202,
+              "model_bin": -0.004985292724111684,
+              "model_minus_planck": -0.0019718247017984822,
+              "sigma": 0.0004515985914761394,
+              "io_minus_planck_sigma": -4.366321638323058
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 644.0,
+              "planck_data_bin": -7.613088815049663e-05,
+              "model_bin": -0.00033739785070389407,
+              "model_minus_planck": -0.00026126696255339746,
+              "sigma": 6.124210141002184e-05,
+              "io_minus_planck_sigma": -4.266133208006526
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 635.0,
+              "planck_data_bin": 0.000117323699327342,
+              "model_bin": -0.0001489995969935946,
+              "model_minus_planck": -0.0002663232963209366,
+              "sigma": 6.246004833236164e-05,
+              "io_minus_planck_sigma": -4.263898338723345
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 203.0,
+              "planck_data_bin": -0.001094632274544606,
+              "model_bin": -0.0027953868414056057,
+              "model_minus_planck": -0.0017007545668609998,
+              "sigma": 0.000415019835581355,
+              "io_minus_planck_sigma": -4.098007904799544
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 707.0,
+              "planck_data_bin": -0.00125466391939437,
+              "model_bin": -0.0014773765919370548,
+              "model_minus_planck": -0.00022271267254268486,
+              "sigma": 5.556387083613685e-05,
+              "io_minus_planck_sigma": -4.008228174014114
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "TE",
+              "ell_eff": 842.0,
+              "planck_data_bin": -0.0001581509173892687,
+              "model_bin": -9.895972191171008e-06,
+              "model_minus_planck": 0.0001482549451980977,
+              "sigma": 3.787213279423686e-05,
+              "io_minus_planck_sigma": 3.914618329091257
+            }
+          ],
+          "ee": [
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 590.0,
+              "planck_data_bin": 0.0002753843951509043,
+              "model_bin": 0.0003345797457583238,
+              "model_minus_planck": 5.919535060741951e-05,
+              "sigma": 1.270131835792745e-05,
+              "io_minus_planck_sigma": 4.660567426095032
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 599.0,
+              "planck_data_bin": 0.0003186175356020685,
+              "model_bin": 0.00037105808943208875,
+              "model_minus_planck": 5.244055383002026e-05,
+              "sigma": 1.328863991983179e-05,
+              "io_minus_planck_sigma": 3.9462694561960907
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 149.0,
+              "planck_data_bin": 0.0002827521695864853,
+              "model_bin": 0.0003716495484591375,
+              "model_minus_planck": 8.889737887265216e-05,
+              "sigma": 2.618178147210475e-05,
+              "io_minus_planck_sigma": 3.3953907593097683
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 626.0,
+              "planck_data_bin": 0.0004159953775114264,
+              "model_bin": 0.000466388187966371,
+              "model_minus_planck": 5.03928104549446e-05,
+              "sigma": 1.49233631994918e-05,
+              "io_minus_planck_sigma": 3.37677303576319
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 905.0,
+              "planck_data_bin": 0.0001784174198948312,
+              "model_bin": 0.00021816330939038783,
+              "model_minus_planck": 3.974588949555663e-05,
+              "sigma": 1.189718700153313e-05,
+              "io_minus_planck_sigma": 3.3407804290572876
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 167.0,
+              "planck_data_bin": 0.0001915773606985458,
+              "model_bin": 0.0002625715085507079,
+              "model_minus_planck": 7.09941478521621e-05,
+              "sigma": 2.151152321849115e-05,
+              "io_minus_planck_sigma": 3.3002845559135507
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 572.0,
+              "planck_data_bin": 0.0002279597651277145,
+              "model_bin": 0.00026358054416357793,
+              "model_minus_planck": 3.562077903586342e-05,
+              "sigma": 1.154202714664273e-05,
+              "io_minus_planck_sigma": 3.0861804935387425
+            },
+            {
+              "case": "io_conditional_structured",
+              "spectrum": "EE",
+              "ell_eff": 97.0,
+              "planck_data_bin": 0.000379873029008304,
+              "model_bin": 0.0005599779891357315,
+              "model_minus_planck": 0.00018010496012742748,
+              "sigma": 6.014332503268916e-05,
+              "io_minus_planck_sigma": 2.9945959926481724
+            }
+          ]
+        },
+        "sample_Dl": {
+          "TT": [
+            {
+              "target_ell": 220.0,
+              "ell": 220.0,
+              "Dl": 6109.354068674714
+            },
+            {
+              "target_ell": 546.0,
+              "ell": 546.0,
+              "Dl": 2469.7847221827114
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": 2618.1103612766788
+            },
+            {
+              "target_ell": 1000.0,
+              "ell": 1000.0,
+              "Dl": 1057.4479541415017
+            },
+            {
+              "target_ell": 1500.0,
+              "ell": 1500.0,
+              "Dl": 657.6652193380909
+            },
+            {
+              "target_ell": 2000.0,
+              "ell": 2000.0,
+              "Dl": 229.77414445860384
+            }
+          ],
+          "TE": [
+            {
+              "target_ell": 150.0,
+              "ell": 150.0,
+              "Dl": -53.335619528925506
+            },
+            {
+              "target_ell": 300.0,
+              "ell": 300.0,
+              "Dl": 124.12973637329797
+            },
+            {
+              "target_ell": 450.0,
+              "ell": 450.0,
+              "Dl": -61.866642294876534
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": -77.98731708275899
+            },
+            {
+              "target_ell": 1200.0,
+              "ell": 1200.0,
+              "Dl": 1.0852087887341622
+            }
+          ],
+          "EE": [
+            {
+              "target_ell": 150.0,
+              "ell": 150.0,
+              "Dl": 1.3199002238278654
+            },
+            {
+              "target_ell": 300.0,
+              "ell": 300.0,
+              "Dl": 8.91052200015873
+            },
+            {
+              "target_ell": 450.0,
+              "ell": 450.0,
+              "Dl": 15.735990165371154
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": 15.437257614298685
+            },
+            {
+              "target_ell": 1200.0,
+              "ell": 1200.0,
+              "Dl": 20.006552617922164
+            }
+          ]
+        }
+      }
+    },
+    "lcdm_planck_reference": {
+      "label": "Flat LCDM Planck 2018 reference",
+      "status": "external reference",
+      "notes": "Fixed Planck-like LCDM reference used only to calibrate the residual machinery. This is not an IO prediction.",
+      "params": {
+        "output": "tCl,pCl,lCl",
+        "lensing": "yes",
+        "l_max_scalars": 2508,
+        "H0": 67.36,
+        "T_cmb": 2.7255,
+        "Omega_k": 0.0,
+        "N_ur": 3.044,
+        "N_ncdm": 0,
+        "YHe": 0.2454,
+        "omega_b": 0.02237,
+        "omega_cdm": 0.12,
+        "n_s": 0.9649,
+        "A_s": 2.1005e-09,
+        "tau_reio": 0.0544,
+        "reio_parametrization": "reio_camb"
+      },
+      "analysis": {
+        "status": "external reference",
+        "notes": "Fixed Planck-like LCDM reference used only to calibrate the residual machinery. This is not an IO prediction.",
+        "chi2_total": 619.3141066733623,
+        "A_eff_proxy": 1.883958996077591e-09,
+        "derived": {
+          "100*theta_s": 1.0403709203184226,
+          "z_rec": 1088.7830810540686,
+          "rs_rec": 144.54755066348588,
+          "age": 13.81403780839942
+        },
+        "diagonal_summary": {
+          "tt_low": {
+            "chi2_diag": 4.445077735008099,
+            "mean_signed_sigma": 1.288656236049332,
+            "mean_abs_sigma": 1.288656236049332,
+            "rms_sigma": 1.4908181872730322,
+            "max_abs_sigma": 2.03825877926488,
+            "n_bins": 2
+          },
+          "tt_high": {
+            "chi2_diag": 186.66268414726136,
+            "mean_signed_sigma": 0.10699662295493853,
+            "mean_abs_sigma": 0.7128211228354847,
+            "rms_sigma": 0.9317717160965419,
+            "max_abs_sigma": 3.338998946339129,
+            "n_bins": 215
+          },
+          "tt_all": {
+            "chi2_diag": 191.10776188226947,
+            "mean_signed_sigma": 0.11788749496502511,
+            "mean_abs_sigma": 0.718128358901972,
+            "rms_sigma": 0.9384460188700462,
+            "max_abs_sigma": 3.338998946339129,
+            "n_bins": 217
+          },
+          "te": {
+            "chi2_diag": 196.7931842429158,
+            "mean_signed_sigma": -0.04556919597673784,
+            "mean_abs_sigma": 0.8061907705419009,
+            "rms_sigma": 0.9944397787611331,
+            "max_abs_sigma": 2.7983437313680763,
+            "n_bins": 199
+          },
+          "ee": {
+            "chi2_diag": 194.736801228361,
+            "mean_signed_sigma": -0.08006141604013219,
+            "mean_abs_sigma": 0.8083990958009879,
+            "rms_sigma": 0.9892304537340018,
+            "max_abs_sigma": 2.498334260318286,
+            "n_bins": 199
+          }
+        },
+        "block_covariance": {
+          "tt_low": 4.445077735008099,
+          "tt_high": 242.06353146427315,
+          "te": 235.24386025885875,
+          "ee": 209.47059174040976,
+          "tt_low__tt_high_cross": 0.0,
+          "tt_low__te_cross": 0.0,
+          "tt_low__ee_cross": 0.0,
+          "tt_high__te_cross": -41.433972522582906,
+          "tt_high__ee_cross": 6.02172632424955,
+          "te__ee_cross": -36.49670832685412,
+          "sum_all_terms": 619.3141066733623
+        },
+        "top_residual_bins": {
+          "tt": [
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 464.0,
+              "planck_data_bin": 0.06478587456759065,
+              "model_bin": 0.06063575527224474,
+              "model_minus_planck": -0.004150119295345908,
+              "sigma": 0.001242923212029189,
+              "io_minus_planck_sigma": -3.338998946339129
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 1202.0,
+              "planck_data_bin": 0.00436869641999714,
+              "model_bin": 0.004560902750104583,
+              "model_minus_planck": 0.00019220633010744257,
+              "sigma": 6.7868390366514e-05,
+              "io_minus_planck_sigma": 2.8320449191362647
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 1085.0,
+              "planck_data_bin": 0.006493285543503239,
+              "model_bin": 0.0062810242018163575,
+              "model_minus_planck": -0.0002122613416868811,
+              "sigma": 9.283569435389674e-05,
+              "io_minus_planck_sigma": -2.2864194980620782
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 1211.0,
+              "planck_data_bin": 0.004174665772401728,
+              "model_bin": 0.004321617354406249,
+              "model_minus_planck": 0.00014695158200452117,
+              "sigma": 6.452364176041055e-05,
+              "io_minus_planck_sigma": 2.2774843142019536
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 1337.0,
+              "planck_data_bin": 0.002662106396515388,
+              "model_bin": 0.0025680030818267226,
+              "model_minus_planck": -9.410331468866521e-05,
+              "sigma": 4.146418587347263e-05,
+              "io_minus_planck_sigma": -2.269508316787411
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 1013.0,
+              "planck_data_bin": 0.006603091634658166,
+              "model_bin": 0.0063997202747608445,
+              "model_minus_planck": -0.00020337135989732108,
+              "sigma": 9.741017862145867e-05,
+              "io_minus_planck_sigma": -2.087783461394044
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 1004.0,
+              "planck_data_bin": 0.00638160340661928,
+              "model_bin": 0.0065873858111589936,
+              "model_minus_planck": 0.0002057824045397132,
+              "sigma": 0.0001002205672996207,
+              "io_minus_planck_sigma": 2.0532951477365264
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TT",
+              "ell_eff": 779.0,
+              "planck_data_bin": 0.02431014801866934,
+              "model_bin": 0.02512451106987949,
+              "model_minus_planck": 0.0008143630512101492,
+              "sigma": 0.0003981181091193325,
+              "io_minus_planck_sigma": 2.0455312947496465
+            }
+          ],
+          "te": [
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 1103.0,
+              "planck_data_bin": -0.0002906620804216363,
+              "model_bin": -0.00035736864132348645,
+              "model_minus_planck": -6.670656090185012e-05,
+              "sigma": 2.383787243650661e-05,
+              "io_minus_planck_sigma": -2.7983437313680763
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 248.0,
+              "planck_data_bin": 0.005154968635560479,
+              "model_bin": 0.006054856064849157,
+              "model_minus_planck": 0.0008998874292886786,
+              "sigma": 0.0003582758170818398,
+              "io_minus_planck_sigma": 2.5117169130148693
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 1004.0,
+              "planck_data_bin": -0.0002326078583739291,
+              "model_bin": -0.00017080118666299964,
+              "model_minus_planck": 6.180667171092947e-05,
+              "sigma": 2.670511038157056e-05,
+              "io_minus_planck_sigma": 2.3144136394801356
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 1382.0,
+              "planck_data_bin": -0.0001564775355692836,
+              "model_bin": -0.00019679229792997913,
+              "model_minus_planck": -4.031476236069552e-05,
+              "sigma": 1.760773082885659e-05,
+              "io_minus_planck_sigma": -2.2896057846718847
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 1481.0,
+              "planck_data_bin": 7.929120982459275e-06,
+              "model_bin": -2.9114969579760652e-05,
+              "model_minus_planck": -3.704409056221993e-05,
+              "sigma": 1.700539524923023e-05,
+              "io_minus_planck_sigma": -2.1783728057656746
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 671.0,
+              "planck_data_bin": -0.0007940183807032881,
+              "model_bin": -0.0006709709543806623,
+              "model_minus_planck": 0.0001230474263226258,
+              "sigma": 5.838464378188369e-05,
+              "io_minus_planck_sigma": 2.107530651078606
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 779.0,
+              "planck_data_bin": -0.001127680209335755,
+              "model_bin": -0.0012212533352050625,
+              "model_minus_planck": -9.35731258693076e-05,
+              "sigma": 4.631488440691191e-05,
+              "io_minus_planck_sigma": -2.0203683344472085
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "TE",
+              "ell_eff": 914.0,
+              "planck_data_bin": 0.0005074834604304052,
+              "model_bin": 0.0004423865273848305,
+              "model_minus_planck": -6.509693304557467e-05,
+              "sigma": 3.251071545991761e-05,
+              "io_minus_planck_sigma": -2.00232237662787
+            }
+          ],
+          "ee": [
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 1954.0,
+              "planck_data_bin": -7.028715220263533e-05,
+              "model_bin": 1.772747201979218e-05,
+              "model_minus_planck": 8.80146242224275e-05,
+              "sigma": 3.522932284137772e-05,
+              "io_minus_planck_sigma": 2.498334260318286
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 1750.0,
+              "planck_data_bin": 7.623438911278968e-05,
+              "model_bin": 1.9151194373189026e-05,
+              "model_minus_planck": -5.7083194739600655e-05,
+              "sigma": 2.436590837123666e-05,
+              "io_minus_planck_sigma": -2.342748477499239
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 365.0,
+              "planck_data_bin": 0.0008703806167709409,
+              "model_bin": 0.0009338638382586983,
+              "model_minus_planck": 6.348322148775742e-05,
+              "sigma": 2.991756717357111e-05,
+              "io_minus_planck_sigma": 2.121937961046441
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 347.0,
+              "planck_data_bin": 0.0008440014086208539,
+              "model_bin": 0.0009061422559817511,
+              "model_minus_planck": 6.214084736089719e-05,
+              "sigma": 2.99929237296987e-05,
+              "io_minus_planck_sigma": 2.071850277782887
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 743.0,
+              "planck_data_bin": 0.0003146790465571685,
+              "model_bin": 0.00034177431943336933,
+              "model_minus_planck": 2.709527287620084e-05,
+              "sigma": 1.313970168767032e-05,
+              "io_minus_planck_sigma": 2.062091934828762
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 1784.0,
+              "planck_data_bin": -3.713035197394987e-05,
+              "model_bin": 1.569891003245059e-05,
+              "model_minus_planck": 5.282926200640046e-05,
+              "sigma": 2.583394050531727e-05,
+              "io_minus_planck_sigma": 2.04495562709556
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 1682.0,
+              "planck_data_bin": 7.919374862645657e-05,
+              "model_bin": 3.554462580896519e-05,
+              "model_minus_planck": -4.364912281749138e-05,
+              "sigma": 2.181931257918663e-05,
+              "io_minus_planck_sigma": -2.000481117774908
+            },
+            {
+              "case": "lcdm_planck_reference",
+              "spectrum": "EE",
+              "ell_eff": 590.0,
+              "planck_data_bin": 0.0002753843951509043,
+              "model_bin": 0.0003006316762070243,
+              "model_minus_planck": 2.5247281056119998e-05,
+              "sigma": 1.270131835792745e-05,
+              "io_minus_planck_sigma": 1.987768540606815
+            }
+          ]
+        },
+        "sample_Dl": {
+          "TT": [
+            {
+              "target_ell": 220.0,
+              "ell": 220.0,
+              "Dl": 5732.703638787631
+            },
+            {
+              "target_ell": 546.0,
+              "ell": 546.0,
+              "Dl": 2585.1843280101984
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": 2522.688570679807
+            },
+            {
+              "target_ell": 1000.0,
+              "ell": 1000.0,
+              "Dl": 1065.9402180164618
+            },
+            {
+              "target_ell": 1500.0,
+              "ell": 1500.0,
+              "Dl": 694.841595053541
+            },
+            {
+              "target_ell": 2000.0,
+              "ell": 2000.0,
+              "Dl": 230.689599376326
+            }
+          ],
+          "TE": [
+            {
+              "target_ell": 150.0,
+              "ell": 150.0,
+              "Dl": -46.09187343814235
+            },
+            {
+              "target_ell": 300.0,
+              "ell": 300.0,
+              "Dl": 118.37655571962057
+            },
+            {
+              "target_ell": 450.0,
+              "ell": 450.0,
+              "Dl": -68.31281937434427
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": -90.86992602058555
+            },
+            {
+              "target_ell": 1200.0,
+              "ell": 1200.0,
+              "Dl": 2.867925163625695
+            }
+          ],
+          "EE": [
+            {
+              "target_ell": 150.0,
+              "ell": 150.0,
+              "Dl": 1.1010706017955338
+            },
+            {
+              "target_ell": 300.0,
+              "ell": 300.0,
+              "Dl": 9.010231126833803
+            },
+            {
+              "target_ell": 450.0,
+              "ell": 450.0,
+              "Dl": 16.363928125604833
+            },
+            {
+              "target_ell": 800.0,
+              "ell": 800.0,
+              "Dl": 15.824299315762008
+            },
+            {
+              "target_ell": 1200.0,
+              "ell": 1200.0,
+              "Dl": 17.250882611756275
+            }
+          ]
+        }
+      }
+    }
+  },
+  "archive_files": {
+    "cls_csv": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_cls.csv",
+    "residual_bins_csv": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_residual_bins.csv",
+    "residual_plot_png": "/opt/cosmology-lab/results/paper31/paper31_practical_io_cl_confrontation_residuals.png"
+  }
+}
