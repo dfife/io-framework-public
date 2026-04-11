@@ -1,0 +1,381 @@
+{
+  "io_iid_branch": {
+    "label": "IO i.i.d. branch",
+    "H0": 67.57585653582628,
+    "Omega_m": 0.34868395067621694,
+    "Omega_k": -0.04579112576013168,
+    "Omega_r": 0.0001226,
+    "Omega_lambda_display": 0.6971071750839146,
+    "Omega_lambda_eval": 0.6969845750839148
+  },
+  "planck_reference": {
+    "label": "Planck LCDM reference",
+    "H0": 67.4,
+    "Omega_m": 0.315,
+    "Omega_k": 0.0,
+    "Omega_r": 9.19480093248451e-05,
+    "Omega_lambda_display": 0.685,
+    "Omega_lambda_eval": 0.6849080519906752
+  },
+  "baseline": {
+    "universal_rd_Mpc": 143.3,
+    "bao_chi2": 94.36149688498531,
+    "planck_bao_chi2": 28.693892246596665,
+    "delta_chi2_io_minus_planck": 65.66760463838865,
+    "split_by_quantity": {
+      "DV_over_rs": 13.956447267124371,
+      "DM_over_rs": 38.47125417836284,
+      "DH_over_rs": 17.864702593747214,
+      "DM_plus_DH": 80.40504961786094
+    },
+    "split_by_block": {
+      "galaxy_quasar": 93.84973288789105,
+      "lya": 0.5117639970942675
+    }
+  },
+  "curvature_tests": [
+    {
+      "omega_k_dm": 0.0,
+      "chi2_with_rd_143p3": 108.68272890264709
+    },
+    {
+      "omega_k_dm": -0.04579112576013168,
+      "chi2_with_rd_143p3": 94.36149688498531
+    },
+    {
+      "omega_k_dm": -0.13,
+      "chi2_with_rd_143p3": 78.44132912201063
+    }
+  ],
+  "universal_effective_ruler_scan": {
+    "best_universal_rd_Mpc": 146.37650251955117,
+    "chi2": 34.30000226473537
+  },
+  "blockwise_effective_ruler_scan": {
+    "best_rd_gal_Mpc": 147.0843116339564,
+    "best_rd_lya_Mpc": 142.82224746086274,
+    "chi2": 18.69455749443472
+  },
+  "rebuilt_iid_slots": {
+    "x": 1.5189873277742727,
+    "Delta": 5.624029175326855,
+    "omega_m_total": 0.15922640008111233,
+    "f_b": 0.3127083362150252,
+    "omega_b_geom_projected": 0.04979142265087259,
+    "omega_b_eff_projected": 0.06874792257132821,
+    "omega_b_clust_projected": 0.040399636714857086
+  },
+  "rebuilt_iid_raw_rulers_Mpc": {
+    "omega_b_geom_projected": 126.14246120316851,
+    "omega_b_eff_projected": 118.1453440592955,
+    "omega_b_clust_projected": 130.99467997791825
+  },
+  "legacy_transplanted_small_slots": {
+    "omega_b_geom_small_carried": 0.020995719061702847,
+    "omega_b_clust_small_carried": 0.017053042566348754
+  },
+  "legacy_transplanted_raw_rulers_Mpc": {
+    "omega_b_geom_small_carried": 144.15060015039327,
+    "omega_b_clust_small_carried": 147.63986853811437
+  },
+  "universal_ruler_cases": [
+    {
+      "label": "baseline_carried_universal_rd",
+      "rd_Mpc": 143.3,
+      "chi2": 94.36149688498531
+    },
+    {
+      "label": "rebuilt_iid_geom_projected",
+      "rd_Mpc": 126.14246120316851,
+      "chi2": 3387.1691619039448
+    },
+    {
+      "label": "rebuilt_iid_eff_projected",
+      "rd_Mpc": 118.1453440592955,
+      "chi2": 7474.731411336498
+    },
+    {
+      "label": "rebuilt_iid_clust_projected",
+      "rd_Mpc": 130.99467997791825,
+      "chi2": 1831.0275236446082
+    },
+    {
+      "label": "legacy_transplanted_geom_small",
+      "rd_Mpc": 144.15060015039327,
+      "chi2": 65.37086343599168
+    },
+    {
+      "label": "legacy_transplanted_clust_small",
+      "rd_Mpc": 147.63986853811437,
+      "chi2": 43.84168455502238
+    },
+    {
+      "label": "best_universal_effective_rd",
+      "rd_Mpc": 146.37650251955117,
+      "chi2": 34.30000226473537
+    }
+  ],
+  "conditional_block_repairs": [
+    {
+      "label": "best_blockwise_effective_rulers",
+      "rd_gal_Mpc": 147.0843116339564,
+      "rd_lya_Mpc": 142.82224746086274,
+      "chi2": 18.69455749443472
+    },
+    {
+      "label": "best_galaxy_effective_plus_lya_raw_baseline",
+      "rd_gal_Mpc": 147.0843116339564,
+      "rd_lya_Mpc": 143.3,
+      "chi2": 18.9410816646038
+    },
+    {
+      "label": "legacy_small_clustering_galaxy_plus_lya_raw_baseline",
+      "rd_gal_Mpc": 147.63986853811437,
+      "rd_lya_Mpc": 143.3,
+      "chi2": 20.47237436302415
+    }
+  ],
+  "combined_summary": {
+    "baseline_combined_chi2": 109.06315858748277,
+    "planck_combined_chi2": 43.77291370446457,
+    "conditional_repaired_combined_chi2": 33.39621919693218
+  },
+  "baseline_residuals": [
+    {
+      "z": 0.295,
+      "block": "galaxy_quasar",
+      "quantity": "DV_over_rs",
+      "obs": 7.94167639,
+      "model": 8.225943247773637,
+      "residual": 0.2842668577736376,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 0.51,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 13.58758434,
+      "model": 13.757734083805785,
+      "residual": 0.1701497438057853,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 0.51,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 21.86294686,
+      "model": 23.115654207102565,
+      "residual": 1.2527073471025645,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 0.706,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 17.35069094,
+      "model": 17.994193050566764,
+      "residual": 0.6435021105667644,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 0.706,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 19.45534918,
+      "model": 20.43117929334472,
+      "residual": 0.9758301133447205,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 0.934,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 21.57563956,
+      "model": 22.2931786884889,
+      "residual": 0.7175391284889017,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 0.934,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 17.64149464,
+      "model": 17.727631820490153,
+      "residual": 0.08613718049015162,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 1.321,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 27.60085612,
+      "model": 28.3226085546398,
+      "residual": 0.7217524346398001,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 1.321,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 14.17602155,
+      "model": 14.110722059594163,
+      "residual": -0.06529949040583638,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 1.484,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 30.51190063,
+      "model": 30.4755572058744,
+      "residual": -0.036343424125600876,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 1.484,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 12.81699964,
+      "model": 12.895706001020521,
+      "residual": 0.07870636102052053,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 2.33,
+      "block": "lya",
+      "quantity": "DH_over_rs",
+      "obs": 8.631545674846294,
+      "model": 8.56016919952845,
+      "residual": -0.07137647531784275,
+      "rd_used_Mpc": 143.3
+    },
+    {
+      "z": 2.33,
+      "block": "lya",
+      "quantity": "DM_over_rs",
+      "obs": 38.988973961958784,
+      "model": 39.09605500246036,
+      "residual": 0.1070810405015763,
+      "rd_used_Mpc": 143.3
+    }
+  ],
+  "repaired_residuals": [
+    {
+      "z": 0.295,
+      "block": "galaxy_quasar",
+      "quantity": "DV_over_rs",
+      "obs": 7.94167639,
+      "model": 8.014299107164776,
+      "residual": 0.07262271716477642,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 0.51,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 13.58758434,
+      "model": 13.403763272290595,
+      "residual": -0.18382106770940432,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 0.51,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 21.86294686,
+      "model": 22.52091478064251,
+      "residual": 0.6579679206425091,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 0.706,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 17.35069094,
+      "model": 17.531222980214295,
+      "residual": 0.18053204021429536,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 0.706,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 19.45534918,
+      "model": 19.905508345598292,
+      "residual": 0.4501591655982935,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 0.934,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 21.57563956,
+      "model": 21.719600619342604,
+      "residual": 0.1439610593426046,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 0.934,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 17.64149464,
+      "model": 17.27152006665652,
+      "residual": -0.3699745733434803,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 1.321,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 27.60085612,
+      "model": 27.593900129746363,
+      "residual": -0.006955990253636912,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 1.321,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 14.17602155,
+      "model": 13.747669269936077,
+      "residual": -0.42835228006392256,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 1.484,
+      "block": "galaxy_quasar",
+      "quantity": "DM_over_rs",
+      "obs": 30.51190063,
+      "model": 29.691455866959963,
+      "residual": -0.8204447630400367,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 1.484,
+      "block": "galaxy_quasar",
+      "quantity": "DH_over_rs",
+      "obs": 12.81699964,
+      "model": 12.563914189197698,
+      "residual": -0.2530854508023026,
+      "rd_used_Mpc": 147.0843116339564
+    },
+    {
+      "z": 2.33,
+      "block": "lya",
+      "quantity": "DH_over_rs",
+      "obs": 8.631545674846294,
+      "model": 8.588803692005824,
+      "residual": -0.04274198284046982,
+      "rd_used_Mpc": 142.82224746086274
+    },
+    {
+      "z": 2.33,
+      "block": "lya",
+      "quantity": "DM_over_rs",
+      "obs": 38.988973961958784,
+      "model": 39.226834624541254,
+      "residual": 0.23786066258247018,
+      "rd_used_Mpc": 142.82224746086274
+    }
+  ]
+}
