@@ -1,0 +1,961 @@
+{
+  "metadata": {
+    "title": "Paper 29 chi2 recomputation on the i.i.d. branch",
+    "cc_dataset": "Jia et al. (2025), MNRAS 542, 1063, Table A1",
+    "bao_dataset": "DESI DR2 GCcomb Gaussian likelihood (official mean/covariance files)",
+    "sources": {
+      "cc_compilation": "https://academic.oup.com/mnras/article/542/2/1063/8230790",
+      "desi_dr2_readme": "https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html",
+      "desi_dr2_mean": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "desi_dr2_cov": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt"
+    },
+    "notes": [
+      "CC uses the 35-point compilation with diagonal published uncertainties, matching the prior Paper 29 confrontation file.",
+      "BAO uses the official 13-point DESI DR2 GCcomb mean vector and full covariance.",
+      "When the radiation term is included, Omega_Lambda is closure-corrected in the evaluator so that E(0)=1."
+    ]
+  },
+  "branches": {
+    "io_iid": {
+      "label": "IO i.i.d. branch",
+      "H0": 67.57585653582628,
+      "Omega_m": 0.34868395067621694,
+      "Omega_k": -0.04579112576013168,
+      "Omega_r": 0.0001226,
+      "Omega_lambda_display": 0.6971071750839146,
+      "Omega_lambda_eval": 0.6969845750839148,
+      "r_d_Mpc": 143.3,
+      "notes": "Exact Paper 10 corrected-projection branch with user-requested IO radiation term inserted and Omega_Lambda closure-corrected for E(0)=1."
+    },
+    "planck_lcdm": {
+      "label": "Planck LCDM fixed reference",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_k": 0.0,
+      "Omega_r": 9.19480093248451e-05,
+      "Omega_lambda_display": 0.685,
+      "Omega_lambda_eval": 0.6849080519906752,
+      "r_d_Mpc": 147.09,
+      "notes": "User-requested flat Planck reference with standard radiation closure from T_cmb=2.7255 and N_eff=3.046."
+    }
+  },
+  "chi2_summary": {
+    "cc": {
+      "N_data": 35,
+      "dof": 35,
+      "io_chi2": 14.701661702497464,
+      "io_chi2_per_dof": 0.42004747721421326,
+      "io_pte": 0.9989898393608766,
+      "planck_chi2": 15.079021457867908,
+      "planck_chi2_per_dof": 0.43082918451051166,
+      "planck_pte": 0.9986762435250084,
+      "delta_chi2_io_minus_planck": -0.37735975537044375
+    },
+    "bao": {
+      "N_data": 13,
+      "dof": 13,
+      "io_chi2": 94.36149688498531,
+      "io_chi2_per_dof": 7.258576683460409,
+      "io_pte": 2.035511515737655e-14,
+      "planck_chi2": 28.693892246596665,
+      "planck_chi2_per_dof": 2.207222480507436,
+      "planck_pte": 0.0072324056555378305,
+      "delta_chi2_io_minus_planck": 65.66760463838865
+    },
+    "combined": {
+      "N_data": 48,
+      "dof": 48,
+      "io_chi2": 109.06315858748277,
+      "io_chi2_per_dof": 2.2721491372392246,
+      "io_pte": 1.1926673019924381e-06,
+      "planck_chi2": 43.77291370446457,
+      "planck_chi2_per_dof": 0.9119357021763452,
+      "planck_pte": 0.646602327398115,
+      "delta_chi2_io_minus_planck": 65.2902448830182
+    }
+  },
+  "cc_residuals": {
+    "io_iid": [
+      {
+        "z": 0.07,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 69.0,
+        "sigma": 19.6,
+        "H_model": 69.96212502489905,
+        "residual": 0.962125024899052,
+        "pull": 0.049088011474441424
+      },
+      {
+        "z": 0.09,
+        "source": "Simon, Verde & Jimenez (2005)",
+        "H_obs": 69.0,
+        "sigma": 12.0,
+        "H_model": 70.6905808080564,
+        "residual": 1.6905808080563958,
+        "pull": 0.14088173400469964
+      },
+      {
+        "z": 0.12,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 68.6,
+        "sigma": 26.2,
+        "H_model": 71.82181726654173,
+        "residual": 3.221817266541734,
+        "pull": 0.12297012467716543
+      },
+      {
+        "z": 0.17,
+        "source": "Simon et al. (2005)",
+        "H_obs": 83.0,
+        "sigma": 8.0,
+        "H_model": 73.80903412499896,
+        "residual": -9.19096587500104,
+        "pull": -1.14887073437513
+      },
+      {
+        "z": 0.179,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 4.0,
+        "H_model": 74.18011793139881,
+        "residual": -0.8198820686011885,
+        "pull": -0.20497051715029713
+      },
+      {
+        "z": 0.199,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 5.0,
+        "H_model": 75.01922660443033,
+        "residual": 0.01922660443032953,
+        "pull": 0.003845320886065906
+      },
+      {
+        "z": 0.2,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 72.9,
+        "sigma": 29.6,
+        "H_model": 75.06170416529469,
+        "residual": 2.1617041652946796,
+        "pull": 0.07303054612482025
+      },
+      {
+        "z": 0.27,
+        "source": "Simon et al. (2005)",
+        "H_obs": 77.0,
+        "sigma": 14.0,
+        "H_model": 78.15711745833109,
+        "residual": 1.1571174583310864,
+        "pull": 0.08265124702364902
+      },
+      {
+        "z": 0.28,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 88.8,
+        "sigma": 36.6,
+        "H_model": 78.61871514480029,
+        "residual": -10.181284855199706,
+        "pull": -0.27817718183605755
+      },
+      {
+        "z": 0.352,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 83.0,
+        "sigma": 14.0,
+        "H_model": 82.08183728207602,
+        "residual": -0.9181627179239769,
+        "pull": -0.06558305128028406
+      },
+      {
+        "z": 0.3802,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 83.0,
+        "sigma": 13.5,
+        "H_model": 83.50376176707347,
+        "residual": 0.5037617670734704,
+        "pull": 0.0373156864498867
+      },
+      {
+        "z": 0.4,
+        "source": "Simon et al. (2005)",
+        "H_obs": 95.0,
+        "sigma": 17.0,
+        "H_model": 84.52369413838952,
+        "residual": -10.476305861610484,
+        "pull": -0.6162532859770873
+      },
+      {
+        "z": 0.4004,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 77.0,
+        "sigma": 10.2,
+        "H_model": 84.5444804454716,
+        "residual": 7.544480445471606,
+        "pull": 0.7396549456344713
+      },
+      {
+        "z": 0.4247,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 87.1,
+        "sigma": 11.2,
+        "H_model": 85.82062380625487,
+        "residual": -1.2793761937451222,
+        "pull": -0.11423001729867163
+      },
+      {
+        "z": 0.4497,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 92.8,
+        "sigma": 12.9,
+        "H_model": 87.16072766432508,
+        "residual": -5.639272335674917,
+        "pull": -0.4371528942383657
+      },
+      {
+        "z": 0.47,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 89.0,
+        "sigma": 50.0,
+        "H_model": 88.26890716573993,
+        "residual": -0.7310928342600675,
+        "pull": -0.014621856685201351
+      },
+      {
+        "z": 0.4783,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 80.9,
+        "sigma": 9.0,
+        "H_model": 88.72711642174845,
+        "residual": 7.827116421748443,
+        "pull": 0.8696796024164937
+      },
+      {
+        "z": 0.48,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 97.0,
+        "sigma": 62.0,
+        "H_model": 88.82133030998472,
+        "residual": -8.178669690015283,
+        "pull": -0.13191402725831103
+      },
+      {
+        "z": 0.593,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 104.0,
+        "sigma": 13.0,
+        "H_model": 95.35425985816156,
+        "residual": -8.645740141838445,
+        "pull": -0.6650569339875727
+      },
+      {
+        "z": 0.68,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 92.0,
+        "sigma": 8.0,
+        "H_model": 100.73226520453329,
+        "residual": 8.732265204533292,
+        "pull": 1.0915331505666614
+      },
+      {
+        "z": 0.75,
+        "source": "Borghi et al. (2022)",
+        "H_obs": 98.8,
+        "sigma": 33.6,
+        "H_model": 105.26720349925277,
+        "residual": 6.467203499252776,
+        "pull": 0.19247629462061833
+      },
+      {
+        "z": 0.75,
+        "source": "Jimenez et al. (2023)",
+        "H_obs": 105.0,
+        "sigma": 7.9,
+        "H_model": 105.26720349925277,
+        "residual": 0.26720349925277276,
+        "pull": 0.03382322775351554
+      },
+      {
+        "z": 0.781,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 105.0,
+        "sigma": 12.0,
+        "H_model": 107.33245010310961,
+        "residual": 2.3324501031096077,
+        "pull": 0.19437084192580065
+      },
+      {
+        "z": 0.8,
+        "source": "Jiao et al. (2023)",
+        "H_obs": 113.1,
+        "sigma": 15.1,
+        "H_model": 108.6150913549736,
+        "residual": -4.484908645026394,
+        "pull": -0.2970138175514168
+      },
+      {
+        "z": 0.875,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 125.0,
+        "sigma": 17.0,
+        "H_model": 113.80001392601856,
+        "residual": -11.199986073981435,
+        "pull": -0.658822710234202
+      },
+      {
+        "z": 0.88,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 90.0,
+        "sigma": 40.0,
+        "H_model": 114.15245282297961,
+        "residual": 24.152452822979612,
+        "pull": 0.6038113205744903
+      },
+      {
+        "z": 0.9,
+        "source": "Simon et al. (2005)",
+        "H_obs": 117.0,
+        "sigma": 23.0,
+        "H_model": 115.57051220409221,
+        "residual": -1.4294877959077894,
+        "pull": -0.06215164330033867
+      },
+      {
+        "z": 1.037,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 154.0,
+        "sigma": 20.0,
+        "H_model": 125.63040856172215,
+        "residual": -28.36959143827785,
+        "pull": -1.4184795719138925
+      },
+      {
+        "z": 1.26,
+        "source": "Tomasetti et al. (2023b)",
+        "H_obs": 135.0,
+        "sigma": 65.0,
+        "H_model": 143.21013088195255,
+        "residual": 8.210130881952551,
+        "pull": 0.12630970587619308
+      },
+      {
+        "z": 1.3,
+        "source": "Simon et al. (2005)",
+        "H_obs": 168.0,
+        "sigma": 17.0,
+        "H_model": 146.51059724136496,
+        "residual": -21.489402758635038,
+        "pull": -1.2640825152138258
+      },
+      {
+        "z": 1.363,
+        "source": "Moresco (2015)",
+        "H_obs": 160.0,
+        "sigma": 33.6,
+        "H_model": 151.7948629772252,
+        "residual": -8.205137022774807,
+        "pull": -0.24420050663020257
+      },
+      {
+        "z": 1.43,
+        "source": "Simon et al. (2005)",
+        "H_obs": 177.0,
+        "sigma": 18.0,
+        "H_model": 157.5271477663166,
+        "residual": -19.472852233683398,
+        "pull": -1.0818251240935222
+      },
+      {
+        "z": 1.53,
+        "source": "Simon et al. (2005)",
+        "H_obs": 140.0,
+        "sigma": 14.0,
+        "H_model": 166.2913695171892,
+        "residual": 26.291369517189196,
+        "pull": 1.877954965513514
+      },
+      {
+        "z": 1.75,
+        "source": "Simon et al. (2005)",
+        "H_obs": 202.0,
+        "sigma": 40.0,
+        "H_model": 186.40696082559776,
+        "residual": -15.593039174402236,
+        "pull": -0.3898259793600559
+      },
+      {
+        "z": 1.965,
+        "source": "Moresco (2015)",
+        "H_obs": 186.5,
+        "sigma": 50.4,
+        "H_model": 207.10307068327796,
+        "residual": 20.603070683277963,
+        "pull": 0.4087910849856739
+      }
+    ],
+    "planck_lcdm": [
+      {
+        "z": 0.07,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 69.0,
+        "sigma": 19.6,
+        "H_model": 69.7489746553655,
+        "residual": 0.748974655365501,
+        "pull": 0.03821299262068882
+      },
+      {
+        "z": 0.09,
+        "source": "Simon, Verde & Jimenez (2005)",
+        "H_obs": 69.0,
+        "sigma": 12.0,
+        "H_model": 70.46353232573888,
+        "residual": 1.463532325738882,
+        "pull": 0.12196102714490682
+      },
+      {
+        "z": 0.12,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 68.6,
+        "sigma": 26.2,
+        "H_model": 71.57121722412617,
+        "residual": 2.9712172241261783,
+        "pull": 0.11340523756206787
+      },
+      {
+        "z": 0.17,
+        "source": "Simon et al. (2005)",
+        "H_obs": 83.0,
+        "sigma": 8.0,
+        "H_model": 73.51200455948552,
+        "residual": -9.487995440514482,
+        "pull": -1.1859994300643102
+      },
+      {
+        "z": 0.179,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 4.0,
+        "H_model": 73.87378505069367,
+        "residual": -1.1262149493063305,
+        "pull": -0.2815537373265826
+      },
+      {
+        "z": 0.199,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 5.0,
+        "H_model": 74.69119521217628,
+        "residual": -0.3088047878237177,
+        "pull": -0.061760957564743535
+      },
+      {
+        "z": 0.2,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 72.9,
+        "sigma": 29.6,
+        "H_model": 74.73255089646293,
+        "residual": 1.8325508964629194,
+        "pull": 0.06191050325888241
+      },
+      {
+        "z": 0.27,
+        "source": "Simon et al. (2005)",
+        "H_obs": 77.0,
+        "sigma": 14.0,
+        "H_model": 77.74080597102486,
+        "residual": 0.7408059710248551,
+        "pull": 0.05291471221606108
+      },
+      {
+        "z": 0.28,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 88.8,
+        "sigma": 36.6,
+        "H_model": 78.1885828637399,
+        "residual": -10.611417136260101,
+        "pull": -0.2899294299524618
+      },
+      {
+        "z": 0.352,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 83.0,
+        "sigma": 14.0,
+        "H_model": 81.54238596466324,
+        "residual": -1.4576140353367606,
+        "pull": -0.10411528823834004
+      },
+      {
+        "z": 0.3802,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 83.0,
+        "sigma": 13.5,
+        "H_model": 82.91691380126196,
+        "residual": -0.08308619873804446,
+        "pull": -0.0061545332398551455
+      },
+      {
+        "z": 0.4,
+        "source": "Simon et al. (2005)",
+        "H_obs": 95.0,
+        "sigma": 17.0,
+        "H_model": 83.90207127058717,
+        "residual": -11.097928729412828,
+        "pull": -0.6528193370242841
+      },
+      {
+        "z": 0.4004,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 77.0,
+        "sigma": 10.2,
+        "H_model": 83.92214248857539,
+        "residual": 6.922142488575389,
+        "pull": 0.6786414204485676
+      },
+      {
+        "z": 0.4247,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 87.1,
+        "sigma": 11.2,
+        "H_model": 85.15392155671007,
+        "residual": -1.9460784432899203,
+        "pull": -0.17375700386517146
+      },
+      {
+        "z": 0.4497,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 92.8,
+        "sigma": 12.9,
+        "H_model": 86.44651355335098,
+        "residual": -6.353486446649015,
+        "pull": -0.492518329197598
+      },
+      {
+        "z": 0.47,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 89.0,
+        "sigma": 50.0,
+        "H_model": 87.51474474952686,
+        "residual": -1.4852552504731449,
+        "pull": -0.029705105009462898
+      },
+      {
+        "z": 0.4783,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 80.9,
+        "sigma": 9.0,
+        "H_model": 87.956272395214,
+        "residual": 7.056272395213995,
+        "pull": 0.7840302661348884
+      },
+      {
+        "z": 0.48,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 97.0,
+        "sigma": 62.0,
+        "H_model": 88.04704485344459,
+        "residual": -8.95295514655541,
+        "pull": -0.14440250236379695
+      },
+      {
+        "z": 0.593,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 104.0,
+        "sigma": 13.0,
+        "H_model": 94.33303003370892,
+        "residual": -9.666969966291077,
+        "pull": -0.7436130743300828
+      },
+      {
+        "z": 0.68,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 92.0,
+        "sigma": 8.0,
+        "H_model": 99.49789221979957,
+        "residual": 7.497892219799567,
+        "pull": 0.9372365274749459
+      },
+      {
+        "z": 0.75,
+        "source": "Borghi et al. (2022)",
+        "H_obs": 98.8,
+        "sigma": 33.6,
+        "H_model": 103.84792765539225,
+        "residual": 5.047927655392257,
+        "pull": 0.15023594212476957
+      },
+      {
+        "z": 0.75,
+        "source": "Jimenez et al. (2023)",
+        "H_obs": 105.0,
+        "sigma": 7.9,
+        "H_model": 103.84792765539225,
+        "residual": -1.1520723446077454,
+        "pull": -0.1458319423554108
+      },
+      {
+        "z": 0.781,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 105.0,
+        "sigma": 12.0,
+        "H_model": 105.82767751651687,
+        "residual": 0.8276775165168715,
+        "pull": 0.06897312637640596
+      },
+      {
+        "z": 0.8,
+        "source": "Jiao et al. (2023)",
+        "H_obs": 113.1,
+        "sigma": 15.1,
+        "H_model": 107.0568599709725,
+        "residual": -6.043140029027498,
+        "pull": -0.4002079489422184
+      },
+      {
+        "z": 0.875,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 125.0,
+        "sigma": 17.0,
+        "H_model": 112.0231900383566,
+        "residual": -12.976809961643397,
+        "pull": -0.7633417624496116
+      },
+      {
+        "z": 0.88,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 90.0,
+        "sigma": 40.0,
+        "H_model": 112.3606384838617,
+        "residual": 22.360638483861706,
+        "pull": 0.5590159620965427
+      },
+      {
+        "z": 0.9,
+        "source": "Simon et al. (2005)",
+        "H_obs": 117.0,
+        "sigma": 23.0,
+        "H_model": 113.71822851048773,
+        "residual": -3.2817714895122663,
+        "pull": -0.14268571693531593
+      },
+      {
+        "z": 1.037,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 154.0,
+        "sigma": 20.0,
+        "H_model": 123.3430038278252,
+        "residual": -30.6569961721748,
+        "pull": -1.53284980860874
+      },
+      {
+        "z": 1.26,
+        "source": "Tomasetti et al. (2023b)",
+        "H_obs": 135.0,
+        "sigma": 65.0,
+        "H_model": 140.14350237994532,
+        "residual": 5.143502379945318,
+        "pull": 0.07913080584531258
+      },
+      {
+        "z": 1.3,
+        "source": "Simon et al. (2005)",
+        "H_obs": 168.0,
+        "sigma": 17.0,
+        "H_model": 143.29573087623598,
+        "residual": -24.70426912376402,
+        "pull": -1.4531923013978836
+      },
+      {
+        "z": 1.363,
+        "source": "Moresco (2015)",
+        "H_obs": 160.0,
+        "sigma": 33.6,
+        "H_model": 148.34164879626437,
+        "residual": -11.658351203735634,
+        "pull": -0.34697473820641767
+      },
+      {
+        "z": 1.43,
+        "source": "Simon et al. (2005)",
+        "H_obs": 177.0,
+        "sigma": 18.0,
+        "H_model": 153.81412146583997,
+        "residual": -23.185878534160025,
+        "pull": -1.2881043630088902
+      },
+      {
+        "z": 1.53,
+        "source": "Simon et al. (2005)",
+        "H_obs": 140.0,
+        "sigma": 14.0,
+        "H_model": 162.17891803802416,
+        "residual": 22.178918038024165,
+        "pull": 1.5842084312874403
+      },
+      {
+        "z": 1.75,
+        "source": "Simon et al. (2005)",
+        "H_obs": 202.0,
+        "sigma": 40.0,
+        "H_model": 181.36965943607518,
+        "residual": -20.63034056392482,
+        "pull": -0.5157585140981205
+      },
+      {
+        "z": 1.965,
+        "source": "Moresco (2015)",
+        "H_obs": 186.5,
+        "sigma": 50.4,
+        "H_model": 201.10514100813822,
+        "residual": 14.605141008138219,
+        "pull": 0.28978454381226626
+      }
+    ]
+  },
+  "bao_residuals": {
+    "io_iid": [
+      {
+        "z": 0.295,
+        "quantity": "DV_over_rs",
+        "obs": 7.94167639,
+        "sigma_diag": 0.07609196324185624,
+        "model": 8.225943247773637,
+        "residual": 0.2842668577736376,
+        "naive_pull": 3.735832874624395
+      },
+      {
+        "z": 0.51,
+        "quantity": "DM_over_rs",
+        "obs": 13.58758434,
+        "sigma_diag": 0.16836678472905517,
+        "model": 13.757734083805785,
+        "residual": 0.1701497438057853,
+        "naive_pull": 1.0105897316955916
+      },
+      {
+        "z": 0.51,
+        "quantity": "DH_over_rs",
+        "obs": 21.86294686,
+        "sigma_diag": 0.42886832478046216,
+        "model": 23.115654207102565,
+        "residual": 1.2527073471025645,
+        "naive_pull": 2.920960291818767
+      },
+      {
+        "z": 0.706,
+        "quantity": "DM_over_rs",
+        "obs": 17.35069094,
+        "sigma_diag": 0.17993122074837373,
+        "model": 17.994193050566764,
+        "residual": 0.6435021105667644,
+        "naive_pull": 3.576378284381648
+      },
+      {
+        "z": 0.706,
+        "quantity": "DH_over_rs",
+        "obs": 19.45534918,
+        "sigma_diag": 0.33387003159912393,
+        "model": 20.43117929334472,
+        "residual": 0.9758301133447205,
+        "naive_pull": 2.922784380109907
+      },
+      {
+        "z": 0.934,
+        "quantity": "DM_over_rs",
+        "obs": 21.57563956,
+        "sigma_diag": 0.1617815860968114,
+        "model": 22.2931786884889,
+        "residual": 0.7175391284889017,
+        "naive_pull": 4.435233612183283
+      },
+      {
+        "z": 0.934,
+        "quantity": "DH_over_rs",
+        "obs": 17.64149464,
+        "sigma_diag": 0.20104324858099562,
+        "model": 17.727631820490153,
+        "residual": 0.08613718049015162,
+        "naive_pull": 0.4284509979724535
+      },
+      {
+        "z": 1.321,
+        "quantity": "DM_over_rs",
+        "obs": 27.60085612,
+        "sigma_diag": 0.32455587500459765,
+        "model": 28.3226085546398,
+        "residual": 0.7217524346398001,
+        "naive_pull": 2.223815651556379
+      },
+      {
+        "z": 1.321,
+        "quantity": "DH_over_rs",
+        "obs": 14.17602155,
+        "sigma_diag": 0.22455135092000672,
+        "model": 14.110722059594163,
+        "residual": -0.06529949040583638,
+        "naive_pull": -0.29079981099333674
+      },
+      {
+        "z": 1.484,
+        "quantity": "DM_over_rs",
+        "obs": 30.51190063,
+        "sigma_diag": 0.763557644844186,
+        "model": 30.4755572058744,
+        "residual": -0.036343424125600876,
+        "naive_pull": -0.0475974857576303
+      },
+      {
+        "z": 1.484,
+        "quantity": "DH_over_rs",
+        "obs": 12.81699964,
+        "sigma_diag": 0.5180117691713191,
+        "model": 12.895706001020521,
+        "residual": 0.07870636102052053,
+        "naive_pull": 0.1519393297693405
+      },
+      {
+        "z": 2.33,
+        "quantity": "DH_over_rs",
+        "obs": 8.631545674846294,
+        "sigma_diag": 0.10106245296844917,
+        "model": 8.56016919952845,
+        "residual": -0.07137647531784275,
+        "naive_pull": -0.7062610615648314
+      },
+      {
+        "z": 2.33,
+        "quantity": "DM_over_rs",
+        "obs": 38.988973961958784,
+        "sigma_diag": 0.5316820280957407,
+        "model": 39.09605500246036,
+        "residual": 0.1070810405015763,
+        "naive_pull": 0.20140052671160452
+      }
+    ],
+    "planck_lcdm": [
+      {
+        "z": 0.295,
+        "quantity": "DV_over_rs",
+        "obs": 7.94167639,
+        "sigma_diag": 0.07609196324185624,
+        "model": 8.053025270352151,
+        "residual": 0.11134888035215162,
+        "naive_pull": 1.4633461354943915
+      },
+      {
+        "z": 0.51,
+        "quantity": "DM_over_rs",
+        "obs": 13.58758434,
+        "sigma_diag": 0.16836678472905517,
+        "model": 13.493960013676379,
+        "residual": -0.09362432632362072,
+        "naive_pull": -0.5560736131790246
+      },
+      {
+        "z": 0.51,
+        "quantity": "DH_over_rs",
+        "obs": 21.86294686,
+        "sigma_diag": 0.42886832478046216,
+        "model": 22.730101485642066,
+        "residual": 0.8671546256420655,
+        "naive_pull": 2.0219600645162177
+      },
+      {
+        "z": 0.706,
+        "quantity": "DM_over_rs",
+        "obs": 17.35069094,
+        "sigma_diag": 0.17993122074837373,
+        "model": 17.69243172168748,
+        "residual": 0.3417407816874807,
+        "naive_pull": 1.8992856285090782
+      },
+      {
+        "z": 0.706,
+        "quantity": "DH_over_rs",
+        "obs": 19.45534918,
+        "sigma_diag": 0.33387003159912393,
+        "model": 20.161035477232463,
+        "residual": 0.7056862972324645,
+        "naive_pull": 2.1136557056423033
+      },
+      {
+        "z": 0.934,
+        "quantity": "DM_over_rs",
+        "obs": 21.57563956,
+        "sigma_diag": 0.1617815860968114,
+        "model": 21.9848086806464,
+        "residual": 0.4091691206463999,
+        "naive_pull": 2.5291451920959025
+      },
+      {
+        "z": 0.934,
+        "quantity": "DH_over_rs",
+        "obs": 17.64149464,
+        "sigma_diag": 0.20104324858099562,
+        "model": 17.56207405414398,
+        "residual": -0.07942058585602041,
+        "naive_pull": -0.3950422927235167
+      },
+      {
+        "z": 1.321,
+        "quantity": "DM_over_rs",
+        "obs": 27.60085612,
+        "sigma_diag": 0.32455587500459765,
+        "model": 28.06941367957103,
+        "residual": 0.46855755957103185,
+        "naive_pull": 1.4436884236478364
+      },
+      {
+        "z": 1.321,
+        "quantity": "DH_over_rs",
+        "obs": 14.17602155,
+        "sigma_diag": 0.22455135092000672,
+        "model": 14.059474101047385,
+        "residual": -0.11654744895261437,
+        "naive_pull": -0.5190235929336839
+      },
+      {
+        "z": 1.484,
+        "quantity": "DM_over_rs",
+        "obs": 30.51190063,
+        "sigma_diag": 0.763557644844186,
+        "model": 30.262518339419028,
+        "residual": -0.2493822905809715,
+        "naive_pull": -0.32660571505621067
+      },
+      {
+        "z": 1.484,
+        "quantity": "DH_over_rs",
+        "obs": 12.81699964,
+        "sigma_diag": 0.5180117691713191,
+        "model": 12.875090396513073,
+        "residual": 0.058090756513072606,
+        "naive_pull": 0.11214176968604854
+      },
+      {
+        "z": 2.33,
+        "quantity": "DH_over_rs",
+        "obs": 8.631545674846294,
+        "sigma_diag": 0.10106245296844917,
+        "model": 8.612571207414225,
+        "residual": -0.01897446743206821,
+        "naive_pull": -0.18774991972529972
+      },
+      {
+        "z": 2.33,
+        "quantity": "DM_over_rs",
+        "obs": 38.988973961958784,
+        "sigma_diag": 0.5316820280957407,
+        "model": 39.16601284615507,
+        "residual": 0.17703888419628555,
+        "naive_pull": 0.33297887617221833
+      }
+    ]
+  },
+  "legacy_comparison": {
+    "paper29_dead_schur_claims": {
+      "cc_chi2": 15.57,
+      "bao_chi2": 26.91,
+      "combined_chi2": 42.48
+    },
+    "replacement_branch": "io_iid"
+  }
+}
