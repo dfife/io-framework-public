@@ -66,17 +66,39 @@
     "omega_b_clust_projected": 0.040399636714857086
   },
   "rebuilt_iid_raw_rulers_Mpc": {
-    "omega_b_geom_projected": 126.14246120316851,
-    "omega_b_eff_projected": 118.1453440592955,
-    "omega_b_clust_projected": 130.99467997791825
+    "omega_b_geom_projected": {
+      "z_drag_EH98": 1063.7051142788084,
+      "r_d_Mpc": 119.35671697962852
+    },
+    "omega_b_eff_projected": {
+      "z_drag_EH98": 1082.1166528535869,
+      "r_d_Mpc": 111.58630122453062
+    },
+    "omega_b_clust_projected": {
+      "z_drag_EH98": 1052.2672001890098,
+      "r_d_Mpc": 124.09725463682976
+    }
   },
   "legacy_transplanted_small_slots": {
     "omega_b_geom_small_carried": 0.020995719061702847,
     "omega_b_clust_small_carried": 0.017053042566348754
   },
   "legacy_transplanted_raw_rulers_Mpc": {
-    "omega_b_geom_small_carried": 144.15060015039327,
-    "omega_b_clust_small_carried": 147.63986853811437
+    "omega_b_geom_small_carried": {
+      "z_drag_EH98": 1018.8003345603472,
+      "r_d_Mpc": 137.13486395470997
+    },
+    "omega_b_clust_small_carried": {
+      "z_drag_EH98": 1008.8695649928742,
+      "r_d_Mpc": 140.66796607206828
+    }
+  },
+  "planck_drag_validation": {
+    "z_drag_EH98": 1020.7170041025374,
+    "r_d_Mpc": 150.60673061016593,
+    "published_rd_Mpc": 147.09,
+    "delta_vs_published_Mpc": 3.516730610165922,
+    "fractional_delta": 0.023908699504833247
   },
   "universal_ruler_cases": [
     {
@@ -86,28 +108,28 @@
     },
     {
       "label": "rebuilt_iid_geom_projected",
-      "rd_Mpc": 126.14246120316851,
-      "chi2": 3387.1691619039448
+      "rd_Mpc": 119.35671697962852,
+      "chi2": 6712.262979090998
     },
     {
       "label": "rebuilt_iid_eff_projected",
-      "rd_Mpc": 118.1453440592955,
-      "chi2": 7474.731411336498
+      "rd_Mpc": 111.58630122453062,
+      "chi2": 12701.075082308149
     },
     {
       "label": "rebuilt_iid_clust_projected",
-      "rd_Mpc": 130.99467997791825,
-      "chi2": 1831.0275236446082
+      "rd_Mpc": 124.09725463682976,
+      "chi2": 4234.313102398228
     },
     {
       "label": "legacy_transplanted_geom_small",
-      "rd_Mpc": 144.15060015039327,
-      "chi2": 65.37086343599168
+      "rd_Mpc": 137.13486395470997,
+      "chi2": 626.101617375417
     },
     {
       "label": "legacy_transplanted_clust_small",
-      "rd_Mpc": 147.63986853811437,
-      "chi2": 43.84168455502238
+      "rd_Mpc": 140.66796607206828,
+      "chi2": 248.9016703573142
     },
     {
       "label": "best_universal_effective_rd",
@@ -130,9 +152,9 @@
     },
     {
       "label": "legacy_small_clustering_galaxy_plus_lya_raw_baseline",
-      "rd_gal_Mpc": 147.63986853811437,
+      "rd_gal_Mpc": 140.66796607206828,
       "rd_lya_Mpc": 143.3,
-      "chi2": 20.47237436302415
+      "chi2": 243.94632373973394
     }
   ],
   "combined_summary": {

@@ -7,7 +7,6 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 import numpy as np
-from classy import Class
 from scipy.integrate import quad
 from scipy.optimize import minimize, minimize_scalar
 
@@ -25,6 +24,9 @@ C_SI = 299792458.0
 M_U_KG = 4.50e53
 R_U_M = 4.40e26
 GAMMA_BI = 0.2375
+TCMB_REF = 2.7255
+OMEGA_GAMMA_H2_REF = 2.469e-5
+NEFF_REF = 3.044
 
 
 @dataclass(frozen=True)
@@ -217,39 +219,43 @@ def current_iid_baryon_slots(branch: Branch) -> dict[str, float]:
     }
 
 
-def class_rs_drag(branch: Branch, omega_b: float) -> float:
+def omega_gamma_h2(*, T_cmb: float = TCMB_REF) -> float:
+    return OMEGA_GAMMA_H2_REF * (T_cmb / TCMB_REF) ** 4
+
+
+def z_drag_eisenstein_hu(omega_m_h2: float, omega_b_h2: float) -> float:
+    b1 = 0.313 * omega_m_h2 ** (-0.419) * (1.0 + 0.607 * omega_m_h2 ** 0.674)
+    b2 = 0.238 * omega_m_h2 ** 0.223
+    return (
+        1291.0
+        * omega_m_h2 ** 0.251
+        / (1.0 + 0.659 * omega_m_h2 ** 0.828)
+        * (1.0 + b1 * omega_b_h2 ** b2)
+    )
+
+
+def independent_drag_ruler(branch: Branch, omega_b: float) -> dict[str, float]:
     h = branch.H0 / 100.0
     omega_m = branch.Omega_m * h * h
-    omega_nu = 0.06 / 93.14
-    omega_cdm = omega_m - omega_b - omega_nu
-    if omega_cdm <= 0.0:
-        raise ValueError(f"omega_cdm became non-positive for omega_b={omega_b}")
-    cosmo = Class()
-    cosmo.set(
-        {
-            "output": "mPk",
-            "P_k_max_h/Mpc": 1.2,
-            "z_max_pk": 1.0,
-            "h": h,
-            "omega_b": float(omega_b),
-            "omega_cdm": float(omega_cdm),
-            "Omega_k": branch.Omega_k,
-            "A_s": 2.1e-9,
-            "n_s": 0.9649,
-            "tau_reio": 0.0544,
-            "T_cmb": 2.7253,
-            "N_ur": 3.044 - 1.0132,
-            "N_ncdm": 1,
-            "m_ncdm": 0.06,
-            "YHe": 0.2477,
-        }
+    omega_gamma = omega_gamma_h2()
+    z_drag = z_drag_eisenstein_hu(omega_m, omega_b)
+    r_const = 3.0 * omega_b / (4.0 * omega_gamma)
+
+    def sound_speed_factor(z: float) -> float:
+        return math.sqrt(3.0 * (1.0 + r_const / (1.0 + z)))
+
+    value, _ = quad(
+        lambda z: (C_KM_S / (branch.H0 * e_z(z, branch))) / sound_speed_factor(z),
+        z_drag,
+        1.0e7,
+        epsabs=1.0e-10,
+        epsrel=1.0e-10,
+        limit=1200,
     )
-    cosmo.compute()
-    try:
-        return float(cosmo.rs_drag())
-    finally:
-        cosmo.struct_cleanup()
-        cosmo.empty()
+    return {
+        "z_drag_EH98": z_drag,
+        "r_d_Mpc": value,
+    }
 
 
 def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
@@ -319,9 +325,9 @@ def main() -> None:
 
     rebuilt_slots = current_iid_baryon_slots(io_iid)
     rebuilt_rulers = {
-        "omega_b_geom_projected": class_rs_drag(io_iid, rebuilt_slots["omega_b_geom_projected"]),
-        "omega_b_eff_projected": class_rs_drag(io_iid, rebuilt_slots["omega_b_eff_projected"]),
-        "omega_b_clust_projected": class_rs_drag(io_iid, rebuilt_slots["omega_b_clust_projected"]),
+        "omega_b_geom_projected": independent_drag_ruler(io_iid, rebuilt_slots["omega_b_geom_projected"]),
+        "omega_b_eff_projected": independent_drag_ruler(io_iid, rebuilt_slots["omega_b_eff_projected"]),
+        "omega_b_clust_projected": independent_drag_ruler(io_iid, rebuilt_slots["omega_b_clust_projected"]),
     }
 
     legacy_transplanted_small_slots = {
@@ -329,17 +335,35 @@ def main() -> None:
         "omega_b_clust_small_carried": 0.017053042566348754,
     }
     legacy_rulers = {
-        key: class_rs_drag(io_iid, val) for key, val in legacy_transplanted_small_slots.items()
+        key: independent_drag_ruler(io_iid, val) for key, val in legacy_transplanted_small_slots.items()
     }
+
+    planck_drag_validation_branch = Branch(
+        label="Planck validation branch",
+        H0=67.36,
+        Omega_m=0.3151917267285085,
+        Omega_k=0.0,
+        Omega_r=9.199758159405445e-05,
+        Omega_lambda_display=0.6849082742622208,
+        Omega_lambda_eval=0.6849082742622208,
+    )
+    planck_drag_validation = independent_drag_ruler(planck_drag_validation_branch, 0.02237)
+    planck_drag_validation["published_rd_Mpc"] = 147.09
+    planck_drag_validation["delta_vs_published_Mpc"] = (
+        planck_drag_validation["r_d_Mpc"] - planck_drag_validation["published_rd_Mpc"]
+    )
+    planck_drag_validation["fractional_delta"] = (
+        planck_drag_validation["delta_vs_published_Mpc"] / planck_drag_validation["published_rd_Mpc"]
+    )
 
     universal_ruler_cases = []
     for label, rd in [
         ("baseline_carried_universal_rd", baseline_rd),
-        ("rebuilt_iid_geom_projected", rebuilt_rulers["omega_b_geom_projected"]),
-        ("rebuilt_iid_eff_projected", rebuilt_rulers["omega_b_eff_projected"]),
-        ("rebuilt_iid_clust_projected", rebuilt_rulers["omega_b_clust_projected"]),
-        ("legacy_transplanted_geom_small", legacy_rulers["omega_b_geom_small_carried"]),
-        ("legacy_transplanted_clust_small", legacy_rulers["omega_b_clust_small_carried"]),
+        ("rebuilt_iid_geom_projected", rebuilt_rulers["omega_b_geom_projected"]["r_d_Mpc"]),
+        ("rebuilt_iid_eff_projected", rebuilt_rulers["omega_b_eff_projected"]["r_d_Mpc"]),
+        ("rebuilt_iid_clust_projected", rebuilt_rulers["omega_b_clust_projected"]["r_d_Mpc"]),
+        ("legacy_transplanted_geom_small", legacy_rulers["omega_b_geom_small_carried"]["r_d_Mpc"]),
+        ("legacy_transplanted_clust_small", legacy_rulers["omega_b_clust_small_carried"]["r_d_Mpc"]),
         ("best_universal_effective_rd", universal_best["best_universal_rd_Mpc"]),
     ]:
         universal_ruler_cases.append(
@@ -365,13 +389,13 @@ def main() -> None:
         },
         {
             "label": "legacy_small_clustering_galaxy_plus_lya_raw_baseline",
-            "rd_gal_Mpc": legacy_rulers["omega_b_clust_small_carried"],
+            "rd_gal_Mpc": legacy_rulers["omega_b_clust_small_carried"]["r_d_Mpc"],
             "rd_lya_Mpc": baseline_rd,
             "chi2": bao_chi2(
                 io_iid,
                 rows,
                 covariance,
-                rd_gal=legacy_rulers["omega_b_clust_small_carried"],
+                rd_gal=legacy_rulers["omega_b_clust_small_carried"]["r_d_Mpc"],
                 rd_lya=baseline_rd,
             ),
         },
@@ -409,6 +433,7 @@ def main() -> None:
         "rebuilt_iid_raw_rulers_Mpc": rebuilt_rulers,
         "legacy_transplanted_small_slots": legacy_transplanted_small_slots,
         "legacy_transplanted_raw_rulers_Mpc": legacy_rulers,
+        "planck_drag_validation": planck_drag_validation,
         "universal_ruler_cases": universal_ruler_cases,
         "conditional_block_repairs": conditional_block_repairs,
         "combined_summary": combined_summary,
@@ -429,13 +454,14 @@ def main() -> None:
         "- `derived`: with the user's carried universal ruler `r_d = 143.3 Mpc`, the failure is almost entirely the galaxy/quasar block, not Lyα.",
         "- `verified`: a blockwise effective-ruler repair can reduce BAO χ² from `94.36149688498531` to "
         f"`{block_best['chi2']}`.",
-        "- `derived`: this repair is not theorem-grade on the current clean stack. A first-principles rebuild of the i.i.d. raw rulers from the rebuilt slot formulas gives `126–131 Mpc`, not `143–147 Mpc`.",
+        "- `derived`: this repair is not theorem-grade on the current clean stack. An independent drag-ruler rebuild from an explicit drag-redshift fit plus sound-horizon integral gives raw i.i.d. rulers far below the `143–147 Mpc` range required by BAO.",
         "",
         "## Inputs",
         "",
         f"- IO i.i.d. branch: `H0 = {io_iid.H0}`, `Omega_m = {io_iid.Omega_m}`, `Omega_k = {io_iid.Omega_k}`, `Omega_r = {io_iid.Omega_r}`, `Omega_lambda_eval = {io_iid.Omega_lambda_eval}`",
         f"- Planck reference BAO χ²: `{planck_chi2}`",
         f"- baseline carried ruler: `r_d = {baseline_rd} Mpc`",
+        "- independent raw-ruler method: Eisenstein-Hu `z_drag` fit plus direct `r_d = ∫ c_s(z)/H(z) dz` evaluation on the fixed background",
         "",
         "## Baseline BAO failure split",
         "",
@@ -470,6 +496,11 @@ def main() -> None:
             f"  - `omega_b,eff(projected) = {rebuilt_slots['omega_b_eff_projected']}`",
             f"  - `omega_b,clust(projected) = {rebuilt_slots['omega_b_clust_projected']}`",
             "",
+            "### Method self-check",
+            "",
+            f"- Planck validation branch with `omega_b = 0.02237` gives `z_drag = {planck_drag_validation['z_drag_EH98']}`, `r_d = {planck_drag_validation['r_d_Mpc']} Mpc`",
+            f"- compared to published Planck `r_d = {planck_drag_validation['published_rd_Mpc']} Mpc`, the independent approximation shifts by `Δr_d = {planck_drag_validation['delta_vs_published_Mpc']} Mpc` (`{planck_drag_validation['fractional_delta']}` fractional)",
+            "",
             "| raw ruler case | `r_d` [Mpc] | BAO χ² |",
             "|---|---:|---:|",
         ]
@@ -480,7 +511,7 @@ def main() -> None:
     lines.extend(
         [
             "",
-            "The crucial point is that the clean rebuilt i.i.d. raw rulers (`126.142...`, `118.145...`, `130.994...`) make BAO catastrophically worse. So the carried `143.3 Mpc` was already a soft Schur-era import, not a clean i.i.d. theorem output.",
+            "The crucial point is that even the independent rebuilt i.i.d. raw rulers lie far below the BAO-required range. The projected-slot rulers are approximately `119.357`, `111.586`, and `124.097 Mpc`; even the small carried baryon slots only give approximately `137.135` and `140.685 Mpc`. So the carried `143.3 Mpc` was already a soft Schur-era import, not a clean i.i.d. theorem output.",
             "",
             "## Effective-ruler scans",
             "",
@@ -513,7 +544,7 @@ def main() -> None:
             "- `derived`: the source of the published BAO failure is the universal-ruler assumption on a block-mixed BAO observable, together with a carried Schur-era ruler value (`143.3 Mpc`) that is not the clean i.i.d. raw output.",
             "- `verified`: if one allows block-specific effective readout rulers, the BAO χ² can be cut from `94.36149688498531` to "
             f"`{block_best['chi2']}` and the combined CC+BAO χ² to `{combined_summary['conditional_repaired_combined_chi2']}`.",
-            "- `derived`: this is not a theorem-grade closure. Under the current clean Papers 9–28 stack, the first-principles i.i.d. raw ruler rebuild lands at `126–131 Mpc`, so the needed `142–147 Mpc` effective rulers require an additional BAO readout theorem or an explicit observational selection.",
+            "- `derived`: this is not a theorem-grade closure. Under the current clean Papers 9–28 stack, the independent raw ruler rebuild lands at `111–124 Mpc` for the projected slots, and only `137–141 Mpc` even for the small carried baryon slots, so the needed `142–147 Mpc` effective rulers require an additional BAO readout theorem or an explicit observational selection.",
             "- `headline resolution`: a theorem-grade BAO fix is impossible under the current stack. The strongest surviving repair is conditional and blockwise, not derived.",
             "",
             "## Files",
