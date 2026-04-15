@@ -1,0 +1,54 @@
+{
+  "bundle": "calculator_phase5_provenance_status_surface",
+  "date": "2026-04-15",
+  "source_root": "/opt/cosmology-lab/calculator",
+  "description": "Curated public release of the calculator provenance/status-label update: theorem dictionary nodes, prerendered theorem-surface renderer, Phase 5 audit, and scoped closed-scalar pipeline memo.",
+  "artifacts": [
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/provenance.py",
+      "destination": "releases/calculator_phase5_provenance_status_surface/src/aio_calculator/provenance.py",
+      "kind": "source",
+      "status": "derived / scoped and conditional / scoped provenance graph"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/static_render.py",
+      "destination": "releases/calculator_phase5_provenance_status_surface/src/aio_calculator/static_render.py",
+      "kind": "source",
+      "status": "verified public prerender surface"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_provenance.py",
+      "destination": "releases/calculator_phase5_provenance_status_surface/tests/test_provenance.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_public_site_bundle.py",
+      "destination": "releases/calculator_phase5_provenance_status_surface/tests/test_public_site_bundle.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase5/calculator_phase5_provenance_status_audit.md",
+      "destination": "reports/calculator_phase5/calculator_phase5_provenance_status_audit.md",
+      "kind": "report",
+      "status": "verified audit"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase5/calculator_phase5_scoped_scalar_pipeline_theorem_memo.md",
+      "destination": "reports/calculator_phase5/calculator_phase5_scoped_scalar_pipeline_theorem_memo.md",
+      "kind": "report",
+      "status": "conditional / scoped theorem memo"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/releases/calculator_phase5_provenance_status_surface/README.md",
+      "destination": "releases/calculator_phase5_provenance_status_surface/README.md",
+      "kind": "release_note",
+      "status": "verified"
+    }
+  ],
+  "website": {
+    "calculator": "https://dfife.github.io/calculator.html",
+    "theorem_dictionary": "https://dfife.github.io/calculator-theorems.html"
+  }
+}
