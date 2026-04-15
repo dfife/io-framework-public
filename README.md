@@ -64,10 +64,17 @@ The current perturbation-foundation release is:
 - audit memo:
   `reports/calculator_phase3/calculator_phase3_foundation_audit.md`
 
+The current source/readout-foundation release is:
+
+- `releases/calculator_phase4_source_readout_foundation/`
+- audit memo:
+  `reports/calculator_phase4/calculator_phase4_source_readout_foundation_audit.md`
+
 The manifest is in:
 
 - `metadata/manifests/paper31_practical_bundle.json`
 - `metadata/manifests/calculator_phase3_foundation_bundle.json`
+- `metadata/manifests/calculator_phase4_source_readout_foundation_bundle.json`
 
 ## Publishing Workflow
 

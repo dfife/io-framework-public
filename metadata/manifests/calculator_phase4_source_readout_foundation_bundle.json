@@ -1,0 +1,98 @@
+{
+  "bundle": "calculator_phase4_source_readout_foundation",
+  "date": "2026-04-14",
+  "source_root": "/opt/cosmology-lab/calculator",
+  "description": "Curated public release of the theorem-grade Phase 4 source/readout slice from the live calculator: modular-DtN source block, exact closed-S3 shell-power definitions, closed LOS transfer carriers, readout functionals, and their verification tests.",
+  "artifacts": [
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/releases/calculator_phase4_source_readout_foundation/src/aio_calculator/__init__.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/__init__.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/constants.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/constants.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/s3_modes.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/s3_modes.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/recombination.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/recombination.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/model.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/model.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/source_block.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/source_block.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/closed_shell_power.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/closed_shell_power.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/los_transfer.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/los_transfer.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/readout_functionals.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/src/aio_calculator/readout_functionals.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_source_block.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/tests/test_source_block.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_closed_shell_power.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/tests/test_closed_shell_power.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_los_transfer.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/tests/test_los_transfer.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_readout_functionals.py",
+      "destination": "releases/calculator_phase4_source_readout_foundation/tests/test_readout_functionals.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase4/calculator_phase4_source_readout_foundation_audit.md",
+      "destination": "reports/calculator_phase4/calculator_phase4_source_readout_foundation_audit.md",
+      "kind": "report",
+      "status": "derived / scoped plus verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/releases/calculator_phase4_source_readout_foundation/README.md",
+      "destination": "releases/calculator_phase4_source_readout_foundation/README.md",
+      "kind": "release_note",
+      "status": "verified"
+    }
+  ]
+}

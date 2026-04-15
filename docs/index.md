@@ -15,6 +15,7 @@ Current public focus:
 
 - Paper 31 practical calculator and audit bundles
 - calculator Phase 3 perturbation-foundation release slice
+- calculator Phase 4 source/readout-foundation release slice
 
 See also:
 
