@@ -1,0 +1,96 @@
+{
+  "bundle": "calculator_phase6_typed_r_equal_rate_closure",
+  "date": "2026-04-15",
+  "source_root": "/opt/cosmology-lab/calculator",
+  "description": "Curated public release of the equal-rate scoped typed-R closure: theorem dictionary wording update, typed-R hierarchy source, typed Thomson-history realization source, scalar acoustic generator source, and the complete theorem-report chain.",
+  "artifacts": [
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/provenance.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/src/aio_calculator/provenance.py",
+      "kind": "source",
+      "status": "derived / scoped theorem dictionary"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/typed_r_operator.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/src/aio_calculator/typed_r_operator.py",
+      "kind": "source",
+      "status": "derived / scoped as maps"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/thomson_history_contract.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/src/aio_calculator/thomson_history_contract.py",
+      "kind": "source",
+      "status": "derived / scoped as maps"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/scalar_acoustic_operator.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/src/aio_calculator/scalar_acoustic_operator.py",
+      "kind": "source",
+      "status": "derived / scoped as maps"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_provenance.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/tests/test_provenance.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_typed_r_operator.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/tests/test_typed_r_operator.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_thomson_history_contract.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/tests/test_thomson_history_contract.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_scalar_acoustic_operator.py",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/tests/test_scalar_acoustic_operator.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase6/calculator_phase6_typed_r_equal_rate_closure_audit.md",
+      "destination": "reports/calculator_phase6/calculator_phase6_typed_r_equal_rate_closure_audit.md",
+      "kind": "report",
+      "status": "verified audit"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase6/calculator_phase6_typed_r_operator_theorem.md",
+      "destination": "reports/calculator_phase6/calculator_phase6_typed_r_operator_theorem.md",
+      "kind": "report",
+      "status": "derived / scoped as maps"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase6/calculator_phase6_typed_r_site_uniqueness_theorem.md",
+      "destination": "reports/calculator_phase6/calculator_phase6_typed_r_site_uniqueness_theorem.md",
+      "kind": "report",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase6/calculator_phase6_typed_thomson_split_history_audit.md",
+      "destination": "reports/calculator_phase6/calculator_phase6_typed_thomson_split_history_audit.md",
+      "kind": "report",
+      "status": "verified audit"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase6/calculator_phase6_typed_r_thomson_complete_chain_memo.md",
+      "destination": "reports/calculator_phase6/calculator_phase6_typed_r_thomson_complete_chain_memo.md",
+      "kind": "report",
+      "status": "derived / scoped theorem memo"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/releases/calculator_phase6_typed_r_equal_rate_closure/README.md",
+      "destination": "releases/calculator_phase6_typed_r_equal_rate_closure/README.md",
+      "kind": "release_note",
+      "status": "verified"
+    }
+  ],
+  "website": {
+    "calculator": "https://dfife.github.io/calculator.html",
+    "theorem_dictionary": "https://dfife.github.io/calculator-theorems.html"
+  }
+}
