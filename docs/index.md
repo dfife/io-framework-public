@@ -14,9 +14,9 @@ It is intended to hold:
 Current public focus:
 
 - Paper 31 practical calculator and audit bundles
+- calculator Phase 3 perturbation-foundation release slice
 
 See also:
 
 - `docs/paper31.md`
 - `docs/calculators.md`
-

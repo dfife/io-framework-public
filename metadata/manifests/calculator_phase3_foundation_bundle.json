@@ -1,0 +1,86 @@
+{
+  "bundle": "calculator_phase3_foundation",
+  "date": "2026-04-14",
+  "source_root": "/opt/cosmology-lab/calculator",
+  "description": "Curated public release of the theorem-grade Phase 3 perturbation-foundation slice from the live calculator: closed S3 mode ladders, typed perturbation grammar, scalar hierarchy carrier, coupled Thomson-history contract, and their verification tests.",
+  "artifacts": [
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/constants.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/constants.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/model.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/model.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/recombination.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/recombination.py",
+      "kind": "source",
+      "status": "derived / scoped dependency"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/s3_modes.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/s3_modes.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/perturbation_types.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/perturbation_types.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/scalar_hierarchy.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/scalar_hierarchy.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/thomson_history_contract.py",
+      "destination": "releases/calculator_phase3_foundation/src/aio_calculator/thomson_history_contract.py",
+      "kind": "source",
+      "status": "derived / scoped"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_s3_modes.py",
+      "destination": "releases/calculator_phase3_foundation/tests/test_s3_modes.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_perturbation_types.py",
+      "destination": "releases/calculator_phase3_foundation/tests/test_perturbation_types.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_scalar_hierarchy.py",
+      "destination": "releases/calculator_phase3_foundation/tests/test_scalar_hierarchy.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_thomson_history_contract.py",
+      "destination": "releases/calculator_phase3_foundation/tests/test_thomson_history_contract.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase3/calculator_phase3_foundation_audit.md",
+      "destination": "reports/calculator_phase3/calculator_phase3_foundation_audit.md",
+      "kind": "report",
+      "status": "derived / scoped plus verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/releases/calculator_phase3_foundation/README.md",
+      "destination": "releases/calculator_phase3_foundation/README.md",
+      "kind": "release_note",
+      "status": "verified"
+    }
+  ]
+}
