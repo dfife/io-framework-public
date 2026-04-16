@@ -1,0 +1,78 @@
+{
+  "bundle": "calculator_phase7_tt_first_peak_support",
+  "date": "2026-04-16",
+  "source_root": "/opt/cosmology-lab/calculator",
+  "description": "Curated public release of the first IO-native CMB TT spectrum at the approved scoped level: provenance wording update, TT output-card surface, canonical TT driver source, TT theorem memo/report, and canonical results JSON.",
+  "artifacts": [
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/provenance.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/src/aio_calculator/provenance.py",
+      "kind": "source",
+      "status": "conditional/scoped/verified TT first-peak support surface"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/static_render.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/src/aio_calculator/static_render.py",
+      "kind": "source",
+      "status": "verified public theorem/card surface"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/__main__.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/src/aio_calculator/__main__.py",
+      "kind": "source",
+      "status": "verified CLI surface"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/src/aio_calculator/scalar_tt_driver.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/src/aio_calculator/scalar_tt_driver.py",
+      "kind": "source",
+      "status": "conditional / scoped executable TT driver"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_provenance.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/tests/test_provenance.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_public_site_bundle.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/tests/test_public_site_bundle.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/calculator/tests/test_scalar_tt_driver.py",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/tests/test_scalar_tt_driver.py",
+      "kind": "test",
+      "status": "verified"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase7/calculator_phase7_tt_first_peak_support_theorem.md",
+      "destination": "reports/calculator_phase7/calculator_phase7_tt_first_peak_support_theorem.md",
+      "kind": "report",
+      "status": "verified / scoped theorem report"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/reports/calculator_phase7/calculator_phase7_first_peak_support_theorem_memo.md",
+      "destination": "reports/calculator_phase7/calculator_phase7_first_peak_support_theorem_memo.md",
+      "kind": "report",
+      "status": "conditional/scoped/verified theorem memo"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/data/calculator_phase7/calculator_phase7_tt_first_peak_support_results.json",
+      "destination": "data/calculator_phase7/calculator_phase7_tt_first_peak_support_results.json",
+      "kind": "data",
+      "status": "verified canonical carrier results"
+    },
+    {
+      "source": "/opt/cosmology-lab/tmp/io-framework-public/releases/calculator_phase7_tt_first_peak_support/README.md",
+      "destination": "releases/calculator_phase7_tt_first_peak_support/README.md",
+      "kind": "release_note",
+      "status": "verified"
+    }
+  ],
+  "website": {
+    "calculator": "https://dfife.github.io/calculator.html",
+    "theorem_dictionary": "https://dfife.github.io/calculator-theorems.html"
+  }
+}
