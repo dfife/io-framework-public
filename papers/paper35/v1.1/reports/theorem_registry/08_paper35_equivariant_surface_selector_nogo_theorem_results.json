@@ -1,0 +1,39 @@
+{
+  "mission": "Determine whether the future physical-surface selector can exist as a current-stack equivariant observable on the neutral puncture sector, or whether any nontrivial visible/compensator split must break puncture symmetry explicitly.",
+  "theorem_1_equivariant_selector_weights_are_constant": {
+    "status": "derived / scoped",
+    "statement": "Represent a candidate visible-sector selector on an n-puncture neutral tuple by slot weights w_i in {0,1}, so q_vis(a) = sum_i w_i a_i mod k. If the selector is equivariant under the full puncture permutation action, then sigma.w = w for every sigma in Sym_n. Hence all w_i are equal. Idempotence then forces only the trivial choices w = 0 or w = (1,...,1).",
+    "formulas": {
+      "neutral_tuple": "a = (a_1,...,a_n),   sum_i a_i = 0 mod k",
+      "visible_charge": "q_vis(a) = sum_i w_i a_i mod k",
+      "selector_weights": "w_i in {0,1}",
+      "equivariance": "sigma.w = w   for all sigma in Sym_n",
+      "conclusion": "w_i = c for all i,   c in {0,1}"
+    }
+  },
+  "theorem_2_nontrivial_equivariant_visible_charge_is_impossible": {
+    "status": "derived / strongest current-stack surface no-go",
+    "statement": "For the only equivariant idempotent weights w = c(1,...,1), the induced visible charge is q_vis(a) = c sum_i a_i = 0 mod k on every physical neutral tuple. Therefore no nontrivial visible/compensator split with q != 0 can be realized by a current-stack equivariant selector.",
+    "formulas": {
+      "equivariant_weights": "w = c(1,...,1),   c in {0,1}",
+      "visible_charge_reduction": "q_vis(a) = c sum_i a_i = 0 mod k",
+      "current_stack_selector": "no nontrivial equivariant selector exists"
+    }
+  },
+  "theorem_3_exact_future_surface_object": {
+    "status": "derived / sharpened future surface target",
+    "statement": "The remaining positive surface route is not an arbitrary projector P_vis. It is a symmetry-breaking selector B_sel together with a nonzero charge q in Z_k. Any positive future theorem must therefore add a genuine symmetry-breaking surface datum or state; it cannot arise from the current tracial puncture-symmetric sector alone.",
+    "formulas": {
+      "future_exact_object": "(B_sel, q),   q in Z_k \\ {0}",
+      "symmetry_breaking": "[B_sel, Sym_n] != 0",
+      "current_value": "B_sel,current = none,   q_current = 0"
+    },
+    "imports": {
+      "previous_surface_boundary": "The future compensator route is now reduced from a geometric marked defect to one exact physical-surface datum: a sector selector P_vis together with a nonzero charge q in Z_k. On the current stack that selector is absent."
+    }
+  },
+  "final_boundary": {
+    "status": "derived / exhausted equivariant surface-selector boundary",
+    "safe_statement": "No nontrivial visible-sector selector exists as a current-stack equivariant observable on the neutral puncture sector. The only surviving positive surface route is an explicitly symmetry-breaking selector B_sel with nonzero q."
+  }
+}

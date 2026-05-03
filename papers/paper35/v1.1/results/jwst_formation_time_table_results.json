@@ -1,0 +1,117 @@
+{
+  "claim_boundary": "DERIVED/SCOPED timing relief, not full galaxy-formation closure",
+  "grid": [
+    {
+      "delta_myr": 225.00321151287173,
+      "formation_window_io_myr_after_100myr": 595.154958248667,
+      "formation_window_lcdm_myr_after_100myr": 370.1517467357952,
+      "ratio": 1.4785757217218503,
+      "t_io_gyr": 0.6951549582486669,
+      "t_lcdm_gyr": 0.4701517467357952,
+      "z": 10.0
+    },
+    {
+      "delta_myr": 173.09711200245138,
+      "formation_window_io_myr_after_100myr": 438.7920793394867,
+      "formation_window_lcdm_myr_after_100myr": 265.69496733703534,
+      "ratio": 1.4733374190597486,
+      "t_io_gyr": 0.5387920793394867,
+      "t_lcdm_gyr": 0.3656949673370353,
+      "z": 12.0
+    },
+    {
+      "delta_myr": 138.3359366297421,
+      "formation_window_io_myr_after_100myr": 333.17537062148216,
+      "formation_window_lcdm_myr_after_100myr": 194.83943399174012,
+      "ratio": 1.4691907549707803,
+      "t_io_gyr": 0.4331753706214822,
+      "t_lcdm_gyr": 0.2948394339917401,
+      "z": 14.0
+    },
+    {
+      "delta_myr": 113.73560586777465,
+      "formation_window_io_myr_after_100myr": 257.9267698648563,
+      "formation_window_lcdm_myr_after_100myr": 144.19116399708167,
+      "ratio": 1.4657646247557667,
+      "t_io_gyr": 0.35792676986485633,
+      "t_lcdm_gyr": 0.24419116399708168,
+      "z": 16.0
+    }
+  ],
+  "objects": [
+    {
+      "build_time_at_published_sfr_myr": 20.953008976499838,
+      "delta_myr": 135.78694162868533,
+      "io_clock_only_classification": "not impossible from clock time alone",
+      "lcdm_clock_only_classification": "not impossible from clock time alone",
+      "log10_mstar": 8.6,
+      "name": "JADES-GS-z14-0",
+      "sfr_msun_per_year": 19.0,
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-07860-9",
+        "https://arxiv.org/abs/2409.20549"
+      ],
+      "t_io_gyr": 0.4253988686141134,
+      "t_lcdm_gyr": 0.2896119269854281,
+      "window_io_myr_after_100myr": 325.3988686141134,
+      "window_lcdm_myr_after_100myr": 189.61192698542808,
+      "z": 14.1793
+    },
+    {
+      "build_time_at_published_sfr_myr": 63.09573444801929,
+      "delta_myr": 150.73118142866863,
+      "io_clock_only_classification": "not impossible from clock time alone",
+      "lcdm_clock_only_classification": "not impossible from clock time alone",
+      "log10_mstar": 7.8,
+      "name": "JADES-GS-z13-0",
+      "sfr_msun_per_year": 1.0,
+      "sources": [
+        "https://www.nature.com/articles/s41550-023-01918-w",
+        "https://academic.oup.com/mnras/article-abstract/526/1/1324/7243416"
+      ],
+      "t_io_gyr": 0.4709271624865945,
+      "t_lcdm_gyr": 0.32019598105792585,
+      "window_io_myr_after_100myr": 370.9271624865945,
+      "window_lcdm_myr_after_100myr": 220.19598105792585,
+      "z": 13.2
+    },
+    {
+      "build_time_at_published_sfr_myr": 41.666666666666664,
+      "delta_myr": 206.89229783179863,
+      "io_clock_only_classification": "not impossible from clock time alone",
+      "lcdm_clock_only_classification": "not impossible from clock time alone",
+      "log10_mstar": 9.0,
+      "name": "GN-z11",
+      "sfr_msun_per_year": 24.0,
+      "sources": [
+        "https://www.aanda.org/articles/aa/full_html/2023/09/aa46159-23/aa46159-23.html",
+        "https://www.aanda.org/articles/aa/full_html/2025/03/aa51731-24/aa51731-24.html"
+      ],
+      "t_io_gyr": 0.6407665302546823,
+      "t_lcdm_gyr": 0.4338742324228837,
+      "window_io_myr_after_100myr": 540.7665302546824,
+      "window_lcdm_myr_after_100myr": 333.8742324228837,
+      "z": 10.6034
+    },
+    {
+      "build_time_at_published_sfr_myr": 150.58465048420857,
+      "delta_myr": 185.47368089237787,
+      "io_clock_only_classification": "not impossible from clock time alone",
+      "lcdm_clock_only_classification": "not impossible from clock time alone",
+      "log10_mstar": 8.5,
+      "name": "Maisie's Galaxy",
+      "sfr_msun_per_year": 2.1,
+      "sources": [
+        "https://arxiv.org/abs/2301.09482",
+        "https://academic.oup.com/mnras/article-abstract/526/1/1324/7243416"
+      ],
+      "t_io_gyr": 0.5762138908368897,
+      "t_lcdm_gyr": 0.3907402099445118,
+      "window_io_myr_after_100myr": 476.2138908368897,
+      "window_lcdm_myr_after_100myr": 290.7402099445118,
+      "z": 11.44
+    }
+  ],
+  "script": "06_jwst_formation_time_table.py",
+  "status": "verified"
+}

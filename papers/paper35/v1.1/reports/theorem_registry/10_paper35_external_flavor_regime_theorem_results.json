@@ -1,0 +1,55 @@
+{
+  "mission": "Classify the standard leptogenesis flavor-regime structure implied by the exact external source region of the closed late-time IO eta target.",
+  "external_flavor_thresholds": {
+    "status": "conditional / standard external flavor class",
+    "thresholds_GeV": {
+      "unflavored_lower": 1000000000000.0,
+      "two_flavor_lower": 1000000000.0
+    },
+    "regimes": {
+      "three_flavor": "M1 < 1.0e+09 GeV",
+      "two_flavor": "1.0e+09 GeV <= M1 <= 1.0e+12 GeV",
+      "unflavored": "M1 > 1.0e+12 GeV"
+    }
+  },
+  "theorem_1_global_source_region_flavor_coverage": {
+    "status": "derived / exact external classification",
+    "M1_floor_absolute_GeV": 599125274.3890235,
+    "coverage": {
+      "three_flavor_intersection": [
+        599125274.3890235,
+        1000000000.0
+      ],
+      "two_flavor_intersection": [
+        1000000000.0,
+        1000000000000.0
+      ],
+      "unflavored_intersection": [
+        1000000000000.0,
+        null
+      ]
+    },
+    "statement": "The exact external source region derived from the closed late-time IO eta target intersects all three standard flavor regimes. Therefore the global source target does not fix the flavor regime."
+  },
+  "theorem_2_poplawski_slice_flavor_classification": {
+    "status": "derived / exact external slice classification",
+    "T_f_target_GeV": 22003938597477.8,
+    "slice_assumption": "identify the previously fixed Poplawski freeze-out target with M1",
+    "classified_regime": "unflavored",
+    "distance_above_tau_threshold": 22.003938597477802,
+    "statement": "On the slice M1 = T_f,target, the flavor selector closes externally to the unflavored regime."
+  },
+  "theorem_3_flavor_selector_boundary": {
+    "status": "derived / exact external boundary",
+    "statement": "The flavor-regime selector is a real remaining debt for the global source region, but not on the Poplawski target slice. Global uniqueness still fails because the eta target allows M1 values spanning all standard flavor regimes.",
+    "still_open": [
+      "a source theorem selecting M1 inside the global admissible region",
+      "a flavored CP-asymmetry theorem if the selected M1 lies below 1e12 GeV",
+      "a flavored washout / spectator theorem in the multi-flavor regimes"
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/abs/hep-ph/0601084",
+    "https://arxiv.org/abs/hep-ph/0502169"
+  ]
+}

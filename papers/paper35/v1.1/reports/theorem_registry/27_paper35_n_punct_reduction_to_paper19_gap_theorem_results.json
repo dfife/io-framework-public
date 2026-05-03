@@ -1,0 +1,20 @@
+{
+  "mission": "Identify whether the final unresolved Paper 35 integer n_punct is a genuinely new frontier or simply the old full puncture-resolved horizon-algebra gap in exact disguise.",
+  "theorem_1_where_n_punct_lives": {
+    "status": "derived / exact localization",
+    "statement": "The integer n_punct is not a reduced gauge-center datum. It is a puncture-resolved topological datum of the horizon line-bundle sector seen by the fermionic bridge. So it necessarily lives in the noncentral puncture-resolved horizon algebra, not in the already-closed reduced bridge class.",
+    "import": "n_punct = q_chi c1(L_punct)[S^2] \u2208 Z \\ {0}"
+  },
+  "theorem_2_paper19_equivalence": {
+    "status": "derived / exact gap identification",
+    "statement": "Deriving n_punct on the current IO program is equivalent in strength to deriving the full puncture-resolved horizon algebra plus the required Abelianization/spin^c lift. That is precisely the long-standing unresolved Paper 19 reduction/extension gap, not a new standalone Paper 35 theorem debt.",
+    "local_support": [
+      "/opt/cosmology-lab/results/paper19/paper19_item4_reduction_extension_resolution_report.txt",
+      "/opt/cosmology-lab/results/paper19/paper19_isolated_horizon_certification_report.txt"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / exhausted current-stack Paper 35 boundary",
+    "safe_statement": "No further theorem-grade Paper 35 progress remains on the current stack. The remaining integer n_punct is exactly the old full puncture-resolved horizon-algebra/Abelianization gap in Paper 19 form. Paper 35 is therefore closed as far as the present stack permits."
+  }
+}

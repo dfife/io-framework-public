@@ -1,0 +1,28 @@
+{
+  "claim_boundary": "DERIVED/SCOPED plus imported standard constants and mean-baryon-mass convention",
+  "formulae": {
+    "K_gauge": "ln(1 + gamma_BI^2)",
+    "T_obs": "T_IO x^K_gauge",
+    "eta": "rho_b(omega_b,geom) / (m_b n_gamma(T_obs))",
+    "f_b": "2 gamma_BI / x",
+    "n_gamma": "2 zeta(3) / pi^2 * (k_B T / (hbar c))^3"
+  },
+  "framework_values": {
+    "K_gauge": 0.05487281774291466,
+    "T_obs_K": 2.7253048490552736,
+    "f_b": 0.3127083362150814,
+    "gamma_BI": 0.2375,
+    "x": 1.518987327774
+  },
+  "headline": {
+    "eta10_late_mean_baryon_mass": 5.7487785151736945,
+    "eta_late_mean_baryon_mass": 5.748778515173695e-10,
+    "eta_late_proton_mass": 5.74179586430453e-10
+  },
+  "mass_convention": {
+    "Y_p_for_mean_mass": 0.2469867094,
+    "mean_baryon_mass_kg": 1.6705903034252064e-27
+  },
+  "script": "01_eta_derivation_chain.py",
+  "status": "verified"
+}

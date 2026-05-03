@@ -1,0 +1,50 @@
+{
+  "mission": "Sharpen the remaining Paper 35 baryogenesis debts by reducing the portal coefficient sector to its exact invariants and the source-abundance sector to its exact seed/transport bottleneck.",
+  "theorem_1_portal_invariant_reduction": {
+    "status": "derived / exact external+internal reduction",
+    "statement": "Inside the unique type-I portal class on the hierarchical N1 slice, the full Yukawa/Majorana matrices are not needed directly by the baryogenesis observable map. All source-side observables relevant to the late-time target reduce to the invariant data (M1, (Y^dagger Y)11, epsilon1). Equivalently, one may use (M1, m_tilde1, epsilon1) with m_tilde1 = v^2 (Y^dagger Y)11 / M1.",
+    "exact_invariants": [
+      "M1",
+      "(Y^dagger Y)11",
+      "epsilon1",
+      "equivalently m_tilde1 = v^2 (Y^dagger Y)11 / M1"
+    ],
+    "why_exact": [
+      "The tree-level decay width depends only on (Y^dagger Y)11 and M1.",
+      "The one-flavor CP asymmetry depends on Y,M only through epsilon1.",
+      "The exact late-time target reduction already fixed epsilon1 * kappa_f.",
+      "Casas-Ibarra nonuniqueness shows the remaining coefficient debt survives only through these invariants, not through a need to carry the full matrices explicitly in the observable map."
+    ],
+    "residual_nonuniqueness_real_dimension": 3
+  },
+  "theorem_2_neutral_seed_closure": {
+    "status": "derived / conditional / scoped reduction",
+    "statement": "On the admitted fermionic/CAR extension, the boundary seed side of the neutral collective carrier is already closed. The canonical beta_H-KMS quasi-free CAR state fixes the one-particle covariance, and by the standard quasi-free CAR/Wick property it fixes all even neutral composite correlators on A_neutral^(2). Therefore no independent boundary abundance parameter remains on the seed side.",
+    "imports": {
+      "boundary_seed_status": "derived / conditional / scoped",
+      "boundary_seed_statement": "On the new fermionic lowest-shell bridge quotient, the canonical boundary seed is the beta_H-KMS quasi-free CAR state.",
+      "transport_status": "derived / conditional / scoped",
+      "transport_formula": "U_rad(R2,R1) = P exp[-\u222b_(R1->R2) \u0393_spin]"
+    }
+  },
+  "theorem_3_source_abundance_residual_object": {
+    "status": "derived / exact residual reduction",
+    "statement": "Because the seed covariance is fixed and radial spin transport is geometrically fixed, the source-abundance debt is not an arbitrary boundary-history freedom. It reduces exactly to the support-side identification problem: a theorem mapping transported neutral even-CAR composite data to an effective singlet source abundance, together with any genuinely number-changing support interaction if such an interaction exists.",
+    "exact_remaining_source_objects": [
+      "C_N: collective identification / coarse-graining map from transported neutral even-CAR correlators to an effective singlet abundance",
+      "W_N: a number-changing support interaction, if the active source is not free-transported"
+    ],
+    "safe_boundary": "Without a theorem fixing C_N, and without a theorem killing or deriving W_N, the nonthermal source-abundance sector cannot be closed further."
+  },
+  "final_boundary": {
+    "status": "derived / sharpened exhausted Paper 35 boundary",
+    "safe_statement": "The Paper 35 baryogenesis frontier is now reduced as far as the current stack permits. The coefficient debt is exactly the invariant selector (M1, m_tilde1, epsilon1), and the source-abundance debt is exactly the support-side pair (C_N, W_N). No further theorem-grade reduction remains without new microphysics."
+  },
+  "sources": [
+    "https://arxiv.org/abs/0709.1061",
+    "https://arxiv.org/abs/2104.08248",
+    "https://cds.cern.ch/record/2772611/files/2106.05913.pdf",
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0202239"
+  ]
+}

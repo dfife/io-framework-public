@@ -1,0 +1,204 @@
+{
+  "paper": 35,
+  "manuscript": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper35_v1_0.docx",
+  "audit_type": "formal_kappa_style_field_redefinition_audit",
+  "date": "2026-05-03",
+  "executive_verdict": {
+    "hidden_continuous_fitted_parameter_found": false,
+    "numerical_recomputation_required": false,
+    "republication_recommended": true,
+    "primary_reason": "label and scope hygiene: Paper 35 v1.0 overstates several conditional or scoped surfaces, especially the baryogenesis theorem-surface status and dark-matter null forecast"
+  },
+  "registry_crosscheck": {
+    "source": "paper35_conditional_verified_audit_results.md",
+    "theorem_surfaces_total": 48,
+    "clean": 15,
+    "conditional_verified": 33,
+    "needs_review": 0,
+    "circular": 0
+  },
+  "results": [
+    {
+      "audit_target": "gamma_BI and zero-fitted-parameter claim",
+      "manuscript_claim": "gamma_BI = 0.2375 is the shared external LQG constant; Paper 35 uses zero continuously fitted cosmological parameters.",
+      "candidate_kappa_fields": ["gamma_BI as free scalar g"],
+      "verdict": "no-issue-found / imported external constant",
+      "evidence": "gamma_BI predates Paper 35 and moves many unrelated framework predictions simultaneously; no Paper 35-only adjustment was found.",
+      "recommendation": "No action beyond retaining the one-external-constant boundary."
+    },
+    {
+      "audit_target": "late_time_eta_route",
+      "manuscript_claim": "eta_late = 5.75e-10 from omega_b,geom + T_obs, DERIVED/SCOPED.",
+      "candidate_kappa_fields": ["omega_b_geom", "f_b = 2 gamma / x", "T_obs", "m_bar", "blackbody photon-number prefactor", "choice not to use Omega_b = f_b Omega_m_active"],
+      "verdict": "DERIVED/SCOPED plus imported standard constants",
+      "evidence": "paper35_eta_io_theorem_chain_report.md gives eta_IO,late = 5.741795864304530e-10 using proton mass and paper35_eta_io_gap_closure_report.md gives composition-corrected eta = 5.748778515173695e-10; dead projected-density route gives eta = 1.361668937436636e-09 and is explicitly killed.",
+      "recommendation": "Add explicit wording that the calculation also imports standard particle/thermodynamic constants and a mean-baryon-mass convention."
+    },
+    {
+      "audit_target": "BBN_temperature_assignment",
+      "manuscript_claim": "BBN nuclear reactions see T_IO, not T_obs.",
+      "candidate_kappa_fields": ["T_BBN = T_IO x^(lambda K_gauge)", "lambda"],
+      "verdict": "DERIVED/SCOPED",
+      "evidence": "paper35_eta_bbn_temperature_assignment_report.md closes the temperature gate by observable typing: BBN rates are local bulk microphysics, while GTTP x^K_gauge is observer-side optical readout.",
+      "recommendation": "No numerical action; preserve typed-observable language."
+    },
+    {
+      "audit_target": "eta_BBN_cross_typed_comparison",
+      "manuscript_claim": "eta_BBN = 6.151e-10 agrees with Planck eta to 0.8% as cross-typed consistency.",
+      "candidate_kappa_fields": ["raw identity eta_BBN = eta_CMB", "conversion factor x^(3 K_gauge)", "Planck comparison map"],
+      "verdict": "DERIVED/SCOPED for IO eta_BBN; verified cross-typed comparison",
+      "evidence": "eta_BBN = eta_obs x^(3 K_gauge), with x^(3 K_gauge) = 1.071240943860573; raw eta_BBN equals Planck eta is explicitly no-go.",
+      "recommendation": "No hidden parameter; do not present the 0.8% agreement as a same-observable confrontation."
+    },
+    {
+      "audit_target": "eta_anti_fit_argument",
+      "manuscript_claim": "gamma_BI was not tuned to eta.",
+      "candidate_kappa_fields": ["gamma_BI varied only for eta"],
+      "verdict": "no-issue-found",
+      "evidence": "A Paper 35-only variation of gamma_BI would break the shared-constant discipline and move many upstream predictions.",
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "Sakharov_structural_ingredients",
+      "manuscript_claim": "IO supplies departure from equilibrium and structural chirality, but not a complete baryogenesis mechanism.",
+      "candidate_kappa_fields": ["bounce density gate", "Pi_chi", "chirality/sign selector", "baryon-number transfer operator"],
+      "verdict": "mixed: DERIVED/SCOPED for departure from equilibrium; CONDITIONAL/CONSTRUCTED for CP ingredient; no full mechanism",
+      "evidence": "paper35_baryogenesis_from_chiral_boundary_report.md finds no theorem-grade baryon-number-violating operator and no internal chirality/sign selector.",
+      "recommendation": "Avoid wording that implies full Sakharov closure."
+    },
+    {
+      "audit_target": "chiral_source_era_route",
+      "manuscript_claim": "A conditional source-era route gives g_chi = K_gauge^4, T_f = K_gauge^4 M_Pl,reduced, and eta_chiral = 7.04 K_gauge^8 = 5.787e-10.",
+      "candidate_kappa_fields": ["K_gauge exponent 4", "K_gauge exponent 8", "factor 7.04", "Poplawski freeze-out map", "freeze-out dynamics", "baryon-separation operator", "chirality/sign selector"],
+      "verdict": "CONDITIONAL/CONSTRUCTED",
+      "evidence": "The route depends on a constructed freeze-out selector and external Poplawski map; current reports list freeze-out dynamics, baryon-separation operator, and chirality/sign selector as missing theorem objects.",
+      "recommendation": "Replace independent-derivation language with conditional constructed source-era diagnostic."
+    },
+    {
+      "audit_target": "leptogenesis_target_reduction",
+      "manuscript_claim": "The late-time eta target fixes epsilon1 kappa_f and Davidson-Ibarra floors.",
+      "candidate_kappa_fields": ["sphaleron conversion", "N1 equilibrium abundance", "Davidson-Ibarra coefficient", "M1 = T_f Poplawski slice", "kappa_f"],
+      "verdict": "DERIVED/CONDITIONAL on standard external leptogenesis class and Poplawski target slice",
+      "evidence": "paper35_external_leptogenesis_target_theorem_report.md explicitly surfaces ADMITTED_EXTERNAL_CLASS, ADMITTED_EXTERNAL_MAP, and ADMITTED_SLICE.",
+      "recommendation": "Surface external-class and slice conditionality wherever these numbers are quoted."
+    },
+    {
+      "audit_target": "source_manifold_uniqueness_nogo",
+      "manuscript_claim": "Casas-Ibarra source space remains positive-dimensional after imposing eta; residual dimension = 3 real.",
+      "candidate_kappa_fields": ["Casas-Ibarra class", "fixed M1", "fixed epsilon1", "washout initial condition"],
+      "verdict": "DERIVED/CONDITIONAL on Casas-Ibarra hierarchical type-I source class",
+      "evidence": "paper35_external_casas_ibarra_source_manifold_theorem_report.md proves non-uniqueness inside the admitted external class.",
+      "recommendation": "No numerical action; keep external-class label visible."
+    },
+    {
+      "audit_target": "portal_classification_and_local_thermal_nogo",
+      "manuscript_claim": "Visible transfer closes to Weinberg operator; compatible UV completion is type-I neutrino portal; naive local thermal implementation is dead.",
+      "candidate_kappa_fields": ["visible operator dimension", "mediator representation", "neutral singlet carrier", "support-crossing slice", "Gamma_D = H_support equality"],
+      "verdict": "DERIVED/CONDITIONAL on current carrier and support-crossing slice",
+      "evidence": "paper35_transfer_operator_class_theorem_report.md surfaces ADMITTED_CARRIER, ADMITTED_PORTAL_CLASS, and ADMITTED_SLICE.",
+      "recommendation": "Add conditional-visibility wording around unique/dead claims."
+    },
+    {
+      "audit_target": "single_operator_reduction_to_V_tr",
+      "manuscript_claim": "Remaining internal debt reduces to charged transfer interaction generator V_tr.",
+      "candidate_kappa_fields": ["Q_vis", "H0", "allowed transfer class", "coefficient/rate data"],
+      "verdict": "DERIVED/CONDITIONAL on admitted carrier and portal class",
+      "evidence": "Without V_tr, visible charge cannot be produced because d<Q_vis>/dt = i<[H0,Q_vis]> = 0; coefficient and rate theorem remain open.",
+      "recommendation": "Surface carrier/portal conditionality."
+    },
+    {
+      "audit_target": "Q5_factorization_and_zero",
+      "manuscript_claim": "Y_(B-L)^source = Q5 F(...); current-stack Q5 = 0 kills baryogenesis.",
+      "candidate_kappa_fields": ["factorization", "Q5", "current horizon carrier", "chirality seed", "spin-c residual class", "APS/inflow contribution"],
+      "verdict": "DERIVED/CONDITIONAL on Paper 32 extended fermionic/chiral carrier and current-stack no-extra-twist conditions",
+      "evidence": "paper35_q5_topological_spectral_nogo_theorem_report.md proves zero index, zero eta-invariant, no chirality selector, no puncture twist, and no APS term on the admitted current carrier.",
+      "recommendation": "Qualify Q5 = 0 as current-stack/admitted-carrier rigidity."
+    },
+    {
+      "audit_target": "topological_obstruction_route_kills",
+      "manuscript_claim": "Every route to Q5 != 0 was investigated and killed at theorem grade.",
+      "candidate_kappa_fields": ["U(1) determinant line", "puncture-resolved line-bundle degree", "nontracial surface state", "boundary-local inflow hypothesis", "relative/singular inflow extension"],
+      "verdict": "mixed DERIVED, DERIVED/SCOPED, and DERIVED/CONDITIONAL",
+      "evidence": "conditional audit shows several route kills are CLEAN while others are CONDITIONAL_VERIFIED on carrier, boundary-locality, or relative/singular inflow premises.",
+      "recommendation": "Replace unqualified theorem-grade wording with current-stack scoped wording."
+    },
+    {
+      "audit_target": "single_topological_datum_and_future_routes",
+      "manuscript_claim": "Obstruction reduces to spin-c residual n with current n = 0 and two exact future routes.",
+      "candidate_kappa_fields": ["n", "surface datum (omega_sb,q)", "inflow datum (A_rel,m_odd)", "map identifying surface and inflow routes"],
+      "verdict": "DERIVED/SCOPED current-stack frontier; partial DERIVED/CONDITIONAL inside relative/singular inflow extension",
+      "evidence": "paper35_final_residual_irreducibility_theorem_report.md leaves disjoint residual pair; paper35_relative_inflow_induced_boundary_state_theorem_report.md compresses pair only inside admitted relative/singular inflow extension.",
+      "recommendation": "State future route/frontier object, not existing derived mechanism."
+    },
+    {
+      "audit_target": "30_plus_theorem_grade_artifacts_claim",
+      "manuscript_claim": "Baryogenesis mechanism investigation consists of 30+ theorem-grade artifacts.",
+      "candidate_kappa_fields": ["theorem-grade label replaced by actual status registry"],
+      "verdict": "scope-creep",
+      "evidence": "The current registry audits 48 theorem surfaces: 15 CLEAN and 33 CONDITIONAL_VERIFIED.",
+      "recommendation": "Republication hygiene: replace with registry-accurate statement."
+    },
+    {
+      "audit_target": "JWST_timing_claim",
+      "manuscript_claim": "IO formation clock gives 46-48% more time at z > 10; JWST impossible galaxies are expected.",
+      "candidate_kappa_fields": ["master clock selection", "t_bare(0)", "redshift-age formula", "star-formation onset assumption", "LCDM comparator"],
+      "verdict": "DERIVED/SCOPED timing relief; verified confrontation; not full galaxy-formation resolution",
+      "evidence": "paper35_three_confrontations_report.md reproduces +46-48% timing relief and explicitly says the listed objects are not literally impossible from clock time alone.",
+      "recommendation": "Reword abstract/body to timing-pressure relief rather than impossible-galaxy resolution."
+    },
+    {
+      "audit_target": "DESI_dark_energy_correction",
+      "manuscript_claim": "Old w=-1/3 observer-side prediction is retired; active branch is w=-1 and gives chi2 = 69.48; IO does not predict DESI evolving dark energy.",
+      "candidate_kappa_fields": ["support variable R", "observer scale factor a", "K_Lambda", "constant alpha-ladder projector", "ratio-lock carryover", "active branch selection"],
+      "verdict": "DERIVED/SCOPED plus verified data confrontation",
+      "evidence": "paper35_desi_dark_energy_investigation_report.md gives active branch chi2 = 69.484809, retired a^-2 carryover chi2 = 3343.470545, and flat CPL image w0 = -1.030263, wa = -0.111508.",
+      "recommendation": "No structural action; preserve correction framing and do not use older w=-1/3 confrontation as the live conclusion."
+    },
+    {
+      "audit_target": "dark_matter_null_prediction",
+      "manuscript_claim": "The IO geometric alternative accounts for the gauge-coupled matter inventory without a dark matter particle; future direct-detection experiments will continue to find nothing.",
+      "candidate_kappa_fields": ["f_b = 2 gamma / x", "missing budget as boundary geometry", "no-particle theorem", "xenon-WIMP forecast", "next-generation null forecast"],
+      "verdict": "scope-creep / label downgrade required",
+      "evidence": "Paper 33 already frames the geometric dark-sector interpretation as not yet a derived no-particle theorem; a primitive typed dark-sector carrier remains conditionally open.",
+      "recommendation": "Downgrade to CONDITIONAL FORECAST/geometric-DM sector. Do not state an unconditional no-particle theorem."
+    },
+    {
+      "audit_target": "four_problems_resolved_or_constrained",
+      "manuscript_claim": "Four open problems are resolved or constrained by the same boundary-to-bulk projection.",
+      "candidate_kappa_fields": ["resolved vs constrained", "same projection across heterogeneous problems", "baryogenesis no-go scope", "dark-matter forecast scope"],
+      "verdict": "scope correction recommended",
+      "evidence": "Eta and DESI are strong; JWST is timing relief; baryogenesis mechanism is obstructed/reduced rather than derived; dark matter is a conditional forecast.",
+      "recommendation": "Use addressed/constrained/reduced language instead of implying all four are solved at the same level."
+    },
+    {
+      "audit_target": "overall_hidden_parameter_scan",
+      "manuscript_claim": "Paper 35 contains no fitted cosmological parameters.",
+      "candidate_kappa_fields": ["scalar numerical constants", "external observational anchors", "external standard-theory maps", "support/portal/inflow slices"],
+      "verdict": "no hidden continuous fitted parameter found",
+      "evidence": "The audit found external constants, standard-theory maps, admitted slices, and conditional extensions, but no silently introduced continuous scalar tuned to Paper 35 outputs.",
+      "recommendation": "Keep zero-fitted-cosmological-parameters claim only with conditional/constructed/external labels visible."
+    }
+  ],
+  "action_summary": [
+    {
+      "action": "republication",
+      "severity": "recommended",
+      "reason": "Paper 35 v1.0 needs label/scope hygiene, especially around theorem-grade artifact count and dark-matter null forecast."
+    },
+    {
+      "action": "conditional_visibility_annotation",
+      "severity": "required_for_v1_1",
+      "targets": ["baryogenesis theorem-surface registry", "external leptogenesis reductions", "portal/local thermal no-go", "Q5 rigidity", "final future routes"]
+    },
+    {
+      "action": "scope_correction",
+      "severity": "required_for_v1_1",
+      "targets": ["JWST timing claim", "dark matter null prediction", "four problems resolved/constrained umbrella wording"]
+    },
+    {
+      "action": "numerical_recomputation",
+      "severity": "not_required",
+      "reason": "No audited numerical chain failed; issues are status and scope boundaries."
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "by_category": {
+    "boundary_locality": 2,
+    "clean_inflow": 2,
+    "clean_puncture": 6,
+    "clean_spin": 2,
+    "clean_surface": 5,
+    "compression_hypothesis": 2,
+    "external_class": 3,
+    "external_slice": 3,
+    "paper19_gap": 3,
+    "paper32_boundary_seed": 4,
+    "paper32_carrier": 2,
+    "paper32_extension": 1,
+    "paper32_scalar": 6,
+    "portal_class": 4,
+    "recursive_conditional": 1,
+    "relative_inflow": 1,
+    "surface_state": 1
+  },
+  "claim_boundary": "registry summary; conditional surfaces are not unconditional theorem closure",
+  "conditional_verified_entries": [
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell collective scalar support route)"
+      ],
+      "audit_reference": {
+        "category": "paper32_scalar",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 2,
+      "theorem_surface_name": "Paper 35 baryogenesis scalar map theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_HYPOTHESIS(boundary-locality of the future eta-shift)"
+      ],
+      "audit_reference": {
+        "category": "boundary_locality",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 3,
+      "theorem_surface_name": "Paper 35 boundary-local inflow reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_HYPOTHESIS(boundary-locality of the minimal canonical-ball inflow route)"
+      ],
+      "audit_reference": {
+        "category": "boundary_locality",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 4,
+      "theorem_surface_name": "Paper 35 canonical-ball Abelian inflow no-go theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "audit_reference": {
+        "category": "paper32_boundary_seed",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 6,
+      "theorem_surface_name": "Paper 35 CP-asymmetry boundary no-go theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell fermionic bridge sector)"
+      ],
+      "audit_reference": {
+        "category": "paper32_boundary_seed",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 7,
+      "theorem_surface_name": "Paper 35 CP-odd datum reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(Casas-Ibarra hierarchical type-I source manifold)"
+      ],
+      "audit_reference": {
+        "category": "external_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 9,
+      "theorem_surface_name": "Paper 35 external Casas-Ibarra source-manifold theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard hierarchical thermal-leptogenesis reduction class)",
+        "ADMITTED_SLICE(M1 = T_f,target / Poplawski target-identification slice)"
+      ],
+      "audit_reference": {
+        "category": "external_slice",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 10,
+      "theorem_surface_name": "Paper 35 external flavor-regime theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard hierarchical thermal-leptogenesis reduction class)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta forward map for T_f,target)",
+        "ADMITTED_SLICE(M1 = T_f,target / Poplawski target-identification slice)"
+      ],
+      "audit_reference": {
+        "category": "external_slice",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 11,
+      "theorem_surface_name": "Paper 35 external leptogenesis source-region theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard hierarchical thermal-leptogenesis reduction class)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta forward map for T_f,target)",
+        "ADMITTED_SLICE(M1 = T_f,target / Poplawski target-identification slice)"
+      ],
+      "audit_reference": {
+        "category": "external_slice",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 12,
+      "theorem_surface_name": "Paper 35 external leptogenesis target theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(Standard-Model sphaleron/QCD/EC target-reduction package)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta forward map for T_f,target)"
+      ],
+      "audit_reference": {
+        "category": "external_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 13,
+      "theorem_surface_name": "Paper 35 external reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard thermal-leptogenesis washout/initial-condition class)"
+      ],
+      "audit_reference": {
+        "category": "external_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 14,
+      "theorem_surface_name": "Paper 35 external washout-selector no-go theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(quantized relative/singular inflow extension)"
+      ],
+      "audit_reference": {
+        "category": "recursive_conditional",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 15,
+      "theorem_surface_name": "Paper 35 final residual irreducibility theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell collective scalar support route)"
+      ],
+      "audit_reference": {
+        "category": "paper32_scalar",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 16,
+      "theorem_surface_name": "Paper 35 final scalar frontier theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_HYPOTHESIS(relativistic compression law for the neutral composite carrier)",
+        "ADMITTED_SLICE(full puncture-count inheritance on the carrier)"
+      ],
+      "audit_reference": {
+        "category": "compression_hypothesis",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 19,
+      "theorem_surface_name": "Paper 35 internal neutral collective-carrier theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_HYPOTHESIS(relativistic compression law for the neutral composite carrier)",
+        "ADMITTED_SLICE(full puncture-count inheritance on the carrier)"
+      ],
+      "audit_reference": {
+        "category": "compression_hypothesis",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 20,
+      "theorem_surface_name": "Paper 35 internal neutral-source compression target theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta freeze-out target T_f,target)"
+      ],
+      "audit_reference": {
+        "category": "paper32_scalar",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 21,
+      "theorem_surface_name": "Paper 35 internal source-sector exhaustion theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "audit_reference": {
+        "category": "paper32_extension",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 22,
+      "theorem_surface_name": "Paper 35 internal transfer-rate reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)"
+      ],
+      "audit_reference": {
+        "category": "paper32_carrier",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 24,
+      "theorem_surface_name": "Paper 35 minimal charged bridge extension target theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell neutral even-CAR sector)",
+        "ADMITTED_SLICE(support-crossing radius R_eta)"
+      ],
+      "audit_reference": {
+        "category": "paper32_scalar",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 26,
+      "theorem_surface_name": "Paper 35 minimal free-source no-go theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_GAP_OBJECT(nonzero puncture-resolved n_punct = q_chi c1(L_punct)[S^2])"
+      ],
+      "audit_reference": {
+        "category": "paper19_gap",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 27,
+      "theorem_surface_name": "Paper 35 n_punct reduction to Paper 19 gap theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)"
+      ],
+      "audit_reference": {
+        "category": "paper32_carrier",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 28,
+      "theorem_surface_name": "Paper 35 neutral-carrier charged-lift no-go theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)"
+      ],
+      "audit_reference": {
+        "category": "portal_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 31,
+      "theorem_surface_name": "Paper 35 portal invariant and seed reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta freeze-out target T_f,target)"
+      ],
+      "audit_reference": {
+        "category": "portal_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 32,
+      "theorem_surface_name": "Paper 35 portal residual debt reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta freeze-out target T_f,target)"
+      ],
+      "audit_reference": {
+        "category": "portal_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 33,
+      "theorem_surface_name": "Paper 35 portal twin-debt irreducibility theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)",
+        "ADMITTED_GAP_OBJECT(Paper 19 puncture-resolved U(1)/spin^c sector unresolved on the current stack)"
+      ],
+      "audit_reference": {
+        "category": "paper19_gap",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 37,
+      "theorem_surface_name": "Paper 35 Q5 puncture-U(1) route reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "audit_reference": {
+        "category": "paper32_boundary_seed",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 38,
+      "theorem_surface_name": "Paper 35 Q5 route exhaustion theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_GAP_OBJECT(nonzero puncture-resolved n_punct = q_chi c1(L_punct)[S^2])"
+      ],
+      "audit_reference": {
+        "category": "paper19_gap",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 39,
+      "theorem_surface_name": "Paper 35 Q5 spin^c charge absorption theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)",
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "audit_reference": {
+        "category": "paper32_boundary_seed",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 40,
+      "theorem_surface_name": "Paper 35 Q5 topological/spectral no-go theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(quantized relative/singular inflow extension)"
+      ],
+      "audit_reference": {
+        "category": "relative_inflow",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 41,
+      "theorem_surface_name": "Paper 35 relative inflow induces boundary state theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell neutral even-CAR support channel)",
+        "ADMITTED_SLICE(support-crossing radius R_eta)"
+      ],
+      "audit_reference": {
+        "category": "paper32_scalar",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 44,
+      "theorem_surface_name": "Paper 35 support pairing interaction reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell J=1/2 source sector)"
+      ],
+      "audit_reference": {
+        "category": "paper32_scalar",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 45,
+      "theorem_surface_name": "Paper 35 support pairing scalar reduction theorem"
+    },
+    {
+      "admissions": [],
+      "audit_reference": {
+        "category": "surface_state",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 47,
+      "theorem_surface_name": "Paper 35 surface-state reduction theorem"
+    },
+    {
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral singlet fermionic source carrier)",
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)",
+        "ADMITTED_SLICE(support-crossing slice M1 = T_f,target and R = R_eta)"
+      ],
+      "audit_reference": {
+        "category": "portal_class",
+        "conditional_registry": "reports/paper35_conditional_verified_audit_results.json",
+        "kappa_audit": "reports/paper35_kappa_audit_results.json"
+      },
+      "promotion_path_to_clean": "Promote only by discharging or deriving the admitted premises/classes/slices listed for this surface.",
+      "sequence": 48,
+      "theorem_surface_name": "Paper 35 visible transfer operator class theorem"
+    }
+  ],
+  "script": "05_baryogenesis_registry_summary.py",
+  "status": "verified",
+  "summary": {
+    "circular": 0,
+    "clean": 15,
+    "conditional_verified": 33,
+    "needs_review": 0,
+    "total": 48
+  }
+}

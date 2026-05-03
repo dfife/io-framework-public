@@ -1,0 +1,35 @@
+{
+  "mission": "Fix the exact support-branch compression target that any future neutral source carrier would have to satisfy to reproduce the already-fixed baryogenesis freeze-out target.",
+  "conditional_hypothesis": {
+    "status": "conditional / exact target class",
+    "hypothesis": "A future neutral source carrier inherits the support-branch count law N_s and its characteristic source energy is the relativistic Fermi compression scale on the support branch.",
+    "formulae": {
+      "n_s": "N_s / (2 pi^2 R^3)",
+      "p_F": "hbar (3 pi^2 n_s)^(1/3)",
+      "E_F": "hbar c (3 N_s / 2)^(1/3) / R"
+    }
+  },
+  "theorem_1_general_crossing_law": {
+    "status": "derived / conditional exact target law",
+    "statement": "Under the compression hypothesis, matching the already-fixed baryogenesis target T_f,target determines a unique crossing radius for each source count N_s:",
+    "crossing_law": "R_eta(N_s) = hbar c (3 N_s / 2)^(1/3) / T_f,target"
+  },
+  "theorem_2_full_count_slice": {
+    "status": "derived / conditional exact target slice",
+    "N_s_assumption": "N_s = N_1/2 = 2.2629206164052077e124",
+    "E_F_at_bounce_GeV": 5.725361170686747e+40,
+    "R_eta_m": 2903618612979.4985,
+    "R_eta_over_R_bounce": 2.6019710722802217e+27,
+    "tau_eta_to_endpoint_s": 0.0004255461735396969,
+    "statement": "If the future neutral source carrier inherits the full puncture count, then the baryogenesis-scale compression crossing occurs at the unique radius R_eta reported here, far above the bounce seam."
+  },
+  "theorem_3_seam_identification_nogo": {
+    "status": "derived / conditional no-go",
+    "statement": "Under the same compression hypothesis, the bounce seam cannot be identified with the baryogenesis-scale source point. The compression energy at the bounce overshoots T_f,target enormously, so any successful source theorem would have to select the earlier crossing radius rather than the seam.",
+    "overshoot_factor": 2.6019710722802217e+27
+  },
+  "final_boundary": {
+    "status": "derived / conditional target reduction",
+    "safe_statement": "This theorem does not derive the missing neutral source carrier. It fixes the exact support-branch crossing law that any such carrier would have to satisfy if its scale comes from relativistic compression."
+  }
+}

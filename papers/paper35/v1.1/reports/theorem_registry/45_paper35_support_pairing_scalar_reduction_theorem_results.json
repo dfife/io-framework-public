@@ -1,0 +1,32 @@
+{
+  "mission": "Reduce the live support-side Bogoliubov pairing frontier to its minimal scalar production history on the lowest-shell J=1/2 sector.",
+  "theorem_1_irrep_pairing_uniqueness": {
+    "status": "derived / exact representation-theoretic reduction",
+    "statement": "On a single J=1/2 irreducible doublet, every SO(3)-equivariant antisymmetric fermion pairing form is proportional to the canonical epsilon tensor. Therefore the lowest-shell singlet pair-creation operator is unique up to scalar.",
+    "canonical_pair_operator": "B^dagger = epsilon_ab a_a^dagger a_b^dagger"
+  },
+  "theorem_2_collective_scalar_reduction": {
+    "status": "derived / conditional / scoped reduction",
+    "conditions": [
+      "restrict to the admitted lowest-shell J=1/2 source sector",
+      "require gauge neutrality",
+      "require SO(3) equivariance",
+      "require uniformity over the indistinguishable active puncture copies in the collective support channel"
+    ],
+    "statement": "Under the stated symmetry conditions, the support-side pairing interaction reduces from a general kernel Delta to one scalar production history lambda(R) multiplying the unique collective singlet pair operator.",
+    "formula": "W_N(R) = lambda(R) (B^dagger + B)"
+  },
+  "theorem_3_uniform_activation_target": {
+    "status": "derived / exact target reduction on the scalar route",
+    "statement": "If the scalar pairing route produces a uniform mean occupation fraction over the available J=1/2 modes at the source crossing radius, then the exact required occupation fraction is f_req = N_required/N_total and the corresponding Bogoliubov angle satisfies sin^2(theta_req)=f_req.",
+    "numerics": {
+      "required_fraction_of_total": 3.1943175551939013e-07,
+      "theta_req_rad": 0.0005651829699589429
+    }
+  },
+  "final_boundary": {
+    "status": "derived / sharpened live-support frontier",
+    "safe_statement": "The live support-side Paper 35 frontier is no longer a general operator kernel. On the symmetry-reduced lowest-shell collective channel it collapses to one scalar production history lambda(R), equivalently one scalar Bogoliubov-angle history theta(R).",
+    "remaining_object": "a theorem deriving the scalar production history lambda(R) or theta(R) on the support branch"
+  }
+}

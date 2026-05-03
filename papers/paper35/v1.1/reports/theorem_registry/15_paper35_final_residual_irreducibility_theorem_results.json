@@ -1,0 +1,40 @@
+{
+  "mission": "Determine whether the remaining Paper 35 future objects can be reduced further on the present stack, or whether they are irreducible residuals living in distinct categories.",
+  "theorem_1_surface_and_inflow_residuals_live_in_distinct_categories": {
+    "status": "derived / scoped",
+    "statement": "The residual surface datum is algebraic/state-theoretic: a nontracial symmetry-breaking state or representation on the physical puncture algebra, together with its induced charge. The residual inflow datum is geometric/topological: genuinely relative or singular bulk-boundary data together with an odd inflow level.",
+    "formulas": {
+      "surface_residual": "(omega_sb, q)",
+      "inflow_residual": "(A_rel, m_odd)",
+      "surface_category": "states/representations of the physical puncture algebra",
+      "inflow_category": "relative or singular bulk-boundary geometric data"
+    },
+    "imports": {
+      "surface_boundary": "The Paper 35 surface route is no longer an operator-selection problem. On the current algebra, any positive route requires a new nontracial symmetry-breaking surface state or representation datum, not a bare selector operator.",
+      "inflow_boundary": "The Abelian inflow obstruction is global: no ordinary absolute bulk line bundle over a compact oriented three-manifold with boundary S^2 can carry the required nonzero boundary degree. Any surviving Paper 35 inflow route must be genuinely relative or singular."
+    }
+  },
+  "theorem_2_no_current_stack_reduction_map_exists": {
+    "status": "derived / strongest final reduction no-go",
+    "statement": "No theorem on the present stack produces a functorial map from the current physical puncture algebra/state package to genuinely relative inflow data, or conversely from relative inflow data to a nontracial symmetry-breaking puncture state. Any such map would require new charged or CP-odd structure absent from the current stack.",
+    "formulas": {
+      "missing_map_1": "F: puncture-state data -> relative inflow data",
+      "missing_map_2": "G: relative inflow data -> symmetry-breaking puncture state",
+      "current_obstruction_surface": "current surface state is tracial and puncture-symmetric",
+      "current_obstruction_inflow": "ordinary absolute bundle inflow is globally dead"
+    }
+  },
+  "theorem_3_exact_final_residual_frontier": {
+    "status": "derived / exhausted final Paper 35 frontier",
+    "statement": "No further theorem-grade reduction remains on the present stack. The exact residual future frontier is the disjoint pair of objects (omega_sb, q) and (A_rel, m_odd). Any positive future Paper 35 advance must derive at least one of those two objects or a new theorem identifying them.",
+    "formulas": {
+      "final_residual_pair": "{(omega_sb, q), (A_rel, m_odd)}",
+      "current_values": "omega_sb = none, q = 0, A_rel = none, m_odd = 0",
+      "no_further_reduction": "no derived current-stack map identifies the two residual classes"
+    }
+  },
+  "final_boundary": {
+    "status": "derived / exhausted final Paper 35 frontier",
+    "safe_statement": "Paper 35 is now reduced to two irreducible future objects on the present stack: the surface-state datum (omega_sb, q) and the genuinely relative inflow datum (A_rel, m_odd). No further theorem-grade reduction remains without new charged or CP-odd structure, or a new theorem relating those two categories."
+  }
+}

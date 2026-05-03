@@ -1,0 +1,58 @@
+{
+  "mission": "Derive the minimal free-transport source abundance on the support branch and determine whether it can source the required Paper 35 baryogenesis target.",
+  "theorem_1_unique_minimal_abundance_observable": {
+    "status": "derived / conditional / scoped",
+    "conditions": [
+      "restrict to the admitted lowest-shell neutral even-CAR sector",
+      "require a gauge-neutral SO(3)-invariant additive scalar abundance observable",
+      "require unit single-mode normalization",
+      "use centered Hawking/KMS subtraction"
+    ],
+    "statement": "Under the stated minimality conditions, the unique source-count observable is the centered total number operator on the active sub-sector. Its rms active count is N_act = sqrt(N p_H(1-p_H)).",
+    "formulae": {
+      "N_op": "N = sum_i a_i^dagger a_i",
+      "N_active": "sqrt(N_1/2 * p_H(1-p_H))"
+    },
+    "N_active": 7.521503533877398e+61
+  },
+  "theorem_2_free_transport_density_law": {
+    "status": "derived / conditional / scoped",
+    "imports": {
+      "seed_status": "derived / conditional / scoped",
+      "transport_status": "derived / conditional / scoped",
+      "transport_formula": "U_rad(R2,R1) = P exp[-\u222b_(R1->R2) \u0393_spin]"
+    },
+    "statement": "Because the boundary seed covariance is fixed and radial transport is unitary and representation-preserving, the minimal active count is conserved under free transport. Therefore the free-transport source density on the support branch is n_free(R) = N_active / (2 pi^2 R^3).",
+    "formula": "n_free(R) = N_active / (2 pi^2 R^3)",
+    "R_eta_m": 2903618612979.4985,
+    "n_free_R_eta_m3": 1.556525384643656e+23
+  },
+  "theorem_3_free_source_yield_nogo": {
+    "status": "derived / exact conditional no-go",
+    "setup": {
+      "entropy_density_formula": "s(T) = (2 pi^2 / 45) g_* T^3",
+      "source_yield": "Y_N,free = n_free / s(T_f,target)",
+      "required_precursor": "Y_(B-L),target"
+    },
+    "numerics": {
+      "T_f_target_GeV": 22003938597477.8,
+      "s_eta_m3": 6.492724476699408e+88,
+      "Y_N_free": 2.3973378051534377e-66,
+      "Y_B_minus_L_target": 2.303944311580367e-10,
+      "target_over_free_ratio": 9.610428311887014e+55
+    },
+    "statement": "On the minimal free-transport identification, the source yield at the exact crossing radius is Y_N,free. Since any free decay implementation can generate at most O(1) units of B-L per source quantum, the visible precursor obeys |Y_(B-L)| <= O(1) Y_N,free. The required target exceeds Y_N,free by the factor reported here. Therefore the minimal free-transport source is impossible as the Paper 35 baryogenesis source."
+  },
+  "final_boundary": {
+    "status": "derived / sharpened exhausted Paper 35 source boundary",
+    "safe_statement": "Under the minimal additive abundance identification and free support transport, the source yield is far too small. Therefore the support-side residual does not remain the pair (C_N, W_N) in practice: the free source is dead, so any positive closure requires a genuinely number-changing support interaction W_N. The coefficient side still reduces to the invariant selector (M1, m_tilde1, epsilon1).",
+    "remaining_objects": [
+      "a theorem selecting the invariant coefficient data (M1, m_tilde1, epsilon1)",
+      "a genuinely number-changing support interaction theorem W_N"
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/abs/0709.1061",
+    "https://arxiv.org/abs/hep-ph/0502169"
+  ]
+}

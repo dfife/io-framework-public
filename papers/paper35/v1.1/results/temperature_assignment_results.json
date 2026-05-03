@@ -1,0 +1,21 @@
+{
+  "assignment": {
+    "BBN_reaction_network_temperature": "T_IO",
+    "observer_photon_bath_temperature": "T_obs = T_IO x^K_gauge"
+  },
+  "claim_boundary": "DERIVED/SCOPED typed-observable temperature assignment",
+  "formulae": {
+    "conversion": "x^(3 K_gauge)",
+    "eta_BBN": "eta_obs * (T_obs/T_IO)^3"
+  },
+  "numbers": {
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.7253048490552736,
+    "eta_BBN_proton_mass": 6.15084682113232e-10,
+    "eta_obs_proton_mass": 5.74179586430453e-10,
+    "temperature_conversion_factor_direct": 1.071240943860573,
+    "temperature_conversion_factor_symbolic": 1.0712409438605732
+  },
+  "script": "02_temperature_assignment.py",
+  "status": "verified"
+}

@@ -1,0 +1,164 @@
+{
+  "mission": "Prove that no universal standard thermal-leptogenesis washout theorem can fix kappa_f from source data alone.",
+  "source_class": {
+    "status": "conditional / exact external washout class",
+    "assumptions": [
+      "standard unflavored decay + inverse-decay Boltzmann system",
+      "same source data and same decay parameter K",
+      "admissible change only in the heavy-neutrino initial abundance"
+    ],
+    "equations": {
+      "dN1_dz": "-D(z,K) [N1 - N1_eq(z)]",
+      "dNBL_dz": "-eps1 D(z,K) [N1 - N1_eq(z)] - W(z,K) N_B-L",
+      "D": "K z K1(z) / K2(z)",
+      "W": "(1/4) K z^3 K1(z)",
+      "N1_eq": "(1/2) z^2 K2(z)"
+    }
+  },
+  "theorem_1_initial_condition_counterexample": {
+    "status": "verified / explicit external counterexample",
+    "witnesses": {
+      "1": {
+        "thermal_initial": {
+          "initial_mode": "thermal",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.9999997500004858,
+          "N1_final": 1.060027544621257e-11,
+          "kappa_f": 0.5525132041886168
+        },
+        "zero_initial": {
+          "initial_mode": "zero",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.0,
+          "N1_final": 1.0600293137285417e-11,
+          "kappa_f": 0.13776912575231942
+        },
+        "delta_kappa": 0.4147440784362974,
+        "relative_ratio": 4.010428324717122
+      },
+      "3": {
+        "thermal_initial": {
+          "initial_mode": "thermal",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.9999997500004858,
+          "N1_final": 1.0529882581505288e-11,
+          "kappa_f": 0.1737380124978479
+        },
+        "zero_initial": {
+          "initial_mode": "zero",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.0,
+          "N1_final": 1.0755818423066461e-11,
+          "kappa_f": 0.1294258877907043
+        },
+        "delta_kappa": 0.0443121247071436,
+        "relative_ratio": 1.3423745084043859
+      },
+      "10": {
+        "thermal_initial": {
+          "initial_mode": "thermal",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.9999997500004858,
+          "N1_final": 1.0556461417538841e-11,
+          "kappa_f": 0.03161204281976033
+        },
+        "zero_initial": {
+          "initial_mode": "zero",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.0,
+          "N1_final": 1.0438965805153215e-11,
+          "kappa_f": 0.031599083617449474
+        },
+        "delta_kappa": 1.2959202310855455e-05,
+        "relative_ratio": 1.0004101132320085
+      },
+      "30": {
+        "thermal_initial": {
+          "initial_mode": "thermal",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.9999997500004858,
+          "N1_final": 1.0415227061393837e-11,
+          "kappa_f": 0.008221391738088722
+        },
+        "zero_initial": {
+          "initial_mode": "zero",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.0,
+          "N1_final": 1.1357175189866118e-11,
+          "kappa_f": 0.00822139173714596
+        },
+        "delta_kappa": 9.427614938717355e-13,
+        "relative_ratio": 1.0000000001146718
+      }
+    },
+    "statement": "For fixed K and fixed source equations, changing only the admissible initial heavy-neutrino abundance changes the final efficiency factor kappa_f. Therefore kappa_f is not a unique function of source data alone."
+  },
+  "theorem_2_universal_washout_nogo": {
+    "status": "derived / exact external no-go",
+    "statement": "A universal washout selector theorem is false in the standard thermal-leptogenesis class unless extra selectors are supplied. At minimum one must specify the initial abundance / reheating history; in the full theory one must also specify flavor regime and thermal-spectator package.",
+    "exact_missing_selectors": [
+      "initial heavy-neutrino abundance or reheating theorem",
+      "flavor-regime selector",
+      "thermal / spectator / scattering package selector"
+    ]
+  },
+  "theorem_3_strong_washout_attractor_boundary": {
+    "status": "verified / scoped",
+    "statement": "The same counterexample family shows that strong washout suppresses but does not logically remove the need for selectors: the initial-condition dependence becomes tiny for large K, but this is an attractor behavior, not a universal theorem of source uniqueness.",
+    "large_K_witnesses": {
+      "K=10": {
+        "thermal_initial": {
+          "initial_mode": "thermal",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.9999997500004858,
+          "N1_final": 1.0556461417538841e-11,
+          "kappa_f": 0.03161204281976033
+        },
+        "zero_initial": {
+          "initial_mode": "zero",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.0,
+          "N1_final": 1.0438965805153215e-11,
+          "kappa_f": 0.031599083617449474
+        },
+        "delta_kappa": 1.2959202310855455e-05,
+        "relative_ratio": 1.0004101132320085
+      },
+      "K=30": {
+        "thermal_initial": {
+          "initial_mode": "thermal",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.9999997500004858,
+          "N1_final": 1.0415227061393837e-11,
+          "kappa_f": 0.008221391738088722
+        },
+        "zero_initial": {
+          "initial_mode": "zero",
+          "z0": 0.001,
+          "z1": 30.0,
+          "N1_initial": 0.0,
+          "N1_final": 1.1357175189866118e-11,
+          "kappa_f": 0.00822139173714596
+        },
+        "delta_kappa": 9.427614938717355e-13,
+        "relative_ratio": 1.0000000001146718
+      }
+    }
+  },
+  "sources": [
+    "https://arxiv.org/abs/hep-ph/0310123",
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0601084"
+  ]
+}

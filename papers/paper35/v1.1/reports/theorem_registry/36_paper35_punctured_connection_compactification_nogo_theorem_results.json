@@ -1,0 +1,42 @@
+{
+  "mission": "Determine whether a non-holomorphic standard punctured-sphere U(1) connection with localized puncture singularities can compactify to the missing residual determinant line on S^2 after canonical spin normalization.",
+  "theorem_1_compactification_class_is_total_residue": {
+    "status": "derived / scoped",
+    "statement": "For an ordinary punctured-sphere U(1) connection that is flat away from punctures and has localized puncture singularities of standard form, the compactified line-bundle class on S^2 is determined by the total integral residue / total curvature charge. Equivalently, the first Chern number of the compactified bundle is the sum of the local integer charges.",
+    "formulas": {
+      "local_model": "W ~ m_i dtheta_i near p_i",
+      "chern_weil": "c1(L)[S^2] = (1/2pi) int_{S^2} F",
+      "localized_curvature": "F = 2pi sum_i m_i delta_{p_i}",
+      "compactified_degree": "c1(L)[S^2] = sum_i m_i"
+    }
+  },
+  "theorem_2_standard_physical_neutrality_forces_zero_degree": {
+    "status": "derived / strongest current compactification no-go",
+    "statement": "If the punctured-sphere connection is required to respect the standard physical ABCK gauge quotient, its total diagonal U(1) weight vanishes. Therefore the sum of the local compactification charges is zero, and the compactified determinant line has zero degree.",
+    "formulas": {
+      "physical_neutrality": "sum_i m_i = 0",
+      "degree_current": "c1(L_comp)[S^2] = 0"
+    },
+    "imports": {
+      "divisor_boundary": "The ordinary puncture-divisor route is dead. On the compactified sphere, any gauge-compatible divisor transfer has degree zero, and on CP^1 every degree-zero line bundle is trivial. So standard holomorphic puncture divisors cannot supply the residual spin^c twist on the current stack."
+    }
+  },
+  "theorem_3_standard_singular_connection_route_dead": {
+    "status": "derived / strongest standard punctured-connection no-go",
+    "statement": "Therefore the ordinary non-holomorphic punctured-connection route is no broader than the holomorphic divisor route. After compactification to S^2 it collapses to the same total-degree invariant, which vanishes on the current stack. So standard localized U(1) puncture singularities cannot secretly produce the residual spin^c twist.",
+    "formulas": {
+      "route": "punctured U(1) connection -> compactified line bundle on S^2",
+      "current_output": "c1(L_comp)[S^2] = 0",
+      "extra_twist_current": "n_conn,current = 0"
+    },
+    "still_not_derived": [
+      "a non-neutral charged surface sector beyond the standard ABCK quotient",
+      "a genuinely non-standard transfer that does not compactify through ordinary line-bundle Chern class",
+      "an independent CP-odd seed or anomaly-inflow theorem"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / exhausted standard punctured-connection Paper 35 boundary",
+    "safe_statement": "The ordinary punctured-connection route is dead. After compactification to S^2, its line-bundle class is just the total puncture residue, and standard physical neutrality forces that degree to zero. So standard localized U(1) puncture connections cannot supply the residual spin^c twist on the current stack."
+  }
+}

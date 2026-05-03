@@ -1,0 +1,40 @@
+{
+  "mission": "Reduce the remaining internal Paper 35 debts after neutral-carrier existence to their exact common operator-level bottleneck.",
+  "theorem_1_block_diagonal_transfer_nogo": {
+    "status": "derived / exact internal no-go",
+    "setup": {
+      "neutral_sector": "A_neutral^(2) on the even-CAR composite carrier",
+      "visible_sector": "A_vis carrying visible baryon or B-L charge",
+      "charge_operator": "Q_vis acting only on A_vis",
+      "noninteracting_generator": "H0 = H_neutral \u2295 H_vis"
+    },
+    "formula": "d<Q_vis>/dt = i <[H0, Q_vis]> = 0",
+    "statement": "If the current neutral collective carrier evolves only under a block-diagonal generator with no charged interaction term, then visible baryon or B-L charge cannot be produced from a neutral initial state. Therefore no visible transfer theorem exists without an interaction generator coupling the neutral and visible sectors."
+  },
+  "theorem_2_rate_from_interaction_reduction": {
+    "status": "derived / exact internal reduction",
+    "setup": {
+      "full_generator": "H = H0 + V_tr",
+      "meaning_of_V_tr": "charged transfer / anomaly / decay interaction coupling neutral carrier to visible charged observables"
+    },
+    "formulae": {
+      "transfer_source": "d<Q_vis>/dt = i <[V_tr, Q_vis]>",
+      "rate_origin": "Gamma_tr is induced by the same interaction generator V_tr"
+    },
+    "statement": "Any genuine freeze-out selector for the source era must be a rate-crossing theorem for the same transfer interaction that creates visible charge. Thus visible transfer and freeze-out are not independent remaining debts: both reduce to the existence and structure of V_tr."
+  },
+  "theorem_3_single_residual_operator_boundary": {
+    "status": "derived / exact internal boundary reduction",
+    "single_missing_object": "V_tr: a charged transfer interaction generator from the neutral collective carrier to a visible charged/B-L sector",
+    "what_V_tr_must_determine": [
+      "the sign and magnitude of visible charge production",
+      "the effective transfer rate Gamma_tr(R)",
+      "the freeze-out/rate-crossing scale"
+    ],
+    "statement": "After the neutral collective carrier theorem, the remaining Paper 35 internal source-era debt reduces exactly to one missing operator sector: the charged transfer interaction generator V_tr."
+  },
+  "final_boundary": {
+    "status": "derived / exact residual bottleneck",
+    "safe_statement": "The remaining internal Paper 35 frontier is no longer two separate items. It is one common bottleneck: a charged transfer interaction theorem. Without V_tr, neither visible B-L transfer nor freeze-out selection can exist."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "mission": "Characterize exactly the admissible standard thermal-leptogenesis source region implied by the closed late-time IO eta target.",
+  "closed_external_inputs": {
+    "eta_late": 5.748778515173695e-10,
+    "Y_B": 8.165878572689907e-11,
+    "c_sph": 0.35443037974683544,
+    "Y_N1_eq_0": 0.003901498367656259,
+    "eps1_kappa_target": 5.905280726708112e-08,
+    "c_DI_GeV_inv": 9.856504105473106e-17,
+    "M1_floor_absolute_GeV": 599125274.3890235
+  },
+  "theorem_1_exact_admissible_region": {
+    "status": "derived / exact external source-region theorem",
+    "three_variable_region": {
+      "constraint_1": "eps1 * kappa_f = eps1_kappa_target",
+      "constraint_2": "0 < kappa_f <= 1",
+      "constraint_3": "|eps1| <= c_DI * M1"
+    },
+    "projected_region_M1_kappa": "M1 * kappa_f >= M1_floor_absolute",
+    "projected_region_M1_eps": {
+      "M1_domain": "M1 >= 5.991252743890235e+08 GeV",
+      "eps_interval": "5.905280726708112e-08 <= |eps1| <= c_DI * M1"
+    },
+    "statement": "The closed late-time IO eta target fixes the exact admissible source region of standard hierarchical thermal leptogenesis. No further target ambiguity remains; every consistent source point must lie in this region."
+  },
+  "theorem_2_exact_floors": {
+    "status": "derived / exact external floors",
+    "epsilon_floor_absolute": 5.905280726708112e-08,
+    "M1_floor_absolute_GeV": 599125274.3890235,
+    "T_reh_floor_absolute_GeV": 599125274.3890235,
+    "M1_floor_family_GeV": {
+      "1": 599125274.3890235,
+      "0.3": 1997084247.9634118,
+      "0.1": 5991252743.890235,
+      "0.03": 19970842479.634117,
+      "0.01": 59912527438.90235,
+      "0.003": 199708424796.3412
+    },
+    "kappa_lower_family": {
+      "5.991253e+08": 1.0,
+      "1.000000e+09": 0.5991252743890235,
+      "1.000000e+10": 0.05991252743890235,
+      "1.000000e+12": 0.0005991252743890236,
+      "1.000000e+13": 5.991252743890235e-05,
+      "2.200394e+13": 2.7228092449671634e-05
+    },
+    "statement": "The exact absolute floors implied by the closed eta target are: |eps1| >= eps1_kappa_target, M1 >= M1_floor_absolute, and in a thermal scenario T_reh >= M1_floor_absolute."
+  },
+  "theorem_3_poplawski_slice_characterization": {
+    "status": "derived / exact slice characterization",
+    "T_f_target_GeV": 22003938597477.8,
+    "slice_assumption": "identify the previously fixed external Poplawski freeze-out target with M1",
+    "kappa_lower_on_slice": 2.7228092449671634e-05,
+    "epsilon_upper_on_slice": 0.002168819111226181,
+    "saturated_point": {
+      "epsilon1": 0.002168819111226181,
+      "kappa_f": 2.7228092449671634e-05
+    },
+    "statement": "On the slice M1 = T_f,target, the admissible region collapses to the interval kappa_f >= M1_floor_absolute / T_f,target, with equality only on Davidson-Ibarra saturation."
+  },
+  "theorem_4_uniqueness_nogo": {
+    "status": "derived / exact external no-go",
+    "statement": "Without additional source microphysics beyond the exact target product and the Davidson-Ibarra ceiling, the admissible source set remains a positive-dimensional region. Therefore no unique thermal-leptogenesis source point can be derived from the closed late-time IO eta target alone.",
+    "exact_remaining_external_debt": [
+      "a source-sector theorem selecting a point inside the admissible region",
+      "or an exact microphysical law relating kappa_f and M1",
+      "or an exact source theorem fixing eps1 independently of the Davidson-Ibarra bound"
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0202239",
+    "https://home.ba.infn.it/~now/now2014/web-content/TALKS/cWed/Par1/MolinaroNOW2014.pdf"
+  ]
+}

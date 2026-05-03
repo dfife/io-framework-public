@@ -1,0 +1,536 @@
+{
+  "summary": {
+    "total": 48,
+    "clean": 15,
+    "conditional_verified": 33,
+    "needs_review": 0,
+    "circular": 0
+  },
+  "results": [
+    {
+      "file": "paper35_aps_inflow_target_reduction_theorem_report.md",
+      "theorem": "Paper 35 APS/inflow target reduction theorem",
+      "result": "CLEAN",
+      "category": "clean_inflow",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 inflow-reduction chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Current-stack inflow target reduction; no admitted slice or extension is load-bearing."
+    },
+    {
+      "file": "paper35_baryogenesis_scalar_map_theorem_report.md",
+      "theorem": "Paper 35 baryogenesis scalar map theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_scalar",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell collective scalar support route)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 scalar/Q5 reduction chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here, with no step into the void remaining.",
+      "notes": "Depends on the admitted fermionic/chiral extension and the admitted lowest-shell scalar-support route."
+    },
+    {
+      "file": "paper35_boundary_local_inflow_reduction_theorem_report.md",
+      "theorem": "Paper 35 boundary-local inflow reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "boundary_locality",
+      "admissions": [
+        "ADMITTED_HYPOTHESIS(boundary-locality of the future eta-shift)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 inflow/topology chain to assumed-good Papers 1-31 nodes; the remaining conditionality is exactly the surfaced boundary-locality hypothesis.",
+      "notes": "The boundary-local collar reduction is conditional on the locality hypothesis."
+    },
+    {
+      "file": "paper35_canonical_ball_abelian_inflow_nogo_theorem_report.md",
+      "theorem": "Paper 35 canonical-ball Abelian inflow no-go theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "boundary_locality",
+      "admissions": [
+        "ADMITTED_HYPOTHESIS(boundary-locality of the minimal canonical-ball inflow route)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 inflow/topology chain to assumed-good Papers 1-31 nodes; the canonical-ball route itself remains conditional on the surfaced boundary-locality premise.",
+      "notes": "The ball-local Abelian route is only meaningful on the admitted boundary-local branch."
+    },
+    {
+      "file": "paper35_canonical_horizon_spin_degree_normalization_theorem_report.md",
+      "theorem": "Paper 35 canonical horizon spin-degree normalization theorem",
+      "result": "CLEAN",
+      "category": "clean_spin",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 / assumed-good Papers 1-31 spin-bundle and index chain; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Canonical horizon spin normalization is treated as theorem-grade on the assumed-good Papers 1-31 stack."
+    },
+    {
+      "file": "paper35_cp_asymmetry_boundary_nogo_theorem_report.md",
+      "theorem": "Paper 35 CP-asymmetry boundary no-go theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_boundary_seed",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 boundary-seed and portal-class chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; the remaining conditionality is exactly the surfaced admitted fermionic/chiral extension.",
+      "notes": "Uses the admitted fermionic/chiral boundary seed and transport package."
+    },
+    {
+      "file": "paper35_cp_odd_datum_reduction_theorem_report.md",
+      "theorem": "Paper 35 CP-odd datum reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_boundary_seed",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell fermionic bridge sector)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 CP-odd boundary chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; all remaining conditionality is surfaced explicitly here.",
+      "notes": "Q5 reduction is scoped to the admitted lowest-shell bridge sector inside the admitted extension."
+    },
+    {
+      "file": "paper35_equivariant_surface_selector_nogo_theorem_report.md",
+      "theorem": "Paper 35 equivariant surface-selector no-go theorem",
+      "result": "CLEAN",
+      "category": "clean_surface",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 puncture-symmetry and surface representation chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Pure current-stack puncture-sector no-go."
+    },
+    {
+      "file": "paper35_external_casas_ibarra_source_manifold_theorem_report.md",
+      "theorem": "Paper 35 external Casas-Ibarra source-manifold theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "external_class",
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(Casas-Ibarra hierarchical type-I source manifold)"
+      ],
+      "chain_verification": "verified through the stated external source-manifold reduction class together with assumed-good Papers 1-31 late-time target nodes; the remaining conditionality is exactly the surfaced external source-manifold class.",
+      "notes": "The positive-dimensional source manifold is conditional on the external Casas-Ibarra class."
+    },
+    {
+      "file": "paper35_external_flavor_regime_theorem_report.md",
+      "theorem": "Paper 35 external flavor-regime theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "external_slice",
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard hierarchical thermal-leptogenesis reduction class)",
+        "ADMITTED_SLICE(M1 = T_f,target / Poplawski target-identification slice)"
+      ],
+      "chain_verification": "verified through the stated external leptogenesis reduction class together with assumed-good Papers 1-31 late-time target nodes; the remaining conditionality is exactly the surfaced external class and the admitted Poplawski target-identification slice.",
+      "notes": "Global flavor coverage is external-class conditional; the unflavored Poplawski slice is an admitted target-identification slice."
+    },
+    {
+      "file": "paper35_external_leptogenesis_source_region_theorem_report.md",
+      "theorem": "Paper 35 external leptogenesis source-region theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "external_slice",
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard hierarchical thermal-leptogenesis reduction class)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta forward map for T_f,target)",
+        "ADMITTED_SLICE(M1 = T_f,target / Poplawski target-identification slice)"
+      ],
+      "chain_verification": "verified through the stated external reduction class and forward-map assumptions together with assumed-good Papers 1-31 late-time target nodes; all remaining non-Premise inputs are the explicit external admissions listed here.",
+      "notes": "The source-region and slice theorems are external-class results with an admitted Poplawski slice."
+    },
+    {
+      "file": "paper35_external_leptogenesis_target_theorem_report.md",
+      "theorem": "Paper 35 external leptogenesis target theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "external_slice",
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard hierarchical thermal-leptogenesis reduction class)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta forward map for T_f,target)",
+        "ADMITTED_SLICE(M1 = T_f,target / Poplawski target-identification slice)"
+      ],
+      "chain_verification": "verified through the stated external reduction class and forward-map assumptions together with assumed-good Papers 1-31 late-time target nodes; all remaining non-Premise inputs are the explicit external admissions listed here.",
+      "notes": "External target reduction plus Davidson-Ibarra and Poplawski-slice compatibility."
+    },
+    {
+      "file": "paper35_external_reduction_theorem_report.md",
+      "theorem": "Paper 35 external reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "external_class",
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(Standard-Model sphaleron/QCD/EC target-reduction package)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta forward map for T_f,target)"
+      ],
+      "chain_verification": "verified through the stated external reduction package together with assumed-good Papers 1-31 late-time target nodes; the remaining conditionality is exactly the surfaced external reduction package.",
+      "notes": "Reduces Paper 35 to exact external targets; conditional on the surfaced external package."
+    },
+    {
+      "file": "paper35_external_washout_selector_nogo_theorem_report.md",
+      "theorem": "Paper 35 external washout-selector no-go theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "external_class",
+      "admissions": [
+        "ADMITTED_EXTERNAL_CLASS(standard thermal-leptogenesis washout/initial-condition class)"
+      ],
+      "chain_verification": "verified through the stated external washout/source class; the remaining conditionality is exactly the surfaced external class within which the counterexample and no-go are proved.",
+      "notes": "Washout-selector no-go is external-class conditional, not a framework-internal closure theorem."
+    },
+    {
+      "file": "paper35_final_residual_irreducibility_theorem_report.md",
+      "theorem": "Paper 35 final residual irreducibility theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "recursive_conditional",
+      "admissions": [
+        "ADMITTED_EXTENSION(quantized relative/singular inflow extension)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 residual surface/inflow boundary theorems to assumed-good Papers 1-31 nodes; the only surviving admission inherited anywhere in the chain is the explicit relative/singular inflow extension listed here.",
+      "notes": "Inherits the relative/singular inflow-extension admission from the compressed inflow branch."
+    },
+    {
+      "file": "paper35_final_scalar_frontier_theorem_report.md",
+      "theorem": "Paper 35 final scalar frontier theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_scalar",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell collective scalar support route)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 scalar/Q5/source boundary theorems to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Final scalar frontier inherits the admitted lowest-shell scalar-support route."
+    },
+    {
+      "file": "paper35_fixed_bundle_puncture_connection_nogo_theorem_report.md",
+      "theorem": "Paper 35 fixed-bundle puncture-connection no-go theorem",
+      "result": "CLEAN",
+      "category": "clean_puncture",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 puncture/fixed-bundle chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Current-stack fixed-bundle puncture no-go."
+    },
+    {
+      "file": "paper35_global_bulk_bundle_inflow_nogo_theorem_report.md",
+      "theorem": "Paper 35 global bulk-bundle inflow no-go theorem",
+      "result": "CLEAN",
+      "category": "clean_inflow",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 inflow/global topology chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Global line-bundle obstruction is stronger than the local boundary-local branch."
+    },
+    {
+      "file": "paper35_internal_neutral_collective_carrier_theorem_report.md",
+      "theorem": "Paper 35 internal neutral collective-carrier theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "compression_hypothesis",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_HYPOTHESIS(relativistic compression law for the neutral composite carrier)",
+        "ADMITTED_SLICE(full puncture-count inheritance on the carrier)"
+      ],
+      "chain_verification": "verified through the Paper 35 neutral-carrier/compression chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support and active-branch nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "The neutral composite carrier exists on the admitted extension; the support scale and crossing are compression-hypothesis conditional."
+    },
+    {
+      "file": "paper35_internal_neutral_source_compression_target_theorem_report.md",
+      "theorem": "Paper 35 internal neutral-source compression target theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "compression_hypothesis",
+      "admissions": [
+        "ADMITTED_HYPOTHESIS(relativistic compression law for the neutral composite carrier)",
+        "ADMITTED_SLICE(full puncture-count inheritance on the carrier)"
+      ],
+      "chain_verification": "verified through the Paper 35 compression-target chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 active-branch node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Compression-target crossing law is conditional on the compression hypothesis and the full-count slice."
+    },
+    {
+      "file": "paper35_internal_source_sector_exhaustion_theorem_report.md",
+      "theorem": "Paper 35 internal source-sector exhaustion theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_scalar",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta freeze-out target T_f,target)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 internal-source chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support and active-branch nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Internal source-sector exhaustion compares the admitted extension to the surfaced external freeze-out target."
+    },
+    {
+      "file": "paper35_internal_transfer_rate_reduction_theorem_report.md",
+      "theorem": "Paper 35 internal transfer-rate reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_extension",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 neutral-collective/support chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; the remaining conditionality is exactly the surfaced admitted extension.",
+      "notes": "Transfer-rate reduction acts on the admitted neutral collective carrier inside the extension."
+    },
+    {
+      "file": "paper35_marked_defect_selection_nogo_theorem_report.md",
+      "theorem": "Paper 35 marked-defect selection no-go theorem",
+      "result": "CLEAN",
+      "category": "clean_surface",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 puncture-sector/state chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Pure current-stack marked-defect no-go."
+    },
+    {
+      "file": "paper35_minimal_charged_bridge_extension_target_theorem_report.md",
+      "theorem": "Paper 35 minimal charged bridge extension target theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_carrier",
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 charged-lift chain to assumed-good Papers 1-31 nodes; the remaining conditionality is exactly the surfaced admitted Paper 32 carrier held fixed in the extension-target reduction.",
+      "notes": "The minimal charged family is derived only after fixing the admitted neutral Paper 32 carrier."
+    },
+    {
+      "file": "paper35_minimal_compensator_edge_mode_theorem_report.md",
+      "theorem": "Paper 35 minimal compensator edge-mode theorem",
+      "result": "CLEAN",
+      "category": "clean_surface",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 compact-sphere puncture charge chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Compact-sphere compensator reduction is theorem-grade on the current stack."
+    },
+    {
+      "file": "paper35_minimal_free_source_nogo_theorem_report.md",
+      "theorem": "Paper 35 minimal free-source no-go theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_scalar",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell neutral even-CAR sector)",
+        "ADMITTED_SLICE(support-crossing radius R_eta)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 free-source chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support and active-branch nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Free-source no-go is conditional on the admitted lowest-shell sector and the surfaced support-crossing slice."
+    },
+    {
+      "file": "paper35_n_punct_reduction_to_paper19_gap_theorem_report.md",
+      "theorem": "Paper 35 n_punct reduction to Paper 19 gap theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper19_gap",
+      "admissions": [
+        "ADMITTED_GAP_OBJECT(nonzero puncture-resolved n_punct = q_chi c1(L_punct)[S^2])"
+      ],
+      "chain_verification": "verified through the cited Paper 35 localization/gap chain to assumed-good Papers 1-31 nodes; the remaining conditionality is exactly the explicit puncture-resolved Paper 19 gap object listed here.",
+      "notes": "Localizes the unresolved puncture-resolved integer; does not derive it."
+    },
+    {
+      "file": "paper35_neutral_carrier_charged_lift_nogo_theorem_report.md",
+      "theorem": "Paper 35 neutral-carrier charged-lift no-go theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_carrier",
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 charged-lift chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; the remaining conditionality is exactly the surfaced admitted neutral Paper 32 carrier.",
+      "notes": "The no-go is conditional on the admitted neutral Paper 32 carrier being the active carrier."
+    },
+    {
+      "file": "paper35_neutral_zk_to_integer_nogo_theorem_report.md",
+      "theorem": "Paper 35 neutral Z_k to integer no-go theorem",
+      "result": "CLEAN",
+      "category": "clean_puncture",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 neutral-puncture algebra chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Pure algebraic no-go for additive lifts from neutral Z_k labels."
+    },
+    {
+      "file": "paper35_physical_surface_charge_sector_reduction_theorem_report.md",
+      "theorem": "Paper 35 physical surface charge-sector reduction theorem",
+      "result": "CLEAN",
+      "category": "clean_surface",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 physical-surface reduction chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Physical-surface selector reduction is clean on the current stack."
+    },
+    {
+      "file": "paper35_portal_invariant_and_seed_reduction_theorem_report.md",
+      "theorem": "Paper 35 portal invariant and seed reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "portal_class",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 portal/seed chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Portal-invariant reduction is conditional on the admitted extension and the admitted type-I portal class."
+    },
+    {
+      "file": "paper35_portal_residual_debt_reduction_theorem_report.md",
+      "theorem": "Paper 35 portal residual debt reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "portal_class",
+      "admissions": [
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta freeze-out target T_f,target)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 portal/transfer chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 active-branch node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Residual debt reduction is conditional on the admitted portal class and the surfaced freeze-out target."
+    },
+    {
+      "file": "paper35_portal_twin_debt_irreducibility_theorem_report.md",
+      "theorem": "Paper 35 portal twin-debt irreducibility theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "portal_class",
+      "admissions": [
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)",
+        "ADMITTED_EXTERNAL_MAP(Poplawski Hehl-Datta freeze-out target T_f,target)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 portal/transfer chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 active-branch node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Twin-debt irreducibility lives inside the admitted portal class and target slice."
+    },
+    {
+      "file": "paper35_puncture_charge_lift_obstruction_theorem_report.md",
+      "theorem": "Paper 35 puncture-charge lift obstruction theorem",
+      "result": "CLEAN",
+      "category": "clean_puncture",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 puncture-U(1) obstruction chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Standard puncture-label obstruction is clean current-stack reasoning."
+    },
+    {
+      "file": "paper35_puncture_divisor_triviality_theorem_report.md",
+      "theorem": "Paper 35 puncture-divisor triviality theorem",
+      "result": "CLEAN",
+      "category": "clean_puncture",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 divisor/compactification chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Pure divisor-triviality / Pic^0(CP^1)=0 route."
+    },
+    {
+      "file": "paper35_punctured_connection_compactification_nogo_theorem_report.md",
+      "theorem": "Paper 35 punctured-connection compactification no-go theorem",
+      "result": "CLEAN",
+      "category": "clean_puncture",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 punctured-connection compactification chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Ordinary punctured-connection compactification route is cleanly dead."
+    },
+    {
+      "file": "paper35_q5_puncture_u1_route_reduction_theorem_report.md",
+      "theorem": "Paper 35 Q5 puncture-U(1) route reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper19_gap",
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)",
+        "ADMITTED_GAP_OBJECT(Paper 19 puncture-resolved U(1)/spin^c sector unresolved on the current stack)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 puncture-U(1) reduction chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "The route reduction is cleanly conditional on the admitted Paper 32 carrier and the surfaced Paper 19 unresolved sector."
+    },
+    {
+      "file": "paper35_q5_route_exhaustion_theorem_report.md",
+      "theorem": "Paper 35 Q5 route exhaustion theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_boundary_seed",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 Q5 and boundary seed chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; the remaining conditionality is exactly the surfaced admitted extension.",
+      "notes": "The non-KMS and APS route-kill statements use the admitted fermionic/chiral extension as their active current stack."
+    },
+    {
+      "file": "paper35_q5_spin_c_charge_absorption_theorem_report.md",
+      "theorem": "Paper 35 Q5 spin^c charge absorption theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper19_gap",
+      "admissions": [
+        "ADMITTED_GAP_OBJECT(nonzero puncture-resolved n_punct = q_chi c1(L_punct)[S^2])"
+      ],
+      "chain_verification": "verified through the cited Paper 35 index-reduction chain to assumed-good Papers 1-31 nodes; the remaining conditionality is exactly the explicit puncture-resolved gap object listed here.",
+      "notes": "The charge-absorption reduction is theorem-grade; the final nonzero integer frontier remains admitted gap data."
+    },
+    {
+      "file": "paper35_q5_topological_spectral_nogo_theorem_report.md",
+      "theorem": "Paper 35 Q5 topological/spectral no-go theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_boundary_seed",
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral fermionic bridge carrier)",
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 Q5/boundary-seed chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Q5 rigidity is conditional on the admitted untwisted current carrier and the admitted extension."
+    },
+    {
+      "file": "paper35_relative_inflow_induced_boundary_state_theorem_report.md",
+      "theorem": "Paper 35 relative inflow induces boundary state theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "relative_inflow",
+      "admissions": [
+        "ADMITTED_EXTENSION(quantized relative/singular inflow extension)"
+      ],
+      "chain_verification": "verified through the cited Paper 35 frontier-compression chain to assumed-good Papers 1-31 nodes together with the explicitly stated relative/singular inflow extension premise; no unresolved local premise step remains.",
+      "notes": "Already inline-verified earlier in the Paper 36 discipline pass."
+    },
+    {
+      "file": "paper35_remaining_charged_routes_exhaustion_theorem_report.md",
+      "theorem": "Paper 35 remaining charged-routes exhaustion theorem",
+      "result": "CLEAN",
+      "category": "clean_puncture",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 charged-route exhaustion chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Charged-route exhaustion is clean after the current-stack puncture and inflow no-gos."
+    },
+    {
+      "file": "paper35_spin_c_residual_class_exhaustion_theorem_report.md",
+      "theorem": "Paper 35 spin^c residual class exhaustion theorem",
+      "result": "CLEAN",
+      "category": "clean_spin",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 spin-bundle / spin^c torsor chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Residual spin^c class exhaustion is theorem-grade once the canonical spin bundle is routed through the clean Papers 1-31 chain."
+    },
+    {
+      "file": "paper35_support_pairing_interaction_reduction_theorem_report.md",
+      "theorem": "Paper 35 support pairing interaction reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_scalar",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell neutral even-CAR support channel)",
+        "ADMITTED_SLICE(support-crossing radius R_eta)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 support/scalar target chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support and active-branch nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "The pairing interaction boundary uses the admitted support channel and surfaced support-crossing slice."
+    },
+    {
+      "file": "paper35_support_pairing_scalar_reduction_theorem_report.md",
+      "theorem": "Paper 35 support pairing scalar reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "paper32_scalar",
+      "admissions": [
+        "ADMITTED_EXTENSION(Paper 32 extended fermionic/chiral bridge theory)",
+        "ADMITTED_SECTOR(lowest-shell J=1/2 source sector)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 support/scalar reduction chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support node where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Scalar pairing reduction is conditional on the admitted lowest-shell J=1/2 sector."
+    },
+    {
+      "file": "paper35_surface_hilbert_neutrality_and_base_mismatch_theorem_report.md",
+      "theorem": "Paper 35 surface-Hilbert neutrality and base-mismatch theorem",
+      "result": "CLEAN",
+      "category": "clean_surface",
+      "admissions": [],
+      "chain_verification": "verified through the cited Paper 35 ABCK surface/base-space chain to assumed-good Papers 1-31 nodes; no surfaced admissions or unresolved local premise steps remain load-bearing on this surface.",
+      "notes": "Surface-Hilbert neutrality and base mismatch are clean current-stack no-gos."
+    },
+    {
+      "file": "paper35_surface_state_reduction_theorem_report.md",
+      "theorem": "Paper 35 surface-state reduction theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "surface_state",
+      "admissions": [],
+      "chain_verification": "verified through the cited current-stack Paper 20 / Paper 35 surface-state reduction chain to assumed-good Papers 1-31 nodes; no unresolved local premise step is used by the active Paper 35 audit chain.",
+      "notes": "Already inline-verified earlier in the Paper 36 discipline pass."
+    },
+    {
+      "file": "paper35_transfer_operator_class_theorem_report.md",
+      "theorem": "Paper 35 visible transfer operator class theorem",
+      "result": "CONDITIONAL_VERIFIED",
+      "category": "portal_class",
+      "admissions": [
+        "ADMITTED_CARRIER(current Paper 32 neutral singlet fermionic source carrier)",
+        "ADMITTED_PORTAL_CLASS(type-I singlet-fermion portal on the hierarchical N1 slice)",
+        "ADMITTED_SLICE(support-crossing slice M1 = T_f,target and R = R_eta)"
+      ],
+      "chain_verification": "verified recursively through the cited Paper 35 portal/support chain to assumed-good Papers 1-31 nodes and the inline-verified Paper 32 bridge-support and active-branch nodes where touched; all remaining non-Premise inputs are the explicit admissions listed here.",
+      "notes": "Operator-class uniqueness is theorem-grade on the admitted carrier; the local-support implementation no-go is slice-conditional."
+    }
+  ],
+  "touched_upstream": [
+    "/opt/cosmology-lab/results/paper32/paper32_fermionic_bridge_support_conformal_descent_theorem_report.md",
+    "/opt/cosmology-lab/results/paper32/paper32_growth_background_assignment_closure_theorem_report.md"
+  ]
+}

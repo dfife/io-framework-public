@@ -1,0 +1,90 @@
+{
+  "mission": "Prove that standard hierarchical type-I seesaw leptogenesis still leaves a positive-dimensional source manifold after the closed late-time IO eta target is imposed.",
+  "closed_external_inputs": {
+    "eta_late": 5.748778515173695e-10,
+    "Y_B": 8.165878572689907e-11,
+    "Y_N1_eq_0": 0.003901498367656259,
+    "eps1_kappa_target": 5.905280726708112e-08
+  },
+  "external_source_class": {
+    "status": "conditional / exact external source class",
+    "assumptions": [
+      "hierarchical type-I seesaw leptogenesis",
+      "Casas-Ibarra parameterization for the source Yukawa sector",
+      "N1-dominated asymmetry"
+    ],
+    "first_row_formulas": {
+      "orthogonality": "sum_i R_1i^2 = 1",
+      "m_tilde_1": "sum_i m_i |R_1i|^2",
+      "epsilon1": "-(3 M1 / 16 pi v^2) * Im(sum_i m_i^2 R_1i^2) / (sum_i m_i |R_1i|^2)"
+    }
+  },
+  "theorem_1_dimension_count": {
+    "status": "derived / exact external dimension theorem",
+    "dof_first_row_real": 6,
+    "orthogonality_constraints_real": 2,
+    "free_first_row_dof_real": 4,
+    "additional_real_constraints_fixed_M1_fixed_eps": 1,
+    "residual_dof_real_fixed_M1_fixed_eps": 3,
+    "statement": "After fixing low-energy neutrino masses and a heavy-neutrino scale M1, the first row of the Casas-Ibarra matrix still carries four real degrees of freedom. Imposing one exact CP-asymmetry target removes only one real degree of freedom, leaving a positive-dimensional source manifold."
+  },
+  "theorem_2_uniqueness_nogo": {
+    "status": "derived / exact external no-go",
+    "statement": "The closed late-time IO eta target, even when combined with standard hierarchical type-I seesaw formulas, does not select a unique microscopic source point. Any uniqueness claim requires extra microphysical structure beyond the target product itself.",
+    "remaining_external_debt": [
+      "an exact law selecting a point on the Casas-Ibarra source manifold",
+      "or an exact washout theorem fixing kappa_f from source data",
+      "or an exact UV completion collapsing the first-row manifold"
+    ]
+  },
+  "theorem_3_explicit_continuum_witness": {
+    "status": "verified / explicit external witness",
+    "witness_family": {
+      "R11": 0.0,
+      "R12": "cos(a + i b)",
+      "R13": "sin(a + i b)"
+    },
+    "benchmark_inputs": {
+      "m1_GeV": 0.0,
+      "m2_GeV": 8.602325267042628e-12,
+      "m3_GeV": 5.014977567247933e-11,
+      "M1_GeV": 22003938597477.8,
+      "v_GeV": 174.0,
+      "kappa_f_fixed": 0.001,
+      "epsilon1_target": 5.905280726708112e-05
+    },
+    "solutions": [
+      {
+        "a": 0.2,
+        "b": 0.014684867883877007,
+        "epsilon1": 5.90528072670811e-05
+      },
+      {
+        "a": 0.4,
+        "b": 0.011591650506928303,
+        "epsilon1": 5.905280726708111e-05
+      },
+      {
+        "a": 0.6,
+        "b": 0.013078494060234695,
+        "epsilon1": 5.905280726708113e-05
+      },
+      {
+        "a": 0.8,
+        "b": 0.016735228656980385,
+        "epsilon1": 5.90528072670811e-05
+      },
+      {
+        "a": 1.0,
+        "b": 0.02333158871274363,
+        "epsilon1": 5.9052807267081134e-05
+      }
+    ],
+    "statement": "At fixed M1 and fixed kappa_f, multiple distinct complex-angle source points reproduce the same exact target epsilon1. This explicitly verifies the positive-dimensional no-go."
+  },
+  "sources": [
+    "https://arxiv.org/abs/hep-ph/0103065",
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0202239"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "paper": "Paper 35 v1.1",
+  "bundle": "paper35-v1.1",
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "x": 1.518987327774,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "K_avg": 1.72704,
+    "f_Gamma": 0.946605531726076,
+    "f_b": 0.3127083362150814
+  },
+  "eta_inputs": {
+    "omega_b_geom": 0.020995719061702847,
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.7253048490552736,
+    "Y_p_for_mean_mass": 0.2469867094,
+    "eta_late_mean_baryon_mass": 5.748778515173695e-10,
+    "eta_late_proton_mass": 5.74179586430453e-10,
+    "eta_BBN_proton_mass": 6.150846821132321e-10,
+    "temperature_conversion_factor": 1.071240943860573
+  },
+  "standard_constants": {
+    "G_SI": 6.67430e-11,
+    "k_B_SI": 1.380649e-23,
+    "hbar_SI": 1.054571817e-34,
+    "c_SI": 299792458.0,
+    "mpc_m": 3.0856775814913673e22,
+    "proton_mass_kg": 1.67262192369e-27,
+    "hydrogen_atom_mass_kg": 1.673532838e-27,
+    "helium4_atom_mass_kg": 6.646476406e-27,
+    "zeta3": 1.2020569031595942,
+    "reduced_planck_mass_GeV": 2.42631023867e18
+  },
+  "leptogenesis_standard_inputs": {
+    "sphaleron_c_sph": 0.35443037974683544,
+    "sphaleron_inverse_79_over_28": 2.8214285714285716,
+    "g_star_SM": 106.75,
+    "heavy_majorana_internal_degrees": 2.0,
+    "v_SM_GeV": 174.0,
+    "m_atm_eV": 0.05
+  },
+  "jwst_backgrounds": {
+    "io_bare_master_clock": {
+      "H0": 58.4,
+      "Omega_m": 0.197,
+      "Omega_k": -0.130,
+      "Omega_lambda": 0.933,
+      "T_cmb": 2.7253,
+      "N_eff": 3.044
+    },
+    "lcdm_comparator": {
+      "H0": 67.36,
+      "Omega_m": 0.3153,
+      "Omega_k": 0.0,
+      "Omega_lambda": 0.0,
+      "T_cmb": 2.7255,
+      "N_eff": 3.046
+    },
+    "star_formation_onset_Gyr": 0.1
+  },
+  "jwst_objects": [
+    {
+      "name": "JADES-GS-z14-0",
+      "z": 14.1793,
+      "log10_mstar": 8.6,
+      "sfr_msun_per_year": 19.0,
+      "sources": [
+        "https://www.nature.com/articles/s41586-024-07860-9",
+        "https://arxiv.org/abs/2409.20549"
+      ]
+    },
+    {
+      "name": "JADES-GS-z13-0",
+      "z": 13.2,
+      "log10_mstar": 7.8,
+      "sfr_msun_per_year": 1.0,
+      "sources": [
+        "https://www.nature.com/articles/s41550-023-01918-w",
+        "https://academic.oup.com/mnras/article-abstract/526/1/1324/7243416"
+      ]
+    },
+    {
+      "name": "GN-z11",
+      "z": 10.6034,
+      "log10_mstar": 9.0,
+      "sfr_msun_per_year": 24.0,
+      "sources": [
+        "https://www.aanda.org/articles/aa/full_html/2023/09/aa46159-23/aa46159-23.html",
+        "https://www.aanda.org/articles/aa/full_html/2025/03/aa51731-24/aa51731-24.html"
+      ]
+    },
+    {
+      "name": "Maisie's Galaxy",
+      "z": 11.44,
+      "log10_mstar": 8.5,
+      "sfr_msun_per_year": 2.1,
+      "sources": [
+        "https://arxiv.org/abs/2301.09482",
+        "https://academic.oup.com/mnras/article-abstract/526/1/1324/7243416"
+      ]
+    }
+  ],
+  "desi_external_files": {
+    "mean_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "mean_sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "cov_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "cov_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509"
+  },
+  "desi_active_branch": {
+    "H0": 67.57585653582628,
+    "Omega_m": 0.34868395067621694,
+    "Omega_k": -0.04579112576013168,
+    "Omega_lambda": 0.69701575761593,
+    "Omega_r": 9.141746798467538e-05,
+    "rd_mpc": 144.01351425392883,
+    "raw_gccomb_chi2": 69.4848089278862,
+    "flat_cpl_fixed_point": {
+      "Omega_m": 0.341977536144968,
+      "w0": -1.030263043675755,
+      "wa": -0.1115075206254369,
+      "h": 0.6263699225718755,
+      "H0": 62.63699225718755,
+      "rd_mpc": 155.58428581907293,
+      "chi2_to_io_synthetic": 0.8578882977742515,
+      "max_abs_residual": 0.3804709190822848
+    }
+  },
+  "dark_matter_limits": {
+    "LZ_2024": {
+      "experiment": "LZ",
+      "limit_cm2": 2.2e-48,
+      "mass_GeV": 40.0,
+      "source": "https://arxiv.org/abs/2410.17036"
+    },
+    "XENONnT": {
+      "experiment": "XENONnT",
+      "limit_cm2": 2.58e-47,
+      "mass_GeV": 28.0,
+      "source": "https://www.weizmann.ac.il/particle/xenon/publications"
+    },
+    "PandaX4T": {
+      "experiment": "PandaX-4T",
+      "limit_cm2": 1.6e-47,
+      "mass_GeV": 40.0,
+      "source": "https://pandax.sjtu.edu.cn/Publications"
+    }
+  }
+}

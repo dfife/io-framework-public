@@ -1,0 +1,34 @@
+{
+  "mission": "Determine whether the standard neutral puncture Z_k data can produce a nonzero integral index degree by any additive theorem on the current stack.",
+  "theorem_1_neutral_puncture_group": {
+    "status": "derived / exact algebraic setup",
+    "statement": "For fixed puncture number N and Chern-Simons level k, the standard puncture label space is the neutral subgroup K_N = {a in (Z_k)^N : \u03a3_i a_i = 0}. This is a finite abelian torsion group, isomorphic to (Z_k)^(N-1).",
+    "formulas": {
+      "neutral_group": "K_N = ker(\u03a3 : (Z_k)^N -> Z_k)",
+      "structure": "K_N \u2245 (Z_k)^(N-1)"
+    }
+  },
+  "theorem_2_integer_homomorphism_zero": {
+    "status": "derived / exact algebraic no-go",
+    "statement": "Every group homomorphism from the finite torsion group K_N to the torsion-free group Z is zero. Therefore any additive puncture-charge-to-integer lift from the standard neutral Z_k data to an integral index degree vanishes identically.",
+    "formula": "Hom(K_N, Z) = 0",
+    "current_value": "n_punct,additive = 0"
+  },
+  "theorem_3_exact_remaining_escape": {
+    "status": "derived / strongest exact current frontier sharpening",
+    "statement": "The standard puncture-U(1) sector cannot yield nonzero n_punct by any additive, charge-homomorphic theorem. Any positive route must therefore be genuinely extra: either a non-additive lift, extra continuous geometric data, or a different puncture-resolved operator sector.",
+    "imports": {
+      "previous_lift_map": "{a_i in Z_k with \u03a3_i a_i = 0 mod k} -> n_punct in Z \\ {0}"
+    },
+    "killed_route": "additive lift from neutral Z_k puncture charges to integer degree",
+    "still_not_derived": [
+      "a non-additive puncture lift theorem",
+      "extra continuous Abelian/spin^c geometric data",
+      "a different full puncture-resolved operator sector beyond standard neutral Z_k labels"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 additive-lift no-go",
+    "safe_statement": "The standard puncture-U(1) route is now dead in its natural additive form. Neutral Z_k puncture labels cannot generate a nonzero integral index degree by any additive theorem. Any further positive route would have to be genuinely non-additive or use extra data beyond the standard puncture charge sector."
+  }
+}

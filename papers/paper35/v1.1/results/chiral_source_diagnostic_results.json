@@ -1,0 +1,26 @@
+{
+  "claim_boundary": "CONDITIONAL/CONSTRUCTED source-era diagnostic",
+  "discipline": {
+    "missing_for_full_baryogenesis": [
+      "baryon-number transfer operator",
+      "chirality/sign selector",
+      "freeze-out dynamics theorem"
+    ]
+  },
+  "formulae": {
+    "T_f": "K_gauge^4 M_Pl,reduced(diagnostic convention)",
+    "eta_chiral": "7.04 K_gauge^8",
+    "g_chi": "K_gauge^4"
+  },
+  "numbers": {
+    "K_gauge": 0.05487281774291466,
+    "K_gauge_8": 8.219740289774416e-11,
+    "M_Pl_reduced_GeV_diagnostic": 2.427008942118276e+18,
+    "T_f_GeV": 22003938597477.8,
+    "eta10_chiral": 5.786697164001189,
+    "eta_chiral": 5.786697164001189e-10,
+    "g_chi": 9.066278337760437e-06
+  },
+  "script": "03_chiral_source_diagnostic.py",
+  "status": "verified"
+}

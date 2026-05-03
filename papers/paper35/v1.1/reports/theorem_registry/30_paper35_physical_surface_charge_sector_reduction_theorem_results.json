@@ -1,0 +1,37 @@
+{
+  "mission": "Sharpen the future compensator-defect route by reducing it from a geometric marked point to the exact missing physical-surface sector datum.",
+  "theorem_1_physical_surface_states_forget_positions": {
+    "status": "derived / scoped",
+    "statement": "After the physical diffeomorphism/gauge reduction, the physical surface Hilbert space is labelled by charge tuples a with sum_i a_i = 0, not by puncture positions. Therefore a future compensator route cannot fundamentally depend on a geometric marked point p_* as an observable datum.",
+    "formulas": {
+      "physical_surface_basis": "H_s^phys = direct sum over n,a with a_i in Z_k \\ {0}, sum_i a_i = 0",
+      "position_data": "puncture positions are not physical basis data",
+      "future_geometric_marker": "p_* is reducible / non-fundamental at the physical level"
+    }
+  },
+  "theorem_2_exact_future_sector_object": {
+    "status": "derived / sharpened future-extension target",
+    "statement": "The exact future compensator object is not a marked point but a physical-sector decomposition theorem on the neutral charge-tuple space. Equivalently, one needs a projector P_vis (or equivalent selector) splitting a neutral tuple a into visible and compensator subcharges with total charges q and -q mod k.",
+    "formulas": {
+      "sector_selector": "P_vis on neutral tuple space",
+      "charge_split": "sum_{i in vis} a_i = q,   sum_{i in comp} a_i = -q mod k",
+      "future_datum": "(P_vis, q),   q in Z_k \\ {0}"
+    },
+    "imports": {
+      "defect_target": "The current physical puncture sector contains no hidden marked defect. Any positive future compensator route is reduced to one exact new object: a distinguished defect or edge mode carrying charge q in Z_k \\ {0}.",
+      "compensator_target": "Any positive non-neutral Paper 35 surface extension is now reduced to one exact datum: a compensator charge q in Z_k \\ {0}. On the current compact closed-sphere stack, that sector is absent. So future work should target an explicit compensator defect / edge-mode theorem rather than a vague non-neutral surface sector."
+    }
+  },
+  "theorem_3_current_stack_has_no_sector_selector": {
+    "status": "derived / strongest current-stack no-go refinement",
+    "statement": "The present stack derives no physical operator or theorem selecting a visible subsector inside the neutral charge-tuple space. The ABCK basis is neutral and puncture-symmetric, and the natural state is tracial. Therefore the current-stack value of the missing sector selector is absent.",
+    "formulas": {
+      "current_selector": "P_vis,current = none",
+      "current_charge": "q_current = 0"
+    }
+  },
+  "final_boundary": {
+    "status": "derived / sharpened future physical-sector target",
+    "safe_statement": "The future compensator route is now reduced from a geometric marked defect to one exact physical-surface datum: a sector selector P_vis together with a nonzero charge q in Z_k. On the current stack that selector is absent."
+  }
+}

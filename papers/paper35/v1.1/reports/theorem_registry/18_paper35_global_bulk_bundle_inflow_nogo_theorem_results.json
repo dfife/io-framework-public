@@ -1,0 +1,38 @@
+{
+  "mission": "Determine whether the Abelian inflow obstruction is only a canonical-ball artifact or a global theorem for any compact oriented bulk three-manifold with boundary S^2.",
+  "theorem_1_boundary_degree_of_any_absolute_bulk_line_bundle_vanishes": {
+    "status": "derived / scoped",
+    "statement": "Let Y be a compact connected oriented 3-manifold with boundary S^2, and let L be any complex line bundle on Y. Then the degree of its boundary restriction vanishes.",
+    "formulas": {
+      "boundary_cycle": "i_*[partial Y] = 0 in H_2(Y; Z)",
+      "naturality": "<i^* c1(L), [partial Y]> = <c1(L), i_*[partial Y]>",
+      "conclusion": "deg(L|_{partial Y}) = 0"
+    }
+  },
+  "theorem_2_ordinary_bulk_bundle_inflow_is_globally_dead": {
+    "status": "derived / strongest ordinary inflow no-go",
+    "statement": "The obstruction is global, not just local to B^3. No ordinary absolute line bundle over any compact oriented Y with boundary S^2 can restrict to the nontrivial horizon bundle Q^n with n != 0. Therefore the future inflow object cannot be an ordinary (Y, L, m_odd) package with L an absolute bulk line bundle.",
+    "formulas": {
+      "boundary_target": "deg(Q^n) = -n",
+      "absolute_bundle_consequence": "deg(L|_{S^2}) = 0",
+      "extension_condition": "L|_{S^2} \u2245 Q^n only if n = 0",
+      "dead_route": "ordinary absolute bulk-bundle inflow"
+    },
+    "imports": {
+      "previous_local_boundary": "The minimal boundary-local Abelian inflow route on a canonical B^3/collar is dead for the actual horizon bundle geometry. Any surviving positive inflow route must include nontrivial extension data, not just a standalone odd coupling kappa_odd."
+    }
+  },
+  "theorem_3_exact_future_inflow_object": {
+    "status": "derived / sharpened future inflow target",
+    "statement": "The surviving positive inflow route must therefore be genuinely relative or singular. It must add data not equivalent to an ordinary absolute bulk line bundle: for example APS-type relative spin^c data, a singular defect/edge source, or an independent boundary determinant bundle coupled to an odd bulk term.",
+    "formulas": {
+      "future_exact_object": "A_rel plus m_odd, where A_rel is genuinely relative/singular inflow data",
+      "not_enough": "(Y, L, m_odd) with L absolute on Y",
+      "current_value": "A_rel,current = none,   m_odd,current = 0"
+    }
+  },
+  "final_boundary": {
+    "status": "derived / exhausted absolute-bulk-bundle inflow boundary",
+    "safe_statement": "The Abelian inflow obstruction is global: no ordinary absolute bulk line bundle over a compact oriented three-manifold with boundary S^2 can carry the required nonzero boundary degree. Any surviving Paper 35 inflow route must be genuinely relative or singular."
+  }
+}

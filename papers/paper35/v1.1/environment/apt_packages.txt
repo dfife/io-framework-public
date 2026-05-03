@@ -1,0 +1,8 @@
+# System packages used in the construction environment.
+#
+# Required to run validation:
+python3
+
+# Optional utilities used by maintainers for checksum/release operations:
+git
+sha256sum

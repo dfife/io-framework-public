@@ -1,0 +1,77 @@
+{
+  "mission": "Reduce the closed late-time IO eta target to exact standard thermal-leptogenesis targets without introducing new framework axioms.",
+  "closed_io_input": {
+    "eta_late": 5.748778515173695e-10,
+    "Y_B": 8.165878572689907e-11
+  },
+  "external_reduction_assumptions": {
+    "status": "conditional / exact external reduction class",
+    "assumptions": [
+      "Standard-Model sphaleron conversion: Y_B = (28/79) Y_(B-L)",
+      "Hierarchical thermal leptogenesis with one effective lightest heavy Majorana species N1",
+      "Relativistic equilibrium initial abundance for N1",
+      "External source reduction Y_B = c_sph * eps1 * kappa_f * Y_N1^eq(0)",
+      "Davidson-Ibarra CP-asymmetry bound in the Standard-Model convention |eps1| <= 3 m_atm M1 / (16 pi v^2)"
+    ],
+    "benchmarks": {
+      "g_star_SM": 106.75,
+      "g_N1": 2.0,
+      "v_SM_GeV": 174.0,
+      "m_atm_eV": 0.05
+    }
+  },
+  "theorem_1_required_source_product": {
+    "status": "derived / exact external target reduction",
+    "formulae": {
+      "Y_N1_eq_0": "135 zeta(3) / (4 pi^4 g_*)",
+      "Y_B": "c_sph * eps1 * kappa_f * Y_N1^eq(0)",
+      "eps1_kappa_target": "Y_B / [c_sph * Y_N1^eq(0)]"
+    },
+    "Y_N1_eq_0": 0.003901498367656259,
+    "c_sph": 0.35443037974683544,
+    "eps1_kappa_target": 5.905280726708112e-08,
+    "statement": "Any standard hierarchical thermal-leptogenesis completion that reproduces the closed IO late-time eta must realize the exact product eps1 * kappa_f fixed here."
+  },
+  "theorem_2_davidson_ibarra_floor_family": {
+    "status": "derived / conditional external mass-floor family",
+    "formulae": {
+      "epsilon_bound": "|eps1| <= c_DI * M1",
+      "c_DI": "3 m_atm / (16 pi v^2)",
+      "M1_floor_kappa": "eps1_kappa_target / (c_DI * kappa_f)"
+    },
+    "c_DI_GeV_inv": 9.856504105473108e-17,
+    "M1_floor_absolute_GeV": 599125274.3890235,
+    "M1_floor_family_GeV": {
+      "1": 599125274.3890235,
+      "0.3": 1997084247.9634116,
+      "0.1": 5991252743.890235,
+      "0.03": 19970842479.634117,
+      "0.01": 59912527438.90235,
+      "0.003": 199708424796.34116
+    },
+    "statement": "If the Davidson-Ibarra bound is the active external CP-asymmetry ceiling, then the lightest heavy-neutrino mass must lie above the kappa_f-dependent floor given here."
+  },
+  "theorem_3_poplawski_target_compatibility": {
+    "status": "derived / conditional external compatibility theorem",
+    "input_from_previous_external_target_GeV": 22003938597477.8,
+    "epsilon_max_at_T_f": 0.0021688191112261813,
+    "kappa_required_if_M1_equals_T_f": 2.722809244967163e-05,
+    "T_f_over_M1_floor_absolute": 36726.77407895535,
+    "statement": "If a future source theorem identifies the previously fixed external freeze-out target T_f,target with the lightest heavy-neutrino scale M1, then Davidson-Ibarra saturation requires only the efficiency kappa_f given here; numerically this remains admissible and the Poplawski target scale lies far above the absolute Davidson-Ibarra floor."
+  },
+  "final_boundary": {
+    "status": "derived / exact external reduction",
+    "safe_statement": "No ambiguity remains in the standard hierarchical thermal-leptogenesis reduction of the closed late-time IO eta. What remains open is not the target numbers but the theorem sector that could generate them.",
+    "still_open_for_framework": [
+      "an internal right-handed-Majorana or equivalent source sector",
+      "an internal CP-asymmetry theorem sector",
+      "an internal washout-efficiency or freeze-out selector theorem"
+    ]
+  },
+  "sources": [
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0202239",
+    "https://home.ba.infn.it/~now/now2014/web-content/TALKS/cWed/Par1/MolinaroNOW2014.pdf",
+    "https://arxiv.org/abs/1101.4012"
+  ]
+}

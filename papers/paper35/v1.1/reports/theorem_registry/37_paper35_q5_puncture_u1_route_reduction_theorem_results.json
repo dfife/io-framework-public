@@ -1,0 +1,36 @@
+{
+  "mission": "Use the isolated-horizon quantum boundary literature to reduce the last live positive Q5 route from a generic Abelian twist to its exact puncture-U(1) realization target.",
+  "theorem_1_external_puncture_u1_structure": {
+    "status": "derived / external route identification",
+    "statement": "In the isolated-horizon quantization literature, the intrinsic horizon geometry is described by a U(1) Chern-Simons connection on a punctured 2-sphere, flat away from the punctures with distributional curvature concentrated at the punctures. So the only externally supported Abelian topological route is a punctured-sphere U(1) line-bundle/holonomy sector.",
+    "external_support": [
+      "https://arxiv.org/abs/gr-qc/0005126"
+    ],
+    "exact_external_object": "U(1) Chern-Simons connection on punctured S^2"
+  },
+  "theorem_2_current_io_gap": {
+    "status": "derived / scoped gap characterization",
+    "statement": "The current IO stack does not derive that puncture-resolved U(1) sector. Paper 19 still leaves the full puncture-resolved horizon algebra open, and the admitted fermionic bridge carrier is built only from the reduced S^2 spinor bundle plus multiplicity factors.",
+    "imports": {
+      "previous_frontier": "n = c1(L)[S^2] \u2208 Z \\ {0}"
+    },
+    "local_support": [
+      "/opt/cosmology-lab/results/paper19/paper19_isolated_horizon_certification_report.txt",
+      "/opt/cosmology-lab/results/paper19/paper19_item4_reduction_extension_resolution_report.txt",
+      "/opt/cosmology-lab/results/paper32/paper32_fermionic_chiral_bridge_sector_construction_report.md"
+    ]
+  },
+  "theorem_3_exact_final_missing_data": {
+    "status": "derived / strongest exact current frontier reduction",
+    "statement": "The last live positive Q5 route is not a generic Abelian twist. It is the following exact pair of missing data: a puncture-resolved U(1) horizon line bundle L_punct with nonzero degree, and a theorem-grade charged spin^c lift coupling the fermionic bridge sector to that line bundle. Equivalently, the exact missing integer is n = q_chi c1(L_punct)[S^2] \u2260 0.",
+    "exact_missing_objects": [
+      "L_punct: derived puncture-U(1) horizon line bundle",
+      "q_chi: derived fermionic charge/spin^c coupling of the bridge sector to L_punct"
+    ],
+    "exact_missing_integer": "n = q_chi c1(L_punct)[S^2] \u2208 Z \\ {0}"
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 exact route reduction",
+    "safe_statement": "Paper 35 is now reduced as far as the current stack and standard isolated-horizon support permit. The only live positive Q5 route is a derived puncture-U(1) line bundle plus a derived charged spin^c coupling into the fermionic bridge. Without those, baryogenesis remains closed on the current stack."
+  }
+}

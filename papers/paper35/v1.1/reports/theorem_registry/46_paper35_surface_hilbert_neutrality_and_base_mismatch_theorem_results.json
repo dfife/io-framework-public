@@ -1,0 +1,46 @@
+{
+  "mission": "Determine whether the standard puncture-resolved surface Hilbert space or its theta-function prequantum line bundle can supply the residual spin^c shift n after canonical horizon-spin normalization.",
+  "theorem_1_surface_representation_is_globally_neutral": {
+    "status": "derived / scoped",
+    "statement": "In the standard ABCK surface Hilbert space, basis states are labelled by puncture weights a = (a_1,...,a_n) in Z_k with \u03a3_i a_i = 0 mod k, and the quantized gauge group acts by the character R(g_1,...,g_n) psi_a = prod_i g_i^(a_i) psi_a. Therefore the physical surface sector carries only relative puncture characters with vanishing total U(1) weight. It has no theorem-grade global charged character that could directly realize the residual spin^c integer n.",
+    "formulas": {
+      "surface_character": "R(g_1,...,g_n) psi_a = prod_i g_i^(a_i) psi_a",
+      "neutrality_constraint": "sum_i a_i = 0 mod k",
+      "global_weight": "q_tot(a) = sum_i a_i = 0 mod k"
+    },
+    "imports": {
+      "abck_source": "/tmp/tmp.PXmeXii1Kv/ih.txt:1985-2045"
+    }
+  },
+  "theorem_2_prequantum_line_base_mismatch": {
+    "status": "derived / scoped no-go",
+    "statement": "The line bundle L arising in the theta-function quantization of the puncture phase space is a holomorphic prequantum line bundle over the torus X_V of surface connection moduli. It is not a line bundle over the horizon sphere S^2 itself. Therefore its Chern data live in H^2(X_V,Z), not in H^2(S^2,Z), and it cannot by itself serve as the missing residual twist L = Q^n on the horizon Dirac carrier.",
+    "formulas": {
+      "surface_phase_space": "X_V ~ (U(1) x U(1))^(n-1)",
+      "prequantum_bundle": "L -> X_V",
+      "residual_spin_c_target": "Q^n -> S^2",
+      "base_mismatch": "H^2(X_V,Z) != H^2(S^2,Z) as target cohomology for horizon Dirac twisting"
+    },
+    "imports": {
+      "abck_phase_space": "/tmp/tmp.PXmeXii1Kv/ih.txt:1340-1525",
+      "abck_theta_bundle": "/tmp/tmp.PXmeXii1Kv/ih.txt:1935-2045"
+    }
+  },
+  "theorem_3_no_hidden_current_stack_selector_from_a_punc": {
+    "status": "derived / strongest current puncture-sector no-go",
+    "statement": "Combining global neutrality of the physical puncture characters with the base-space mismatch of the theta-function line bundle, the standard ABCK puncture-resolved surface sector contains no hidden current-stack selector for a nonzero residual spin^c shift n on the horizon fermionic carrier. Any positive route would require a new construction that transfers puncture data to a genuine determinant line on S^2, or a new non-neutral charged sector beyond the standard neutral surface representation.",
+    "imports": {
+      "spin_normalization": "The old phrase \"current carrier is neutral\" was too coarse. The fixed horizon spin bundle already has unit degree, and the chiral half-spin branches already carry degrees \u00b11. What remains absent on the current stack is only an extra determinant twist beyond that canonical spin geometry. This sharpens the Paper 35 frontier but does not reopen Q5 on the current stack.",
+      "residual_boundary": "The Paper 35 charged frontier is now exact after spin normalization. The fixed horizon spin bundle already contributes the canonical unit degree. No current-stack theorem produces any extra spin^c shift beyond it. So the only live positive route is a genuinely new residual spin^c class n \u2260 0, not a hidden completion of the existing carrier."
+    },
+    "still_not_derived": [
+      "a functorial map from puncture phase-space line data on X_V to a determinant line over S^2",
+      "a non-neutral charged surface sector beyond the standard \u03a3_i a_i = 0 mod k representation",
+      "an independent CP-odd seed or anomaly-inflow theorem"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / exhausted puncture-sector Paper 35 boundary",
+    "safe_statement": "The standard ABCK puncture sector is now exhausted for Paper 35. Its physical characters are globally neutral, and its quantization line bundle lives over the puncture phase-space torus rather than the horizon sphere. So it cannot secretly supply the residual spin^c integer n on the current stack."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "mission": "Determine whether the current IO fermionic/chiral extension can itself supply the missing baryogenesis source sector.",
+  "current_internal_assets": {
+    "status": "derived / scoped",
+    "assets": [
+      "lowest-shell one-chirality J=1/2 horizon spinor carrier",
+      "canonical Hawking/KMS quasi-free CAR seed",
+      "support-branch axial-current lift",
+      "EC spin-density scaling and bounce attachment"
+    ]
+  },
+  "theorem_1_lowest_shell_energy_mismatch_nogo": {
+    "status": "derived / exact internal no-go",
+    "formulae": {
+      "omega_D": "c / r_s",
+      "E_D": "hbar * omega_D"
+    },
+    "omega_D_s_inv": 4.48455434554973e-19,
+    "E_D_GeV": 2.9517872900283634e-43,
+    "T_f_target_GeV": 22003938597477.8,
+    "T_f_over_E_D": 7.454445878200921e+55,
+    "statement": "The current fermionic/chiral IO extension is built on the lowest horizon Dirac shell. Its natural single-mode energy scale is E_D, which is lower than the externally fixed source target T_f,target by more than 55 orders of magnitude. Therefore the existing lowest-shell carrier cannot itself be the heavy baryogenesis source sector."
+  },
+  "theorem_2_charge_structure_nogo": {
+    "status": "derived / scoped no-go",
+    "statement": "The current fermionic/chiral IO extension carries chirality and axial spin density, but it does not carry a theorem-grade gauge-singlet Majorana mass slot, lepton-number grading, or visible B-L transfer operator. Therefore it cannot by itself instantiate a standard baryogenesis source sector.",
+    "exact_missing_internal_objects": [
+      "neutral gauge-singlet or equivalent heavy source carrier",
+      "Majorana or equivalent mass theorem sector",
+      "visible B-L transfer / decay operator"
+    ]
+  },
+  "theorem_3_freezeout_scale_separation_nogo": {
+    "status": "derived / scoped no-go",
+    "T_bounce_over_Mpl": 0.8217282014862515,
+    "T_f_over_T_bounce": 1.099702e-05,
+    "statement": "The density-gated fermionic channel turns on at the bounce seam, while the externally fixed source freeze-out target lies about 1.1e-5 of the bounce temperature. The current extension contains no second rate-crossing or entropy-transfer theorem that could derive this later source scale from the seam dynamics.",
+    "exact_missing_internal_object": "interaction-rate / expansion-rate crossing theorem for the source sector"
+  },
+  "final_boundary": {
+    "status": "derived / exact internal exhaustion boundary",
+    "statement": "The current IO fermionic/chiral extension does not contain the baryogenesis source microphysics. The failure is stronger than missing normalization: it is a combined energy-scale, carrier-type, and rate-selection mismatch.",
+    "what_positive_progress_now_requires": [
+      "a new high-energy neutral source carrier theorem",
+      "a new internal B-L transfer or decay theorem",
+      "a new freeze-out/rate theorem selecting the source scale"
+    ]
+  }
+}

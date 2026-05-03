@@ -1,0 +1,55 @@
+{
+  "mission": "Reduce the remaining Paper 35 framework debts to exact externally-theoremic target objects",
+  "closed_io_inputs": {
+    "gamma_BI": 0.2375,
+    "x": 1.518987327774,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "omega_b_geom": 0.020995719061702847,
+    "T_IO": 2.6635,
+    "T_obs": 2.7253048490552736,
+    "eta_late": 5.748778515173695e-10
+  },
+  "theorem_1_mean_baryon_mass_target": {
+    "status": "derived / exact target from the closed late-time eta theorem",
+    "formula": "m_bar,target = rho_b(omega_b,geom) / [eta_late * n_gamma(T_obs)]",
+    "m_bar_target_kg": 1.6705903034252064e-27,
+    "m_bar_target_GeV": 0.9371324336277999,
+    "statement": "Any future internal color/confinement theorem that claims to close the baryon mass debt must reproduce this target mass on the active branch."
+  },
+  "theorem_2_b_l_precursor_target": {
+    "status": "derived / exact target using the external Standard-Model sphaleron theorem",
+    "formulae": {
+      "Y_B": "eta_late / 7.04",
+      "Y_(B-L)": "(79/28) * Y_B"
+    },
+    "Y_B_target": 8.165878572689909e-11,
+    "Y_B_minus_L_target": 2.303944311580367e-10,
+    "temperature_window_GeV": {
+      "T_sph_min": 135.0,
+      "T_sph_max": 1000000000000.0
+    },
+    "statement": "Any source-era mechanism that closes the observed baryon asymmetry through Standard-Model sphalerons must produce this B-L precursor while sphalerons remain active."
+  },
+  "theorem_3_freezeout_target": {
+    "status": "derived / exact target using the external Poplawski Hehl-Datta forward map",
+    "formula": "T_f,target = sqrt(Y_B) * Mbar_Pl,reduced",
+    "T_f_target_GeV": 22003938597477.8,
+    "statement": "Any source-era torsion-baryogenesis mechanism using Poplawski's forward asymmetry law must select this freeze-out scale to reproduce the closed late-time eta."
+  },
+  "reduction_theorem": {
+    "status": "derived",
+    "statement": "Under the current framework closure for late-time eta and the external Standard-Model/QCD/EC theorems cited below, the remaining Paper 35 debts reduce exactly to three target objects: (i) the mean baryon mass target m_bar,target, (ii) the precursor asymmetry target Y_(B-L), and (iii) the freeze-out target T_f. No further ambiguity remains at the level of targets; only the internal sector that could generate them remains open.",
+    "still_missing_internal_sectors": [
+      "an SU(3)_c / confinement / dimensional-transmutation theorem sector",
+      "a baryon-separation or baryon-number-violating source operator",
+      "a freeze-out selector theorem"
+    ]
+  },
+  "sources": [
+    "https://pdg.lbl.gov/2024/reviews/rpp2024-rev-qcd.pdf",
+    "https://home.ba.infn.it/~now/now2014/web-content/TALKS/cWed/Par1/MolinaroNOW2014.pdf",
+    "https://arxiv.org/abs/1101.4012",
+    "https://arxiv.org/abs/1105.6127"
+  ]
+}

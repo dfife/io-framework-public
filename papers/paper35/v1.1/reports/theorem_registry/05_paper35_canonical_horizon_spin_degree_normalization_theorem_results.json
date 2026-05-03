@@ -1,0 +1,64 @@
+{
+  "mission": "Tighten the remaining Paper 35 charged-twist frontier by deriving the canonical first Chern class of the fixed isolated-horizon U(1) spin bundle Q, the chiral half-spin decomposition on S^2, and the exact normalization of the residual integer n as an extra determinant twist beyond the canonical spin geometry.",
+  "theorem_1_fixed_horizon_spin_bundle_degree": {
+    "status": "derived / scoped",
+    "statement": "The fixed isolated-horizon U(1) bundle Q is not topologically trivial. Because Q is the spin bundle of the round horizon two-sphere and the double-cover map U(1)->SO(2) squares the fiber character, its first Chern class satisfies 2 c1(Q) = e(TS^2). Since e(TS^2)[S^2] = chi(S^2) = 2, one has |c1(Q)[S^2]| = 1. With the Ashtekar-Baez-Krasnov curvature orientation, c1(Q)[S^2] = -1.",
+    "formulas": {
+      "intrinsic_identification": "Q is just the spin bundle of S",
+      "double_cover_law": "2 c1(Q) = e(TS^2)",
+      "sphere_euler": "e(TS^2)[S^2] = chi(S^2) = 2",
+      "chern_number": "c1(Q)[S^2] = -1  (orientation-fixed);  |c1(Q)[S^2]| = 1"
+    },
+    "external_support": [
+      "Ashtekar-Baez-Krasnov isolated-horizon phase space, eqs. (5)-(6) and surrounding text",
+      "/tmp/tmp.PXmeXii1Kv/ih.txt:377-390"
+    ],
+    "numerics": {
+      "c1_Q_orientation_fixed": -1,
+      "abs_c1_Q": 1
+    }
+  },
+  "theorem_2_half_spin_decomposition": {
+    "status": "derived / scoped",
+    "statement": "On the oriented horizon sphere, the complex spinor bundle splits into half-spin line bundles S = S^+ \u2295 S^-. With the above orientation convention one may take S^+ = Q and S^- = Q^{-1}. Therefore the chiral half-spin branches already carry fixed unit degrees -1 and +1, while the full Dirac bundle is determinant-neutral.",
+    "formulas": {
+      "split": "S_{S^2} = Q \u2295 Q^{-1}",
+      "positive_chirality": "S^+ = Q",
+      "negative_chirality": "S^- = Q^{-1}",
+      "degrees": "c1(S^+) = -1, c1(S^-) = +1",
+      "full_bundle_neutrality": "c1(S_{S^2}) = c1(Q) + c1(Q^{-1}) = 0"
+    },
+    "numerics": {
+      "c1_S_plus": -1,
+      "c1_S_minus": 1,
+      "c1_full_spinor": 0
+    }
+  },
+  "theorem_3_extra_twist_normalization": {
+    "status": "derived / strongest current Paper 35 frontier sharpening",
+    "statement": "The previously stated family S_{S^2} \u2297 Q^n should be read relative to the already present canonical spin geometry. The current stack is not \"neutral\" in the naive bundle sense; it is spin-normalized. Twisting by an extra power Q^n produces chiral bundles S_n^+ = Q^{n+1} and S_n^- = Q^{n-1}. The spin contribution \u00b11 is already fixed and cancels out of the Dirac index; the only live index datum is the extra twist integer n.",
+    "formulas": {
+      "twisted_family": "S_n = S_{S^2} \u2297 Q^n",
+      "chiral_components": "S_n^+ = Q^{n+1},   S_n^- = Q^{n-1}",
+      "riemann_roch": "ind D_n = deg(S_n^+) + 1 = -(n+1) + 1 = -n",
+      "absolute_index": "|ind D_n| = |n|"
+    },
+    "current_stack_value": {
+      "n_current": 0,
+      "index_current": 0,
+      "interpretation": "no extra determinant twist beyond the canonical spin bundle"
+    }
+  },
+  "theorem_4_consequence_for_q5": {
+    "status": "derived / scoped no-go refinement",
+    "statement": "Deriving c1(Q)[S^2] = -1 does not by itself revive Paper 35 baryogenesis. The canonical unit spin charge is already built into the untwisted spin Dirac problem and gives zero index on the current stack. Therefore the exact remaining positive route is not to derive any nontrivial horizon bundle at all, but to derive a nonzero extra determinant twist n beyond the canonical spin normalization, or an independent CP-odd seed/inflow theorem.",
+    "imports": {
+      "current_q5_boundary": "Q5 remains rigid at zero on the current stack",
+      "residual_integer": "n is the extra twist beyond canonical spin geometry"
+    }
+  },
+  "final_boundary": {
+    "status": "derived / sharpened current Paper 35 boundary",
+    "safe_statement": "The old phrase \"current carrier is neutral\" was too coarse. The fixed horizon spin bundle already has unit degree, and the chiral half-spin branches already carry degrees \u00b11. What remains absent on the current stack is only an extra determinant twist beyond that canonical spin geometry. This sharpens the Paper 35 frontier but does not reopen Q5 on the current stack."
+  }
+}

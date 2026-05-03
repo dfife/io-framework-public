@@ -1,0 +1,27 @@
+{
+  "mission": "Reduce the remaining positive Paper 35 route to the exact minimal charged fermionic bridge extension class compatible with the existing horizon U(1) sector.",
+  "theorem_1_u1_character_reduction": {
+    "status": "derived / exact representation reduction",
+    "statement": "Every one-dimensional complex representation of U(1) is a character z \u21a6 z^n for a unique integer n. Therefore every minimal charged fermionic lift into the fixed horizon U(1) bundle Q is classified by a single integer twist weight n.",
+    "exact_weight": "n \u2208 Z"
+  },
+  "theorem_2_unique_minimal_charged_carrier_family": {
+    "status": "derived / exact extension target reduction",
+    "statement": "Holding the existing Paper 32 carrier fixed and adjoining only the missing horizon-U(1) charge, the unique minimal charged extension family is",
+    "carrier_family": "h_spin,Q^(n)^br = L^2(R,dnu) \u2297 H_g \u2297 \u0393(S^2, S_{S^2} \u2297 Q^n \u2297 M_{1/2})",
+    "neutral_member": "n = 0",
+    "positive_target": "n \u2260 0"
+  },
+  "theorem_3_current_boundary": {
+    "status": "derived / exact current-stack boundary",
+    "statement": "The present stack realizes only the neutral member n = 0. No theorem on the current stack selects or generates a nonzero twist weight n.",
+    "imports": {
+      "current_carrier": "h_spin^br = L^2(R,dnu) \u2297 H_g \u2297 \u0393(S^2, S_{S^2} \u2297 M_{1/2})",
+      "charged_nogo": "Because the current fermionic bridge carrier is neutral and the current transport preserves that carrier type, the charged lift into the fixed horizon U(1) bundle Q is not present on the current stack. Therefore the remaining positive Paper 35 route requires a genuinely new charged fermionic carrier block, not a hidden theorem already implicit in the Paper 32 bridge."
+    }
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 extension target reduction",
+    "safe_statement": "The remaining positive Paper 35 route is now fully reduced as an extension target. The unique minimal charged bridge family is `S_{S^2} \u2297 Q^n`, and the only unresolved datum is the nonzero integer twist weight `n`. The current stack realizes only `n = 0`."
+  }
+}

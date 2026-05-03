@@ -1,0 +1,31 @@
+{
+  "mission": "Use the primary isolated-horizon puncture constraints to determine whether the standard puncture-U(1) sector automatically produces a nonzero index degree, or whether an additional lift theorem is required.",
+  "theorem_1_external_puncture_neutrality": {
+    "status": "derived / external route sharpening",
+    "statement": "In the standard isolated-horizon U(1) puncture quantization, puncture labels are discrete classes a_i in Z_k constrained by global gauge invariance to satisfy a neutral sum condition \u03a3_i a_i = 0 mod k. Therefore the standard puncture data are globally neutral at the level of the horizon Chern-Simons labels.",
+    "formulas": {
+      "puncture_matching": "2 m_i = - a_i mod k",
+      "global_constraint": "\u03a3_i a_i = 0 mod k"
+    },
+    "external_support": [
+      "https://intlpress.com/site/pub/files/_fulltext/journals/atmp/2000/0004/0001/ATMP-2000-0004-0001-a001.pdf"
+    ]
+  },
+  "theorem_2_no_naive_index_from_neutral_labels": {
+    "status": "derived / conditional / scoped no-go",
+    "statement": "Because the standard puncture labels are only Z_k-valued and satisfy global neutrality, they do not by themselves determine a nonzero integral Chern degree on the closed sphere. A naive total-charge reading does not produce the nonzero integer n_punct required by the Paper 35 index route.",
+    "current_values": {
+      "naive_total_puncture_charge": "0 mod k"
+    }
+  },
+  "theorem_3_exact_remaining_lift": {
+    "status": "derived / strongest exact current frontier reduction",
+    "statement": "The exact remaining positive route is an integral lift theorem from neutral puncture Chern-Simons data to a nonzero spin^c index degree seen by the fermionic bridge. Equivalently, one needs a theorem",
+    "exact_missing_map": "{a_i in Z_k with \u03a3_i a_i = 0 mod k} -> n_punct in Z \\ {0}",
+    "meaning": "Without such a lift, the standard puncture-U(1) sector remains globally neutral and does not revive Q5."
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 lift-obstruction boundary",
+    "safe_statement": "The standard isolated-horizon puncture-U(1) sector does not automatically rescue Paper 35 baryogenesis. Its labels are globally neutral. The only live route is a new theorem lifting those neutral Z_k puncture labels to a nonzero integral spin^c degree. That lift is not present on the current stack."
+  }
+}

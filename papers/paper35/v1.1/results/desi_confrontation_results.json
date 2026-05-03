@@ -1,0 +1,106 @@
+{
+  "claim_boundary": "verified DESI data confrontation; external DESI files fetched and checksummed, not redistributed",
+  "external_files": {
+    "cov_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+    "cov_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "mean_sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "mean_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt"
+  },
+  "flat_cpl_reinterpretation_fixed_point": {
+    "H0": 62.63699225718755,
+    "Omega_m": 0.341977536144968,
+    "chi2_to_io_synthetic": 0.8578882977742515,
+    "chi2_to_io_synthetic_recomputed": 0.8578882978724461,
+    "h": 0.6263699225718755,
+    "max_abs_residual": 0.3804709190822848,
+    "max_abs_residual_recomputed": 0.38047091909907493,
+    "rd_mpc": 155.58428581907293,
+    "w0": -1.030263043675755,
+    "wa": -0.1115075206254369
+  },
+  "raw_gccomb": {
+    "active_branch_chi2": 69.48480893315653,
+    "rows": [
+      {
+        "active_io_model": 8.185296666148004,
+        "observed": 7.94167639,
+        "quantity": "DV_over_rs",
+        "z": 0.295
+      },
+      {
+        "active_io_model": 13.68980190951554,
+        "observed": 13.58758434,
+        "quantity": "DM_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_model": 23.0019673324271,
+        "observed": 21.86294686,
+        "quantity": "DH_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_model": 17.9054537515304,
+        "observed": 17.35069094,
+        "quantity": "DM_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_model": 20.330984520698525,
+        "observed": 19.45534918,
+        "quantity": "DH_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_model": 22.18338793928361,
+        "observed": 21.57563956,
+        "quantity": "DM_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_model": 17.640971934690633,
+        "observed": 17.64149464,
+        "quantity": "DH_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_model": 28.183408313210947,
+        "observed": 27.60085612,
+        "quantity": "DM_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_model": 14.04208504663085,
+        "observed": 14.17602155,
+        "quantity": "DH_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_model": 30.32589090438956,
+        "observed": 30.51190063,
+        "quantity": "DM_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_model": 12.833101369404947,
+        "observed": 12.81699964,
+        "quantity": "DH_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_model": 8.518996482158201,
+        "observed": 8.631545674846294,
+        "quantity": "DH_over_rs",
+        "z": 2.33
+      },
+      {
+        "active_io_model": 38.90469504928664,
+        "observed": 38.988973961958784,
+        "quantity": "DM_over_rs",
+        "z": 2.33
+      }
+    ]
+  },
+  "script": "07_desi_confrontation.py",
+  "status": "verified"
+}
