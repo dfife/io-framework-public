@@ -1,0 +1,3 @@
+# Paper 32 v1.5 public reproducibility scripts use only the Python standard library.
+python>=3.10
+

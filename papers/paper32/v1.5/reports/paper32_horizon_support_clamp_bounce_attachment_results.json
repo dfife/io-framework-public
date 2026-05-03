@@ -1,0 +1,19 @@
+{
+  "question": "Does the derived local post-clamp support branch hit the Paper 1 / Poplawski bounce density in finite proper time?",
+  "bounce_attachment": {
+    "rho_planck_kg_m3": 5.154848506403408e+96,
+    "rho_bounce_kg_m3": 7.73227275960511e+97,
+    "R_bounce_m": 1.1159303975024325e-15,
+    "R_bounce_over_rs": 1.6693050074830766e-42,
+    "theta_bounce": 3.141592653589793,
+    "delta_tau_to_bounce_s": 3.502680992936736e+18,
+    "delta_tau_to_bounce_Gyr": 110.9932628887094,
+    "delta_tau_bounce_to_zero_s": 3.2062176005375026e-45,
+    "delta_tau_bounce_to_zero_years": 1.0159890487671758e-52,
+    "delta_tau_bounce_to_zero_planck_times": 0.05947079776789123
+  },
+  "claim_boundary": {
+    "late_branch_reaches_bounce_density": true,
+    "bounce_itself_selected_without_extra_paper1_input": false
+  }
+}

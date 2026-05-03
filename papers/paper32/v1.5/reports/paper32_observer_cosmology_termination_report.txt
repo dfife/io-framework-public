@@ -1,0 +1,28 @@
+Paper 32 observer-cosmology termination audit
+
+x_crit = 0.986375461333
+
+Sharp result
+- derived / scoped: on the active reduced scalar optical-history branch, there is no admissible observer-accessible continuation below x_crit.
+- derived / scoped: the unique boundary value is zero visibility / transparent readout.
+- derived / scoped: any post-boundary continuation must leave the observer-side scalar optical-history class.
+- no-go: the present stack still does not uniquely determine that hidden bulk continuation.
+
+Sample statuses
+- current_x0: x = 1.519000000000, c_vis = 1.000000000000e+00, g = 3.678794411714e-01, exp(-kappa_c) = 0.367879441171, status = admissible
+- x_eq_1: x = 1.000000000000, c_vis = 3.177198702029e-02, g = 3.077839562856e-02, exp(-kappa_c) = 0.968727439329, status = admissible
+- x_crit: x = 0.986375461333, c_vis = -6.428317877401e-17, g = -6.428317877401e-17, exp(-kappa_c) = 1.000000000000, status = boundary_zero_visibility
+- x_0p95: x = 0.950000000000, c_vis = -8.702562174435e-02, g = -9.493839426744e-02, exp(-kappa_c) = 1.090924630752, status = inadmissible
+- x_0p5: x = 0.500000000000, c_vis = -1.573588490517e+00, g = -7.590877250265e+00, exp(-kappa_c) = 4.823927790530, status = inadmissible
+
+Support chain
+1. Stage 2 exact FULL evolution carries no observer-side kappa/visibility/readout leg.
+2. The active scalar observer readout factors through the reduced visibility chain.
+3. That visibility chain is admissible iff x >= x_crit.
+4. Therefore no positive observer-accessible scalar optical continuation exists below x_crit.
+
+Claim boundary
+- not a bulk EOS theorem
+- not a radiation theorem
+- not a recollapse theorem
+- exact only for the active reduced scalar optical-history observer class

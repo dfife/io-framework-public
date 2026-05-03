@@ -1,0 +1,42 @@
+{
+  "classification": "verified / arithmetic reproduction",
+  "formula": "x_crit = Q^(-1/4), Q = 1 + gamma_BI^2",
+  "inputs": {
+    "Q": 1.05640625,
+    "gamma_BI": 0.2375,
+    "x0": 1.519
+  },
+  "paper": "Paper 32 v1.5",
+  "samples": [
+    {
+      "Delta": 5.624216852624105,
+      "c_visibility": 1.0,
+      "label": "current_x0",
+      "status": "admissible",
+      "x": 1.519
+    },
+    {
+      "Delta": 1.05640625,
+      "c_visibility": 0.03177198702028815,
+      "label": "x_equals_one",
+      "status": "admissible",
+      "x": 1.0
+    },
+    {
+      "Delta": 0.9999999999999999,
+      "c_visibility": -6.428317877401184e-17,
+      "label": "x_crit",
+      "status": "boundary_zero_visibility",
+      "x": 0.9863754613328337
+    },
+    {
+      "Delta": 0.8604494931640624,
+      "c_visibility": -0.08702562174435421,
+      "label": "x_0p95",
+      "status": "inadmissible",
+      "x": 0.95
+    }
+  ],
+  "scope_boundary": "active reduced scalar optical-history observer class only",
+  "x_crit": 0.9863754613328337
+}

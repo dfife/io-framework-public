@@ -1,0 +1,18 @@
+Paper 32: Horizon Support Clamp Bounce Attachment Audit
+
+Question
+- Does the derived local post-clamp recollapse branch actually reach the Paper 1
+  / Poplawski Einstein-Cartan bounce density in finite proper time?
+
+Executive result
+- verified / conditional: yes, on the local dust-support recollapse branch.
+- Poplawski bounce density:
+    rho_b = 7.732272759605111e+97 kg m^-3
+- corresponding support radius:
+    R_b = 1.115930397502433e-15 m
+        = 1.669305007483077e-42 r_s
+- proper time from clamp to bounce:
+    Delta tau_b = 110.993262888709395 Gyr
+- remaining proper time from bounce density to formal R=0 endpoint:
+    Delta tau_rem = 3.206217600537503e-45 s
+                 = 0.059470797767891 t_Pl

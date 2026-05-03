@@ -1,0 +1,19 @@
+{
+  "question": "What is the local second derivative of the physical hidden support at the horizon clamp?",
+  "derived_equations": {
+    "paper3_first_integral": "Rdot^2 = c^2 [ r_s/R - 1 + (Lambda_eff(r_s) r_s^2)/3 ]",
+    "local_acceleration": "Rddot = - c^2 r_s / (2 R^2)",
+    "lambda_cancellation_reason": "Lambda_eff(R) ~ R^-2 contributes only a constant to Rdot^2"
+  },
+  "constant_shift_from_torsion_lambda": 7.00696659151436,
+  "at_clamp": {
+    "R_clamp_m": 6.684999999999976e+26,
+    "Rdot_m_s": 0.0,
+    "Rddot_m_s2": -6.72217785143471e-11,
+    "a0_half_m_s2": 0.5
+  },
+  "claim_boundary": {
+    "local_support_recollapse_tendency": true,
+    "full_post_boundary_global_solution_selected": false
+  }
+}

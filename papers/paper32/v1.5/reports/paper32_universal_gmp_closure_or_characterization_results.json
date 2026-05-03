@@ -1,0 +1,71 @@
+{
+  "question": "Does GMP extend to the full local algebra, or is the scope limitation irreducible? If irreducible, characterize the exact complement outside the realized typed bridge class.",
+  "headline": {
+    "universal_GMP_full_local_algebra": "derived / explicit no-go",
+    "typed_GMP_realized_bridge_class": "derived / scoped",
+    "bridge_type_exhaustion": "derived / scoped",
+    "scope_wall_status": "irreducible but fully characterized"
+  },
+  "typed_bridge_class": {
+    "definition": "The realized bridge/readout class fixed by Paper 32 Theorem 32.B and Paper 32 Theorem 32.E: source/readout operators on the active typed bridge architecture, with tensor type, channel floor, background placement, and multiplicity-one bridge grammar fixed.",
+    "gmp_statement": "Inside this class, puncture-load-to-channel assignment is forced geometrically.",
+    "sources": [
+      "/opt/cosmology-lab/results/paper32/paper32_bridge_selection_and_typed_gmp_theorems.md",
+      "/opt/cosmology-lab/results/paper32/paper32_typed_boundary_to_bulk_projection_theorem.md"
+    ]
+  },
+  "realized_physical_complement": {
+    "status": "derived / scoped",
+    "classes": [
+      {
+        "name": "recombination_history_block",
+        "carrier": "H_rec^hist = (x_e, T_m, D_-(q;z), L_-(z))",
+        "claim": "Physical and realized, but not a bridge-placement operator class. GMP is inapplicable.",
+        "sources": [
+          "/opt/cosmology-lab/results/paper31/paper31_stage2_lossless_characteristic_markov_theorem.md",
+          "/opt/cosmology-lab/results/paper31/paper31_stage2_characteristic_field_inheritance_theorem.md",
+          "/opt/cosmology-lab/results/paper32/paper32_typed_boundary_to_bulk_projection_theorem.md"
+        ]
+      },
+      {
+        "name": "reionization_local_history_block",
+        "carrier": "H_reio^loc",
+        "claim": "Function-valued local history block. Physical and realized, but no puncture-load/channel placement datum.",
+        "sources": [
+          "/opt/cosmology-lab/results/paper31/paper31_reionization_inheritance_theorem.md",
+          "/opt/cosmology-lab/results/paper31/paper31_reionization_functional_nogo_theorem.md",
+          "/opt/cosmology-lab/results/paper32/paper32_typed_boundary_to_bulk_projection_theorem.md"
+        ]
+      },
+      {
+        "name": "closed_S3_perturbation_block",
+        "carrier": "H_pert^{S^3}",
+        "claim": "Physical and realized perturbation hierarchy downstream of source plus thermodynamic history. Not itself a new bridge-placement operator.",
+        "sources": [
+          "/opt/cosmology-lab/results/paper32/paper32_s3_native_solver_specification_theorem.md",
+          "/opt/cosmology-lab/results/paper32/paper32_typed_boundary_to_bulk_projection_theorem.md"
+        ]
+      }
+    ]
+  },
+  "abstract_nongeometric_complement": {
+    "status": "derived / explicit counterexample",
+    "claim": "The full local algebra still contains explicit non-geometric bypass operators with identity spatial leg; universal GMP is therefore false on the larger algebra.",
+    "example": "Q_w^(ng) = R_w tensor I_th tensor I_sp tensor sqrt(L1) P_1",
+    "sources": [
+      "/opt/cosmology-lab/results/paper27/paper27_gmp_pass_fail_audit.md",
+      "/opt/cosmology-lab/results/paper27/paper27_gmp_counterexample_physical_threat_audit.md"
+    ]
+  },
+  "final_classification": {
+    "bridge_placement_observables": "typed bridge class is exhaustive for physically realized boundary-to-bulk bridge-placement observables",
+    "physical_outside_typed_class": "yes, but they are non-bridge history/solver observables, so GMP is not the right predicate there",
+    "full_local_algebra_universal_GMP": "false on present stack"
+  },
+  "future_ai_must_not_say": [
+    "Universal GMP is derived on the full local algebra.",
+    "Nothing physical lives outside the typed bridge class.",
+    "The abstract identity-spatial-leg bypass class was removed by Paper 32.",
+    "The Stage-2 or reionization history blocks are extra GMP counterexamples rather than non-bridge classes."
+  ]
+}

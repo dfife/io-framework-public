@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "paper": "Paper 32",
+    "version_audited": "v1.4",
+    "audit": "framework_closures_kappa_style_structural_audit",
+    "date": "2026-05-03",
+    "status": "verified / structural-audit / no manuscript edits",
+    "output_report": "results/paper32/paper32_framework_closures_kappa_audit_report.md"
+  },
+  "overall_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "fitted_parameter_found": false,
+    "core_closure_retirement_required": false,
+    "manuscript_hygiene_required_for_v1_5": true,
+    "summary": "No Paper-24-Step-D-style hidden continuous kappa parameter was found. The main risks are scope compression, conditional-premise visibility, and stale cross-paper numerical references."
+  },
+  "targets": {
+    "A_Rddot_and_Lambda_dropout": {
+      "verdict": "No hidden parameter. Derived/scoped on the physical hidden-support variable.",
+      "candidates": [
+        {
+          "field": "sign_of_Rddot",
+          "classification": "DERIVED",
+          "rigidity": "Forced by local OS support IVP and inward acceleration at the clamp."
+        },
+        {
+          "field": "factor_one_half",
+          "classification": "DERIVED",
+          "rigidity": "Forced by differentiating Rdot^2 = c^2(r_s/R - 1)."
+        },
+        {
+          "field": "r_s_length_scale",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Fixed by Schwarzschild hidden-support geometry from M_U."
+        },
+        {
+          "field": "Lambda_dropout",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Torsion-Lambda scaling contributes a constant to Rdot^2 and disappears from Rddot."
+        }
+      ],
+      "anti_fit": "Not fitted to observation; value follows from M_U -> r_s and the support IVP."
+    },
+    "B_xcrit": {
+      "verdict": "No hidden parameter. Derived/scoped on the active reduced scalar optical-history observer class.",
+      "candidates": [
+        {
+          "field": "exponent_minus_one_fourth",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Delta = Q x^4 and boundary Delta = 1 force x_crit = Q^(-1/4)."
+        },
+        {
+          "field": "Q_scalar",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Q enters the multiplicative Delta identity; K_gauge is its logarithm, not the primitive boundary scalar here."
+        },
+        {
+          "field": "boundary_condition_Delta_equals_one",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Zero visibility/admissibility boundary in the reduced optical-history map."
+        }
+      ],
+      "anti_fit": "No observational target is used to choose x_crit."
+    },
+    "C_cycle_and_restart": {
+      "verdict": "No hidden fitted scalar. Recollapse time is derived; full cycle and hard restart are conditional.",
+      "candidates": [
+        {
+          "field": "111_Gyr_recollapse_time",
+          "classification": "DERIVED",
+          "rigidity": "Forced by OS parametrization of the local recollapse IVP."
+        },
+        {
+          "field": "factor_two_full_cycle",
+          "classification": "DERIVED/CONDITIONAL",
+          "rigidity": "Requires symmetric application of the Paper 1/Poplawski bounce law."
+        },
+        {
+          "field": "finite_bounce_attachment",
+          "classification": "DERIVED/CONDITIONAL",
+          "rigidity": "Conditional on high-density EC/Poplawski attachment criterion."
+        },
+        {
+          "field": "hard_restart_preference",
+          "classification": "DERIVED/CONDITIONAL",
+          "rigidity": "Requires semantic-restoration selector package and selected seed optical branch."
+        },
+        {
+          "field": "beta_lambda_equal_one",
+          "classification": "DERIVED/CONDITIONAL",
+          "rigidity": "Moment/recurrence selectors force beta=lambda=1 only within a chosen seed branch."
+        }
+      ],
+      "anti_fit": "111/222 Gyr are geometry-derived from r_s; hard restart is conditional, not fitted."
+    },
+    "D_KB7_DtN_open_transport": {
+      "verdict": "No fitted scalar. KB.7 is valid only as DERIVED/SCOPED on the active reduced scalar source block.",
+      "candidates": [
+        {
+          "field": "source_block_selection",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Typed boundary-to-bulk theorem and source-class lock restrict P4 to the active source/readout block."
+        },
+        {
+          "field": "operator_valued_DtN_transport_placement",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Supported by later P4 alpha/source-class repair artifacts on the active reduced source map."
+        },
+        {
+          "field": "alpha_equals_one",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "P4 alpha-class repair fixes line/one-form primitive observable class."
+        },
+        {
+          "field": "local_payload_Q",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Local payload lock theorem fixes the one-dimensional scalar channel to Q."
+        },
+        {
+          "field": "zero_stated_premises_global_reading",
+          "classification": "VISIBILITY_HYGIENE",
+          "rigidity": "Too broad unless explicitly scoped to the active source block."
+        }
+      ],
+      "anti_fit": "No observation-fitted scalar in KB.7; risk is category/scope."
+    },
+    "E_universal_GMP": {
+      "verdict": "No hidden fit. GMP is closed on realized typed bridge observables and characterized/no-go outside.",
+      "candidates": [
+        {
+          "field": "bridge_sector_boundary",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "Typed carrier separates bridge-placement observables from non-bridge history/solver sectors."
+        },
+        {
+          "field": "non_bridge_inapplicable_classification",
+          "classification": "DERIVED/SCOPED",
+          "rigidity": "No puncture-load-to-channel predicate exists in history/solver sectors."
+        },
+        {
+          "field": "abstract_bypass_operator",
+          "classification": "DERIVED/NO-GO",
+          "rigidity": "Explicit identity-spatial-leg bypass classes kill universal GMP on full local algebra."
+        }
+      ],
+      "anti_fit": "No observational comparison; typed algebraic classification."
+    },
+    "F_Premise2": {
+      "verdict": "Premise 2 remains founding premise; no derivation found, but one wording family risks hidden premise-upgrade.",
+      "candidates": [
+        {
+          "field": "Premise_2_same_inside_outside_physics",
+          "classification": "FOUNDING_PREMISE",
+          "rigidity": "Not derivable inside Paper 32; admitted bedrock assumption."
+        },
+        {
+          "field": "GR_QM_bridge_interpretation",
+          "classification": "STRUCTURAL_OBSERVATION",
+          "rigidity": "Paper 32 language mostly says suggestive, not theorem-grade."
+        },
+        {
+          "field": "premises_validate_premises_wording",
+          "classification": "VISIBILITY_HYGIENE",
+          "rigidity": "Should be narrowed to avoid implying Premise 2 is derived."
+        }
+      ]
+    },
+    "G_semiclassical_principles": {
+      "verdict": "All four are retired only on stated scopes; no hidden fit found.",
+      "items": [
+        {
+          "principle": "SP-1 / BFP",
+          "classification": "DERIVED/SCOPED",
+          "scope": "active source block"
+        },
+        {
+          "principle": "SP-2 / H1",
+          "classification": "DERIVED/SCOPED",
+          "scope": "bridge-readable quotient, not full ambient extension"
+        },
+        {
+          "principle": "SP-3 / C2q",
+          "classification": "DERIVED/SCOPED",
+          "scope": "lowest-shell quotient"
+        },
+        {
+          "principle": "SP-4 / GMP",
+          "classification": "DERIVED/SCOPED",
+          "scope": "realized typed bridge class"
+        }
+      ]
+    },
+    "H_open_problem_closures": {
+      "verdict": "Closed or characterized on stated scopes. v1.5 should avoid unscoped 'all problems closed' wording.",
+      "items": [
+        {
+          "problem": "P4/R4 normalization",
+          "classification": "DERIVED/SCOPED",
+          "scope": "active source block"
+        },
+        {
+          "problem": "function_valued_reionization_history",
+          "classification": "CONDITIONAL/SCOPED",
+          "scope": "imported/reduced history under Premise 2 and observable-map assumptions"
+        },
+        {
+          "problem": "IO_native_Boltzmann_solver",
+          "classification": "FRONTIER/SPECIFICATION",
+          "scope": "architecture/specification, not full C_ell production"
+        },
+        {
+          "problem": "universal_GMP",
+          "classification": "CHARACTERIZED",
+          "scope": "closed on realized typed bridge class; no-go on larger abstract local algebra"
+        },
+        {
+          "problem": "late_time_bounce",
+          "classification": "DERIVED/SCOPED and DERIVED/CONDITIONAL",
+          "scope": "extended fermionic/chiral IO-EC theory plus restart selectors"
+        }
+      ]
+    }
+  },
+  "cross_paper_dependency_check": {
+    "core_closure_math_changed_by_recent_corrections": false,
+    "stale_references_found": true,
+    "stale_items": [
+      {
+        "item": "Paper 22 BBN rows",
+        "location_hint": "Appendix A steps 208/211/212 in Paper 32 v1.4",
+        "issue": "Older YPBBN-era D/H, Y_p, chi^2, and Li-7 benchmark values should be refreshed to corrected YPCMB convention."
+      },
+      {
+        "item": "Paper 24 lithium row",
+        "location_hint": "Body scorecard and Appendix A Paper 24 steps",
+        "issue": "Paper 24 v2.3 Henderson primary import row supersedes older cluster-deformation scorecard wording."
+      },
+      {
+        "item": "Hubble tension",
+        "location_hint": "Open-items language",
+        "issue": "Paper 34 v1.1 later addresses this under scoped extension premises; Paper 32 v1.5 should either remain historically scoped or add a forward note."
+      }
+    ]
+  },
+  "v1_5_recommendations": [
+    "Add Scope and Open Premises section.",
+    "State KB.7/P4 as DERIVED/SCOPED on active reduced scalar source block only.",
+    "State SP-2 quotient scope and SP-4 realized typed bridge scope explicitly.",
+    "State hard restart as conditional on semantic-restoration selector package and selected seed optical branch.",
+    "State Premise 2 remains a founding premise and is not derived.",
+    "Refresh Papers 19-25 BBN scorecard references and Paper 24 v2.3 lithium row.",
+    "Avoid unscoped 'all open problems closed' wording; use 'closed or characterized on stated scopes'."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "A_s": 2.0072459972737347e-09,
+  "classification": "verified / arithmetic reproduction",
+  "comparison": {
+    "Planck_A_s_obs": 2.1e-09,
+    "Planck_A_s_sigma": 3e-11,
+    "fractional_difference_vs_obs": -0.044168572726793066,
+    "pull_sigma": -3.0918000908755148
+  },
+  "factors": {
+    "bridge_factor_1_over_sqrt2": 0.7071067811865475,
+    "gauge_ratio_gamma2_over_Q": 0.053394468273923974,
+    "hawking_occupation": 1.9139114172056972e-08,
+    "normalization_25_over_9": 2.7777777777777777
+  },
+  "formula": "A_s = (25/9) * (gamma^2/(1+gamma^2)) * (1/sqrt(2)) * 1/(exp(4*pi*sqrt(2))-1)",
+  "paper": "Paper 32 v1.5",
+  "scope_boundary": "DERIVED/SCOPED on the lowest-shell quotient per Paper 32; not a full-spectrum C_ell validation"
+}

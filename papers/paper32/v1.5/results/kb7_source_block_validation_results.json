@@ -1,0 +1,50 @@
+{
+  "classification": "verified / structural validation",
+  "consistency_checks": {
+    "Z_e_to_x_equals_Q": true,
+    "eta_equals_K_over_x": true
+  },
+  "derived": {
+    "K_gauge": 0.05487281774291466,
+    "Q": 1.05640625,
+    "Z_e_to_x": 1.05640625,
+    "eta_BFP": 0.036124303978219,
+    "s_cell": 4.567655255297767
+  },
+  "formula": "Z(s) = s^(K_gauge/x); Z(e^x) = Q",
+  "gates": [
+    {
+      "gate": "source_object_lock",
+      "meaning": "The physical P4-carrying observable is the active source/readout block, not thermal/recombination/history blocks.",
+      "status": "passed / scoped"
+    },
+    {
+      "gate": "alpha_class_repair",
+      "meaning": "The active DtN source spectral-scale measure is alpha=1 because the primitive observable is a coexact one-form line object.",
+      "status": "passed / scoped"
+    },
+    {
+      "gate": "local_payload_lock",
+      "meaning": "On the unique local scalar source channel, the reduced Ashtekar-Barbero relative factor acts by Q.",
+      "status": "passed / scoped"
+    },
+    {
+      "gate": "global_universal_P4",
+      "meaning": "No universal observable-independent P4 theorem is claimed.",
+      "status": "explicit no-go"
+    }
+  ],
+  "inputs": {
+    "gamma_BI": 0.2375,
+    "x": 1.519
+  },
+  "paper": "Paper 32 v1.5",
+  "scope": {
+    "not_valid_as": [
+      "universal R4/P4 normalization for arbitrary unreduced observables",
+      "thermal GTTP drag-epoch normalization",
+      "universal P4 theorem for every future typed block"
+    ],
+    "valid_scope": "active reduced scalar source block"
+  }
+}

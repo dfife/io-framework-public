@@ -1,0 +1,44 @@
+{
+  "classification": "verified / arithmetic reproduction",
+  "conditional_dependencies": [
+    "Paper 1/Poplawski torsion bounce attachment on the collapsing branch",
+    "time-reversal symmetric re-expansion branch for the local cycle"
+  ],
+  "equations": {
+    "R_theta": "R(theta) = (r_s/2)(1 + cos(theta))",
+    "crunch_time": "Delta tau(pi) = pi r_s/(2c)",
+    "cycle_time": "2*pi r_s/(2c), conditional on symmetric bounce attachment",
+    "tau_theta": "Delta tau(theta) = (r_s/2c)(theta + sin(theta))"
+  },
+  "inputs": {
+    "R_bounce_m": 1.1159303975024325e-15,
+    "c_m_s": 299792458.0,
+    "r_s_m": 6.685e+26
+  },
+  "milestones": [
+    {
+      "Delta_tau_Gyr": 90.82688432162767,
+      "R_over_r_s": 0.5
+    },
+    {
+      "Delta_tau_Gyr": 104.59240510631967,
+      "R_over_r_s": 0.25
+    },
+    {
+      "Delta_tau_Gyr": 109.45635771460131,
+      "R_over_r_s": 0.1
+    },
+    {
+      "Delta_tau_Gyr": 110.9460138018427,
+      "R_over_r_s": 0.01
+    }
+  ],
+  "paper": "Paper 32 v1.5",
+  "results": {
+    "R_bounce_over_r_s": 1.6693050074830705e-42,
+    "bounce_to_zero_remaining_s": 3.206217600537497e-45,
+    "clamp_to_crunch_Gyr": 110.9932628887098,
+    "clamp_to_crunch_s": 3.502680992936748e+18,
+    "cycle_Gyr": 221.9865257774196
+  }
+}

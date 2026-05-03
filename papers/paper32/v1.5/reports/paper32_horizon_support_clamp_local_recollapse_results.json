@@ -1,0 +1,23 @@
+{
+  "question": "What local post-clamp support continuation is selected by the clamp initial data and local acceleration law?",
+  "equations": {
+    "acceleration": "Rddot = - c^2 r_s / (2 R^2)",
+    "energy_integral": "Rdot^2 = c^2 (r_s/R - 1)",
+    "parametric_radius": "R(theta) = (r_s/2)(1+cos theta)",
+    "parametric_time": "Delta tau(theta) = (r_s/2c)(theta + sin theta)"
+  },
+  "crunch": {
+    "delta_tau_s": 3.502680992936736e+18,
+    "delta_tau_Gyr": 110.9932628887094
+  },
+  "milestones": {
+    "R_over_rs_0p5_Gyr": 90.82688432162735,
+    "R_over_rs_0p25_Gyr": 104.59240510631929,
+    "R_over_rs_0p1_Gyr": 109.45635771460091,
+    "R_over_rs_0p01_Gyr": 110.94601380184231
+  },
+  "claim_boundary": {
+    "unique_local_support_recollapse_branch": true,
+    "full_hidden_state_selected": false
+  }
+}

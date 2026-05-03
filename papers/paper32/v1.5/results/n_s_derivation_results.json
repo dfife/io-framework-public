@@ -1,0 +1,18 @@
+{
+  "classification": "verified / arithmetic reproduction",
+  "comparison": {
+    "Planck_n_s_obs": 0.9649,
+    "Planck_n_s_sigma": 0.0042,
+    "pull_sigma": -0.24388189957594156
+  },
+  "formula": "n_s = 1 - K_gauge/x",
+  "inputs": {
+    "K_gauge": 0.05487281774291466,
+    "Q": 1.05640625,
+    "gamma_BI": 0.2375,
+    "x": 1.519
+  },
+  "n_s": 0.963875696021781,
+  "paper": "Paper 32 v1.5",
+  "scope_boundary": "active scalar source-block spectral-index derivation"
+}

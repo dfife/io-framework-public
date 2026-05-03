@@ -1,0 +1,89 @@
+{
+  "paper": "Paper 32 v1.5",
+  "classification": "verified / public-support-constants",
+  "notes": [
+    "Paper 32 uses a harmonized Schwarzschild radius r_s = 6.685e26 m for late-time recollapse arithmetic.",
+    "The manuscript also quotes M_U = 4.50e53 kg as the rounded measured mass input. Recomputing r_s from that rounded mass with CODATA constants gives a slightly different r_s; both values are exposed here.",
+    "The recollapse and cycle scripts use the harmonized Paper 32 radius because it is the value used in the manuscript's 111/222 Gyr chain."
+  ],
+  "physical_constants": {
+    "c_m_s": 299792458.0,
+    "G_m3_kg_s2": 6.6743e-11,
+    "julian_year_s": 31557600.0,
+    "gyr_s": 3.15576e+16
+  },
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "x": 1.519,
+    "M_U_nominal_kg": 4.5e+53,
+    "r_s_harmonized_m": 6.685e+26,
+    "T_IO_K": 2.6635,
+    "planck_n_s_obs": 0.9649,
+    "planck_n_s_sigma": 0.0042,
+    "planck_A_s_obs": 2.1e-09,
+    "planck_A_s_sigma": 3.0e-11
+  },
+  "derived_formulae": {
+    "Q": "1 + gamma_BI^2",
+    "K_gauge": "ln(Q)",
+    "f_Gamma": "exp(-K_gauge) = 1/Q",
+    "Delta": "x^4 * Q",
+    "R_U": "r_s / x",
+    "T_obs": "T_IO * x^K_gauge",
+    "n_s": "1 - K_gauge / x",
+    "A_s": "(25/9) * (gamma_BI^2/(1+gamma_BI^2)) * (1/sqrt(2)) * 1/(exp(4*pi*sqrt(2)) - 1)",
+    "x_crit": "Q^(-1/4)",
+    "Rddot": "-c^2 * r_s / (2 R^2)",
+    "Rddot_at_clamp": "-c^2/(2 r_s)",
+    "recollapse_time": "pi*r_s/(2c)",
+    "cycle_time": "2*pi*r_s/(2c)"
+  },
+  "late_time_inputs": {
+    "rho_bounce_kg_m3": 7.73227275960511e+97,
+    "R_bounce_m": 1.1159303975024325e-15,
+    "bounce_source": "Paper 32 bounce-attachment support artifact; conditional on Paper 1/Poplawski high-density torsion bounce regime",
+    "restart_selectors": {
+      "hard_restart": [
+        "semantic x restoration",
+        "comoving clock restoration",
+        "chosen seed optical branch",
+        "optical moment recurrence selecting beta=1 and lambda=1"
+      ],
+      "soft_restart": [
+        "clamp-continuous bridge package",
+        "comoving clock",
+        "chosen positive optical kernel branch"
+      ]
+    }
+  },
+  "kb7_scope": {
+    "valid_scope": "active reduced scalar source block",
+    "not_valid_as": [
+      "universal R4/P4 normalization for arbitrary unreduced observables",
+      "thermal GTTP drag-epoch normalization",
+      "universal P4 theorem for every future typed block"
+    ]
+  },
+  "cross_paper_reference_values": {
+    "paper24_v2_3_henderson_primary_import": {
+      "D_H": 2.5072194689896718e-05,
+      "D_H_sigma": -0.6593510336776072,
+      "Y_p": 0.24770877169172603,
+      "Y_p_sigma": 0.677192922931509,
+      "Li7_H": 1.7239845810965594e-10,
+      "Li7_sigma": 0.46446639063406275,
+      "q_trans_ex_b": 0.017537902422203915,
+      "R_ex_T9eff": 0.5987463992430407,
+      "classification": "verified / Paper 24 v2.3 Henderson primary import row"
+    },
+    "paper34_v1_1_hubble_scorecard": {
+      "max_abs_pull_sigma": 0.5668642595545683,
+      "classification": "verified / Paper 34 v1.1 scoped H_ext extension scorecard"
+    },
+    "conventions": {
+      "active_new_papers_url": "https://dfife.github.io/data/conventions_v2.md",
+      "observational_v1_url": "https://dfife.github.io/data/observational_conventions_v1.md"
+    }
+  }
+}
+

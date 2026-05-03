@@ -1,0 +1,33 @@
+{
+  "allowed_manuscript_wording": "GMP is closed on realized typed bridge-placement observables and characterized/no-go outside that scope.",
+  "classification": "verified / structural ledger reproduction",
+  "domains": [
+    {
+      "classification": "DERIVED/SCOPED",
+      "domain": "realized_typed_bridge_readout_observables",
+      "gmp_status": "holds",
+      "reason": "block type, channel floor, background placement, and multiplicity-one bridge grammar force geometric mode placement"
+    },
+    {
+      "classification": "DERIVED/SCOPED",
+      "domain": "physical_non_bridge_history_solver_complement",
+      "examples": [
+        "recombination characteristic/history block",
+        "reionization local-history block",
+        "closed-S3 perturbation hierarchy"
+      ],
+      "gmp_status": "inapplicable",
+      "reason": "these are physical sectors but not puncture-load-to-spatial-channel placement observables"
+    },
+    {
+      "classification": "DERIVED/NO-GO",
+      "counterexample": "Q_w^(ng) = R_w tensor I_th tensor I_sp tensor sqrt(L1) P_1",
+      "domain": "abstract_larger_local_algebra",
+      "gmp_status": "false_as_universal_statement",
+      "reason": "identity spatial leg bypasses geometric placement"
+    }
+  ],
+  "forbidden_manuscript_wording": "Universal GMP is closed on the full local algebra.",
+  "headline": "Universal GMP is characterized, not universally closed.",
+  "paper": "Paper 32 v1.5"
+}

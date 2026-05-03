@@ -1,0 +1,34 @@
+{
+  "classification": "verified / arithmetic reproduction",
+  "consistency_checks": {
+    "Delta_equals_x4_Q": true,
+    "T_obs_equals_T_IO_x_to_K": true,
+    "f_Gamma_equals_inverse_Q": true
+  },
+  "derived": {
+    "Delta": 5.624216852624105,
+    "K_gauge": 0.05487281774291466,
+    "M_U_implied_by_harmonized_r_s_kg": 4.500980155114114e+53,
+    "Q": 1.05640625,
+    "R_U_m": 4.400921658986175e+26,
+    "T_obs_K": 2.725306096638128,
+    "f_Gamma": 0.9466055317260761,
+    "f_baryon_2gamma_over_x": 0.3127057274522712,
+    "ln_Delta": 1.7270817121974578,
+    "n_s": 0.963875696021781,
+    "r_s_from_nominal_M_U_m": 6.6835442422068e+26,
+    "sqrt_Delta": 2.371543137415827,
+    "tau_eff_IO": 0.02743640887145733,
+    "thermal_transfer_factor": 1.0232048419891602,
+    "x_crit": 0.9863754613328337
+  },
+  "inputs": {
+    "M_U_nominal_kg": 4.5e+53,
+    "T_IO_K": 2.6635,
+    "gamma_BI": 0.2375,
+    "r_s_harmonized_m": 6.685e+26,
+    "x": 1.519
+  },
+  "paper": "Paper 32 v1.5",
+  "precision_note": "Paper 32 late-time scripts use r_s_harmonized_m, not r_s recomputed from rounded M_U_nominal_kg."
+}
