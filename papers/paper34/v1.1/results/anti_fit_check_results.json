@@ -1,0 +1,155 @@
+{
+  "claim_boundary": "anti-fit diagnostic, not an independent proof of the extension premises",
+  "classification": "verified / public-reproducibility-support",
+  "method_rows": [
+    {
+      "assigned": {
+        "H_ext": 67.57585653582628,
+        "alpha": 1.0,
+        "assignment_basis": "projected-observer baseline / geometric CMB readout",
+        "n": 0,
+        "pull_sigma": 0.35171307165254007
+      },
+      "assigned_is_nearest_grid_point": true,
+      "method": "Planck CMB",
+      "nearest_admissible_grid_point": {
+        "H_ext": 67.57585653582628,
+        "abs_pull": 0.35171307165254007,
+        "alpha": 1.0,
+        "n": 0,
+        "pull_sigma": 0.35171307165254007
+      }
+    },
+    {
+      "assigned": {
+        "H_ext": 67.57585653582628,
+        "alpha": 1.0,
+        "assignment_basis": "geometric luminosity-distance method with no stellar photometric calibrator leg",
+        "n": 0,
+        "pull_sigma": -0.5668642595545683
+      },
+      "assigned_is_nearest_grid_point": false,
+      "method": "GW sirens",
+      "nearest_admissible_grid_point": {
+        "H_ext": 70.25677881443751,
+        "abs_pull": 0.08701922303353765,
+        "alpha": 1.5,
+        "n": 1,
+        "pull_sigma": 0.08701922303353765
+      }
+    },
+    {
+      "assigned": {
+        "H_ext": 70.25677881443751,
+        "alpha": 1.5,
+        "assignment_basis": "direct stellar-photometric standard-candle chain with one uncancelled photometric leg",
+        "n": 1,
+        "pull_sigma": -0.06867071420746934
+      },
+      "assigned_is_nearest_grid_point": true,
+      "method": "TRGB direct",
+      "nearest_admissible_grid_point": {
+        "H_ext": 70.25677881443751,
+        "abs_pull": 0.06867071420746934,
+        "alpha": 1.5,
+        "n": 1,
+        "pull_sigma": -0.06867071420746934
+      }
+    },
+    {
+      "assigned": {
+        "H_ext": 71.38755719355022,
+        "alpha": 2.0,
+        "assignment_basis": "non-geometric Fermat/Weyl class at alpha=2 with centered lens normalization",
+        "n": 0,
+        "pull_sigma": -0.05901189068049224
+      },
+      "assigned_is_nearest_grid_point": true,
+      "method": "TDCOSMO",
+      "nearest_admissible_grid_point": {
+        "H_ext": 71.38755719355022,
+        "abs_pull": 0.05901189068049224,
+        "alpha": 2.0,
+        "n": 0,
+        "pull_sigma": -0.05901189068049224
+      }
+    },
+    {
+      "assigned": {
+        "H_ext": 73.04406074030152,
+        "alpha": 2.0,
+        "assignment_basis": "Cepheid/SN ladder with two uncancelled photometric calibrator legs",
+        "n": 2,
+        "pull_sigma": 0.04406074030151785
+      },
+      "assigned_is_nearest_grid_point": true,
+      "method": "SH0ES",
+      "nearest_admissible_grid_point": {
+        "H_ext": 73.04406074030152,
+        "abs_pull": 0.04406074030151785,
+        "alpha": 2.0,
+        "n": 2,
+        "pull_sigma": 0.04406074030151785
+      }
+    },
+    {
+      "assigned": {
+        "H_ext": 73.04406074030152,
+        "alpha": 2.0,
+        "assignment_basis": "TRGB-calibrated SN ladder with two uncancelled photometric calibrator legs",
+        "n": 2,
+        "pull_sigma": -0.15447643147555565
+      },
+      "assigned_is_nearest_grid_point": true,
+      "method": "TRGB+SN",
+      "nearest_admissible_grid_point": {
+        "H_ext": 73.04406074030152,
+        "abs_pull": 0.15447643147555565,
+        "alpha": 2.0,
+        "n": 2,
+        "pull_sigma": -0.15447643147555565
+      }
+    }
+  ],
+  "paper": "Paper 34 v1.1",
+  "payload_rivals": {
+    "K_gauge": {
+      "SH0ES_TRGBSN_alpha_2_n2": 73.04406074030152,
+      "TRGB_direct_alpha_1p5_n1": 70.25677881443751,
+      "payload": 0.05487281774291466
+    },
+    "K_gauge_over_2": {
+      "SH0ES_TRGBSN_alpha_2_n2": 72.21105915126458,
+      "TRGB_direct_alpha_1p5_n1": 69.8550225360061,
+      "payload": 0.02743640887145733
+    },
+    "Q": {
+      "SH0ES_TRGBSN_alpha_2_n2": 111.02415096739485,
+      "TRGB_direct_alpha_1p5_n1": 86.61727366861989,
+      "payload": 1.05640625
+    },
+    "gamma_squared": {
+      "SH0ES_TRGBSN_alpha_2_n2": 73.0909000604338,
+      "TRGB_direct_alpha_1p5_n1": 70.27930119571685,
+      "payload": 0.05640625
+    },
+    "zero_payload": {
+      "SH0ES_TRGBSN_alpha_2_n2": 71.38755719355022,
+      "TRGB_direct_alpha_1p5_n1": 69.4555636601881,
+      "payload": 0.0
+    }
+  },
+  "summary": {
+    "assigned_equal_nearest_grid_points": 5,
+    "gw_sirens_assigned_grid_point": [
+      1.0,
+      0
+    ],
+    "gw_sirens_nearest_grid_point": [
+      1.5,
+      1
+    ],
+    "highest_audit_risk": "SH0ES: assigned (2,2) is also numerically nearest; accepted only inside the two-leg extension premise package.",
+    "method_count": 6
+  }
+}

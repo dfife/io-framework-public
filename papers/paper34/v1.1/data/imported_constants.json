@@ -1,0 +1,94 @@
+{
+  "paper": "Paper 34 v1.1",
+  "classification": "verified / public-support-constants",
+  "framework_constants": {
+    "H0_active": 67.57585653582628,
+    "H0_active_branch": "Paper 10 legacy projected-observer baseline used by Paper 34 v1.0/v1.1",
+    "gamma_BI": 0.2375,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "f_Gamma": 0.9466055317260761,
+    "x": 1.518987327774,
+    "x_half_leg": 1.0115356511707163,
+    "alpha_grid": [1.0, 1.5, 2.0],
+    "n_grid": [0, 1, 2]
+  },
+  "formula": "H_ext(alpha,n) = H0_active * f_Gamma^(1-alpha) * x^((n/2)*K_gauge)",
+  "published_h0_measurements": [
+    {
+      "method": "Planck CMB",
+      "observed_H0": 67.4,
+      "sigma": 0.5,
+      "assigned_alpha": 1.0,
+      "assigned_n": 0,
+      "assignment_basis": "projected-observer baseline / geometric CMB readout",
+      "source": "Planck 2018 results. VI. Cosmological parameters",
+      "doi": "10.1051/0004-6361/201833910",
+      "url": "https://doi.org/10.1051/0004-6361/201833910",
+      "notes": "Paper 34 uses the rounded base-LambdaCDM comparison H0 = 67.4 +/- 0.5."
+    },
+    {
+      "method": "GW sirens",
+      "observed_H0": 69.9,
+      "sigma": 4.1,
+      "assigned_alpha": 1.0,
+      "assigned_n": 0,
+      "assignment_basis": "geometric luminosity-distance method with no stellar photometric calibrator leg",
+      "source": "Improved constraint on the Hubble constant from dark sirens with LIGO/Virgo/KAGRA O4a",
+      "arxiv": "2603.20195",
+      "url": "https://arxiv.org/abs/2603.20195",
+      "notes": "The public bundle uses the +4.1 uncertainty as the symmetric pull denominator."
+    },
+    {
+      "method": "TRGB direct",
+      "observed_H0": 70.39,
+      "sigma": 1.94,
+      "assigned_alpha": 1.5,
+      "assigned_n": 1,
+      "assignment_basis": "direct stellar-photometric standard-candle chain with one uncancelled photometric leg",
+      "source": "Status Report on the Chicago-Carnegie Hubble Program (CCHP): Measurement of the Hubble Constant Using the Hubble and James Webb Space Telescopes",
+      "doi": "10.3847/1538-4357/adce78",
+      "arxiv": "2408.06153",
+      "url": "https://doi.org/10.3847/1538-4357/adce78",
+      "notes": "The totalized sigma is sqrt(1.22^2 + 1.33^2 + 0.70^2) ~= 1.94."
+    },
+    {
+      "method": "TDCOSMO",
+      "observed_H0": 71.6,
+      "sigma": 3.6,
+      "assigned_alpha": 2.0,
+      "assigned_n": 0,
+      "assignment_basis": "non-geometric Fermat/Weyl class at alpha=2 with centered lens normalization",
+      "source": "TDCOSMO 2025: Cosmological constraints from strong lensing time delays",
+      "doi": "10.1051/0004-6361/202555801",
+      "arxiv": "2506.03023",
+      "url": "https://doi.org/10.1051/0004-6361/202555801",
+      "notes": "The paper reports H0 = 71.6 +3.9/-3.3; this bundle uses the average 3.6 as the symmetric pull denominator."
+    },
+    {
+      "method": "SH0ES",
+      "observed_H0": 73.0,
+      "sigma": 1.0,
+      "assigned_alpha": 2.0,
+      "assigned_n": 2,
+      "assignment_basis": "Cepheid/SN ladder with two uncancelled photometric calibrator legs",
+      "source": "SH0ES / Pantheon+ local distance ladder comparison used by Paper 34",
+      "arxiv": "2112.04510",
+      "url": "https://arxiv.org/abs/2112.04510",
+      "notes": "Paper 34 uses the rounded comparison H0 = 73.0 +/- 1.0."
+    },
+    {
+      "method": "TRGB+SN",
+      "observed_H0": 73.18,
+      "sigma": 0.88,
+      "assigned_alpha": 2.0,
+      "assigned_n": 2,
+      "assignment_basis": "TRGB-calibrated SN ladder with two uncancelled photometric calibrator legs",
+      "source": "The Perfect Host: JWST Cepheid Observations in a Background-free Type Ia Supernova Host Confirm No Bias in Hubble-constant Measurements",
+      "doi": "10.3847/2041-8213/ae0ad6",
+      "arxiv": "2509.01667",
+      "url": "https://doi.org/10.3847/2041-8213/ae0ad6",
+      "notes": "The abstract reports the combined HST/JWST Cepheid plus TRGB-calibrated SN value H0 = 73.18 +/- 0.88."
+    }
+  ]
+}

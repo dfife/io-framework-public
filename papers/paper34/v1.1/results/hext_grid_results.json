@@ -1,0 +1,86 @@
+{
+  "classification": "verified / public-reproducibility-support",
+  "consistency_checks": {
+    "K_gauge_matches_log_Q": true,
+    "Q_matches_1_plus_gamma_squared": true,
+    "f_Gamma_matches_exp_minus_K": true
+  },
+  "constants": {
+    "H0_active": 67.57585653582628,
+    "H0_active_branch": "Paper 10 legacy projected-observer baseline used by Paper 34 v1.0/v1.1",
+    "K_gauge": 0.05487281774291466,
+    "Q": 1.05640625,
+    "alpha_grid": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "f_Gamma": 0.9466055317260761,
+    "gamma_BI": 0.2375,
+    "n_grid": [
+      0,
+      1,
+      2
+    ],
+    "x": 1.518987327774,
+    "x_half_leg": 1.0115356511707163
+  },
+  "formula": "H_ext(alpha,n) = H0_active * f_Gamma^(1-alpha) * x^((n/2)*K_gauge)",
+  "grid": [
+    {
+      "H_eff": 67.57585653582628,
+      "H_ext": 67.57585653582628,
+      "alpha": 1.0,
+      "n": 0
+    },
+    {
+      "H_eff": 67.57585653582628,
+      "H_ext": 68.35538804438593,
+      "alpha": 1.0,
+      "n": 1
+    },
+    {
+      "H_eff": 67.57585653582628,
+      "H_ext": 69.14391195650492,
+      "alpha": 1.0,
+      "n": 2
+    },
+    {
+      "H_eff": 69.4555636601881,
+      "H_ext": 69.4555636601881,
+      "alpha": 1.5,
+      "n": 0
+    },
+    {
+      "H_eff": 69.4555636601881,
+      "H_ext": 70.25677881443751,
+      "alpha": 1.5,
+      "n": 1
+    },
+    {
+      "H_eff": 69.4555636601881,
+      "H_ext": 71.06723650721904,
+      "alpha": 1.5,
+      "n": 2
+    },
+    {
+      "H_eff": 71.38755719355022,
+      "H_ext": 71.38755719355022,
+      "alpha": 2.0,
+      "n": 0
+    },
+    {
+      "H_eff": 71.38755719355022,
+      "H_ext": 72.21105915126458,
+      "alpha": 2.0,
+      "n": 1
+    },
+    {
+      "H_eff": 71.38755719355022,
+      "H_ext": 73.04406074030152,
+      "alpha": 2.0,
+      "n": 2
+    }
+  ],
+  "paper": "Paper 34 v1.1"
+}

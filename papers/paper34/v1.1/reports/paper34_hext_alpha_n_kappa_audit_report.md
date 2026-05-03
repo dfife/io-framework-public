@@ -1,0 +1,393 @@
+# Paper 34 H_ext(alpha, n) kappa-style structural audit
+
+Status: verified / structural-audit / no manuscript edits
+
+Date: 2026-05-03
+
+Target: Paper 34 v1.0, observable-class Hubble-tension formula
+
+```text
+H_ext(alpha, n) = H0 * f_Gamma^(1 - alpha) * x^((n/2) K_gauge)
+```
+
+## Executive conclusion
+
+The audit does **not** find a continuously fitted hidden parameter in the Paper 34 `H_ext(alpha,n)` scorecard. The method assignments are structurally recoverable from the Paper 34 extension artifacts:
+
+- geometric/direct methods: baseline, no photometric legs;
+- direct TRGB: threshold standard candle plus one uncancelled photometric leg;
+- SH0ES and TRGB+SN: nested SN ladder with two uncancelled photometric legs;
+- TDCOSMO: Weyl/Fermat `alpha = 2` plus centered lens-normalization selectors `lambda_MST = 1`, `beta_ani = 0`.
+
+The strongest adverse finding is not hidden fitting. It is **conditional visibility**. Paper 34 v1.0 uses the right phrase, `DERIVED/SCOPED within extensions`, but it does not provide a clean premise/open-problem ledger for the extension admissions that make the result work. Under IO Conventions v2.0, a future Paper 34 v1.1 should explicitly list:
+
+1. the active Paper 10 legacy baseline branch `H0 = 67.57585653582628`;
+2. the admitted inverse-projector placement `J_alpha = f_Gamma^(alpha-1)`;
+3. the stellar-photometric bridge extension premises A1-A4;
+4. the centered lens-normalization extension premises B1-B4;
+5. the fact that the formula is not a universal all-method H0 theorem.
+
+Blunt current classification:
+
+```text
+No hidden continuous anti-fit kappa parameter found.
+No alpha/n assignment is classified as FITTED.
+The published formula is DERIVED/SCOPED only inside the adopted extension package.
+The baseline branch and extension-premise visibility should be tightened before any v1.1.
+```
+
+## Audit method
+
+This repeats the Paper 22 kappa-style field-redefinition audit:
+
+1. expose each numerical or structural choice as a candidate field;
+2. replace it by a free variable or alternate admissible value;
+3. test whether existing theorems, symmetries, or scoped extension premises force the original value;
+4. classify it as `DERIVED`, `RECONSTRUCTION`, `FITTED`, or `HIDDEN PARAMETER`.
+
+A hidden parameter means a free degree of freedom that is not visibly declared as conditional, scoped, or open in the paper. A scoped extension premise can be high leverage without being a hidden fitted parameter.
+
+## Active constants and grid
+
+The audit uses the active Paper 34 v1.0 numbers from the local support artifacts:
+
+```text
+H0_active = 67.57585653582628
+gamma_BI = 0.2375
+Q = 1 + gamma_BI^2 = 1.05640625
+f_Gamma = Q^(-1) = 0.9466055317260761
+K_gauge = ln(Q) = 0.05487281774291466
+x = 1.518987327774
+x^(K_gauge/2) = 1.0115356511707163
+```
+
+Formula grid:
+
+| alpha | n | H_ext |
+|---:|---:|---:|
+| 1 | 0 | 67.575856535826 |
+| 1 | 1 | 68.355388044386 |
+| 1 | 2 | 69.143911956505 |
+| 3/2 | 0 | 69.455563660188 |
+| 3/2 | 1 | 70.256778814438 |
+| 3/2 | 2 | 71.067236507219 |
+| 2 | 0 | 71.387557193550 |
+| 2 | 1 | 72.211059151265 |
+| 2 | 2 | 73.044060740302 |
+
+## Candidate field catalog and rigidity tests
+
+### 1. Baseline `H0 = 67.57585653582628`
+
+Candidate field: replace `H0` by `h`.
+
+Rigidity test: within Paper 34 v1.0, the baseline is not chosen by fitting the six H0 measurements. It is inherited as the Paper 10 legacy projected observer branch. The formula then acts around that baseline.
+
+Important boundary: local branch-audit artifacts distinguish this `67.58` legacy/projected baseline from the Schur `68.91` branch. Paper 34 v1.0 line 27 says `active Paper 10 legacy branch`, which is accurate. The phrase "Paper 29 derives" is less clean, because later audits show the Schur `68.91` branch has its own carried-normalizer issues and the `67.58` value originates at the Paper 10 projection package.
+
+Classification: `DERIVED/SCOPED` on the Paper 10 legacy branch; not fitted.
+
+Hidden-parameter verdict: not hidden, but high-leverage branch provenance. A v1.1 should state the baseline branch explicitly.
+
+### 2. `f_Gamma = 1/(1 + gamma^2)`
+
+Candidate field: replace `f_Gamma` by `f`.
+
+Rigidity test: the standalone value is fixed by the already-established `gamma_BI` and `Q = 1 + gamma^2`. No fitting freedom appears in the value.
+
+Classification: standalone value `DERIVED`.
+
+Boundary: using `f_Gamma` as the inverse-estimator projector ladder is not a universal H0 theorem. It is conditional on placing the uncancelled primitive estimator projector on `J_alpha = f_Gamma^(alpha-1)`.
+
+Hidden-parameter verdict: not hidden, but the projector-placement admission must remain visible.
+
+### 3. `K_gauge = ln(1 + gamma^2)`
+
+Candidate field: replace `K_gauge` by a photometric payload scalar `k`.
+
+Rigidity test: on the stellar-photometric carrier, the prior audit states that the scalar centered boundary/KMS action on the log-frequency line is generated by `K_gauge`. The photometric luminosity payload is then `J_L = x^(-K_gauge)`. This excludes identity and `Q`/`f_Gamma` family payloads on channel and degree grounds inside the extension.
+
+Numerical rival check:
+
+| payload k | H_ext(3/2,1) | H_ext(2,2) |
+|---|---:|---:|
+| `K_gauge` | 70.256778814438 | 73.044060740302 |
+| `gamma^2` | 70.279301195717 | 73.090900060434 |
+| `K_gauge/2` | 69.855022536006 | 72.211059151265 |
+| `0` | 69.455563660188 | 71.387557193550 |
+| `Q` | 86.617273668620 | 111.024150967395 |
+
+`gamma^2` is numerically close because `ln(1+gamma^2)` and `gamma^2` are close for small `gamma`, but the operator generator is the log scalar, not the raw quadratic.
+
+Classification: `DERIVED/SCOPED within stellar-photometric extension`.
+
+Hidden-parameter verdict: not hidden if the extension is accepted; otherwise the photometric payload is reconstruction, not fit.
+
+### 4. Exponent `(1 - alpha)` on `f_Gamma`
+
+Candidate field: replace `(1-alpha)` by `c(alpha)`.
+
+Rigidity test: the inverse-estimator theorem derives:
+
+```text
+O_model(H) = C H^(-nu)
+O_obs = J O_model(H_true)
+H_inferred = H_true * J^(-1/nu)
+```
+
+For the late-time H0 inverse-estimator family with `nu = 1`, if the uncancelled primitive projector is placed on:
+
+```text
+J_alpha = f_Gamma^(alpha - 1)
+```
+
+then:
+
+```text
+H_eff(alpha) = H0_active / J_alpha = H0_active * f_Gamma^(1-alpha).
+```
+
+So the **minus sign** and the `(1-alpha)` structure are rigid consequences of inverse-estimator algebra after projector placement. The open/scoped piece is the projector-placement statement itself, not the inverse algebra.
+
+Classification: `DERIVED/CONDITIONAL` on `ADMITTED_PROJECTOR_PLACEMENT(J_alpha = f_Gamma^(alpha-1))`.
+
+Hidden-parameter verdict: not hidden in support artifacts; under-visible in Paper 34 v1.0 body.
+
+### 5. The `(n/2)` photometric half-leg factor
+
+Candidate field: replace `n/2` by `c n` or an arbitrary per-method scalar.
+
+Rigidity test: stellar luminosity calibration obeys flux-distance inversion:
+
+```text
+F = L / (4 pi D_L^2)
+L -> J_L L
+D_inferred -> J_L^(1/2) D_true
+H_inferred -> H_true * J_L^(-1/2)
+```
+
+With `J_L = x^(-K_gauge)`, one uncancelled photometric calibration leg contributes:
+
+```text
+x^(K_gauge/2).
+```
+
+The `1/2` is therefore forced by the square-root relation between luminosity and distance, not chosen from the H0 data.
+
+Classification: `DERIVED/SCOPED within stellar-photometric extension`.
+
+Hidden-parameter verdict: not hidden.
+
+### 6. Integer `n` as uncancelled photometric leg count
+
+Candidate field: replace `n` by a free integer or continuous scalar per method.
+
+Rigidity test: the stellar-photometric audit defines `n` as the count of uncancelled standard-candle luminosity calibration legs after shared-source cancellation and primitive-geometry trivialization.
+
+Classifications:
+
+- `n=0` for Planck/GW/direct geometry: no stellar-photometric calibrator chain.
+- `n=1` for direct TRGB: one threshold standard-candle luminosity leg.
+- `n=2` for SH0ES: Cepheid calibrator plus SN Ia absolute-candle calibration.
+- `n=2` for TRGB+SN: TRGB calibrates an SN ladder, leaving the same nested two-candle photometric structure.
+- `n=0` for TDCOSMO: strong lensing lives in the lens-normalization extension, not the stellar-photometric extension.
+
+Classification: `DERIVED/SCOPED within stellar-photometric extension`.
+
+Hidden-parameter verdict: not hidden. The anti-fit risk is handled by the fact that GW sirens would fit better at another grid point but are structurally kept at `n=0`.
+
+### 7. Planck baseline / `alpha = 1, n = 0` notation
+
+Candidate field: assign Planck to a non-baseline alpha rung or photometric leg count.
+
+Rigidity test: Paper 34 v1.0 correctly says Planck H0 is not a direct primitive H0 measurement and has no single alpha-class assignment on the current stack. It tracks the projected background without additional late-time `f_Gamma` or photometric dressing. Encoding it as `(alpha,n)=(1,0)` is shorthand for baseline, not a theorem-grade primitive alpha assignment.
+
+Classification: `DERIVED/NO-SINGLE-ALPHA baseline`; not a fitted rung.
+
+Hidden-parameter verdict: not hidden.
+
+### 8. GW sirens: `alpha = 1, n = 0`
+
+Candidate field: assign sirens to another grid point.
+
+Rigidity test: current siren measurements are direct amplitude-distance estimators with no Cepheid/SN/TRGB calibrator chain and no Fermat-potential lens normalization. The primitive luminosity-distance route is projector-trivial on the active stack.
+
+Anti-fit backstop: among the small `(alpha,n)` grid, the GW value would be closer to `(3/2,1)` than to `(1,0)`, but the assignment remains `(1,0)`. That is evidence against pure after-the-fact fitting.
+
+Classification: `DERIVED/SCOPED`.
+
+Hidden-parameter verdict: not hidden.
+
+### 9. Direct TRGB: `alpha = 3/2, n = 1`
+
+Candidate field: assign direct TRGB to geometry, Weyl, or a different `n`.
+
+Rigidity test: direct TRGB is a source-threshold standard candle, not primitive distance geometry and not the full SN ladder. Inside the stellar-photometric extension, it has one uncancelled threshold-candle luminosity leg and the intermediate threshold-style class `alpha = 3/2`.
+
+Boundary: before the stellar-photometric extension, the exact TRGB threshold-projector theorem was open. Within the extension, the class-membership theorem supplies the scoped closure.
+
+Classification: `DERIVED/SCOPED within stellar-photometric extension`; otherwise `RECONSTRUCTION`.
+
+Hidden-parameter verdict: not hidden, but extension-scope dependent.
+
+### 10. SH0ES: `alpha = 2, n = 2`
+
+Candidate field: assign SH0ES to another alpha/n pair.
+
+Rigidity test: the SN-ladder inversion algebra leaves the uncancelled calibrator-distance projector. Inside the stellar-photometric extension, the Cepheid+SN ladder is a nested two-candle photometric chain, and the surviving ladder object is bilocal/quadratic, hence `alpha = 2`, `n = 2`.
+
+Anti-fit concern: this is the most dangerous row because the assigned grid point is also the best numerical grid point. The anti-fit defense cannot be numerical. It rests entirely on the structural derivation path: Cepheid calibrator leg + SN absolute-candle leg + bilocal ladder projector.
+
+Classification: `DERIVED/SCOPED within stellar-photometric extension`; otherwise `RECONSTRUCTION`.
+
+Hidden-parameter verdict: not hidden if the extension premise package is accepted. No evidence of an observation-fitted scalar was found.
+
+### 11. TRGB+SN: `alpha = 2, n = 2`
+
+Candidate field: treat TRGB+SN as direct TRGB (`alpha=3/2,n=1`) or geometry.
+
+Rigidity test: once TRGB is used to calibrate a Type Ia SN ladder, the surviving estimator is the nested SN-ladder architecture, not direct TRGB. Therefore it inherits the same two-leg photometric structure as SH0ES.
+
+Classification: `DERIVED/SCOPED within stellar-photometric extension`; otherwise `RECONSTRUCTION`.
+
+Hidden-parameter verdict: not hidden.
+
+### 12. TDCOSMO: `alpha = 2`, `lambda_MST = 1`, `beta_ani = 0`, `n = 0`
+
+Candidate fields:
+
+```text
+alpha_TDCOSMO
+lambda_MST
+beta_ani
+n_TDCOSMO
+```
+
+Rigidity test: the non-geometric TDCOSMO object is the Fermat/Weyl potential class, giving `alpha = 2`. The centered lens-normalization extension then selects:
+
+```text
+lambda_MST = 1
+beta_ani = 0
+```
+
+by centered projective neutrality and SO(3)-centered anisotropy. No stellar-photometric calibrator chain is present, so `n = 0`.
+
+Boundary: without the centered lens-normalization extension, `lambda_MST` and `beta_ani` are genuine continuous nuisance freedoms. Inside the extension, they are fixed by selector principles.
+
+Classification: `DERIVED/SCOPED within centered lens-normalization extension`; otherwise `RECONSTRUCTION`.
+
+Hidden-parameter verdict: not hidden in support artifacts. In the manuscript, the selectors are visible, but their premise package is not separated into an Open Problems / scoped-premises ledger.
+
+### 13. Multiplicative product structure
+
+Candidate field: replace product by arbitrary function:
+
+```text
+H = F(H0, alpha, n, f_Gamma, x, K_gauge)
+```
+
+Rigidity test: the product structure follows from the independence/decoupling theorems of the inverse-estimator and stellar-photometric extensions:
+
+- inverse-projector factor acts on late-time estimator class;
+- photometric half-leg factor acts on uncancelled luminosity calibration legs;
+- no-leakage theorem prevents the photometric bridge from modifying Planck, GW, BAO, chronometers, TDCOSMO, or Paper 32 source sectors.
+
+Classification: `DERIVED/SCOPED within combined extension package`.
+
+Hidden-parameter verdict: not hidden.
+
+## Anti-fit backstop by method
+
+| Method | Published assignment | Best grid assignment by value | Audit result |
+|---|---|---|---|
+| Planck CMB | baseline `(1,0)` shorthand | `(1,0)` | Not fitted; Planck is explicitly no-single-alpha baseline, not a primitive rung. |
+| GW sirens | `(1,0)` | `(3/2,1)` | Strong anti-fit pass: structure chooses direct geometry even though another grid point is closer. |
+| TRGB direct | `(3/2,1)` | `(3/2,1)` | Numerically best, but structurally fixed by threshold candle + one photometric leg inside extension. |
+| TDCOSMO | `(2,0)` | `(2,0)` | Numerically best, structurally fixed by Weyl/Fermat class plus centered lens selectors. |
+| SH0ES | `(2,2)` | `(2,2)` | Numerically best and therefore highest anti-fit risk; accepted only because the two-leg ladder derivation exists inside the extension. |
+| TRGB+SN | `(2,2)` | `(2,2)` | Numerically best, structurally fixed by SN-ladder architecture rather than direct TRGB. |
+
+No method row was found where the support artifacts say "choose alpha/n because it matches the measurement." The assignment evidence is structural. The strongest caveat is that several structural closures are scoped to new extensions rather than old-stack theorems.
+
+## Extension-premise inheritance check
+
+### Stellar-photometric extension
+
+Premises/admissions:
+
+- A1. Admit scalar radiative bridge carrier `h_phot^br = L^2(R_+, d log nu) tensor H_g tensor Gamma(S^2, Omega^0 tensor M_rad)`.
+- A2. Cepheid and TRGB source maps live on calibrator-specific descendants of that carrier.
+- A3. Primitive late-time standard-candle readout is a band-limited luminosity functional; primitive `D_L` geometry is projector-trivial.
+- A4. The scalar centered boundary/KMS action on the log-frequency line is generated by `K_gauge`.
+
+Visibility in Paper 34 v1.0: partially visible. The paper states `DERIVED/SCOPED within the stellar-photometric extension` and describes the primitive photometric observable, but it does not include a formal premise/open-problem ledger.
+
+Conventions v2.0 assessment: acceptable as a v1.0 scoped claim, but not ideal under the later convention. A v1.1 should add a short "Scope and Open Premises" block listing A1-A4 and stating that the old stack alone did not derive the stellar-photometric bridge.
+
+### Centered lens-normalization extension
+
+Premises/admissions:
+
+- B1. Admit lens-normalization bridge carrier on `log lambda_MST`, anisotropy, gauge, and screen fields.
+- B2. The non-geometric TDCOSMO class is the already-identified `alpha = 2` Weyl/Fermat class.
+- B3. The boundary state remains centered and SO(3)-equivariant on auxiliary normalization families.
+- B4. The physical selector acts on parameter space before per-lens or hyperpopulation marginalization.
+
+Visibility in Paper 34 v1.0: partially visible. The paper states the selectors `lambda_MST = 1` and `beta_ani = 0` and describes the centered construction, but it does not isolate B1-B4 as scoped premises.
+
+Conventions v2.0 assessment: same as above. A v1.1 should make B1-B4 explicit.
+
+## Baseline backcheck
+
+The baseline is not fitted to the Hubble data. It is inherited from the Paper 10 projected observer branch:
+
+```text
+H0_obs = H0_geom * sqrt(N) = 67.58 km/s/Mpc
+```
+
+However, the local Paper 34 branch audits show that this is not the same as the Schur `68.91` package and should not be described carelessly as the current global Schur branch. The clean statement is:
+
+```text
+Paper 34 v1.0 uses the Paper 10 legacy projected observer baseline
+H0_active = 67.57585653582628. The H_ext audit is conditional on
+that baseline branch.
+```
+
+This does not make `H0` a hidden fitted parameter. It is a high-leverage inherited branch choice.
+
+## Final verdict
+
+The formal kappa-style audit confirms the anti-fit claim at the level requested:
+
+- no continuous alpha/n/kappa-like hidden fit parameter was found;
+- alpha/n assignments are structurally recoverable from the method taxonomy and extension artifacts;
+- the formula's excellent numerical agreement is not by itself the derivation;
+- the load-bearing derivation is scoped to the two Paper 34 extensions and the active `67.58` legacy baseline branch.
+
+Recommended future v1.1 framing:
+
+```text
+H_ext(alpha,n) is DERIVED/SCOPED within the adopted Paper 34
+stellar-photometric and centered lens-normalization extensions, on the
+Paper 10 legacy projected baseline H0 = 67.57585653582628. The extension
+premises are A1-A4 and B1-B4. No continuous parameter is fitted to the
+six H0 measurements. The result is not a universal all-method H0 theorem.
+```
+
+## Source artifacts reviewed
+
+- `/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper34_v1_0.docx`
+- `/opt/cosmology-lab/results/paper34/paper34_cosmo_upgrade_requirements_final_audit_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_cosmo_upgrade_requirements_final_audit_results.json`
+- `/opt/cosmology-lab/results/paper34/paper34_stellar_photometric_bridge_extension_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_stellar_photometric_bridge_extension_results.json`
+- `/opt/cosmology-lab/results/paper34/paper34_centered_lens_normalization_extension_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_centered_lens_normalization_extension_results.json`
+- `/opt/cosmology-lab/results/paper34/paper34_h0_inverse_projector_theorem_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_h_eff_alpha_theorem_chain_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_h0_observable_class_assignment_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_h0_projector_class_three_methods_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_h0_external_physics_closure_audit_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_geometric_vs_schur_and_paper_boundary_audit_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_h0_gap_paper29_derivation_audit_report.md`
+- `/opt/cosmology-lab/results/paper34/paper34_conditional_verified_audit_results.md`

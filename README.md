@@ -65,6 +65,14 @@ Each versioned folder should contain its own `README.md`, `MANIFEST.md`,
 support files synchronized to the paper version and avoids mixing active
 research state with public reproduction artifacts.
 
+The current Paper 34 support bundle is:
+
+- `papers/paper34/v1.1/`
+- validation command:
+  `python3 papers/paper34/v1.1/scripts/04_validate_expected_outputs.py`
+- manifest:
+  `metadata/manifests/paper34_v1_1_repro_bundle.json`
+
 The current Paper 24 support bundle is:
 
 - `papers/paper24/v2.3/`
@@ -96,6 +104,7 @@ The current source/readout-foundation release is:
 The manifest is in:
 
 - `metadata/manifests/paper24_v2_3_repro_bundle.json`
+- `metadata/manifests/paper34_v1_1_repro_bundle.json`
 - `metadata/manifests/paper24_v2_2_repro_bundle.json`
 - `metadata/manifests/paper31_practical_bundle.json`
 - `metadata/manifests/calculator_phase3_foundation_bundle.json`

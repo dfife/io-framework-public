@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Paper 34 v1.1 Reproducibility Bundle"
+message: "If you use this support bundle, please cite it with the metadata below."
+type: dataset
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper34/v1.1"
+date-released: "2026-05"
+abstract: >
+  Curated support bundle for reproducing the Paper 34 v1.1 H_ext(alpha,n)
+  Hubble-tension scorecard, including the full alpha/n grid, published
+  measurement comparison, anti-fit verification, and kappa-style structural
+  audit artifacts.
+license: "Apache-2.0"

@@ -1,0 +1,33 @@
+{
+  "bundle": "paper34-v1.1-repro",
+  "classification": "verified / public-reproducibility-support",
+  "paper": "Paper 34 v1.1",
+  "root": "papers/paper34/v1.1",
+  "created": "2026-05",
+  "artifacts": [
+    "papers/paper34/README.md",
+    "papers/paper34/v1.1/README.md",
+    "papers/paper34/v1.1/MANIFEST.md",
+    "papers/paper34/v1.1/VERSION.md",
+    "papers/paper34/v1.1/CITATION.cff",
+    "papers/paper34/v1.1/environment/requirements.txt",
+    "papers/paper34/v1.1/environment/external_dependencies.md",
+    "papers/paper34/v1.1/scripts/README.md",
+    "papers/paper34/v1.1/scripts/01_compute_hext_grid.py",
+    "papers/paper34/v1.1/scripts/02_compare_to_published_measurements.py",
+    "papers/paper34/v1.1/scripts/03_run_anti_fit_check.py",
+    "papers/paper34/v1.1/scripts/04_validate_expected_outputs.py",
+    "papers/paper34/v1.1/data/imported_constants.json",
+    "papers/paper34/v1.1/results/hext_grid_results.json",
+    "papers/paper34/v1.1/results/published_measurements_comparison_results.json",
+    "papers/paper34/v1.1/results/anti_fit_check_results.json",
+    "papers/paper34/v1.1/reports/paper34_hext_alpha_n_kappa_audit_report.md",
+    "papers/paper34/v1.1/reports/paper34_hext_alpha_n_kappa_audit_results.json"
+  ],
+  "excluded": [
+    "private route-search scripts",
+    "killed-route scans",
+    "manuscript drafts",
+    "private automation databases"
+  ]
+}
