@@ -67,11 +67,14 @@ research state with public reproduction artifacts.
 
 The current Paper 24 support bundle is:
 
-- `papers/paper24/v2.2/`
+- `papers/paper24/v2.3/`
 - validation command:
-  `python3 papers/paper24/v2.2/scripts/04_validate_expected_outputs.py`
+  `python3 papers/paper24/v2.3/scripts/04_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper24_v2_2_repro_bundle.json`
+  `metadata/manifests/paper24_v2_3_repro_bundle.json`
+
+The Paper 24 v2.2 bundle remains frozen at `papers/paper24/v2.2/` for
+backward compatibility.
 
 The initial bundle included here is a Paper 31 practical calculator bundle:
 
@@ -92,6 +95,7 @@ The current source/readout-foundation release is:
 
 The manifest is in:
 
+- `metadata/manifests/paper24_v2_3_repro_bundle.json`
 - `metadata/manifests/paper24_v2_2_repro_bundle.json`
 - `metadata/manifests/paper31_practical_bundle.json`
 - `metadata/manifests/calculator_phase3_foundation_bundle.json`

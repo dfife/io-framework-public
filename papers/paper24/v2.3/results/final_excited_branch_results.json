@@ -1,0 +1,132 @@
+{
+  "status": {
+    "direct_rank2_position_route_for_excited_branch": "derived_no_go",
+    "direct_rank2_momentum_route_for_excited_branch": "derived_no_go_same_tensor_selection",
+    "universal_linear_kinematic_shift_from_isotropic_TT_average": "derived_no_go",
+    "off_diagonal_mixing_alone_closes_gap": "derived_no",
+    "amplitude_weighted_external_capture_tail_closes_gap": "conditional_yes"
+  },
+  "constants": {
+    "epsilon_n": 0.023843043660342757,
+    "x": 1.519,
+    "Q_d": 0.0028578,
+    "chi_ME_7Be": 0.84,
+    "f_gs": 0.711237553342816,
+    "Q_GS_7Be_b": 0.068,
+    "T9_eff": 0.5160778165182853,
+    "nu_34_T9eff": 5.324728611585001,
+    "Li0_baseline": 5.387612546353705e-10,
+    "Li_current_full": 2.350416223788592e-10,
+    "B_gs_mev": 1.5866,
+    "B_ex_mev": 1.1574,
+    "Delta_E_ex_gs_keV": 429.2,
+    "Q_trans_ex_needed_1sigma_effectiveT_b": 0.009770746615959584
+  },
+  "derived_formulas": {
+    "branch_sum": "R_34(T9) = f_gs R_gs(T9) + (1-f_gs) R_ex(T9)",
+    "direct_rank2_reduced_me_formula": "<(l_f s)j_f||T^(2)||(l_i s)j_i> = (-1)^(l_f+s+j_i+2) sqrt((2j_f+1)(2j_i+1)) {l_f j_f s; j_i l_i 2} <l_f||T^(2)||l_i>",
+    "linear_capture_response": "delta sigma / sigma = 2 Re(delta M / M)",
+    "amplitude_weighted_excited_Qtrans": "Q_trans,ex^(amp) = Q_scale * [int dr K_amp,ex(r) F0(r)] / [int dr K_amp,ex(r)]",
+    "rate_weighted_excited_Qtrans": "Q_trans,ex^(rate) = Q_scale * [int dr W_rate,ex(r) F0(r)] / [int dr W_rate,ex(r)]",
+    "mixing_angle_estimate": "theta_mix ~ V_mix / DeltaE_ex-gs"
+  },
+  "angular_no_go": {
+    "sixj_direct_p12": "0",
+    "sixj_direct_p32": "0",
+    "orbital_3j_direct": "0",
+    "statement": "Both direct rank-2 s->p1/2 and s->p3/2 orbital routes vanish. The momentum quadrupole [p\u2297p]^(2) has the same rank-2 orbital selection."
+  },
+  "off_diagonal_mixing_estimate": {
+    "sixj_diag_p32_to_p32": "-sqrt(6)/12",
+    "sixj_offdiag_p32_to_p12": "sqrt(3)/6",
+    "offdiag_to_diag_ratio": 1.4142135623730951,
+    "deltaB_C_max_keV": 4.430045719791646,
+    "Vmix_est_keV": 6.265030738862226,
+    "theta_mix_estimate": 0.014596996129688318,
+    "Q_inherited_from_mixing_b": 0.0009925957368188058
+  },
+  "kernel_ground_state": {
+    "B_mev": 1.5866,
+    "kappa_fm_inv": 0.36073967566792786,
+    "eta_B": 0.6547993745195287,
+    "amp_peak_fm": 5.6,
+    "rate_peak_fm": 5.6,
+    "amp_mean_fm": 8.41044880441771,
+    "rate_mean_fm": 7.032242389674859,
+    "amp_median_fm": 7.542481452559338,
+    "rate_median_fm": 6.565877564577319,
+    "F0_at_amp_peak": 0.06614644457637943,
+    "F0_at_rate_peak": 0.06614644457637943,
+    "F0_at_amp_mean": 0.1422256904500057,
+    "F0_at_rate_mean": 0.10069966151939388,
+    "F0_at_amp_median": 0.11510065661400458,
+    "F0_at_rate_median": 0.08851363289100957,
+    "amp_weighted_avg_F0": 0.19114133706769543,
+    "rate_weighted_avg_F0": 0.12495716421256393,
+    "Q_trans_from_amp_weighted_avg_b": 0.01299761092060329,
+    "Q_trans_from_rate_weighted_avg_b": 0.008497087166454349
+  },
+  "kernel_excited_state": {
+    "B_mev": 1.1574,
+    "kappa_fm_inv": 0.3081072548238741,
+    "eta_B": 0.766655475628981,
+    "amp_peak_fm": 6.5,
+    "rate_peak_fm": 6.5,
+    "amp_mean_fm": 9.627327052819737,
+    "rate_mean_fm": 8.126680907158601,
+    "amp_median_fm": 8.68621854440436,
+    "rate_median_fm": 7.614183015248075,
+    "F0_at_amp_peak": 0.08686623301512165,
+    "F0_at_rate_peak": 0.08686623301512165,
+    "F0_at_amp_mean": 0.18595420742283622,
+    "F0_at_rate_mean": 0.13298914045638088,
+    "F0_at_amp_median": 0.15154820736368013,
+    "F0_at_rate_median": 0.11721517029838707,
+    "amp_weighted_avg_F0": 0.24320694787438585,
+    "rate_weighted_avg_F0": 0.16449305181783014,
+    "Q_trans_from_amp_weighted_avg_b": 0.016538072455458238,
+    "Q_trans_from_rate_weighted_avg_b": 0.011185527523612451
+  },
+  "network_cases": [
+    {
+      "label": "current_excited_blind",
+      "q_trans_ex": 0.0,
+      "Li7_H": 2.3380109631362705e-10,
+      "Li7_sigma": 2.4451966552782918,
+      "D_H": 2.5087252750008083e-05,
+      "D_H_sigma": -0.6091574999730589,
+      "Y_p": 0.24770875063098918,
+      "Y_p_sigma": 0.6771876577472968
+    },
+    {
+      "label": "excited_rate_weighted_avg",
+      "q_trans_ex": 0.011185527523612451,
+      "Li7_H": 1.9098107354461684e-10,
+      "Li7_sigma": 1.0639055982134464,
+      "D_H": 2.5085927293105577e-05,
+      "D_H_sigma": -0.6135756896480771,
+      "Y_p": 0.24770875229187966,
+      "Y_p_sigma": 0.677188072969917
+    },
+    {
+      "label": "excited_threshold_1sigma",
+      "q_trans_ex": 0.009770746615959584,
+      "Li7_H": 1.9569394832444852e-10,
+      "Li7_sigma": 1.215933816917694,
+      "D_H": 2.5099297850303132e-05,
+      "D_H_sigma": -0.569007165656228,
+      "Y_p": 0.24770873081501082,
+      "Y_p_sigma": 0.6771827037527073
+    },
+    {
+      "label": "excited_amp_weighted_avg",
+      "q_trans_ex": 0.016538072455458238,
+      "Li7_H": 1.7513106468462057e-10,
+      "Li7_sigma": 0.5526149898264701,
+      "D_H": 2.5072211748471435e-05,
+      "D_H_sigma": -0.6592941717618847,
+      "Y_p": 0.24770877171605302,
+      "Y_p_sigma": 0.6771929290132552
+    }
+  ]
+}

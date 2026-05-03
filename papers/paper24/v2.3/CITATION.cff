@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Paper 24 v2.3 Reproducibility Bundle"
+message: "If you use this support bundle, please cite it with the metadata below."
+type: dataset
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper24/v2.3"
+date-released: "2026-05"
+abstract: >
+  Curated support bundle for reproducing the Paper 24 v2.3 lithium calculation
+  chain, including the Henderson excited-state import recomputation, transition
+  quadrupole projection, frozen outputs, and validation scripts.
+license: "Apache-2.0"

@@ -13,13 +13,13 @@ It is intended to hold:
 
 Current public focus:
 
-- Paper 24 v2.2 reproducibility bundle
+- Paper 24 v2.3 reproducibility bundle
 - Paper 31 practical calculator and audit bundles
 - calculator Phase 3 perturbation-foundation release slice
 - calculator Phase 4 source/readout-foundation release slice
 
 See also:
 
-- `papers/paper24/v2.2/README.md`
+- `papers/paper24/v2.3/README.md`
 - `docs/paper31.md`
 - `docs/calculators.md`

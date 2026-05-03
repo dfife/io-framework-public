@@ -1,0 +1,45 @@
+{
+  "paper": "Paper 24 v2.3",
+  "classification": "verified / public-support-constants",
+  "observational_denominators": {
+    "D_H_obs": 2.527e-5,
+    "D_H_sigma": 0.030e-5,
+    "Li7_H_obs": 1.58e-10,
+    "Li7_H_sigma": 0.31e-10,
+    "Y_p_obs": 0.245,
+    "Y_p_sigma": 0.004
+  },
+  "framework_constants": {
+    "x": 1.519,
+    "epsilon_n": 0.023843043660342757,
+    "Q_d_barn": 0.0028578,
+    "chi_ME_7Be": 0.84,
+    "f_gs": 0.711237553342816,
+    "Q_GS_7Be_barn": 0.068,
+    "T9_eff": 0.5160778165182853,
+    "nu_34_T9eff": 5.324728611585001
+  },
+  "henderson_2019": {
+    "B_E2_up_e2fm4": 26.0,
+    "B_E2_stat_e2fm4": 6.0,
+    "B_E2_sys_e2fm4": 3.0,
+    "B_E2_down_corrected_e2fm4": 52.0,
+    "spin_multiplicity_rule": "(2Ji+1) B(i->f) = (2Jf+1) B(f->i)",
+    "doi": "10.1103/PhysRevC.99.064320"
+  },
+  "tunl_2002": {
+    "Be7_excited_tau_fs": 192.0,
+    "Be7_excited_tau_sigma_fs": 25.0,
+    "Li7_B_E2_up_e2fm4": 8.3,
+    "Li7_B_E2_up_sigma_e2fm4": 0.5,
+    "doi": "10.1016/S0375-9474(02)00597-3"
+  },
+  "lichtenstadt_1989": {
+    "doi": "10.1016/0370-2693(89)91083-6",
+    "use": "Li-7 mirror form-factor cross-check, not a load-bearing Be-7 import without isospin/operator assumption."
+  },
+  "odell_2022": {
+    "doi": "10.3389/fphy.2022.888476",
+    "use": "Context only in v2.3; not used as authoritative input without author-verified deck/posterior data."
+  }
+}

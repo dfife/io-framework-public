@@ -1,0 +1,34 @@
+{
+  "bundle": "paper24-v2.3-repro",
+  "classification": "verified / public-reproducibility-support",
+  "paper": "Paper 24 v2.3",
+  "root": "papers/paper24/v2.3",
+  "created": "2026-05",
+  "artifacts": [
+    "papers/paper24/v2.3/README.md",
+    "papers/paper24/v2.3/MANIFEST.md",
+    "papers/paper24/v2.3/VERSION.md",
+    "papers/paper24/v2.3/CITATION.cff",
+    "papers/paper24/v2.3/environment/requirements.txt",
+    "papers/paper24/v2.3/environment/external_dependencies.md",
+    "papers/paper24/v2.3/scripts/README.md",
+    "papers/paper24/v2.3/scripts/01_compute_qtrans_carrier.py",
+    "papers/paper24/v2.3/scripts/02_recompute_excited_state_import.py",
+    "papers/paper24/v2.3/scripts/03_run_final_bbn_scorecard.py",
+    "papers/paper24/v2.3/scripts/04_validate_expected_outputs.py",
+    "papers/paper24/v2.3/data/README.md",
+    "papers/paper24/v2.3/data/imported_constants.json",
+    "papers/paper24/v2.3/results/qtrans_carrier_results.json",
+    "papers/paper24/v2.3/results/final_excited_branch_results.json",
+    "papers/paper24/v2.3/results/excited_state_import_recomputation_results.json",
+    "papers/paper24/v2.3/reports/final_excited_branch_report.txt",
+    "papers/paper24/v2.3/reports/excited_state_import_recomputation_memo.md",
+    "papers/paper24/v2.3/reports/qtrans_ex_formula_documentation_memo.md"
+  ],
+  "excluded": [
+    "PRyMordial source code",
+    "private class automation",
+    "exploratory GSM/AZURE2 search scripts",
+    "local PDF source copies"
+  ]
+}
