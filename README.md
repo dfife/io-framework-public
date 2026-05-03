@@ -29,6 +29,7 @@ This repository should not be a raw mirror of the private lab.
 
 ## Layout
 
+- `papers/`: paper-versioned reproducibility bundles
 - `docs/`: landing pages and narrative guides
 - `reports/`: frozen report files organized by paper
 - `scripts/`: reproducible scripts organized by paper
@@ -51,7 +52,26 @@ in the lab:
 Numerical agreement is not derivation. Public artifacts should preserve enough
 detail for independent rerun and review.
 
-## Current Public Bundle
+## Current Public Bundles
+
+Paper-versioned bundles use this layout:
+
+```text
+papers/paperNN/vX.Y/
+```
+
+Each versioned folder should contain its own `README.md`, `MANIFEST.md`,
+`VERSION.md`, scripts, frozen outputs, and citation metadata. This keeps
+support files synchronized to the paper version and avoids mixing active
+research state with public reproduction artifacts.
+
+The current Paper 24 support bundle is:
+
+- `papers/paper24/v2.2/`
+- validation command:
+  `python3 papers/paper24/v2.2/scripts/04_validate_expected_outputs.py`
+- manifest:
+  `metadata/manifests/paper24_v2_2_repro_bundle.json`
 
 The initial bundle included here is a Paper 31 practical calculator bundle:
 
@@ -72,9 +92,14 @@ The current source/readout-foundation release is:
 
 The manifest is in:
 
+- `metadata/manifests/paper24_v2_2_repro_bundle.json`
 - `metadata/manifests/paper31_practical_bundle.json`
 - `metadata/manifests/calculator_phase3_foundation_bundle.json`
 - `metadata/manifests/calculator_phase4_source_readout_foundation_bundle.json`
+
+Legacy top-level `data/`, `scripts/`, `reports/`, and `releases/` folders
+remain in place because earlier public bundles and manifests reference them.
+New paper-specific work should prefer `papers/paperNN/vX.Y/`.
 
 ## Publishing Workflow
 

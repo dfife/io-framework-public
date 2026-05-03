@@ -1,0 +1,143 @@
+{
+  "artifacts": {
+    "memo": "papers/paper24/v2.2/reports/excited_state_import_recomputation_memo.md",
+    "results_json": "papers/paper24/v2.2/results/excited_state_import_recomputation_results.json",
+    "source_publications": "not vendored; see reports/excited_state_import_recomputation_memo.md references"
+  },
+  "classification": "verified / recomputation / PAPER24_V22_EXCITED_STATE_IMPORT",
+  "import_cases": [
+    {
+      "B_E2_convention": "B(E2; 1/2- -> 3/2-) from detailed balance, factor 2 times Henderson upward value",
+      "B_E2_sigma_e2fm4": 13.416407864998739,
+      "B_E2_used_e2fm4": 52.0,
+      "D_H": 2.5072194689896718e-05,
+      "D_H_sigma": -0.6593510336776072,
+      "Li7_H": 1.7239845810965594e-10,
+      "Li7_sigma": 0.46446639063406275,
+      "R_34_tot_T9eff": 0.306711121403594,
+      "R_34_tot_T9eff_from_B_minus_1sigma": 0.31945073138466473,
+      "R_34_tot_T9eff_from_B_plus_1sigma": 0.2962561218652232,
+      "R_ex_T9eff": 0.5987463992430407,
+      "R_ex_T9eff_from_B_minus_1sigma": 0.6428643589311821,
+      "R_ex_T9eff_from_B_plus_1sigma": 0.5625401693145942,
+      "Y_p": 0.24770877169172603,
+      "Y_p_sigma": 0.677192922931509,
+      "claim_status": "verified_import_primary_for_excited_state_response",
+      "label": "henderson_be7_deexcitation_down_corrected",
+      "q_scale_b": 0.07211102550927978,
+      "q_scale_sigma_b": 0.009302605094190635,
+      "q_trans_ex_b": 0.017537902422203915,
+      "q_trans_ex_sigma_b": 0.002262458192238818
+    },
+    {
+      "B_E2_convention": "published B(E2; 3/2- -> 1/2-) Coulomb-excitation convention",
+      "B_E2_sigma_e2fm4": 6.708203932499369,
+      "B_E2_used_e2fm4": 26.0,
+      "D_H": 2.508536563001294e-05,
+      "D_H_sigma": -0.615447899956863,
+      "Li7_H": 1.8722765602073408e-10,
+      "Li7_sigma": 0.9428276135720672,
+      "R_34_tot_T9eff": 0.3347377270850033,
+      "R_34_tot_T9eff_from_B_minus_1sigma": 0.34509672379755485,
+      "R_34_tot_T9eff_from_B_plus_1sigma": 0.3260684076341493,
+      "R_ex_T9eff": 0.6958040534008275,
+      "R_ex_T9eff_from_B_minus_1sigma": 0.7316778203413384,
+      "R_ex_T9eff_from_B_plus_1sigma": 0.6657817303764414,
+      "Y_p": 0.24770875279695073,
+      "Y_p_sigma": 0.677188199237684,
+      "claim_status": "verified_import_crosscheck",
+      "label": "henderson_be7_published_upward_convention",
+      "q_scale_b": 0.05099019513592785,
+      "q_scale_sigma_b": 0.00657793514480272,
+      "q_trans_ex_b": 0.012401169730528367,
+      "q_trans_ex_sigma_b": 0.001599799529883126
+    },
+    {
+      "B_E2_convention": "incorrect half-factor convention; retained only to document rejection of Gemini numeric",
+      "B_E2_sigma_e2fm4": 3.3541019662496847,
+      "B_E2_used_e2fm4": 13.0,
+      "D_H": 2.509887785117426e-05,
+      "D_H_sigma": -0.570407162752471,
+      "Li7_H": 1.9910571801847104e-10,
+      "Li7_sigma": 1.3259909038216464,
+      "R_34_tot_T9eff": 0.3572562880730646,
+      "R_34_tot_T9eff_from_B_minus_1sigma": 0.3653419759958584,
+      "R_34_tot_T9eff_from_B_plus_1sigma": 0.3503952140122064,
+      "R_ex_T9eff": 0.773787050320074,
+      "R_ex_T9eff_from_B_minus_1sigma": 0.8017882257374338,
+      "R_ex_T9eff_from_B_plus_1sigma": 0.7500267790649839,
+      "Y_p": 0.24770873144345712,
+      "Y_p_sigma": 0.677182860864281,
+      "claim_status": "rejected_diagnostic_not_load_bearing",
+      "label": "gemini_half_factor_rejected_diagnostic",
+      "q_scale_b": 0.03605551275463989,
+      "q_scale_sigma_b": 0.004651302547095317,
+      "q_trans_ex_b": 0.008768951211101958,
+      "q_trans_ex_sigma_b": 0.001131229096119409
+    }
+  ],
+  "outcome": {
+    "classification": "B: imported excited-state response differs from the exact stated R_ex=0.666 central value, but the corrected Henderson de-excitation convention reproduces the old quadrupole scale closely and the PRyMordial Li7/H result remains in the same observational band.",
+    "headline_guidance": "Do not claim the central value is literally unchanged. v2.2 can claim the imported primary-source response preserves the lithium solution within the source/convention band.",
+    "preferred_Li7_H": 1.7239845810965594e-10,
+    "preferred_Li7_sigma": 0.46446639063406275,
+    "preferred_case": "henderson_be7_deexcitation_down_corrected",
+    "unchanged_headline_allowed": false
+  },
+  "paper24_model_inputs": {
+    "R_ex_v21_comparison": {
+      "R_34_tot_T9eff_from_old_q_trans": 0.3118414415705737,
+      "R_ex_T9eff_from_old_q_trans": 0.616512975978936,
+      "R_ex_stated_for_comparison": 0.666,
+      "q_trans_ex_amp_weighted_b": 0.016538072455458238
+    },
+    "R_gs_T9eff": 0.18814479860077837,
+    "T9_eff": 0.5160778165182853,
+    "amp_weighted_F0_excited": 0.24320694787438585,
+    "f_gs": 0.711237553342816,
+    "formulae": {
+      "R_ex": "R_ex(T9) = exp[-epsilon_n * ((q_trans_ex/x)/Q_d) * nu_34(T9)]",
+      "branch_sum": "R_34,tot = f_gs R_gs + (1-f_gs) R_ex",
+      "q_scale_from_B_E2": "q_scale[b] = sqrt(B(E2)[e^2 fm^4]) / 100",
+      "q_trans_ex_import": "q_trans_ex = q_scale * <F0>_amp,ex"
+    }
+  },
+  "source_values": {
+    "henderson_2019": {
+      "B_E2_down_corrected_e2fm4": 52.0,
+      "B_E2_down_corrected_sigma": 13.416407864998739,
+      "B_E2_up_e2fm4": 26.0,
+      "combined_sigma": 6.708203932499369,
+      "spin_multiplicity_check": "Detailed balance gives B_down = 2 * B_up for 1/2- -> 3/2-. The proposed 13 e^2 fm^4 half-factor is rejected.",
+      "stat_sigma": 6.0,
+      "sys_sigma": 3.0
+    },
+    "lichtenstadt_tunl_mirror_crosscheck": {
+      "be7_to_li7_evaluated_up_ratio": 3.1325301204819276,
+      "be7_to_li7_evaluated_up_ratio_sigma": 0.8299550977902176,
+      "li7_c2_gamma_width_ev": 2.8e-07,
+      "li7_c2_gamma_width_sigma_ev": 1.6e-07,
+      "li7_c2_inferred_B_E2_down_e2fm4": 13.987005274239417,
+      "li7_c2_inferred_B_E2_down_sigma": 7.992574442422524,
+      "li7_c2_inferred_B_E2_up_e2fm4": 6.993502637119708,
+      "li7_c2_inferred_B_E2_up_sigma": 3.996287221211262,
+      "li7_evaluated_B_E2_up_e2fm4": 8.3,
+      "li7_evaluated_B_E2_up_sigma": 0.5
+    },
+    "odell_2022": {
+      "read": "Odell/BRICK constrains ANCs and capture/scattering extrapolations, but without author-verified deck/posterior data it is not used as an authoritative R_ex import.",
+      "used_for_R_ex": false
+    },
+    "tunl_lifetime_crosscheck": {
+      "all_E2_B_E2_down_upper_bound_e2fm4": 292182.54664373863,
+      "henderson_E2_fraction_of_total_width": 0.00017797093151975354,
+      "henderson_E2_partial_width_ev": 6.101176828486086e-07,
+      "read": "The lifetime is M1 dominated and does not by itself determine R_ex. It is a consistency check that the Henderson E2 partial width is tiny.",
+      "tau_fs": 192.0,
+      "tau_sigma_fs": 25.0,
+      "total_gamma_width_ev": 0.0034281872755208332
+    }
+  },
+  "state": "completed",
+  "updated_at": "2026-05-02T13:10:00Z"
+}

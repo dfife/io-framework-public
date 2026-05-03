@@ -1,0 +1,79 @@
+Paper 24 final push: excited-state branch closure audit
+
+Claim boundary
+--------------
+- derived / no-go: the direct rank-2 position-space excited-branch route remains zero.
+- derived / no-go: the direct rank-2 momentum-quadrupole route has the same tensor-selection zero.
+- derived / no-go: a universal linear TT kinematic shift averages to zero in the isotropic bath.
+- derived / no: off-diagonal p3/2<->p1/2 mixing is real but too small to close the gap by itself.
+- conditional: the amplitude-weighted external-capture tail of the weaker-bound 1/2- branch crosses the 1 sigma threshold.
+
+I. Hilbert-space setup
+----------------------
+H_34 = H_rel ⊗ ( H_{7Be,gs} ⊕ H_{7Be,ex} ) ⊗ H_gamma
+R_34(T9) = f_gs R_gs(T9) + (1-f_gs) R_ex(T9).
+
+II. Direct rank-2 no-go
+-----------------------
+6j_direct(p1/2) = 0
+6j_direct(p3/2) = 0
+3j_direct(1,2,0;0,0,0) = 0
+So the raw direct s->p rank-2 orbital route is zero for both branches.
+The momentum quadrupole [p⊗p]^(2) is also a rank-2 orbital tensor, so it shares the same selection obstruction.
+
+III. Universal photon/kinematic linear shift
+--------------------------------------------
+A universal linear TT correction built only from h_ij n^i n^j has isotropic average zero,
+because ∫ dΩ n_i n_j h_TT^{ij} = 0 for trace-free h_TT in an unpolarized bath.
+So there is no separate branch-independent linear rescue from this channel.
+
+IV. Off-diagonal p3/2 <-> p1/2 mixing
+--------------------------------------
+6j_diag(3/2->3/2) = -sqrt(6)/12
+6j_offdiag(3/2->1/2) = sqrt(3)/6
+offdiag/diag ratio = 1.414213562373095
+deltaB_C,max = 4.430045719791646 keV
+V_mix estimate = 6.265030738862226 keV
+theta_mix estimate = 0.014596996129688
+inherited Q scale = 0.000992595736819 b
+So mixing is subleading, not dominant.
+
+V. Weaker-binding excited external-capture tail
+-----------------------------------------------
+Ground-state binding: B_gs = 1.586600 MeV
+Excited-state binding: B_ex = 1.157400 MeV
+
+Ground-state kernel summary:
+  amp_mean radius  = 8.410448804417710 fm
+  rate_mean radius = 7.032242389674859 fm
+  amp-weighted <F0> = 0.191141337067695
+  rate-weighted <F0> = 0.124957164212564
+
+Excited-state kernel summary:
+  amp_peak radius  = 6.500000000000000 fm
+  rate_peak radius = 6.500000000000000 fm
+  amp_mean radius  = 9.627327052819737 fm
+  rate_mean radius = 8.126680907158601 fm
+  amp_median       = 8.686218544404360 fm
+  rate_median      = 7.614183015248075 fm
+  amp-weighted <F0> = 0.243206947874386
+  rate-weighted <F0> = 0.164493051817830
+
+Using Q_scale = 0.068000 b gives
+  Q_trans,ex^(rate) = 0.011185527523612 b
+  Q_trans,ex^(amp)  = 0.016538072455458 b
+
+VI. Full-network outputs
+------------------------
+1 sigma threshold in effective-T proxy: Q_trans,ex = 0.009770746615960 b
+  current_excited_blind: q_trans_ex = 0.000000000000000 b -> Li7/H = 2.338010963136271e-10 (2.445197 sigma), D/H = 2.508725275000808e-05 (-0.609157 sigma), Y_p = 0.247708750630989 (0.677188 sigma)
+  excited_rate_weighted_avg: q_trans_ex = 0.011185527523612 b -> Li7/H = 1.909810735446168e-10 (1.063906 sigma), D/H = 2.508592729310558e-05 (-0.613576 sigma), Y_p = 0.247708752291880 (0.677188 sigma)
+  excited_threshold_1sigma: q_trans_ex = 0.009770746615960 b -> Li7/H = 1.956939483244485e-10 (1.215934 sigma), D/H = 2.509929785030313e-05 (-0.569007 sigma), Y_p = 0.247708730815011 (0.677183 sigma)
+  excited_amp_weighted_avg: q_trans_ex = 0.016538072455458 b -> Li7/H = 1.751310646846206e-10 (0.552615 sigma), D/H = 2.507221174847143e-05 (-0.659294 sigma), Y_p = 0.247708771716053 (0.677193 sigma)
+
+Conclusion
+----------
+The old excited-branch 0.005-0.010 b window came from pointwise Coulomb factors at representative radii.
+Once the weaker excited-state binding is inserted and the TT correction is treated as a first-order amplitude perturbation,
+the correct effective object is the amplitude-weighted external-capture kernel, not a pointwise F0 sample.
+That raises the excited-branch estimate above the 1 sigma threshold.

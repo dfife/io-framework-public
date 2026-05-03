@@ -1,0 +1,93 @@
+{
+  "claim_discipline": {
+    "Qtrans_from_final_state_measured_Q7Li": "conditional",
+    "Qtrans_from_measured_low_energy_E2_Sfactor": "derived / no",
+    "Qtrans_from_minimal_cluster_model": "reconstruction with measured nuclear data",
+    "Qtrans_from_published_ab_initio_E2_capture_amplitudes": "derived / no",
+    "sqrt_minus_g_linear_TT_route_derives_Qtrans": "derived / no"
+  },
+  "cluster_route": {
+    "Q_cluster_barn": -0.03669521999999999,
+    "Q_cluster_fm2": -3.669521999999999,
+    "effective_charge_factor_E2": 0.693877551020408,
+    "radii_fm": {
+      "r_c_7Li": 2.444,
+      "r_c_alpha": 1.681,
+      "r_c_triton": 1.759
+    },
+    "relative_separation_r2_fm2": 13.221071911764705,
+    "relative_separation_r_fm": 3.6360791949247617
+  },
+  "final_state_carrier_rules": {
+    "cluster_final_state_rule": {
+      "Q_trans_barn": 0.03669521999999999,
+      "formula": "Q_trans(7Be) approx |Q_cluster(7Li)| from alpha+t geometry",
+      "relative_error_vs_target": -0.08261950000000035
+    },
+    "initial_state_theory_rule": {
+      "Q_trans_barn": 0.068,
+      "formula": "Q_trans(7Be) = |Q_theory(7Be)|",
+      "relative_error_vs_target": 0.7000000000000001
+    },
+    "measured_final_state_rule": {
+      "Q_trans_barn": 0.04,
+      "formula": "Q_trans(7Be) = |Q(7Li)|",
+      "relative_error_vs_target": 0.0
+    }
+  },
+  "framework_geometry": {
+    "corrected_dressing_law": {
+      "formula": "deltaGamma_r/Gamma_r = (epsilon_bdy/x) * (Q_trans,r/Q_d) * nu_r",
+      "statement": "The x^{-1} projection belongs on the bridge amplitude epsilon_bdy, not on Q_trans."
+    },
+    "metric_expansion": {
+      "coulomb_variation": "delta V_C / V_C = -1/2 h_ij^TT n^i n^j + O(h^2)",
+      "derived_fact": "TT perturbations are traceless, so local sqrt(g) has no linear correction.",
+      "formula_det": "sqrt(det(gamma+h^TT)) = sqrt(gamma) [1 + 1/2 tr(h^TT) + O(h^2)] = sqrt(gamma)[1+O(h^2)]",
+      "formula_line_element": "dl_phys = a sqrt[(gamma_ij + h_ij^TT) dx^i dx^j] = a dl [1 + 1/2 h_ij^TT n^i n^j + O(h^2)]"
+    },
+    "target_translation": {
+      "Q_old_required_barn": 0.026352749999399957,
+      "Q_trans_required_exact_barn": 0.04002982724908853,
+      "Q_trans_user_prediction_barn": 0.04,
+      "relative_difference_exact_vs_0p040": 0.0007456812272132671
+    }
+  },
+  "inputs": {
+    "Delta": 5.624216852624105,
+    "K_gauge": 0.05487281774291466,
+    "K_total": 1.7270817121974578,
+    "L2": 0.13805247907094412,
+    "epsilon_n_paper22": 0.023843043660342757,
+    "gamma": 0.2375,
+    "li_obs": {
+      "sigma": 3.1e-11,
+      "value": 1.58e-10
+    },
+    "q_7be_theory_barn": 0.068,
+    "q_7li_barn": 0.04,
+    "q_d_barn": 0.0028578,
+    "q_req_old_barn": 0.026352749999399957,
+    "x": 1.519
+  },
+  "li_predictions": {
+    "from_cluster_Q7Li": {
+      "Li7_H": 1.7500878203658553e-10,
+      "Li_sigma": 0.5486703882769527,
+      "Q_eff_barn": 0.02415748518762343,
+      "Q_trans_barn": 0.03669521999999999
+    },
+    "from_measured_Q7Li": {
+      "Li7_H": 1.5814456055566964e-10,
+      "Li_sigma": 0.004663243731278956,
+      "Q_eff_barn": 0.026333113890717578,
+      "Q_trans_barn": 0.04
+    },
+    "from_theory_Q7Be": {
+      "Li7_H": 6.70214166780388e-11,
+      "Li_sigma": -2.9347930103858446,
+      "Q_eff_barn": 0.04476629361421989,
+      "Q_trans_barn": 0.068
+    }
+  }
+}
