@@ -105,6 +105,49 @@ Legacy top-level `data/`, `scripts/`, `reports/`, and `releases/` folders
 remain in place because earlier public bundles and manifests reference them.
 New paper-specific work should prefer `papers/paperNN/vX.Y/`.
 
+## Release Tags and Checksums
+
+Paper-versioned reproducibility bundles should be archived with immutable git
+tags and GitHub Releases in addition to their branch paths.
+
+The standard tag format is:
+
+```text
+paper{N}-v{X.Y}
+```
+
+Examples:
+
+```text
+paper24-v2.3
+paper24-v2.2
+```
+
+For each new paper-version bundle:
+
+1. Add or update the versioned folder under `papers/paperNN/vX.Y/`.
+2. Add or update the corresponding manifest under `metadata/manifests/`.
+3. Commit the public bundle state.
+4. Create an annotated tag using the standard tag format.
+5. Push the tag and create a GitHub Release from it.
+6. Record the GitHub source tarball SHA256 checksum in release notes or in a
+   companion checksum file.
+
+The branch URL remains useful for readers:
+
+```text
+https://github.com/dfife/io-framework-public/tree/main/papers/paper24/v2.3
+```
+
+The release tag is the immutable archival reference:
+
+```text
+https://github.com/dfife/io-framework-public/releases/tag/paper24-v2.3
+```
+
+This convention applies prospectively to future paper versions. Existing public
+bundles may be back-tagged when their establishing commit is identifiable.
+
 ## Publishing Workflow
 
 1. Produce or update a result in the private lab.
