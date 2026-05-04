@@ -1,0 +1,14 @@
+{
+  "L_1": 0.22416889162576648,
+  "absolute_difference": 0.0,
+  "chi_j": 2.110369395625224,
+  "claim": "L_1 puncture load",
+  "claim_boundary": "Standalone Paper 21 load value; later rate-dressing use is Paper 22/Paper 25 conditional bridge structure.",
+  "denominator": 3.422808541328779,
+  "expected_L_1": 0.22416889162576648,
+  "formula": "L_j = chi_j (2j+1) exp(-chi_j) / sum_{k>=1/2} chi_k (2k+1) exp(-chi_k)",
+  "gamma_BI": 0.2375,
+  "j": 1.0,
+  "numerator": 0.7672871969568789,
+  "status": "verified / derived puncture-load arithmetic"
+}

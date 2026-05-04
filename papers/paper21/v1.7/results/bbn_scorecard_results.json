@@ -1,0 +1,51 @@
+{
+  "claim": "Paper 21 v1.7 corrected BBN scorecard",
+  "claim_boundary": "Cross-paper consistency scorecard only; active lithium result belongs to Paper 24.",
+  "inputs": {
+    "frozen_PRyMordial_outputs": {
+      "D_over_H": 2.510410594954571e-05,
+      "Li7_over_H": 5.363335812718549e-10,
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.24781814417284279,
+      "Y_p_BBN_audit_only": 0.24915220940738897,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.012300778733811872,
+      "eta10": 6.183048605944518,
+      "omega_b_h2": 0.02108,
+      "source": "results/paper21/paper21_vN+1_ypbbn_to_ypcmb_correction_results.json"
+    },
+    "observational_denominators": {
+      "D_over_H": {
+        "sigma": 3e-07,
+        "value": 2.527e-05
+      },
+      "Li7_over_H": {
+        "sigma": 3.1e-11,
+        "value": 1.58e-10
+      },
+      "Y_p": {
+        "sigma": 0.004,
+        "value": 0.245
+      },
+      "source": "IO Framework Conventions v2.0, Section 1, reproducing Observational Conventions v1.0",
+      "url": "https://dfife.github.io/data/conventions_v2.md"
+    }
+  },
+  "rounded_manuscript_values": {
+    "D_over_H_sigma": -0.55,
+    "Li7_over_H_sigma": 12.2,
+    "Y_p_sigma": 0.7,
+    "chi2_DH_plus_Yp": 0.8
+  },
+  "scorecard": {
+    "D_over_H": 2.510410594954571e-05,
+    "D_over_H_sigma": -0.5529801681809717,
+    "Li7_over_H": 5.363335812718549e-10,
+    "Li7_over_H_sigma": 12.204309073285641,
+    "Y_p": 0.24781814417284279,
+    "Y_p_sigma": 0.7045360432106975,
+    "chi2_DH_plus_Yp": 0.8021581025844415
+  },
+  "status": "verified / scorecard arithmetic / YPCMB wrapper convention"
+}

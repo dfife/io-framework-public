@@ -1,0 +1,72 @@
+{
+  "bundle": {
+    "paper": "Paper 21",
+    "paper_version": "v1.7",
+    "bundle_tag": "paper21-v1.7",
+    "created": "May 2026",
+    "conventions": "https://dfife.github.io/data/conventions_v2.md"
+  },
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "x": 1.51899,
+    "K_gauge": 0.05487281774291466,
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.725305112137207
+  },
+  "puncture_loads": {
+    "formula": "L_j = chi_j (2j+1) exp(-chi_j) / sum_{k>=1/2} chi_k (2k+1) exp(-chi_k)",
+    "chi_j": "2 pi gamma_BI sqrt(j(j+1))",
+    "energy_weight_denominator": 3.422808541328779,
+    "Z_punc": 1.4220665845922718,
+    "L_1": 0.22416889162576648,
+    "L_2": 0.13805247907094412,
+    "L_1_plus_L_2": 0.36222137069671057
+  },
+  "ac1_closure": {
+    "strict_ratio_theta_obs_over_theta_bare": 0.8303803510281642,
+    "J_geom_theta": 0.8113767196882199,
+    "sqrt_1_plus_gamma_sq": 1.0278162530335857,
+    "J_theta_degree1": 0.8339461798286282,
+    "J_theta_degree1_rel_error_pct_vs_strict_ratio": 0.4294211437022577,
+    "J_theta_degree2": 0.8571434377831335,
+    "J_theta_degree2_rel_error_pct_vs_strict_ratio": 3.2229913342520344
+  },
+  "observational_conventions": {
+    "source": "IO Framework Conventions v2.0, Section 1, reproducing Observational Conventions v1.0",
+    "url": "https://dfife.github.io/data/conventions_v2.md",
+    "Y_p": {
+      "value": 0.245,
+      "sigma": 0.004
+    },
+    "D_over_H": {
+      "value": 2.527e-05,
+      "sigma": 3e-07
+    },
+    "Li7_over_H": {
+      "value": 1.58e-10,
+      "sigma": 3.1e-11
+    }
+  },
+  "paper21_corrected_scorecard": {
+    "source": "results/paper21/paper21_vN+1_ypbbn_to_ypcmb_correction_results.json",
+    "Y_p": 0.24781814417284279,
+    "Y_p_BBN_audit_only": 0.24915220940738897,
+    "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+    "D_over_H": 2.510410594954571e-05,
+    "Li7_over_H": 5.363335812718549e-10,
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_n": 0.02384221534546833,
+    "omega_b_h2": 0.02108,
+    "eta10": 6.183048605944518,
+    "Neff_output": 3.044388520277016
+  },
+  "paper21_legacy_geometric_branch": {
+    "purpose": "historical branch-assignment demonstration, not active v1.7 scorecard",
+    "N_eff_geometric": 3.4062213706967106,
+    "T_IO_branch_D_over_H_sigma": -0.08092495266837785,
+    "T_IO_branch_Y_p_sigma_published_legacy": 1.7216379594436337,
+    "T_IO_branch_chi2_DH_plus_Yp_published_legacy": 2.970586111361618,
+    "T_obs_branch_D_over_H_sigma": 9.83,
+    "T_obs_branch_chi2_DH_plus_Yp": 99.02
+  }
+}

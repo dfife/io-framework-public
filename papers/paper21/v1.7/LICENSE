@@ -1,0 +1,13 @@
+This Paper 21 v1.7 bundle follows the repository-level licensing state.
+
+Code:
+  See ../../../LICENSE-CODE.md
+
+Data and reports:
+  See ../../../LICENSE-DATA.md
+
+As of this bundle build, the repository-level files state that explicit license
+selection is pending and default copyright applies until a license is selected.
+The `license: MIT` field in CITATION.cff follows the earlier bundle metadata
+precedent but should be reconciled with repository-level license files before
+formal external publication if stricter license hygiene is required.

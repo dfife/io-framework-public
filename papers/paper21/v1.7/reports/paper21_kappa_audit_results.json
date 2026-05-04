@@ -1,0 +1,226 @@
+{
+  "paper": "Paper 21",
+  "version": "v1.6",
+  "audit_type": "kappa_style_field_redefinition",
+  "date": "2026-05-04",
+  "status": "verified / structural-audit / no manuscript edits",
+  "executive_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "fitted_active_scorecard_parameter_found": false,
+    "summary": "No unlabelled continuous fitted kappa parameter was found in the active Paper 21 v1.6 claims. The main boundary is scope visibility: AC1/theta closure is reduced scalar/longitudinal, L1/L2 are derived puncture loads whose Paper 22 rate-dressing use is conditional, and the old F_abs/lambda=4 radiation-response routes are historical/superseded provenance rather than active BBN evidence."
+  },
+  "active_claims": [
+    {
+      "name": "AC1/theta_* acoustic closure",
+      "status": "DERIVED/THEOREM within reduced scalar/longitudinal acoustic sector"
+    },
+    {
+      "name": "SU(2) puncture partition and singleton loads L1/L2",
+      "status": "DERIVED for the standalone Paper 21 load values"
+    },
+    {
+      "name": "T_IO branch assignment",
+      "status": "DERIVED/SCOPED for local bulk thermodynamic observables"
+    },
+    {
+      "name": "Paper 21 corrected BBN scorecard",
+      "status": "VERIFIED / wrapper-correction / cross-paper consistency"
+    }
+  ],
+  "historical_or_superseded_claims": [
+    {
+      "name": "F_abs bounded-Casimir near-hit",
+      "status": "STRUCTURALLY SUPPORTED CONSTRUCTION / RESEARCH-PROVENANCE",
+      "reason": "The scalar is reproducible but Paper 21 does not derive the stress/radiation map that injects it into the homogeneous BBN radiation slot."
+    },
+    {
+      "name": "lambda=4 bounded resolvent kernel",
+      "status": "RECONSTRUCTION / CONDITIONAL FAMILY-SCOPE",
+      "reason": "lambda=4 is motivated inside a bounded resolvent family but the family has a continuous lambda and the route is superseded as active BBN strategy."
+    },
+    {
+      "name": "nineteen P_resp radiation-response routes",
+      "status": "Historical/SUPERSEDED as active BBN route; DERIVED/NO-GO or COMPUTATIONAL NO-GO as route ledger",
+      "reason": "Paper 21 v1.6 explicitly supersedes the radiation-response strategy by Paper 22 v1.5 rate dressing."
+    }
+  ],
+  "numerical_values_checked": {
+    "gamma_BI": 0.2375,
+    "x": 1.51899,
+    "K_gauge": 0.05487281774291466,
+    "sqrt_1_plus_gamma_sq": 1.0278162530335857,
+    "J_geom_theta": 0.8113767196882199,
+    "J_theta_degree1": 0.8339461798286282,
+    "theta_degree1_relative_error_percent": 0.4294211437022577,
+    "L_1": 0.22416889162576648,
+    "L_2": 0.13805247907094412,
+    "L_1_plus_L_2": 0.36222137069671057,
+    "F_abs": 0.36878514007842433,
+    "target_Delta_Neff_historical": 0.368541479723,
+    "corrected_Y_p": 0.247818144172843,
+    "corrected_Y_p_sigma": 0.705,
+    "corrected_D_over_H": 2.510410594955e-05,
+    "corrected_D_over_H_sigma": -0.553,
+    "corrected_Li7_over_H": 5.363335812719e-10,
+    "corrected_Li7_sigma": 12.204,
+    "corrected_chi2_DH_plus_Yp": 0.802
+  },
+  "audit_targets": [
+    {
+      "audit_target": "theta_* observable typing",
+      "candidate_field": "primitive scalar / degree-2 intensity / geometric-only replacement for one-slot degree-1 acoustic response",
+      "verdict": "DERIVED/THEOREM within reduced scalar/longitudinal acoustic sector",
+      "evidence": "A1-A5 and B0-B6 localize the surviving gauge-sensitive stage to the primitive one-slot phase/ruler readout. Degree-1 J_theta is the tested branch closest to the strict theta_obs/theta_bare ratio.",
+      "hidden_parameter": false,
+      "recommendation": "Keep reduced-sector scope visible in bundle README and script docstrings."
+    },
+    {
+      "audit_target": "x^(-1/2) geometric acoustic factor",
+      "candidate_field": "replace exponent -1/2 by p",
+      "verdict": "DERIVED",
+      "evidence": "Paper 20 Acoustic History Reduction fixes J_r = x^(1/2), giving J_theta,geom = x^(-1/2).",
+      "hidden_parameter": false,
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "sqrt(1+gamma_BI^2) acoustic gauge factor",
+      "candidate_field": "replace one-form square-root response with 1, 1+gamma^2, K_gauge, or other scalar",
+      "verdict": "DERIVED/THEOREM within one-form acoustic response scope",
+      "evidence": "Tangential transfer/one-form response selects the square-root transfer; degree-2 is explicitly checked and worse.",
+      "hidden_parameter": false,
+      "recommendation": "No action beyond scope wording."
+    },
+    {
+      "audit_target": "A4 bridge no-new-slot rule",
+      "candidate_field": "allow direction collection or spherical harmonic projection to introduce a new gauge-sensitive slot",
+      "verdict": "DERIVED/THEOREM within reduced scalar/longitudinal acoustic sector",
+      "evidence": "paper21_a4_bridge_theorem_results.json records preservation of one-slot degree-1 typing and argmax invariance under uniform scaling.",
+      "hidden_parameter": false,
+      "recommendation": "Bundle should publish the A4 bridge artifact with the reduced-sector boundary."
+    },
+    {
+      "audit_target": "puncture Gibbs spectrum",
+      "candidate_field": "include j=0 as a physical puncture level or hand-pick a finite spectrum",
+      "verdict": "DERIVED/SCOPED",
+      "evidence": "Theorem 21.I treats j=0 only as a bookkeeping central sector; physical puncture labels begin at j=1/2.",
+      "hidden_parameter": false,
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "puncture energy-weight formula",
+      "candidate_field": "replace chi_j(2j+1)exp(-chi_j) by plain partition share or temperature-dependent factor",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "For any linear radiation map built from a Gibbs expectation of the puncture Hamiltonian, Theorem 21.I requires the internal-energy comparator.",
+      "hidden_parameter": false,
+      "recommendation": "Use this as a public-bundle headline script."
+    },
+    {
+      "audit_target": "singleton loads L1 and L2",
+      "candidate_field": "replace L1/L2 by arbitrary amplitudes",
+      "verdict": "DERIVED for standalone Paper 21 values",
+      "evidence": "The correction memo verifies L1 and L2 are computed from gamma_BI and SU(2) puncture weights and are independent of PRyMordial YPBBN/YPCMB output.",
+      "hidden_parameter": false,
+      "recommendation": "Bundle README must state that Paper 22's rate-dressing use of L1/L2 is inherited conditional structure, not a Paper 21 theorem."
+    },
+    {
+      "audit_target": "{j=1,j=2} near-hit subset",
+      "candidate_field": "different low-spin subset or continuous response weights r_j",
+      "verdict": "STRUCTURALLY SUPPORTED CONSTRUCTION / RESEARCH-PROVENANCE",
+      "evidence": "The {1,2} subset is motivated as first vector plus first tensor multiplets and gives 0.36222137069671057, but Paper 21 does not derive P_resp = P1 + P2.",
+      "hidden_parameter": false,
+      "recommendation": "Do not present as active BBN evidence."
+    },
+    {
+      "audit_target": "optical filtration theorem",
+      "candidate_field": "permit reduced RT/BY optical readouts to see noncentral SU(2) puncture data",
+      "verdict": "DERIVED/SCOPED",
+      "evidence": "Theorem 21.J routes reduced optical readouts through the fixed-point algebra, making them blind to noncentral puncture weights.",
+      "hidden_parameter": false,
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "T_IO versus T_obs branch assignment",
+      "candidate_field": "evaluate BBN on observer-side T_obs rather than local bulk T_IO",
+      "verdict": "DERIVED/SCOPED for branch assignment",
+      "evidence": "Theorem 21.L localizes GTTP to RT/BY optical readout; BBN is local bulk thermodynamics.",
+      "hidden_parameter": false,
+      "recommendation": "Keep T_obs as a class-mismatched audit branch only."
+    },
+    {
+      "audit_target": "lambda=4 bounded Casimir family",
+      "candidate_field": "replace h(C2)=C2/(4+C2) by h_lambda(C2)=C2/(lambda+C2)",
+      "verdict": "RECONSTRUCTION / CONDITIONAL FAMILY-SCOPE",
+      "evidence": "The target corresponds to lambda approximately 4.00508. lambda=4 is dimension-motivated but not forced universally.",
+      "hidden_parameter": false,
+      "recommendation": "Historical/provenance only."
+    },
+    {
+      "audit_target": "F_abs as radiation source",
+      "candidate_field": "promote F_abs to physical Delta N_eff",
+      "verdict": "STRUCTURALLY SUPPORTED CONSTRUCTION / RESEARCH-PROVENANCE",
+      "evidence": "F_abs is reproducible and close to the old target, but Paper 21 lacks the stress/radiation map into the homogeneous bare radiation slot.",
+      "hidden_parameter": false,
+      "recommendation": "Do not use as active BBN solution."
+    },
+    {
+      "audit_target": "nineteen P_resp routes",
+      "candidate_field": "promote an old near-hit route despite controls/no-go status",
+      "verdict": "Historical/SUPERSEDED as active BBN route",
+      "evidence": "Paper 21 v1.6 supersedes the radiation-response strategy by Paper 22 v1.5. The scripts remain useful no-go/provenance artifacts.",
+      "hidden_parameter": false,
+      "recommendation": "Publish as route ledger only."
+    },
+    {
+      "audit_target": "YPBBN to YPCMB correction",
+      "candidate_field": "retain PRyMresults()[4] for observational Y_p",
+      "verdict": "VERIFIED / WRAPPER-CORRECTION",
+      "evidence": "The vN+1 correction artifact verifies YPCMB / PRyMresults()[3] as the observational helium output and retains YPBBN only as an audit field.",
+      "hidden_parameter": false,
+      "recommendation": "Use corrected wrapper convention in bundle documentation."
+    },
+    {
+      "audit_target": "Paper 21 corrected scorecard",
+      "candidate_field": "treat corrected Path C scorecard as independent Paper 21 BBN derivation",
+      "verdict": "VERIFIED / CROSS-PAPER CONSISTENCY",
+      "evidence": "The scorecard verifies convention alignment and modern amplitudes; it is not a new Paper 21 lithium solution.",
+      "hidden_parameter": false,
+      "recommendation": "Frame scorecard as correction/hygiene artifact."
+    }
+  ],
+  "conditional_visibility": {
+    "passes_main_test": true,
+    "notes": [
+      "AC1 scope is visible as reduced scalar/longitudinal acoustic sector.",
+      "Part II radiation response is explicitly superseded by Paper 22 v1.5 as active D/H strategy.",
+      "L1/L2 are verified independent of YPBBN/YPCMB output.",
+      "Future bundle material should distinguish active theorem-support scripts from historical/provenance route scripts."
+    ]
+  },
+  "cross_paper_dependency_check": {
+    "stale_dependency_found": false,
+    "items": [
+      {
+        "dependency": "Papers 19-25 YPBBN->YPCMB correction",
+        "effect": "Already incorporated in Paper 21 v1.5/v1.6 scorecard; does not affect L1/L2."
+      },
+      {
+        "dependency": "Paper 22 v1.5 chi-square correction",
+        "effect": "Reflected in Paper 21 v1.6 version history."
+      },
+      {
+        "dependency": "Paper 24 v2.3 Henderson row alignment",
+        "effect": "No effect on Paper 21 AC1 or puncture-load derivations."
+      },
+      {
+        "dependency": "IO Framework Conventions v2.0",
+        "effect": "Applies to future bundle/manuscript hygiene."
+      }
+    ]
+  },
+  "recommended_bundle_framing": [
+    "Publish AC1/theta closure scripts as active theorem-support artifacts.",
+    "Publish puncture partition/load scripts as active inputs to later papers.",
+    "Publish only P_resp campaign scripts that directly reproduce a Paper 21 theorem/no-go label or quoted number; frame them as no-go/provenance registry only.",
+    "Publish the YPBBN->YPCMB correction audit as scorecard hygiene artifact."
+  ]
+}

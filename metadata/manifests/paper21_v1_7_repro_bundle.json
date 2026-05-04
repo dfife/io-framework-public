@@ -1,0 +1,49 @@
+{
+  "bundle": "paper21-v1.7",
+  "paper": "Paper 21",
+  "paper_version": "v1.7",
+  "path": "papers/paper21/v1.7",
+  "release_tag": "paper21-v1.7",
+  "status": "verified / public-reproducibility-support / bundle-prep",
+  "created": "2026-05-04",
+  "validation_command": "python3 papers/paper21/v1.7/scripts/07_validate_expected_outputs.py",
+  "validation_expected_summary": "SUMMARY total_checks=12 pass_count=12 fail_count=0",
+  "included_claims": [
+    "L_1 puncture load",
+    "L_2 puncture load",
+    "AC1/theta_* reduced acoustic closure",
+    "YPCMB PRyMordial wrapper convention",
+    "Paper 21 corrected BBN scorecard arithmetic",
+    "live operator-algebra theorem artifacts"
+  ],
+  "excluded_by_policy": [
+    "historical P_resp dead-route reruns",
+    "private scratch state",
+    "manuscript drafts",
+    "PRyMordial source code"
+  ],
+  "files": {
+    "scripts": [
+      "scripts/01_derive_L1_puncture_load.py",
+      "scripts/02_derive_L2_puncture_load.py",
+      "scripts/03_compute_ac1_closure.py",
+      "scripts/04_prymordial_wrapper_conventions.py",
+      "scripts/05_generate_bbn_scorecard.py",
+      "scripts/06_operator_algebra_live_theorem_artifacts.py",
+      "scripts/07_validate_expected_outputs.py"
+    ],
+    "results": [
+      "results/L1_puncture_load_results.json",
+      "results/L2_puncture_load_results.json",
+      "results/ac1_closure_results.json",
+      "results/prymordial_wrapper_conventions_results.json",
+      "results/bbn_scorecard_results.json",
+      "results/operator_algebra_live_theorem_artifacts_results.json"
+    ],
+    "reports": [
+      "reports/paper21_kappa_audit_report.md",
+      "reports/paper21_kappa_audit_results.json",
+      "reports/paper21_reproducibility_script_manifest.md"
+    ]
+  }
+}

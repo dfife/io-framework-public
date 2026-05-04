@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Paper 21 v1.7 Reproducibility Bundle"
+message: "If you use this reproducibility bundle, cite the associated Paper 21 v1.7 manuscript and this repository release."
+type: software
+authors:
+  - family-names: Fife
+    given-names: David
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper21/v1.7"
+version: "paper21-v1.7"
+date-released: "2026-05-04"
+license: "MIT"
+keywords:
+  - cosmology
+  - acoustic scale
+  - Big Bang nucleosynthesis
+  - reproducibility
+  - Interior Observer framework

@@ -1,0 +1,27 @@
+{
+  "a4_bridge_checks": {
+    "direction_collection_preserves_slot_count": true,
+    "harmonic_projection_preserves_slot_count": true,
+    "no_new_gauge_sensitive_leg_after_collection": true,
+    "no_new_gauge_sensitive_leg_after_harmonic_projection": true,
+    "peak_position_argmax_invariant_under_uniform_scaling": true,
+    "power_spectrum_moves_to_degree2": true
+  },
+  "claim": "AC1/theta_* reduced acoustic closure",
+  "claim_boundary": "Reduced scalar/longitudinal acoustic sector only.",
+  "factors": {
+    "J_geom_theta": 0.8113767196882199,
+    "J_theta_degree1": 0.8339461798286282,
+    "J_theta_degree1_rel_error_pct_vs_strict_ratio": 0.4294211437022577,
+    "J_theta_degree2": 0.8571434377831335,
+    "J_theta_degree2_rel_error_pct_vs_strict_ratio": 3.2229913342520344,
+    "J_theta_geom_only_rel_error_pct_vs_strict_ratio": -2.2885454016842166,
+    "sqrt_1_plus_gamma_sq": 1.0278162530335857
+  },
+  "inputs": {
+    "gamma_BI": 0.2375,
+    "strict_ratio_theta_obs_over_theta_bare": 0.8303803510281642,
+    "x": 1.51899
+  },
+  "status": "verified / DERIVED-THEOREM within reduced scalar-longitudinal acoustic sector"
+}

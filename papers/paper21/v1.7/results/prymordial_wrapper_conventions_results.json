@@ -1,0 +1,35 @@
+{
+  "claim": "Paper 21 corrected PRyMordial wrapper convention",
+  "claim_boundary": "Wrapper-convention artifact, not a new BBN network implementation.",
+  "external_dependency": {
+    "PRyMordial": "not redistributed; this public bundle validates the wrapper convention and frozen outputs"
+  },
+  "helium_audit_only_output": {
+    "PRyMresults_index": 4,
+    "component": "YPBBN",
+    "use": "audit only; not compared to observational Y_p compilations",
+    "value": 0.24915220940738897
+  },
+  "helium_observational_output": {
+    "PRyMresults_index": 3,
+    "component": "YPCMB",
+    "value": 0.24781814417284279
+  },
+  "observational_denominators": {
+    "D_over_H": {
+      "sigma": 3e-07,
+      "value": 2.527e-05
+    },
+    "Li7_over_H": {
+      "sigma": 3.1e-11,
+      "value": 1.58e-10
+    },
+    "Y_p": {
+      "sigma": 0.004,
+      "value": 0.245
+    },
+    "source": "IO Framework Conventions v2.0, Section 1, reproducing Observational Conventions v1.0",
+    "url": "https://dfife.github.io/data/conventions_v2.md"
+  },
+  "status": "verified / wrapper convention"
+}
