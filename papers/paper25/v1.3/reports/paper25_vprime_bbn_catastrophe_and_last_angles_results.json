@@ -1,0 +1,82 @@
+{
+  "question": "Do any final nuclear/geometry/representation-theory routes close the V-vs-V' identity pin, and what happens numerically if epsilon_w uses V'?",
+  "constants": {
+    "gamma": 0.2375,
+    "V_prime": 0.475,
+    "sqrt_L1": 0.473464773373655,
+    "epsilon_w_vprime": 0.22489576735248612,
+    "epsilon_w_kgauge": 0.025980346217022963,
+    "K_mean_aligned": 1.72704,
+    "epsilon_n": 0.02384221534546833
+  },
+  "last_angles": {
+    "nuclear_multipole_argument": {
+      "status": "derived_no",
+      "summary": "The current stack has rank-1 / j=1 carrier typing and branch selection, but no theorem-grade Wigner-Eckart selector that upgrades the weak vector current from carrier type to K_gauge payload."
+    },
+    "cg_killing_form_argument": {
+      "status": "derived_no",
+      "summary": "The j=1 tensor j=1 -> 0 singlet and Killing-form contraction fix the intertwiner type, not the 1+gamma^2 payload. The bridge remains unique only up to normalization."
+    },
+    "best_surviving_idea": {
+      "status": "verified",
+      "summary": "The naive V' branch is catastrophically wrong numerically on the exact local PRyMordial pipeline. That is a strong scorecard exclusion of the naive branch, but it is not a derivation of the theorem-grade identity pin."
+    }
+  },
+  "bbn_rerun": {
+    "status": "verified",
+    "vprime_branch": {
+      "T0CMB_K": 2.6635,
+      "omega_b_h2": 0.02108,
+      "Neff_output": 3.044388520277016,
+      "eta10": 6.183048605944518,
+      "Y_p": 0.2917746275561733,
+      "Y_p_CMB": 0.2917746275561733,
+      "Y_p_BBN_audit_only": 0.2932530669126614,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "D/H": 2.7881763252099333e-05,
+      "Li7/H": 5.844155907162359e-10,
+      "D/H_sigma": 8.705877506997776,
+      "Y_p_sigma": 11.693656889043321,
+      "Li7/H_sigma": 13.755341636007609,
+      "chi2_DH_plus_Yp": 212.53391460552015,
+      "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md",
+      "weak_delta": -0.22489576735248612,
+      "nuclear_common_delta": -0.02384221534546833,
+      "npdg_only_delta": 0.0,
+      "label": "paper25_vprime_branch"
+    },
+    "kgauge_branch": {
+      "T0CMB_K": 2.6635,
+      "omega_b_h2": 0.02108,
+      "Neff_output": 3.044388520277016,
+      "eta10": 6.183048605944518,
+      "Y_p": 0.25033520251975144,
+      "Y_p_CMB": 0.25033520251975144,
+      "Y_p_BBN_audit_only": 0.25167828391361735,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "D/H": 2.5229167685309447e-05,
+      "Li7/H": 5.398029663218307e-10,
+      "D/H_sigma": -0.13610771563517857,
+      "Y_p_sigma": 1.3338006299378617,
+      "Li7/H_sigma": 12.316224720059054,
+      "chi2_DH_plus_Yp": 1.7975494306780635,
+      "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md",
+      "weak_delta": -0.025980346217022963,
+      "nuclear_common_delta": -0.02384221534546833,
+      "npdg_only_delta": 0.0,
+      "label": "paper25_kgauge_branch"
+    },
+    "derived_comparisons": {
+      "epsilon_ratio_vprime_to_kgauge": 8.656380691537084,
+      "sigma_plane_norm_vprime": 14.57854295207584,
+      "sigma_plane_norm_kgauge": 1.3407272021847187,
+      "sigma_plane_distance": 13.620107355912658,
+      "chi2_ratio_vprime_to_kgauge": 118.2353658699383
+    }
+  },
+  "claim_boundary": {
+    "status": "conditional",
+    "summary": "The exact PRyMordial rerun verifies that the naive V' branch fails BBN badly, but observational catastrophe is still a scorecard selection, not a proof that the physical weak observable belongs to the finite V class."
+  }
+}

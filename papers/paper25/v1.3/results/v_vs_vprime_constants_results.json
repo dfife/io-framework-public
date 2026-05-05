@@ -1,0 +1,27 @@
+{
+  "amplitudes": {
+    "epsilon_n_Kmean_over_10_L2": 0.02384221534546833,
+    "epsilon_w_linear_Kgauge_sqrtL1": 0.025980346217022963,
+    "epsilon_w_quadratic_Kgauge_L1": 0.012300778733811872,
+    "epsilon_w_vprime_sqrtL1": 0.22489576735248612
+  },
+  "claim_boundary": "K_gauge is the finite modular payload; Paper 25 tests whether the weak rate reads K_gauge or V'.",
+  "constants": {
+    "K_gauge": 0.05487281774291466,
+    "K_mean_aligned": 1.72704,
+    "L1": 0.22416889162576648,
+    "L2": 0.13805247907094412,
+    "Q": 1.05640625,
+    "V_double_prime": 2.1128125,
+    "V_prime": 0.475,
+    "gamma_BI": 0.2375,
+    "sqrt_L1": 0.473464773373655
+  },
+  "paper": "Paper 25 v1.3",
+  "purpose": "recompute V, V', V'', and weak-amplitude branches",
+  "ratios": {
+    "V_prime_over_K_gauge": 8.656380691537084,
+    "linear_over_quadratic_weak_amplitude": 2.112089549713569,
+    "vprime_over_quadratic_weak_amplitude": 18.283051196937794
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "comparison_requested_minus_published_like": {
+    "delta_D_H_sigma": -0.47019016157071064,
+    "delta_Li7_sigma": -0.029439023881084436,
+    "delta_Y_p_sigma": -0.653650178453112,
+    "delta_chi2_3obs": -1.0747211264070542
+  },
+  "constants": {
+    "K_mean_aligned": 1.72704,
+    "L1": 0.22416889162576648,
+    "epsilon_n": 0.02384221534546833,
+    "gamma": 0.2375,
+    "k_gauge_exact_log": 0.05487281774291466,
+    "k_gauge_round10": 0.05464,
+    "q_trans_ex_amp_weighted_b": 0.016538072455458238,
+    "sqrt_L1": 0.473464773373655
+  },
+  "scenarios": {
+    "exact_log_quadratic_branch": {
+      "D_H": 2.509938817767262e-05,
+      "D_H_sigma": -0.5687060744245984,
+      "Li7_H": 1.7508826463710944e-10,
+      "Li7_sigma": 0.5512343431325627,
+      "Y_p": 0.24771903130174175,
+      "Y_p_sigma": 0.6797578254354383,
+      "chi2_3obs": 1.0893566013769407,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.012300778733811872,
+      "label": "exact_log_quadratic_branch",
+      "q_trans_ex": 0.016538072455458238
+    },
+    "linear_exact_log_branch": {
+      "D_H": 2.524360510568969e-05,
+      "D_H_sigma": -0.08798298103437327,
+      "Li7_H": 1.760825619705781e-10,
+      "Li7_sigma": 0.58330845066381,
+      "Y_p": 0.25012875688878244,
+      "Y_p_sigma": 1.2821892221956122,
+      "chi2_3obs": 1.991998955082098,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.025980346217022963,
+      "label": "linear_exact_log_branch",
+      "q_trans_ex": 0.016538072455458238
+    },
+    "published_like_branch": {
+      "D_H": 2.5254209979892336e-05,
+      "D_H_sigma": -0.05263340035888126,
+      "Li7_H": 1.7592094481037047e-10,
+      "Li7_sigma": 0.5780949938829183,
+      "Y_p": 0.2503220621460143,
+      "Y_p_sigma": 1.330515536503582,
+      "chi2_3obs": 2.107235689663244,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.0271,
+      "label": "published_like_branch",
+      "q_trans_ex": 0.016538072455458238
+    },
+    "requested_quadratic_branch": {
+      "D_H": 2.5113152931421123e-05,
+      "D_H_sigma": -0.5228235619295919,
+      "Li7_H": 1.7500833507005685e-10,
+      "Li7_sigma": 0.5486559700018339,
+      "Y_p": 0.24770746143220188,
+      "Y_p_sigma": 0.6768653580504699,
+      "chi2_3obs": 1.0325145632561898,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.01224858823843188,
+      "label": "requested_quadratic_branch",
+      "q_trans_ex": 0.016538072455458238
+    }
+  },
+  "status": {
+    "paper24_final_push_excited_amp_weighted_branch_rerun": "verified",
+    "quadratic_weak_branch_lithium_survival": "verified"
+  },
+  "verdict": {
+    "lithium_survives_under_requested_quadratic_weak_branch": true,
+    "summary": "On the exact Paper 24 final-push excited-state amplitude-weighted branch, switching the weak suppression from the published-like 0.0271 value to the requested quadratic value 0.01224858823843188 keeps Li-7/H at +0.55 sigma."
+  }
+}

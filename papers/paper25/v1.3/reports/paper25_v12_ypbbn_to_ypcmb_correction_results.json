@@ -1,0 +1,693 @@
+{
+  "artifacts": {
+    "extracted_docx_text": "/opt/cosmology-lab/results/paper25/Interior_Observer_Paper25_v1_1_extracted.txt",
+    "memo": "/opt/cosmology-lab/results/paper25/paper25_v12_ypbbn_to_ypcmb_correction_memo.md",
+    "results_json": "/opt/cosmology-lab/results/paper25/paper25_v12_ypbbn_to_ypcmb_correction_results.json"
+  },
+  "corrected_support_rows": {
+    "kgauge_linear_branch": {
+      "D/H": 2.5229167685309447e-05,
+      "D/H_sigma": -0.13610771563517857,
+      "Li7/H": 5.398029663218307e-10,
+      "Li7/H_sigma": 12.316224720059054,
+      "Y_p_corrected_YPCMB": 0.25033520251975144,
+      "Y_p_legacy_YPBBN_audit_only": 0.25167828391361735,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma_corrected": 1.3338006299378617,
+      "Y_p_sigma_legacy_from_YPBBN": 1.6695709784043389,
+      "Y_p_sigma_shift_corrected_minus_legacy": -0.33577034846647713,
+      "chi2_DH_plus_Yp_corrected": 1.7975494306780635,
+      "chi2_DH_plus_Yp_legacy_from_YPBBN": 2.805992562185448,
+      "chi2_shift_corrected_minus_legacy": -1.0084431315073843,
+      "epsilon_n": null,
+      "epsilon_w": null,
+      "label": "paper25_kgauge_branch",
+      "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+    },
+    "mechanism_scenarios": {
+      "A_only_Kgauge_sqrtL1": {
+        "D/H": 2.5229167685309447e-05,
+        "D/H_sigma": -0.13610771563517857,
+        "Li7/H": 5.398029663218307e-10,
+        "Li7/H_sigma": 12.316224720059054,
+        "Y_p_corrected_YPCMB": 0.25033520251975144,
+        "Y_p_legacy_YPBBN_audit_only": 0.25167828391361735,
+        "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+        "Y_p_sigma_corrected": 1.3338006299378617,
+        "Y_p_sigma_legacy_from_YPBBN": 1.6695709784043389,
+        "Y_p_sigma_shift_corrected_minus_legacy": -0.33577034846647713,
+        "chi2_DH_plus_Yp_corrected": 1.7975494306780635,
+        "chi2_DH_plus_Yp_legacy_from_YPBBN": 2.805992562185448,
+        "chi2_shift_corrected_minus_legacy": -1.0084431315073843,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.025980346217022963,
+        "label": "A_only_Kgauge_sqrtL1",
+        "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+      },
+      "A_only_Vprime_sqrtL1": {
+        "D/H": 2.7881763252099333e-05,
+        "D/H_sigma": 8.705877506997776,
+        "Li7/H": 5.844155907162359e-10,
+        "Li7/H_sigma": 13.755341636007609,
+        "Y_p_corrected_YPCMB": 0.2917746275561733,
+        "Y_p_legacy_YPBBN_audit_only": 0.2932530669126614,
+        "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+        "Y_p_sigma_corrected": 11.693656889043321,
+        "Y_p_sigma_legacy_from_YPBBN": 12.06326672816535,
+        "Y_p_sigma_shift_corrected_minus_legacy": -0.36960983912202927,
+        "chi2_DH_plus_Yp_corrected": 212.53391460552015,
+        "chi2_DH_plus_Yp_legacy_from_YPBBN": 221.31470732171098,
+        "chi2_shift_corrected_minus_legacy": -8.780792716190831,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.22489576735248612,
+        "label": "A_only_Vprime_sqrtL1",
+        "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+      },
+      "AplusB_additive": {
+        "D/H": 2.5402462069934427e-05,
+        "D/H_sigma": 0.441540233114756,
+        "Li7/H": 5.41958863265239e-10,
+        "Li7/H_sigma": 12.385769782749644,
+        "Y_p_corrected_YPCMB": 0.25262523074621906,
+        "Y_p_legacy_YPBBN_audit_only": 0.25397643600787945,
+        "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+        "Y_p_sigma_corrected": 1.9063076865547672,
+        "Y_p_sigma_legacy_from_YPBBN": 2.244109001969863,
+        "Y_p_sigma_shift_corrected_minus_legacy": -0.3378013154150956,
+        "chi2_DH_plus_Yp_corrected": 3.828966773276822,
+        "chi2_DH_plus_Yp_legacy_from_YPBBN": 5.230982990181206,
+        "chi2_shift_corrected_minus_legacy": -1.4020162169043844,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.038281124950834834,
+        "label": "AplusB_additive",
+        "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+      },
+      "B_only_Kgauge_L1": {
+        "D/H": 2.510410594954571e-05,
+        "D/H_sigma": -0.5529801681809717,
+        "Li7/H": 5.363335812718549e-10,
+        "Li7/H_sigma": 12.204309073285641,
+        "Y_p_corrected_YPCMB": 0.24781814417284279,
+        "Y_p_legacy_YPBBN_audit_only": 0.24915220940738897,
+        "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+        "Y_p_sigma_corrected": 0.7045360432106975,
+        "Y_p_sigma_legacy_from_YPBBN": 1.0380523518472433,
+        "Y_p_sigma_shift_corrected_minus_legacy": -0.3335163086365458,
+        "chi2_DH_plus_Yp_corrected": 0.8021581025844415,
+        "chi2_DH_plus_Yp_legacy_from_YPBBN": 1.3833397515770487,
+        "chi2_shift_corrected_minus_legacy": -0.5811816489926072,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.012300778733811872,
+        "label": "B_only_Kgauge_L1",
+        "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+      }
+    },
+    "vector_quadratic_trial": {
+      "D/H": 2.510410594954571e-05,
+      "D/H_sigma": -0.5529801681809717,
+      "Li7/H": 5.363335812718549e-10,
+      "Li7/H_sigma": 12.204309073285641,
+      "Y_p_corrected_YPCMB": 0.24781814417284279,
+      "Y_p_legacy_YPBBN_audit_only": 0.24915220940738897,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma_corrected": 0.7045360432106975,
+      "Y_p_sigma_legacy_from_YPBBN": 1.0380523518472433,
+      "Y_p_sigma_shift_corrected_minus_legacy": -0.3335163086365458,
+      "chi2_DH_plus_Yp_corrected": 0.8021581025844415,
+      "chi2_DH_plus_Yp_legacy_from_YPBBN": 1.3833397515770487,
+      "chi2_shift_corrected_minus_legacy": -0.5811816489926072,
+      "epsilon_n": null,
+      "epsilon_w": null,
+      "label": "paper25_vector_quadratic_branch",
+      "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+    },
+    "vprime_branch": {
+      "D/H": 2.7881763252099333e-05,
+      "D/H_sigma": 8.705877506997776,
+      "Li7/H": 5.844155907162359e-10,
+      "Li7/H_sigma": 13.755341636007609,
+      "Y_p_corrected_YPCMB": 0.2917746275561733,
+      "Y_p_legacy_YPBBN_audit_only": 0.2932530669126614,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma_corrected": 11.693656889043321,
+      "Y_p_sigma_legacy_from_YPBBN": 12.06326672816535,
+      "Y_p_sigma_shift_corrected_minus_legacy": -0.36960983912202927,
+      "chi2_DH_plus_Yp_corrected": 212.53391460552015,
+      "chi2_DH_plus_Yp_legacy_from_YPBBN": 221.31470732171098,
+      "chi2_shift_corrected_minus_legacy": -8.780792716190831,
+      "epsilon_n": null,
+      "epsilon_w": null,
+      "label": "paper25_vprime_branch",
+      "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+    }
+  },
+  "docx_locations": [
+    {
+      "id": "P21",
+      "kind": "paragraph",
+      "text": "Beginning from two premises \u2014 (1) the observable universe exists inside a Schwarzschild black hole, and (2) the physics inside the horizon is the same as outside \u2014 this paper resolves the V-vs-V\u2019 class-membership problem: whether the weak-sector BBN dressing coefficient reads V(\u03b1) = K_gauge = ln(1+\u03b3\u00b2) (the finite modular generator) or V\u2019(\u03b1) = 2\u03b3 (the tangent covector). Conditional on three physical identification premises (H1\u2013H3), the paper proves V = K_gauge exactly. This resolves the WMR premise (Paper 22) and corrects the weak amplitude from \u221aL_1 to L_1. The remaining conditional premises (GMP, TBS, cluster deformation, PSRP, boundary covariance exponent) are unaffected."
+    },
+    {
+      "id": "P23",
+      "kind": "paragraph",
+      "text": "This result corrects Paper 22\u2019s weak amplitude from \u03b5_w = K_gauge \u00d7 \u221aL_1 to \u03b5_w = K_gauge \u00d7 L_1. The correction improves the BBN fit: PRyMordial-verified results give D/H = \u22120.61\u03c3, Y_p = +0.68\u03c3, Li-7/H = +0.55\u03c3, with \u03c7\u00b2 = 1.13 (versus 2.11 for the uncorrected linear branch). All three primordial abundances are within 1\u03c3 of observation with zero fitted parameters."
+    },
+    {
+      "id": "P26",
+      "kind": "paragraph",
+      "text": "The Interior Observer (IO) framework models the observable universe as the interior of a Schwarzschild black hole with mass M_U = 4.50 \u00d7 10\u2075\u00b3 kg. Papers 1\u201324 derived all major cosmological observables from this single measured input plus one external parameter (\u03b3_BI = 0.2375 from Loop Quantum Gravity) and three physical principles: the Conformal Modular Principle (CMP), the Baryon Dictionary Principle (BDP), and the Gauge Thermal Transfer Principle (GTTP), all upgraded to DERIVED/THEOREM status by Paper 18."
+    },
+    {
+      "id": "P39",
+      "kind": "paragraph",
+      "text": "5. The quadratic weak branch \u03b5_w = K_gauge \u00d7 L_1 gives \u03c7\u00b2 = 1.13 with all three BBN observables within 1\u03c3. PRyMordial-VERIFIED."
+    },
+    {
+      "id": "P52",
+      "kind": "paragraph",
+      "text": "V\u2019\u2019 = 2(1+\u03b3\u00b2) = 2.1128"
+    },
+    {
+      "id": "P104",
+      "kind": "paragraph",
+      "text": "The quadratic weak branch \u03b5_w = K_gauge \u00d7 L_1 = 0.012301 gives \u03c7\u00b2 = 1.13, improving on the linear branch\u2019s \u03c7\u00b2 = 2.11."
+    },
+    {
+      "id": "P161",
+      "kind": "paragraph",
+      "text": "Exact BBN computation using PRyMordial with the Paper 24 v1.1 lithium pipeline:"
+    },
+    {
+      "id": "P162",
+      "kind": "paragraph",
+      "text": "The quadratic weak branch achieves all three primordial abundances within 1\u03c3 of observation with zero fitted parameters. The combined three-observable \u03c7\u00b2 drops from 2.11 to 1.13 \u2014 a 46% improvement. V\u2019 is excluded at 12\u03c3+ against direct measurements."
+    },
+    {
+      "id": "P179",
+      "kind": "paragraph",
+      "text": "NEW: \u03b5_w = K_gauge \u00d7 L_1 = 0.012301"
+    },
+    {
+      "id": "P181",
+      "kind": "paragraph",
+      "text": "Paper 22\u2019s structural results (GMP, channel placement, bridge mechanics, spatial Hodge spectrum) are unchanged. Only the weak amplitude formula and its derivation status are corrected. Papers 23 and 24 are unaffected: Paper 23\u2019s bridge is correctly linear in \u03b4A (the bridge IS linear; the rate squares it), and Paper 24\u2019s lithium mechanism operates entirely through the nuclear j=2 channel."
+    },
+    {
+      "id": "P199",
+      "kind": "paragraph",
+      "text": "Step 1: Schwarzschild radius (Paper 1 \u00a72.1). r_s = 2GM_U/c\u00b2 = 6.685 \u00d7 10\u00b2\u2076 m. The observable universe sits within a factor 1.5 of its own Schwarzschild radius. STATUS: DERIVED (standard GR, exact)"
+    },
+    {
+      "id": "P203",
+      "kind": "paragraph",
+      "text": "Step 5: Compactness ratio (Paper 1 \u00a72.1). x = r_s/R_U = 1.51899. The Schwarzschild radius exceeds the observable universe radius by a factor of 1.519, placing the observer deep inside the horizon at 65.8% of the Schwarzschild radius. This single dimensionless ratio, together with \u03b3_BI, determines all framework observables. STATUS: DERIVED"
+    },
+    {
+      "id": "P215",
+      "kind": "paragraph",
+      "text": "Step 15: No-Go for semiclassical QFT (Paper 2 \u00a73). Semiclassical QFT on stationary Schwarzschild CANNOT produce T_IO. Five candidate mechanisms examined and excluded (Bogoliubov coefficient analysis, 36/36 verification checks). The 30-order gap requires quantum gravitational physics. STATUS: DERIVED (theorem)"
+    },
+    {
+      "id": "P240",
+      "kind": "paragraph",
+      "text": "Step 33: Complete BBN scorecard: D/H at \u22121.2\u03c3, Y_p at +0.6\u03c3 \u2014 DERIVED (conditional on BDP) [Paper 19: \u03b1=3/2 clustering branch gives \u03c9_b = 0.01705; BOSS DR12 \u03c7\u00b2 = 73.06]"
+    },
+    {
+      "id": "P250",
+      "kind": "paragraph",
+      "text": "Step 37: V-hierarchy (Papers 9\u201313). Complete algebraic hierarchy of the generating potential: exp(V) = 1+\u03b3\u00b2 = 1.0564 (Paper 9), V\u2032\u2032 = 2(1+\u03b3\u00b2) = 2.1128 (Paper 10), V\u2032 = 2\u03b3 = 0.4750 (Paper 12), V = K_gauge = 0.05487 (Paper 13). Each derivative encodes a distinct physical observable: V seeds the spectral norm, V\u2032 the baryon fraction, V\u2032\u2032 the curvature, and exp(V) the amplification. STATUS: DERIVED"
+    },
+    {
+      "id": "P263",
+      "kind": "paragraph",
+      "text": "Step 49: Interior/exterior asymmetry (Paper 14). Observable corrections are interior projection effects arising from Premise 1 (observer inside a Schwarzschild BH). The no-hair theorem (standard GR) blocks exterior access to R_U,int. Cross-cancellation of x_ext and x_int is blocked because the exterior observer has no access to the interior compactness ratio. This follows directly from Premise 1 + standard GR. STATUS: DERIVED"
+    },
+    {
+      "id": "P270",
+      "kind": "paragraph",
+      "text": "A.1.13 Paper 14 New Results: Kill Shot C (H\u2080 Composite)"
+    },
+    {
+      "id": "P280",
+      "kind": "paragraph",
+      "text": "Step 67: Boundary No-Go (Paper 15). Local Schwarzschild horizon scalars are x-independent: they depend only on r_s, not on the ratio r_s/R_U. Therefore local horizon quantities cannot distinguish the observer\u2019s position inside the black hole. Any observable correction must arise from global or topological structure, not local curvature invariants. STATUS: DERIVED"
+    },
+    {
+      "id": "P307",
+      "kind": "paragraph",
+      "text": "Step 92: Foundation closure. All three High gaps closed within the reduced Schwarzschild tangential thermal sector. Scope: reduced sector used by Papers 14\u201317, not full unreduced horizon algebra. STATUS: DERIVED (reduced sector)"
+    },
+    {
+      "id": "P311",
+      "kind": "paragraph",
+      "text": "Step 95: CMP Modular Realization Theorem (Theorem 18.C). K_CMP = K_geom \u00b7 I + K\u0302_g. On physical sector: \u27e8K\u27e9 = K_geom + K_gauge = ln \u0394. Additive decomposition from tensor product structure, no BCH correction. Numeric check: K_geom + K_gauge \u2212 ln \u0394 = 0 to machine precision. STATUS: DERIVED/THEOREM (conditional on C1\u2013C5)"
+    },
+    {
+      "id": "P316",
+      "kind": "paragraph",
+      "text": "Step 99: BDP Modular Derivation Theorem (Theorem 18.B). f_b = x\u207b\u00b9 \u00b7 V\u2032(\u03b1) = 2\u03b3/x = 0.3127. Master identity f_b \u00d7 F = \u27e8K\u27e9/4 follows downstream. Numeric check: f_b \u00d7 F \u2212 \u27e8K\u27e9/4 = 0 to machine precision. STATUS: DERIVED/THEOREM (conditional on B1\u2013B5)"
+    },
+    {
+      "id": "P338",
+      "kind": "paragraph",
+      "text": "Step 115: P(k) crisis diagnosis. Paper 18 P(k) catastrophe (chi-squared = 1056) was misdiagnosed as N_eff-driven. Paper 19 proves the dominant driver is the baryon mapping. STATUS: DERIVED"
+    },
+    {
+      "id": "P339",
+      "kind": "paragraph",
+      "text": "Step 116: Baryon Scalarization Theorem. Observable-class Jacobian: omega_b(O) = omega_b(alpha=1) x^(1-alpha_O). For P(k) clustering: alpha = 3/2, omega_b = 0.01705. Three bridge theorems, two surgical repairs. BOSS DR12 chi-squared = 73.06 on 84 points. STATUS: DERIVED/THEOREM (Wolfram validated, S1-S6)"
+    },
+    {
+      "id": "P341",
+      "kind": "paragraph",
+      "text": "Step 118: Architectural shift (Paper 18). Project the Hamiltonian constraint, not the fluid. The correct IO approach projects the gravitational constraint equation onto the observer sector, rather than projecting individual fluid components. This shift resolves the universal-projector failure. STATUS: DERIVED"
+    },
+    {
+      "id": "P344",
+      "kind": "paragraph",
+      "text": "Step 121: RT upgrade chain (Paper 19 \u00a73). The complete derivation chain for the reduced-scope temperature transfer: Premise 1 (Schwarzschild interior) \u2192 isolated-horizon certification \u2192 RT/BY boundary framework \u2192 Ashtekar-Barbero connection \u2192 Paper 16 gauge-projection theorems P1\u2013P6 \u2192 CMP lapse factor. Each link is theorem-grade within its scope. STATUS: DERIVED"
+    },
+    {
+      "id": "P351",
+      "kind": "paragraph",
+      "text": "Step 128: Schur N-slot dissolution and bare background tension. Observer-side curvature projector dissolved by global readout. Curvature rank n=0 confirmed. Bare dissolution branch gives 15.07 Gyr (6.3 sigma too old). N_mode = 0.336 still required for age closure. N-slot transformed from observer-side projector to upstream bare-background closure problem. Foundation item #2. STATUS: DERIVED"
+    },
+    {
+      "id": "P355",
+      "kind": "paragraph",
+      "text": "omega_b,clust = 0.01705 (alpha = 3/2); BOSS DR12 chi-squared = 73.06; sigma_8 = 0.794; S_8 = 0.839"
+    },
+    {
+      "id": "P375",
+      "kind": "paragraph",
+      "text": "Step 147: Bare expansion diagnostic (Paper 20 \u00a77). Switching from the observer to the bare expansion history shifts D_A by +3.44% but shifts r_s by only \u22120.04%. The acoustic angular scale is dominated by r_s, not D_A. STATUS: DERIVED"
+    },
+    {
+      "id": "P380",
+      "kind": "paragraph",
+      "text": "Step 152: BBN multi-channel incompatibility (Paper 20 \u00a79). D/H fails at \u22123.9\u03c3 with N_eff = 3.044 (standard model). The D/H tension identifies a required radiation excess \u0394N_eff \u2248 0.37. This excess cannot come from any single mechanism tested in Paper 20. STATUS: DERIVED"
+    },
+    {
+      "id": "P381",
+      "kind": "paragraph",
+      "text": "Step 153: BBN measurement immunity (Paper 20 \u00a711). Abundance ratios (D/H, Y_p, \u2077Li/H) are dimensionless. Both species share the same astrophysical geometry. Any boundary geometric correction cancels in the ratio. Observable-class Jacobians cannot apply to nuclear reactions: nuclei are not observers, and different \u03b1 for different reactions violates Premise 2. STATUS: DERIVED"
+    },
+    {
+      "id": "P393",
+      "kind": "paragraph",
+      "text": "Step 165: \u0394N_eff target (Paper 20 \u00a714). \u0394N_eff \u2248 0.37 required to match D/H observation. Three premises needed (P_fullgrav, P_puncham, P_radmap) not yet in theorem stack. F_abs = 0.36879 derived as the absolute local Casimir load (Paper 21). STATUS: DERIVED"
+    },
+    {
+      "id": "P411",
+      "kind": "paragraph",
+      "text": "Step 179: Assembly gap decoupling (Theorem 21.C, Paper 21 \u00a78.1). On the torsion-\u039b homogeneous branch, d ln H\u2080_obs / d ln N_eff = 4.96\u00d710\u207b\u2075. Achieving H\u2080_obs = 67.4 would require N_eff \u2248 6708. The assembly gap and D/H radiation deficit are completely decoupled problems. STATUS: DERIVED"
+    },
+    {
+      "id": "P414",
+      "kind": "paragraph",
+      "text": "Step 182: No dynamic scattering / \u0393=1 / \u0394N_eff=0 (Theorem 21.Bb). Full 3+1 mode-matching kernel open. STATUS: DERIVED/NO-GO (not yet theorem-grade bundled)"
+    },
+    {
+      "id": "P423",
+      "kind": "paragraph",
+      "text": "Step 191: BBN scorecard at N_eff = 3.4062 on T_IO branch. D/H = \u22120.08\u03c3, Y_p = +1.72\u03c3, \u03c7\u00b2 = 2.97. T_obs insertion gives \u03c7\u00b2 = 99.02 (class error). STATUS: DERIVED"
+    },
+    {
+      "id": "P432",
+      "kind": "paragraph",
+      "text": "Step 200: BBN scorecard at N_eff = 3.41279 on T_IO branch (Paper 21 \u00a711). With F_abs route: D/H \u03c3 = +0.11 (was \u22123.916 at baseline), Y_p \u03c3 = +1.74, \u03c7\u00b2(D/H + Y_p) = 2.97 (was 15.61 at baseline). The F_abs route substantially improves the BBN scorecard over the baseline N_eff = 3.044. STATUS: DERIVED"
+    },
+    {
+      "id": "P437",
+      "kind": "paragraph",
+      "text": "Step 205: Uniform rate suppression no-go (21.AG computational). D/H-matching s = 0.892 gives Y_p = +5.73\u03c3. Wrong abundance pattern. STATUS: DERIVED"
+    },
+    {
+      "id": "P447",
+      "kind": "paragraph",
+      "text": "Step 214: P_resp Three-Channel Architecture (Reconstruction). Non-separable candidate: R_spatial(E,T) = \u03a3 \u03ba_{s,n,J} \u03a0_{0,n,J} \u2297 P_J + \u03a3 \u03ba_{v,n,J} \u03a0_{1,n,J}^coex \u2297 P_J + \u03a3 \u03ba_{t,n,J} \u03a0_{TT,n,J} \u2297 P_J, with hard selection rule s \u2264 J from Channel Floor Theorem. Joint-spectral in spatial channel and puncture spin. Satisfies all Paper 21 P_resp constraints (non-separable, channel-dependent, puncture-derived). The {j=1,2} energy-weighted decomposition: 0.3622 = 0.2242 (vector, j=1) + 0.1381 (tensor, j=2). Physical delivery kernels, energy-density entry mechanism, BBN-era constancy, and recombination-era reduction remain open. STATUS: DERIVED"
+    },
+    {
+      "id": "P454",
+      "kind": "paragraph",
+      "text": "Step 221: Bounded-Ratio No-Go (Theorem 22.11). c_K/c_\u0393 ~ Ha ~ a\u207b\u00b9 \u221d (1+z). At BBN ~ 10\u2079, at recombination ~ 1100; both are large-argument. Any untuned bounded saturator stays on plateau at both epochs. Cannot create BBN-on / recombination-off gate without explicit threshold. STATUS: DERIVED"
+    },
+    {
+      "id": "P455",
+      "kind": "paragraph",
+      "text": "Step 222: Shutoff Localization Theorem (Theorem 22.12). From Theorems 22.8\u201322.11: epoch gate cannot live in Z_punc/F_abs/P_J (permanent), spatial projectors alone (stress scalarization), A-B connection monomials (trivial), or bounded ratio functions (saturated). Must live in bridge/response kernel or equivalent pre-C_bare assembly map. Observable map alone is too late. Scope: exclusion strong but not exhaustive \u2014 does not yet exclude time-dependent boundary states, nonlocal memory kernels, or other dimensionless invariants. STATUS: DERIVED (within tested classes)"
+    },
+    {
+      "id": "P460",
+      "kind": "paragraph",
+      "text": "Step 227: Full-Radiation Scaling Equivalence (Theorem 22.14). If \u03c1_r \u2192 (1+F_abs)\u03c1_r, then \u0394N_eff,eq = [(1+\u03b2_rel N_eff,base)/\u03b2_rel] \u00d7 F_abs = 2.746, so N_eff,eff = 5.790. This is NOT equivalent to \u0394N_eff = F_abs. Catastrophic at both BBN (D/H = +25.6\u03c3) and \u03b8* (\u221210%). STATUS: DERIVED"
+    },
+    {
+      "id": "P461",
+      "kind": "paragraph",
+      "text": "Step 228: Single-Coefficient Radiation-Dressing No-Go (Theorem 22.15). No single scalar c_rad applied as \u03c1_r \u2192 (1+c_rad)\u03c1_r closes both D/H and \u03b8* simultaneously. c_DH = 0.0495 breaks \u03b8* by ~1.5%; c_\u03b8 = 0.0138 leaves D/H at \u22122.96\u03c3. STATUS: DERIVED"
+    },
+    {
+      "id": "P464",
+      "kind": "paragraph",
+      "text": "Step 231: Response Matrix (Theorem 22.18). +1% freeze-out bump (0.7 MeV): \u0394(D/H_\u03c3, Y_p_\u03c3) = (\u22120.106, +0.114). +1% nucleosynthesis bump (0.07 MeV): \u0394(D/H_\u03c3, Y_p_\u03c3) = (+0.409, +0.060). Freeze-out is the helium lever; nucleosynthesis is the deuterium lever. STATUS: DERIVED"
+    },
+    {
+      "id": "P466",
+      "kind": "paragraph",
+      "text": "Step 233: Two-Window Near-Closure. Bimodal kernel \u03b5_F = 0.076, \u03b5_N = 0.067 gives D/H_\u03c3 = +0.096, Y_p_\u03c3 = +1.749, matching benchmark to 0.017\u03c3/0.005\u03c3. \u03b8* safe at 1.93 \u00d7 10\u207b\u2077. Freeze-out lobe broad; nucleosynthesis lobe timing sharp. STATUS: DERIVED"
+    },
+    {
+      "id": "P467",
+      "kind": "paragraph",
+      "text": "Step 234: Weak-Nuclear Lever (Theorem 22.20). +1% weak-rate suppression: \u0394(D/H_\u03c3, Y_p_\u03c3) = (+0.268, +0.454). +1% nuclear-network suppression: (+1.240, \u22120.011). Microphysical confirmation of two-lever structure. STATUS: DERIVED"
+    },
+    {
+      "id": "P468",
+      "kind": "paragraph",
+      "text": "Step 235: Full-Nuclear Near-Closure (Theorem 22.21). Weak suppression 0.012301 + nuclear suppression 0.023842 gives D/H_\u03c3 = \u22120.61, Y_p_\u03c3 = +1.06, target distance\u00b2 = 0.99 from corrected benchmark. Kinetic-vs-Hubble Boundary: \u03c1_b/\u03c1_rad ~ 10\u207b\u2078 at 0.7 MeV, so H(z) backreaction negligible. STATUS: DERIVED"
+    },
+    {
+      "id": "P471",
+      "kind": "paragraph",
+      "text": "Step 238: Zero-Parameter Amplitude Construction (Theorem 22.23). \u03b5_w = K_gauge \u00d7 L_1 = 0.054873 \u00d7 0.22417 = 0.012301. \u03b5_n = (\u27e8K\u27e9/10) \u00d7 L_2 = (1.72704/10) \u00d7 0.13805 = 0.023842. K_gauge = ln(1+\u03b3\u00b2) exact. 10 = mult_TT(n=2). All constants from established framework. PRyMordial: D/H_\u03c3 = \u22120.61, Y_p_\u03c3 = +1.06, \u03c7\u00b2 = 1.50, with substantially lower \u03c7\u00b2 than the two-parameter fitted comparator in the current PRyMordial setup (\u03c7\u00b2 = 3.067). Weak gap: 0%. Nuclear gap: 0% by construction. STATUS: DERIVED"
+    },
+    {
+      "id": "P472",
+      "kind": "paragraph",
+      "text": "Step 239: Li-7 Out-of-Sample Consistency (Theorem 22.24). Li7/H = 5.391 \u00d7 10\u207b\u00b9\u2070 (+12.29\u03c3), improving baseline by 4.5%, matching uniform benchmark to 0.07%. He-3 prediction: 3He/H = 1.051 \u00d7 10\u207b\u2075. Li-7 not used in calibration. STATUS: DERIVED"
+    },
+    {
+      "id": "P474",
+      "kind": "paragraph",
+      "text": "Step 241: Conditional Bridge Operator (Theorem 22.25). Under GMP + TBS (WMR resolved): P_resp^(bridge) = \u2212K_gauge(R_w \u2297 I_n \u2297 \u03a0_w \u2297 L_1 P_1) \u2212 (\u27e8K\u27e9/10)(I_w \u2297 R_n \u2297 \u03a0_n \u2297 L_2 P_2). Active matrix elements: \u22120.012301 (weak), \u22120.023842 (nuclear). Sector selection from GMP + Channel Floor. STATUS: DERIVED"
+    },
+    {
+      "id": "P500",
+      "kind": "paragraph",
+      "text": "Step 266: Selection rule (Theorem 23.2, Paper 23 \u00a73.2). Vector shell n feeds scalar shells N = n\u00b11 only, from SU(2)_L \u00d7 SU(2)_R Clebsch-Gordan decomposition. The scalar appears with multiplicity one in each relevant chiral product. Wolfram-validated with explicit tensor product verification. STATUS: DERIVED/THEOREM"
+    },
+    {
+      "id": "P536",
+      "kind": "paragraph",
+      "text": "A.1.30 Paper 24 New Results: Channel-Resolved BBN and the Lithium Problem"
+    },
+    {
+      "id": "P537",
+      "kind": "paragraph",
+      "text": "Step 311: BBN sensitivity table (Paper 24 \u00a72). \u03b1_{D/H}(34) = \u03b1_{Y_p}(34) = 0 for \u00b3He(\u03b1,\u03b3)\u2077Be (reaction 34). D/H and Y_p have zero sensitivity to the rate modification that resolves the lithium problem. The lithium channel is orthogonal to the other BBN observables. STATUS: DERIVED"
+    },
+    {
+      "id": "P544",
+      "kind": "paragraph",
+      "text": "Step 318: Ground-state branching (Paper 24 \u00a76). f_gs = 0.711 from Br(0) = 0.406. The branching ratio to the \u2077Be ground state determines the partition of the total capture rate between ground-state and excited-state channels. STATUS: DERIVED"
+    },
+    {
+      "id": "P546",
+      "kind": "paragraph",
+      "text": "Step 320: Branch-sum formula (Paper 24 \u00a78). R_34,tot = f_gs R_gs + (1\u2212f_gs) R_ex. The total rate modification is the branching-weighted sum of ground-state and excited-state dressings. STATUS: DERIVED"
+    },
+    {
+      "id": "P552",
+      "kind": "paragraph",
+      "text": "Step 326: Combined lithium result (Paper 24 \u00a78). R_34,tot = 0.326. Li-7/H = 1.75 \u00d7 10\u207b\u00b9\u2070 (observed: 1.6 \u00b1 0.3 \u00d7 10\u207b\u00b9\u2070). Within 0.5\u03c3 of observation. Zero fitted parameters (conditional on cluster deformation premise). STATUS: DERIVED"
+    },
+    {
+      "id": "P553",
+      "kind": "paragraph",
+      "text": "Step 327: D/H and Y_p unchanged (Paper 24 \u00a79). D/H at \u22120.61\u03c3, Y_p at +0.68\u03c3 (PRyMordial). The lithium channel modification does not disturb the other BBN observables. Full scorecard \u03c7\u00b2 = 1.13 on three observables. STATUS: DERIVED"
+    },
+    {
+      "id": "P558",
+      "kind": "paragraph",
+      "text": "Step 332: Exit proton sensitivity (Paper 24 \u00a710). B_p = 0.687 from Hayakawa 2021. d ln R/d\u03b4 computed for \u2077Li(p,\u03b1) destruction channel. STATUS: DERIVED"
+    },
+    {
+      "id": "P559",
+      "kind": "paragraph",
+      "text": "Step 333: \u2077Li(p,\u03b1) suppression (Paper 24 \u00a710). TT dressing reduces the destruction rate, partially offsetting the production suppression. Net effect is still a strong reduction in Li-7 abundance. STATUS: DERIVED"
+    },
+    {
+      "id": "P562",
+      "kind": "paragraph",
+      "text": "Step 336: Stealth floor (Paper 24 \u00a711). R_tot,min = 1 \u2212 f_gs = 0.289 in the static-only (no transition quadrupole) model. Even without the excited-state contribution, the lithium problem is substantially ameliorated. STATUS: DERIVED"
+    },
+    {
+      "id": "P566",
+      "kind": "paragraph",
+      "text": "Step 340: Final BBN scorecard (Paper 24 \u00a711). D/H (\u22120.61\u03c3), Y_p (+0.68\u03c3), Li-7/H (+0.50\u03c3). Combined \u03c7\u00b2 = 1.13 on three observables with zero fitted parameters. STATUS: DERIVED"
+    },
+    {
+      "id": "P569",
+      "kind": "paragraph",
+      "text": "Step 343: V\u2295V weak-shell multiplicity (Paper 24 \u00a712). E_w \u2245 V\u2295V from chiral decomposition of coexact 1-forms at n=1. Bridge selection rule forces only W\u2081\u207a to feed the scalar bridge B\u2080. Schur uniqueness on single V. STATUS: DERIVED"
+    },
+    {
+      "id": "P573",
+      "kind": "paragraph",
+      "text": "Step 347: Independent BBN cross-verification (Paper 24 \u00a713). Full channel-resolved pipeline implemented in AlterBBN (Arbey et al. 2018). Code-to-code agreement with PRyMordial: D/H (0.3%), Y_p (0.7%), Li-7/H (0.4%). The lithium prediction is code-independent. STATUS: DERIVED"
+    },
+    {
+      "id": "P596",
+      "kind": "paragraph",
+      "text": "Step 369: PRyMordial verification of quadratic branch (Paper 25 \u00a78). D/H = \u22120.61\u03c3, Y_p = +0.68\u03c3, Li-7/H = +0.55\u03c3. Full BBN scorecard \u03c7\u00b2 = 1.13 with V = K_gauge (quadratic). STATUS: DERIVED"
+    },
+    {
+      "id": "P605",
+      "kind": "paragraph",
+      "text": "Step 378: PRyMordial V\u2019 exclusion (Paper 25 \u00a78). V\u2019 branch gives \u03c7\u00b2 = 412.85 (catastrophic). V quadratic branch gives \u03c7\u00b2 = 1.13. V\u2019 is excluded at overwhelming significance. STATUS: DERIVED"
+    },
+    {
+      "id": "T1R2",
+      "kind": "table_row",
+      "text": "\u03b5_w || 0.02598 || 0.012301 || 0.22490 || \u2014 || \u2014"
+    },
+    {
+      "id": "T1R3",
+      "kind": "table_row",
+      "text": "D/H (\u03c3) || \u22120.05 || \u22120.61 || +8.81 || 2.527\u00b10.030 \u00d710\u207b\u2075 || Cooke+ 2018"
+    },
+    {
+      "id": "T1R4",
+      "kind": "table_row",
+      "text": "Y_p (\u03c3) || +1.33 || +0.68 || +12.09 || 0.2449\u00b10.0040 || Aver+ 2015"
+    },
+    {
+      "id": "T1R5",
+      "kind": "table_row",
+      "text": "Li-7/H (\u03c3) || +0.58 || +0.55 || +13.75 || 1.6\u00b10.3 \u00d710\u207b\u00b9\u2070 || Sbordone+ 2010"
+    },
+    {
+      "id": "T1R6",
+      "kind": "table_row",
+      "text": "\u03c7\u00b2 (3 obs) || 2.11 || 1.13 || 412.85 || \u2014 || \u2014"
+    },
+    {
+      "id": "T2R8",
+      "kind": "table_row",
+      "text": "r_s = 2GM_U/c\u00b2 || 6.685\u00d710\u00b2\u2076 m || Schwarzschild radius || Paper 1"
+    },
+    {
+      "id": "T2R26",
+      "kind": "table_row",
+      "text": "\u03b1-ladder || \u03b1 = 1 || 1-form, unique D/H match || Paper 12"
+    },
+    {
+      "id": "T2R35",
+      "kind": "table_row",
+      "text": "D/H \u00d7 10\u207b\u2075 || 2.49 || \u22121.2\u03c3 || Paper 12"
+    },
+    {
+      "id": "T2R36",
+      "kind": "table_row",
+      "text": "Y_p || 0.2471 || +0.6\u03c3 || Paper 12"
+    }
+  ],
+  "paper22_inherited_updates": {
+    "theorem_22_23_corrected_scorecard": {
+      "D/H": 2.510410594954571e-05,
+      "D/H_sigma": -0.5529801681809717,
+      "He3/H": 1.0487332753621735e-05,
+      "Li7/H": 5.363335812718549e-10,
+      "Li7/H_sigma": 12.204309073285641,
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.24781814417284279,
+      "Y_p_BBN_audit_only": 0.24915220940738897,
+      "Y_p_CMB": 0.24781814417284279,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma": 0.7045360432106975,
+      "amplitude_formula": {
+        "K_gauge": 0.05487281774291466,
+        "K_mean": 1.72704,
+        "L1": 0.22416889162576648,
+        "L2": 0.13805247907094412,
+        "epsilon_n": "(<K>/10) * L2",
+        "epsilon_w": "K_gauge * L1"
+      },
+      "chi2_DH_plus_Yp": 0.8021581025844415,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.012300778733811872,
+      "eta10": 6.183048605944518,
+      "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md",
+      "omega_b_h2": 0.02108,
+      "run_source": "/opt/cosmology-lab/results/paper19/paper19_bbn_recompute_checks.py"
+    },
+    "theorem_22_24_li7_benchmark": {
+      "doc_update": "Replace the inherited Step 239 wording `5.391e-10 (+12.29 sigma), 0.07%` with the Paper 22 v1.4 rerun: `5.363e-10 (+12.20 sigma), 0.509% below the uniform benchmark`.",
+      "fractional_consistency_zero_minus_uniform": -0.005093424637516164,
+      "percent_consistency_zero_minus_uniform": -0.5093424637516164,
+      "uniform_DeltaNeff_Fabs_Li7/H": 5.390793412702568e-10,
+      "zero_parameter_rate_dressing_Li7/H": 5.363335812718549e-10,
+      "zero_parameter_rate_dressing_Li7/H_sigma": 12.204309073285641
+    }
+  },
+  "paper24_lithium_clean_control": {
+    "requested_minus_published_like": {
+      "delta_D_H_sigma": -0.47019016157071064,
+      "delta_Li7_sigma": -0.029439023881084436,
+      "delta_Y_p_sigma": -0.653650178453112,
+      "delta_chi2_3obs": -1.0747211264070542
+    },
+    "scenarios": {
+      "exact_log_quadratic_branch": {
+        "D/H": 2.509938817767262e-05,
+        "D/H_sigma": -0.5687060744245984,
+        "Li7/H": 1.7508826463710944e-10,
+        "Li7/H_sigma": 0.5512343431325627,
+        "Y_p": 0.24771903130174175,
+        "Y_p_sigma": 0.6797578254354383,
+        "chi2_3obs": 1.0893566013769407,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.012300778733811872
+      },
+      "linear_exact_log_branch": {
+        "D/H": 2.524360510568969e-05,
+        "D/H_sigma": -0.08798298103437327,
+        "Li7/H": 1.760825619705781e-10,
+        "Li7/H_sigma": 0.58330845066381,
+        "Y_p": 0.25012875688878244,
+        "Y_p_sigma": 1.2821892221956122,
+        "chi2_3obs": 1.991998955082098,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.025980346217022963
+      },
+      "published_like_branch": {
+        "D/H": 2.5254209979892336e-05,
+        "D/H_sigma": -0.05263340035888126,
+        "Li7/H": 1.7592094481037047e-10,
+        "Li7/H_sigma": 0.5780949938829183,
+        "Y_p": 0.2503220621460143,
+        "Y_p_sigma": 1.330515536503582,
+        "chi2_3obs": 2.107235689663244,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.0271
+      },
+      "requested_quadratic_branch": {
+        "D/H": 2.5113152931421123e-05,
+        "D/H_sigma": -0.5228235619295919,
+        "Li7/H": 1.7500833507005685e-10,
+        "Li7/H_sigma": 0.5486559700018339,
+        "Y_p": 0.24770746143220188,
+        "Y_p_sigma": 0.6768653580504699,
+        "chi2_3obs": 1.0325145632561898,
+        "epsilon_n": 0.02384221534546833,
+        "epsilon_w": 0.01224858823843188
+      }
+    },
+    "source_fix": "paper25_quadratic_weak_paper24_lithium_check_analysis.py now varies p24.EPSILON_W_P25; the prior p24.WEAK_DELTA_P22 assignment was a stale variable name and collapsed all weak branches to the same output. The script also aligns both p24.NUCLEAR_DELTA_P22 and p24.epsilon_n to the Paper 22 v1.4 amplitude convention.",
+    "status": "clean_control_YPCMB_path_with_v12_amplitude_alignment"
+  },
+  "scope": {
+    "affected_scope": "older internal support scripts importing Paper22 Round10",
+    "amplitude_alignment": {
+      "epsilon_n": "(1.72704/10) * L2",
+      "epsilon_w": "ln(1+gamma^2) * L1"
+    },
+    "headline_path": "Paper24 final-push YPCMB path with Paper22 v1.4 amplitude alignment",
+    "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md",
+    "paper": "Paper 25 v1.2"
+  },
+  "side_by_side": {
+    "Paper25_v1_1_published_text": {
+      "D/H_sigma": -0.61,
+      "Li7/H_sigma": 0.55,
+      "Y_p_sigma": 0.68,
+      "chi2_3obs": 1.13,
+      "epsilon_w_text": "0.012301",
+      "note": "Published/rounded text row. It corresponds numerically to the earlier rounded/requested branch rather than a fully amplitude-aligned exact-log rerun."
+    },
+    "Paper25_v1_2_corrected_amplitude_aligned": {
+      "D/H": 2.509938817767262e-05,
+      "D/H_sigma": -0.5687060744245984,
+      "Li7/H": 1.7508826463710944e-10,
+      "Li7/H_sigma": 0.5512343431325627,
+      "Y_p": 0.24771903130174175,
+      "Y_p_sigma": 0.6797578254354383,
+      "chi2_3obs": 1.0893566013769407,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.012300778733811872
+    },
+    "diagnostic_linear_branch_with_aligned_epsilon_n": {
+      "D/H": 2.524360510568969e-05,
+      "D/H_sigma": -0.08798298103437327,
+      "Li7/H": 1.760825619705781e-10,
+      "Li7/H_sigma": 0.58330845066381,
+      "Y_p": 0.25012875688878244,
+      "Y_p_sigma": 1.2821892221956122,
+      "chi2_3obs": 1.991998955082098,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.025980346217022963
+    },
+    "diagnostic_published_like_weak_branch_with_aligned_epsilon_n": {
+      "D/H": 2.5254209979892336e-05,
+      "D/H_sigma": -0.05263340035888126,
+      "Li7/H": 1.7592094481037047e-10,
+      "Li7/H_sigma": 0.5780949938829183,
+      "Y_p": 0.2503220621460143,
+      "Y_p_sigma": 1.330515536503582,
+      "chi2_3obs": 2.107235689663244,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.0271
+    },
+    "diagnostic_v1_1_requested_branch_with_aligned_epsilon_n": {
+      "D/H": 2.5113152931421123e-05,
+      "D/H_sigma": -0.5228235619295919,
+      "Li7/H": 1.7500833507005685e-10,
+      "Li7/H_sigma": 0.5486559700018339,
+      "Y_p": 0.24770746143220188,
+      "Y_p_sigma": 0.6768653580504699,
+      "chi2_3obs": 1.0325145632561898,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.01224858823843188
+    }
+  },
+  "source_audit": {
+    "/opt/cosmology-lab/results/paper25/paper25_quadratic_weak_paper24_lithium_check_analysis.py": {
+      "correction_path": "clean control uses Paper 24 final-push path, which calls obj.YPCMB()",
+      "direct_PRyMresults_call": false,
+      "imports_paper24_final_push": true,
+      "stale_weak_delta_assignment_remaining": false,
+      "varies_current_paper24_branch_exponent": true,
+      "varies_current_paper24_weak_global": true
+    },
+    "/opt/cosmology-lab/results/paper25/paper25_vector_weak_rate_physics_chain_analysis.py": {
+      "calls_round10_run_prym_kinetic_case": true,
+      "correction_path": "inherits corrected Paper 22 v1.4 row_from_prym_object helper returning YPCMB / PRyMresults()[3]",
+      "direct_PRyMresults_call": false,
+      "imports_paper22_round10": true
+    },
+    "/opt/cosmology-lab/results/paper25/paper25_vprime_bbn_catastrophe_and_last_angles_analysis.py": {
+      "calls_round10_run_prym_kinetic_case": true,
+      "correction_path": "inherits corrected Paper 22 v1.4 row_from_prym_object helper returning YPCMB / PRyMresults()[3]",
+      "direct_PRyMresults_call": false,
+      "imports_paper22_round10": true
+    },
+    "/opt/cosmology-lab/results/paper25/paper25_weak_mechanism_comparison_analysis.py": {
+      "calls_round10_run_prym_kinetic_case": true,
+      "correction_path": "inherits corrected Paper 22 v1.4 row_from_prym_object helper returning YPCMB / PRyMresults()[3]",
+      "direct_PRyMresults_call": false,
+      "imports_paper22_round10": true
+    }
+  },
+  "status": "verified_ypcmb_and_amplitude_alignment_correction"
+}

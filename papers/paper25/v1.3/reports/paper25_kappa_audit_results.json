@@ -1,0 +1,135 @@
+{
+  "paper": "Paper 25",
+  "version_audited": "v1.2",
+  "audit_type": "kappa_style_field_redefinition",
+  "date": "May 2026",
+  "executive_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "summary": "No unlabelled continuous fitted parameter was found. The active weak-sector identity pin is conditional on H1-H3, and that conditionality is visible in Paper 25 v1.2.",
+    "active_scorecard": {
+      "D_over_H": 2.509938817767262e-05,
+      "D_over_H_sigma": -0.5687060744245984,
+      "Y_p": 0.24771903130174175,
+      "Y_p_sigma": 0.6797578254354383,
+      "Li7_over_H": 1.7508826463710944e-10,
+      "Li7_over_H_sigma": 0.5512343431325627,
+      "chi2_3obs": 1.0893566013769407
+    }
+  },
+  "candidate_fields": [
+    {
+      "field": "gamma_BI",
+      "field_redefinition": "gamma -> kappa_gamma",
+      "rigidity_test": "Inherited Barbero-Immirzi input; changing it is a framework-wide input change, not a Paper 25 fit.",
+      "classification": "DERIVED/SCOPED_UPSTREAM_INPUT",
+      "hidden_parameter": false
+    },
+    {
+      "field": "K_gauge = ln(1 + gamma^2)",
+      "field_redefinition": "K_gauge -> arbitrary f(gamma)",
+      "rigidity_test": "Paper 18 fixes V(alpha) = -2 ln cos(alpha); at alpha = arctan(gamma), V = ln(1 + gamma^2).",
+      "classification": "DERIVED_UPSTREAM__DERIVED_CONDITIONAL_AS_WEAK_PAYLOAD",
+      "hidden_parameter": false
+    },
+    {
+      "field": "V_prime = 2 gamma",
+      "field_redefinition": "V_prime -> kappa_Vprime",
+      "rigidity_test": "V_prime is fixed as tangent covector, but it requires a linear channel; the centered two-time weak rate is bilinear.",
+      "classification": "DERIVED_TANGENT_OBJECT__STRUCTURALLY_EXCLUDED_FROM_WEAK_RATE",
+      "hidden_parameter": false
+    },
+    {
+      "field": "V_double_prime = 2(1 + gamma^2)",
+      "field_redefinition": "V_double_prime -> kappa_Vdd",
+      "rigidity_test": "Constructed extension gives ln rate ratio = ln(1+gamma^2), not 2(1+gamma^2).",
+      "classification": "DERIVED_CURVATURE_OBJECT__EXCLUDED_CONDITIONAL_ON_H1",
+      "hidden_parameter": false
+    },
+    {
+      "field": "H1 spatial KMS extension identification",
+      "field_redefinition": "select a different bridge KMS extension",
+      "rigidity_test": "Constructed and checked but not proved unconditionally physical; explicitly declared as H1.",
+      "classification": "CONDITIONAL_PREMISE_VISIBLE",
+      "hidden_parameter": false
+    },
+    {
+      "field": "H2 minimal spatial CCR lift",
+      "field_redefinition": "select a non-minimal perturbation sector lift",
+      "rigidity_test": "Physical-sector identification is explicit and not fitted to BBN.",
+      "classification": "CONDITIONAL_PREMISE_VISIBLE",
+      "hidden_parameter": false
+    },
+    {
+      "field": "H3 centered two-time weak-rate identification",
+      "field_redefinition": "treat weak dressing as one-point amplitude",
+      "rigidity_test": "Standard rate/two-point physics but explicit IO physical-identification premise.",
+      "classification": "CONDITIONAL_PREMISE_VISIBLE",
+      "hidden_parameter": false
+    },
+    {
+      "field": "bridge-field centering",
+      "field_redefinition": "omega(Phi(F)) != 0",
+      "rigidity_test": "Centering is forced inside the selected quasi-free KMS package; relaxing it changes the premise package.",
+      "classification": "DERIVED_WITHIN_PACKAGE__CONDITIONAL_PHYSICAL_IDENTIFICATION",
+      "hidden_parameter": false
+    },
+    {
+      "field": "bilinearity of C_br(t)",
+      "field_redefinition": "allow linear-plus-quadratic C_br(t)",
+      "rigidity_test": "Gauge-invariant quasi-free two-time CCR correlator is bilinear in F_0 for all t.",
+      "classification": "DERIVED_THEOREM",
+      "hidden_parameter": false
+    },
+    {
+      "field": "R(gamma) = 1",
+      "field_redefinition": "R(gamma) arbitrary",
+      "rigidity_test": "Forced on the constructed extension by gamma-blind beta_IO and one-particle Hamiltonian.",
+      "classification": "DERIVED_ON_CONSTRUCTED_EXTENSION__CONDITIONAL_ON_H1",
+      "hidden_parameter": false
+    },
+    {
+      "field": "epsilon_w = K_gauge * L_1",
+      "field_redefinition": "epsilon_w = c * K_gauge * L_1^p",
+      "rigidity_test": "p=1 follows from rate/two-point bilinearity; c=1 is the normalized bridge-rate readout. No scan over c is performed.",
+      "classification": "DERIVED_CONDITIONAL_ON_H1_H3_AND_UPSTREAM_L1",
+      "hidden_parameter": false
+    },
+    {
+      "field": "epsilon_n = (<K>/10) * L_2",
+      "field_redefinition": "denominator 10 -> kappa_m",
+      "rigidity_test": "Inherited from Paper 22/Paper 24; denominator tied to TT multiplicity mult_TT(n=2), with channel assignment conditional.",
+      "classification": "DERIVED_CONDITIONAL_UPSTREAM",
+      "hidden_parameter": false
+    },
+    {
+      "field": "channel-budget equation",
+      "field_redefinition": "replace budget equality by arbitrary balance",
+      "rigidity_test": "Follows from <K> = K_geom + K_gauge once channel-to-payload assignment is admitted.",
+      "classification": "DERIVED_CONDITIONAL_ON_CHANNEL_PAYLOAD_ASSIGNMENT",
+      "hidden_parameter": false
+    }
+  ],
+  "anti_fit_backstop": {
+    "continuous_branch_fit_performed": false,
+    "tested_branches": [
+      "K_gauge * sqrt(L_1)",
+      "K_gauge * L_1",
+      "V_prime * sqrt(L_1)"
+    ],
+    "selection_rule": "rate/two-point theorem selects K_gauge * L_1 before BBN comparison",
+    "bbn_scorecard_role": "verification_backstop"
+  },
+  "conditional_visibility": {
+    "H1_visible": true,
+    "H2_visible": true,
+    "H3_visible": true,
+    "WMR_closed_inside_H1_H3": true,
+    "needs_public_bundle_reference_in_v1_3": true
+  },
+  "do_not_say": [
+    "Do not claim unconditional weak-sector closure outside H1-H3.",
+    "Do not claim the BBN chi2 proves the theorem.",
+    "Do not use private kinetic-runner Li-7 rows as the active lithium scorecard.",
+    "Do not treat the V' numerical catastrophe as the sole exclusion argument."
+  ]
+}

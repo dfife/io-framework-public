@@ -1,0 +1,25 @@
+{
+  "audit": "kappa_style_field_redefinition",
+  "classifications": {
+    "R_gamma_equals_1": "DERIVED on constructed extension; CONDITIONAL on H1",
+    "V_double_prime_exclusion": "CONDITIONAL/THEOREM on H1",
+    "V_prime_exclusion": "DERIVED/THEOREM under centered two-time rate formulation",
+    "bbn_scorecard": "VERIFIED computational support",
+    "bilinearity_theorem": "DERIVED/THEOREM inside CCR/KMS package",
+    "epsilon_w_Kgauge_L1": "DERIVED/CONDITIONAL on H1-H3 plus upstream L_1"
+  },
+  "core_verdict": "survives audit with visible conditional premises and no unlabelled fitted scalar",
+  "hidden_continuous_parameter_found": false,
+  "must_not_say": [
+    "Paper 25 unconditionally proves weak-sector closure outside H1-H3.",
+    "The BBN chi2 proves the theorem.",
+    "The private kinetic-runner Li-7 row is the active Paper 25 lithium scorecard.",
+    "The V' branch is excluded only because its numerical chi2 is bad."
+  ],
+  "paper": "Paper 25 v1.3",
+  "visible_conditionals": [
+    "H1",
+    "H2",
+    "H3"
+  ]
+}

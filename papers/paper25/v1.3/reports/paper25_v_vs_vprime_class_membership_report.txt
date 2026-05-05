@@ -1,0 +1,146 @@
+Paper 25 - V versus V' class-membership memo
+============================================
+
+## Discipline label
+
+- label state: `CONDITIONAL_VERIFIED`
+- registry check: Vectors 1-5 reviewed. No unresolved load-bearing circularity-vector hit remains on this surface after the present audit.
+- chain verification: inline-verified through the cited Paper 25 class-membership chain to assumed-good Papers 1-25 nodes; no hidden admission remains load-bearing on the active Paper 32 chain.
+- admitted inputs surfaced here: none.
+- usage rule: this theorem may be cited as a premise because it is `CONDITIONAL_VERIFIED`.
+
+
+Question
+--------
+
+Can the IO stack explain, at theorem grade, why some observables read V(alpha)=K_gauge while first-variation observables read V'(alpha)=2 gamma?
+
+Bottom line
+-----------
+
+Fresh claim: the strongest clean split is not 'finite versus infinitesimal' in general. It is 'fixed modular flow of a chosen faithful KMS state' versus 'variation of the generator/state family'.
+
+So the V versus V' distinction appears to live primarily in modular-versus-relative-modular typing, and only secondarily in bridge/degree grammar.
+
+Constants
+---------
+
+- gamma = 0.2375
+- x = 1.519
+- K_gauge = ln(1 + gamma^2) = 0.054872817742914668539930020241081326854985025884154446399493054784586652204279916
+- V'(alpha) = 2 gamma = 0.4750
+- K_gauge / x = 0.036124303978219004963745898776222071662267956474097726398612939292025445822435758
+- V' / K_gauge = 8.6563806915370830659427913529674669627972257947394579647973685054350727989275990
+
+What The Local Stack Already Fixes
+---------------------------------
+
+- derived from Paper 17:
+  K_hat_g = K_gauge I is the generator of the actual coupled modular flow on the reduced thermal-gauge sector.
+- derived from Paper 18.V:
+  V(alpha) is the unique logarithmic generator on the reduced gauge center.
+- derived from Paper 18.B:
+  first variation of open transport reads dV, hence V'(alpha)=2 gamma.
+- derived boundary from Papers 22-23:
+  scalarity alone does not force K_gauge, and zero-order bridge status alone does not upgrade dV grammar to V grammar.
+
+Literature Audit
+----------------
+
+- derived:
+  fixed KMS data determine a specific modular automorphism group; if you replace its generator, you are generally changing the dynamics/state package rather than re-reading the same one.
+  Support: Herman-Takesaki 1970; Araki 1971; Derezinski-Jaksic-Pillet 2001.
+- derived:
+  pair-of-state and perturbed-dynamics questions are formalized by relative Hamiltonians / cocycles and perturbed KMS states.
+  Support: Araki 1973; Derezinski-Jaksic-Pillet 2001.
+- derived:
+  'infinitesimal' does not automatically mean 'derivative of the modular generator': first-order state variations can still read the fixed modular Hamiltonian itself.
+  Support: Blanco-Casini 2013; Faulkner-Leigh-Parrikar-Wang 2016.
+- structural:
+  Bisognano-Wichmann reinforces the same grammar in AQFT: one specific modular flow is attached to one specific geometric one-parameter group.
+
+Challenge To The Current Heuristic
+---------------------------------
+
+Claude's heuristic 'finite operations read V, infinitesimal ones read V'' is close, but too loose for theorem grade.
+
+Why it is too loose:
+
+1. In the first-law / relative-entropy setting, infinitesimally nearby states still read the fixed modular Hamiltonian K of the reference state.
+2. V' appears when the physical construction itself is a derivative of an alpha-parameterized transport family, or when one compares different modular flows via a relative Hamiltonian/cocycle.
+3. Therefore the correct dichotomy is not simply finite versus infinitesimal. It is fixed modular-readout versus variational/relative-modular response.
+
+Where The Split Actually Lives In H_IO
+-------------------------------------
+
+Best current answer:
+
+1. In Z_g = W*(K_hat_g), the reduced state gives one distinguished modular generator K_hat_g = V I.
+2. Paper 16 degree bookkeeping only says how many active transfer slots survive. It does not by itself choose V over V', because both are compatible with one-slot degree-1 grammar.
+3. Paper 18.B identifies the variational/tangent grammar explicitly: first variation of transport lands on dV.
+4. Papers 22-23 show the real bottleneck is observable class-membership: does the physical readout stay in the fixed modular-readout class, or does it live in the derivative/relative class, or even a two-slot self-intensity class?
+
+So:
+
+- primary location of the distinction: modular theory plus relative-modular/derivation grammar
+- secondary location: bridge typing and scalarization-preserves-type hypothesis
+- not the primary location: Paper 16 degree theorem alone
+
+Candidate Theorem
+-----------------
+
+Conditional modular-versus-variational class-membership theorem
+
+Premises:
+- M_red = M_th tensor Z_g with Z_g = W*(K_hat_g).
+- omega_red is a faithful normal reduced state with modular flow sigma_t.
+- On the active gauge eigensector, K_hat_g(alpha) = V(alpha) I.
+- The physical observable family O is certified either as a modular-readout object or as a variational/relative object.
+- Scalarization preserves observable type whenever a scalar coefficient is extracted.
+
+Conclusions:
+- If O is a positive one-slot transfer observable acted on by the fixed modular flow of omega_red, then its logarithmic coefficient is V(alpha), not V'(alpha).
+- If O is the first variation of a transport family or a relative-state intertwiner, then the linear coefficient is dK_hat_g/dalpha = V'(alpha) I.
+
+Interpretation:
+- WMR closes if the weak-rate observable is proved to lie in the modular-readout class.
+- The PSRP numerator closes if the seed covariance is proved to be a center-generated modular readout rather than a first-variation response or same-fiber self-intensity.
+
+Honest Assessment
+-----------------
+
+- derived:
+  the strongest clean literature-backed split is fixed modular generator versus relative/variational generator.
+- derived:
+  the local stack already points to exactly this boundary: Paper 18.B gives dV grammar, Paper 17 gives fixed modular-generator grammar, and Papers 22-23 say the missing step is class-membership.
+- conditional:
+  WMR should become theorem-grade if the weak rate can be promoted into the GTTP-type state-center one-slot positive transfer class.
+- conditional:
+  the PSRP numerator should become theorem-grade if the seed covariance can be promoted into the same modular-readout class.
+- not derived:
+  this memo does not by itself close the Paper 23 denominator 1/x. So a pure V-versus-V' theorem is enough to upgrade WMR, but not obviously enough to upgrade the full n_s claim unless the theorem is strengthened to include the 1-form transfer projection.
+
+Most Useful Next Move
+---------------------
+
+Try to prove a 'scalarization-preserves-type' theorem for the weak and primordial observables, phrased as a promotion from bridge amplitude / seed readout into the fixed modular-readout class on M_red.
+
+If that fails, the fallback is to prove a no-go: the physical readout is intrinsically variational/relative or two-slot, so V' (or neither V nor V') is forced.
+
+Source Index
+------------
+
+- Herman-Takesaki 1970: https://doi.org/10.1007/BF01646631
+  role: For a faithful normal state, automorphisms commuting with the modular/KMS group leave the state invariant; the paper also treats KMS structure for quasi-free automorphisms of the CAR algebra.
+- Araki 1971: https://www.jstage.jst.go.jp/article/kyotoms1969/6/3/6_3_385/_article/-char/en
+  role: Quasifree states are characterized as the unique KMS state of a Bogoliubov automorphism of CAR.
+- Bisognano-Wichmann 1976: https://doi.org/10.1063/1.522898
+  role: Canonical AQFT source for the statement that a specific modular automorphism group is tied to a specific geometric one-parameter flow for wedge algebras.
+- Araki 1973: https://www.jstage.jst.go.jp/article/kyotoms1969/9/1/9_1_165/_article
+  role: Relative Hamiltonian / intertwiner formalism: when one compares two faithful normal states, the natural object is a relative modular cocycle between their modular groups.
+- Derezinski-Jaksic-Pillet 2001: https://www.maphysto.dk/publications/MPS-RR/2001/45.pdf
+  role: Perturbing the dynamics by Q produces a perturbed dynamics and a new perturbed KMS state; changing the generator changes the equilibrium state.
+- Blanco-Casini 2013: https://arxiv.org/abs/1309.1121
+  role: For infinitesimally different states, the first-law relation uses the expectation of the modular Hamiltonian of the reference state: first-order variation does not by itself imply a derivative of the modular generator.
+- Faulkner-Leigh-Parrikar-Wang 2016: https://link.springer.com/article/10.1007/JHEP09(2016)038
+  role: First-order changes of modular Hamiltonians arise when the region/family is deformed; the derivative belongs to the deformed family, not to the fixed modular flow itself.

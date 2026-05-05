@@ -1,0 +1,164 @@
+Paper 25 - Weak Two-Time Thermal Correlator
+=========================================
+
+Question
+--------
+
+Evaluate the genuine thermal weak-rate kernel
+
+    C(t) = omega_pre(W_np^*(t) W_np(0))
+
+for
+
+    W_np = sigma_pn tensor a_e^*(f_e) a_nu(f_nu) tensor b_w,
+    b_w  = a^*(F_0) + a(F_0),
+
+and determine whether the full two-time rate is linear or quadratic in the
+bridge amplitude.
+
+Constants
+---------
+
+- gamma = 0.2375
+- K_gauge = 0.05487281774291466
+- Q_hat = 1 + gamma^2 = 1.05640625
+
+I. Factorization of the two-time correlator
+-------------------------------------------
+
+On the minimal enlarged weak algebra one has the factorized packaging
+
+    M_w^ext = A_rxn tensor-bar M_rad^BBN tensor-bar W_br,1.
+
+Under the corresponding product/quasi-free KMS packaging,
+
+    C(t)
+      = omega_pre(W_np^*(t) W_np(0))
+      = C_rxn(t) C_CAR(t) C_br(t),
+
+with
+
+    C_rxn(t) = omega_rxn(sigma_np(t) sigma_pn(0)),
+    C_CAR(t) = omega_CAR([a_nu^* a_e](t) [a_e^* a_nu](0)),
+    C_br(t)  = omega_br(b_w(t) b_w(0)).
+
+The reaction and CAR legs are gamma-trivial on the current stack, so the only
+possible gamma-dependence sits in the bridge factor.
+
+II. Bridge two-time correlator
+------------------------------
+
+For quasi-free CCR bridge dynamics on one-particle space,
+
+    b_w(t) = a^*(U_t F_0) + a(U_t F_0),
+
+where U_t is the one-particle unitary flow. Expanding gives
+
+    C_br(t)
+      = omega_br(a^*(U_t F_0) a^*(F_0))
+      + omega_br(a^*(U_t F_0) a(F_0))
+      + omega_br(a(U_t F_0) a^*(F_0))
+      + omega_br(a(U_t F_0) a(F_0)).
+
+In the gauge-invariant quasi-free bosonic class the anomalous pairings vanish,
+so
+
+    omega_br(a^*(U_t F_0) a^*(F_0)) = 0,
+    omega_br(a(U_t F_0) a(F_0))     = 0.
+
+Using
+
+    omega_br(a^*(f) a(g)) = <g, G_gamma^(1) f>,
+    omega_br(a(f) a^*(g)) = <f, (G_gamma^(1) + I) g>,
+
+one obtains
+
+    C_br(t)
+      = <F_0, G_gamma^(1) U_t F_0>
+        + <U_t F_0, (G_gamma^(1) + I) F_0>.
+
+This is bilinear in F_0 for every t.
+
+III. Consequence for gamma-dependence
+-------------------------------------
+
+Write
+
+    F_0 = alpha(gamma) F_tilde.
+
+Then
+
+    C_br(t; gamma) = alpha(gamma)^2 C_tilde_br(t; gamma),
+
+and therefore the full rate has the structure
+
+    Gamma_w(gamma)
+      = alpha(gamma)^2
+        integral dt C_rxn(t) C_CAR(t) C_tilde_br(t; gamma) K_cons(t),
+
+so
+
+    Gamma_w(gamma) / Gamma_w(0)
+      = [alpha(gamma)^2/alpha(0)^2] * R(gamma),
+
+with
+
+    R(gamma)
+      = [integral dt C_rxn(t) C_CAR(t) C_tilde_br(t; gamma) K_cons(t)]
+        /
+        [integral dt C_rxn(t) C_CAR(t) C_tilde_br(t; 0) K_cons(t)].
+
+Thus:
+
+- derived: the two-time thermal weak rate is quadratic in the bridge amplitude
+  at all time separations;
+- derived: there is no linear-in-F_0 term inside the centered two-time KMS
+  correlator;
+- conditional: if the compared bridge covariance and bridge dynamics are
+  gamma-blind on the active shell, then R(gamma) = 1 and the full rate ratio is
+  exactly
+
+      1 + gamma^2 = exp(K_gauge).
+
+IV. What remains open
+---------------------
+
+The current stack gives:
+
+- vector transport U_t is gamma-blind;
+- but the one-particle bridge covariance G_gamma^(1) is not proved gamma-blind
+  on the special n=1 shell;
+- therefore R(gamma) is not fixed by the present theorem stack.
+
+So the strongest honest theorem is:
+
+- derived: the genuine centered two-time thermal correlator is always quadratic
+  in the bridge amplitude;
+- conditional: the exact weak-rate ratio is
+
+      Gamma_w(gamma)/Gamma_w(0) = (1 + gamma^2) R(gamma),
+
+  with R(gamma) = 1 if the compared active-shell bridge covariance is
+  gamma-blind.
+
+V. Comparison to Paper 22
+-------------------------
+
+Because the centered two-time object has no linear-in-F_0 term, the present
+Paper 22 first-order weak law
+
+    deltaGamma_w/Gamma_w = 2 Re(delta M_w / M_w) + O(delta omega^2)
+
+cannot be the literal centered-two-time KMS rate. The two belong to different
+observable grammars unless a new identification theorem is proved.
+
+Verdict
+-------
+
+- derived: the full two-time thermal correlator keeps the weak bridge dependence
+  quadratic for all t.
+- conditional: if the compared active-shell covariance is gamma-blind, the
+  rate ratio is exactly 1 + gamma^2.
+- not derived: the present stack does not yet prove that gamma-blindness, nor
+  that the centered two-time correlator is the operative Paper 22 weak
+  observable.

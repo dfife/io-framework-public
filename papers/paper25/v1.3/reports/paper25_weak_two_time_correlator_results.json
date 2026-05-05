@@ -1,0 +1,43 @@
+{
+  "constants": {
+    "gamma": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "Q_hat": 1.05640625
+  },
+  "derived": [
+    {
+      "statement": "For the explicit weak collision monomial W_np = sigma_pn tensor a_e^*(f_e) a_nu(f_nu) tensor b_w, the genuine thermal rate kernel is the two-time KMS correlator C(t) = omega_pre(W_np^*(t) W_np(0))."
+    },
+    {
+      "statement": "Under the factorized reaction x fermion x bridge packaging of the minimal enlarged weak algebra, C(t) = C_rxn(t) C_CAR(t) C_br(t), and the only possible gamma-dependence is in C_br(t)."
+    },
+    {
+      "statement": "With quasi-free bridge dynamics U_t and b_w(t) = a^*(U_t F_0) + a(U_t F_0), the bridge correlator is C_br(t) = <F_0, G_gamma^(1) U_t F_0> + <U_t F_0, (G_gamma^(1)+I) F_0> in the gauge-invariant quasi-free class."
+    },
+    {
+      "statement": "Therefore C_br(t) is bilinear in F_0 for every t. If F_0 = alpha(gamma) F_tilde, then C_br(t; gamma) = alpha(gamma)^2 C_tilde_br(t; gamma)."
+    },
+    {
+      "statement": "Hence the full two-time thermal rate is quadratic in the bridge amplitude at all time separations; there is no term linear in F_0 inside the centered two-time KMS correlator."
+    }
+  ],
+  "conditional": [
+    {
+      "statement": "If the one-particle bridge dynamics U_t and the compared bridge covariance G_gamma^(1) are gamma-blind on the active shell, then the time-integral ratio is 1 and Gamma_w(gamma)/Gamma_w(0) = 1 + gamma^2."
+    },
+    {
+      "statement": "If U_t is gamma-blind but G_gamma^(1) is gamma-dependent through the state, then the full rate ratio is Gamma_w(gamma)/Gamma_w(0) = (1+gamma^2) R(gamma), where R(gamma) is the gamma-dependent time-integral ratio built from C_tilde_br(t; gamma)."
+    }
+  ],
+  "no_go": [
+    {
+      "statement": "The present stack proves only that vector transport is gamma-blind. It does not prove that the compared one-particle bridge covariance G_gamma^(1) is gamma-blind on the special n=1 shell."
+    },
+    {
+      "statement": "Therefore the full two-time KMS construction proves quadratic bridge dependence, but it does not by itself close the exact rate ratio as 1 + gamma^2."
+    },
+    {
+      "statement": "This also means the Paper 22 first-order weak law and the centered two-time KMS correlator belong to different observable grammars unless a new identification theorem is proved."
+    }
+  ]
+}

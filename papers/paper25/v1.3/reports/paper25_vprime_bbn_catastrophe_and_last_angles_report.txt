@@ -1,0 +1,35 @@
+Paper 25 - V' BBN Catastrophe and Last-Angles Audit
+===================================================
+
+Question
+--------
+Do any final nuclear/geometry/representation-theory routes close the V-vs-V' identity pin, and what happens numerically if epsilon_w uses V'?
+
+Executive result
+----------------
+- derived / no: neither the weak rank-1 Wigner-Eckart idea nor the j=1 tensor j=1 -> 0 Clebsch/Killing normalization closes the identity pin on the current stack.
+- verified: the naive V' branch epsilon_w = 2 gamma sqrt(L1) is catastrophically inconsistent with the exact local PRyMordial BBN scorecard.
+- conditional boundary: that numerical catastrophe is strong model selection, but it is not the missing theorem-grade class-membership proof.
+
+Exact PRyMordial rerun
+----------------------
+- epsilon_w(V') = 0.22489576735248612
+- epsilon_w(K_gauge) = 0.025980346217022963
+- epsilon_n = 0.02384221534546833
+- V' branch: D/H_sigma = +8.705878, Y_p_sigma = +11.693657, chi2_DH_plus_Yp = 212.533915
+- K_gauge branch: D/H_sigma = -0.136108, Y_p_sigma = +1.333801, chi2_DH_plus_Yp = 1.797549
+- sigma-plane distance between branches = 13.620107
+- chi2 ratio V' / K_gauge = 118.235366
+
+Angle audit
+-----------
+- nuclear rank-1 / Wigner-Eckart route: derived_no
+  The current stack has rank-1 / j=1 carrier typing and branch selection, but no theorem-grade Wigner-Eckart selector that upgrades the weak vector current from carrier type to K_gauge payload.
+- CG / Killing-form route: derived_no
+  The j=1 tensor j=1 -> 0 singlet and Killing-form contraction fix the intertwiner type, not the 1+gamma^2 payload. The bridge remains unique only up to normalization.
+- strongest surviving statement: verified
+  The naive V' branch is catastrophically wrong numerically on the exact local PRyMordial pipeline. That is a strong scorecard exclusion of the naive branch, but it is not a derivation of the theorem-grade identity pin.
+
+Bottom line
+-----------
+The exact PRyMordial rerun verifies that the naive V' branch fails BBN badly, but observational catastrophe is still a scorecard selection, not a proof that the physical weak observable belongs to the finite V class.

@@ -1,0 +1,22 @@
+{
+  "bundle": "paper25_v1_3_repro_bundle",
+  "paper": "Paper 25",
+  "version": "v1.3",
+  "path": "papers/paper25/v1.3/",
+  "release_tag": "paper25-v1.3",
+  "validation_command": "python3 papers/paper25/v1.3/scripts/07_validate_expected_outputs.py",
+  "expected_validation_summary": "SUMMARY total_checks=22 pass_count=22 fail_count=0",
+  "headline_values": {
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_n": 0.02384221534546833,
+    "D_over_H": 2.509938817767262e-05,
+    "D_over_H_sigma": -0.5687060744245984,
+    "Y_p": 0.24771903130174175,
+    "Y_p_sigma": 0.6797578254354383,
+    "Li7_over_H": 1.7508826463710944e-10,
+    "Li7_over_H_sigma": 0.5512343431325627,
+    "chi2_3obs": 1.0893566013769407
+  },
+  "claim_boundary": "Weak-sector identity pin conditional on H1-H3; BBN scorecard verified computational support.",
+  "created": "2026-05-05"
+}

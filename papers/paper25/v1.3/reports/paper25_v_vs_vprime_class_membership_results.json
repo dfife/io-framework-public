@@ -1,0 +1,105 @@
+{
+  "question": "V versus V' class-membership in the IO reduced gauge sector",
+  "constants": {
+    "gamma": "0.2375",
+    "x": "1.519",
+    "Q": "1.05640625",
+    "K_gauge": "0.054872817742914668539930020241081326854985025884154446399493054784586652204279916",
+    "V_prime": "0.4750",
+    "K_gauge_over_x": "0.036124303978219004963745898776222071662267956474097726398612939292025445822435758",
+    "V_prime_over_K_gauge": "8.6563806915370830659427913529674669627972257947394579647973685054350727989275990"
+  },
+  "local_stack_findings": {
+    "paper17": "K_hat_g = K_gauge I is the generator of the coupled modular flow on the reduced thermal-gauge sector.",
+    "paper18_V": "V(alpha) = -2 ln(cos alpha) is the unique smooth real logarithmic generator of the reduced gauge center.",
+    "paper18_B": "First variation of open covariant transport reads dV and hence V'(alpha) = 2 gamma.",
+    "paper22_boundary": "Scalarity alone does not force K_gauge; the missing step is observable class-membership into the GTTP-type one-slot positive transfer class.",
+    "paper23_boundary": "Lemma 23.B preserves alpha = 1 for a zero-order bridge but does not by itself upgrade dV grammar to V grammar."
+  },
+  "literature_findings": [
+    {
+      "status": "derived",
+      "statement": "A fixed faithful normal KMS state comes with a specific modular automorphism group. Replacing its generator by a different function generally changes the dynamics and, in equilibrium, the associated KMS state.",
+      "support": [
+        "Herman-Takesaki 1970",
+        "Araki 1971",
+        "Derezinski-Jaksic-Pillet 2001"
+      ]
+    },
+    {
+      "status": "derived",
+      "statement": "Relative or perturbed modular data are pair-of-state or perturbed-dynamics objects. The natural operator there is a relative Hamiltonian / cocycle, not a replacement modular generator for the original state.",
+      "support": [
+        "Araki 1973",
+        "Derezinski-Jaksic-Pillet 2001"
+      ]
+    },
+    {
+      "status": "derived",
+      "statement": "The slogan 'infinitesimal means derivative of the modular generator' is too coarse. First-order variation of states can still read the fixed modular Hamiltonian itself.",
+      "support": [
+        "Blanco-Casini 2013",
+        "Faulkner-Leigh-Parrikar-Wang 2016"
+      ]
+    }
+  ],
+  "synthesis": {
+    "where_the_split_lives": "The primary split is between fixed-state modular readout on the reduced gauge center and variational/relative-modular response on the tangent or cocycle side. Paper 16 degree counting is necessary but not sufficient, because both V and V' are compatible with degree-1 one-slot grammar. The bridge algebra and scalarization map decide which side the physical observable belongs to.",
+    "challenge_to_current_heuristic": "The right distinction is not finite versus infinitesimal in general. It is fixed modular flow versus variation of the generator/state family. BDP reads V' because it is explicitly a first variation of transport. GTTP reads V because it is a direct finite modular-flow readout of the chosen KMS state."
+  },
+  "candidate_theorem": {
+    "label": "Conditional modular-versus-variational class-membership theorem",
+    "premises": [
+      "The reduced thermal-gauge algebra is M_red = M_th tensor Z_g with Z_g = W*(K_hat_g).",
+      "The faithful normal reduced state omega_red has modular flow sigma_t with K_hat_g = V(alpha) I on the active gauge eigensector.",
+      "The observable family O is certified into one of two typed classes: modular-readout class or variational/relative class.",
+      "Scalarization preserves observable type whenever a scalar coefficient is extracted from O."
+    ],
+    "conclusion_modular_readout": "If O is a positive one-slot transfer observable acted on by the fixed modular flow of omega_red, then its logarithmic coefficient is V(alpha), not V'(alpha).",
+    "conclusion_variational": "If the physical observable is the first variation of a transport family or a relative-state intertwiner, then the linear coefficient is the tangent of the central character, dK_hat_g/dalpha = V'(alpha) I.",
+    "application": "WMR closes if the weak-rate observable is proved to lie in the modular-readout class. The PSRP numerator closes if the seed covariance is proved to be a center-generated modular readout rather than a first-variation transport response or same-fiber self-intensity."
+  },
+  "honest_boundaries": [
+    "This memo gives a sharper theorem schema for the numerator split V versus V'.",
+    "It does not by itself derive the Paper 23 denominator 1/x for the primordial seed.",
+    "So a pure V-versus-V' theorem is enough to upgrade WMR, but it is not obviously enough to upgrade the full n_s claim unless the theorem is strengthened to include the 1-form transfer projection as well.",
+    "No existing theorem in the present stack yet proves that the weak-rate observable or the primordial seed covariance belongs to the fixed modular-readout class."
+  ],
+  "sources": [
+    {
+      "label": "Herman-Takesaki 1970",
+      "url": "https://doi.org/10.1007/BF01646631",
+      "role": "For a faithful normal state, automorphisms commuting with the modular/KMS group leave the state invariant; the paper also treats KMS structure for quasi-free automorphisms of the CAR algebra."
+    },
+    {
+      "label": "Araki 1971",
+      "url": "https://www.jstage.jst.go.jp/article/kyotoms1969/6/3/6_3_385/_article/-char/en",
+      "role": "Quasifree states are characterized as the unique KMS state of a Bogoliubov automorphism of CAR."
+    },
+    {
+      "label": "Bisognano-Wichmann 1976",
+      "url": "https://doi.org/10.1063/1.522898",
+      "role": "Canonical AQFT source for the statement that a specific modular automorphism group is tied to a specific geometric one-parameter flow for wedge algebras."
+    },
+    {
+      "label": "Araki 1973",
+      "url": "https://www.jstage.jst.go.jp/article/kyotoms1969/9/1/9_1_165/_article",
+      "role": "Relative Hamiltonian / intertwiner formalism: when one compares two faithful normal states, the natural object is a relative modular cocycle between their modular groups."
+    },
+    {
+      "label": "Derezinski-Jaksic-Pillet 2001",
+      "url": "https://www.maphysto.dk/publications/MPS-RR/2001/45.pdf",
+      "role": "Perturbing the dynamics by Q produces a perturbed dynamics and a new perturbed KMS state; changing the generator changes the equilibrium state."
+    },
+    {
+      "label": "Blanco-Casini 2013",
+      "url": "https://arxiv.org/abs/1309.1121",
+      "role": "For infinitesimally different states, the first-law relation uses the expectation of the modular Hamiltonian of the reference state: first-order variation does not by itself imply a derivative of the modular generator."
+    },
+    {
+      "label": "Faulkner-Leigh-Parrikar-Wang 2016",
+      "url": "https://link.springer.com/article/10.1007/JHEP09(2016)038",
+      "role": "First-order changes of modular Hamiltonians arise when the region/family is deformed; the derivative belongs to the deformed family, not to the fixed modular flow itself."
+    }
+  ]
+}
