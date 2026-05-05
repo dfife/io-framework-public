@@ -1,0 +1,46 @@
+{
+  "script": "03_gauge_placement_and_channel_architecture.py",
+  "claim_support": [
+    "Theorem 22.5 Homogeneous Gauge Placement Theorem",
+    "three-channel P_resp architecture",
+    "j=1/j=2 singleton-load split"
+  ],
+  "status": "DERIVED for gauge-fixed placement; response operator itself remains conditional/reconstruction until GMP/TBS closure",
+  "homogeneous_gauge_placement": {
+    "coframe_identity": "de^i = -(1/a) epsilon_ijk e^j wedge e^k",
+    "coclosed": "delta e^i = 0",
+    "laplacian": "Delta_1 e^i = (4/a^2) e^i",
+    "current_epoch_eigenvalue": 2.0652444273488253e-53,
+    "channel": "lowest coexact 1-form / vector channel",
+    "gauge_caveat": "This is a standard homogeneous left-invariant gauge statement; exact terms can be gauge artifacts."
+  },
+  "channel_architecture": {
+    "scalar": {
+      "channel": 0,
+      "diagonal_floor": 0
+    },
+    "vector": {
+      "channel": 1,
+      "diagonal_floor": 1,
+      "contains_J0": false
+    },
+    "tensor_TT": {
+      "channel": 2,
+      "diagonal_floor": 2,
+      "contains_J0_or_J1": false
+    },
+    "candidate_response": "joint-spectral in spatial channel and puncture spin, not a separable scalar function of C2"
+  },
+  "singleton_load_split": {
+    "L_1_vector": 0.22416889162576648,
+    "L_2_tensor": 0.13805247907094412,
+    "L_1_plus_L_2": 0.36222137069671057,
+    "claim_boundary": "L1 and L2 are derived puncture loads; their use as weak/nuclear rate-dressing amplitudes is conditional on Paper 22/Paper 25 bridge premises."
+  },
+  "checks": {
+    "coexact_n1_unit_eigenvalue_is_4": true,
+    "vector_floor_is_1": true,
+    "tensor_floor_is_2": true,
+    "load_sum_matches": true
+  }
+}

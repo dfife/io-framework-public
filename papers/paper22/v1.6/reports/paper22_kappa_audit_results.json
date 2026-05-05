@@ -1,0 +1,126 @@
+{
+  "artifact": "paper22_kappa_audit_results",
+  "date": "2026-05-04",
+  "status": "verified / structural-audit / no manuscript edits",
+  "paper": "Paper 22 v1.5/v1.6",
+  "headline_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "summary": "No unlabelled continuous fitted kappa parameter was found. Paper 22's active open fields are visible conditional premises: GMP, TBS, and WMR(H1-H3) inheritance. The amplitude construction remains DERIVED/CONDITIONAL, not unconditional."
+  },
+  "audit_targets": [
+    {
+      "target": "Spatial Hilbert module and Hodge spectrum",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "Round-S3 de Rham-Hodge spectrum and projectors are fixed once the IO OS spatial slice is accepted.",
+      "recommendation": "No action."
+    },
+    {
+      "target": "Peter-Weyl bridge",
+      "verdict": "DERIVED",
+      "evidence": "S^3 ~= SU(2), Peter-Weyl decomposition, and diagonal SU(2) Clebsch-Gordan restriction force scalar/vector floors.",
+      "recommendation": "No action."
+    },
+    {
+      "target": "TT branch and Channel Floor",
+      "verdict": "DERIVED/THEOREM with principal-branch hypothesis",
+      "evidence": "TT multiplicity mult_TT(n=2)=10 and J_min=s are representation-theoretic on the principal transverse branch.",
+      "recommendation": "Keep principal-branch caveat visible."
+    },
+    {
+      "target": "Homogeneous gauge placement",
+      "verdict": "DERIVED as gauge-fixed statement",
+      "evidence": "Invariant coframe is coclosed and has Delta_1 e^i = 4/a^2 e^i.",
+      "recommendation": "Keep gauge caveat visible."
+    },
+    {
+      "target": "Candidate R_spatial response architecture",
+      "verdict": "DERIVED channel architecture; RECONSTRUCTION/CONDITIONAL physical response kernels",
+      "evidence": "Channel dependence follows from Hodge/TT/channel-floor stack; physical delivery kernels remain outside Paper 22.",
+      "recommendation": "Do not present full P_resp as derived."
+    },
+    {
+      "target": "Energy decay and injection no-go landscape",
+      "verdict": "DERIVED / DERIVED-NO-GO with scoped scalar/TT dynamics",
+      "evidence": "Vector a^-4 scaling, stress scalarization, boundary permanence, injection-only and full-radiation no-gos kill F_abs as energy-density route.",
+      "recommendation": "Bundle should summarize no-go ledger values, not rerun every private dead-route scan."
+    },
+    {
+      "target": "BBN response and rate-dressing paradigm",
+      "verdict": "DERIVED/VERIFIED ledger; diagnostic near-closures are not theorem-grade bridge proof",
+      "evidence": "Corrected YPCMB scorecard and response matrix support rate dressing; physical kernel remains conditional.",
+      "recommendation": "Do not promote diagnostic grid amplitudes to derived constants."
+    },
+    {
+      "target": "Theorem 22.23 amplitude construction",
+      "verdict": "DERIVED/CONDITIONAL on GMP + TBS, with WMR(H1-H3) inherited",
+      "evidence": "Dedicated theorem audit found no hidden continuous parameter but identified visible high-leverage conditional fields.",
+      "recommendation": "Cite WMR(H1-H3) inheritance explicitly in v1.6 wording."
+    },
+    {
+      "target": "Theorem 22.24 Li-7 internal consistency",
+      "verdict": "DERIVED/CONDITIONAL on GMP + TBS",
+      "evidence": "The Li-7 row inherits Theorem 22.23 conditionality; corrected consistency is 0.51%, not old 0.07%.",
+      "recommendation": "Keep wording as internal consistency, not lithium solution."
+    },
+    {
+      "target": "Theorem 22.25 formal bridge operator",
+      "verdict": "DERIVED/CONDITIONAL on GMP + TBS; WMR inherited; TT1 derived",
+      "evidence": "TT1 heat-kernel construction is derived; GMP and TBS remain visible open premises.",
+      "recommendation": "Do not call P_resp unconditional."
+    }
+  ],
+  "visible_open_fields": [
+    {
+      "field": "GMP",
+      "classification": "NEW PREMISE / CONDITIONAL",
+      "visibility": "visible in Paper 22 v1.5",
+      "promotion_path": "equivariant bridge uniqueness theorem"
+    },
+    {
+      "field": "TBS",
+      "classification": "PREMISE / CONDITIONAL",
+      "visibility": "visible in Paper 22 v1.5",
+      "promotion_path": "modular intertwining theorem, modular Gauss law, or modular-energy transport theorem"
+    },
+    {
+      "field": "WMR(H1-H3)",
+      "classification": "DERIVED/CONDITIONAL on H1-H3",
+      "visibility": "visible, but should be inherited explicitly when citing Theorem 22.23",
+      "promotion_path": "physical selection theorem for the Paper 25 two-time KMS/CCR bridge observable"
+    },
+    {
+      "field": "rate-dressing suppressive sign",
+      "classification": "DISCRETE ORIENTATION CONVENTION",
+      "visibility": "partly implicit",
+      "promotion_path": "explicit positivity/suppression orientation theorem"
+    }
+  ],
+  "safe_claims": [
+    "Paper 22 derives scalar/vector/tensor spatial channel infrastructure.",
+    "Paper 22 derives no-go results killing F_abs as homogeneous energy-density/radiation correction.",
+    "Paper 22 constructs a zero-fitted-parameter rate-dressing amplitude package inside a conditional bridge-premise package.",
+    "The active corrected scorecard is D/H_sigma=-0.55, Y_p_sigma=+0.70, chi2(D/H+Y_p)=0.80, Li7/H=5.363e-10 (+12.20 sigma)."
+  ],
+  "unsafe_claims": [
+    "Paper 22 unconditionally derives P_resp.",
+    "Paper 22 unconditionally derives TBS or GMP.",
+    "The BBN scorecard proves TBS.",
+    "The old v1.3 YPBBN row is active.",
+    "F_abs is an active Friedmann/radiation-density correction."
+  ],
+  "bundle_scope": {
+    "include": [
+      "Hodge and TT channel formulae",
+      "channel-floor and gauge-placement checks",
+      "live no-go/response ledger values",
+      "corrected YPCMB scorecard arithmetic",
+      "Theorem 22.23/22.24 amplitude/comparator arithmetic",
+      "audit summary"
+    ],
+    "exclude": [
+      "all private exploratory dead-route scans as executable public scripts",
+      "PRyMordial source code",
+      "manuscript drafts"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "script": "05_amplitude_scorecard_and_comparators.py",
+  "claim_support": [
+    "Theorem 22.23 Zero-Parameter Amplitude Construction",
+    "Theorem 22.24 Li-7 Out-of-Sample Consistency",
+    "v1.4/v1.5 YPCMB scorecard correction"
+  ],
+  "status": "DERIVED/CONDITIONAL on GMP + TBS, with weak payload closure inherited from WMR(H1-H3)",
+  "amplitudes": {
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_w_formula": "K_gauge * L_1",
+    "epsilon_n": 0.02384221534546833,
+    "epsilon_n_formula": "(K_mean / mult_TT_n2) * L_2",
+    "claim_boundary": "zero fitted observational parameters inside the stated premise package; not an unconditional derivation of GMP/TBS."
+  },
+  "corrected_scorecard": {
+    "Y_p": 0.24781814417284279,
+    "Y_p_CMB": 0.24781814417284279,
+    "Y_p_BBN_audit_only": 0.24915220940738897,
+    "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+    "Y_p_sigma": 0.7045360432106975,
+    "D_over_H": 2.510410594954571e-05,
+    "D_over_H_sigma": -0.5529801681809717,
+    "Li7_over_H": 5.363335812718549e-10,
+    "Li7_over_H_sigma": 12.204309073285641,
+    "He3_over_H": 1.0487332753621735e-05,
+    "chi2_DH_plus_Yp": 0.8021581025844415
+  },
+  "two_parameter_comparator": {
+    "eps_freeze": 0.076,
+    "eps_nucleo": 0.067,
+    "D_over_H_sigma": 0.0959659810227855,
+    "Y_p_sigma": 1.3875791264812143,
+    "chi2_DH_plus_Yp": 1.9345853017600352,
+    "zero_parameter_margin": 1.1324271991755936
+  },
+  "li7_uniform_benchmark": {
+    "uniform_DeltaNeff_Fabs_Li7_over_H": 5.390793412702568e-10,
+    "uniform_DeltaNeff_Fabs_Li7_sigma": 12.292881976459897,
+    "zero_parameter_minus_uniform_fraction": -0.005093424637516164,
+    "absolute_fractional_difference": 0.005093424637516164,
+    "percent_difference": -0.5093424637516164,
+    "claim_boundary": "Li-7 was not used in calibration; this is internal consistency with the old uniform benchmark, not a lithium solution."
+  },
+  "checks": {
+    "epsilon_w_matches_frozen": true,
+    "epsilon_n_matches_frozen": true,
+    "chi2_matches_frozen": true,
+    "comparator_chi2_matches_frozen": true,
+    "li7_fraction_matches_frozen": true
+  }
+}

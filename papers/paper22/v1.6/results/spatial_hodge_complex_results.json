@@ -1,0 +1,233 @@
+{
+  "script": "01_spatial_hodge_complex.py",
+  "claim_support": [
+    "Theorem 22.1 Spatial Closure Theorem",
+    "Theorem 22.2 Hodge Spectrum Theorem",
+    "Peter-Weyl bridge on S^3 ~= SU(2)"
+  ],
+  "status": "DERIVED/THEOREM within the round-S3 OS spatial slice",
+  "framework_constant_recompute": {
+    "R_U_m": 4.400928027279139e+26,
+    "x": 1.5189978019551893,
+    "Delta": 5.624184298960291,
+    "K_gauge": 0.05487281774291466,
+    "K_total": 1.7270759240568365
+  },
+  "hodge_complex": {
+    "complex": "Omega^0(S^3) -> Omega^1(S^3) -> Omega^2(S^3) -> Omega^3(S^3)",
+    "cohomology": {
+      "H0": "R",
+      "H1": "0",
+      "H2": "0",
+      "H3": "R"
+    },
+    "hodge_star": "*^2 = 1 on all form degrees in dimension 3",
+    "radius_scaling": "all listed unit-radius eigenvalues scale as a(eta)^(-2)"
+  },
+  "unit_radius_mode_tables": {
+    "scalar_0_forms": [
+      {
+        "n": 0,
+        "eigenvalue_unit_radius": 0,
+        "multiplicity": 1,
+        "so4_rep": "(0, 0)",
+        "diag_su2_range": "J=0..0"
+      },
+      {
+        "n": 1,
+        "eigenvalue_unit_radius": 3,
+        "multiplicity": 4,
+        "so4_rep": "(1/2, 1/2)",
+        "diag_su2_range": "J=0..1"
+      },
+      {
+        "n": 2,
+        "eigenvalue_unit_radius": 8,
+        "multiplicity": 9,
+        "so4_rep": "(1, 1)",
+        "diag_su2_range": "J=0..2"
+      },
+      {
+        "n": 3,
+        "eigenvalue_unit_radius": 15,
+        "multiplicity": 16,
+        "so4_rep": "(3/2, 3/2)",
+        "diag_su2_range": "J=0..3"
+      },
+      {
+        "n": 4,
+        "eigenvalue_unit_radius": 24,
+        "multiplicity": 25,
+        "so4_rep": "(2, 2)",
+        "diag_su2_range": "J=0..4"
+      }
+    ],
+    "exact_1_forms": [
+      {
+        "n": 1,
+        "eigenvalue_unit_radius": 3,
+        "multiplicity": 4,
+        "origin": "d applied to scalar mode",
+        "so4_rep": "(1/2, 1/2)"
+      },
+      {
+        "n": 2,
+        "eigenvalue_unit_radius": 8,
+        "multiplicity": 9,
+        "origin": "d applied to scalar mode",
+        "so4_rep": "(1, 1)"
+      },
+      {
+        "n": 3,
+        "eigenvalue_unit_radius": 15,
+        "multiplicity": 16,
+        "origin": "d applied to scalar mode",
+        "so4_rep": "(3/2, 3/2)"
+      },
+      {
+        "n": 4,
+        "eigenvalue_unit_radius": 24,
+        "multiplicity": 25,
+        "origin": "d applied to scalar mode",
+        "so4_rep": "(2, 2)"
+      }
+    ],
+    "coexact_1_forms": [
+      {
+        "n": 1,
+        "eigenvalue_unit_radius": 4,
+        "multiplicity": 6,
+        "so4_rep": [
+          "(1, 0)",
+          "(0, 1)"
+        ],
+        "diag_su2_range": "J=1..1"
+      },
+      {
+        "n": 2,
+        "eigenvalue_unit_radius": 9,
+        "multiplicity": 16,
+        "so4_rep": [
+          "(3/2, 1/2)",
+          "(1/2, 3/2)"
+        ],
+        "diag_su2_range": "J=1..2"
+      },
+      {
+        "n": 3,
+        "eigenvalue_unit_radius": 16,
+        "multiplicity": 30,
+        "so4_rep": [
+          "(2, 1)",
+          "(1, 2)"
+        ],
+        "diag_su2_range": "J=1..3"
+      },
+      {
+        "n": 4,
+        "eigenvalue_unit_radius": 25,
+        "multiplicity": 48,
+        "so4_rep": [
+          "(5/2, 3/2)",
+          "(3/2, 5/2)"
+        ],
+        "diag_su2_range": "J=1..4"
+      }
+    ],
+    "exact_2_forms": [
+      {
+        "n": 1,
+        "eigenvalue_unit_radius": 4,
+        "multiplicity": 6,
+        "origin": "d applied to coexact 1-form mode"
+      },
+      {
+        "n": 2,
+        "eigenvalue_unit_radius": 9,
+        "multiplicity": 16,
+        "origin": "d applied to coexact 1-form mode"
+      },
+      {
+        "n": 3,
+        "eigenvalue_unit_radius": 16,
+        "multiplicity": 30,
+        "origin": "d applied to coexact 1-form mode"
+      },
+      {
+        "n": 4,
+        "eigenvalue_unit_radius": 25,
+        "multiplicity": 48,
+        "origin": "d applied to coexact 1-form mode"
+      }
+    ],
+    "coexact_2_forms": [
+      {
+        "n": 1,
+        "eigenvalue_unit_radius": 3,
+        "multiplicity": 4,
+        "origin": "Hodge dual of exact 1-form mode"
+      },
+      {
+        "n": 2,
+        "eigenvalue_unit_radius": 8,
+        "multiplicity": 9,
+        "origin": "Hodge dual of exact 1-form mode"
+      },
+      {
+        "n": 3,
+        "eigenvalue_unit_radius": 15,
+        "multiplicity": 16,
+        "origin": "Hodge dual of exact 1-form mode"
+      },
+      {
+        "n": 4,
+        "eigenvalue_unit_radius": 24,
+        "multiplicity": 25,
+        "origin": "Hodge dual of exact 1-form mode"
+      }
+    ],
+    "three_forms": [
+      {
+        "n": 0,
+        "eigenvalue_unit_radius": 0,
+        "multiplicity": 1,
+        "origin": "Hodge dual of scalar mode"
+      },
+      {
+        "n": 1,
+        "eigenvalue_unit_radius": 3,
+        "multiplicity": 4,
+        "origin": "Hodge dual of scalar mode"
+      },
+      {
+        "n": 2,
+        "eigenvalue_unit_radius": 8,
+        "multiplicity": 9,
+        "origin": "Hodge dual of scalar mode"
+      },
+      {
+        "n": 3,
+        "eigenvalue_unit_radius": 15,
+        "multiplicity": 16,
+        "origin": "Hodge dual of scalar mode"
+      },
+      {
+        "n": 4,
+        "eigenvalue_unit_radius": 24,
+        "multiplicity": 25,
+        "origin": "Hodge dual of scalar mode"
+      }
+    ]
+  },
+  "peter_weyl_summary": {
+    "scalar_branch": "L^2(S^3) = direct_sum_{n>=0} V_{n/2} tensor V_{n/2}^*",
+    "coexact_vector_branch": "direct_sum_{n>=1} [(V_{(n+1)/2},V_{(n-1)/2}) plus parity conjugate]",
+    "diagonal_su2_boundary": "scalar/exact branch contains J=0; coexact vector branch starts at J=1"
+  },
+  "checks": {
+    "R_U_matches_import": true,
+    "x_matches_import": true,
+    "delta_matches_import": true,
+    "coexact_vector_n1_multiplicity": 6
+  }
+}

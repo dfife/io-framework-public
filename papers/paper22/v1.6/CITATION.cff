@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Paper 22 v1.6 Reproducibility Bundle"
+message: "If you use this reproducibility bundle, cite the associated Paper 22 manuscript and this repository release."
+type: software
+authors:
+  - family-names: Fife
+    given-names: David
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper22/v1.6"
+version: "paper22-v1.6"
+date-released: "2026-05-04"
+license: "MIT"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19198706"
+keywords:
+  - cosmology
+  - Interior Observer framework
+  - Hodge theory
+  - SU(2)
+  - BBN
+  - reproducibility

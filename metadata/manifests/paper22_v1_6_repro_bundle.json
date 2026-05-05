@@ -1,0 +1,54 @@
+{
+  "bundle": "paper22-v1.6",
+  "paper": "Paper 22",
+  "paper_version": "v1.6",
+  "path": "papers/paper22/v1.6",
+  "release_tag": "paper22-v1.6",
+  "status": "verified / public-reproducibility-support / bundle-prep",
+  "created": "2026-05-04",
+  "validation_command": "python3 papers/paper22/v1.6/scripts/07_validate_expected_outputs.py",
+  "validation_expected_summary": "SUMMARY total_checks=20 pass_count=20 fail_count=0",
+  "included_claims": [
+    "Spatial Hodge Complex",
+    "TT Branch and Channel Floor",
+    "homogeneous gauge placement",
+    "no-go and rate-paradigm ledger values",
+    "Theorem 22.23 amplitude construction",
+    "Theorem 22.24 Li-7 internal consistency",
+    "corrected YPCMB BBN scorecard",
+    "kappa-audit verdict"
+  ],
+  "excluded_by_policy": [
+    "private exploratory route scans",
+    "superseded YPBBN wrapper paths",
+    "PRyMordial source code",
+    "manuscript drafts"
+  ],
+  "files": {
+    "scripts": [
+      "scripts/01_spatial_hodge_complex.py",
+      "scripts/02_tt_channel_floor.py",
+      "scripts/03_gauge_placement_and_channel_architecture.py",
+      "scripts/04_no_go_and_rate_paradigm_ledger.py",
+      "scripts/05_amplitude_scorecard_and_comparators.py",
+      "scripts/06_kappa_audit_summary.py",
+      "scripts/07_validate_expected_outputs.py"
+    ],
+    "results": [
+      "results/spatial_hodge_complex_results.json",
+      "results/tt_channel_floor_results.json",
+      "results/gauge_placement_and_channel_architecture_results.json",
+      "results/no_go_and_rate_paradigm_ledger_results.json",
+      "results/amplitude_scorecard_and_comparators_results.json",
+      "results/kappa_audit_summary_results.json"
+    ],
+    "reports": [
+      "reports/paper22_kappa_audit_report.md",
+      "reports/paper22_kappa_audit_results.json",
+      "reports/paper22_theorem_22_23_kappa_audit_report.md",
+      "reports/paper22_theorem_22_23_kappa_audit_results.json",
+      "reports/paper22_v14_ypbbn_to_ypcmb_correction_memo.md",
+      "reports/paper22_v14_ypbbn_to_ypcmb_correction_results.json"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+# Paper 22 v1.6 bundle runtime dependencies.
+#
+# The public validation path uses Python standard library only.
+# No pip packages are required to run scripts/01-07.

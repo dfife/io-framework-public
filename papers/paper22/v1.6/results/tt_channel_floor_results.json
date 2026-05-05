@@ -1,0 +1,131 @@
+{
+  "script": "02_tt_channel_floor.py",
+  "claim_support": [
+    "Theorem 22.3 TT Branch Theorem",
+    "Theorem 22.4 Channel Floor Theorem"
+  ],
+  "status": "DERIVED/THEOREM for the principal transverse branch",
+  "tt_low_mode_table_unit_radius": [
+    {
+      "n": 2,
+      "multiplicity": 10,
+      "rough_laplacian_eigenvalue_unit_radius": 6,
+      "lichnerowicz_eigenvalue_unit_radius": 12,
+      "so4_rep": [
+        "(2, 0)",
+        "(0, 2)"
+      ],
+      "diagonal_su2_range": "J=2..2"
+    },
+    {
+      "n": 3,
+      "multiplicity": 24,
+      "rough_laplacian_eigenvalue_unit_radius": 13,
+      "lichnerowicz_eigenvalue_unit_radius": 19,
+      "so4_rep": [
+        "(5/2, 1/2)",
+        "(1/2, 5/2)"
+      ],
+      "diagonal_su2_range": "J=2..3"
+    },
+    {
+      "n": 4,
+      "multiplicity": 42,
+      "rough_laplacian_eigenvalue_unit_radius": 22,
+      "lichnerowicz_eigenvalue_unit_radius": 28,
+      "so4_rep": [
+        "(3, 1)",
+        "(1, 3)"
+      ],
+      "diagonal_su2_range": "J=2..4"
+    },
+    {
+      "n": 5,
+      "multiplicity": 64,
+      "rough_laplacian_eigenvalue_unit_radius": 33,
+      "lichnerowicz_eigenvalue_unit_radius": 39,
+      "so4_rep": [
+        "(7/2, 3/2)",
+        "(3/2, 7/2)"
+      ],
+      "diagonal_su2_range": "J=2..5"
+    },
+    {
+      "n": 6,
+      "multiplicity": 90,
+      "rough_laplacian_eigenvalue_unit_radius": 46,
+      "lichnerowicz_eigenvalue_unit_radius": 52,
+      "so4_rep": [
+        "(4, 2)",
+        "(2, 4)"
+      ],
+      "diagonal_su2_range": "J=2..6"
+    }
+  ],
+  "lowest_TT_block": {
+    "n": 2,
+    "multiplicity": 10,
+    "rough_laplacian_eigenvalue_unit_radius": 6,
+    "lichnerowicz_eigenvalue_unit_radius": 12,
+    "representation": "(2,0) plus (0,2)",
+    "interpretation": "10-dimensional lowest TT block used by the TBS denominator"
+  },
+  "channel_floor_examples": [
+    {
+      "s": 0,
+      "n": 3,
+      "so4_rep": [
+        "(3/2, 3/2)",
+        "(3/2, 3/2)"
+      ],
+      "J_min": 0,
+      "J_max": 3,
+      "diagonal_su2_range": "J=0..3"
+    },
+    {
+      "s": 1,
+      "n": 3,
+      "so4_rep": [
+        "(2, 1)",
+        "(1, 2)"
+      ],
+      "J_min": 1,
+      "J_max": 3,
+      "diagonal_su2_range": "J=1..3"
+    },
+    {
+      "s": 2,
+      "n": 3,
+      "so4_rep": [
+        "(5/2, 1/2)",
+        "(1/2, 5/2)"
+      ],
+      "J_min": 2,
+      "J_max": 3,
+      "diagonal_su2_range": "J=2..3"
+    },
+    {
+      "s": 3,
+      "n": 3,
+      "so4_rep": [
+        "(3, 0)",
+        "(0, 3)"
+      ],
+      "J_min": 3,
+      "J_max": 3,
+      "diagonal_su2_range": "J=3..3"
+    }
+  ],
+  "selection_rule": {
+    "J0": "scalar only",
+    "J1": "scalar plus vector",
+    "J2": "scalar plus vector plus TT tensor",
+    "boundary": "The clean J_min=s theorem applies to principal transverse branches, not derivative descendants."
+  },
+  "checks": {
+    "mult_TT_n2_is_10": true,
+    "tt_rough_n2_is_6": true,
+    "tt_lichnerowicz_n2_is_12": true,
+    "floor_s2_is_2": true
+  }
+}
