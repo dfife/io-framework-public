@@ -1,0 +1,151 @@
+{
+  "date": "May 2026",
+  "topic": "Paper 17 vNext R4 / FIRAS uniqueness blast radius",
+  "retired_claim": "IO independently predicts the observed CMB temperature T_obs = T_IO x^K_gauge = 2.7253 K with zero fitted parameters.",
+  "replacement_claim": "FIRAS supplies the empirical observer-side thermal datum; within the IO readout family T_obs(R4) = T_IO x^(R4 K_gauge), FIRAS fixes a unique R4.",
+  "theorem": {
+    "heading": "Theorem 17.X: Uniqueness of the Empirical Readout Normalization",
+    "manuscript_status": "FIRAS-FIXED UNIQUE READOUT NORMALIZATION",
+    "internal_status": "DERIVED uniqueness theorem + VERIFIED FIRAS empirical input",
+    "readout_family": "T_obs(R4) = T_IO x^(R4 K_gauge)",
+    "unique_solution": "R4_FIRAS = ln(T_FIRAS/T_IO) / (K_gauge ln x)",
+    "assumptions": [
+      "T_IO > 0",
+      "T_FIRAS > 0",
+      "x > 0",
+      "x != 1",
+      "K_gauge != 0"
+    ],
+    "proof_type": "log-affine injectivity / strict monotonicity"
+  },
+  "active_numerical_evaluation": {
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "sigma_FIRAS_K": 0.0006,
+    "x": 1.519,
+    "gamma_BI": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "K_gauge_ln_x": 0.022939703473371237,
+    "R4_FIRAS": 1.0031014644105183,
+    "sigma_R4_FIRAS_only": 0.009596597151571828,
+    "T_obs_R4_equals_1_K": 2.725306096638128,
+    "unit_R4_residual_in_R4_sigma": 0.32318376623846246
+  },
+  "blast_radius": [
+    {
+      "paper_or_surface": "Paper 17 v1.4",
+      "priority": "P0",
+      "impact": "Core theorem and CMB-temperature prediction status must be replaced.",
+      "representative_locations": [
+        "line 11 abstract/summary",
+        "line 20 framework-constructible uniqueness",
+        "line 22 DERIVED/THEOREM status",
+        "line 25 tightest IO prediction wording",
+        "lines 112-127 theorem/numerical verification and FIRAS uniqueness",
+        "lines 162, 184-185 results/conclusion",
+        "appendix lines 434-443, 493-530"
+      ],
+      "action": "Create vNext with FIRAS-fixed uniqueness theorem and downstream inheritance ledger."
+    },
+    {
+      "paper_or_surface": "Paper 13 v1.7",
+      "priority": "P1",
+      "impact": "Historical GTTP source contains explicit CMB-gap closure and gamma_BI-from-FIRAS overclaims.",
+      "representative_locations": [
+        "title",
+        "lines 11-13",
+        "lines 35-38",
+        "lines 66-77",
+        "lines 111-119",
+        "lines 142-147",
+        "appendix lines 1104-1220"
+      ],
+      "action": "Do not edit before Paper 17; later mark historical/reconstructed rather than active derived prediction."
+    },
+    {
+      "paper_or_surface": "Papers 20-26 inherited appendix stacks",
+      "priority": "P1/P2",
+      "impact": "Inherited GTTP and FIRAS-inversion steps must stop calling old T_obs formula a derived CMB prediction.",
+      "representative_locations": [
+        "Paper 20 v1.7 lines 67, 121, 373-382, 431, 450, 520-523",
+        "Paper 22 v1.5 lines 399, 650-659, 711, 744",
+        "Paper 25 v1.2 lines 215, 469-478, 530, 563"
+      ],
+      "action": "Replace R4 pending/open entries with Paper 17 vNext FIRAS-fixed readout dependency when republished."
+    },
+    {
+      "paper_or_surface": "Paper 32 v1.5",
+      "priority": "P1",
+      "impact": "Closure paper cannot count observed CMB temperature as an independent zero-parameter prediction.",
+      "representative_locations": [
+        "line 27",
+        "line 306",
+        "line 351",
+        "line 430",
+        "line 443",
+        "appendix lines 704-718, 766, 792"
+      ],
+      "action": "Cite Paper 17 vNext; reframe T_obs as FIRAS-fixed readout."
+    },
+    {
+      "paper_or_surface": "Paper 33 v1.1",
+      "priority": "P1",
+      "impact": "Synthesis/architecture language says CMB temperature is derived.",
+      "representative_locations": [
+        "lines 12, 20-21, 24, 294, 303"
+      ],
+      "action": "Reframe dynamic thermal channel: T_IO derived; observer readout FIRAS-fixed."
+    },
+    {
+      "paper_or_surface": "Paper 35 v1.1",
+      "priority": "P0/P1",
+      "impact": "Live eta_late uses T_obs and must inherit FIRAS-fixed R4 dependency; eta_BBN using T_IO is unaffected.",
+      "representative_locations": [
+        "line 13 version history",
+        "line 16 abstract/summary",
+        "line 27 eta_late derivation",
+        "line 30 eta_BBN conversion",
+        "line 31 two-temperature split",
+        "line 40 independent observables list",
+        "line 42 gamma_BI adjustment statement",
+        "line 97 conclusion"
+      ],
+      "action": "Update next Paper 35 version to distinguish structural temperature typing from FIRAS-fixed observer normalization."
+    },
+    {
+      "paper_or_surface": "Public website and calculator",
+      "priority": "P1 after Paper 17 vNext",
+      "impact": "Public cards and theorem pages display observed CMB temperature as an IO prediction.",
+      "representative_locations": [
+        "tmp/dfife.github.io/data/observational_conventions_v1.md",
+        "tmp/dfife.github.io/data/crossings.json",
+        "tmp/dfife.github.io/index.html",
+        "tmp/dfife.github.io/data/papers.json",
+        "calculator/data/papers.json",
+        "calculator/calculator-theorems.html"
+      ],
+      "action": "Add successor conventions language and update CMB/GTTP cards after manuscript policy is accepted."
+    }
+  ],
+  "unaffected_or_low_direct_impact": [
+    "Base T_IO derivation",
+    "K_gauge definition",
+    "gamma_BI imported value",
+    "local BBN branch assignment using T_IO",
+    "Paper 24 v2.3 lithium scorecard unless public language calls T_obs a CMB prediction",
+    "R4 no-go artifacts, which remain valid motivation for the FIRAS-fixed route"
+  ],
+  "guardrails": [
+    "Do not say FIRAS validates an independent IO CMB prediction.",
+    "Do not say R4 = 1 is derived by the existing modular-projection theorem.",
+    "Do not retune R4 against downstream observables.",
+    "Do say FIRAS fixes the unique observer-side readout normalization inside the IO readout family.",
+    "Do make R4 inheritance explicit for every T_obs/full-GTTP downstream result."
+  ],
+  "recommended_order": [
+    "Paper 17 vNext theorem replacement",
+    "public conventions/calculator cleanup",
+    "active synthesis updates for Papers 32, 33, and 35",
+    "appendix-stack updates for Papers 20-26 as each is republished"
+  ]
+}

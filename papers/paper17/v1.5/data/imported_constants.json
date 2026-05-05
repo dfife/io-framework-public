@@ -1,0 +1,36 @@
+{
+  "paper": "Paper 17",
+  "paper_version": "v1.5",
+  "bundle_version": "v1.5",
+  "git_tag": "paper17-v1.5",
+  "zenodo_record": "https://zenodo.org/records/19045892/latest",
+  "paper_title": "The Modular Projection Theorem: Operator-Level Closure of the Gauge Thermal Transfer Principle via Shared Hilbert Space Construction and Fiberwise KMS Inheritance",
+  "framework_constants": {
+    "gamma_BI": {
+      "value": 0.2375,
+      "source": "external LQG Barbero-Immirzi convention carried by IO papers"
+    },
+    "x": {
+      "value": 1.519,
+      "source": "Paper 17 v1.5 numerical evaluation convention"
+    },
+    "T_IO_K": {
+      "value": 2.6635,
+      "source": "Paper 1 / Paper 17 local interior Hawking scale"
+    },
+    "T_FIRAS_K": {
+      "value": 2.7255,
+      "sigma": 0.0006,
+      "source": "Fixsen 2009 FIRAS CMB blackbody temperature"
+    },
+    "dim_S2": {
+      "value": 2,
+      "source": "S2 horizon topology"
+    }
+  },
+  "claim_boundary": {
+    "retired": "IO independently predicts the observed CMB temperature.",
+    "active": "FIRAS fixes the unique observer-side thermal readout normalization R4 within T_obs(R4)=T_IO*x^(R4*K_gauge).",
+    "guardrail": "R4 is fixed once by FIRAS and is not retuned against downstream observables."
+  }
+}

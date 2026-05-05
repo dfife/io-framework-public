@@ -1,0 +1,18 @@
+{
+  "claim_status": "Conditional_Verified for gauge-payload candidate uniqueness; does not fix R4",
+  "raw_firas_band_hits_from_frozen_enumeration": 5545,
+  "native_grammar_total_unique_values": 1887443,
+  "K_gauge": 0.05487281774291466,
+  "aliases": {
+    "ln(1+gamma^2)": 0.05487281774291466,
+    "ln(Q)": 0.05487281774291466,
+    "ln(C2A_over_C2Gamma)": 0.05487281774291466,
+    "<K> - K_geom": 0.05487281774291475,
+    "ln(Delta) - K_geom": 0.05487281774291475,
+    "ln(Delta/x^4)": 0.05487281774291466,
+    "V(alpha_BI)": 0.05487281774291466
+  },
+  "max_alias_error": 9.020562075079397e-17,
+  "all_aliases_collapse_to_K_gauge": true,
+  "does_not_fix_R4": true
+}

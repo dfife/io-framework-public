@@ -1,0 +1,33 @@
+{
+  "theorem": "Uniqueness of the empirical readout normalization",
+  "conditions": {
+    "T_IO_positive": true,
+    "T_FIRAS_positive": true,
+    "x_positive": true,
+    "x_not_one": true,
+    "K_gauge_not_zero": true,
+    "slope_nonzero": true
+  },
+  "slope_K_gauge_ln_x": 0.022939703473371237,
+  "strictly_monotone": true,
+  "unique_R4_solution": 1.0031014644105183,
+  "sample_values": [
+    {
+      "R4": 0.5,
+      "T_obs_K": 2.694225823570781
+    },
+    {
+      "R4": 1.0,
+      "T_obs_K": 2.725306096638128
+    },
+    {
+      "R4": 1.0031014644105183,
+      "T_obs_K": 2.7255
+    },
+    {
+      "R4": 1.5,
+      "T_obs_K": 2.7567449080898565
+    }
+  ],
+  "status": "DERIVED uniqueness given the FIRAS empirical datum"
+}

@@ -1,0 +1,81 @@
+Paper 17 - GTTP Self-Consistency Sweep
+=========================================
+
+Objective
+---------
+Treat the GTTP transfer exponent sigma as a free parameter in
+
+    T_obs = T_IO x^sigma
+
+and test whether cross-observable IO self-consistency uniquely selects
+
+    sigma = K_gauge = ln(1 + gamma_BI^2),
+
+or whether a continuous sigma band survives once the full validated Paper 12-14 scorecard is
+imposed.
+
+Input Constants
+---------------
+T_IO = 2.6635
+x = 1.51899
+T_CMB = 2.7255 K
+sigma_FIRAS = 0.0006 K
+gamma_BI = 0.2375
+K_gauge = 0.054872817742914668539930020241081326854985025884154446399493054784586652204279916
+best_fit_sigma_from_FIRAS = 0.055043870640597646017940295694066634345009114288351350632160252516333004997964983
+
+Validation Set
+--------------
+The main sweep uses the paper-frozen validation scorecard from Papers 12-14. That keeps the
+comparison internally consistent with the published IO pipeline. This choice does not weaken the
+result, because the core statement proved here is a dependency statement: outside FIRAS, the
+published observable set is sigma-blind.
+
+Main Result
+-----------
+Inside the published IO observable-class architecture, only the thermal observable T_obs depends
+on sigma. The validated observables H0, theta*, D/H, Y_p, and the published BAO statistics are
+all sigma-blind. Therefore the global self-consistency sweep does NOT uniquely select
+sigma = K_gauge; it leaves exactly the FIRAS-allowed interval in sigma.
+
+FIRAS-Compatible Sigma Intervals
+--------------------------------
+1 sigma: [0.054517212049222542101003635614514117394948670506995788591080363248608760587634611, 0.055570413304480866038020952857318486707492716005648576063733401858723640083093769]
+2 sigma: [0.053990437479297420268684871078626844847790811133155451798297768034570105113573256, 0.056096840091896627023845390189064100388525785921996559925225707875520914928782121]
+3 sigma: [0.053463546879730407646834130589594124870910636511086555784684863293914997140173573, 0.056623151053835674349111588539015931578185504724464111460449189866104122282983669]
+
+K_gauge sits at FIRAS z = -0.32481310465518025804767904749732088955957337334619062485655110313553478603033333.
+So K_gauge survives comfortably, but it is not unique under the cross-scorecard sweep.
+
+Dependency Audit
+----------------
+- H0_P10: sigma_sensitive=False. Composite energy+curvature observable; no GTTP dependence in Papers 10-14. [Paper 14 scorecard / Paper 10 projection]
+- H0_Schur: sigma_sensitive=False. Later alternative branch; also sigma-blind. [Paper 11 Schur-based implementation]
+- theta_star: sigma_sensitive=False. Acoustic-sector observable fixed by N_eff = Δ and baryon dictionary. Paper 13 does not transfer GTTP into the perturbation sector. [Paper 12 / Paper 14 scorecard]
+- D_over_H: sigma_sensitive=False. BBN bulk microphysics uses the BDP baryon density and derived T_IO; Paper 12 explicitly audits this sector as independent of the T_CMB transfer law. [Paper 12 / Paper 14 scorecard]
+- Y_p: sigma_sensitive=False. Same BBN-sector independence as D/H. [Paper 12 / Paper 14 scorecard]
+- BAO_chi2_P12: sigma_sensitive=False. Published validated BAO statistic; no GTTP dependence in the Paper 12 observable-class architecture. [Paper 12 final scorecard]
+- BAO_chi2_split_P11: sigma_sensitive=False. Later alternative BAO branch; also sigma-blind. [Paper 11 v1.1 split-BAO update]
+
+Why the Sweep Does Not Collapse to a Point
+------------------------------------------
+1. FIRAS constrains sigma continuously through T_obs = T_IO x^sigma.
+2. The Paper 12 BBN sector is built from omega_b,geom, F, alpha=1, and T_IO; it does not use
+   T_obs or sigma.
+3. The Paper 12/14 acoustic sector (theta*, R) is tied to N_eff = Delta and omega_b,eff. Paper 13
+   explicitly refuses to transfer GTTP into the perturbation sector.
+4. The Paper 10/11/14 H0 chain is composite in the energy and curvature sectors; GTTP is not in
+   that assembly map.
+5. The validated BAO statistics are bulk / ruler observables in the published observable-class
+   split, again independent of sigma.
+
+Conclusion
+----------
+This sweep is a no-go for uniqueness. Cross-observable self-consistency does not pick out a
+single sigma. It only says:
+
+    sigma must lie in the FIRAS-allowed interval.
+
+Hence sigma = K_gauge is not selected by the Paper 12-16 scorecard sweep alone. Its special
+status must come from the Paper 17 theorem route, not from a global empirical elimination of
+nearby sigma values.

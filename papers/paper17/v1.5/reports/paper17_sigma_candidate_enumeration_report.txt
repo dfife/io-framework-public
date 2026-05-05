@@ -1,0 +1,68 @@
+Paper 17 - Framework-Constructible Sigma Candidates
+=============================================
+
+Scope
+-----
+This audit interprets "constructible" in the same bounded-search sense Paper 13 already used:
+paper-native dimensionless scalars plus multiplicative / logarithmic operations up to bounded
+complexity. This avoids meaningless arbitrary curve-fitting from unrestricted arithmetic.
+
+Adopted FIRAS Band
+------------------
+For the Paper 17 constants
+
+    T_IO = 2.6635, x = 1.51899, T_CMB = 2.7255, sigma_T = 0.0006,
+
+the exact sigma bands are:
+
+    1 sigma: [0.054517212049222542101003635614514117394948670506995788591080363248608760587634611, 0.055570413304480866038020952857318486707492716005648576063733401858723640083093769]
+    2 sigma: [0.053990437479297420268684871078626844847790811133155451798297768034570105113573256, 0.056096840091896627023845390189064100388525785921996559925225707875520914928782121]
+
+Note: the earlier informal interval [0.0545, 0.0556] is the 1 sigma band for these inputs, not
+the 2 sigma band.
+
+Native Grammar
+--------------
+Atoms:
+    gamma_BI, x, Delta, sqrt_Delta, K_geom, K_gauge, K_total, f_b, F, P_k, Q, sqrt_Q, N0, pi, e, ln2, one, two, four
+
+Operations:
+    product, ratio, power, ln, exp, sqrt
+
+Maximum operation cost:
+    3
+
+Result
+------
+Native grammar survivors in band: 5545 distinct numeric values; exact K_gauge-value buckets: 1.
+
+Interpretation
+--------------
+Raw bounded grammar does produce many accidental in-band composites. That is expected once a
+finite constant set is closed under bounded elementary operations. After quotienting by published
+paper identities and discarding tautological near-equalities, the framework yields only one
+structural survivor class:
+
+    K_gauge.
+
+Exact structural aliases found in Papers 10-16:
+
+    K_gauge
+    ln(1 + gamma_BI^2)
+    ln(Q)
+    ln(C2_ratio)
+    K_total - K_geom
+    ln(Delta) - K_geom
+    ln(Delta / exp(K_geom))
+    ln(Delta / x^4)
+    V(alpha_BI)
+
+Representative accidental near-hits are saved in the JSON summary. They are mostly products,
+ratios, or powers that keep K_gauge almost unchanged by multiplying it by numbers numerically
+close to 1. They do not define a second paper-native sigma class.
+
+The structural pattern is that every real survivor reduces to the same gauge quadratic invariant:
+
+    1 + gamma_BI^2
+
+and its logarithm.

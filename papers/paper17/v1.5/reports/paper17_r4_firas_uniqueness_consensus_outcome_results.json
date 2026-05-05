@@ -1,0 +1,32 @@
+{
+  "artifact": "paper17_r4_firas_uniqueness_consensus_outcome",
+  "date": "2026-05-05",
+  "consensus": "All reviewers agree with revised direction.",
+  "retired_claim": "IO independently predicts observed CMB temperature.",
+  "active_theorem": "Uniqueness of the FIRAS-fixed readout normalization",
+  "theorem_formula": "R4_FIRAS = ln(T_FIRAS/T_IO) / (K_gauge ln x)",
+  "manuscript_facing_label": "FIRAS-FIXED UNIQUE READOUT NORMALIZATION",
+  "theorem_heading": "Theorem: Uniqueness of the Empirical Readout Normalization",
+  "internal_status": "DERIVED uniqueness theorem + VERIFIED FIRAS empirical input",
+  "acceptable_internal_dependency_label": "DERIVED / CONDITIONAL_VERIFIED on FIRAS empirical thermal datum",
+  "avoid_primary_manuscript_label": "CONDITIONAL_VERIFIED",
+  "r4_load_bearing": true,
+  "r4_inherited_by": [
+    "T_obs",
+    "T_CMB",
+    "x^(K_gauge)",
+    "full GTTP readout"
+  ],
+  "not_inherited_by": [
+    "base T_IO-only calculations"
+  ],
+  "hidden_fitting_guardrail": "R4 is fixed once by FIRAS, frozen, and never adjusted against downstream observables.",
+  "falsifiability": "Future changes in T_FIRAS force a definite new R4 and propagation through R4-dependent calculations.",
+  "action_items": [
+    "update Paper 17 claim language",
+    "add FIRAS-fixed uniqueness theorem",
+    "add R4 dependency ledger",
+    "update status notes/conventions",
+    "update public-facing scorecard/overview language"
+  ]
+}

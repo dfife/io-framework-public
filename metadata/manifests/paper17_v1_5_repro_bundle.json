@@ -1,0 +1,61 @@
+{
+  "paper": "Paper 17",
+  "version": "v1.5",
+  "bundle_path": "papers/paper17/v1.5",
+  "validation_command": "python3 papers/paper17/v1.5/scripts/09_validate_expected_outputs.py",
+  "git_tag": "paper17-v1.5",
+  "zenodo_record": "https://zenodo.org/records/19045892/latest",
+  "active_claim_boundary": {
+    "retired": "IO independently predicts the observed CMB temperature.",
+    "active": "FIRAS fixes the unique observer-side thermal readout normalization R4 within T_obs(R4)=T_IO*x^(R4*K_gauge).",
+    "guardrail": "R4 is fixed once by FIRAS and is not retuned against downstream observables."
+  },
+  "headline_values": {
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644105183,
+    "sigma_R4_FIRAS_only": 0.009596597151571828,
+    "T_obs_R4_equals_1_K_historical": 2.725306096638128,
+    "T_FIRAS_K": 2.7255
+  },
+  "scripts": [
+    "scripts/01_gauge_payload_determinant.py",
+    "scripts/02_firas_fixed_r4.py",
+    "scripts/03_readout_uniqueness_check.py",
+    "scripts/04_modular_projection_surrogate.py",
+    "scripts/05_foundation_closure_toy_model.py",
+    "scripts/06_framework_constructible_uniqueness_summary.py",
+    "scripts/07_r4_no_go_registry.py",
+    "scripts/08_kappa_audit_summary.py",
+    "scripts/09_validate_expected_outputs.py"
+  ],
+  "results": [
+    "results/firas_fixed_r4_results.json",
+    "results/foundation_closure_toy_model_results.json",
+    "results/framework_constructible_uniqueness_results.json",
+    "results/gauge_payload_determinant_results.json",
+    "results/kappa_audit_summary_results.json",
+    "results/modular_projection_surrogate_results.json",
+    "results/r4_no_go_registry_results.json",
+    "results/readout_uniqueness_results.json",
+    "results/sigma_candidate_enumeration_summary.json",
+    "results/sigma_consistency_sweep_summary.json"
+  ],
+  "reports": [
+    "reports/paper17_foundation_closure_report.txt",
+    "reports/paper17_kappa_audit_report.md",
+    "reports/paper17_kappa_audit_results.json",
+    "reports/paper17_modular_projection_report.txt",
+    "reports/paper17_r4_firas_uniqueness_consensus_outcome.md",
+    "reports/paper17_r4_firas_uniqueness_consensus_outcome_results.json",
+    "reports/paper17_r4_impossibility_theorem_report.md",
+    "reports/paper17_r4_impossibility_theorem_results.json",
+    "reports/paper17_r4_one_efold_normalization_audit_report.md",
+    "reports/paper17_r4_one_efold_normalization_audit_results.json",
+    "reports/paper17_sigma_candidate_enumeration_report.txt",
+    "reports/paper17_sigma_consistency_sweep_report.txt",
+    "reports/paper17_vnext_r4_firas_uniqueness_blast_radius_report.md",
+    "reports/paper17_vnext_r4_firas_uniqueness_blast_radius_results.json"
+  ],
+  "file_count": 49,
+  "sha256_manifest": "papers/paper17/v1.5/SHA256SUMS.txt"
+}

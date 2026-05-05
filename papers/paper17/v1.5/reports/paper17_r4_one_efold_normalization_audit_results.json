@@ -1,0 +1,230 @@
+{
+  "title": "Paper 17 R4 one-e-fold normalization audit",
+  "timestamp_utc": "2026-04-11T01:23:39.414508+00:00",
+  "verdict": {
+    "status": "killed",
+    "summary": "R4 is irreducibly a premise on the current Paper 17 stack. Without R4, the theory yields a continuous c-family \u03c3 = c K_gauge.",
+    "strongest_derived_statement": "Paper 17 plus standard modular theory fix the fiber modular flow exp(i t \u03ba D), but do not fix the identification between modular time t and conformal depth \u03bb."
+  },
+  "constants": {
+    "M_U_kg": 4.5e+53,
+    "R_U_m": 4.4e+26,
+    "r_s_m": 6.6835442422068e+26,
+    "x": 1.5189873277742727,
+    "gamma": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "c_best_exact_FIRAS_match": 1.0031214823757846
+  },
+  "core_no_go": {
+    "statement": "Let \u03b1_t^(\u03ba) = Ad(exp(i t \u03ba D)) be the fiber modular flow derived in Paper 17. Any continuous identification between modular time t and conformal depth \u03bb has the form t = c \u03bb. Therefore the physical transfer law without R4 is d(ln \u03c9)/d\u03bb = c \u03ba; on the physical sector \u03ba = K_gauge, so \u03c3 = c K_gauge.",
+    "proof_outline": [
+      "Let \u03c6: (R,+) -> (R,+) be continuous and additive.",
+      "Additivity gives \u03c6(n \u03bb) = n \u03c6(\u03bb) for all integers n and \u03c6(q \u03bb) = q \u03c6(\u03bb) for all rationals q.",
+      "Set c = \u03c6(1). Then \u03c6(q) = c q for all rationals q.",
+      "By continuity, \u03c6(\u03bb) = c \u03bb for all real \u03bb.",
+      "Hence the only continuous reparameterizations of an additive flow are constant rescalings."
+    ]
+  },
+  "family_examples": [
+    {
+      "c": 0.5,
+      "sigma": 0.02743640887145733,
+      "T_obs": 2.6942252068932158
+    },
+    {
+      "c": 0.8,
+      "sigma": 0.04389825419433173,
+      "T_obs": 2.712830199335826
+    },
+    {
+      "c": 1.0,
+      "sigma": 0.05487281774291466,
+      "T_obs": 2.7253048490553007
+    },
+    {
+      "c": 1.2,
+      "sigma": 0.06584738129149759,
+      "T_obs": 2.7378368620722138
+    },
+    {
+      "c": 1.0031214823757846,
+      "sigma": 0.0550441022764088,
+      "T_obs": 2.7255
+    }
+  ],
+  "routes": [
+    {
+      "id": 1,
+      "name": "Canonical normalization coincidence",
+      "status": "killed",
+      "reason": "Canonical normalization of modular time and canonical normalization of \u03bb do not fix the intertwiner between the two additive R-actions. The bridge remains t = c \u03bb."
+    },
+    {
+      "id": 2,
+      "name": "Bisognano-Wichmann analogy",
+      "status": "killed",
+      "reason": "BW fixes normalization only when the modular group is proved to coincide with a specific geometric wedge symmetry. No IO theorem identifies the relevant thermal algebra with a radial-wedge modular action of the OS interior."
+    },
+    {
+      "id": 3,
+      "name": "Surface gravity / Hawking matching",
+      "status": "killed",
+      "reason": "Surface gravity fixes a temperature scale like \u03ba/(2\u03c0), not the gauge-induced slope d(ln \u03c9)/d\u03bb. It does not determine the \u03bb-to-modular-time conversion."
+    },
+    {
+      "id": 4,
+      "name": "Modular Hamiltonian additivity",
+      "status": "killed",
+      "reason": "Additivity fixes operator content, not the geometric readout parameter. exp(i t D\u2297K\u0302_g) still yields a c-family once t is identified with c \u03bb."
+    },
+    {
+      "id": 5,
+      "name": "Conformal weight / density argument",
+      "status": "killed",
+      "reason": "Density weights constrain carrier class, not the absolute width of one transfer cell in \u03bb. No theorem derives a distinguished unit interval."
+    },
+    {
+      "id": 6,
+      "name": "Spectral flow quantization",
+      "status": "killed",
+      "reason": "D has integer spectrum, but exp(i t c \u03ba D) is a valid one-parameter unitary group for any real c. Integrality does not fix c without an extra period condition."
+    },
+    {
+      "id": 7,
+      "name": "Unruh / detector response",
+      "status": "killed",
+      "reason": "Unruh/BW fixes boost-temperature normalization for wedge acceleration, not the extra gauge-sector transfer exponent across OS conformal depth."
+    },
+    {
+      "id": 8,
+      "name": "Information-theoretic / relative entropy",
+      "status": "killed",
+      "reason": "Relative entropy can fix a total modular difference only after a density measure along \u03bb is specified. The per-unit-\u03bb normalization is exactly the missing datum."
+    },
+    {
+      "id": 9,
+      "name": "Connes cocycle / relative modular route",
+      "status": "killed",
+      "reason": "No pair of faithful radial-slice states and no radial relative modular operator are constructed in Paper 17 for the gauge transfer. The available relative-modular machinery concerns later K_geom, not R4."
+    },
+    {
+      "id": 10,
+      "name": "Conformal-cell theorem",
+      "status": "killed",
+      "reason": "The March proof assumes that one physical transfer cell has width \u03b4 = 1 in \u03bb. For arbitrary cell width \u03b4, the same argument gives U(\u03bb) = s^(\u03bb/\u03b4) and \u03c3 = (1/\u03b4) K_gauge."
+    },
+    {
+      "id": 11,
+      "name": "Gaussian S\u00b2 normalization",
+      "status": "killed",
+      "reason": "The Gaussian determinant ratio fixes the gauge scalar K_gauge = ln(1+\u03b3\u00b2). It does not fix the separate bridge coefficient in \u03c3 = c K_gauge."
+    },
+    {
+      "id": 12,
+      "name": "Observational calibration",
+      "status": "killed_as_derivation",
+      "reason": "FIRAS can calibrate c numerically, but that is observational selection, not theorem. The exact match occurs at c_best != 1."
+    }
+  ],
+  "local_evidence": {
+    "paper13_semiclassical_gap": {
+      "paper": "Interior_Observer_Paper13_v1_6.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper13_v1_6.docx",
+      "match": "This is not derived from prior IO mathematics alone. It is a new semiclassical principle",
+      "paragraph_index": 61,
+      "text": "This is not derived from prior IO mathematics alone. It is a new semiclassical principle on the same epistemic footing as CMP and BDP \u2014 a new physical dictionary that maps the boundary gauge sector to the observed thermal spectrum. The single new identification is K_gauge \u2192 \u03c3 (the transfer coefficient); all other ingredients are inherited from Papers 9-10."
+    },
+    "paper14_remaining_gap": {
+      "paper": "Interior_Observer_Paper14_v1_9.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper14_v1_9.docx",
+      "match": "The remaining non-derived step is:",
+      "paragraph_index": 75,
+      "text": "The conformal no-go theorem provides a strong selector: conformal fields do not see K_geom, but they do interact with K_gauge through the energy projection \u221a\u0394. The unique dimensionless gauge-invariant scalar on S\u00b2 is (1+\u03b3\u00b2), and its logarithm with the S\u00b2 normalization a = 1 is K_gauge. The remaining non-derived step is:"
+    },
+    "paper17_r4_premise": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "R4. One-e-fold normalization (Paper 17 premise): one unit of conformal depth carries one factor of the plaquette ratio s = 1+\u03b3\u00b2",
+      "paragraph_index": 100,
+      "text": "R4. One-e-fold normalization (Paper 17 premise): one unit of conformal depth carries one factor of the plaquette ratio s = 1+\u03b3\u00b2, so exp(f(K\u0302_g)) = Q\u0302. This normalization condition is introduced in this paper; it is not inherited from Papers 13\u201314."
+    },
+    "paper17_step3_fiber_kms": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "Step 3. On each fiber \u03ba, the KMS state \u03c6_\u03ba is KMS for the dilation dynamics generated by \u03baD",
+      "paragraph_index": 108,
+      "text": "Step 3. On each fiber \u03ba, the KMS state \u03c6_\u03ba is KMS for the dilation dynamics generated by \u03baD (Paper 13, KMS rigidity R1). By the fundamental theorem of Tomita-Takesaki theory, a KMS state uniquely determines its modular group [20, 21]. Therefore the modular group on fiber \u03ba is exp(it\u03baD)."
+    },
+    "paper17_step5_physical_sector": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "Step 5. On the physical Schwarzschild tangential sector, K\u0302_g = K_gauge \u00b7 I = ln(1+\u03b3\u00b2) \u00b7 I.",
+      "paragraph_index": 111,
+      "text": "Step 5. On the physical Schwarzschild tangential sector, K\u0302_g = K_gauge \u00b7 I = ln(1+\u03b3\u00b2) \u00b7 I. Therefore:"
+    },
+    "paper17_failed_routes": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "The six failed direct derivation approaches (Rounds 1\u20136) established that no known path derives \u03c3 = K_gauge from Papers 1\u201316 alone without new operator-level structure.",
+      "paragraph_index": 148,
+      "text": "The six failed direct derivation approaches (Rounds 1\u20136) established that no known path derives \u03c3 = K_gauge from Papers 1\u201316 alone without new operator-level structure. The seven construction approaches (Rounds 7\u201313) built that structure from standard AQFT tools (GNS, Tomita-Takesaki, direct-integral decomposition) applied to the IO setting, achieving theorem-grade closure within the reduced thermal-plus-gauge sector."
+    },
+    "paper17_g5_status": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "G5. The IO rigidity package R1\u2013R4: Planck-preserving photon transfer (Paper 13, R1), unique central gauge input (Paper 14, R2), \u03b3 \u2192 0 decoupling (R3), and one-e-fold normalization (R4, this paper).",
+      "paragraph_index": 155,
+      "text": "G5. The IO rigidity package R1\u2013R4: Planck-preserving photon transfer (Paper 13, R1), unique central gauge input (Paper 14, R2), \u03b3 \u2192 0 decoupling (R3), and one-e-fold normalization (R4, this paper)."
+    },
+    "paper17_conditional_status": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "STATUS: \u03c3 = K_gauge is DERIVED/THEOREM conditional on the explicit Paper 17 premise package G1\u2013G6.",
+      "paragraph_index": 161,
+      "text": "STATUS: \u03c3 = K_gauge is DERIVED/THEOREM conditional on the explicit Paper 17 premise package G1\u2013G6."
+    },
+    "paper17_calibration_nogo": {
+      "paper": "Interior_Observer_Paper17_v1_3.docx",
+      "path": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper17_v1_3.docx",
+      "match": "Step 62: Calibration No-Go. Independent channel rescaling preserves KMS, detailed balance, surface gravity, isotropy, modular-Hessian, but changes \u03bb freely.",
+      "paragraph_index": 271,
+      "text": "Step 62: Calibration No-Go. Independent channel rescaling preserves KMS, detailed balance, surface gravity, isotropy, modular-Hessian, but changes \u03bb freely. STATUS: DERIVED (no-go theorem)"
+    }
+  },
+  "prior_claims_killed": [
+    {
+      "artifact": "paper17_gttp_conformal_cell_report.txt",
+      "status": "killed",
+      "reason": "The proof identifies one conformal e-fold with one transfer cell. That is the missing normalization premise in disguised form."
+    },
+    {
+      "artifact": "paper17_gttp_derivation_report.txt",
+      "status": "killed",
+      "reason": "The Gaussian-determinant corollary conflates normalization of K_gauge with normalization of the map from modular time to \u03bb."
+    }
+  ],
+  "additional_physics_needed": [
+    "A BW-type theorem identifying the IO thermal algebra modular flow with a specific radial geometric symmetry and its normalization.",
+    "A discrete radial-cell theorem deriving a distinguished cell width \u03b4 = 1 in \u03bb from the OS/LQG geometry itself.",
+    "A detector-response or cocycle theorem proving that physical readout samples modular time and conformal depth with unit coefficient."
+  ],
+  "external_sources": [
+    {
+      "label": "Derezinski-Pillet modular theory notes",
+      "url": "https://pillet.univ-tln.fr/data/pdf/Tomita-Takesaki_theory.pdf",
+      "use": "Theorem 8: a faithful normal state is KMS for its modular group at \u03b2 = -1, and the modular group is unique for that property."
+    },
+    {
+      "label": "Rindler/modular review with BW formula",
+      "url": "https://cds.cern.ch/record/2285558/files/arXiv%3A1708.06328.pdf",
+      "use": "For the right Rindler wedge, \u0394 = exp(-2\u03c0M) and K = 2\u03c0M; the 2\u03c0 factor is fixed by wedge geometry plus local QFT structure, illustrating what is missing in IO."
+    },
+    {
+      "label": "Brunetti-Guido-Longo modular localization",
+      "url": "https://arxiv.org/abs/math-ph/0203021",
+      "use": "Reference point for BW/modular localization structure and the need for geometric covariance."
+    }
+  ]
+}

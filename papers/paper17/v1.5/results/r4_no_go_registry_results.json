@@ -1,0 +1,54 @@
+{
+  "claim_status": "DERIVED no-go boundary for internal R4=1 derivation on current stack",
+  "r4_internally_derived": false,
+  "r4_visible_in_v15": true,
+  "r4_fixed_by": "FIRAS uniqueness theorem, not internal Plan A derivation",
+  "routes": [
+    {
+      "route": "continuous field redefinition",
+      "failure_reason": "A c-family t=c*lambda preserves non-R4 modular structure.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "BW/Hawking modular normalization",
+      "failure_reason": "Accepted BW/Hawking theorems fix wedge/temperature normalization, not IO optical R4.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "canonical symplectic pairing",
+      "failure_reason": "Moment-map scale remains free without compact-cycle quantization.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "boundary variational principle",
+      "failure_reason": "Action scale can be rescaled without breaking stated symmetries.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "typed optical functor",
+      "failure_reason": "Natural transformations can rescale the optical functor by zeta.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "A-vacuum modular state rescaling",
+      "failure_reason": "Rescaled modular-flow embeddings preserve local KMS structure.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "lower-level Hamiltonian route",
+      "failure_reason": "Hamiltonian normalization does not fix conformal-depth readout width.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "unit-cell preservation",
+      "failure_reason": "The argument assumes the missing cell width instead of deriving it.",
+      "status": "killed_or_not_closed"
+    },
+    {
+      "route": "external Gemini no-go",
+      "failure_reason": "Continuous scale invariance remains unless a covering symmetry or compact integrality condition is added.",
+      "status": "killed_or_not_closed"
+    }
+  ],
+  "safe_statement": "Paper 17 v1.5 proves uniqueness of R4 given FIRAS inside the readout family; it does not derive R4=1 from operator algebra alone."
+}

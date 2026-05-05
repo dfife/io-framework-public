@@ -1,0 +1,28 @@
+{
+  "paper": "Paper 17 v1.5",
+  "executive_verdict": "No hidden continuous fitted parameter remains in the published v1.5 boundary. R4 is a visible load-bearing readout-normalization field, not derived internally, fixed uniquely by FIRAS, and frozen against downstream retuning.",
+  "hidden_parameter_found": false,
+  "load_bearing_visible_field": "R4_FIRAS",
+  "retired_claim": "Independent zero-parameter prediction of observed CMB temperature.",
+  "active_claim": "FIRAS-fixed unique observer-side readout normalization within the IO thermal readout family.",
+  "target_count": 12,
+  "verdict_counts": {
+    "EXTERNAL_INPUT_NOT_FITTED_IN_PAPER17": 1,
+    "DERIVED": 1,
+    "DERIVED/THEOREM_WITHIN_G1_G6": 1,
+    "DERIVED_NO_GO": 1,
+    "CONSTRUCTED/VERIFIED_WITH_REDUCED_SCOPE": 1,
+    "DERIVED_WITH_REDUCED_SCOPE": 1,
+    "DERIVED_ALGEBRAIC_FAMILY": 1,
+    "VISIBLE_FREE_FIELD_FIXED_BY_FIRAS_UNIQUENESS": 1,
+    "VERIFIED_EMPIRICAL_INPUT": 1,
+    "DERIVED_UNIQUENESS_GIVEN_EMPIRICAL_DATUM": 1,
+    "HISTORICAL_RETIRED_NOT_DERIVED": 1,
+    "CONDITIONAL_VERIFIED_FOR_GAUGE_PAYLOAD_NOT_R4": 1
+  },
+  "open_items": [
+    "Plan A derivation of R4=1 from operator algebra alone remains open.",
+    "Extension from reduced thermal-plus-gauge sector to full unreduced horizon algebra remains open.",
+    "GNS standardness/cyclicity/separating/self-adjointness/measurability remain proof-audit items."
+  ]
+}

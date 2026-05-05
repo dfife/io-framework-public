@@ -1,0 +1,94 @@
+{
+  "T_IO": "2.6635",
+  "x": "1.51899",
+  "T_CMB": "2.7255",
+  "sigma_FIRAS": "0.0006",
+  "gamma_BI": "0.2375",
+  "K_gauge": "0.054872817742914668539930020241081326854985025884154446399493054784586652204279916",
+  "best_fit_sigma_from_FIRAS": "0.055043870640597646017940295694066634345009114288351350632160252516333004997964983",
+  "K_gauge_FIRAS_z": "-0.32481310465518025804767904749732088955957337334619062485655110313553478603033333",
+  "intervals": {
+    "1sigma": [
+      "0.054517212049222542101003635614514117394948670506995788591080363248608760587634611",
+      "0.055570413304480866038020952857318486707492716005648576063733401858723640083093769"
+    ],
+    "2sigma": [
+      "0.053990437479297420268684871078626844847790811133155451798297768034570105113573256",
+      "0.056096840091896627023845390189064100388525785921996559925225707875520914928782121"
+    ],
+    "3sigma": [
+      "0.053463546879730407646834130589594124870910636511086555784684863293914997140173573",
+      "0.056623151053835674349111588539015931578185504724464111460449189866104122282983669"
+    ],
+    "5sigma": [
+      "0.052409417387134345832577546540590492118992235019994971735159516079088832263991164",
+      "0.057675425705078389842033649289403308049645466521347794360108614133653876906794116"
+    ]
+  },
+  "published_observables": [
+    {
+      "name": "H0_P10",
+      "prediction": "67.58 km/s/Mpc",
+      "comparison": "67.4 (Paper 14 scorecard target)",
+      "published_status": "+0.3\u03c3",
+      "sigma_sensitive": false,
+      "source": "Paper 14 scorecard / Paper 10 projection",
+      "note": "Composite energy+curvature observable; no GTTP dependence in Papers 10-14."
+    },
+    {
+      "name": "H0_Schur",
+      "prediction": "68.91 km/s/Mpc",
+      "comparison": "Paper 11 alternative implementation",
+      "published_status": "published alternative",
+      "sigma_sensitive": false,
+      "source": "Paper 11 Schur-based implementation",
+      "note": "Later alternative branch; also sigma-blind."
+    },
+    {
+      "name": "theta_star",
+      "prediction": "0.5962 deg",
+      "comparison": "0.5965 \u00b1 0.0002 deg",
+      "published_status": "-0.5\u03c3",
+      "sigma_sensitive": false,
+      "source": "Paper 12 / Paper 14 scorecard",
+      "note": "Acoustic-sector observable fixed by N_eff = \u0394 and baryon dictionary. Paper 13 does not transfer GTTP into the perturbation sector."
+    },
+    {
+      "name": "D_over_H",
+      "prediction": "2.49e-5",
+      "comparison": "2.527 \u00b1 0.030 e-5",
+      "published_status": "-1.2\u03c3",
+      "sigma_sensitive": false,
+      "source": "Paper 12 / Paper 14 scorecard",
+      "note": "BBN bulk microphysics uses the BDP baryon density and derived T_IO; Paper 12 explicitly audits this sector as independent of the T_CMB transfer law."
+    },
+    {
+      "name": "Y_p",
+      "prediction": "0.2471",
+      "comparison": "0.2449 \u00b1 0.004",
+      "published_status": "+0.6\u03c3",
+      "sigma_sensitive": false,
+      "source": "Paper 12 / Paper 14 scorecard",
+      "note": "Same BBN-sector independence as D/H."
+    },
+    {
+      "name": "BAO_chi2_P12",
+      "prediction": "19.8",
+      "comparison": "\u039bCDM 22.0 on DESI 12-point vector",
+      "published_status": "IO lower",
+      "sigma_sensitive": false,
+      "source": "Paper 12 final scorecard",
+      "note": "Published validated BAO statistic; no GTTP dependence in the Paper 12 observable-class architecture."
+    },
+    {
+      "name": "BAO_chi2_split_P11",
+      "prediction": "42.8",
+      "comparison": "later split-BAO DR1 implementation",
+      "published_status": "published alternative",
+      "sigma_sensitive": false,
+      "source": "Paper 11 v1.1 split-BAO update",
+      "note": "Later alternative BAO branch; also sigma-blind."
+    }
+  ],
+  "theorem_status": "No-go for uniqueness: within the published IO observable-class architecture, the global scorecard leaves a continuous FIRAS interval of allowed sigma values."
+}

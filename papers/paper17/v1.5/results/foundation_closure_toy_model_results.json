@@ -1,0 +1,19 @@
+{
+  "claim_status": "finite-dimensional KMS/GNS support check for constructed A-vacuum package",
+  "rho": [
+    [
+      0.7310585786300049,
+      0.0
+    ],
+    [
+      0.0,
+      0.2689414213699951
+    ]
+  ],
+  "rho_min_eigenvalue": 0.2689414213699951,
+  "rho_positive": true,
+  "rho_normalized": true,
+  "kms_residual_beta_1": 0.0,
+  "kms_holds_to_tolerance": true,
+  "scope_boundary": "toy finite-dimensional check only; full theorem relies on standard GNS/KMS/direct-integral operator algebra"
+}

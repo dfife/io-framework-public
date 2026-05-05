@@ -1,0 +1,23 @@
+{
+  "claim_status": "finite-dimensional verification surrogate for DERIVED/THEOREM modular projection within reduced sector",
+  "surrogate": {
+    "kappas": [
+      0.03,
+      0.09
+    ],
+    "D_eigenvalues": [
+      -0.7,
+      0.2,
+      1.1
+    ],
+    "time_t": 0.4,
+    "max_direct_sum_vs_combined_error": 3.469446951953614e-18,
+    "identity_holds_to_tolerance": true
+  },
+  "physical_sector": {
+    "K_gauge": 0.05487281774291466,
+    "modular_generator": "D tensor K_hat_g; on physical tangential sector K_hat_g = K_gauge I",
+    "readout_family": "T_obs(R4) = T_IO*x^(R4*K_gauge)",
+    "R4_fixed_by": "FIRAS via Theorem 17.2, not by this surrogate"
+  }
+}

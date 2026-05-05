@@ -1,0 +1,101 @@
+{
+  "artifact": "paper17_kappa_audit_results",
+  "date": "2026-05-05",
+  "paper": "Paper 17 v1.5",
+  "executive_verdict": "No hidden continuous fitted parameter remains in the published v1.5 boundary. R4 is a visible load-bearing readout-normalization field, not derived internally, fixed uniquely by FIRAS, and frozen against downstream retuning.",
+  "hidden_parameter_found": false,
+  "load_bearing_visible_field": "R4_FIRAS",
+  "retired_claim": "Independent zero-parameter prediction of observed CMB temperature.",
+  "active_claim": "FIRAS-fixed unique observer-side readout normalization within the IO thermal readout family.",
+  "targets": [
+    {
+      "audit_target": "gamma_BI external Barbero-Immirzi input",
+      "candidate_field": "gamma_BI",
+      "verdict": "EXTERNAL_INPUT_NOT_FITTED_IN_PAPER17",
+      "evidence": "Paper 17 carries gamma_BI=0.2375 from the LQG convention. It is not adjusted in Paper 17 and is not chosen against FIRAS or downstream observables.",
+      "recommendation": "Keep as external framework input; do not present as derived by Paper 17."
+    },
+    {
+      "audit_target": "Gauge determinant exponent",
+      "candidate_field": "a = dim(S2)/2",
+      "verdict": "DERIVED",
+      "evidence": "Step 40 v1.5 states this a is internal to the gauge-side Gaussian determinant ratio used to derive K_gauge; it is not R4.",
+      "recommendation": "Retain DERIVED label with explicit a != R4 clarification."
+    },
+    {
+      "audit_target": "Gauge payload scalar",
+      "candidate_field": "K_gauge = ln(1+gamma_BI^2)",
+      "verdict": "DERIVED/THEOREM_WITHIN_G1_G6",
+      "evidence": "The shared Hilbert space, A-vacuum GNS construction, SU(2) reduction, fiberwise KMS inheritance, and direct-integral modular reconstruction identify the modular-flow gauge payload as K_gauge.",
+      "recommendation": "Publish as active theorem support; retain reduced-sector and G1-G6 scope."
+    },
+    {
+      "audit_target": "Product modular flow exclusion",
+      "candidate_field": "Delta_prod = Delta_ph tensor Delta_g",
+      "verdict": "DERIVED_NO_GO",
+      "evidence": "Product flow leaves photon observables blind to K_gauge; non-product A-vacuum/operator package is required.",
+      "recommendation": "Retain as no-go support."
+    },
+    {
+      "audit_target": "A-vacuum and GNS construction",
+      "candidate_field": "omega_A direct-integral state",
+      "verdict": "CONSTRUCTED/VERIFIED_WITH_REDUCED_SCOPE",
+      "evidence": "Paper 17 constructs omega_A fiberwise from faithful normal KMS states. Toy-model numerical support gives max KMS residual 4.58e-16 in the private artifact; public bundle reproduces a finite-dimensional KMS check.",
+      "recommendation": "Retain scope boundary: reduced thermal-plus-gauge sector, not full unreduced horizon algebra."
+    },
+    {
+      "audit_target": "Gauge averaging reduction",
+      "candidate_field": "M_th tensor Z_g reduced algebra",
+      "verdict": "DERIVED_WITH_REDUCED_SCOPE",
+      "evidence": "Compact SU(2) averaging and fiber irreducibility force the fixed-point algebra in the reduced tangential sector.",
+      "recommendation": "Retain theorem status with reduced-sector scope."
+    },
+    {
+      "audit_target": "Optical readout family",
+      "candidate_field": "T_obs(R4)=T_IO*x^(R4*K_gauge)",
+      "verdict": "DERIVED_ALGEBRAIC_FAMILY",
+      "evidence": "Planck-preserving transfer plus conformal-depth additivity fixes multiplicative exponential form; Theorem 17.1 fixes K_gauge as payload. The scalar R4 remains a separate field.",
+      "recommendation": "Never collapse the family to R4=1 unless Plan A is later proved."
+    },
+    {
+      "audit_target": "Optical readout normalization",
+      "candidate_field": "R4",
+      "verdict": "VISIBLE_FREE_FIELD_FIXED_BY_FIRAS_UNIQUENESS",
+      "evidence": "Field-redefinition R4 -> zeta preserves R1-R3 and modular payload structure. v1.5 makes the field explicit and fixes it uniquely by FIRAS via Theorem 17.2.",
+      "recommendation": "No hidden-parameter finding remains, but all downstream T_obs/full-GTTP results must inherit FIRAS-fixed R4."
+    },
+    {
+      "audit_target": "FIRAS empirical datum",
+      "candidate_field": "T_FIRAS=2.7255+/-0.0006 K",
+      "verdict": "VERIFIED_EMPIRICAL_INPUT",
+      "evidence": "FIRAS is used as the observer-side thermal datum, not as a target used to validate an independent CMB-temperature prediction.",
+      "recommendation": "Retain manuscript-facing label FIRAS-FIXED UNIQUE READOUT NORMALIZATION."
+    },
+    {
+      "audit_target": "R4 uniqueness theorem",
+      "candidate_field": "R4_FIRAS = ln(T_FIRAS/T_IO)/(K_gauge ln x)",
+      "verdict": "DERIVED_UNIQUENESS_GIVEN_EMPIRICAL_DATUM",
+      "evidence": "Because T_IO>0, T_FIRAS>0, x>0 with x!=1, and K_gauge!=0, log T_obs is affine in R4 with nonzero slope.",
+      "recommendation": "Keep as theorem-grade uniqueness result inside the empirical-normalized readout family."
+    },
+    {
+      "audit_target": "Historical unit readout",
+      "candidate_field": "R4=1",
+      "verdict": "HISTORICAL_RETIRED_NOT_DERIVED",
+      "evidence": "The kappa field-redefinition audit and explicit c-family show R4=1 is close to FIRAS but not internally forced by the Paper 17 modular-projection stack.",
+      "recommendation": "Do not count T_obs(1)=2.725306 K as a zero-parameter CMB prediction."
+    },
+    {
+      "audit_target": "Framework-constructible uniqueness enumeration",
+      "candidate_field": "FIRAS-band algebraic candidate search",
+      "verdict": "CONDITIONAL_VERIFIED_FOR_GAUGE_PAYLOAD_NOT_R4",
+      "evidence": "The enumeration finds 5545 raw in-band hits, but all structurally meaningful framework-native aliases collapse to K_gauge. It does not fix R4.",
+      "recommendation": "Use only as support for K_gauge payload uniqueness; do not use as proof of R4=1."
+    }
+  ],
+  "open_items": [
+    "Plan A derivation of R4=1 from operator algebra alone remains open.",
+    "Extension from reduced thermal-plus-gauge sector to full unreduced horizon algebra remains open.",
+    "GNS standardness/cyclicity/separating/self-adjointness/measurability remain proof-audit items."
+  ]
+}

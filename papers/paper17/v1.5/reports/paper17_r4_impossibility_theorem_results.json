@@ -1,0 +1,102 @@
+{
+  "timestamp_utc": "2026-04-11T07:41:52.677208+00:00",
+  "constants": {
+    "gamma": 0.2375,
+    "x": 1.5189873277742727,
+    "K_gauge": 0.05487281774291466,
+    "T_IO": 2.6635
+  },
+  "theorem": {
+    "name": "R4 underdetermination / impossibility theorem",
+    "status": "derived",
+    "statement": "Within the Paper 17 reduced thermal-plus-gauge construction, if one removes R4 and keeps only the derived operator data plus the geometric conformal coordinate \u03bb, then the bridge from \u03bb to modular time is underdetermined by a constant c. Consequently c = 1 cannot be derived from the current premise package.",
+    "assumptions": [
+      "A1. Paper 17 fixes the reduced physical modular flow on each gauge fiber as exp(i t \u03ba D).",
+      "A2. On the physical Schwarzschild tangential sector, \u03ba = K_gauge = ln(1+\u03b3^2).",
+      "A3. The conformal depth \u03bb = ln(r/R_U) is a continuous additive coordinate on the radial line.",
+      "A4. The physical thermal transfer must be read out by a continuous additive embedding \u03b9: \u03bb -> t(\u03bb) into the modular flow parameter.",
+      "A5. No extra normalization premise equivalent to R4 is supplied."
+    ],
+    "proof": [
+      "Because \u03bb is additive and t(\u03bb) must compose additively under concatenation, t: (R,+) -> (R,+) is a continuous group homomorphism.",
+      "Every continuous endomorphism of (R,+) has the form t(\u03bb) = c \u03bb for some real constant c.",
+      "Substituting into the derived fiber modular flow gives \u03b1_\u03bb = Ad(exp(i c \u03bb \u03ba D)).",
+      "On the physical sector \u03ba = K_gauge, so d(ln \u03c9)/d\u03bb = c K_gauge and therefore \u03c3 = c K_gauge.",
+      "For every c, the resulting \u03bb-parameterized transfer remains Planck-preserving, additive in \u03bb, gauge-central, and \u03b3 -> 0 decoupling.",
+      "Hence the non-R4 premise package admits a continuum of admissible completions.",
+      "A theorem selecting c = 1 from that premise package would contradict existence of the family c != 1 with the same premises.",
+      "Therefore c = 1 is underivable from the current package; equivalently, R4 is irreducible on the current foundation."
+    ],
+    "corollary": "Any future derivation of R4 must add new structure that destroys the c-family, e.g. a theorem identifying the radial geometric action with the modular action at unit normalization."
+  },
+  "model_family": [
+    {
+      "c": 0.5,
+      "embedding": "t = c \u03bb",
+      "sigma": 0.02743640887145733,
+      "transfer_law": "T_obs = T_IO * x^(0.02743640887145733)",
+      "T_obs": 2.6942252068932158,
+      "preserves_non_R4_structure": {
+        "paper13_kms_rigidity": true,
+        "segment_additivity_in_lambda": true,
+        "unique_central_gauge_input_Kg": true,
+        "gamma_to_zero_decoupling": true,
+        "fiberwise_modular_flow_exists": true,
+        "direct_integral_modular_reconstruction": true,
+        "product_flow_nogo": true
+      }
+    },
+    {
+      "c": 0.8,
+      "embedding": "t = c \u03bb",
+      "sigma": 0.04389825419433173,
+      "transfer_law": "T_obs = T_IO * x^(0.04389825419433173)",
+      "T_obs": 2.712830199335826,
+      "preserves_non_R4_structure": {
+        "paper13_kms_rigidity": true,
+        "segment_additivity_in_lambda": true,
+        "unique_central_gauge_input_Kg": true,
+        "gamma_to_zero_decoupling": true,
+        "fiberwise_modular_flow_exists": true,
+        "direct_integral_modular_reconstruction": true,
+        "product_flow_nogo": true
+      }
+    },
+    {
+      "c": 1.0,
+      "embedding": "t = c \u03bb",
+      "sigma": 0.05487281774291466,
+      "transfer_law": "T_obs = T_IO * x^(0.05487281774291466)",
+      "T_obs": 2.7253048490553007,
+      "preserves_non_R4_structure": {
+        "paper13_kms_rigidity": true,
+        "segment_additivity_in_lambda": true,
+        "unique_central_gauge_input_Kg": true,
+        "gamma_to_zero_decoupling": true,
+        "fiberwise_modular_flow_exists": true,
+        "direct_integral_modular_reconstruction": true,
+        "product_flow_nogo": true
+      }
+    },
+    {
+      "c": 1.2,
+      "embedding": "t = c \u03bb",
+      "sigma": 0.06584738129149759,
+      "transfer_law": "T_obs = T_IO * x^(0.06584738129149759)",
+      "T_obs": 2.7378368620722138,
+      "preserves_non_R4_structure": {
+        "paper13_kms_rigidity": true,
+        "segment_additivity_in_lambda": true,
+        "unique_central_gauge_input_Kg": true,
+        "gamma_to_zero_decoupling": true,
+        "fiberwise_modular_flow_exists": true,
+        "direct_integral_modular_reconstruction": true,
+        "product_flow_nogo": true
+      }
+    }
+  ],
+  "external_boundary": {
+    "bw_wiesbrock_note": "Half-sided modular inclusion / BW theorems can fix normalization in settings where a geometric one-parameter symmetry is proved to be the modular group. No such IO radial net theorem exists yet.",
+    "paper17_internal_boundary": "Paper 17 itself introduces R4 as a premise and Paper 18 Step 62 proves independent channel rescaling can preserve all other local consistency checks while changing \u03bb-calibration."
+  }
+}

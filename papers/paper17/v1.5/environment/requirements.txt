@@ -1,0 +1,2 @@
+# Paper 17 v1.5 public validation path uses Python standard library only.
+# Tested with Python 3.11+.
