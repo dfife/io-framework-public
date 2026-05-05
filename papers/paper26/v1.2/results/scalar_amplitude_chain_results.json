@@ -1,0 +1,19 @@
+{
+  "A_s": 2.0072459972737347e-09,
+  "Planck_A_s_reference": 2.1e-09,
+  "factors": {
+    "Q": 1.05640625,
+    "beta_omega_S2_l1": 17.771531752633464,
+    "canonical_source_covariance": 1.353339741696504e-08,
+    "dust_conversion_factor": 2.7777777777777777,
+    "extrinsic_fraction": 0.053394468273923974,
+    "g_H_S2_l1": 1.9139114172056972e-08,
+    "gamma_BI": 0.2375,
+    "omega_hat_S2_l1": 1.4142135623730951
+  },
+  "formula": "A_s = (25/9) * [gamma^2/(1+gamma^2)] * [1/sqrt(2)] * [exp(4*pi*sqrt(2))-1]^-1",
+  "fractional_delta_vs_Planck": -0.044168572726793066,
+  "paper": "Paper 26 v1.2",
+  "sigma_delta_vs_Planck": -3.0918000908755148,
+  "status": "DERIVED/CONDITIONAL on C1 + C2c"
+}

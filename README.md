@@ -113,6 +113,14 @@ The current Paper 25 support bundle is:
 - manifest:
   `metadata/manifests/paper25_v1_3_repro_bundle.json`
 
+The current Paper 26 support bundle is:
+
+- `papers/paper26/v1.2/`
+- validation command:
+  `python3 papers/paper26/v1.2/scripts/07_validate_expected_outputs.py`
+- manifest:
+  `metadata/manifests/paper26_v1_2_repro_bundle.json`
+
 The current Paper 24 support bundle is:
 
 - `papers/paper24/v2.3/`
@@ -150,6 +158,7 @@ The manifest is in:
 - `metadata/manifests/paper21_v1_7_repro_bundle.json`
 - `metadata/manifests/paper22_v1_6_repro_bundle.json`
 - `metadata/manifests/paper25_v1_3_repro_bundle.json`
+- `metadata/manifests/paper26_v1_2_repro_bundle.json`
 - `metadata/manifests/paper24_v2_2_repro_bundle.json`
 - `metadata/manifests/paper31_practical_bundle.json`
 - `metadata/manifests/calculator_phase3_foundation_bundle.json`

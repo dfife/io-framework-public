@@ -1,0 +1,20 @@
+{
+  "audit": "kappa_style_field_redefinition",
+  "bridge_variable_hygiene": "Active body text uses gamma delta K bridge with delta Gamma killed; inherited step text contains older delta Gamma phrasing and should be clarified in v1.2.",
+  "core_verdict": "no hidden continuous fitted parameter found; headline values remain conditional on C1, C2c, AV1, and C3",
+  "hidden_continuous_parameter_found": false,
+  "hygiene_finding": "v1.1 body reports chi2=7714 for a clustering-source diagnostic; current local reproducible typed-native artifact gives 8133.493 for the comparable route. v1.2 should align text to the bundle artifact or explicitly label the older row.",
+  "must_not_say": [
+    "Paper 26 proves all CMB inputs theorem-grade.",
+    "tau_eff_IO is identical to astrophysical tau_reio.",
+    "high-l TT reionization-shape insensitivity closes low-l EE.",
+    "the v1.1 legacy chi2=7714 row is the current bundled reproducible CLASS row without qualification."
+  ],
+  "paper": "Paper 26 v1.2",
+  "visible_conditionals": {
+    "AV1": "Thomson-gated scalar CMB observables belong to the acoustic baryon class.",
+    "C1": "Background extrinsic/intrinsic gauge partition inherited by fluctuation covariance.",
+    "C2c": "Boundary covariance on the proved S2 coexact carrier is the Hawking thermal covariance.",
+    "C3": "CMB source covariance uses inverse tangential propagator readout."
+  }
+}

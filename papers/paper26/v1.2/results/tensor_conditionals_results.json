@@ -1,0 +1,15 @@
+{
+  "betaomega_tensor": 25.132741228718345,
+  "claim_boundary": "Conditional estimate only; not a theorem-grade primordial tensor prediction.",
+  "g_tensor": 1.2161556709557224e-11,
+  "omega_hat_tensor": 2.0,
+  "paper": "Paper 26 v1.2",
+  "quoted_range": {
+    "r_max": 0.000635429445700943,
+    "r_min": 0.0004493164700207459
+  },
+  "r_canonical_g_over_omega_ratio": 0.0004493164700207459,
+  "r_raw_g_ratio": 0.000635429445700943,
+  "status": "CONDITIONAL; tensor bridge payload, boundary carrier, and transport remain open",
+  "tensor_case": "rank2_tensor_like_lambda4"
+}

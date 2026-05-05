@@ -1,0 +1,18 @@
+{
+  "bundle": "paper26_v1_2_repro_bundle",
+  "paper": "Paper 26",
+  "version": "v1.2",
+  "path": "papers/paper26/v1.2/",
+  "release_tag": "paper26-v1.2",
+  "validation_command": "python3 papers/paper26/v1.2/scripts/07_validate_expected_outputs.py",
+  "expected_validation_summary": "SUMMARY total_checks=18 pass_count=18 fail_count=0",
+  "headline_values": {
+    "A_s": 2.0072459972737347e-09,
+    "tau_eff_IO": 0.02743640887145733,
+    "A_eff": 1.9000701645543414e-09,
+    "omega_b_eff": 0.0291,
+    "reionization_shape_max_delta_chi2_TT_highl": 0.3706526281876412
+  },
+  "claim_boundary": "Conditional on C1, C2c, AV1, and C3; no hidden continuous fitted parameter found.",
+  "created": "2026-05-05"
+}

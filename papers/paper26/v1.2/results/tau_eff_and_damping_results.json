@@ -1,0 +1,12 @@
+{
+  "A_eff": 1.9000701645543414e-09,
+  "A_s": 2.0072459972737347e-09,
+  "K_gauge": 0.05487281774291466,
+  "LCDM_TT_extraction_reference": 1.885e-09,
+  "damping_factor_exp_minus_K_gauge": 0.9466055317260761,
+  "fractional_delta_vs_LCDM_TT": 0.007994782256945035,
+  "low_ell_EE_closed": false,
+  "paper": "Paper 26 v1.2",
+  "status": "DERIVED/CONDITIONAL on C3",
+  "tau_eff_IO": 0.02743640887145733
+}

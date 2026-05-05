@@ -1,0 +1,121 @@
+{
+  "paper": "Paper 26",
+  "version_audited": "v1.1",
+  "audit_type": "kappa_style_field_redefinition",
+  "date": "May 2026",
+  "executive_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "summary": "No unlabelled continuous fitted parameter was found, but Paper 26's headline replacements remain conditional on C1, C2c, AV1, and C3.",
+    "manuscript_hygiene_issue": "Body text says the scalar bridge reads gamma delta K while inherited step material contains older delta Gamma phrasing. Use body text as active claim unless v1.2 revises it."
+  },
+  "active_values": {
+    "A_s": 2.0072459972737347e-09,
+    "A_s_planck_reference": 2.1e-09,
+    "A_s_fractional_delta": -0.04416857272679301,
+    "tau_eff_IO": 0.02743640887145733,
+    "A_eff": 1.9000701645543414e-09,
+    "omega_b_geom": 0.02108,
+    "omega_b_eff": 0.0291,
+    "omega_b_clustering": 0.01705,
+    "reio_shape_max_delta_chi2_highl": 0.3706526281876412
+  },
+  "visible_conditionals": {
+    "C1": "Background extrinsic/intrinsic gauge partition inherited by fluctuation covariance.",
+    "C2c": "Boundary covariance on the proved S2 coexact carrier is the Hawking thermal covariance.",
+    "AV1": "Thomson-gated scalar CMB observables belong to the acoustic baryon class.",
+    "C3": "CMB source covariance uses inverse tangential propagator readout."
+  },
+  "candidate_fields": [
+    {
+      "field": "gamma_BI",
+      "classification": "DERIVED/SCOPED_UPSTREAM_INPUT",
+      "hidden_parameter": false
+    },
+    {
+      "field": "25/9 dust superhorizon conversion",
+      "classification": "DERIVED_ON_DUST_SUPERHORIZON_BRANCH",
+      "hidden_parameter": false
+    },
+    {
+      "field": "S2 ell=1 coexact carrier",
+      "classification": "C2a_DERIVED__C2b_DERIVED_GEOMETRIC_CONSTRUCTION__C2c_CONDITIONAL",
+      "hidden_parameter": false
+    },
+    {
+      "field": "Hawking exponent 4 pi sqrt(2)",
+      "classification": "DERIVED_CONDITIONAL_ON_C2c",
+      "hidden_parameter": false
+    },
+    {
+      "field": "Bose occupation",
+      "classification": "DERIVED_CONDITIONAL_ON_C2c",
+      "hidden_parameter": false
+    },
+    {
+      "field": "canonical normalization 1/sqrt(2)",
+      "classification": "DERIVED_FROM_CANONICAL_THERMAL_COORDINATE_CONVENTION",
+      "hidden_parameter": false
+    },
+    {
+      "field": "extrinsic fraction gamma^2/(1+gamma^2)",
+      "classification": "CONDITIONAL_ON_C1",
+      "hidden_parameter": false
+    },
+    {
+      "field": "A_s formula",
+      "classification": "DERIVED_CONDITIONAL_ON_C1_PLUS_C2c",
+      "hidden_parameter": false
+    },
+    {
+      "field": "tensor-to-scalar ratio branch",
+      "classification": "CONDITIONAL_SPECIFICATION",
+      "hidden_parameter": false
+    },
+    {
+      "field": "three baryon densities",
+      "classification": "DERIVED_SCOPED_UPSTREAM_VALUES",
+      "hidden_parameter": false
+    },
+    {
+      "field": "Thomson Kernel Lemma",
+      "classification": "DERIVED_EQUATION_LEVEL_FACT",
+      "hidden_parameter": false
+    },
+    {
+      "field": "AV1 visibility class assignment",
+      "classification": "CONDITIONAL_VISIBLE",
+      "hidden_parameter": false
+    },
+    {
+      "field": "CLASS baryon diagnostic chi-square values",
+      "classification": "VERIFIED_DIAGNOSTIC",
+      "hidden_parameter": false
+    },
+    {
+      "field": "tau_eff = K_gauge/2",
+      "classification": "DERIVED_CONDITIONAL_ON_C3",
+      "hidden_parameter": false
+    },
+    {
+      "field": "A_eff = A_s exp(-K_gauge)",
+      "classification": "DERIVED_CONDITIONAL_AND_VERIFIED_ARITHMETIC",
+      "hidden_parameter": false
+    },
+    {
+      "field": "reionization shape high-l TT irrelevance",
+      "classification": "VERIFIED_COMPUTATIONAL_DIAGNOSTIC",
+      "hidden_parameter": false
+    }
+  ],
+  "anti_fit_backstop": {
+    "continuous_fit_performed": false,
+    "highest_risk": "C2c Hawking state selection is not theorem-forced, but it is explicitly conditional.",
+    "bbn_wrapper_corrections_affect_paper26": false
+  },
+  "recommendations_for_v1_2": [
+    "Add public Code and Data Availability section pointing at paper26-v1.2 bundle.",
+    "Keep C1, C2c, AV1, and C3 visible in Scope/Open Premises.",
+    "Fix or annotate stale inherited delta Gamma bridge-variable phrasing.",
+    "Do not claim low-l EE reionization closure from the TT high-l shape diagnostic."
+  ]
+}

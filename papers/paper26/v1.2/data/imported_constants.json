@@ -1,0 +1,77 @@
+{
+  "paper": "Paper 26",
+  "bundle_version": "v1.2",
+  "source_manuscript_state": "Paper 26 v1.1 active text; v1.2 support bundle adds public reproducibility artifacts and kappa-audit hygiene.",
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "x": 1.519,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "Delta": 5.624216852624105,
+    "omega_b_geom": 0.02108,
+    "omega_b_eff": 0.0291,
+    "omega_b_clustering": 0.01705,
+    "H0_IO": 67.58,
+    "Omega_k_IO": -0.006,
+    "n_s_IO": 0.9639,
+    "alpha_s_IO": 5e-05,
+    "YHe": 0.2477
+  },
+  "scalar_amplitude": {
+    "formula": "A_s = (25/9) * [gamma^2/(1+gamma^2)] * [1/sqrt(2)] * [exp(4*pi*sqrt(2))-1]^-1",
+    "dust_conversion_factor": 2.7777777777777777,
+    "extrinsic_fraction": 0.053394468273923946,
+    "beta_omega_S2_l1": 17.771531752633464,
+    "g_H_S2_l1": 1.9139114172056972e-08,
+    "omega_hat_S2_l1": 1.4142135623730951,
+    "canonical_source_covariance": 1.353339741696504e-08,
+    "A_s": 2.0072459972737347e-09,
+    "Planck_A_s_reference": 2.1e-09,
+    "Planck_A_s_sigma": 3e-11,
+    "fractional_delta_vs_Planck": -0.04416857272679301,
+    "sigma_delta_vs_Planck": -3.09180009087551,
+    "conditionals": ["C1", "C2c"]
+  },
+  "tensor_conditionals": {
+    "rank2_tensor_like_lambda4": {
+      "betaomega_tensor": 25.132741228718345,
+      "g_tensor": 1.2161556709557224e-11,
+      "omega_hat_tensor": 2.0,
+      "r_canonical_g_over_omega_ratio": 0.0004493164700207459,
+      "r_raw_g_ratio": 0.000635429445700943
+    },
+    "status": "CONDITIONAL; tensor bridge payload, boundary carrier, and transport remain open"
+  },
+  "tau_eff": {
+    "tau_eff_IO": 0.02743640887145733,
+    "damping_factor": 0.9466055317260761,
+    "A_eff": 1.9000701645543414e-09,
+    "LCDM_TT_extraction_reference": 1.885e-09,
+    "fractional_delta_vs_LCDM_TT": 0.007994782257471552,
+    "conditionals": ["C3"]
+  },
+  "cmb_baryon_diagnostic": {
+    "onefluid_eff_chi2_TT_highl": 2281.086162276891,
+    "typed_native_chi2_TT_highl": 8133.4934835173035,
+    "typed_native_delta_chi2_TT_highl": 5852.407321240413,
+    "typed_native_100theta_s": 1.0357858057791183,
+    "onefluid_eff_100theta_s": 1.0408337342190783,
+    "manuscript_v1_1_legacy_clustering_claim": 7714,
+    "manuscript_hygiene_note": "v1.1 body reports chi2=7714 for a clustering-source diagnostic; current local reproducible typed-native artifact gives 8133.493 for the comparable route. v1.2 should align text to the bundle artifact or explicitly label the older row.",
+    "conditionals": ["AV1"]
+  },
+  "reionization_shape": {
+    "baseline_reio_camb_chi2_TT_highl": 2281.086162276892,
+    "reio_none_posthoc_geometric_damping_chi2_TT_highl": 2281.4568149050797,
+    "max_shape_shift_chi2_TT_highl": 2281.4568149050797,
+    "max_delta_chi2_TT_highl": 0.3706526281876412,
+    "max_shape_sweep_case": "reio_none_posthoc_geometric_damping",
+    "low_ell_EE_caveat": true
+  },
+  "visible_conditionals": {
+    "C1": "Background extrinsic/intrinsic gauge partition inherited by fluctuation covariance.",
+    "C2c": "Boundary covariance on the proved S2 coexact carrier is the Hawking thermal covariance.",
+    "AV1": "Thomson-gated scalar CMB observables belong to the acoustic baryon class.",
+    "C3": "CMB source covariance uses inverse tangential propagator readout."
+  }
+}
