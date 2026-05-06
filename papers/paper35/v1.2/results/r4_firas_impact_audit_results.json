@@ -1,0 +1,125 @@
+{
+  "R4_FIRAS": {
+    "T_FIRAS_K": 2.7255,
+    "T_IO_K": 2.6635,
+    "T_obs_FIRAS_fixed_K": 2.7255,
+    "T_obs_R4_equals_1_K_historical": 2.7253048490552736,
+    "claim_boundary": "FIRAS-fixed empirical observer-side thermal datum; not an independent CMB-temperature prediction",
+    "readout_formula": "T_obs(R4) = T_IO * x_R4_source^(R4*K_gauge)",
+    "recomputed_from_FIRAS": 1.0031014644105183,
+    "sigma_FIRAS_only": 0.009596597151571828,
+    "value": 1.0031014644105183
+  },
+  "classification": "verified / R4-FIRAS impact audit",
+  "numeric_impacts": {
+    "T_f_poplawski_eta_target_GeV": {
+      "new_R4_FIRAS": 22001575354474.027,
+      "note": "The chiral diagnostic T_f is unchanged; this entry is the eta-derived external target-compatibility scale.",
+      "old_R4_equals_1": 22003938597477.8,
+      "relative_shift": -0.00010740090885563713
+    },
+    "T_obs_K": {
+      "delta": 0.00019515094472621897,
+      "new_R4_FIRAS": 2.7255,
+      "old_R4_equals_1": 2.7253048490552736,
+      "relative_shift": 7.160701482389342e-05
+    },
+    "Y_B_target": {
+      "new_R4_FIRAS": 8.16412462132233e-11,
+      "old_R4_equals_1": 8.165878572689907e-11,
+      "relative_shift": -0.00021479028275572798
+    },
+    "eps1_kappa_target": {
+      "new_R4_FIRAS": 5.9040123297910706e-08,
+      "old_R4_equals_1": 5.905280726708112e-08,
+      "relative_shift": -0.00021479028275572798
+    },
+    "eta_BBN_proton_mass": {
+      "new_R4_FIRAS": 6.150846821132321e-10,
+      "old_R4_equals_1": 6.150846821132321e-10,
+      "reason_invariant": "eta_late(T_obs) * (T_obs/T_IO)^3 reduces to the local T_IO photon-density calculation.",
+      "relative_shift": 0.0
+    },
+    "eta_late_mean_baryon_mass": {
+      "new_R4_FIRAS": 5.74754373341092e-10,
+      "old_R4_equals_1": 5.748778515173695e-10,
+      "relative_shift": -0.000214790282755839
+    },
+    "eta_late_proton_mass": {
+      "new_R4_FIRAS": 5.740562582347311e-10,
+      "old_R4_equals_1": 5.74179586430453e-10,
+      "relative_shift": -0.00021479028275572798
+    },
+    "jwst_jades_z14_delta_myr": {
+      "delta_myr": -0.0014869041638974068,
+      "new_FIRAS_T_cmb": 135.78545472450128,
+      "old_T_cmb_2p7253": 135.78694162866518
+    },
+    "jwst_z10_ratio": {
+      "new_FIRAS_T_cmb": 1.4785718590092163,
+      "old_T_cmb_2p7253": 1.478575721721601,
+      "relative_shift": -2.612454896855354e-06
+    },
+    "temperature_conversion_factor": {
+      "new_R4_FIRAS": 1.0714710854379792,
+      "old_R4_equals_1": 1.071240943860573,
+      "relative_shift": 0.00021483642753317156
+    }
+  },
+  "paper": "Paper 35 v1.2",
+  "script_impacts": [
+    {
+      "r4_damage_status": "impacted_and_repaired",
+      "reason": "Late-time eta uses observer photon bath T_obs; v1.2 uses FIRAS-fixed R4 instead of implicit R4=1.",
+      "script": "01_eta_derivation_chain.py"
+    },
+    {
+      "r4_damage_status": "impacted_and_repaired",
+      "reason": "Conversion factor changes to x_R4_source^(3 R4_FIRAS K_gauge); eta_BBN remains invariant after consistent recomputation.",
+      "script": "02_temperature_assignment.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses K_gauge powers and diagnostic Planck scale only.",
+      "script": "03_chiral_source_diagnostic.py"
+    },
+    {
+      "r4_damage_status": "impacted_and_repaired",
+      "reason": "Uses eta_late as target input; the target shifts with FIRAS-fixed T_obs.",
+      "script": "04_leptogenesis_target_reduction.py"
+    },
+    {
+      "r4_damage_status": "registry_counts_not_impacted",
+      "reason": "The 48-surface CLEAN/CONDITIONAL_VERIFIED counts do not depend on the eta numerical shift.",
+      "script": "05_baryogenesis_registry_summary.py"
+    },
+    {
+      "r4_damage_status": "minor_input_hygiene",
+      "reason": "Radiation-density T_cmb input now uses FIRAS empirical temperature rather than retired 2.7253 shorthand.",
+      "script": "06_jwst_formation_time_table.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses late-time DESI BAO branch parameters; no optical thermal readout.",
+      "script": "07_desi_confrontation.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses f_b=2 gamma/x and direct-detection limit checks only.",
+      "script": "08_dark_matter_null_forecast.py"
+    },
+    {
+      "r4_damage_status": "impacted_and_repaired",
+      "reason": "Expected outputs updated to v1.2 FIRAS-fixed values.",
+      "script": "10_validate_expected_outputs.py"
+    }
+  ],
+  "verdict": {
+    "DESI_changed": false,
+    "R4_used_by_eta_BBN": false,
+    "R4_used_by_eta_late": true,
+    "cmb_temperature_prediction_present": false,
+    "dark_matter_null_changed": false,
+    "eta_BBN_changed_when_recomputed_consistently": false
+  }
+}

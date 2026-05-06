@@ -1,0 +1,37 @@
+{
+  "claim_boundary": "conditional consistency check, not a forecast model",
+  "conditional_forecast_statement": {
+    "falsifier": "a robust direct-detection signal above approximately 5 GeV in the cited channels would falsify the IO geometric dark-sector interpretation",
+    "if_interpretation_correct": "continued nulls in canonical xenon-WIMP search channels are expected",
+    "not_claimed": "this script does not compute a new WIMP event-rate or forecast model"
+  },
+  "experimental_limit_checks": {
+    "LZ_2024": {
+      "limit_cm2": 2.2e-48,
+      "mass_GeV": 40.0,
+      "matches_manuscript_limit": true,
+      "matches_manuscript_mass": true,
+      "source": "https://arxiv.org/abs/2410.17036"
+    },
+    "PandaX4T": {
+      "limit_cm2": 1.6e-47,
+      "mass_GeV": 40.0,
+      "matches_manuscript_limit": true,
+      "matches_manuscript_mass": true,
+      "source": "https://pandax.sjtu.edu.cn/Publications"
+    },
+    "XENONnT": {
+      "limit_cm2": 2.58e-47,
+      "mass_GeV": 28.0,
+      "matches_manuscript_limit": true,
+      "matches_manuscript_mass": true,
+      "source": "https://www.weizmann.ac.il/particle/xenon/publications"
+    }
+  },
+  "framework_ledger": {
+    "f_b": 0.3127083362150814,
+    "formula": "f_b = 2 gamma_BI / x"
+  },
+  "script": "08_dark_matter_null_forecast.py",
+  "status": "verified"
+}

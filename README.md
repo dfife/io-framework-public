@@ -106,11 +106,11 @@ The current Paper 34 support bundle is:
 
 The current Paper 35 support bundle is:
 
-- `papers/paper35/v1.1/`
+- `papers/paper35/v1.2/`
 - validation command:
-  `python3 papers/paper35/v1.1/scripts/09_validate_expected_outputs.py`
+  `python3 papers/paper35/v1.2/scripts/10_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper35_v1_1_repro_bundle.json`
+  `metadata/manifests/paper35_v1_2_repro_bundle.json`
 
 The current Paper 21 support bundle is:
 

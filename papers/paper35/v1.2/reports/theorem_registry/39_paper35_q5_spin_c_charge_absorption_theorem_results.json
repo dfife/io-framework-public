@@ -1,0 +1,24 @@
+{
+  "mission": "Reduce the final puncture-U(1) Paper 35 frontier by absorbing the fermionic U(1) charge into the line-bundle degree at the index level.",
+  "theorem_1_charge_absorption": {
+    "status": "derived / exact index-level reduction",
+    "statement": "For a U(1) line bundle L over S^2 and an integer fermionic charge q, coupling the fermionic bridge to L with charge q is equivalent at the twisted-Dirac/index level to coupling unit charge to the associated bundle L^q. Therefore the separate data (L, q) collapse to the single integer degree n = q c1(L)[S^2].",
+    "formulas": {
+      "charge_lift": "L, q  \u21a6  L^q",
+      "chern_class": "c1(L^q) = q c1(L)",
+      "index": "ind D_(L^q) = c1(L^q)[S^2] = q c1(L)[S^2]"
+    }
+  },
+  "theorem_2_final_integer_frontier": {
+    "status": "derived / strongest exact current frontier reduction",
+    "statement": "The last live positive Paper 35 Q5 route reduces to one exact integer: the degree n_punct seen by the fermionic bridge in the puncture-U(1) sector. All remaining line-bundle/charge ambiguity is absorbed into that single index integer.",
+    "imports": {
+      "previous_missing_integer": "n = q_chi c1(L_punct)[S^2] \u2208 Z \\ {0}"
+    },
+    "exact_missing_integer": "n_punct = q_chi c1(L_punct)[S^2] \u2208 Z \\ {0}"
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 final exact boundary",
+    "safe_statement": "Paper 35 is now reduced to one exact unresolved integer on the current route: the puncture-U(1) index degree n_punct seen by the fermionic bridge. Without a theorem deriving n_punct \u2260 0 from the full puncture-resolved horizon algebra, baryogenesis remains closed on the current stack."
+  }
+}

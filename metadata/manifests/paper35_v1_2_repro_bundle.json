@@ -1,0 +1,33 @@
+{
+  "bundle": "paper35-v1.2-repro",
+  "classification": "verified / public-reproducibility-support / R4-FIRAS repaired",
+  "paper": "Paper 35 v1.2",
+  "root": "papers/paper35/v1.2",
+  "validation_command": "python3 papers/paper35/v1.2/scripts/10_validate_expected_outputs.py",
+  "validation_expected_summary": "SUMMARY total_checks=38 pass_count=38 fail_count=0",
+  "r4_boundary": {
+    "R4_FIRAS": 1.0031014644105183,
+    "source": "Paper 17 v1.5 FIRAS-fixed unique observer-side thermal readout normalization",
+    "cmb_temperature_prediction_retired": true
+  },
+  "core_files": [
+    "papers/paper35/v1.2/README.md",
+    "papers/paper35/v1.2/MANIFEST.md",
+    "papers/paper35/v1.2/VERSION.md",
+    "papers/paper35/v1.2/CITATION.cff",
+    "papers/paper35/v1.2/data/imported_constants.json",
+    "papers/paper35/v1.2/scripts/01_eta_derivation_chain.py",
+    "papers/paper35/v1.2/scripts/02_temperature_assignment.py",
+    "papers/paper35/v1.2/scripts/03_chiral_source_diagnostic.py",
+    "papers/paper35/v1.2/scripts/04_leptogenesis_target_reduction.py",
+    "papers/paper35/v1.2/scripts/05_baryogenesis_registry_summary.py",
+    "papers/paper35/v1.2/scripts/06_jwst_formation_time_table.py",
+    "papers/paper35/v1.2/scripts/07_desi_confrontation.py",
+    "papers/paper35/v1.2/scripts/08_dark_matter_null_forecast.py",
+    "papers/paper35/v1.2/scripts/09_r4_firas_impact_audit.py",
+    "papers/paper35/v1.2/scripts/10_validate_expected_outputs.py",
+    "papers/paper35/v1.2/results/r4_firas_impact_audit_results.json",
+    "papers/paper35/v1.2/reports/paper35_v12_r4_firas_kappa_audit_report.md",
+    "papers/paper35/v1.2/reports/paper35_v12_r4_firas_kappa_audit_results.json"
+  ]
+}

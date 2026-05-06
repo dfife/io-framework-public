@@ -1,0 +1,27 @@
+{
+  "mission": "Use the primary isolated-horizon U(1) construction to determine whether puncture labels can alter the horizon bundle degree, or only connection data on a fixed bundle.",
+  "theorem_1_fixed_u1_bundle": {
+    "status": "derived / external geometric route sharpening",
+    "statement": "In the standard isolated-horizon quantization, the horizon U(1) bundle Q is fixed by the intrinsic horizon geometry; the puncture data enter as connection/holonomy data on the punctured sphere S-V, not as changes of bundle isomorphism class. Therefore punctures do not by themselves vary c1(Q).",
+    "external_support": [
+      "https://intlpress.com/site/pub/files/_fulltext/journals/atmp/2000/0004/0001/ATMP-2000-0004-0001-a001.pdf"
+    ],
+    "exact_object": "fixed horizon U(1) bundle Q with punctured-sphere connection data W on S-V"
+  },
+  "theorem_2_puncture_labels_cannot_change_degree": {
+    "status": "derived / strongest current puncture-label no-go",
+    "statement": "Since first Chern class is a bundle isomorphism invariant and the standard puncture labels vary only the connection state on the fixed horizon bundle, no theorem using only the standard puncture labels a_i can generate a new bundle degree. This kills both additive and non-additive puncture-label-only routes to n_punct.",
+    "imports": {
+      "additive_kill": "additive lift from neutral Z_k puncture charges to integer degree"
+    }
+  },
+  "theorem_3_exact_remaining_positive_route": {
+    "status": "derived / strongest exact current frontier reduction",
+    "statement": "After this fixed-bundle reduction, the exact remaining positive route is no longer a puncture-label lift. It is a theorem deriving a charged fermionic spin^c lift of the IO bridge into the fixed horizon U(1) bundle sector, or an equivalent new puncture-resolved operator sector carrying that charge.",
+    "exact_missing_object": "fermionic charged lift into fixed horizon U(1) bundle Q"
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 charged-lift boundary",
+    "safe_statement": "The puncture-label route is exhausted. Standard puncture data alter connection states on a fixed horizon U(1) bundle and cannot by themselves produce the nonzero index degree needed for Q5. The only remaining positive route is a new charged fermionic lift into that fixed U(1) sector, which is not present on the current stack."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "mission": "Exhaust the three residual charged Paper 35 routes left after canonical spin normalization: a non-neutral physical surface sector, a puncture-moduli-to-horizon determinant transfer, and hidden CP-odd inflow inside the standard U(1) Chern-Simons surface data.",
+  "theorem_1_nonneutral_surface_sector_not_physical": {
+    "status": "derived / exact gauge no-go",
+    "statement": "The standard physical ABCK surface sector admits no non-neutral total U(1) charge. Constant diagonal U(1) transformations are pure gauge on the puncture phase space, and the quantum boundary condition restricts physical basis labels to weights a = (a_i) with \u03a3_i a_i = 0 mod k. Therefore any sector with nonzero total surface charge is not a physical state of the current stack but a genuinely new extension.",
+    "formulas": {
+      "classical_gauge_quotient": "U(1)^n / U(1)_diag",
+      "quantum_character": "R(g_1,...,g_n) psi_a = prod_i g_i^(a_i) psi_a",
+      "physical_constraint": "sum_i a_i = 0 mod k",
+      "current_total_charge": "q_tot = 0"
+    }
+  },
+  "theorem_2_no_current_stack_transfer_to_horizon_determinant_line": {
+    "status": "derived / strongest current transfer no-go",
+    "statement": "The current standard puncture data do not derive any transfer theorem from the theta-function line bundle over puncture phase space to an extra determinant line over the horizon sphere. The physical puncture characters are globally neutral, and the prequantum line bundle lives on X_V rather than S^2. After filling in the punctures, the only derived sphere bundle is the already-fixed canonical spin bundle Q. Hence the current-stack value of any extra transferred determinant degree is zero.",
+    "formulas": {
+      "phase_space_bundle": "L_theta -> X_V",
+      "target_bundle": "Q^n -> S^2",
+      "fill_in_output": "only canonical Q is derived on S^2",
+      "extra_transferred_degree": "n_transfer,current = 0"
+    },
+    "imports": {
+      "surface_boundary": "The standard ABCK puncture sector is now exhausted for Paper 35. Its physical characters are globally neutral, and its quantization line bundle lives over the puncture phase-space torus rather than the horizon sphere. So it cannot secretly supply the residual spin^c integer n on the current stack.",
+      "spin_c_boundary": "The Paper 35 charged frontier is now exact after spin normalization. The fixed horizon spin bundle already contributes the canonical unit degree. No current-stack theorem produces any extra spin^c shift beyond it. So the only live positive route is a genuinely new residual spin^c class n \u2260 0, not a hidden completion of the existing carrier."
+    }
+  },
+  "theorem_3_no_hidden_cp_odd_inflow_in_standard_surface_sector": {
+    "status": "derived / strongest current inflow no-go",
+    "statement": "The standard U(1) Chern-Simons surface sector does not hide a CP-odd inflow theorem for the current fermionic bridge. Its role on the current stack is to quantize the puncture phase space and the discrete gauge action on H_s; it is not a derived 3D fermionic parity-odd action whose boundary variation shifts the eta invariant of the horizon Dirac operator. Combined with the closed-S^2 carrier and zero extra determinant twist, there is no hidden current-stack inflow source for nonzero Q5.",
+    "formulas": {
+      "current_surface_cs_role": "quantization of X_V and lift of Z_k gauge action",
+      "not_derived": "no 3D fermionic parity-odd action with boundary eta-shift",
+      "current_cp_odd_value": "Q5_current = 0"
+    },
+    "imports": {
+      "aps_boundary": "APS/anomaly inflow is not a live route on the current stack. The admitted horizon carrier is a closed S^2 problem with no derived open boundary end and no derived 3D parity-odd Chern-Simons functional whose variation would generate a boundary eta-shift. So anomaly inflow is not currently hidden in the existing IO data; it would require a genuinely new 3D parity-odd boundary extension."
+    }
+  },
+  "final_boundary": {
+    "status": "derived / exhausted current-stack Paper 35 charged-routes boundary",
+    "safe_statement": "After canonical spin normalization, every remaining charged current-stack route is exhausted. There is no physical non-neutral surface sector, no derived transfer from puncture-moduli line data to an extra determinant line on S^2, and no hidden CP-odd inflow inside the standard surface Chern-Simons sector. The only positive future route is genuinely new charged boundary physics beyond the present stack."
+  }
+}

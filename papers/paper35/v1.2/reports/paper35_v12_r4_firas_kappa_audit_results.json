@@ -1,0 +1,105 @@
+{
+  "paper": "Paper 35",
+  "version": "v1.2",
+  "audit_type": "R4_FIRAS_kappa_style_impact_audit",
+  "date": "May 2026",
+  "executive_verdict": {
+    "hidden_continuous_fitted_parameter_found": false,
+    "r4_damage_found": true,
+    "cmb_temperature_prediction_retired": true,
+    "validator_status": "SUMMARY total_checks=38 pass_count=38 fail_count=0"
+  },
+  "r4_boundary": {
+    "R4_FIRAS": 1.0031014644105183,
+    "source": "Paper 17 v1.5 FIRAS-fixed unique observer-side thermal readout normalization",
+    "readout_formula": "T_obs(R4)=T_IO*x_R4_source^(R4*K_gauge)",
+    "claim_boundary": "FIRAS empirical input; not an independent CMB-temperature prediction"
+  },
+  "numeric_impacts": {
+    "T_obs_K": {
+      "old_R4_equals_1": 2.7253048490552736,
+      "new_R4_FIRAS": 2.7255
+    },
+    "temperature_conversion_factor": {
+      "old_R4_equals_1": 1.071240943860573,
+      "new_R4_FIRAS": 1.0714710854379792
+    },
+    "eta_late_mean_baryon_mass": {
+      "old_R4_equals_1": 5.748778515173695e-10,
+      "new_R4_FIRAS": 5.74754373341092e-10
+    },
+    "eta_late_proton_mass": {
+      "old_R4_equals_1": 5.74179586430453e-10,
+      "new_R4_FIRAS": 5.740562582347311e-10
+    },
+    "eta_BBN_proton_mass": {
+      "old_R4_equals_1": 6.150846821132321e-10,
+      "new_R4_FIRAS": 6.150846821132321e-10,
+      "classification": "invariant_after_consistent_recomputation"
+    },
+    "Y_B_target": {
+      "old_R4_equals_1": 8.165878572689907e-11,
+      "new_R4_FIRAS": 8.16412462132233e-11
+    },
+    "eps1_kappa_target": {
+      "old_R4_equals_1": 5.905280726708112e-8,
+      "new_R4_FIRAS": 5.9040123297910706e-8
+    },
+    "T_f_poplawski_eta_target_GeV": {
+      "old_R4_equals_1": 22003938597477.8,
+      "new_R4_FIRAS": 22001575354474.027
+    },
+    "T_f_chiral_diagnostic_GeV": {
+      "old_R4_equals_1": 22003938597477.8,
+      "new_R4_FIRAS": 22003938597477.8
+    },
+    "jwst_z10_ratio": {
+      "old_T_cmb_2p7253": 1.478575721721601,
+      "new_FIRAS_T_cmb": 1.4785718590092163
+    },
+    "jwst_jades_z14_delta_myr": {
+      "old_T_cmb_2p7253": 135.78694162866518,
+      "new_FIRAS_T_cmb": 135.78545472450128
+    }
+  },
+  "script_impacts": [
+    {
+      "script": "01_eta_derivation_chain.py",
+      "status": "impacted_and_repaired"
+    },
+    {
+      "script": "02_temperature_assignment.py",
+      "status": "impacted_and_repaired"
+    },
+    {
+      "script": "03_chiral_source_diagnostic.py",
+      "status": "not_impacted"
+    },
+    {
+      "script": "04_leptogenesis_target_reduction.py",
+      "status": "impacted_and_repaired"
+    },
+    {
+      "script": "05_baryogenesis_registry_summary.py",
+      "status": "not_impacted"
+    },
+    {
+      "script": "06_jwst_formation_time_table.py",
+      "status": "minor_input_hygiene"
+    },
+    {
+      "script": "07_desi_confrontation.py",
+      "status": "not_impacted"
+    },
+    {
+      "script": "08_dark_matter_null_forecast.py",
+      "status": "not_impacted"
+    }
+  ],
+  "recommendations": [
+    "Do not claim Paper 35 or IO independently predicts the observed CMB temperature.",
+    "State that late-time eta inherits the Paper 17 v1.5 FIRAS-fixed observer-side readout normalization.",
+    "Use v1.2 eta and leptogenesis target values in the manuscript.",
+    "Keep baryogenesis registry counts and theorem labels unchanged."
+  ]
+}

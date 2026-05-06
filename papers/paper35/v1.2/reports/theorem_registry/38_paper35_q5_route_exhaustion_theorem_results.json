@@ -1,0 +1,64 @@
+{
+  "mission": "Exhaust the remaining current-stack positive routes for a theorem-grade nonzero Q5 and reduce the frontier to its exact final missing object.",
+  "theorem_1_s2_bundle_classification": {
+    "status": "derived / external topology",
+    "statement": "For connected structure group G, principal G-bundles over S^2 are classified by [S^2, BG] = pi_2(BG) = pi_1(G). Therefore principal SU(2)-bundles over S^2 are topologically trivial, while U(1)-bundles over S^2 are classified by H^2(S^2,Z) = Z.",
+    "formulas": {
+      "connected_G": "Bun_G(S^2) \u2245 [S^2, BG] = pi_2(BG) = pi_1(G)",
+      "su2_case": "pi_1(SU(2)) = 0",
+      "u1_case": "Bun_U(1)(S^2) \u2245 H^2(S^2, Z) \u2245 Z"
+    },
+    "external_support": [
+      "https://math.uchicago.edu/~may/MISC/ChapterI.pdf",
+      "https://math.uchicago.edu/~amathew/dirac.pdf"
+    ]
+  },
+  "theorem_2_su2_twist_route_dead": {
+    "status": "derived / conditional / scoped no-go",
+    "statement": "The current puncture/gauge-center route is SU(2)-based. Since principal SU(2)-bundles over S^2 are topologically trivial, SU(2) data alone cannot supply the nonzero first Chern class required by the 2D Dirac index law. Therefore the generic 'puncture/Chern-Simons twist' route is dead unless a genuinely Abelian determinant line or spin^c reduction is derived.",
+    "imports": {
+      "current_carrier": "h_spin^br = L^2(R,dnu) \u2297 H_g \u2297 \u0393(S^2, S_{S^2} \u2297 M_{1/2})",
+      "previous_topology": "The admitted Paper 32 fermionic bridge carrier is the standard spinor bundle on the closed horizon 2-sphere tensored with multiplicity factors. In the current construction no nontrivial line/vector bundle over S^2, no puncture-resolved gauge connection with nonzero first Chern class, and no APS-type open boundary end are derived."
+    },
+    "current_values": {
+      "pi1_SU2": 0,
+      "c1_from_SU2_route": 0
+    }
+  },
+  "theorem_3_non_kms_seed_not_live": {
+    "status": "derived / current-stack no-go",
+    "statement": "A non-KMS parity-odd seed is not a live route on the current stack. The existing fermionic boundary theorem already fixes the lowest-shell boundary seed as the unique beta_H-KMS quasi-free CAR state at fixed Hawking temperature. A chiral chemical potential or other non-KMS bias would therefore be genuinely new boundary physics, not a hidden completion already licensed by the current stack.",
+    "imports": {
+      "kms_lock": "On the new fermionic lowest-shell bridge quotient, the canonical boundary seed is the beta_H-KMS quasi-free CAR state.",
+      "chirality_boundary": "The current extension does not derive a preferred chirality. Without a parity-odd or chiral selector theorem, the two horizon chiral sectors remain symmetry-related."
+    },
+    "current_values": {
+      "mu5_current": 0
+    }
+  },
+  "theorem_4_aps_inflow_not_live": {
+    "status": "derived / current-stack no-go",
+    "statement": "APS/anomaly inflow is not a live route on the current stack. The admitted horizon carrier is a closed S^2 problem with no derived open boundary end and no derived 3D parity-odd Chern-Simons functional whose variation would generate a boundary eta-shift. So anomaly inflow is not currently hidden in the existing IO data; it would require a genuinely new 3D parity-odd boundary extension.",
+    "imports": {
+      "aps_absent": false
+    }
+  },
+  "theorem_5_exact_final_q5_frontier": {
+    "status": "derived / strongest exact current frontier reduction",
+    "statement": "After exhausting the current-stack routes, the only exact positive Q5 route left is a derived Abelian determinant-line or spin^c twist on the horizon with nonzero integer charge n = c1(L)[S^2]. Every other current-stack route has been reduced away.",
+    "exact_missing_object": "n = c1(L)[S^2] \u2208 Z \\ {0}",
+    "equivalent_missing_structure": [
+      "a derived U(1) determinant line on the horizon",
+      "a derived nontrivial spin^c twist of the horizon Dirac problem"
+    ],
+    "not_currently_derived_from": [
+      "the current untwisted Paper 32 fermionic bridge carrier",
+      "the current Hawking/KMS lowest-shell seed theorem",
+      "the current closed-S^2 boundary problem without APS/inflow data"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 Q5 exhaustion boundary",
+    "safe_statement": "The remaining Paper 35 CP-odd frontier is now exact. On the current stack, Q5 can only be revived by deriving a nontrivial Abelian/spin^c horizon twist with n = c1(L)[S^2] \u2260 0. The SU(2) puncture route, the non-KMS seed route, and the APS/inflow route are not live current-stack completions."
+  }
+}

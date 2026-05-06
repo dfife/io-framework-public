@@ -1,0 +1,74 @@
+{
+  "mission": "Determine whether the admitted horizon carrier can support a theorem-grade nonzero boundary pseudoscalar Q5 through spectral asymmetry or index, or whether the route is topologically/spectrally dead on the current stack.",
+  "theorem_1_current_carrier_is_untwisted": {
+    "status": "derived / conditional / scoped reduction",
+    "statement": "The admitted Paper 32 fermionic bridge carrier is the standard spinor bundle on the closed horizon 2-sphere tensored with multiplicity factors. In the current construction no nontrivial line/vector bundle over S^2, no puncture-resolved gauge connection with nonzero first Chern class, and no APS-type open boundary end are derived.",
+    "carrier": "h_spin^br = L^2(R,dnu) \u2297 H_g \u2297 \u0393(S^2, S_{S^2} \u2297 M_{1/2})",
+    "grading": "chirality projector \u03a0_\u03c7 = (1 + \u03c7 \u0393_H)/2 on S^2 spinors",
+    "current_bundle_model": "S_{S^2} \u2297 C^N over closed S^2",
+    "topological_data": {
+      "c1_current": 0,
+      "aps_boundary_term_present": false,
+      "puncture_resolved_twist_derived": false
+    },
+    "local_support": [
+      "/opt/cosmology-lab/results/paper32/paper32_fermionic_chiral_bridge_sector_construction_report.md",
+      "/opt/cosmology-lab/results/paper19/paper19_isolated_horizon_certification_report.txt",
+      "/opt/cosmology-lab/results/paper19/paper19_regge_teitelboim_upgrade_report.txt"
+    ]
+  },
+  "theorem_2_zero_index_zero_kernel": {
+    "status": "derived / conditional / scoped no-go",
+    "statement": "On the admitted untwisted closed-sphere carrier, the horizon Dirac operator has no theorem-grade source of index. Positive scalar curvature kills untwisted harmonic spinors, and the active reduced sector already carries a nonzero lowest shell |lambda_D| = 1/r_s. Therefore the admitted current carrier has zero kernel and zero chiral index.",
+    "formulas": {
+      "explicit_gap": "|lambda_D| = 1/r_s",
+      "untwisted_index": "ind D = 0",
+      "twisted_surface_index": "ind D_L = c1(L)[S^2]"
+    },
+    "numerics": {
+      "lambda_dirac_low_m_inv": 1.4958863126402366e-27,
+      "omega_dirac_low_s_inv": 4.48455434554973e-19,
+      "index_current": 0
+    },
+    "external_support": [
+      "https://math.uchicago.edu/~amathew/dirac.pdf",
+      "https://arxiv.org/abs/hep-th/0512063"
+    ]
+  },
+  "theorem_3_zero_spectral_asymmetry": {
+    "status": "derived / conditional / scoped no-go",
+    "statement": "On the closed even-dimensional untwisted horizon carrier, the Dirac operator anticommutes with the chirality operator. Hence nonzero eigenvalues occur in \u00b1\u03bb pairs. Combined with zero kernel, the eta-invariant contribution vanishes, so no spectral asymmetry exists from which a nonzero Q5 could be derived.",
+    "formulas": {
+      "chirality_anticommutation": "{Gamma_H, D} = 0",
+      "paired_spectrum": "Spec(D) \\ {0} = {\u00b1lambda_j}",
+      "eta_current": "eta_D(0) = 0"
+    },
+    "current_values": {
+      "eta_current": 0,
+      "Q5_spectral_source_current": 0
+    }
+  },
+  "theorem_4_q5_rigidity_on_current_stack": {
+    "status": "derived / strongest current Paper 35 no-go",
+    "statement": "The current-stack statement Q5 = 0 is stronger than a missing-sign statement. It is rigid on the admitted carrier: with an untwisted closed-sphere bridge, zero Dirac index, zero eta-invariant, a chirality-symmetric Hawking/KMS seed, and unitary representation-preserving radial transport, no theorem-grade nonzero Q5 can arise on the current stack.",
+    "imports": {
+      "seed_boundary": "The current extension does not derive a preferred chirality. Without a parity-odd or chiral selector theorem, the two horizon chiral sectors remain symmetry-related.",
+      "transport_boundary": "On the spherically symmetric support branch, radial spin transport commutes with the SO(3) action on the sphere, so it preserves the total-angular-momentum representation type. In particular, a J=1/2 seed remains in the J=1/2 sector.",
+      "previous_q5_boundary": "On the current Hawking/KMS seed, no chirality selector is derived. The two chiral sectors remain symmetry-related, so the minimal CP-odd datum vanishes on the current stack.",
+      "scalar_map": "Y_(B-L)^source = Q5 * F(M1, m_tilde1, theta(R))"
+    },
+    "current_values": {
+      "Q5": 0,
+      "Y_source_current": 0
+    },
+    "positive_routes_not_currently_derived": [
+      "derive a nontrivial twisted horizon bundle with c1(L)[S^2] = n \u2260 0 from the full puncture-resolved/Chern-Simons boundary algebra",
+      "derive a genuine APS/anomaly-inflow contribution from a 3D extension of the boundary problem",
+      "derive a non-KMS parity-odd boundary seed that breaks the current chirality symmetry"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 no-go",
+    "safe_statement": "The live Paper 35 CP-odd frontier is no longer 'find a sign'. On the admitted current horizon carrier, Q5 is topologically and spectrally rigid at zero. Any positive future route must derive genuinely new twist/inflow/seed data beyond the current untwisted S^2 fermionic bridge."
+  }
+}

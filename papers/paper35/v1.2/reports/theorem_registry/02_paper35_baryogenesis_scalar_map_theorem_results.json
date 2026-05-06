@@ -1,0 +1,34 @@
+{
+  "mission": "Derive the strongest symmetry-level source map for the remaining Paper 35 scalar frontier.",
+  "theorem_1_scalar_data_completeness": {
+    "status": "derived / exact reduction",
+    "statement": "After the current-stack reductions, every remaining scalar datum relevant to the baryogenesis source map belongs to the list {(M1, m_tilde1), Q5, theta(R)}. No additional operator-class data remain.",
+    "remaining_scalar_data": [
+      "CP-even magnitude pair: (M1, m_tilde1)",
+      "CP-odd boundary scalar: Q5 = N_+ - N_-",
+      "support-side scalar production history: lambda(R), equivalently theta(R)"
+    ]
+  },
+  "theorem_2_cp_parity_factorization": {
+    "status": "derived / exact symmetry theorem",
+    "statement": "The visible precursor Y_(B-L) is CP-odd. The residual data M1, m_tilde1, and theta(R) are CP-even scalars, while Q5 is the unique residual CP-odd scalar. Therefore any admissible source map must factor through Q5 and vanish when Q5 = 0.",
+    "formula": "Y_(B-L)^source = Q5 * F(M1, m_tilde1, theta(R))"
+  },
+  "theorem_3_current_stack_zero_source": {
+    "status": "derived / exact current-stack no-go",
+    "statement": "Because the current stack gives Q5 = 0, the source asymmetry vanishes identically on the current stack irrespective of the unresolved support-side scalar production history theta(R) and irrespective of the unresolved CP-even magnitude selector.",
+    "current_values": {
+      "Q5": 0,
+      "theta_req_rad": 0.0005651829699589429
+    }
+  },
+  "final_boundary": {
+    "status": "derived / strongest current Paper 35 no-go",
+    "safe_statement": "The dominant remaining Paper 35 bottleneck is now exact: without a theorem generating nonzero Q5, baryogenesis is impossible on the current stack even if the support-side scalar production law theta(R) were supplied.",
+    "still_needed_for_positive_closure": [
+      "a theorem deriving nonzero Q5 on the boundary sector",
+      "a theorem selecting the CP-even magnitude pair (M1, m_tilde1)",
+      "a theorem deriving the support-side scalar production history theta(R)"
+    ]
+  }
+}

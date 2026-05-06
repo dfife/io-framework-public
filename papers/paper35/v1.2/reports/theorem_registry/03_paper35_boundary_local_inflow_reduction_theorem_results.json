@@ -1,0 +1,35 @@
+{
+  "mission": "Sharpen the future APS/inflow route by reducing the geometric bulk datum Y under a boundary-locality condition.",
+  "theorem_1_s2_boundary_three_manifold_reduction": {
+    "status": "derived / scoped topology",
+    "statement": "Any compact connected oriented 3-manifold Y with boundary S^2 can be capped by a 3-ball to form a closed oriented 3-manifold M, so Y is diffeomorphic to M with one open 3-ball removed. Thus the boundary data always sit on a canonical collar/3-ball neighborhood of the boundary sphere.",
+    "formulas": {
+      "capping": "Y union_{S^2} B^3 = M_closed",
+      "reduction": "Y \u2245 M_closed \\ int(B^3)",
+      "boundary_collar": "near-boundary geometry reduces to S^2 x [0,1]"
+    }
+  },
+  "theorem_2_boundary_local_inflow_depends_only_on_kappa_odd": {
+    "status": "conditional / sharpened future-target reduction",
+    "statement": "If the future eta-shift is boundary-local, meaning it depends only on a collar neighborhood of S^2 and a parity-odd bulk coupling, then the closed interior summand M_closed decouples from the boundary eta variation. Under that condition the inflow route reduces from the pair (Y, kappa_odd) to the single coupling datum kappa_odd on a canonical 3-ball/collar extension.",
+    "formulas": {
+      "locality_hypothesis": "delta eta depends only on collar(S^2 subset Y)",
+      "future_minimal_object": "kappa_odd",
+      "canonical_model": "B^3 or S^2 x [0,1] with parity-odd bulk term"
+    }
+  },
+  "theorem_3_current_stack_value": {
+    "status": "derived / current-stack consequence",
+    "statement": "The present stack derives no parity-odd bulk coupling at all. Therefore even under the boundary-locality reduction, the current-stack value is kappa_odd = 0.",
+    "formulas": {
+      "current_kappa_odd": "0"
+    },
+    "imports": {
+      "inflow_boundary": "The APS/anomaly-inflow route is fully reduced. On the current stack there is no hidden inflow object. Any future positive route must explicitly derive a parity-odd 3D extension pair (Y, kappa_odd) producing a nonzero boundary eta shift."
+    }
+  },
+  "final_boundary": {
+    "status": "conditional / sharpened future inflow target",
+    "safe_statement": "Under the natural boundary-locality hypothesis, the future inflow route reduces from (Y, kappa_odd) to the single parity-odd coupling datum kappa_odd on a canonical 3-ball/collar extension. On the current stack, kappa_odd = 0."
+  }
+}
