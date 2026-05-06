@@ -13,6 +13,7 @@ It is intended to hold:
 
 Current public focus:
 
+- IO Framework Conventions v2.0
 - Paper 24 v2.3 reproducibility bundle
 - Paper 31 practical calculator and audit bundles
 - calculator Phase 3 perturbation-foundation release slice
@@ -20,6 +21,7 @@ Current public focus:
 
 See also:
 
+- `docs/conventions_v2.md`
 - `papers/paper24/v2.3/README.md`
 - `docs/paper31.md`
 - `docs/calculators.md`

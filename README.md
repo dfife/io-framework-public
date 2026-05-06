@@ -40,17 +40,40 @@ This repository should not be a raw mirror of the private lab.
 
 ## Claim Discipline
 
-When public material is added here, claims should follow the same labeling used
-in the lab:
+When public material is added here, claims must follow the active IO Framework
+labeling convention. The full reference is:
 
-- `derived`
-- `verified`
-- `conditional`
-- `reconstruction`
-- `speculative`
+- `docs/conventions_v2.md`
+- canonical live URL: `https://dfife.github.io/data/conventions_v2.md`
 
-Numerical agreement is not derivation. Public artifacts should preserve enough
-detail for independent rerun and review.
+Core labels:
+
+- `DERIVED/THEOREM`: mathematically proved from stated assumptions,
+  definitions, and previously banked derived results.
+- `DERIVED/SCOPED`: theorem-grade only on the explicitly stated domain,
+  observable class, branch, or reduced sector.
+- `DERIVED/NO-GO`: theorem-grade exclusion of a route or class.
+- `VERIFIED`: computationally or documentarily reproduced for the stated
+  scope; verification is not derivation.
+- `CONDITIONAL`: depends on a surfaced premise, bridge, class-membership
+  statement, empirical datum, or extension package.
+- `CONDITIONAL_VERIFIED`: a conditional theorem or theorem chain whose
+  conditions are explicit and whose dependency path has been verified back to
+  Premise 1 and/or Premise 2. This is load-bearing only within the declared
+  condition package; it is not an unconditional theorem and it cannot hide a
+  fitted parameter.
+- `DERIVED/CONDITIONAL on [premise]`: local derivation is complete, but the
+  result inherits a named conditional premise.
+- `RECONSTRUCTION`: coherent explanatory model or zero-parameter construction
+  not yet forced by theorem.
+- `SPECULATIVE`: idea worth exploring, not yet established.
+- `SUPERSEDED` or `Historical/SUPERSEDED`: inherited material whose framing or
+  active status has been retired by a later correction.
+
+Numerical agreement is not derivation. A conditional result may remain
+compatible with the zero-fitted-parameters discipline only when the condition is
+visible, the chain is reproducible, and no value is retuned against downstream
+observables.
 
 ## Current Public Bundles
 
