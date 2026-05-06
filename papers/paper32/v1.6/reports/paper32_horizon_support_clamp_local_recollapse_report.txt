@@ -1,0 +1,22 @@
+Paper 32: Horizon Support Clamp Local Recollapse Audit
+
+Question
+- What exact local post-clamp continuation is selected on the physical hidden
+  support variable by the inward acceleration law and the clamp initial data?
+
+Executive result
+- derived: the IVP
+    Rddot = - c^2 r_s / (2 R^2),  R(0)=r_s,  Rdot(0)=0
+  integrates to
+    Rdot^2 = c^2 (r_s/R - 1)
+  and has the unique OS recollapse parametrization
+    R(theta) = (r_s/2)(1+cos theta)
+    Delta tau(theta) = (r_s/2c)(theta + sin theta)
+  for 0 <= theta <= pi.
+- verified: crunch occurs in finite proper time
+    Delta tau_crunch = 110.993262888709 Gyr.
+- verified milestones:
+    R = 0.5 r_s at 90.826884321627 Gyr
+    R = 0.25 r_s at 104.592405106319 Gyr
+    R = 0.10 r_s at 109.456357714601 Gyr
+    R = 0.01 r_s at 110.946013801842 Gyr

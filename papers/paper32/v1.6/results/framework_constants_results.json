@@ -1,0 +1,53 @@
+{
+  "claim_boundary": {
+    "R4_downstream_rule": "R4_FIRAS is fixed once and may not be retuned against downstream observables.",
+    "R4_equals_1_status": "historical diagnostic only",
+    "R4_status": "unique algebraic normalization given FIRAS empirical thermal datum",
+    "observed_CMB_temperature_status": "FIRAS-fixed empirical readout, not independent IO prediction"
+  },
+  "classification": "verified / arithmetic reproduction / R4-FIRAS repaired",
+  "consistency_checks": {
+    "Delta_equals_x4_Q": true,
+    "R4_input_matches_FIRAS_inversion": true,
+    "T_obs_FIRAS_fixed_equals_T_FIRAS": true,
+    "f_Gamma_equals_inverse_Q": true
+  },
+  "derived": {
+    "Delta": 5.624216852624105,
+    "K_gauge": 0.05487281774291466,
+    "K_gauge_ln_x": 0.022939703473371237,
+    "M_U_implied_by_harmonized_r_s_kg": 4.500980155114114e+53,
+    "Q": 1.05640625,
+    "R4_FIRAS": 1.0031014644105183,
+    "R_U_m": 4.400921658986175e+26,
+    "T_obs_FIRAS_fixed_K": 2.7255,
+    "T_obs_R4_equals_1_K": 2.725306096638128,
+    "T_obs_R4_equals_1_minus_FIRAS_K": -0.00019390336187186108,
+    "T_obs_R4_equals_1_minus_FIRAS_sigma": -0.32317226978643515,
+    "effective_sigma_R4_K_gauge": 0.05504300383424916,
+    "f_Gamma": 0.9466055317260761,
+    "f_baryon_2gamma_over_x": 0.3127057274522712,
+    "ln_Delta": 1.7270817121974578,
+    "ln_x": 0.41805222361363575,
+    "n_s": 0.963875696021781,
+    "r_s_from_nominal_M_U_m": 6.6835442422068e+26,
+    "sigma_R4_FIRAS_only": 0.009596597151571828,
+    "sqrt_Delta": 2.371543137415827,
+    "tau_eff_IO": 0.02743640887145733,
+    "thermal_transfer_factor_FIRAS_fixed": 1.0232776422001126,
+    "thermal_transfer_factor_R4_equals_1": 1.0232048419891602,
+    "x_crit": 0.9863754613328337
+  },
+  "inputs": {
+    "M_U_nominal_kg": 4.5e+53,
+    "R4_FIRAS_input": 1.0031014644105183,
+    "T_FIRAS_K": 2.7255,
+    "T_IO_K": 2.6635,
+    "gamma_BI": 0.2375,
+    "r_s_harmonized_m": 6.685e+26,
+    "sigma_T_FIRAS_K": 0.0006,
+    "x": 1.519
+  },
+  "paper": "Paper 32 v1.6",
+  "precision_note": "Paper 32 late-time scripts use r_s_harmonized_m, not r_s recomputed from rounded M_U_nominal_kg."
+}

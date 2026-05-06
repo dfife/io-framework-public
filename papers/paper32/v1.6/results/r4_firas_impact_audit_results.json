@@ -1,0 +1,147 @@
+{
+  "audit": "R4_FIRAS_impact_audit",
+  "classification": "verified / impact ledger",
+  "global_verdict": {
+    "cmb_prediction_retired": true,
+    "downstream_R4_rule": "R4_FIRAS is fixed once by FIRAS and cannot be adjusted against downstream observables.",
+    "hidden_new_parameter_added": false,
+    "paper32_core_results_changed": false,
+    "paper32_core_results_unchanged": [
+      "Rddot and Lambda dropout",
+      "x_crit",
+      "111/222 Gyr timescale arithmetic",
+      "KB7 active source-block validation",
+      "n_s",
+      "A_s",
+      "universal GMP characterization"
+    ]
+  },
+  "manuscript_damage_locations": [
+    {
+      "damage": "Claims zero-free-parameter predictions for T_CMB.",
+      "paragraph": 305,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Retire independent T_CMB prediction wording; state T_IO is derived and observed CMB is FIRAS-normalized through Paper 17 v1.5."
+    },
+    {
+      "damage": "States T_obs = T_IO*x^K_gauge = 2.7253 K as active formula.",
+      "paragraph": 350,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Replace with T_obs(R4)=T_IO*x^(R4*K_gauge), R4_FIRAS=1.0031014644105183."
+    },
+    {
+      "damage": "Code/Data section points to v1.5 bundle and unqualified T_obs reproduction.",
+      "paragraph": 442,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Update to v1.6 bundle and describe T_obs as FIRAS-fixed readout."
+    },
+    {
+      "damage": "Open Problems list merges R4/P4 normalization and marks it closed by KB7.",
+      "paragraph": 446,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Split P4 source-block closure from Paper 17 optical R4. P4 remains DERIVED/SCOPED by KB7; R4 is FIRAS-fixed by Paper 17 v1.5."
+    },
+    {
+      "damage": "States T_obs = T_IO*exp(K_gauge/2) = T_IO*sqrt(1+gamma^2) = 2.7253 K.",
+      "paragraph": 703,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Retire as erroneous/historical; use Paper 17 v1.5 readout family."
+    },
+    {
+      "damage": "Temperature Transfer Theorem says structural pieces force T_obs = T_IO*x^K_gauge.",
+      "paragraph": 704,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Downgrade to forcing the readout family and gauge payload; R4 fixed separately by FIRAS."
+    },
+    {
+      "damage": "Uses ln(T_obs/T_IO)=K_gauge*ln x or equivalent.",
+      "paragraphs": [
+        713,
+        715,
+        791
+      ],
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Replace with ln(T_obs/T_IO)=R4*K_gauge*ln x for the optical readout family."
+    },
+    {
+      "damage": "Treats gamma_BI prediction from FIRAS inversion as DERIVED.",
+      "paragraph": 717,
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Reframe as consistency diagnostic, not derivation of gamma_BI from FIRAS."
+    },
+    {
+      "damage": "R1-R4 / one-e-fold normalization language implies optical R4 forced by modular stack.",
+      "paragraphs": [
+        764,
+        765,
+        766
+      ],
+      "source": "Paper 32 v1.5 extracted text",
+      "v1_6_action": "Separate R1-R3/gauge payload from FIRAS-fixed optical R4."
+    }
+  ],
+  "numeric_change": {
+    "K_gauge": 0.05487281774291466,
+    "K_gauge_ln_x": 0.022939703473371237,
+    "R4_FIRAS": 1.0031014644105183,
+    "R4_shift": 0.0031014644105182843,
+    "R4_unit_historical": 1.0,
+    "T_FIRAS_K": 2.7255,
+    "T_IO_K": 2.6635,
+    "T_obs_FIRAS_fixed_K": 2.7255,
+    "T_obs_R4_equals_1_K": 2.725306096638128,
+    "T_obs_R4_equals_1_minus_FIRAS_K": -0.00019390336187186108,
+    "T_obs_R4_equals_1_minus_FIRAS_sigma": -0.32317226978643515,
+    "ln_x": 0.41805222361363575,
+    "relative_transfer_shift_FIRAS_vs_R4_equals_1": 7.114920489526e-05,
+    "sigma_T_FIRAS_K": 0.0006
+  },
+  "paper": "Paper 32 v1.6",
+  "script_impacts": [
+    {
+      "r4_damage_status": "impacted_and_repaired",
+      "reason": "v1.5 computed T_obs = T_IO*x^K_gauge as active observed CMB value; v1.6 computes T_obs(R4_FIRAS) and keeps R4=1 only as historical diagnostic.",
+      "script": "01_compute_framework_constants.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses c and r_s only; no optical readout normalization.",
+      "script": "02_recollapse_acceleration.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses Q and x in Delta boundary identity; no T_obs or R4.",
+      "script": "03_x_crit_identity.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses r_s, c, and bounce attachment ledger; no T_obs or R4.",
+      "script": "04_recollapse_cycle_timescales.py"
+    },
+    {
+      "r4_damage_status": "wording_boundary_only",
+      "reason": "KB7 validates P4 on the active reduced scalar source block; it must not be read as deriving Paper 17 optical thermal R4.",
+      "script": "05_kb7_source_block_validation.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses n_s = 1 - K_gauge/x; no optical R4.",
+      "script": "06_n_s_derivation_chain.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Uses Hawking boundary-state amplitude formula; no optical R4.",
+      "script": "07_a_s_derivation_chain.py"
+    },
+    {
+      "r4_damage_status": "not_impacted",
+      "reason": "Classifies GMP domains; no CMB-temperature calculation.",
+      "script": "08_universal_gmp_classification.py"
+    },
+    {
+      "r4_damage_status": "impacted_and_repaired",
+      "reason": "Validation expectations changed from T_obs_K at R4=1 to T_obs_FIRAS_fixed_K and R4_FIRAS.",
+      "script": "10_validate_expected_outputs.py"
+    }
+  ]
+}
