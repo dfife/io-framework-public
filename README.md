@@ -98,11 +98,11 @@ The current Paper 32 support bundle is:
 
 The current Paper 34 support bundle is:
 
-- `papers/paper34/v1.1/`
+- `papers/paper34/v1.2/`
 - validation command:
-  `python3 papers/paper34/v1.1/scripts/04_validate_expected_outputs.py`
+  `python3 papers/paper34/v1.2/scripts/05_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper34_v1_1_repro_bundle.json`
+  `metadata/manifests/paper34_v1_2_repro_bundle.json`
 
 The current Paper 35 support bundle is:
 
@@ -185,6 +185,7 @@ The manifest is in:
 - `metadata/manifests/paper24_v2_3_repro_bundle.json`
 - `metadata/manifests/paper32_v1_6_repro_bundle.json`
 - `metadata/manifests/paper32_v1_5_repro_bundle.json`
+- `metadata/manifests/paper34_v1_2_repro_bundle.json`
 - `metadata/manifests/paper34_v1_1_repro_bundle.json`
 - `metadata/manifests/paper35_v1_1_repro_bundle.json`
 - `metadata/manifests/paper17_v1_5_repro_bundle.json`

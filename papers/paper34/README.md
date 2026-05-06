@@ -5,6 +5,8 @@ Fitted Parameters*.
 
 Available bundles:
 
-- `v1.1/`: current support package for Paper 34 v1.1.
+- `v1.2/`: current support package for Paper 34 v1.2, including the
+  R4/FIRAS non-dependency audit.
+- `v1.1/`: previous support package for Paper 34 v1.1.
 
 Use the version matching the manuscript being read.
