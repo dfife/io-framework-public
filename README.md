@@ -46,34 +46,52 @@ labeling convention. The full reference is:
 - `docs/conventions_v2.md`
 - canonical live URL: `https://dfife.github.io/data/conventions_v2.md`
 
-Core labels:
+Active public labels:
 
 - `DERIVED/THEOREM`: mathematically proved from stated assumptions,
   definitions, and previously banked derived results.
-- `DERIVED/SCOPED`: theorem-grade only on the explicitly stated domain,
-  observable class, branch, or reduced sector.
+- `DERIVED/CONDITIONAL_VERIFIED`: mathematically derived inside a declared
+  condition package whose dependency path has been explicitly verified back to
+  Premise 1, Premise 2, or an openly imported and frozen empirical/physics
+  input. This is the required public label for load-bearing results that were
+  previously called scoped or conditional.
 - `DERIVED/NO-GO`: theorem-grade exclusion of a route or class.
 - `VERIFIED`: computationally or documentarily reproduced for the stated
   scope; verification is not derivation.
-- `CONDITIONAL`: depends on a surfaced premise, bridge, class-membership
-  statement, empirical datum, or extension package.
-- `CONDITIONAL_VERIFIED`: a conditional theorem or theorem chain whose
-  conditions are explicit and whose dependency path has been verified back to
-  Premise 1 and/or Premise 2. This is load-bearing only within the declared
-  condition package; it is not an unconditional theorem and it cannot hide a
-  fitted parameter.
-- `DERIVED/CONDITIONAL on [premise]`: local derivation is complete, but the
-  result inherits a named conditional premise.
+- `IMPORTED/EMPIRICAL`: accepted external measurement, literature value, or
+  standard-physics input used openly and frozen; it is not counted as an IO
+  prediction.
 - `RECONSTRUCTION`: coherent explanatory model or zero-parameter construction
   not yet forced by theorem.
-- `SPECULATIVE`: idea worth exploring, not yet established.
+- `RECONSTRUCTION/RESEARCH_ONLY`: non-authoritative discovery scaffold or
+  research aid; not evidence and not load-bearing.
+- `OPEN/PREMISE_GAP`: a missing bridge, class-membership proof, normalization,
+  or premise chain prevents promotion to a public active theorem.
 - `SUPERSEDED` or `Historical/SUPERSEDED`: inherited material whose framing or
   active status has been retired by a later correction.
 
-Numerical agreement is not derivation. A conditional result may remain
-compatible with the zero-fitted-parameters discipline only when the condition is
-visible, the chain is reproducible, and no value is retuned against downstream
-observables.
+Retired active labels:
+
+- Bare `CONDITIONAL`, `CONDITIONAL/THEOREM`,
+  `DERIVED/CONDITIONAL on [premise]`, `DERIVED/SCOPED`,
+  `CONDITIONAL/SCOPED`, and `VERIFIED/SCOPED` are no longer acceptable as
+  final public labels for active load-bearing claims.
+- If the scoped or conditional chain is explicitly audited back to Premise 1,
+  Premise 2, or an openly imported frozen empirical/physics input, replace the
+  old label with `DERIVED/CONDITIONAL_VERIFIED`.
+- If that trace is missing, demote the claim to `OPEN/PREMISE_GAP`,
+  `RECONSTRUCTION/RESEARCH_ONLY`, or `SUPERSEDED/HISTORICAL`.
+
+Numerical agreement is not derivation. A scoped or conditional-looking result
+may remain compatible with the zero-fitted-parameters discipline only when the
+condition is visible, the chain is reproducible, the dependency path is
+verified, and no value is retuned against downstream observables.
+
+Kappa-style fitted-parameter audits must include this status-label check:
+for every theorem or theorem surface labeled outside the active Claim
+Discipline taxonomy, recommend a replacement active label or a demotion to
+`OPEN/PREMISE_GAP`, `RECONSTRUCTION/RESEARCH_ONLY`, or
+`SUPERSEDED/HISTORICAL`.
 
 ## Current Public Bundles
 
