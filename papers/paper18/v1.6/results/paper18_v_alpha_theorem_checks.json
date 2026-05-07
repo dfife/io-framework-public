@@ -1,0 +1,16 @@
+{
+  "numeric_gamma_0.2375": {
+    "Q = 1 + gamma^2": "1.05640625",
+    "V = ln(Q)": "0.05487281774291466853993002024108132685498502588415444639949305478458665220427991568358619597758420604",
+    "V_double_prime = 2 Q": "2.11281250",
+    "V_prime = 2 gamma": "0.4750"
+  },
+  "symbolic": {
+    "ODE_residual_V_double_prime_minus_2expV": "0",
+    "V(0)": "0",
+    "V_double_prime - 2(1+tan(alpha)^2)": "0",
+    "V_prime - 2 tan(alpha)": "0",
+    "V_prime(0)": "0",
+    "exp(V) - (1+tan(alpha)^2)": "0"
+  }
+}

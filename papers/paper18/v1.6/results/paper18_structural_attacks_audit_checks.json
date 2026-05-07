@@ -1,0 +1,24 @@
+{
+  "attack1_commutative_modular_fact": {
+    "statement": "On an abelian algebra, the modular automorphism of the algebra is trivial; the nontrivial object is the relative modular operator between weights.",
+    "status": "valid_terminology_attack"
+  },
+  "attack2_bdp_time_dependence": {
+    "gamma": 0.2375,
+    "eta_s": 1.248585523971,
+    "x_horizon": 1.0,
+    "x_observer": 1.518989999999727,
+    "naive_fb_horizon": 0.475,
+    "naive_fb_observer": 0.31270778609476385,
+    "naive_percent_shift": 51.8989999999727
+  },
+  "attack3_coordinate_pullback": {
+    "gamma": 0.2375,
+    "alpha": 0.2331798006468164,
+    "beta": 0.23532209333218304,
+    "V_alpha": 0.054872817742914706,
+    "V_beta": 0.05487281774291455,
+    "difference": 1.5959455978986625e-16
+  },
+  "kruskal_exact_factor": 1.2130613194252668
+}

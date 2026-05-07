@@ -1,0 +1,164 @@
+Paper 18
+Active Equality Redshift and Kruskal-BBN Near-Match Audit
+
+Question
+
+    1. Recalculate z_eq on the active Schur branch:
+
+           H_0 = 68.91 km/s/Mpc,
+           Omega_m = 0.335,
+           T_0 = 2.7253 K,
+           N_eff = Delta.
+
+    2. Test whether the exact Paper 2 Kruskal lapse factor
+
+           2 / sqrt(e) = 1.213061...
+
+       can be formalized on H_IO as the BBN frame factor.
+
+
+Executive result
+
+    1. The active Schur-branch equality redshift is
+
+           z_eq = 2824.708747...
+
+       not the old geometric-branch value 1758.
+
+    2. The 2/sqrt(e) to BBN-factor match is not theorem-grade on H_IO.
+       The exact Kruskal factor is a horizon-local instantaneous Jacobian.
+       The active theorem-grade BBN/CMB frame split is the Paper 12 / Paper 18 quantity
+
+           F = <K> x / (8 gamma) = 1.380756...
+
+       not the legacy ad hoc target F_opt ~= 1.205.
+
+       Therefore the 0.7% match to 1.205 is, at present, a numerical coincidence between
+       different observable classes, not a theorem.
+
+
+==================================================
+I. Active z_eq
+==================================================
+
+Use the active Paper 18 radiation sector:
+
+    H_0 = 68.91 km/s/Mpc,
+    Omega_m = 0.335,
+    T_0 = 2.7253 K,
+    N_eff = Delta = 5.62421685262410640625.
+
+Then
+
+    omega_gamma h^2
+    = 2.4728e-5 (T_0 / 2.7255 K)^4
+    = 2.4720742534350698e-5,
+
+    omega_r h^2
+    = omega_gamma h^2 [1 + 0.22710731766 N_eff]
+    = 5.629656683257952e-5,
+
+    Omega_r
+    = (omega_r h^2)/h^2
+    = 1.1855432740645484e-4,
+
+    z_eq
+    = Omega_m / Omega_r - 1
+    = 2824.7087474460295.
+
+Comparison to the old Paper 3 geometric value:
+
+    z_eq(active) - z_eq(legacy) = 1066.708747...,
+    z_eq(active) / z_eq(legacy) = 1.606774...
+
+So the active projected Schur branch moves equality sharply upward from the old geometric-only
+branch, though it still remains below the standard LambdaCDM value near 3400.
+
+
+==================================================
+II. What 2/sqrt(e) Actually Is
+==================================================
+
+Paper 2 proves exactly:
+
+    lim_{eta -> 0+} (tau_tilde / T_K) = 2 / sqrt(e).
+
+This is the instantaneous Kruskal-to-proper-time Jacobian at the horizon. Paper 2 also states
+explicitly that it must not be confused with later integrated or transferred frame quantities.
+
+Within the Paper 17 / Paper 18 H_IO language, this places 2/sqrt(e) in the horizon-local
+gravitational history / lapse sector, not in the baryon-transfer sector.
+
+
+==================================================
+III. What the Active BBN Frame Factor Is
+==================================================
+
+The active early-time frame split in the published framework is the Paper 12 BDP factor
+
+    F = eta_CMB / eta_BBN
+      = <K> x / (8 gamma)
+      = 1.380756379...
+
+on the current Paper 18 branch.
+
+So there are three different numbers:
+
+    2/sqrt(e)          = 1.213061319...
+    legacy F_opt       ~= 1.205
+    active BDP factor  = 1.380756379...
+
+The exact Kruskal factor is close to the legacy heuristic target:
+
+    (2/sqrt(e) - 1.205) / 1.205 = 0.66899%.
+
+But it is far from the active theorem-grade BDP factor:
+
+    (2/sqrt(e) - 1.380756...) / 1.380756... = -12.145%.
+
+
+==================================================
+IV. Is There a Theorem on H_IO?
+==================================================
+
+No, not currently.
+
+Reason:
+
+    - 2/sqrt(e) is a horizon-local instantaneous lapse Jacobian.
+    - F is a baryon/photon frame-transfer observable derived from the reduced gauge-modular
+      sector through BDP.
+    - No theorem in Papers 1-18 constructs an intertwiner on H_IO identifying the Kruskal lapse
+      operator with the BDP frame-split operator.
+    - The only near-match is to a legacy non-native optimization target F_opt ~= 1.205, not to the
+      active framework quantity.
+
+Therefore the honest status is:
+
+    interesting structural near-coincidence,
+    not a theorem,
+    not an active framework identity.
+
+What would be needed to upgrade it:
+
+    an explicit operator theorem on H_IO showing that the horizon-local Kruskal lapse sector
+    induces the BBN frame-transfer observable after the appropriate reduction/projection.
+
+That theorem does not yet exist in Papers 1-18.
+
+
+==================================================
+V. Final answers
+==================================================
+
+1. Active equality redshift:
+
+       z_eq = 2824.71
+
+2. Kruskal lapse / BBN frame factor:
+
+       No theorem yet.
+
+   The exact factor 2/sqrt(e) is real, but on the present Paper 18 stack it does not equal any
+   active theorem-grade BBN transfer quantity. The 0.7% match to legacy F_opt ~= 1.205 is best
+   classified as a numerical echo unless a new H_IO operator bridge is constructed.

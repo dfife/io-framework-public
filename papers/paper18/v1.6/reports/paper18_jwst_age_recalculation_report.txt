@@ -1,0 +1,199 @@
+Paper 18
+JWST Age Recalculation on the Active Schur Curvature Branch
+
+Question
+
+    With the curvature branch now resolved to
+
+        P_k = exp(-Delta/2),
+        H_0 = 68.91 km/s/Mpc,
+
+    recompute the IO age-redshift relation at
+
+        z = 6, 10, 14, 20
+
+    using the full mixed-fluid IO Friedmann equation and compare to LambdaCDM.
+
+
+Executive result
+
+    On the active Schur branch, IO gives LESS formation time than LambdaCDM at all four JWST
+    redshifts.
+
+    The deficit is stable:
+
+        about 5.1% at z = 6,
+        about 5.2% at z = 10,
+        about 5.25% at z = 14,
+        about 5.30% at z = 20.
+
+    So the old Paper 4 geometric-parameter claim of extra high-z formation time does not survive
+    the active projected branch.
+
+
+==================================================
+I. Active IO branch used
+==================================================
+
+Curvature branch
+
+    Paper 18 settles the active curvature implementation as
+
+        P_k = exp(-Delta/2),
+        Delta = x^4 (1 + gamma^2).
+
+Projected background parameters
+
+    Use the active published projected branch:
+
+        H_0,IO = 68.91 km/s/Mpc,
+        Omega_m,IO = 0.335,
+        Omega_k,IO = -0.006.
+
+Radiation sector
+
+    Use the active IO thermal and acoustic inputs:
+
+        T_0,IO = 2.7253 K,
+        N_eff,IO = Delta = 5.62421685262410640625.
+
+    Then the standard photon-plus-neutrino radiation density is
+
+        Omega_r,IO h^2
+        = Omega_gamma h^2 [1 + 0.22710731766 N_eff],
+        Omega_gamma h^2 = 2.4728e-5 (T_0/2.7255 K)^4.
+
+    This gives
+
+        Omega_r,IO = 1.1855432740645484e-4,
+        Omega_Lambda,IO = 1 - Omega_m,IO - Omega_k,IO - Omega_r,IO
+                        = 0.6708814456725935.
+
+
+==================================================
+II. Friedmann model used
+==================================================
+
+Use the mixed-fluid closed-FRW form already adopted after Paper 5:
+
+    H(z)^2
+    = H_0^2 [ Omega_r (1+z)^4
+            + Omega_m (1+z)^3
+            + Omega_k (1+z)^2
+            + Omega_Lambda ].
+
+The cosmic age at redshift z is
+
+    t(z)
+    = integral_z^infinity dz' / [ (1+z') H(z') ]
+
+or equivalently
+
+    t(a)
+    = integral_0^a da' / [ a' H(a') ],
+    a = 1/(1+z).
+
+
+==================================================
+III. LambdaCDM comparison model
+==================================================
+
+For comparison use a standard flat Planck-like LambdaCDM baseline:
+
+    H_0,LCDM = 67.36 km/s/Mpc,
+    Omega_m,LCDM = 0.3153,
+    Omega_k,LCDM = 0,
+    T_0,LCDM = 2.7255 K,
+    N_eff,LCDM = 3.046.
+
+Then
+
+    Omega_r,LCDM = 9.219892755009395e-5,
+    Omega_Lambda,LCDM = 0.6846078010724499.
+
+
+==================================================
+IV. Numerical age table
+==================================================
+
+All ages below are ages since the Big Bang, in Myr.
+
+    z      t_IO         t_LCDM      Delta t = IO - LCDM     percent
+    6      879.248      926.915     -47.667                -5.143%
+    10     445.692      470.162     -24.470                -5.205%
+    14     279.375      294.846     -15.471                -5.247%
+    20     168.187      177.598     -9.411                 -5.299%
+
+Present ages:
+
+    t_0,IO   = 13.2782 Gyr
+    t_0,LCDM = 13.7955 Gyr
+
+
+==================================================
+V. Interpretation
+==================================================
+
+This confirms and sharpens the Paper 11 / Paper 12 warning:
+
+    once the projected branch is used, IO no longer gives extra early-universe formation time.
+
+The sign is reversed relative to the old geometric-parameter Paper 4 estimate because:
+
+1. the active branch uses projected, not geometric, parameters,
+2. the active Schur curvature suppression is much stronger than the legacy Paper 10 i.i.d. branch,
+3. the active Hubble value is
+
+       H_0 = 68.91 km/s/Mpc,
+
+   not the old geometric
+
+       H_0 = 58.4 km/s/Mpc.
+
+So the honest Paper 18 JWST statement is:
+
+    on the active Schur-resolved IO branch, the framework gives about 5% less high-z formation
+    time than standard LambdaCDM.
+
+
+==================================================
+VI. Exact boundary
+==================================================
+
+Best honest status
+
+    DERIVED recalculation on the active Paper 18 branch
+
+Exact scope
+
+    - mixed-fluid FRW IO background,
+    - active Schur curvature branch,
+    - projected H_0 = 68.91 km/s/Mpc branch,
+    - standard photon-plus-neutrino radiation closure.
+
+What is not claimed
+
+    This report does not claim a new JWST-resolution mechanism. It is explicitly a recalculation
+    of the already-existing IO background on the now-settled active branch.
+
+
+==================================================
+VII. Memory lock
+==================================================
+
+Do NOT say:
+
+    "IO gives more formation time than LambdaCDM at high z"
+
+without qualification.
+
+Correct statement:
+
+    the old extra-time result belongs to the geometric pre-projection branch.
+
+    On the active Paper 18 Schur branch with
+
+        H_0 = 68.91 km/s/Mpc,
+        P_k = exp(-Delta/2),
+
+    IO gives about 5% less formation time than LambdaCDM at JWST redshifts.

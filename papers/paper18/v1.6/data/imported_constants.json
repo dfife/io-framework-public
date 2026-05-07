@@ -1,0 +1,51 @@
+{
+  "paper": "Paper 18",
+  "version": "v1.6",
+  "framework_constants": {
+    "gamma_BI": {
+      "value": 0.2375,
+      "description": "Barbero-Immirzi value used by the IO framework"
+    },
+    "x": {
+      "value": 1.51899,
+      "description": "Paper 18 active branch ratio r_s/R_U used in legacy branch diagnostics"
+    },
+    "x_R4_source": {
+      "value": 1.519,
+      "description": "Paper 17 v1.5 source value used to compute R4_FIRAS"
+    },
+    "K_gauge": {
+      "value": 0.05487281774291466,
+      "formula": "ln(1 + gamma_BI^2)"
+    },
+    "Delta": {
+      "value": 5.624216852624106,
+      "formula": "x^4(1 + gamma_BI^2) using x=1.519"
+    },
+    "R4_FIRAS": {
+      "value": 1.0031014644,
+      "source": "Paper 17 v1.5 FIRAS-fixed unique readout normalization"
+    },
+    "T_IO_K": {
+      "value": 2.6635,
+      "description": "bulk/interior Hawking scale"
+    },
+    "T_FIRAS_K": {
+      "value": 2.7255,
+      "description": "FIRAS empirical observer-side thermal datum; not an IO prediction"
+    }
+  },
+  "conditional_branch_inputs": {
+    "H0_IO_km_s_Mpc": 68.91,
+    "Omega_m_IO": 0.335,
+    "Omega_k_IO": -0.006,
+    "N_eff_Delta": 5.624216852624106,
+    "N_eff_status": "withdrawn as Friedmann radiation parameter; retained as math-only entropy-rank"
+  },
+  "external_data": {
+    "DESI_DR1_Gaussian_BAO": "not redistributed; see data/external_data_sources.md",
+    "BOSS_DR12_full_shape_Beutler": "fetched by optional script 10; not redistributed in repository",
+    "CLASS": "external Boltzmann code used by optional script 08",
+    "CAMB": "external Boltzmann code used by optional script 10"
+  }
+}

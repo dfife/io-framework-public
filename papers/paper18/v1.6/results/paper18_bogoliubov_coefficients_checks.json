@@ -1,0 +1,165 @@
+{
+  "inputs": {
+    "gamma_BI": 0.2375,
+    "x": 1.51899,
+    "x_R4_source": 1.519,
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "T_obs_K": 2.725499999999342,
+    "T_obs_minus_FIRAS_K": -6.576961197879427e-13,
+    "temperature_status": "FIRAS-fixed observer readout; not an independent CMB-temperature prediction."
+  },
+  "theorem_formulas": {
+    "continuum_beta_squared_IO": "|beta_{w,w'}|^2 = delta(w-w') / (exp(hbar*w/(k_B*T_IO)) - 1)",
+    "continuum_beta_squared_obs": "|beta_{w,w'}|^2 = delta(w-w') / (exp(hbar*w/(k_B*T_obs)) - 1)",
+    "continuum_alpha_squared": "|alpha_{w,w'}|^2 = delta(w-w') * exp(hbar*w/(k_B*T)) / (exp(hbar*w/(k_B*T)) - 1)"
+  },
+  "io_packets": [
+    {
+      "y": 0.5,
+      "omega_rad_per_s": 174353161739.19714,
+      "nu_hz": 27749167517.491497,
+      "n_planck": 1.5414940825367982,
+      "alpha_abs": 1.5942064115216692,
+      "beta_abs": 1.2415692016705304,
+      "alpha2_minus_beta2_minus_1": -6.661338147750939e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    },
+    {
+      "y": 1.0,
+      "omega_rad_per_s": 348706323478.3943,
+      "nu_hz": 55498335034.982994,
+      "n_planck": 0.5819767068693265,
+      "alpha_abs": 1.2577665549971213,
+      "beta_abs": 0.7628739783668902,
+      "alpha2_minus_beta2_minus_1": 2.220446049250313e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    },
+    {
+      "y": 2.8214393721220787,
+      "omega_rad_per_s": 983853750369.8793,
+      "nu_hz": 156585187554.9232,
+      "n_planck": 0.06328706887776255,
+      "alpha_abs": 1.0311581202113294,
+      "beta_abs": 0.25156921289729106,
+      "alpha2_minus_beta2_minus_1": -3.3306690738754696e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    },
+    {
+      "y": 5.0,
+      "omega_rad_per_s": 1743531617391.9714,
+      "nu_hz": 277491675174.915,
+      "n_planck": 0.006783654906304231,
+      "alpha_abs": 1.0033860946347146,
+      "beta_abs": 0.08236294619732973,
+      "alpha2_minus_beta2_minus_1": 2.220446049250313e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    }
+  ],
+  "obs_packets": [
+    {
+      "y": 0.5,
+      "omega_rad_per_s": 178411692254.57748,
+      "nu_hz": 28395102710.307796,
+      "n_planck": 1.5414940825367982,
+      "alpha_abs": 1.5942064115216692,
+      "beta_abs": 1.2415692016705304,
+      "alpha2_minus_beta2_minus_1": -6.661338147750939e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    },
+    {
+      "y": 1.0,
+      "omega_rad_per_s": 356823384509.15497,
+      "nu_hz": 56790205420.61559,
+      "n_planck": 0.5819767068693265,
+      "alpha_abs": 1.2577665549971213,
+      "beta_abs": 0.7628739783668902,
+      "alpha2_minus_beta2_minus_1": 2.220446049250313e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    },
+    {
+      "y": 2.8214393721220787,
+      "omega_rad_per_s": 1006755545947.9854,
+      "nu_hz": 160230121524.62555,
+      "n_planck": 0.06328706887776255,
+      "alpha_abs": 1.0311581202113294,
+      "beta_abs": 0.25156921289729106,
+      "alpha2_minus_beta2_minus_1": -3.3306690738754696e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    },
+    {
+      "y": 5.0,
+      "omega_rad_per_s": 1784116922545.7747,
+      "nu_hz": 283951027103.078,
+      "n_planck": 0.006783654906304231,
+      "alpha_abs": 1.0033860946347146,
+      "beta_abs": 0.08236294619732973,
+      "alpha2_minus_beta2_minus_1": 2.220446049250313e-16,
+      "aw_gamma_minus_exp_minus_y": 0.0
+    }
+  ],
+  "wavepacket_matrix_checks": {
+    "beta_diag_IO": [
+      [
+        1.2415692016705304,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.7628739783668902,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25156921289729106,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.08236294619732973
+      ]
+    ],
+    "alpha_diag_IO": [
+      [
+        1.5942064115216692,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.2577665549971213,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0311581202113294,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0033860946347146
+      ]
+    ],
+    "max_ccr_residual": 6.661338147750939e-16
+  },
+  "peak_examples": {
+    "radiance_peak_y": 2.8214393721220787,
+    "IO_peak_frequency_GHz": 156.58518755492318,
+    "IO_peak_beta_squared": 0.06328706887776255,
+    "obs_peak_frequency_GHz": 160.23012152462556,
+    "obs_peak_beta_squared": 0.06328706887776255
+  }
+}

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, cite the associated Paper 18 manuscript and this GitHub release."
+title: "Paper 18 v1.6 reproducibility bundle"
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+type: software
+version: "v1.6"
+date-released: "2026-05"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper18-v1.6"
+abstract: "Reproducibility bundle for Paper 18 v1.6, including CMP/BDP/V(alpha) theorem scripts, entropy-rank diagnostics, Bogoliubov spectrum scripts, R4/FIRAS repair audit, and frozen external-data diagnostic outputs."
+references:
+  - type: article
+    title: "Interior Observer Paper 18"
+    authors:
+      - family-names: Fife
+        given-names: David
+    doi: "10.5281/zenodo.19054258"
+    url: "https://zenodo.org/records/19054258/latest"

@@ -1,0 +1,31 @@
+{
+  "active_branch_inputs": {
+    "H0": 68.91,
+    "Omega_m": 0.335,
+    "T0": 2.725499999999342,
+    "T_FIRAS": 2.7255,
+    "T0_minus_FIRAS": -6.576961197879427e-13,
+    "R4_FIRAS": 1.0031014644,
+    "thermal_status": "FIRAS-fixed observer readout; not an independent CMB-temperature prediction.",
+    "N_eff": 5.624216852624106
+  },
+  "derived_radiation_sector": {
+    "h": 0.6890999999999999,
+    "omega_gamma_h2": 2.472799999997613e-05,
+    "omega_r_h2": 5.631309426487851e-05,
+    "Omega_r": 0.00011858913234626208
+  },
+  "equality_redshift": {
+    "z_eq_active": 2823.8794250543247,
+    "z_eq_legacy_paper3": 1758.0,
+    "delta_z_eq": 1065.8794250543247,
+    "ratio_active_to_legacy": 1.6063022895644623
+  },
+  "kruskal_bbn_comparison": {
+    "kruskal_factor_2_over_sqrt_e": 1.2130613194252668,
+    "legacy_F_opt": 1.205,
+    "percent_diff_vs_legacy_F_opt": 0.6689891639225541,
+    "active_BDP_frame_split_F": 1.3807563793831255,
+    "percent_diff_vs_active_BDP_F": -12.145159165064223
+  }
+}

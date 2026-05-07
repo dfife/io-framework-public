@@ -1,0 +1,77 @@
+{
+  "inputs": {
+    "gamma": 0.2375,
+    "x": 1.51899,
+    "x_R4_source": 1.519,
+    "Delta": 5.624068750943682,
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_bulk": 2.6635,
+    "T_FIRAS": 2.7255,
+    "H0_IO": 68.91,
+    "Omega_m_IO": 0.335,
+    "Omega_k_IO": -0.006,
+    "T0_IO": 2.725499999999342,
+    "T0_IO_minus_FIRAS": -6.576961197879427e-13,
+    "thermal_status": "FIRAS-fixed observer readout; not an independent CMB-temperature prediction.",
+    "N_eff_IO": 5.624068750943682,
+    "f_b": 0.3127077860947076,
+    "Omega_b_geom": 0.04439214258233938,
+    "Omega_b_acoustic": 0.06128137329914971,
+    "omega_b_geom": 0.02108,
+    "omega_b_eff": 0.0291,
+    "r_d_IO": 143.3
+  },
+  "bao": {
+    "dataset": "DESI DR1 all GCcomb 12-point Gaussian BAO covariance",
+    "IO_chi2": 19.80166516162162,
+    "IO_pte": 0.07093204176397021,
+    "LCDM_like_chi2": 21.123175724290878,
+    "LCDM_like_pte": 0.04860556862352738
+  },
+  "sigma8": {
+    "assumption": "Primordial A_s, n_s, tau_reio borrowed from Planck-like LCDM, as in Paper 6.",
+    "IO_geometric_baryons": {
+      "h": 0.6890999999999999,
+      "omega_m_h2": 0.15907770134999996,
+      "omega_b": 0.02108,
+      "omega_nu": 0.0006441915396177796,
+      "omega_cdm": 0.13735350981038216,
+      "sigma8": 0.7591315111873,
+      "S8": 0.8021928657913614,
+      "rs_drag_CLASS": 133.44766932317296
+    },
+    "IO_acoustic_baryons_sensitivity_only": {
+      "h": 0.6890999999999999,
+      "omega_m_h2": 0.15907770134999996,
+      "omega_b": 0.0291,
+      "omega_nu": 0.0006441915396177796,
+      "omega_cdm": 0.1293335098103822,
+      "sigma8": 0.6928605297993577,
+      "S8": 0.7321626961897167,
+      "rs_drag_CLASS": 127.71332461580626
+    },
+    "LCDM_reference": {
+      "h": 0.674,
+      "omega_m_h2": 0.14309694000000003,
+      "omega_b": 0.02237,
+      "omega_nu": 0.0006441915396177796,
+      "omega_cdm": 0.12008274846038225,
+      "sigma8": 0.8113418000777439,
+      "S8": 0.8313779479761678,
+      "rs_drag_CLASS": 147.0752138089909
+    }
+  },
+  "w": {
+    "w_true": -1.0,
+    "omega_r_IO": 0.00011858738082422282,
+    "omega_lambda_IO": 0.6708814126191758,
+    "w0_apparent_flat_CPL_misread": -1.0060161104282384
+  },
+  "mond": {
+    "r_s_m": 6.685e+26,
+    "a0_IO_m_per_s2": 1.3444355702869374e-10,
+    "canonical_observed_a0_m_per_s2": 1.2e-10,
+    "percent_high_vs_canonical": 12.036297523911443
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "inputs": {
+    "gamma_BI": 0.2375,
+    "x": 1.51899,
+    "x_R4_source": 1.519,
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644,
+    "T_IO": 2.6635,
+    "T_FIRAS": 2.7255,
+    "lambda_sample": 0.41805222361363575,
+    "T_obs": 2.725499999999342,
+    "T_obs_minus_FIRAS": -6.576961197879427e-13,
+    "omega_sample": 697412646956.7886
+  },
+  "general_converse_counterexample": {
+    "algebra": "C^2",
+    "dynamics": "identity",
+    "state_1": [
+      0.5,
+      0.5
+    ],
+    "state_2": [
+      0.3,
+      0.7
+    ],
+    "same_flow": true,
+    "both_faithful": true,
+    "both_1_KMS": true
+  },
+  "repaired_theorem_class": {
+    "algebra": "reduced bosonic Weyl/CCR thermal photon algebra",
+    "state_class": "continuous gauge-invariant quasi-free states",
+    "one_particle_operator": "Omega >= 0",
+    "transport_generator": "D tensor K_hat_g"
+  },
+  "uniqueness_checks": {
+    "n_direct_IO": 0.15651764274966565,
+    "n_direct_obs": 0.1650052154122597,
+    "n_from_modular_pushforward": 0.1650052154122597,
+    "modular_transport_residual": 0.0,
+    "alpha_io_sq_minus_beta_io_sq_minus_1": 4.440892098500626e-16,
+    "alpha_obs_sq_minus_beta_obs_sq_minus_1": -3.3306690738754696e-16
+  },
+  "theorem_formulas": {
+    "base_covariance": "rho_IO = (exp(hbar*Omega/(k_B*T_IO)) - I)^(-1)",
+    "transported_temperature": "T(lambda) = T_IO * exp(R4_FIRAS*kappa*lambda) on the FIRAS-fixed v1.6 readout.",
+    "transported_covariance": "rho_lambda(omega) = 1 / (exp(hbar*omega/(k_B*T(lambda))) - 1)",
+    "beta_squared": "|beta_lambda(omega)|^2 = rho_lambda(omega)"
+  }
+}

@@ -1,0 +1,255 @@
+Paper 18
+Full Matter Power Spectrum Shape Test on the Active Schur Branch
+
+Question
+
+    Test the active IO Schur branch against SDSS/BOSS full-shape matter-power data using
+
+        H_0 = 68.91,
+        Omega_m = 0.335,
+        Omega_k = -0.006,
+        T_0 = 2.7253 K,
+        N_eff = 5.62421685262410640625,
+        f_b = 0.3127,
+        Omega_b = f_b Omega_m = 0.1047545,
+
+    with borrowed primordial parameters
+
+        A_s = 2.1e-9,
+        n_s = 0.9649,
+        tau_reio = 0.0544.
+
+    Compare the resulting broadband P(k) shape to a Planck-like LambdaCDM reference and report the
+    chi-squared on the full shape, not just BAO wiggles.
+
+
+Executive result
+
+    The active IO Schur branch does not survive this bounded full-shape test.
+
+    Using the public BOSS DR12 full-shape monopole data release from Beutler et al. and its
+    official covariance, a simple broadband monopole likelihood gives:
+
+        chi^2_IO    = 1056.36
+        chi^2_LCDM  =   94.68
+
+    for the same 84 data points and the same nuisance treatment
+
+        P_gal(k) = b^2 P_m(k) + P_shot
+
+    fitted separately in each of the six BOSS subsamples.
+
+    Even after adding extra smooth broadband nuisance freedom
+
+        + a_2 k^2
+        + a_1 k
+
+    the IO branch remains dramatically worse:
+
+        chi^2_IO    = 226.94
+        chi^2_LCDM  =  69.48.
+
+    Honest conclusion:
+
+        the active Schur branch fails the BOSS broadband shape test.
+
+
+==================================================
+I. What was actually tested
+==================================================
+
+Data
+
+    I used the public BOSS DR12 full-shape package released by Beutler et al.:
+
+        https://fbeutler.github.io/static/Beutler_etal_DR12COMBINED_fullshape_powspec.tar.gz
+
+    From that package I used the monopole full-shape measurements for
+
+        z1 = 0.38, z2 = 0.51, z3 = 0.61,
+        NGC and SGC,
+
+    together with the corresponding public covariance matrices.
+
+    The covariance-supported monopole block contains 14 bins per sample, so the total fit uses
+
+        6 x 14 = 84
+
+    broadband data points covering approximately
+
+        0.016 <= k <= 0.145 h/Mpc.
+
+Modeling choice
+
+    This is not the official BOSS EFT/RSD likelihood.
+    It is a bounded broadband-shape audit:
+
+    - CAMB linear matter P(k,z),
+    - one effective galaxy amplitude and one shot-noise term per sample,
+    - then robustness checks with extra smooth broadband terms.
+
+    So the result should be read as:
+
+        "does the active IO branch survive a clean large-scale broadband-shape test?"
+
+    not as
+
+        "official BOSS collaboration likelihood reproduction."
+
+
+==================================================
+II. Cosmologies compared
+==================================================
+
+IO active Schur branch
+
+    H_0 = 68.91
+    Omega_m = 0.335
+    Omega_k = -0.006
+    T_0 = 2.7253 K
+    N_eff = 5.62421685262410640625
+    f_b = 0.3127
+    Omega_b = 0.1047545
+
+    Therefore
+
+        omega_b h^2 = 0.0497436
+        omega_c h^2 = 0.1093341.
+
+Reference LambdaCDM
+
+    Planck-like reference:
+
+        H_0 = 67.36
+        Omega_m = 0.3153
+        Omega_k = 0
+        T_0 = 2.7255 K
+        N_eff = 3.046
+        omega_b h^2 = 0.02237
+        omega_c h^2 = 0.1200.
+
+
+==================================================
+III. Likelihood definitions
+==================================================
+
+For each BOSS sample, fit
+
+    P_0^gal(k) = A P_m(k,z_eff) + S
+
+with A and S free.
+
+This gives the main chi-squared.
+
+Robustness checks:
+
+    P_0^gal(k) = A P_m(k,z_eff) + S + a_2 k^2
+
+and
+
+    P_0^gal(k) = A P_m(k,z_eff) + S + a_2 k^2 + a_1 k.
+
+If the IO branch were only missing smooth nuisance freedom, these extra terms would rescue it.
+
+
+==================================================
+IV. Results
+==================================================
+
+Total chi-squared over all six BOSS subsamples:
+
+1. Minimal broadband nuisance
+
+       P_0^gal = A P_m + S
+
+       chi^2_IO   = 1056.3648
+       chi^2_LCDM =   94.6755
+
+       data points = 84
+       nuisance parameters = 12
+       dof = 72
+
+2. Add quadratic broadband term
+
+       P_0^gal = A P_m + S + a_2 k^2
+
+       chi^2_IO   = 842.1047
+       chi^2_LCDM =  81.0778
+
+       nuisance parameters = 18
+       dof = 66
+
+3. Add linear and quadratic broadband terms
+
+       P_0^gal = A P_m + S + a_2 k^2 + a_1 k
+
+       chi^2_IO   = 226.9423
+       chi^2_LCDM =  69.4816
+
+       nuisance parameters = 24
+       dof = 60
+
+Sample-by-sample pattern
+
+    In every one of the six BOSS subsamples, the IO branch is far worse than the Planck-like
+    reference. The failure is not driven by one redshift bin or one sky cap.
+
+
+==================================================
+V. Interpretation
+==================================================
+
+The active IO branch has
+
+    z_eq = 2825
+
+which is substantially below LambdaCDM. This pushes the matter-radiation turnover to lower k
+(larger scales). Combined with the very high active baryon fraction
+
+    Omega_b = 0.105,
+
+the broadband transfer shape is too distorted relative to BOSS.
+
+The key point is that this failure appears before any BAO reconstruction argument and before any
+oscillatory-phase tuning. It is the broadband shape itself that is wrong.
+
+
+==================================================
+VI. Honest scope line
+==================================================
+
+This test is strong, but not infinite-strength.
+
+It does NOT yet include:
+
+    - survey-window convolution,
+    - quadrupole/hexadecapole RSD modeling,
+    - full EFT nuisance structure,
+    - nonlinear corrections beyond the large-scale linear transfer shape.
+
+However, the discrepancy is so large that these omitted refinements are not a plausible rescue.
+
+The comparison is not
+
+    chi^2 = 98 versus 101;
+
+it is
+
+    chi^2 = 1056 versus 95
+
+under the same bounded likelihood, and still
+
+    chi^2 = 227 versus 69
+
+after heavy extra broadband freedom.
+
+
+==================================================
+VII. Final answer
+==================================================
+
+Using the public BOSS DR12 broadband full-shape monopole data with the official covariance, the
+active Schur branch does not survive.
+
+The active IO parameters produce a matter-power broadband shape that is grossly incompatible with
+the BOSS data, while the Planck-like LambdaCDM reference gives an acceptable fit on the same test.

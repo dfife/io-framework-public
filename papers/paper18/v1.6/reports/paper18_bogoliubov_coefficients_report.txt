@@ -1,0 +1,290 @@
+Paper 18
+Reduced Bogoliubov Coefficients in the OS Interior
+
+Question
+
+    Paper 1 left open:
+
+        a full computation of |beta_{omega omega'}|^2 in the OS interior confirming the thermal
+        spectrum at T_IO.
+
+    Papers 17-18 have since built:
+
+    - the shared Hilbert space H_IO,
+    - the explicit reduced A-vacuum state omega_A by GNS / direct-integral KMS construction,
+    - the reduced thermal-plus-gauge observer algebra,
+    - the modular projection theorem.
+
+    Can the Bogoliubov coefficients now be computed?
+
+
+Executive result
+
+    Yes, but with an exact scope line.
+
+    Inside the reduced s-wave Schwarzschild interior thermal photon sector used by Papers 17-18,
+    the Bogoliubov coefficients are now computable exactly.
+
+    The result is:
+
+        |beta_{omega omega'}|^2
+        = delta(omega - omega') / [exp(hbar omega / (k_B T_IO)) - 1]
+
+    in continuum normalization, or equivalently in a narrow orthonormal packet basis
+
+        |beta_j|^2 = 1 / [exp(hbar omega_j / (k_B T_IO)) - 1].
+
+    Therefore the reduced interior spectrum is exactly Planckian at
+
+        T_IO = 2.6635 K.
+
+    What is still NOT computed here is the full unreduced 3+1 coordinate-space mode-matching
+    kernel on the Oppenheimer-Snyder collapse geometry, with all angular sectors and explicit
+    collapse matching functions. That remains open.
+
+    So the honest upgrade is:
+
+    - reduced observer-algebra Bogoliubov coefficients: DERIVED / THEOREM
+    - full unreduced PDE mode-matching beta kernel on the whole OS manifold: still open
+
+
+==================================================
+I. Why Paper 2's no-go is not contradicted
+==================================================
+
+Paper 2 proved a no-go theorem for semiclassical stationary-Schwarzschild mode matching as an
+explanation of the 30-order temperature gap:
+
+    stationary semiclassical QFT alone cannot generate the gamma boost.
+
+That theorem is not violated here.
+
+This report does NOT recover gamma from a stationary exterior / interior coordinate matching
+calculation.
+Instead it starts from the already-derived IO thermal sector:
+
+    - Paper 2 gives the horizon/interior temperature T_IO,
+    - Paper 17 constructs the reduced A-vacuum state omega_A explicitly,
+    - Paper 17 proves fiberwise KMS structure on the thermal photon sector,
+    - Paper 1 proves greybody factor Gamma(omega) = 1 for the interior observer.
+
+The present calculation therefore answers a narrower question:
+
+    once the reduced IO thermal sector exists as a genuine KMS state, what are the corresponding
+    Bogoliubov coefficients?
+
+
+==================================================
+II. The reduced photon sector
+==================================================
+
+Take the reduced s-wave interior photon sector with one-particle frequency space
+
+    h_ph = L^2(R_+, d omega),
+
+and bosonic CCR / Weyl algebra
+
+    M_ph = CCR(h_ph).
+
+Let Omega be the multiplication operator
+
+    (Omega f)(omega) = omega f(omega).
+
+Define the interior thermal inverse temperature
+
+    beta_IO = hbar / (k_B T_IO).
+
+The corresponding bosonic occupation operator is
+
+    rho_IO = (exp(beta_IO Omega) - I)^(-1).
+
+This is the standard quasi-free bosonic KMS covariance.
+
+Why this is legitimate inside the IO framework:
+
+1. Paper 17 already constructs the reduced A-vacuum as a direct-integral KMS state on the thermal
+   photon sector.
+2. Paper 17 fiberwise KMS inheritance gives faithful normal KMS states on each reduced fiber.
+3. Paper 1's interior spectral theorem gives
+
+       Gamma(omega) = 1,
+
+   so there is no extra greybody distortion factor.
+4. In the physical Schwarzschild tangential reduction, the gauge sector is central and scalar,
+   so the thermal photon number operator remains diagonal in the same frequency packets.
+
+
+==================================================
+III. The Araki-Woods / thermal Bogoliubov step
+==================================================
+
+For a gauge-invariant quasi-free bosonic KMS state with occupation operator rho_IO, the
+Araki-Woods construction gives a doubled Fock-space realization in which the thermal state is a
+squeezed vacuum. In a frequency packet basis e_j centered at omega_j, one may write
+
+    b_j = alpha_j a_j - beta_j a_j_tilde^dagger,
+
+with
+
+    |beta_j|^2 = n_j,
+    |alpha_j|^2 = 1 + n_j,
+    n_j = 1 / [exp(beta_IO hbar omega_j) - 1].
+
+Hence
+
+    |alpha_j|^2 - |beta_j|^2 = 1,
+
+as required by the bosonic CCR.
+
+The phase of beta_j is conventional for the present purpose; only |beta_j|^2 is physically fixed.
+
+
+==================================================
+IV. The theorem
+==================================================
+
+Theorem 18.42 (reduced Bogoliubov coefficient theorem)
+    Inside the reduced s-wave Schwarzschild interior thermal photon sector of H_IO, let phi_IO be
+    the faithful gauge-invariant quasi-free KMS state at temperature T_IO and let Gamma(omega)=1
+    be the interior greybody factor from Paper 1.
+
+    Then there exists a Bogoliubov realization of phi_IO in which, for any narrow orthonormal
+    frequency packet basis centered at omega_j,
+
+        |beta_j|^2
+        = 1 / [exp(hbar omega_j / (k_B T_IO)) - 1],
+
+    and therefore the interior observer particle spectrum is exactly Planckian at T_IO.
+
+    In continuum normalization this is
+
+        |beta_{omega omega'}|^2
+        = delta(omega - omega') / [exp(hbar omega / (k_B T_IO)) - 1],
+
+    interpreted distributionally or after wave-packet smearing.
+
+Proof
+    Paper 17 gives the reduced thermal photon sector as a genuine faithful normal KMS state.
+    In a bosonic quasi-free KMS state with one-particle frequency operator Omega, the occupation
+    operator is
+
+        rho_IO = (exp(beta_IO Omega) - I)^(-1).
+
+    By the standard Araki-Woods thermal representation, the state is realized as a squeezed vacuum
+    on a doubled Fock space, and in each one-particle mode / packet the Bogoliubov coefficients
+    satisfy
+
+        |beta|^2 = rho_IO,
+        |alpha|^2 = I + rho_IO.
+
+    Evaluated on a packet centered at omega_j this gives
+
+        |beta_j|^2 = 1 / [exp(beta_IO hbar omega_j) - 1].
+
+    Since beta_IO = 1/(k_B T_IO) in energy units and Paper 1 gives Gamma(omega)=1 for the
+    interior observer, this is the exact observed occupancy with no additional transmission factor.
+    Therefore the spectrum is Planckian at T_IO.
+
+
+==================================================
+V. Physical specialization
+==================================================
+
+With
+
+    T_IO = 2.6635 K,
+
+the theorem gives
+
+    |beta_{omega omega'}|^2
+    = delta(omega - omega') / [exp(hbar omega / (k_B * 2.6635 K)) - 1].
+
+At the Planck radiance peak per unit frequency,
+
+    h nu_peak / (k_B T) = 2.821439372...,
+
+so for the IO reference temperature
+
+    nu_peak,IO = 156.585 GHz,
+    |beta_peak|^2 = 0.0632871.
+
+
+==================================================
+VI. Corollary: observed CMB after GTTP transfer
+==================================================
+
+Paper 17 proved
+
+    T_obs = T_IO x^(K_gauge).
+
+So the same reduced-sector theorem gives the observed-sector coefficients
+
+    |beta^{obs}_{omega omega'}|^2
+    = delta(omega - omega') / [exp(hbar omega / (k_B T_obs)) - 1],
+
+with
+
+    T_obs = 2.725305112137... K.
+
+At the corresponding radiance peak:
+
+    nu_peak,obs = 160.219 GHz,
+    |beta_peak,obs|^2 = 0.0632871.
+
+The occupancy at the peak is unchanged because the peak is evaluated at the same dimensionless
+Planck variable; only the physical frequency scale shifts.
+
+
+==================================================
+VII. What is still open
+==================================================
+
+This report does NOT provide:
+
+    the full unreduced 3+1 coordinate-space kernel
+
+        beta_{omega l m, omega' l' m'}
+
+for the exact Oppenheimer-Snyder collapse geometry obtained by explicit PDE mode matching across
+the collapse history.
+
+That stronger object would require:
+
+    - a full mode basis on the OS interior collapse spacetime,
+    - explicit matching across the collapsing matter region,
+    - angular-sector bookkeeping beyond the reduced s-wave thermal algebra.
+
+So the correct status line is:
+
+    the reduced observer-algebra Bogoliubov coefficients are now computed exactly;
+    the full unreduced collapse-kernel calculation remains open.
+
+
+==================================================
+VIII. Checks
+==================================================
+
+The numerical check file verifies:
+
+    - the packet coefficients satisfy |alpha|^2 - |beta|^2 = 1,
+    - the Araki-Woods parameter obeys n/(1+n) = exp(-hbar omega/(k_B T)),
+    - the continuum formulas reproduce the expected Planck occupancy,
+    - the GTTP-shifted observed temperature gives the corresponding observed-sector coefficients.
+
+Saved checks:
+
+    /opt/cosmology-lab/results/paper18/paper18_bogoliubov_coefficients_checks.json
+
+
+==================================================
+IX. Primary sources used
+==================================================
+
+Hawking, "Particle Creation by Black Holes":
+    https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-43/issue-3/Particle-Creation-by-Black-Holes/cmp/1103899181.full
+
+Unruh, "Notes on black-hole evaporation":
+    https://journals.aps.org/prd/abstract/10.1103/PhysRevD.14.870
+
+Araki-Woods / quasi-free bosonic state reference:
+    https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A93D22CE0F7B2D7CCEE195F4A218A451/S000497270003211Xa.pdf/quasi_free_states_of_the_canonical_commutation_relations.pdf

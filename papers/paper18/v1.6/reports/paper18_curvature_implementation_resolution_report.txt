@@ -1,0 +1,284 @@
+Paper 18
+Curvature Implementation Resolution
+
+Question
+
+    Paper 10 gave
+
+        P_k = Delta^(-1/x^2).
+
+    Paper 11 replaced this with the Schur-complement theorem
+
+        P_k = exp(-N/2).
+
+    Paper 18 has now proved
+
+        N_eff = Delta.
+
+    Does this settle which curvature implementation is correct, and if so, what is the definitive
+    H_0?
+
+
+Executive result
+
+    Yes.
+
+    Inside the reduced scalar acoustic observer algebra, the Paper 18 theorem
+
+        N_eff = Delta
+
+    closes the active Paper 11 curvature theorem to
+
+        P_k = exp(-Delta/2).
+
+    This settles the branch question:
+
+    - the Schur-complement curvature implementation is the active theorem-grade curvature law,
+    - the old Paper 10 formula
+
+          P_k = Delta^(-1/x^2)
+
+      remains superseded legacy structure from the i.i.d. cell approximation.
+
+    Consequently, within the published IO projection chain, the definitive curvature-branch H_0 is
+    the published Schur value
+
+        H_0 = 68.91 km/s/Mpc.
+
+    The older
+
+        H_0 = 67.58 km/s/Mpc
+
+    is now a superseded Paper 10 legacy value, not the active framework prediction.
+
+
+==================================================
+I. What exactly changed in Paper 18
+==================================================
+
+Paper 11 already proved the exact curvature theorem
+
+    f_eff = N_modes / (2 ln Delta),
+    P_k = exp(-N_modes/2).
+
+What remained open through Paper 14 was the closure
+
+    N_modes = Delta.
+
+Paper 18 now proves, inside the reduced scalar acoustic observer algebra,
+
+    N_eff = Delta
+
+as a theorem, by identifying the Paper 11 acoustic mode count with the entropy-rank of the
+uniform reduced modular-cell covariance.
+
+Therefore the Paper 11 theorem now closes to
+
+    P_k = exp(-Delta/2).
+
+
+==================================================
+II. Why this settles the implementation question
+==================================================
+
+The branch ambiguity is not:
+
+    "two equally live formulas for the same active theory."
+
+It is:
+
+    - Paper 10's original bundled / i.i.d. curvature approximation,
+    - versus Paper 11's Schur-complement replacement for correlated curvature.
+
+Paper 11 already states the reason for replacement:
+
+    spatial curvature is global and encoded in correlations,
+
+so the i.i.d. cell formula is not the correct observable class for curvature.
+
+Paper 14 then sharpened the status:
+
+    the inversion of the old Paper 10 formula is a tautology on a superseded branch,
+    while the active Schur formula still needed the mode-count closure.
+
+Paper 18 supplies exactly that missing closure.
+
+Therefore the implementation question is now resolved:
+
+1. Paper 10 branch:
+
+       P_k = Delta^(-1/x^2)
+
+   is superseded because it belongs to the discarded independent-cell curvature class.
+
+2. Paper 11 branch:
+
+       P_k = exp(-N/2)
+
+   is the active curvature theorem.
+
+3. Paper 18 adds
+
+       N = Delta
+
+   inside the reduced scalar acoustic sector.
+
+4. So the active curvature law is uniquely
+
+       P_k = exp(-Delta/2).
+
+
+==================================================
+III. Numerical branch comparison
+==================================================
+
+Using the Paper 18 physical reduced-sector value
+
+    Delta = x^4 (1 + gamma^2) = 5.62421685262410640625
+
+at
+
+    x = 1.519,
+    gamma = 0.2375,
+
+the two candidate suppressions are
+
+    P_k^(Paper10) = Delta^(-1/x^2)     = 0.473071122876439...
+    P_k^(Schur)   = exp(-Delta/2)      = 0.0600781883277848...
+
+They are not nearby approximations of the same result.
+They are different curvature implementations belonging to different observable classes.
+
+Paper 18 therefore does not merely "slightly prefer" the Schur branch.
+It completes the only still-active branch.
+
+
+==================================================
+IV. Consequence for H_0
+==================================================
+
+Paper 14 already states the status line explicitly:
+
+    - Paper 10's original projection gives H_0 = 67.58 km/s/Mpc,
+    - updated Schur-based implementations give H_0 = 68.91 km/s/Mpc.
+
+Before Paper 18, both numbers survived because the curvature branch was not fully closed.
+
+After Paper 18:
+
+    the curvature branch is closed in favor of the Schur implementation,
+
+so the definitive framework H_0 on that branch is
+
+    H_0 = 68.91 km/s/Mpc.
+
+Important scope line:
+
+    H_0 remains a composite observable.
+
+Paper 14 already emphasized that it inherits its energy projection from the energy sector and its
+curvature projection from the curvature sector. Paper 18 resolves the curvature part. It does not
+need to re-prove the whole H_0 assembly chain to settle the branch choice.
+
+
+==================================================
+V. The theorem statement
+==================================================
+
+Theorem 18.41 (curvature implementation resolution)
+    Inside the reduced scalar acoustic observer algebra:
+
+    1. the active curvature theorem is the Paper 11 Schur law
+
+           P_k = exp(-N_eff/2),
+
+    2. the Paper 18 mode-count theorem gives
+
+           N_eff = Delta,
+
+    3. therefore the active curvature suppression is uniquely
+
+           P_k = exp(-Delta/2).
+
+    The earlier Paper 10 formula
+
+           P_k = Delta^(-1/x^2)
+
+    remains superseded and is not an equally live curvature implementation.
+
+Proof
+    Paper 11 already proved the Schur-complement curvature theorem and replaced the earlier
+    independent-cell formula because curvature is a correlated global observable.
+
+    Paper 18 proves
+
+        N_eff = Delta
+
+    on the reduced scalar acoustic observer algebra.
+
+    Substituting into the active Paper 11 theorem yields
+
+        P_k = exp(-Delta/2).
+
+    Since the Paper 10 formula belongs to the superseded i.i.d. curvature class, it is not a
+    competing active implementation once the Schur branch is closed.
+
+QED.
+
+
+Corollary 18.42 (definitive Hubble value on the active curvature branch)
+    Within the published IO projection chain, the definitive curvature-branch H_0 is the Schur
+    value
+
+        H_0 = 68.91 km/s/Mpc.
+
+    The Paper 10 value
+
+        H_0 = 67.58 km/s/Mpc
+
+    is a legacy value tied to the superseded i.i.d. curvature implementation.
+
+
+==================================================
+VI. Exact boundary
+==================================================
+
+Best honest status
+
+    DERIVED / THEOREM for the curvature branch selection
+
+Exact scope
+
+    - reduced scalar acoustic observer algebra,
+    - active Paper 11 Schur curvature theorem,
+    - Paper 18 theorem N_eff = Delta,
+    - published IO H_0 assembly chain.
+
+What is not claimed
+
+    This report does not newly derive the entire H_0 projection map from scratch. It resolves the
+    remaining ambiguity in the curvature implementation and therefore selects the Schur-based H_0
+    already published in the framework.
+
+
+==================================================
+VII. Memory lock
+==================================================
+
+Do NOT say:
+
+    "Paper 10 and Paper 11 remain equally live curvature implementations."
+
+Correct statement:
+
+    Paper 18 closes the active Paper 11 Schur curvature theorem with
+
+        N_eff = Delta,
+
+    so the definitive active curvature law is
+
+        P_k = exp(-Delta/2),
+
+    and the corresponding framework H_0 is
+
+        68.91 km/s/Mpc.

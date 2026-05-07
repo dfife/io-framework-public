@@ -1,0 +1,3 @@
+No required apt packages for the default validator beyond a standard Python 3.12 environment.
+
+Optional external reruns of CLASS/CAMB may require compiler and BLAS/LAPACK development packages depending on local installation method.

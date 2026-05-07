@@ -1,0 +1,128 @@
+Paper 18
+BDP Epoch-Independence Audit
+
+Question
+
+    Does the Paper 18 BDP formula
+
+        f_b = 2 gamma / x
+
+    define an epoch-independent baryon fraction, or does it change when evaluated at different
+    conformal times eta?
+
+
+Executive result
+
+    The literal local formula is epoch-dependent.
+
+    In the Schwarzschild interior,
+
+        x(eta) = 2 / (1 + cos eta),
+
+    so the local BDP expression becomes
+
+        f_b(eta) = 2 gamma / x(eta) = gamma (1 + cos eta).
+
+    This plainly changes with eta.
+
+    Therefore Gemini's attack lands against the literal reading of the theorem.
+
+    What survives is weaker:
+
+    - a conserved dust ratio rho_b/rho_m can be epoch-independent after freeze-in,
+    - but that conservation statement is not the same as the local identity
+          f_b(eta) = 2 gamma / x(eta)
+      at every eta.
+
+    So the present Paper 18 BDP theorem is too strong unless it is explicitly restricted to a chosen
+    evaluation epoch or supplemented by a separate freeze-in / transport theorem.
+
+
+==================================================
+I. Direct test of the local formula
+==================================================
+
+Take
+
+    gamma = 0.2375,
+    x(eta) = 2 / (1 + cos eta).
+
+Then
+
+    f_b(eta) = 2 gamma / x(eta).
+
+Representative values:
+
+    eta = 0                  -> x = 1.000000   -> f_b = 0.475000
+    eta = 0.5                -> x = 1.065199   -> f_b = 0.445926
+    eta = 1.0                -> x = 1.298446   -> f_b = 0.365822
+    eta = eta_s = 1.2485855  -> x = 1.518990   -> f_b = 0.312708
+    eta = 1.5                -> x = 1.867872   -> f_b = 0.254300
+    eta = 2.0                -> x = 3.425519   -> f_b = 0.138665
+
+So the local formula is not constant.
+
+
+==================================================
+II. What the conservation argument does and does not prove
+==================================================
+
+It is true that if baryons and total matter are both dust after freeze-in, then
+
+    dot(rho_b) + 3 H rho_b = 0,
+    dot(rho_m) + 3 H rho_m = 0
+
+implies
+
+    d(rho_b / rho_m) / d tau = 0.
+
+This proves:
+
+    once a baryon fraction is set, it can remain constant.
+
+But it does NOT prove:
+
+    the local selector formula 2 gamma / x(eta) has the same value at every eta.
+
+That is a separate claim, and it is false.
+
+
+==================================================
+III. Honest status
+==================================================
+
+The correct grading is:
+
+    - local formula f_b(eta) = 2 gamma / x(eta): epoch-dependent, therefore not a frozen baryon
+      fraction;
+    - conserved baryon fraction rho_b/rho_m after freeze-in: epoch-independent, but requires a
+      separate freeze-in theorem or evaluation-epoch convention.
+
+So the present BDP theorem must be weakened to one of the following:
+
+    Option A:
+        f_b = 2 gamma / x is an evaluation-epoch formula, presently used at the observer epoch
+        eta_s.
+
+    Option B:
+        a new theorem is added:
+            the charged-dust selector sets the baryon fraction at a specific freeze-in epoch eta_*,
+            after which dust continuity propagates that fixed ratio unchanged.
+
+Without A or B, the epoch-independence defense fails.
+
+
+==================================================
+IV. Final verdict
+==================================================
+
+The local BDP formula is epoch-dependent.
+
+Therefore the attack lands against the literal theorem statement.
+
+What remains salvageable is not the identity
+
+    f_b(eta) = 2 gamma / x(eta)
+
+for all eta, but only a weaker statement tying the formula to one chosen epoch plus a separate
+conservation law.

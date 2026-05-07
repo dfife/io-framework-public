@@ -1,0 +1,368 @@
+Paper 18
+Modular-to-Bogoliubov Upgrade
+
+Question
+
+    Upgrade the reduced Bogoliubov result to theorem-grade by replacing
+
+        "choose a KMS state, then read off |beta|^2"
+
+    with
+
+        unique modular flow
+        -> unique KMS state
+        -> unique Bogoliubov coefficients.
+
+
+Executive result
+
+    The exact proposed chain is false in general, but it can be repaired into a theorem in the
+    reduced IO photon sector.
+
+    False in general:
+
+        modular flow does NOT uniquely determine a KMS state on an arbitrary algebra.
+
+    Counterexample:
+
+        on the abelian algebra C^2 with trivial dynamics, every faithful state is KMS.
+
+    True in the Paper 17 / Paper 18 reduced photon sector:
+
+        once one restricts to the reduced bosonic Weyl / CCR algebra and to continuous
+        gauge-invariant quasi-free states, the physical modular flow and the base temperature
+        determine a unique quasi-free KMS covariance, hence a unique |beta|^2.
+
+    So the theorem-grade statement is not
+
+        "Tomita-Takesaki alone forces the KMS state"
+
+    but rather
+
+        "Paper 17 modular projection + Paper 2 base temperature + quasi-free CCR uniqueness
+         force the KMS covariance and therefore the Bogoliubov coefficients."
+
+
+==================================================
+I. The raw converse is false
+==================================================
+
+Tomita-Takesaki gives the one-way statement:
+
+    a faithful normal state determines its modular automorphism group uniquely.
+
+The converse is false in general.
+
+Simple counterexample
+
+    Let A = C^2 with trivial dynamics
+
+        alpha_t = id.
+
+    Then every faithful state
+
+        omega_p(a,b) = p a + (1-p) b,
+        0 < p < 1,
+
+    is a beta-KMS state for every beta, because on an abelian algebra with trivial dynamics the
+    KMS boundary condition is automatic.
+
+    Hence one and the same flow has infinitely many faithful KMS states.
+
+Conclusion
+
+    The slogan
+
+        "unique modular flow -> unique KMS state"
+
+    is not theorem-grade without additional structure.
+
+
+==================================================
+II. The repaired IO statement
+==================================================
+
+The extra structure already present in the reduced Paper 17 / Paper 18 sector is:
+
+1. reduced photon algebra:
+
+       M_ph = CCR(h_ph),
+       h_ph = L^2(R_+, d omega),
+
+2. physical transfer modular flow on the thermal sector:
+
+       Delta_phys^{it} = exp(it (D tensor K_hat_g)),
+
+   with physical Schwarzschild reduction
+
+       K_hat_g = K_gauge I,
+
+3. base interior temperature from Paper 2:
+
+       T_IO = 2.6635 K,
+
+4. state class:
+
+       continuous gauge-invariant quasi-free states.
+
+In this class, standard CCR thermal theory gives uniqueness of the KMS state for a fixed positive
+one-particle Hamiltonian, and the entire state is determined by its two-point covariance.
+
+
+==================================================
+III. The base quasi-free state is forced
+==================================================
+
+Let Omega be the physical one-particle frequency operator:
+
+    (Omega f)(omega) = omega f(omega),    Omega >= 0.
+
+At inverse temperature
+
+    beta_IO = hbar / (k_B T_IO),
+
+the unique continuous gauge-invariant quasi-free KMS state on the Weyl algebra has covariance
+
+    rho_IO = (exp(beta_IO Omega) - I)^(-1).
+
+This is the standard bosonic Bose-Einstein covariance.
+
+Why this removes the circularity
+
+    The old reduced Bogoliubov report inserted a KMS state directly.
+    The repaired theorem does not.
+
+    Instead it uses:
+
+    - Paper 2 to fix T_IO,
+    - the standard uniqueness theorem for the quasi-free CCR KMS state at that temperature,
+    - and then reads off the covariance.
+
+So the state is forced inside the reduced quasi-free class.
+
+
+==================================================
+IV. The modular flow fixes the transferred state
+==================================================
+
+Paper 17 proved
+
+    Delta_phys^{it} |_(thermal photon sector)
+    = exp(it K_gauge D)
+
+on the physical Schwarzschild tangential sector.
+
+Since D generates translation in
+
+    nu = ln omega,
+
+the modular flow acts by frequency dilation
+
+    omega -> e^{K_gauge lambda} omega
+
+or equivalently by pushforward on the covariance:
+
+    rho_lambda(omega)
+    = rho_IO(e^{-K_gauge lambda} omega).
+
+Substituting the forced base covariance:
+
+    rho_lambda(omega)
+    = 1 / [exp(hbar e^{-K_gauge lambda} omega / (k_B T_IO)) - 1]
+    = 1 / [exp(hbar omega / (k_B T(lambda))) - 1],
+
+with
+
+    T(lambda) = T_IO e^{K_gauge lambda}.
+
+At
+
+    lambda = ln x,
+
+this gives
+
+    T_obs = T_IO x^{K_gauge},
+
+which is exactly GTTP.
+
+Therefore the modular flow determines the whole transferred quasi-free KMS family once the base
+temperature is fixed.
+
+
+==================================================
+V. Bogoliubov coefficients are then forced
+==================================================
+
+In a gauge-invariant quasi-free bosonic thermal state, the Bogoliubov / Araki-Woods realization on
+a doubled Fock space has
+
+    |beta_lambda(omega)|^2 = rho_lambda(omega),
+    |alpha_lambda(omega)|^2 = 1 + rho_lambda(omega).
+
+Therefore
+
+    |beta_lambda(omega)|^2
+    = 1 / [exp(hbar omega / (k_B T(lambda))) - 1].
+
+In particular:
+
+Base interior sector:
+
+    |beta_IO(omega)|^2
+    = 1 / [exp(hbar omega / (k_B T_IO)) - 1].
+
+Observed transferred sector:
+
+    |beta_obs(omega)|^2
+    = 1 / [exp(hbar omega / (k_B T_obs)) - 1].
+
+So inside the repaired theorem class, the Bogoliubov coefficients are unique.
+
+
+==================================================
+VI. The theorem
+==================================================
+
+Theorem 18.43 (modular-to-Bogoliubov theorem, repaired form)
+    Consider the reduced Schwarzschild tangential thermal photon sector of H_IO.
+    Assume:
+
+    1. Paper 17 modular projection theorem:
+
+           Delta_phys^{it} = exp(it (D tensor K_hat_g)),
+
+       with physical reduction
+
+           K_hat_g = K_gauge I;
+
+    2. Paper 2 base temperature theorem:
+
+           T_IO = 2.6635 K;
+
+    3. the reduced photon algebra is the bosonic Weyl / CCR algebra over
+
+           h_ph = L^2(R_+, d omega);
+
+    4. the physical thermal states are taken in the continuous gauge-invariant quasi-free class.
+
+    Then:
+
+    (a) there is a unique base KMS state at T_IO with covariance
+
+            rho_IO = (exp(hbar Omega/(k_B T_IO)) - I)^(-1);
+
+    (b) modular flow transports it uniquely to the family
+
+            rho_lambda(omega)
+            = 1 / [exp(hbar omega / (k_B T_IO e^{K_gauge lambda})) - 1];
+
+    (c) the corresponding Bogoliubov coefficients are uniquely fixed by
+
+            |beta_lambda(omega)|^2 = rho_lambda(omega).
+
+    Hence
+
+        |beta_IO(omega)|^2
+        = 1 / [exp(hbar omega / (k_B T_IO)) - 1],
+
+    and at lambda = ln x,
+
+        |beta_obs(omega)|^2
+        = 1 / [exp(hbar omega / (k_B T_obs)) - 1],
+        T_obs = T_IO x^{K_gauge}.
+
+Proof
+    Step 1.
+    The general converse "flow implies unique KMS state" is false, so one must work in a class
+    where KMS uniqueness is available.
+
+    Step 2.
+    On the bosonic Weyl / CCR algebra with positive one-particle Hamiltonian Omega, the continuous
+    gauge-invariant quasi-free KMS state at inverse temperature beta_IO is unique and has
+    covariance
+
+        rho_IO = (exp(beta_IO hbar Omega) - I)^(-1).
+
+    Step 3.
+    Paper 17 gives the unique physical transfer modular flow
+
+        exp(it K_gauge D),
+
+    which acts by dilation in log-frequency. Therefore the covariance is pushed forward to
+
+        rho_lambda(omega) = rho_IO(e^{-K_gauge lambda} omega).
+
+    Step 4.
+    This pushforward is exactly the Planck covariance at temperature
+
+        T(lambda) = T_IO e^{K_gauge lambda}.
+
+    Step 5.
+    In the unique quasi-free Araki-Woods realization of that state,
+
+        |beta_lambda|^2 = rho_lambda.
+
+    Therefore the coefficients are uniquely fixed.
+
+
+==================================================
+VII. What is now theorem-grade and what is not
+==================================================
+
+Theorem-grade:
+
+    Inside the reduced bosonic quasi-free observer algebra, the Bogoliubov coefficients are forced
+    by
+
+        modular flow + base temperature + quasi-free CCR uniqueness.
+
+Not theorem-grade:
+
+    The raw unrestricted statement
+
+        "Tomita-Takesaki alone makes the KMS state unique"
+
+    is false.
+
+Still open:
+
+    the full unreduced 3+1 coordinate-space mode-matching kernel on the complete OS collapse
+    spacetime.
+
+
+==================================================
+VIII. Checks
+==================================================
+
+The check file verifies:
+
+    - the explicit counterexample to the naive converse,
+    - the modular pushforward formula
+
+          rho_lambda(omega) = rho_IO(e^{-K_gauge lambda} omega),
+
+    - equality with the direct Planck covariance at
+
+          T(lambda) = T_IO e^{K_gauge lambda},
+
+    - the CCR relation
+
+          |alpha|^2 - |beta|^2 = 1.
+
+Saved checks:
+
+    /opt/cosmology-lab/results/paper18/paper18_modular_bogoliubov_upgrade_checks.json
+
+
+==================================================
+IX. Primary sources
+==================================================
+
+Modular theory / KMS uniqueness direction:
+    https://pillet.univ-tln.fr/data/pdf/Tomita-Takesaki_theory.pdf
+
+Quasi-free KMS uniqueness on CCR:
+    https://www.dokumen.pub/operator-algebras-and-quantum-statistical-mechanics-volume-2-equilibrium-states-models-in-quantum-statistical-mechanics-2nd-edition-3540614923-9783540614921.html
+
+Quasi-free states / CCR background:
+    https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A93D22CE0F7B2D7CCEE195F4A218A451/S000497270003211Xa.pdf/quasi_free_states_of_the_canonical_commutation_relations.pdf

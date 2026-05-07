@@ -1,0 +1,25 @@
+{
+  "paper": "Paper 18",
+  "version": "v1.6",
+  "executive_verdict": "No hidden continuous fitted parameter remains after v1.6 repair. The stale v1.5 CMB-temperature prediction wording is retired; R4_FIRAS is visible, inherited from Paper 17 v1.5, and frozen.",
+  "checks": {
+    "hidden_continuous_fitted_parameter_found": false,
+    "R4_visible": true,
+    "R4_fixed_by_FIRAS": true,
+    "independent_CMB_temperature_prediction_retired": true,
+    "CMP_R4_independent": true,
+    "BDP_R4_independent": true,
+    "V_alpha_R4_independent": true,
+    "N_eff_Delta_physical_identification_withdrawn": true,
+    "P_k_no_go_remains_catastrophic": true
+  },
+  "status_labels": {
+    "CMP": "DERIVED/THEOREM within reduced observer algebra C1-C5",
+    "BDP": "DERIVED/THEOREM within reduced observer algebra and standard minimal-coupling matter class",
+    "V_alpha": "DERIVED/THEOREM within reduced gauge center",
+    "entropy_rank_Delta": "DERIVED/THEOREM as math-only result; physical N_eff=Delta withdrawn",
+    "Bogoliubov_spectrum": "DERIVED/CONDITIONAL_VERIFIED on Paper 17 v1.5 R4_FIRAS plus quasi-free CCR/no-backscattering scope",
+    "legacy_observables": "CONDITIONAL diagnostic branch",
+    "matter_power_shape": "NO-GO diagnostic with explicit nuisance fits"
+  }
+}

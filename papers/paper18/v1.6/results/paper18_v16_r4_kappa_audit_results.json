@@ -1,0 +1,85 @@
+{
+  "paper": "Paper 18",
+  "target_version": "v1.6",
+  "executive_verdict": "No hidden continuous fitted parameter remains after the v1.6 repair. Paper 18 v1.5 had a stale CMB-temperature overclaim through implicit R4=1; v1.6 exposes R4_FIRAS as inherited from Paper 17 v1.5 and retires independent CMB prediction language.",
+  "hidden_continuous_fitted_parameter_found": false,
+  "stale_overclaim_found": true,
+  "load_bearing_visible_field": "R4_FIRAS",
+  "R4_FIRAS": 1.0031014644,
+  "retired_claims": [
+    "T_CMB = 2.7253 K as independent IO prediction",
+    "T_obs = T_IO*x^K_gauge as theorem-grade observer temperature",
+    "Bogoliubov spectrum at observer temperature without FIRAS-fixed R4 inheritance"
+  ],
+  "active_replacement": "FIRAS fixes the unique observer-side readout normalization inside T_obs(R4)=T_IO*x^(R4*K_gauge); Paper 18's Bogoliubov theorem proves Planck/KMS form with that inherited readout.",
+  "audit_targets": [
+    {
+      "target": "CMP Modular Realization",
+      "verdict": "DERIVED/THEOREM within reduced observer algebra C1-C5",
+      "R4_damage": false,
+      "hidden_parameter": false,
+      "recommendation": "Keep theorem; no R4 edit needed."
+    },
+    {
+      "target": "BDP Modular Derivation",
+      "verdict": "DERIVED/THEOREM within reduced observer algebra and standard minimal-coupling matter class",
+      "R4_damage": false,
+      "hidden_parameter": false,
+      "recommendation": "Keep theorem; no R4 edit needed."
+    },
+    {
+      "target": "V(alpha) uniqueness",
+      "verdict": "DERIVED/THEOREM within reduced gauge center",
+      "R4_damage": false,
+      "hidden_parameter": false,
+      "recommendation": "Keep theorem."
+    },
+    {
+      "target": "Acoustic entropy-rank Delta",
+      "verdict": "DERIVED/THEOREM as math-only entropy-rank; physical N_eff=Delta identification withdrawn",
+      "R4_damage": false,
+      "hidden_parameter": false,
+      "recommendation": "Keep math theorem; keep physical Friedmann-radiation identification withdrawn."
+    },
+    {
+      "target": "Bogoliubov spectrum",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED on Paper 17 v1.5 R4_FIRAS plus reduced quasi-free CCR and no-backscattering scope",
+      "R4_damage": true,
+      "hidden_parameter": false,
+      "recommendation": "Replace T_obs=T_IO*x^K_gauge with T_obs(R4_FIRAS)=T_FIRAS and remove independent CMB prediction wording."
+    },
+    {
+      "target": "Legacy observables conditional branch",
+      "verdict": "CONDITIONAL diagnostic branch; N_eff=Delta withdrawn",
+      "R4_damage": true,
+      "hidden_parameter": false,
+      "recommendation": "Use FIRAS-fixed T0 for radiation-density calculations; do not promote branch outputs."
+    },
+    {
+      "target": "P(k) full-shape no-go",
+      "verdict": "NO-GO diagnostic with explicit nuisance fits",
+      "R4_damage": true,
+      "hidden_parameter": false,
+      "recommendation": "Keep no-go; disclose nuisance fits and external CAMB/BOSS dependency."
+    }
+  ],
+  "files_patched_for_R4": [
+    "paper18_bogoliubov_coefficients_checks.py",
+    "paper18_modular_bogoliubov_upgrade_checks.py",
+    "paper18_legacy_observables_recalculation_checks.py",
+    "paper18_jwst_age_recalculation_checks.py",
+    "paper18_matter_power_shape_test.py",
+    "paper18_zeq_kruskal_audit_checks.py"
+  ],
+  "unaffected_files": [
+    "paper18_cmp_theorem_checks.py",
+    "paper18_bdp_theorem_checks.py",
+    "paper18_bdp_gap_closure_checks.py",
+    "paper18_bdp_epoch_independence_audit_checks.py",
+    "paper18_v_alpha_theorem_checks.py",
+    "paper18_neff_delta_theorem_checks.py",
+    "paper18_curvature_implementation_resolution_checks.py",
+    "paper18_structural_attacks_audit_checks.py"
+  ],
+  "recommended_v16_boundary": "Paper 18 v1.6 is a hygiene/reproducibility update: preserve R4-independent theorem claims, keep N_eff=Delta physical ID withdrawn, and inherit Paper 17 v1.5 FIRAS-fixed R4 for all observer-side thermal readouts."
+}
