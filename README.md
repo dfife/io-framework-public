@@ -170,6 +170,14 @@ The current Paper 26 support bundle is:
 - manifest:
   `metadata/manifests/paper26_v1_2_repro_bundle.json`
 
+The current Paper 19 support bundle is:
+
+- `papers/paper19/v1.6/`
+- validation command:
+  `python3 papers/paper19/v1.6/scripts/11_validate_expected_outputs.py`
+- manifest:
+  `metadata/manifests/paper19_v1_6_repro_bundle.json`
+
 The current Paper 24 support bundle is:
 
 - `papers/paper24/v2.3/`

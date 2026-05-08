@@ -1,0 +1,142 @@
+{
+  "inputs": {
+    "T_IO_K": 2.6635,
+    "T_CMB_standard_K": 2.7255,
+    "N_eff_SM_imported": 3.044,
+    "Delta": 5.624068750943682,
+    "DeltaNeff_counterfactual_high": 2.5800687509436817,
+    "omega_b_IO_exact_alpha1": 0.02102461376506758,
+    "omega_b_IO_rounded_paper18": 0.02108,
+    "omega_b_standard_equivalent": 0.022527265731771235,
+    "path_c_modern_amplitudes": {
+      "GAMMA_BI": 0.2375,
+      "K_gauge": 0.05487281774291466,
+      "K_mean": 1.72704,
+      "L1": 0.22416889162576648,
+      "L2": 0.13805247907094412,
+      "epsilon_w": 0.012300778733811872,
+      "epsilon_n": 0.02384221534546833,
+      "weak_delta": -0.012300778733811872,
+      "nuclear_common_delta": -0.02384221534546833,
+      "source": "Paper 22 v1.3 / Paper 24 v2.2 standard amplitude framework"
+    },
+    "note": "IO BBN branch uses T_IO in the omega_b -> eta conversion."
+  },
+  "prymordial": {
+    "large_network_exact": {
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.24779423821196234,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_CMB": 0.24779423821196234,
+      "Y_p_BBN": 0.24912821737852817,
+      "D/H": 2.5233039701421276e-05,
+      "He3/H": 1.0505205378608267e-05,
+      "Li7/H": 5.331502875744094e-10,
+      "eta10": 6.166803075456499,
+      "weak_delta": -0.012300778733811872,
+      "nuclear_common_delta": -0.02384221534546833,
+      "amplitude_framework": "Path C modern Paper22/Paper24 alignment"
+    },
+    "large_network_original_paper19_exact_audit": {
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.24566044550974284,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_CMB": 0.24566044550974284,
+      "Y_p_BBN": 0.24698670937070946,
+      "D/H": 2.41904747343944e-05,
+      "He3/H": 1.0356768830909241e-05,
+      "Li7/H": 5.543707853280677e-10,
+      "eta10": 6.166803075456499,
+      "weak_delta": 0.0,
+      "nuclear_common_delta": 0.0,
+      "amplitude_framework": "original Paper19 no-amplitude-dressing branch"
+    },
+    "small_network_exact": {
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.2477937106904119,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_CMB": 0.2477937106904119,
+      "Y_p_BBN": 0.24912768795766368,
+      "D/H": 2.5183626415273493e-05,
+      "He3/H": 1.0506541856923975e-05,
+      "Li7/H": 5.390508726716559e-10,
+      "eta10": 6.166803075456499,
+      "weak_delta": -0.012300778733811872,
+      "nuclear_common_delta": -0.02384221534546833,
+      "amplitude_framework": "Path C modern Paper22/Paper24 alignment"
+    },
+    "large_network_rounded": {
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.24781814417284279,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_CMB": 0.24781814417284279,
+      "Y_p_BBN": 0.24915220940738897,
+      "D/H": 2.510410594954571e-05,
+      "He3/H": 1.0487332753621735e-05,
+      "Li7/H": 5.363335812718549e-10,
+      "eta10": 6.183048605944518,
+      "weak_delta": -0.012300778733811872,
+      "nuclear_common_delta": -0.02384221534546833,
+      "amplitude_framework": "Path C modern Paper22/Paper24 alignment"
+    },
+    "large_network_counterfactual_high_Neff": {
+      "Neff_output": 5.6467247270267125,
+      "Y_p": 0.2773366062075666,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_CMB": 0.2773366062075666,
+      "Y_p_BBN": 0.27877068372533903,
+      "D/H": 3.399574295906722e-05,
+      "He3/H": 1.1685466970923766e-05,
+      "Li7/H": 4.2226375835644144e-10,
+      "eta10": 6.166803075456499,
+      "weak_delta": -0.012300778733811872,
+      "nuclear_common_delta": -0.02384221534546833,
+      "amplitude_framework": "Path C modern Paper22/Paper24 alignment"
+    }
+  },
+  "camb_primat_crosscheck": {
+    "standard_branch": {
+      "omega_b_std_equiv": 0.022527265731771235,
+      "Y_p_BBN": 0.24725473093704817,
+      "D/H": 2.4202654876677466e-05
+    },
+    "counterfactual_high_Neff": {
+      "omega_b_std_equiv": 0.022527265731771235,
+      "Y_p_BBN": 0.2769076720577266,
+      "D/H": 3.2668972554217376e-05
+    }
+  },
+  "paper18_quoted": {
+    "D/H": 2.49e-05,
+    "Y_p": 0.2471,
+    "Li7/H": 4.8e-10
+  },
+  "observed_conventions_v1": {
+    "source": "IO Framework Observational Conventions v1.0",
+    "url": "https://dfife.github.io/data/observational_conventions_v1.md",
+    "D/H": {
+      "value": 2.527e-05,
+      "sigma": 3e-07
+    },
+    "Y_p": {
+      "value": 0.245,
+      "sigma": 0.004
+    },
+    "Li7/H": {
+      "value": 1.58e-10,
+      "sigma": 3.1e-11
+    }
+  },
+  "comparisons": {
+    "vs_paper18_quoted": {
+      "D/H_relative_shift": 0.013375088410493048,
+      "Y_p_relative_shift": 0.002809543553064955,
+      "Li7/H_relative_shift": 0.11072976578001958
+    },
+    "vs_observed_conventions_v1_sigma": {
+      "D/H_sigma": -0.1232009952624156,
+      "Y_p_sigma": 0.6985595529905853,
+      "Li7/H_sigma": 12.101622179819659
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "inputs": {
+    "x": "1.51899",
+    "gamma": "0.2375",
+    "omega_m_geom_h2": "0.06721104357"
+  },
+  "bridge_1_density_reconstruction": {
+    "dust_current": "J^mu = rho u^mu",
+    "flow_orthogonal_volume_measure": "mu_perp = i_u(vol_4)",
+    "density_as_rn_derivative": "rho_eta = d nu_eta / d mu_perp,eta",
+    "os_dust_is_hypersurface_orthogonal": true,
+    "reduced_history_algebra_supplies_vol4_weight": true,
+    "scalarization_class_selected": "timelike continuity-response"
+  },
+  "bridge_2_representation_theorem": {
+    "equal_eta_slice_is_representation": true,
+    "fourier_decomposition_is_unitary_basis_change_on_L2_of_slice": true,
+    "spatial_hodge_for_scalar_modes_is_not_new_operator_class": true
+  },
+  "bridge_3_no_go": {
+    "independent_slice_codifferential_density_in_reduced_dust_class": false,
+    "codifferential_can_appear_only_as_notational_representation_of_divergence": true,
+    "counterexample_within_reduced_density_class_found": false
+  },
+  "resulting_branch": {
+    "J = x^(-1/2)": "0.8113767196882198827493334156315021693002155521456935197304391602789521689233620647210571909355928231",
+    "omega_b_alpha_3_over_2": "0.01705304256634875548471202990379874811457514160441247915896277822892373359945798963018503348231793540",
+    "alpha": "3/2"
+  }
+}

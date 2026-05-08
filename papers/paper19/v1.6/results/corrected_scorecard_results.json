@@ -1,0 +1,128 @@
+{
+  "inputs": {
+    "gamma": 0.2375,
+    "x": 1.51899,
+    "Delta": 5.624068750943682,
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_bulk_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "temperature_status": "IMPORTED/EMPIRICAL FIRAS datum fixing Paper 17 v1.5 R4; not an independent CMB prediction",
+    "H0_IO": 68.91,
+    "Omega_m_IO": 0.335,
+    "Omega_k_IO": -0.006,
+    "T0_IO": 2.7255,
+    "N_eff_background_kept_from_paper18": 5.624216852624106,
+    "omega_b_alpha_3_over_2": 0.017053042566348757,
+    "omega_b_alpha_1_exact": 0.02101741663588963,
+    "omega_b_old_paper18_geometric_value": 0.02108,
+    "omega_b_old_bad_projected_mapping": 0.04974483580619357
+  },
+  "equality_redshift": {
+    "statement": "With H0, Omega_m, T0, and N_eff held fixed, z_eq is independent of the baryon split.",
+    "z_eq_alpha_3_over_2": 2823.879425051597,
+    "z_eq_alpha_1": 2823.879425051597,
+    "z_eq_old_paper18_branch": 2823.879425051597
+  },
+  "bao_observable_split": {
+    "paper18_framework_fixed_ruler": {
+      "r_d_IO_fixed_Mpc": 143.3,
+      "chi2_desi_dr1": 19.80166650141952,
+      "pte_desi_dr1": 0.07093201513774482,
+      "statement": "This is the original Paper 18 geometric-ruler BAO observable, so the late-time clustering omega_b remapping does not change it."
+    },
+    "standard_sound_horizon_readout_lcdm_reference": {
+      "rs_drag_Mpc": 147.0841059285436,
+      "chi2_desi_dr1": 21.166391494399317,
+      "pte_desi_dr1": 0.0479963575208444
+    }
+  },
+  "jwst_ages_myr": {
+    "6": "879.246641602584103796255304373010524540169420951012694996221715858588686071354",
+    "10": "445.69126815803637914176201826864879625915972742071532438916739371543784981030304",
+    "14": "279.37445275981781261592711068171186869557682699162020211466290149102840086765799",
+    "20": "168.18646112335206365888603204496665788010761163186969412944170684228729356053313",
+    "today_Gyr": "13.278165759317907695155929002431713261060182410677282335200666521873823012390187"
+  },
+  "branches": {
+    "alpha_3_over_2": {
+      "name": "alpha_3_over_2_clustering",
+      "omega_b": 0.017053042566348757,
+      "Omega_b": 0.03591181674895905,
+      "sigma8": 0.7939941531820549,
+      "S8": 0.8390330736851034,
+      "rs_drag_Mpc": 136.805401909026,
+      "bao_chi2_desi_dr1": 130.81977368704983,
+      "bao_pte_desi_dr1": 4.2251658551480837e-22,
+      "boss_fullshape_chi2": 73.03360608958111,
+      "class_note": null
+    },
+    "alpha_1": {
+      "name": "alpha_1_geometric_comparison",
+      "omega_b": 0.02101741663588963,
+      "Omega_b": 0.04426034895696604,
+      "sigma8": 0.7596585931356453,
+      "S8": 0.8027498461991286,
+      "rs_drag_Mpc": 133.49650902585424,
+      "bao_chi2_desi_dr1": 277.18851154498003,
+      "bao_pte_desi_dr1": 2.8488005314785943e-52,
+      "boss_fullshape_chi2": 109.9963972722524,
+      "class_note": null
+    },
+    "paper18_geometric_scorecard": {
+      "name": "paper18_geometric_scorecard_value",
+      "omega_b": 0.02108,
+      "Omega_b": 0.04439214258233938,
+      "sigma8": 0.7591251033563537,
+      "S8": 0.8021860944794154,
+      "rs_drag_Mpc": 133.44712998460056,
+      "bao_chi2_desi_dr1": 279.89812584162416,
+      "bao_pte_desi_dr1": 7.713396285454766e-53,
+      "boss_fullshape_chi2": 110.722304066687,
+      "class_note": null
+    },
+    "old_bad_projected_mapping": {
+      "name": "old_bad_projected_mapping",
+      "omega_b": 0.04974483580619357,
+      "Omega_b": 0.10475710834172705,
+      "sigma8": null,
+      "S8": null,
+      "rs_drag_Mpc": null,
+      "bao_chi2_desi_dr1": null,
+      "bao_pte_desi_dr1": null,
+      "boss_fullshape_chi2": 226.9405729804671,
+      "class_note": "CLASS summary skipped for this branch because omega_b is outside the default BBN-helium interpolation table."
+    },
+    "lcdm_reference": {
+      "sigma8": 0.8110857578005576,
+      "S8": 0.8315112578544905,
+      "rs_drag_Mpc": 147.0841059285436,
+      "bao_chi2_desi_dr1": 21.166391494399317,
+      "bao_pte_desi_dr1": 0.0479963575208444,
+      "boss_fullshape_chi2": 70.32360985979422
+    }
+  },
+  "n_independent_observables": {
+    "T_CMB": {
+      "affected_by_clustering_omega_b_change": false,
+      "value_K": 2.7255,
+      "status": "IMPORTED/EMPIRICAL FIRAS-fixed observer-side thermal datum; not counted as an independent prediction"
+    },
+    "D_over_H": {
+      "affected_by_clustering_omega_b_change": false,
+      "reason": "Paper 19 only changes the late-time matter-transfer baryon slot, not the BBN microphysical branch."
+    },
+    "Y_p": {
+      "affected_by_clustering_omega_b_change": false,
+      "reason": "Same as D/H: the BBN sector is not recomputed by the clustering Jacobian."
+    },
+    "w": {
+      "affected_by_clustering_omega_b_change": false,
+      "value": -1.0
+    },
+    "a0": {
+      "affected_by_clustering_omega_b_change": false,
+      "value_m_per_s2": 1.3444355702869374e-10
+    }
+  }
+}

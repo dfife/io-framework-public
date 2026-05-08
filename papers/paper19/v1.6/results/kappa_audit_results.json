@@ -1,0 +1,90 @@
+{
+  "paper": "Paper 19",
+  "target_version": "v1.6",
+  "audit_date": "May 2026",
+  "executive_verdict": {
+    "r4_damage_found": true,
+    "cmb_prediction_removed": true,
+    "hidden_continuous_fit_in_baryon_scalarization": false,
+    "separate_hidden_fit_risk": "The age-closed N_mode = 0.336 background branch is observationally selected unless an upstream theorem fixes it.",
+    "recommended_action": "Proceed with v1.6 R4/FIRAS repair, label migration, and reproducibility bundle; do not present the CMB temperature or age-closed N_mode branch as independent zero-parameter predictions."
+  },
+  "r4": {
+    "T_obs_family": "T_obs(R4) = T_IO * x^(R4*K_gauge)",
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "status": "IMPORTED/EMPIRICAL FIRAS datum plus upstream DERIVED/CONDITIONAL_VERIFIED uniqueness theorem from Paper 17 v1.5"
+  },
+  "updated_numeric_outputs": {
+    "boss_alpha_3_over_2_chi2": 73.03360608958111,
+    "boss_lcdm_chi2": 70.32360985979422,
+    "z_eq_paper18_branch": 2823.879425051597,
+    "bbn_D_over_H": 2.5233039701421276e-05,
+    "bbn_D_over_H_sigma": -0.1232009952624156,
+    "bbn_Y_p": 0.24779423821196234,
+    "bbn_Y_p_sigma": 0.6985595529905853,
+    "bbn_chi2_D_plus_Y": 0.5031639343080561,
+    "diagnostic_Li7_over_H": 5.331502875744094e-10,
+    "diagnostic_Li7_sigma": 12.101622179819659,
+    "age_closed_N_mode": 0.33602494442479497,
+    "age_closed_H0": 66.33390065663168,
+    "age_closed_Omega_m": 0.36236276919825583,
+    "age_closed_Omega_k": -0.08523706674322795
+  },
+  "script_repairs": [
+    "paper19_corrected_scorecard_checks.py",
+    "paper19_self_consistent_background_recompute_checks.py",
+    "paper19_matter_classification_fork_checks.py",
+    "paper19_h2_global_factor_scan_checks.py",
+    "paper19_hamiltonian_readout_audit_checks.py",
+    "paper19_baryon_mapping_audit.py",
+    "paper19_schur_n_audit.py",
+    "paper19_scalarization_jacobian_checks.py",
+    "paper19_four_track_baryon_scan.py",
+    "paper19_paper16_p6_revalidation_checks.py",
+    "paper19_paper14_killshotA_revalidation_checks.py",
+    "paper19_paper11_stress_revalidation_checks.py",
+    "paper19_modular_scalarization_audit_checks.py",
+    "paper19_a_vacuum_h2_readout_checks.py"
+  ],
+  "label_migration_findings": [
+    {
+      "old_label": "DERIVED/THEOREM, conditional on ...",
+      "recommended_label": "DERIVED/CONDITIONAL_VERIFIED",
+      "condition": "Use only if the manuscript states the chain to Premise 1, Premise 2, or imported physics."
+    },
+    {
+      "old_label": "CONDITIONAL or CONDITIONAL/THEOREM",
+      "recommended_label": "DERIVED/CONDITIONAL_VERIFIED or OPEN/PREMISE_GAP",
+      "condition": "Do not leave bare conditional labels."
+    },
+    {
+      "old_label": "OBSERVATIONALLY SELECTED",
+      "recommended_label": "OPEN/PREMISE_GAP or IMPORTED/EMPIRICAL diagnostic branch",
+      "condition": "Do not use as theorem label."
+    },
+    {
+      "old_label": "TRANSFORMED, NOT CLOSED",
+      "recommended_label": "OPEN/PREMISE_GAP",
+      "condition": "The age-closed background branch remains open unless theorem-fixed."
+    }
+  ],
+  "abbreviation_and_slang_flags": [
+    "IO",
+    "CMP",
+    "BDP",
+    "GTTP",
+    "Schur N-slot",
+    "slot",
+    "rung",
+    "branch",
+    "scorecard",
+    "fossil",
+    "kill shot",
+    "H_IO",
+    "M_red",
+    "Z_g",
+    "A-vacuum"
+  ]
+}

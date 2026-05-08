@@ -1,0 +1,22 @@
+{
+  "r4_repair": {
+    "T_obs_family": "T_obs(R4) = T_IO * x^(R4*K_gauge)",
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "status": "FIRAS fixes the observer-side thermal datum. Paper 19 v1.6 does not count the CMB temperature as an independent prediction."
+  },
+  "changed_outputs": {
+    "boss_alpha_3_over_2_chi2": 73.03360608958111,
+    "boss_lcdm_chi2": 70.32360985979422,
+    "z_eq_paper18_branch": 2823.879425051597,
+    "bbn_chi2_D_plus_Y": 0.5031639343080561,
+    "age_closed_N_mode_open_gap": 0.33602494442479497
+  },
+  "manuscript_actions": [
+    "Remove independent CMB-temperature prediction language.",
+    "Replace T_obs = T_IO*x^K_gauge with the FIRAS-fixed R4 family.",
+    "Migrate retired claim labels to the canonical claim-discipline taxonomy.",
+    "Label the age-closed N_mode branch as OPEN/PREMISE_GAP unless theorem-fixed elsewhere."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "paper": "Paper 19",
+  "version": "v1.6",
+  "hidden_continuous_parameter_found_in_baryon_scalarization": false,
+  "r4_status": "IMPORTED/EMPIRICAL FIRAS-fixed readout normalization inherited from Paper 17 v1.5",
+  "cmb_prediction_status": "retired",
+  "alpha_3_over_2_status": "DERIVED/CONDITIONAL_VERIFIED if v1.6 states the proper-time comoving-dust metric-measure premise chain",
+  "age_closed_N_mode_status": "OPEN/PREMISE_GAP unless theorem-fixed elsewhere",
+  "noncanonical_labels_found": true,
+  "abbreviation_slang_flags_found": true
+}

@@ -1,0 +1,41 @@
+{
+  "inputs": {
+    "x": 1.51899,
+    "gamma": 0.2375,
+    "omega_m_geom_h2": 0.06721104356999999,
+    "omega_b_alpha1": 0.02101741663588963
+  },
+  "transport_scalarization": {
+    "radial_free_fall_speed_v(r)": "sqrt(rs)/sqrt(r)",
+    "line_to_scalar_contraction_scaling": "sqrt(rs)/r**(3/2)",
+    "pg_divergence_of_v": "3*sqrt(rs)/(2*r**(3/2))",
+    "K_tan_scaling": "sqrt(rs)/r**(3/2)",
+    "divergence_to_K_tan_ratio": "3/2",
+    "J_transport = x^(-1/2)": 0.8113767196882199,
+    "alpha_transport": 1.5,
+    "omega_b_alpha_3_over_2": 0.01705304256634875
+  },
+  "slice_scalarization": {
+    "OS_slice_codifferential_for_homologous_radial_1form": "2*q/(a*tan(chi))",
+    "J_slice = x^(-1)": 0.6583321812520161,
+    "alpha_slice": 2.0,
+    "omega_b_alpha_2": 0.01383644173818763
+  },
+  "boss_fullshape_chi2": {
+    "N_eff_3.046": {
+      "alpha_1": 80.05607213754614,
+      "alpha_1.5": 82.63891354462291,
+      "alpha_2": 93.25046399436175
+    },
+    "N_eff_5.0": {
+      "alpha_1": 96.25020180752941,
+      "alpha_1.5": 69.67589609759767,
+      "alpha_2": 65.70448844460702
+    }
+  },
+  "interpretation_flags": {
+    "transport_map_produces_half_integer_alpha": true,
+    "slice_map_produces_area_class_alpha_2": true,
+    "geometry_alone_does_not_select_unique_scalarization": true
+  }
+}

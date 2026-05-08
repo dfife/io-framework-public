@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, cite the associated Paper 19 manuscript and this GitHub release."
+title: "Paper 19 v1.6 Reproducibility Bundle"
+authors:
+  - family-names: "Fife"
+    given-names: "David"
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+version: "v1.6"
+date-released: "2026-05-08"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper19-v1.6"
+license: "MIT"
+keywords:
+  - "Interior Observer framework"
+  - "baryon scalarization"
+  - "BOSS DR12"
+  - "big-bang nucleosynthesis"
+  - "reproducibility"
+

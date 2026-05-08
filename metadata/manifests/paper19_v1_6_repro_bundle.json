@@ -1,0 +1,215 @@
+{
+  "paper": "Paper 19",
+  "version": "v1.6",
+  "bundle_path": "papers/paper19/v1.6/",
+  "release_tag": "paper19-v1.6",
+  "validation_command": "python3 papers/paper19/v1.6/scripts/11_validate_expected_outputs.py",
+  "bundle_file_count": 41,
+  "files": [
+    {
+      "path": "papers/paper19/v1.6/CITATION.cff",
+      "sha256": "e2076cf47f397f30ceb777225f6c3367498b1e05310c47a741760479df30741e",
+      "size_bytes": 633
+    },
+    {
+      "path": "papers/paper19/v1.6/CONSTRUCTION_SUMMARY.md",
+      "sha256": "3a82b889124450eb744bd3a418612c29f971e54d852ceb56de91c1509bb99494",
+      "size_bytes": 2271
+    },
+    {
+      "path": "papers/paper19/v1.6/INVENTORY_REPORT.md",
+      "sha256": "aacd0f95d712b6b925db9fecf676913dabe49e15aa3ec227e81fc091c6cd4c01",
+      "size_bytes": 778
+    },
+    {
+      "path": "papers/paper19/v1.6/LICENSE",
+      "sha256": "f6c4564f564f2929f583345418133d2c9f1ee4a4a9881448a9aa0242606572c7",
+      "size_bytes": 545
+    },
+    {
+      "path": "papers/paper19/v1.6/MANIFEST.md",
+      "sha256": "98f8b72ebee056f06eb40c8ad80b12e64582c201cf25cd3809a9114d47992500",
+      "size_bytes": 783
+    },
+    {
+      "path": "papers/paper19/v1.6/README.md",
+      "sha256": "7e93b1f5e8ec7da0b95398d403a1ec473702be83933fe4611bfe23651d060aa0",
+      "size_bytes": 3568
+    },
+    {
+      "path": "papers/paper19/v1.6/SHA256SUMS.txt",
+      "sha256": "a173f6003da7e03b27c72c22ff3a17a3452a1f3d5cbd4a7f0ad59dcae5593c8f",
+      "size_bytes": 4042
+    },
+    {
+      "path": "papers/paper19/v1.6/VERSION.md",
+      "sha256": "332e30b15bc33a488556355a89cf6981baa0c5c0f4e4a7ad42fa51bc216ced5c",
+      "size_bytes": 548
+    },
+    {
+      "path": "papers/paper19/v1.6/data/external_data_sources.md",
+      "sha256": "7ed44fbd154c954bd438a076d661f5c50bfce6a3e1a77ef9ac45a3686b8f4318",
+      "size_bytes": 1008
+    },
+    {
+      "path": "papers/paper19/v1.6/data/imported_constants.json",
+      "sha256": "ff7c8f0a0213b2459e8d255b9f02289faa1f1d436c11c3733647f7fe2a5ff7fd",
+      "size_bytes": 1236
+    },
+    {
+      "path": "papers/paper19/v1.6/environment/apt_packages.txt",
+      "sha256": "8a7521de0511e2b9b814cc66b672ea62da1f5daf9fb182eb647c282733635ed3",
+      "size_bytes": 201
+    },
+    {
+      "path": "papers/paper19/v1.6/environment/environment_seed.md",
+      "sha256": "88fbf5341b6900df45431e78b010c9c47170b4051b634967528ede3f461bf3a3",
+      "size_bytes": 190
+    },
+    {
+      "path": "papers/paper19/v1.6/environment/external_dependencies.md",
+      "sha256": "861abd822dd4df75bad2f5ba686b436f123440cd0298930b7c14c1a3f08f9dbe",
+      "size_bytes": 379
+    },
+    {
+      "path": "papers/paper19/v1.6/environment/python_version.txt",
+      "sha256": "d083976b6846dd2f34e37889386613f8aad839a27807f610a513e90b20f3ff52",
+      "size_bytes": 15
+    },
+    {
+      "path": "papers/paper19/v1.6/environment/requirements.txt",
+      "sha256": "52ee76ed02b6b9d528888441be0359bd711f57189b82cf2f167d16eb216d7770",
+      "size_bytes": 82
+    },
+    {
+      "path": "papers/paper19/v1.6/reports/paper19_v16_abbreviation_slang_audit_report.md",
+      "sha256": "10e3673d9f1a38a3c991627e16df558688ed3bc6c4fa826bc3ae6e9ac3a407a7",
+      "size_bytes": 3301
+    },
+    {
+      "path": "papers/paper19/v1.6/reports/paper19_v16_r4_kappa_audit_report.md",
+      "sha256": "76423d2fce82e05d1e0338a5f740b1331e08338206187057f70f0de7ad70ef8d",
+      "size_bytes": 12954
+    },
+    {
+      "path": "papers/paper19/v1.6/reports/paper19_v16_r4_kappa_audit_results.json",
+      "sha256": "f7030677723c64ed3be2589794d63823e2be556633277aa987c1e358a7091f93",
+      "size_bytes": 3361
+    },
+    {
+      "path": "papers/paper19/v1.6/results/bbn_scorecard_results.json",
+      "sha256": "e9c2f66365a7f2c4826ba703b9b67ec95faafa0e29591d3e5f814a65baa7fc4c",
+      "size_bytes": 4876
+    },
+    {
+      "path": "papers/paper19/v1.6/results/bdp_domain_no_go_results.json",
+      "sha256": "0ce82b18c2bef0394a14fd08a44ef324eb26efb2872f737b7d603f8485ea996b",
+      "size_bytes": 1102
+    },
+    {
+      "path": "papers/paper19/v1.6/results/boss_fullshape_baryon_audit_results.json",
+      "sha256": "51f07430550772bbd960817c1f5454dbf00f1fe5035770df8b27b6bb7713711a",
+      "size_bytes": 16610
+    },
+    {
+      "path": "papers/paper19/v1.6/results/bridge_theorems_results.json",
+      "sha256": "40e2678c400e33ff1f1f30d068c653f48e522dbbcba04574a2cbd3361f97934d",
+      "size_bytes": 1290
+    },
+    {
+      "path": "papers/paper19/v1.6/results/corrected_scorecard_results.json",
+      "sha256": "bd2f5b5dd1c6f8a0754d9068c56f041655caa5e53fea2db754bf694fb9056109",
+      "size_bytes": 4893
+    },
+    {
+      "path": "papers/paper19/v1.6/results/kappa_audit_results.json",
+      "sha256": "f7030677723c64ed3be2589794d63823e2be556633277aa987c1e358a7091f93",
+      "size_bytes": 3361
+    },
+    {
+      "path": "papers/paper19/v1.6/results/kappa_audit_summary_results.json",
+      "sha256": "8a401c043ff8efc88b24303e2e07f0535392b4f9242f3b0cfe470590b83db6cb",
+      "size_bytes": 548
+    },
+    {
+      "path": "papers/paper19/v1.6/results/modular_scalarization_audit_results.json",
+      "sha256": "390f7a9168e653bf21831e0cf0d918897e9080e923556eb858f6c6eb3fd88735",
+      "size_bytes": 2644
+    },
+    {
+      "path": "papers/paper19/v1.6/results/r4_impact_audit_results.json",
+      "sha256": "08424a31a8dc1a265bae39781d03e3b10237f2247d937dd331b374244988ee44",
+      "size_bytes": 901
+    },
+    {
+      "path": "papers/paper19/v1.6/results/scalarization_jacobian_results.json",
+      "sha256": "cf12865e8cc9f21ed85fe28d4675b2d3f1b963ff0a8d71e83ad8000461e84088",
+      "size_bytes": 1292
+    },
+    {
+      "path": "papers/paper19/v1.6/results/self_consistent_background_results.json",
+      "sha256": "185ea52dc23968d8f990782079ce254ad0642f6d9d3598016bad8f2ba950a863",
+      "size_bytes": 18473
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/01_bridge_theorems.py",
+      "sha256": "0ad4ebb012df3f4e8ecc5341d8d2200009c654f64352863e0428bdebf600b0a9",
+      "size_bytes": 2448
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/02_modular_scalarization_audit.py",
+      "sha256": "cb15649cf739589a55cda1b321d92ce7ff5566c2921d68765cdcc956bd5f1927",
+      "size_bytes": 3459
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/03_bdp_domain_no_go.py",
+      "sha256": "d3296850f845466d67ec8a4a3b7e754872b8e0830a05f39a7484bdf75d0d5980",
+      "size_bytes": 3334
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/04_boss_fullshape_baryon_audit.py",
+      "sha256": "52ed7678ed07c06a598fd4e42f92c9f8ad037518974925c56cd49e976d7f8a75",
+      "size_bytes": 9710
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/05_scalarization_jacobian.py",
+      "sha256": "8655f15b272b51595d7f2d8c779dab0fd8c662d809405fdd06bf5e06af0a18ef",
+      "size_bytes": 4242
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/06_corrected_scorecard.py",
+      "sha256": "0d547e8253d76f400a2de154f9be2a7e9be2b1155bd66af91bda69b041ec03df",
+      "size_bytes": 17568
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/07_self_consistent_background.py",
+      "sha256": "c2ce6c0970e037888ba920256b3185d79a862b42353153a61c9857949173d907",
+      "size_bytes": 11452
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/08_bbn_scorecard.py",
+      "sha256": "4f192b27aa850e37fa095e3cd9be3f59706d9822b4554a0570f7d5317102454d",
+      "size_bytes": 10232
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/09_r4_impact_audit.py",
+      "sha256": "cade70a8ef3f4fd873c972cd357cf1d4e9cfd4a18f54bff63a747927b18d1910",
+      "size_bytes": 1875
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/10_kappa_audit_summary.py",
+      "sha256": "05eae59ba4f355e8eb0bf7133b96f59f93e9d5009e8ae88477ad9f591c44bae9",
+      "size_bytes": 1278
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/11_validate_expected_outputs.py",
+      "sha256": "746cc383fd6f24527ddf81bce50f5c834dc0c3edac178442270b758948372db3",
+      "size_bytes": 4076
+    },
+    {
+      "path": "papers/paper19/v1.6/scripts/README.md",
+      "sha256": "cf85fd6de982207fc1d986cef8d6fd468bdf17f52da56a7cbd82fd84a3f1d656",
+      "size_bytes": 1285
+    }
+  ]
+}

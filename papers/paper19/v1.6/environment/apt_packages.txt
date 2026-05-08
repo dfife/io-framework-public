@@ -1,0 +1,4 @@
+# No apt packages are required for the quick validator.
+# Heavy optional reruns may require compiler/toolchain packages needed by CAMB,
+# CLASS/classy, and PRyMordial in the user's local environment.
+

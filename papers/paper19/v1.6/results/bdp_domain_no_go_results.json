@@ -1,0 +1,37 @@
+{
+  "inputs": {
+    "gamma": "0.2375",
+    "x_obs": "1.51899",
+    "eta_s": "1.24858552397125",
+    "omega_m_geom_h2_old": "0.06721104357"
+  },
+  "local_selector": {
+    "formula": "f_b(eta) = 2 gamma / x(eta) = gamma (1 + cos eta)",
+    "f_b_horizon": "0.475",
+    "f_b_observer": "0.312707786094708",
+    "monotone_interval": [
+      "0.312707786094708",
+      "0.475"
+    ]
+  },
+  "path_averages": {
+    "uniform_eta": "0.417926321271596",
+    "proper_time_dust": "0.423750792132912",
+    "radial_dr": "0.393853893047354",
+    "log_x": "0.388216496609291",
+    "unit_plus_log_x": "0.410474124924431"
+  },
+  "comparison_targets": {
+    "old_low_fraction": "0.25",
+    "alpha_3_over_2_fraction": "0.253723817702489",
+    "old_low_omega_b": "0.01712",
+    "old_assumed_omega_b_from_geom": "0.0168027608925",
+    "alpha_3_over_2_omega_b_from_geom": "0.0170530425663488"
+  },
+  "no_go_checks": {
+    "old_low_below_observer_endpoint": true,
+    "alpha32_below_observer_endpoint": true,
+    "all_listed_averages_above_observer_endpoint": true,
+    "all_listed_averages_below_horizon_endpoint": true
+  }
+}

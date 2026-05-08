@@ -1,0 +1,48 @@
+{
+  "paper": "Paper 19",
+  "version": "v1.6",
+  "constants": {
+    "gamma_BI": {
+      "value": 0.2375,
+      "description": "Barbero-Immirzi parameter used by the framework"
+    },
+    "x": {
+      "value": 1.51899,
+      "description": "Schwarzschild radius to universe radius ratio used by Paper 19 support scripts"
+    },
+    "K_gauge": {
+      "value": 0.05487281774291466,
+      "formula": "ln(1 + gamma_BI^2)"
+    },
+    "R4_FIRAS": {
+      "value": 1.0031014644,
+      "formula": "ln(T_FIRAS/T_IO)/(K_gauge ln x)",
+      "status": "IMPORTED/EMPIRICAL FIRAS-fixed readout normalization inherited from Paper 17 v1.5"
+    },
+    "T_IO_K": {
+      "value": 2.6635,
+      "description": "Interior thermal scale used by upstream framework scripts"
+    },
+    "T_FIRAS_K": {
+      "value": 2.7255,
+      "status": "IMPORTED/EMPIRICAL observer-side thermal datum"
+    }
+  },
+  "observational_denominators": {
+    "source": "IO Framework Conventions v2.0, Section 1",
+    "url": "https://dfife.github.io/data/conventions_v2.md",
+    "D/H": {
+      "value": 2.527e-05,
+      "sigma": 3.0e-07
+    },
+    "Y_p": {
+      "value": 0.245,
+      "sigma": 0.004
+    },
+    "Li7/H": {
+      "value": 1.58e-10,
+      "sigma": 3.1e-11
+    }
+  }
+}
+
