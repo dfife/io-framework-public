@@ -1,0 +1,461 @@
+{
+  "status": "verified / source-compiled",
+  "premises": [
+    "The observable universe exists inside a Schwarzschild black hole.",
+    "The physics inside the horizon is the same as outside."
+  ],
+  "branch": {
+    "H0_bare": 39.649873075588886,
+    "H0_obs": 61.05967054543954,
+    "Omega_m": 0.4270807367909129,
+    "Omega_r": 0.0002426363506290527,
+    "Omega_k": -0.2811609930222799,
+    "Omega_lambda": 0.853837619880738,
+    "age_obs_Gyr": 15.063539536645377,
+    "age_bare_Gyr": 23.187046552377165,
+    "Omega_sum": 1.0,
+    "w": -1.0,
+    "T_obs_K": 2.7255,
+    "omega_b_BBN_alpha1": 0.02108,
+    "omega_b_clustering_alpha_3_over_2": 0.01705,
+    "J_theta": 0.8339461798286282,
+    "rs_drag_clustering_Mpc_cached": 147.66078329911915
+  },
+  "task1_distance_redshift_relation": {
+    "formula": "d_L(z) = (1+z) (c/H0) S_k[integral_0^z dz'/E(z')] for closed geometry",
+    "E_z": "sqrt(Omega_r (1+z)^4 + Omega_m (1+z)^3 + Omega_k (1+z)^2 + Omega_Lambda)",
+    "curvature_branch": "closed / sin, since Omega_k < 0",
+    "sample_distances_Mpc": {
+      "z_0.5": {
+        "chi_dimless": 0.44618143520525255,
+        "D_H_Mpc": 3806.3524698013093,
+        "D_C_Mpc": 2190.6739420516064,
+        "D_M_Mpc": 2170.2946527249487,
+        "D_A_Mpc": 1446.8631018166325,
+        "D_L_Mpc": 3255.441979087423,
+        "D_V_Mpc": 2077.329884486383
+      },
+      "z_1.0": {
+        "chi_dimless": 0.7783273966980622,
+        "D_H_Mpc": 2766.4966798950522,
+        "D_C_Mpc": 3821.4533635783064,
+        "D_M_Mpc": 3713.8916533925258,
+        "D_A_Mpc": 1856.9458266962629,
+        "D_L_Mpc": 7427.7833067850515,
+        "D_V_Mpc": 3366.6363193881184
+      },
+      "z_2.33": {
+        "chi_dimless": 1.2996205729534491,
+        "D_H_Mpc": 1334.492581722545,
+        "D_C_Mpc": 6380.913007762417,
+        "D_M_Mpc": 5887.736889252307,
+        "D_A_Mpc": 1768.0891559316237,
+        "D_L_Mpc": 19606.163841210182,
+        "D_V_Mpc": 4759.079477807928
+      }
+    }
+  },
+  "scorecard": {
+    "T_CMB_FIRAS": {
+      "status": "IMPORTED/EMPIRICAL FIRAS-fixed datum; not an independent CMB-temperature prediction",
+      "observer_side_thermal_datum_K": 2.7255,
+      "measurement_K": 2.7255,
+      "sigma_K": 0.0006,
+      "sigma_offset": 0.0,
+      "within_tolerance": true
+    },
+    "Pantheon_plus_raw": {
+      "status": "verified",
+      "dataset": "Pantheon+ full sample (1701 SN Ia)",
+      "data_source": "Scolnic et al. 2022 DataRelease GitHub clone via Pantheon+SH0ES",
+      "n_sn": 1701,
+      "nuisance_M_fit": -19.661038677957407,
+      "chi2": 1774.0425163963946,
+      "dof": 1700,
+      "chi2_per_dof": 1.043554421409644,
+      "pte": 0.10325316832363306,
+      "within_tolerance": true
+    },
+    "BOSS_DR12_fullshape_Pk": {
+      "status": "conditional / cached",
+      "dataset": "BOSS DR12 monopole full-shape public covariance",
+      "omega_b_h2": 0.017058882149412327,
+      "chi2": 217.29150482501413,
+      "dof": 60,
+      "chi2_per_dof": 3.621525080416902,
+      "pte": 1.1130466690588922e-19,
+      "within_tolerance": false,
+      "method_note": "This row is not the same specific bare-vs-observed acoustic-ruler issue as theta*. But to comply with the current no-CLASS/CAMB instruction, the pipeline now reports the branch-consistent cached Paper 20 clustering result instead of rerunning the external transfer backend here."
+    },
+    "BOSS_DR12_BAO_positions": {
+      "status": "conditional / cached-rd",
+      "dataset": "BOSS DR12 consensus BAO+FS compressed likelihood",
+      "source": "Alam et al. 2017 / arXiv:1607.03155",
+      "native_units": {
+        "DM_times_rd_fid_over_rd": "Mpc",
+        "H_times_rd_over_rd_fid": "km/s/Mpc",
+        "rd_fid_Mpc": 147.78
+      },
+      "n_points": 6,
+      "rs_drag_Mpc": 147.66078329911915,
+      "chi2": 35.62257923847627,
+      "dof": 6,
+      "chi2_per_dof": 5.937096539746045,
+      "pte": 3.2635322293101357e-06,
+      "within_tolerance": false,
+      "points": [
+        {
+          "z": 0.38,
+          "native_quantity": "DM_times_rd_fid_over_rd",
+          "native_measured": 1512.39,
+          "native_predicted": 1708.5328849763578,
+          "native_residual": 196.14288497635766,
+          "public_quantity": "DM_over_rd",
+          "public_measured": 10.234064149411287,
+          "public_predicted": 11.561326870864512,
+          "public_residual": 1.3272627214532253
+        },
+        {
+          "z": 0.38,
+          "native_quantity": "H_times_rd_over_rd_fid",
+          "native_measured": 81.2087,
+          "native_predicted": 73.25502562763609,
+          "native_residual": -7.953674372363906,
+          "public_quantity": "DH_over_rd",
+          "public_measured": 24.980577974434304,
+          "public_predicted": 27.692847626103635,
+          "public_residual": 2.712269651669331
+        },
+        {
+          "z": 0.51,
+          "native_quantity": "DM_times_rd_fid_over_rd",
+          "native_measured": 1975.22,
+          "native_predicted": 2208.948066618151,
+          "native_residual": 233.72806661815116,
+          "public_quantity": "DM_over_rd",
+          "public_measured": 13.365949384219785,
+          "public_predicted": 14.947544096752951,
+          "public_residual": 1.5815947125331657
+        },
+        {
+          "z": 0.51,
+          "native_quantity": "H_times_rd_over_rd_fid",
+          "native_measured": 90.9029,
+          "native_predicted": 79.18300568338343,
+          "native_residual": -11.719894316616575,
+          "public_quantity": "DH_over_rd",
+          "public_measured": 22.316562645993063,
+          "public_predicted": 25.619642056327667,
+          "public_residual": 3.303079410334604
+        },
+        {
+          "z": 0.61,
+          "native_quantity": "DM_times_rd_fid_over_rd",
+          "native_measured": 2306.68,
+          "native_predicted": 2563.601061476421,
+          "native_residual": 256.9210614764211,
+          "public_quantity": "DM_over_rd",
+          "public_measured": 15.60887806198403,
+          "public_predicted": 17.347415492464616,
+          "public_residual": 1.7385374304805872
+        },
+        {
+          "z": 0.61,
+          "native_quantity": "H_times_rd_over_rd_fid",
+          "native_measured": 98.9647,
+          "native_predicted": 84.29595689504045,
+          "native_residual": -14.668743104959546,
+          "public_quantity": "DH_over_rd",
+          "public_measured": 20.498624889000247,
+          "public_predicted": 24.06568876225424,
+          "public_residual": 3.5670638732539928
+        }
+      ],
+      "note": "Public summary rows also include converted D_M/r_d and D_H/r_d values for readability, but chi2 is computed in the native published BOSS compressed basis. The ruler is the branch-consistent cached Paper 20 drag scale; this remains a mixed acoustic placeholder row."
+    },
+    "DESI_DR1_BAO_positions": {
+      "status": "conditional / cached-rd",
+      "dataset": "DESI DR1 GCcomb Gaussian BAO likelihood",
+      "n_points": 12,
+      "rs_drag_Mpc": 147.66078329911915,
+      "chi2": 540.2802814340782,
+      "dof": 12,
+      "chi2_per_dof": 45.02335678617319,
+      "pte": 5.84083442145575e-108,
+      "within_tolerance": false,
+      "points": [
+        {
+          "z": 0.295,
+          "quantity": "DV_over_rs",
+          "measured": 7.92512927,
+          "predicted": 8.973513057614042,
+          "residual": 1.0483837876140418
+        },
+        {
+          "z": 0.51,
+          "quantity": "DM_over_rs",
+          "measured": 13.6200308,
+          "predicted": 14.947544096752951,
+          "residual": 1.3275132967529508
+        },
+        {
+          "z": 0.51,
+          "quantity": "DH_over_rs",
+          "measured": 20.98334647,
+          "predicted": 25.619642056327667,
+          "residual": 4.636295586327666
+        },
+        {
+          "z": 0.706,
+          "quantity": "DM_over_rs",
+          "measured": 16.84645313,
+          "predicted": 19.489466943571387,
+          "residual": 2.643013813571386
+        },
+        {
+          "z": 0.706,
+          "quantity": "DH_over_rs",
+          "measured": 20.07872919,
+          "predicted": 22.634025519471702,
+          "residual": 2.5552963294717017
+        },
+        {
+          "z": 0.93,
+          "quantity": "DM_over_rs",
+          "measured": 21.70841761,
+          "predicted": 23.91724591168399,
+          "residual": 2.2088283016839902
+        },
+        {
+          "z": 0.93,
+          "quantity": "DH_over_rs",
+          "measured": 17.87612922,
+          "predicted": 19.592443282403753,
+          "residual": 1.7163140624037538
+        },
+        {
+          "z": 1.317,
+          "quantity": "DM_over_rs",
+          "measured": 27.78720817,
+          "predicted": 29.987690017058455,
+          "residual": 2.2004818470584553
+        },
+        {
+          "z": 1.317,
+          "quantity": "DH_over_rs",
+          "measured": 13.82372285,
+          "predicted": 15.396842814156349,
+          "residual": 1.5731199641563496
+        },
+        {
+          "z": 1.491,
+          "quantity": "DV_over_rs",
+          "measured": 26.07217182,
+          "predicted": 27.802506834710496,
+          "residual": 1.7303350147104943
+        },
+        {
+          "z": 2.33,
+          "quantity": "DM_over_rs",
+          "measured": 39.70838281,
+          "predicted": 39.8733960209693,
+          "residual": 0.165013210969299
+        },
+        {
+          "z": 2.33,
+          "quantity": "DH_over_rs",
+          "measured": 8.52256583,
+          "predicted": 9.03755588929282,
+          "residual": 0.5149900592928205
+        }
+      ],
+      "method_note": "This row uses direct observer-side distances from the current IO branch together with the branch-consistent cached Paper 20 drag ruler from the torsion-Lambda audit. It is still an acoustic placeholder row and not a theorem-grade closure."
+    },
+    "theta_star": {
+      "status": "conditional",
+      "theorem_used": "Theorem 20.2 / J_theta = x^(-1/2) sqrt(1+gamma^2)",
+      "method_audit": {
+        "used_bare_parameters": true,
+        "used_observed_parameters": false,
+        "h0_used_km_s_Mpc": 39.649873075588886,
+        "omega_source": "current torsion-Lambda bare branch; Omega_i,obs = Omega_i,bare on this branch",
+        "temperature_used_K": 2.6635,
+        "omega_b_used_h2": 0.02108,
+        "J_theta_applied_after_bare_theta": true,
+        "external_recombination_engine": null,
+        "cached_branch_specific_source": "/opt/cosmology-lab/results/paper20/paper20_lambda_bare_background_audit_checks.json",
+        "comment": "The raw-data pipeline no longer re-runs theta* through CLASS/CAMB. It uses the branch-consistent cached Paper 20 torsion-Lambda bare result, then reports the theorem-level J_theta application already recorded there. The 0.599 deg value belongs to the older strict OS dust-only branch, not to the current torsion-Lambda branch."
+      },
+      "current_torsion_lambda_bare_branch": {
+        "omega_b_h2": 0.02108,
+        "theta_bare_deg": 0.6941545579323943,
+        "theta_obs_pred_deg": 0.5788875417983504,
+        "measurement_deg": 0.59648,
+        "sigma_deg": 0.00026,
+        "sigma_offset": -67.66330077557525,
+        "within_tolerance": false,
+        "note": "Branch-consistent cached Paper 20 torsion-Lambda theta* row; not recomputed here with external recombination software."
+      },
+      "cached_torsion_lambda_reference": {
+        "status": "conditional",
+        "theta_bare_deg": 0.6941545579323943,
+        "J_theta": 0.8339461798286282,
+        "prediction_deg": 0.5788875417983504,
+        "measurement_deg": 0.59648,
+        "sigma_deg": 0.00015,
+        "sigma_offset": -117.28305467766377,
+        "note": "Uses the current conditional Paper 20 theorem J_theta on the alpha=1, T_IO bare acoustic branch.",
+        "within_1sigma": false
+      },
+      "strict_os_reference_from_old_branch": {
+        "status": "conditional",
+        "theta_bare_deg": 0.7183214285615593,
+        "J_theta": 0.8339461798286282,
+        "prediction_deg": 0.5990414112379553,
+        "measurement_deg": 0.59648,
+        "sigma_deg": 0.00015,
+        "sigma_offset": 17.076074919701867,
+        "note": "Uses the current Paper 20 conditional phase-calibration theorem J_theta = x^(-1/2) sqrt(1+gamma^2).",
+        "within_1sigma": false
+      },
+      "clustering_sensitivity_only": {
+        "status": "not recomputed",
+        "reason": "Would require rerunning the external acoustic backend that the current instruction forbids in this pipeline."
+      }
+    },
+    "BBN": {
+      "status": "verified",
+      "engine": "PRyMordial large network exact",
+      "amplitude_framework": "Path C modern Paper22/Paper24 alignment",
+      "epsilon_w": 0.012300778733811872,
+      "epsilon_n": 0.02384221534546833,
+      "omega_b_h2": 0.02108,
+      "T_IO_K": 2.6635,
+      "N_eff": 3.044,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "predictions": {
+        "D/H": 2.510410594954571e-05,
+        "Y_p": 0.24781814417284279,
+        "Y_p_CMB": 0.24781814417284279,
+        "Y_p_BBN_audit_only": 0.24915220940738897,
+        "Li7/H": 5.363335812718549e-10
+      },
+      "direct_measurements": {
+        "Cooke_2018_D/H": {
+          "value": 2.527e-05,
+          "sigma": 3e-07
+        },
+        "Aver_2015_Y_p": {
+          "value": 0.245,
+          "sigma": 0.004
+        },
+        "Sbordone_2010_Li7/H": {
+          "value": 1.58e-10,
+          "sigma": 3.1e-11
+        },
+        "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+      },
+      "sigma_offsets": {
+        "D/H": -0.5529801681809717,
+        "Y_p": 0.7045360432106975,
+        "Li7/H": 12.204309073285641
+      },
+      "within_tolerance": {
+        "D/H": true,
+        "Y_p": true,
+        "Li7/H": false
+      }
+    },
+    "JWST_times": {
+      "status": "verified",
+      "ages_Myr": {
+        "6": 902.2491878044731,
+        "8": 614.1814514745535,
+        "10": 452.0664175726062,
+        "14": 281.7107257863493
+      },
+      "note": "This is the total cosmic age available by each redshift on the IO branch. No uniform direct stellar-age catalog for JWST galaxies is built into this pipeline, so this row reports available formation time rather than object-by-object chi2."
+    },
+    "direct_age_constraints": {
+      "status": "source-compiled",
+      "branch_age_Gyr": 15.063539536645377,
+      "chronometers": {
+        "globular_clusters_III_2025": {
+          "class": "direct cosmic chronometer",
+          "source": "Valcin et al. 2025, arXiv:2503.19481",
+          "url": "https://arxiv.org/abs/2503.19481",
+          "value_Gyr": 13.57,
+          "stat_sigma_Gyr": 0.15,
+          "sys_sigma_Gyr": 0.23,
+          "combined_sigma_Gyr": 0.2745906043549196,
+          "sigma_offset": 5.439150185615659,
+          "excludes_15p06_at_2sigma": true,
+          "excludes_15p06_at_3sigma": true
+        },
+        "globular_clusters_IV_2026": {
+          "class": "direct cosmic chronometer",
+          "source": "Valcin et al. 2026, arXiv:2603.04872",
+          "url": "https://arxiv.org/abs/2603.04872",
+          "value_Gyr": 13.81,
+          "stat_sigma_Gyr": 0.25,
+          "sys_sigma_Gyr": 0.23,
+          "combined_sigma_Gyr": 0.3397057550292606,
+          "sigma_offset": 3.6900744779475496,
+          "excludes_15p06_at_2sigma": true,
+          "excludes_15p06_at_3sigma": true
+        },
+        "gaia_white_dwarf_halo_2018": {
+          "class": "lower-bound chronometer",
+          "source": "Kilic et al. 2018, arXiv:1810.03536",
+          "url": "https://arxiv.org/abs/1810.03536",
+          "firm_lower_limit_Gyr": 10.3,
+          "quoted_halo_age_Gyr": 10.9,
+          "sigma_Gyr": 0.4,
+          "difference_from_lower_limit_Gyr": 4.763539536645377,
+          "excludes_15p06_at_2sigma": false,
+          "excludes_15p06_at_3sigma": false
+        },
+        "nucleocosmochronology_2001": {
+          "class": "nuclear chronometer",
+          "source": "Truran et al. 2001, arXiv:astro-ph/0109526",
+          "url": "https://arxiv.org/abs/astro-ph/0109526",
+          "th_u_age_Gyr": 12.5,
+          "sigma_Gyr": 3.0,
+          "th_eu_age_Gyr": 15.0,
+          "th_eu_sigma_Gyr": 4.0,
+          "lower_limit_Gyr": 10.0,
+          "th_u_sigma_offset": 0.8545131788817925,
+          "th_eu_sigma_offset": 0.01588488416134437,
+          "excludes_15p06_at_2sigma": false,
+          "excludes_15p06_at_3sigma": false
+        }
+      }
+    },
+    "w": {
+      "status": "derived",
+      "prediction": -1.0,
+      "note": "w is exact on this branch, but there is no raw-data-only model-independent direct score for w analogous to FIRAS or a BAO peak position. Any comparison to observational w constraints is cosmological-model dependent.",
+      "raw_data_scoreable": false
+    }
+  },
+  "countable_passes": {
+    "n_within_tolerance": 4,
+    "n_countable": 9,
+    "rows": {
+      "T_CMB_FIRAS": true,
+      "Pantheon_plus_raw": true,
+      "BOSS_DR12_fullshape_Pk": false,
+      "BOSS_DR12_BAO_positions": false,
+      "DESI_DR1_BAO_positions": false,
+      "theta_star": false,
+      "BBN_D/H": true,
+      "BBN_Y_p": true,
+      "BBN_Li7/H": false
+    }
+  },
+  "boundaries": {
+    "theta_star": "conditional because Theorem 20.2 / J_theta remains conditional, and there is still no IO-native acoustic solver in this pipeline. The reported number is the branch-consistent cached Paper 20 torsion-Lambda value.",
+    "BAO_positions": "conditional in the broader Paper 20 sense because the acoustic observable class remains structurally open. The pipeline uses direct IO distances but a cached branch-consistent drag ruler instead of rerunning external recombination software.",
+    "w": "not raw-data-scoreable in a model-independent sense."
+  }
+}

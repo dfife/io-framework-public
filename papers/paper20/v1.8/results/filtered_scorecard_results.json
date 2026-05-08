@@ -1,0 +1,259 @@
+{
+  "status": "verified / source-compiled",
+  "premises": [
+    "The observable universe exists inside a Schwarzschild black hole.",
+    "The physics inside the horizon is the same as outside."
+  ],
+  "bare_branch": {
+    "source": "M_U + Paper 1 torsion Lambda_bare + OS geometry + SM radiation import",
+    "H0_bare_km_s_Mpc": 39.649873075588886,
+    "Omega_m_bare": 0.4270807367909129,
+    "Omega_r_bare": 0.0002426363506290527,
+    "Omega_k_bare": -0.2811609930222799,
+    "Omega_lambda_bare": 0.853837619880738,
+    "T_IO_K": 2.6635
+  },
+  "observed_branch_for_H2_channels": {
+    "H0_obs_km_s_Mpc": 61.05967054543954,
+    "Omega_m_obs": 0.4270807367909129,
+    "Omega_r_obs": 0.0002426363506290527,
+    "Omega_k_obs": -0.2811609930222799,
+    "Omega_lambda_obs": 0.853837619880738,
+    "T_obs_K": 2.7255,
+    "sqrt_Delta": 2.3715119124608424
+  },
+  "scoreable_channels": {
+    "temperature": {
+      "filter": {
+        "name": "FIRAS-fixed optical readout normalization",
+        "paper": "Paper 17 v1.5 Theorem 17.2",
+        "status": "IMPORTED/EMPIRICAL datum plus DERIVED/THEOREM uniqueness inside the readout family",
+        "R4_FIRAS": 1.0031014644,
+        "formula": "T_obs(R4) = T_IO * x^(R4*K_gauge)",
+        "old_R4_equals_1_factor_retired": 1.023204472362383,
+        "firas_fixed_factor": 1.023277271400324
+      },
+      "bare_value": {
+        "T_bare_K": 2.6635
+      },
+      "observer_side_thermal_datum": {
+        "T_obs_K": 2.7255
+      },
+      "direct_measurement": {
+        "value_K": 2.7255,
+        "sigma_K": 0.0006
+      },
+      "sigma_offset": 0.0,
+      "passes_3sigma": true,
+      "counts_as_independent_cmb_prediction": false
+    },
+    "theta_star": {
+      "filter": {
+        "name": "acoustic angle Jacobian",
+        "paper": "Paper 20 Theorems 20.1 + 20.2",
+        "factor": 0.8339461798286282
+      },
+      "bare_value": {
+        "theta_bare_deg": 0.6941545579323943,
+        "source": "/opt/cosmology-lab/results/paper20/paper20_lambda_bare_background_audit_checks.json",
+        "method_boundary": "The bare torsion-Lambda branch acoustic value is taken from the existing branch-specific Paper 20 audit. The filtered scorecard does not rerun an external recombination code here.",
+        "bare_branch_inputs": {
+          "H0_bare_km_s_Mpc": 39.649873075588886,
+          "Omega_m_bare": 0.4270807367909129,
+          "Omega_r_bare": 0.0002426363506290527,
+          "Omega_k_bare": -0.2811609930222799,
+          "Omega_lambda_bare": 0.853837619880738,
+          "T_IO_K": 2.6635,
+          "omega_b_h2": 0.02108
+        }
+      },
+      "observed_prediction": {
+        "theta_obs_deg": 0.5788875417983504
+      },
+      "direct_measurement": {
+        "value_deg": 0.59648,
+        "sigma_deg": 0.00026
+      },
+      "sigma_offset": -67.66330077557525,
+      "passes_3sigma": false
+    },
+    "bbn": {
+      "deuterium": {
+        "filter": {
+          "name": "BDP alpha=1 baryon selector",
+          "paper": "Paper 18 BDP theorem",
+          "effective_omega_b_h2": 0.02108,
+          "amplitude_framework": "Path C modern Paper22/Paper24 alignment",
+          "epsilon_w": 0.012300778733811872,
+          "epsilon_n": 0.02384221534546833
+        },
+        "bare_inputs": {
+          "T_IO_K": 2.6635,
+          "N_eff": 3.044,
+          "omega_b_h2": 0.02108,
+          "engine": "PRyMordial large network exact",
+          "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+          "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+        },
+        "observed_prediction": {
+          "D/H": 2.510410594954571e-05
+        },
+        "direct_measurement": {
+          "value": 2.527e-05,
+          "sigma": 3e-07
+        },
+        "sigma_offset": -0.5529801681809717,
+        "passes_3sigma": true
+      },
+      "helium": {
+        "filter": {
+          "name": "BDP alpha=1 baryon selector",
+          "paper": "Paper 18 BDP theorem",
+          "effective_omega_b_h2": 0.02108,
+          "amplitude_framework": "Path C modern Paper22/Paper24 alignment",
+          "epsilon_w": 0.012300778733811872,
+          "epsilon_n": 0.02384221534546833
+        },
+        "bare_inputs": {
+          "T_IO_K": 2.6635,
+          "N_eff": 3.044,
+          "omega_b_h2": 0.02108,
+          "engine": "PRyMordial large network exact",
+          "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+          "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+        },
+        "observed_prediction": {
+          "Y_p": 0.24781814417284279,
+          "Y_p_CMB": 0.24781814417284279,
+          "Y_p_BBN_audit_only": 0.24915220940738897
+        },
+        "direct_measurement": {
+          "value": 0.245,
+          "sigma": 0.004
+        },
+        "sigma_offset": 0.7045360432106975,
+        "passes_3sigma": true
+      },
+      "lithium": {
+        "filter": {
+          "name": "BDP alpha=1 baryon selector",
+          "paper": "Paper 18 BDP theorem",
+          "effective_omega_b_h2": 0.02108,
+          "amplitude_framework": "Path C modern Paper22/Paper24 alignment",
+          "epsilon_w": 0.012300778733811872,
+          "epsilon_n": 0.02384221534546833
+        },
+        "bare_inputs": {
+          "T_IO_K": 2.6635,
+          "N_eff": 3.044,
+          "omega_b_h2": 0.02108,
+          "engine": "PRyMordial large network exact",
+          "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+          "observational_conventions": "https://dfife.github.io/data/observational_conventions_v1.md"
+        },
+        "observed_prediction": {
+          "Li7/H": 5.363335812718549e-10
+        },
+        "direct_measurement": {
+          "value": 1.58e-10,
+          "sigma": 3.1e-11
+        },
+        "sigma_offset": 12.204309073285641,
+        "passes_3sigma": false
+      }
+    },
+    "clustering_Pk": {
+      "filter": {
+        "name": "clustering baryon scalarization",
+        "paper": "Paper 19 alpha=3/2 theorem",
+        "effective_omega_b_h2": 0.01705
+      },
+      "bare_inputs": {
+        "H0_bare_km_s_Mpc": 39.649873075588886,
+        "Omega_m_bare": 0.4270807367909129,
+        "Omega_r_bare": 0.0002426363506290527,
+        "Omega_k_bare": -0.2811609930222799,
+        "Omega_lambda_bare": 0.853837619880738,
+        "T_IO_K": 2.6635
+      },
+      "observed_prediction": {
+        "dataset": "BOSS DR12 monopole full-shape",
+        "chi2": 205.71850399611168,
+        "dof": 60,
+        "chi2_per_dof": 3.428641733268528,
+        "pte": 7.567113577702298e-18
+      },
+      "direct_measurement": "BOSS DR12 full-shape public covariance",
+      "pass_criterion": "pte > 0.05",
+      "passes": false,
+      "method_boundary": "Uses the current verified clustering pipeline on the bare torsion-Lambda branch with the derived alpha=3/2 baryon slot."
+    },
+    "pantheon_supernovae": {
+      "filter": {
+        "name": "global H^2 readout",
+        "paper": "Paper 19 RT/BY chain",
+        "factor": 2.3715119124608424,
+        "applied_to": "observer expansion history"
+      },
+      "bare_inputs": {
+        "H0_bare_km_s_Mpc": 39.649873075588886,
+        "Omega_m_bare": 0.4270807367909129,
+        "Omega_r_bare": 0.0002426363506290527,
+        "Omega_k_bare": -0.2811609930222799,
+        "Omega_lambda_bare": 0.853837619880738
+      },
+      "observed_inputs": {
+        "H0_obs_km_s_Mpc": 61.05967054543954,
+        "Omega_m_obs": 0.4270807367909129,
+        "Omega_r_obs": 0.0002426363506290527,
+        "Omega_k_obs": -0.2811609930222799,
+        "Omega_lambda_obs": 0.853837619880738
+      },
+      "prediction": {
+        "dataset": "Pantheon+ full sample (1701 SN Ia)",
+        "chi2": 1774.0425163963946,
+        "dof": 1700,
+        "chi2_per_dof": 1.043554421409644,
+        "pte": 0.10325316832363306
+      },
+      "measurement": "Pantheon+ raw distance moduli",
+      "pass_criterion": "pte > 0.05",
+      "passes": true
+    },
+    "dark_energy_w": {
+      "filter": {
+        "name": "none",
+        "paper": "framework structural prediction"
+      },
+      "bare_value": {
+        "w": -1.0
+      },
+      "observed_prediction": {
+        "w": -1.0
+      },
+      "direct_measurement": null,
+      "counted_in_tally": false,
+      "note": "No raw-data-only direct measurement of w exists, so this row is reported but not counted."
+    }
+  },
+  "pending_channels": {
+    "BAO_feature_positions": "filter not yet derived",
+    "CMB_peak_heights": "filter not yet derived",
+    "lensing": "filter not yet derived",
+    "direct_H0": "prediction only; no observer filter applies"
+  },
+  "tally": {
+    "counted_rows": {
+      "temperature_FIRAS": true,
+      "theta_star": false,
+      "BBN_D/H": true,
+      "BBN_Y_p": true,
+      "BBN_Li7/H": false,
+      "BOSS_DR12_fullshape_Pk": false,
+      "Pantheon_plus": true
+    },
+    "passes": 4,
+    "total": 7,
+    "criterion": "3 sigma for sigma-based channels, pte > 0.05 for chi2 channels"
+  }
+}

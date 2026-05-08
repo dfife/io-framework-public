@@ -1,0 +1,277 @@
+{
+  "claim_discipline": {
+    "bipartite_homogeneous_identity_to_local_energy_branch": "verified",
+    "dust_bulk_for_theta_with_boundary_lambda_for_distances": "reconstruction",
+    "theta_filter_J_theta": "derived",
+    "temperature_filter_GTTP": "SUPERSEDED by Paper 17 v1.5 FIRAS-fixed readout normalization",
+    "bbn_alpha1_baryon_selector": "derived",
+    "clustering_alpha_3_over_2_row": "derived"
+  },
+  "premises": [
+    "The observable universe exists inside a Schwarzschild black hole.",
+    "The physics inside the horizon is the same as outside."
+  ],
+  "inputs": {
+    "M_U_kg": 4.5e+53,
+    "x": 1.51899,
+    "gamma": 0.2375,
+    "Delta": 5.624068750943682,
+    "sqrt_Delta": 2.3715119124608424,
+    "Delta_quarter": 1.5399713998840505,
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.7255,
+    "N_eff_imported": 3.044,
+    "J_theta": 0.8339461798286282,
+    "R4_FIRAS": 1.0031014644,
+    "old_R4_equals_1_GTTP_factor_retired": 1.023204472362383,
+    "firas_fixed_readout_factor": 1.023277271400324,
+    "omega_b_BBN": 0.02108
+  },
+  "numerators": {
+    "r_s_m": 6.6835442422068e+26,
+    "R_U_m": 4.3999922594663554e+26,
+    "rho_m_bare_kg_m3": 1.261154131801039e-27,
+    "matter": 7.05167836939843e-37,
+    "radiation": 4.006253052331695e-40,
+    "curvature": -4.64234680241373e-37,
+    "lambda": 1.4098009477864488e-36,
+    "Lambda_bare_m^-2": 4.70584531073711e-53
+  },
+  "bulk_branch": {
+    "status": "verified",
+    "interpretation": "Pure OS interior bulk used for bulk-process channels: dust + radiation + curvature, no Lambda term in the bulk H^2.",
+    "H0_bulk_bare_km_s_Mpc": 15.158617855912162,
+    "H0_bulk_matches_strict_zero_parameter_branch": 0.01258723143519802,
+    "strict_zero_parameter_branch_reference": {
+      "H0_bare_km_s_Mpc": 15.146030624476964,
+      "Omega_m_bare": 2.92681939921771,
+      "Omega_r_bare": 0.0016628068578147391,
+      "Omega_k_bare": -1.9268193992177107,
+      "Omega_lambda_bare": -0.0016628068578141697
+    }
+  },
+  "boundary_lambda_chain": {
+    "status": "verified",
+    "Lambda_bare_m^-2": 4.70584531073711e-53,
+    "Lambda_obs_factor_claimed": 2.371511912460842,
+    "sqrt_Delta": 2.3715119124608424,
+    "difference_factor": -4.440892098500626e-16,
+    "H2_lambda_boundary_term_today_SI": 3.343359741874149e-36,
+    "formula": "H_obs^2(z) = sqrt(Delta) * H_bulk^2(z) + sqrt(Delta) * Lambda_bare*c^2/3"
+  },
+  "bipartite_assembly": {
+    "status": "verified",
+    "formula": "H_obs^2(z) = sqrt(Delta) * [matter*(1+z)^3 + radiation*(1+z)^4 + curvature*(1+z)^2] + sqrt(Delta) * lambda",
+    "H0_obs_km_s_Mpc": 61.05967054543954,
+    "effective_omegas_at_z0": {
+      "Omega_m_obs": 0.42708073679091296,
+      "Omega_r_obs": 0.0002426363506290527,
+      "Omega_k_obs": -0.28116099302228,
+      "Omega_lambda_obs": 0.853837619880738,
+      "closure_sum": 1.0
+    },
+    "matter_curvature_ratio": 1.5189899999999996,
+    "identity_to_explicit_lambda_branch": {
+      "max_abs_H2_difference_SI": 1.4693679385278594e-39,
+      "max_rel_H2_difference": 2.1766920526016755e-16,
+      "comment": "The proposed bipartite homogeneous assembly is pointwise identical to the earlier observer-side local-energy Lambda branch."
+    },
+    "smooth_transition": {
+      "z_lambda_fraction_50pct": 0.521095021056633,
+      "z_lambda_fraction_25pct": 1.0639141697542107,
+      "z_lambda_fraction_10pct": 1.8574239038433062,
+      "z_lambda_fraction_5pct": 2.5931576682011563,
+      "z_lambda_fraction_1pct": 5.048194389509801,
+      "z_lambda_fraction_0p1pct": 11.784757296732444,
+      "fraction_samples": {
+        "z0": 0.853837619880738,
+        "z1": 0.2710835098377743,
+        "z2": 0.08647138067854726,
+        "z10": 0.0015846133524976354,
+        "z1089": 9.537432736418303e-10
+      }
+    },
+    "sample_H_obs_km_s_Mpc": {
+      "z0": 61.05967054543954,
+      "z1": 108.36537783640956,
+      "z2": 191.8694819267663,
+      "z10": 1417.3608872331165,
+      "z1089": 1826948.7119470634
+    }
+  },
+  "filtered_scorecard": {
+    "temperature": {
+      "filter": {
+        "name": "FIRAS-fixed optical readout normalization",
+        "paper": "Paper 17 v1.5 Theorem 17.2",
+        "status": "IMPORTED/EMPIRICAL datum plus DERIVED/THEOREM uniqueness inside the readout family",
+        "R4_FIRAS": 1.0031014644,
+        "formula": "T_obs(R4) = T_IO * x^(R4*K_gauge)",
+        "old_R4_equals_1_factor_retired": 1.023204472362383,
+        "firas_fixed_factor": 1.023277271400324
+      },
+      "bare_value": {
+        "T_IO_K": 2.6635
+      },
+      "observer_side_thermal_datum": {
+        "T_obs_K": 2.7255
+      },
+      "direct_measurement": {
+        "value_K": 2.7255,
+        "sigma_K": 0.0006
+      },
+      "sigma_offset": 0.0,
+      "passes_3sigma": true,
+      "counts_as_independent_cmb_prediction": false
+    },
+    "theta_star_dust_bulk": {
+      "filter": {
+        "name": "acoustic angle Jacobian",
+        "paper": "Paper 20 Theorems 20.1 + 20.2",
+        "factor": 0.8339461798286282
+      },
+      "bare_value": {
+        "branch": "dust-only OS bulk",
+        "theta_bare_deg": 0.718119961316761,
+        "z_star": 1102.760369628955,
+        "rs_drag_Mpc": 175.38945263476168,
+        "bare_inputs": {
+          "H0_bare_km_s_Mpc": 15.158617855912162,
+          "Omega_m_bare": 2.9219607428562258,
+          "Omega_r_bare": 0.0016600465210752054,
+          "Omega_k_bare": -1.9236207893773012,
+          "Omega_lambda_bare": 0.0,
+          "T_IO_K": 2.6635,
+          "omega_b_h2": 0.02108
+        }
+      },
+      "observed_prediction": {
+        "theta_obs_deg": 0.598873398398795
+      },
+      "direct_measurement": {
+        "value_deg": 0.59648,
+        "sigma_deg": 0.00026
+      },
+      "sigma_offset": 9.205378456904015,
+      "passes_3sigma": false,
+      "note": "This is the dust-bulk acoustic branch with the derived J_theta filter applied afterward."
+    },
+    "bbn": {
+      "deuterium": {
+        "filter": {
+          "name": "BDP alpha=1 baryon selector",
+          "paper": "Paper 18 BDP theorem",
+          "effective_omega_b_h2": 0.02108
+        },
+        "bare_inputs": {
+          "omega_b_h2": 0.02108,
+          "T_IO_K": 2.6635,
+          "N_eff": 3.044,
+          "engine": "PRyMordial large network exact"
+        },
+        "observed_prediction": {
+          "D/H": 2.409522189064974e-05
+        },
+        "direct_measurement": {
+          "value": 2.527e-05,
+          "sigma": 3e-07
+        },
+        "sigma_offset": -3.9159270311675343,
+        "passes_3sigma": false
+      },
+      "helium": {
+        "filter": {
+          "name": "BDP alpha=1 baryon selector",
+          "paper": "Paper 18 BDP theorem",
+          "effective_omega_b_h2": 0.02108
+        },
+        "bare_inputs": {
+          "omega_b_h2": 0.02108,
+          "T_IO_K": 2.6635,
+          "N_eff": 3.044,
+          "engine": "PRyMordial large network exact"
+        },
+        "observed_prediction": {
+          "Y_p": 0.24700978029375906
+        },
+        "direct_measurement": {
+          "value": 0.2449,
+          "sigma": 0.004
+        },
+        "sigma_offset": 0.5274450734397625,
+        "passes_3sigma": true
+      },
+      "lithium": {
+        "filter": {
+          "name": "BDP alpha=1 baryon selector",
+          "paper": "Paper 18 BDP theorem",
+          "effective_omega_b_h2": 0.02108
+        },
+        "bare_inputs": {
+          "omega_b_h2": 0.02108,
+          "T_IO_K": 2.6635,
+          "N_eff": 3.044,
+          "engine": "PRyMordial large network exact"
+        },
+        "observed_prediction": {
+          "Li7/H": 5.572113084841074e-10
+        },
+        "direct_measurement": {
+          "value": 1.58e-10,
+          "sigma": 3.1e-11
+        },
+        "sigma_offset": 12.877784144648626,
+        "passes_3sigma": false
+      }
+    },
+    "boss_fullshape_carried_forward": {
+      "filter": {
+        "name": "clustering baryon scalarization",
+        "paper": "Paper 19 alpha=3/2 theorem",
+        "effective_omega_b_h2": 0.017053042566348757
+      },
+      "observed_prediction": {
+        "dataset": "BOSS DR12 monopole full-shape",
+        "chi2": 73.03360608958111,
+        "dof": 60,
+        "chi2_per_dof": 1.2172267681596851,
+        "pte": 0.12039314216620142
+      },
+      "direct_measurement": "BOSS DR12 full-shape public covariance",
+      "pass_criterion": "pte > 0.05",
+      "passes": true,
+      "method_boundary": "Carried forward from the established Paper 19 alpha=3/2 clustering branch. The present bipartite assembly audit does not reassign a new assembly law to P(k).",
+      "source": "/opt/cosmology-lab/results/paper19/paper19_corrected_scorecard_checks.json"
+    },
+    "pantheon_plus_bipartite": {
+      "filter": {
+        "name": "global H^2 readout plus observer-side boundary Lambda",
+        "paper": "Paper 19 RT/BY chain + Paper 9 Lambda chain"
+      },
+      "observed_prediction": {
+        "chi2": 1774.0425163963944,
+        "dof": 1700,
+        "chi2_per_dof": 1.0435544214096437,
+        "pte": 0.10325316832363371
+      },
+      "direct_measurement": "Pantheon+ raw distance moduli",
+      "passes": true
+    },
+    "countable_passes": {
+      "temperature": true,
+      "theta_star": false,
+      "bbn_deuterium": false,
+      "bbn_helium": true,
+      "bbn_lithium": false,
+      "boss_fullshape": true,
+      "pantheon_plus": true
+    },
+    "pass_count": 4,
+    "n_counted": 7
+  },
+  "verdict": {
+    "summary": "The proposed bipartite homogeneous assembly is not a new H(z) branch; it reproduces the same late-time H_obs(z), H0_obs, and Omega_i as the earlier observer-side local-energy Lambda branch. Its only genuine mixed-sector improvement is that theta* can be evaluated on the dust bulk while distances use the observer-side Lambda curve.",
+    "item_2_closed": false,
+    "reason": "This reconstruction improves the acoustic-distance split but does not create a new derived homogeneous branch, leaves H0_obs at 61.06, and still fails multiple direct rows."
+  }
+}

@@ -178,6 +178,14 @@ The current Paper 19 support bundle is:
 - manifest:
   `metadata/manifests/paper19_v1_6_repro_bundle.json`
 
+The current Paper 20 support bundle is:
+
+- `papers/paper20/v1.8/`
+- validation command:
+  `python3 papers/paper20/v1.8/scripts/08_validate_expected_outputs.py`
+- manifest:
+  `metadata/manifests/paper20_v1_8_repro_bundle.json`
+
 The current Paper 24 support bundle is:
 
 - `papers/paper24/v2.3/`
@@ -215,6 +223,7 @@ The manifest is in:
 - `metadata/manifests/paper34_v1_1_repro_bundle.json`
 - `metadata/manifests/paper35_v1_1_repro_bundle.json`
 - `metadata/manifests/paper17_v1_5_repro_bundle.json`
+- `metadata/manifests/paper20_v1_8_repro_bundle.json`
 - `metadata/manifests/paper21_v1_7_repro_bundle.json`
 - `metadata/manifests/paper22_v1_6_repro_bundle.json`
 - `metadata/manifests/paper25_v1_3_repro_bundle.json`

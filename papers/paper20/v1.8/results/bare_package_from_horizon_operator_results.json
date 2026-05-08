@@ -1,0 +1,381 @@
+{
+  "inputs": {
+    "founding_premises": [
+      "Observable universe inside a Schwarzschild black hole.",
+      "Physics inside the horizon is the same as physics outside."
+    ],
+    "operator_stack": {
+      "H_IO": "Gamma_s(L^2(R,dnu) tensor H_g)",
+      "CMP": "K_CMP = K_geom*I + K_hat_g",
+      "global_readout": "H_obs^2 = sqrt(Delta) * C_bare",
+      "metric_measure_extension": "L^infty(I_tau) tensor G_0 tensor M_red"
+    },
+    "parameters": {
+      "M_U_kg": 4.5e+53,
+      "r_s_m": 6.6835442422068e+26,
+      "R_U_m": 4.3999922594663554e+26,
+      "x": 1.51899,
+      "gamma": 0.2375,
+      "Delta": 5.624068750943682,
+      "sqrt_Delta": 2.3715119124608424,
+      "Delta_quarter": 1.5399713998840505,
+      "T_IO_K": 2.6635,
+      "T_obs_K": 2.7255,
+      "N_eff_imported": 3.044,
+      "eta_s": 1.2485855239712496
+    }
+  },
+  "derived_structure": {
+    "bare_constraint_at_eta_s": "C_bare(eta_s) = (8*pi*G/3)(rho_m + rho_r + rho_Lambda) - c^2/a_s^2 with a_s = R_U = r_s/x",
+    "global_readout": "H_obs^2 = sqrt(Delta) * C_bare",
+    "observed_hubble_map": "H0_obs = Delta^(1/4) * H0_bare",
+    "observed_omega_map": "For any valid closed bare package, Omega_i,obs = Omega_i,bare because the common sqrt(Delta) cancels in Omega_i = contribution / H^2.",
+    "one_parameter_family": {
+      "Omega_m_bare(H0_bare)": "omega_m_bare_h2 / h_bare^2 with omega_m_bare_h2 fixed by M_U and R_U",
+      "Omega_r_bare(H0_bare)": "omega_r_bare_h2 / h_bare^2 with omega_r_bare_h2 fixed by T_IO and imported N_eff",
+      "Omega_k_bare(H0_bare)": "-c^2 / (H_bare^2 R_U^2)",
+      "Omega_lambda_bare(H0_bare)": "1 - Omega_m_bare - Omega_r_bare - Omega_k_bare",
+      "exact_relation": "Omega_m_bare / |Omega_k_bare| = x"
+    },
+    "fixed_physical_densities": {
+      "omega_m_bare_h2": 0.06714189370196505,
+      "omega_r_bare_h2": 3.814516239851913e-05,
+      "omega_b_geom_h2_alpha1": 0.020995792933747683
+    }
+  },
+  "branches": {
+    "strict_os_cycloid": {
+      "branch": {
+        "name": "strict_os_cycloid",
+        "status": "derived",
+        "note": "Literal OS cycloid local expansion at eta_s, plus imported SM radiation and bare closure.",
+        "H0_bare": 15.146030624476964,
+        "H0_obs": 23.32445398346249,
+        "Omega_m_bare": 2.92681939921771,
+        "Omega_r_bare": 0.0016628068578147391,
+        "Omega_k_bare": -1.9268193992177107,
+        "Omega_lambda_bare": -0.0016628068578141697,
+        "Omega_m_obs": 2.92681939921771,
+        "Omega_r_obs": 0.0016628068578147391,
+        "Omega_k_obs": -1.9268193992177107,
+        "Omega_lambda_obs": -0.0016628068578141697,
+        "bare_sum": 1.0,
+        "matter_curvature_ratio": 1.5189899999999998
+      },
+      "scorecard": {
+        "firas": {
+          "T_obs_K": 2.7255,
+          "reference_K": 2.7255,
+          "sigma_K": 0.0006,
+          "sigma_offset": 0.0
+        },
+        "planck_peak_position_conditional_acoustic": {
+          "omega_b_eff": 0.0291,
+          "theta_star_deg": 0.8827635031602556,
+          "theta_star_sigma": 1909.0233544017044,
+          "z_star": 1079.0136378772872
+        },
+        "boss_dr12_fullshape_clustering": {
+          "omega_b_clust": 0.017058882149412327,
+          "chi2": 122.91919933276675,
+          "dof_after_linear_nuisance": 60,
+          "pte": 3.1446618260768767e-06,
+          "sigma_equiv": 4.516422107497119
+        },
+        "pantheon_plus_hubble_flow": {
+          "n_sn": 277,
+          "chi2": 283.74427992691255,
+          "dof": 276,
+          "pte": 0.3613324615884525,
+          "sigma_equiv": 0.3548994464644521,
+          "nuisance_M": -21.616504090377056
+        },
+        "globular_cluster_age": {
+          "age_Gyr": 21.655486830588217,
+          "reference_Gyr": 13.81,
+          "sigma_Gyr": 0.3397057550292606,
+          "sigma_offset": 23.094948243995585
+        },
+        "jwst_times_Myr": {
+          "z6": 905.883971892239,
+          "z10": 454.2233746097632,
+          "z14": 283.4290705647016,
+          "z20": 170.0869001048387,
+          "note": "Direct sigma not assigned; literature age claims at z>10 are heterogeneous and partly model-converted from redshift."
+        }
+      }
+    },
+    "one_parameter_family_age_closed": {
+      "branch": {
+        "name": "one_parameter_family_age_closed",
+        "status": "verified",
+        "note": "Direct-age closure of the one-parameter bare family against the globular-cluster age datum; not derived from H_IO.",
+        "H0_bare": 47.63639971709081,
+        "H0_obs": 73.35869315776452,
+        "Omega_m_bare": 0.2958800780526299,
+        "Omega_r_bare": 0.00016809763629698998,
+        "Omega_k_bare": -0.1947873771734046,
+        "Omega_lambda_bare": 0.8987392014844777,
+        "Omega_m_obs": 0.2958800780526299,
+        "Omega_r_obs": 0.00016809763629698998,
+        "Omega_k_obs": -0.1947873771734046,
+        "Omega_lambda_obs": 0.8987392014844777,
+        "bare_sum": 1.0,
+        "matter_curvature_ratio": 1.51899
+      },
+      "scorecard": {
+        "firas": {
+          "T_obs_K": 2.7255,
+          "reference_K": 2.7255,
+          "sigma_K": 0.0006,
+          "sigma_offset": 0.0
+        },
+        "planck_peak_position_conditional_acoustic": {
+          "omega_b_eff": 0.0291,
+          "theta_star_deg": 0.8543491018417152,
+          "theta_star_sigma": 1719.5940122781014,
+          "z_star": 1079.0135150259093
+        },
+        "boss_dr12_fullshape_clustering": {
+          "omega_b_clust": 0.017058882149412327,
+          "chi2": 96.2341263590035,
+          "dof_after_linear_nuisance": 60,
+          "pte": 0.0020730800102010433,
+          "sigma_equiv": 2.866822103154915
+        },
+        "pantheon_plus_hubble_flow": {
+          "n_sn": 277,
+          "chi2": 231.6955867346394,
+          "dof": 276,
+          "pte": 0.9754942852823122,
+          "sigma_equiv": 0.0,
+          "nuisance_M": -19.265274873751622
+        },
+        "globular_cluster_age": {
+          "age_Gyr": 13.809999999999999,
+          "reference_Gyr": 13.81,
+          "sigma_Gyr": 0.3397057550292606,
+          "sigma_offset": -5.229104344279489e-15
+        },
+        "jwst_times_Myr": {
+          "z6": 904.4269491222797,
+          "z10": 454.04093467104167,
+          "z14": 283.38486535398437,
+          "z20": 170.07735478254202,
+          "note": "Direct sigma not assigned; literature age claims at z>10 are heterogeneous and partly model-converted from redshift."
+        }
+      }
+    },
+    "legacy_paper10_closed_geom": {
+      "branch": {
+        "name": "legacy_paper10_closed_geom",
+        "status": "verified",
+        "note": "Closed classical Paper 10 geometric package reconstructed under the Paper 19/20 global readout.",
+        "H0_bare": 58.42,
+        "H0_obs": 89.96512918122623,
+        "Omega_m_bare": 0.1967299496754869,
+        "Omega_r_bare": 0.00011176771260481015,
+        "Omega_k_bare": -0.1295136568874627,
+        "Omega_lambda_bare": 0.932671939499371,
+        "Omega_m_obs": 0.1967299496754869,
+        "Omega_r_obs": 0.00011176771260481015,
+        "Omega_k_obs": -0.1295136568874627,
+        "Omega_lambda_obs": 0.932671939499371,
+        "bare_sum": 1.0,
+        "matter_curvature_ratio": 1.5189899999999996
+      },
+      "scorecard": {
+        "firas": {
+          "T_obs_K": 2.7255,
+          "reference_K": 2.7255,
+          "sigma_K": 0.0006,
+          "sigma_offset": 0.0
+        },
+        "planck_peak_position_conditional_acoustic": {
+          "omega_b_eff": 0.0291,
+          "theta_star_deg": 0.8611934599815948,
+          "theta_star_sigma": 1765.2230665439656,
+          "z_star": 1079.013756132369
+        },
+        "boss_dr12_fullshape_clustering": {
+          "omega_b_clust": 0.017058882149412327,
+          "chi2": 181.7544429035412,
+          "dof_after_linear_nuisance": 60,
+          "pte": 3.5072909713083415e-14,
+          "sigma_equiv": 7.487597375049386
+        },
+        "pantheon_plus_hubble_flow": {
+          "n_sn": 277,
+          "chi2": 232.9490605476707,
+          "dof": 276,
+          "pte": 0.9718437890268363,
+          "sigma_equiv": 0.0,
+          "nuisance_M": -18.8280852873132
+        },
+        "globular_cluster_age": {
+          "age_Gyr": 12.46080538217735,
+          "reference_Gyr": 13.81,
+          "sigma_Gyr": 0.3397057550292606,
+          "sigma_offset": -3.971656640631353
+        },
+        "jwst_times_Myr": {
+          "z6": 903.6155669417575,
+          "z10": 453.93881914575076,
+          "z14": 283.3600970765817,
+          "z20": 170.0720042642727,
+          "note": "Direct sigma not assigned; literature age claims at z>10 are heterogeneous and partly model-converted from redshift."
+        }
+      }
+    }
+  },
+  "bbn_direct_observations_invariant_across_family": {
+    "status": "verified",
+    "reason": "omega_m,bare*h^2 and omega_b,geom*h^2 are fixed by M_U, R_U, x, gamma, and T_IO, so the one-parameter H_bare family does not change the BBN physical densities.",
+    "large_network_exact": {
+      "Neff_output": 3.044388520277016,
+      "Y_p": 0.24779423821196234,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_CMB": 0.24779423821196234,
+      "Y_p_BBN": 0.24912821737852817,
+      "D/H": 2.5233039701421276e-05,
+      "He3/H": 1.0505205378608267e-05,
+      "Li7/H": 5.331502875744094e-10,
+      "eta10": 6.166803075456499,
+      "weak_delta": -0.012300778733811872,
+      "nuclear_common_delta": -0.02384221534546833,
+      "amplitude_framework": "Path C modern Paper22/Paper24 alignment"
+    },
+    "observed_conventions_v1": {
+      "source": "IO Framework Observational Conventions v1.0",
+      "url": "https://dfife.github.io/data/observational_conventions_v1.md",
+      "D/H": {
+        "value": 2.527e-05,
+        "sigma": 3e-07
+      },
+      "Y_p": {
+        "value": 0.245,
+        "sigma": 0.004
+      },
+      "Li7/H": {
+        "value": 1.58e-10,
+        "sigma": 3.1e-11
+      }
+    },
+    "sigma_vs_observed": {
+      "D/H_sigma": -0.1232009952624156,
+      "Y_p_sigma": 0.6985595529905853,
+      "Li7/H_sigma": 12.101622179819659
+    }
+  },
+  "legacy_package_diagnostic": {
+    "prompt_value_omega_lambda_bare": 0.59,
+    "source_check": "No matching 0.590 bare-vacuum package found in Paper 10/11 source text or current code.",
+    "paper10_closed_geom_from_source": {
+      "Omega_m": 0.197,
+      "Omega_k": -0.13,
+      "Omega_lambda": 0.933,
+      "sum": 1.0
+    },
+    "paper19_retained_hybrid_from_old_normalizer": {
+      "Omega_m_geom": 0.197,
+      "Omega_k_geom": -0.13,
+      "Omega_lambda_bare": 0.3929935653473447,
+      "sum": 0.4599935653473447,
+      "formula": "(H0_obs/H0_geom)^2 = Omega_m,geom*sqrt(Delta) + Omega_k,geom*P_k + Omega_lambda,bare*sqrt(Delta)",
+      "status": "Diagnostic artifact from the superseded per-source projection architecture, not a valid bare package in the global-readout architecture."
+    }
+  },
+  "family_samples": [
+    {
+      "H0_bare": 15.146030624476964,
+      "H0_obs": 23.32445398346249,
+      "Omega_m": 2.92681939921771,
+      "Omega_k": -1.9268193992177107,
+      "Omega_lambda": -0.0016628068578141697,
+      "age_Gyr": 21.655486830588217,
+      "theta_star_sigma": 1909.0233544017044,
+      "boss_fullshape_chi2": 122.91919933276675
+    },
+    {
+      "H0_bare": 20.0,
+      "H0_obs": 30.79942799768101,
+      "Omega_m": 1.678547342549126,
+      "Omega_k": -1.1050417333551414,
+      "Omega_lambda": 0.4255407617460525,
+      "age_Gyr": 19.82019465797715,
+      "theta_star_sigma": 1807.1782972088486,
+      "boss_fullshape_chi2": 193.7418659258821
+    },
+    {
+      "H0_bare": 30.0,
+      "H0_obs": 46.19914199652152,
+      "Omega_m": 0.746021041132945,
+      "Omega_k": -0.49112965926895197,
+      "Omega_lambda": 0.7446847829982457,
+      "age_Gyr": 17.008956212781424,
+      "theta_star_sigma": 1715.1586581052345,
+      "boss_fullshape_chi2": 231.5540140730876
+    },
+    {
+      "H0_bare": 40.0,
+      "H0_obs": 61.59885599536202,
+      "Omega_m": 0.4196368356372815,
+      "Omega_k": -0.27626043333878536,
+      "Omega_lambda": 0.8563851904365132,
+      "age_Gyr": 15.002824800215613,
+      "theta_star_sigma": 1702.501036322744,
+      "boss_fullshape_chi2": 203.89393560788426
+    },
+    {
+      "H0_bare": 47.636399717090804,
+      "H0_obs": 73.3586931577645,
+      "Omega_m": 0.29588007805262995,
+      "Omega_k": -0.1947873771734047,
+      "Omega_lambda": 0.8987392014844777,
+      "age_Gyr": 13.810000000000002,
+      "theta_star_sigma": 1719.5939372699959,
+      "boss_fullshape_chi2": 96.23412635900358
+    },
+    {
+      "H0_bare": 50.0,
+      "H0_obs": 76.99856999420253,
+      "Omega_m": 0.2685675748078602,
+      "Omega_k": -0.17680667733682262,
+      "Omega_lambda": 0.9080865218793683,
+      "age_Gyr": 13.484959427970491,
+      "theta_star_sigma": 1727.8621343246004,
+      "boss_fullshape_chi2": 125.01597958174368
+    },
+    {
+      "H0_bare": 58.42,
+      "H0_obs": 89.96512918122623,
+      "Omega_m": 0.1967299496754869,
+      "Omega_k": -0.1295136568874627,
+      "Omega_lambda": 0.932671939499371,
+      "age_Gyr": 12.46080538217735,
+      "theta_star_sigma": 1765.2230665439656,
+      "boss_fullshape_chi2": 181.7544429035412
+    },
+    {
+      "H0_bare": 70.0,
+      "H0_obs": 107.79799799188353,
+      "Omega_m": 0.13702427286115318,
+      "Omega_k": -0.09020748843715441,
+      "Omega_lambda": 0.9531053683058002,
+      "age_Gyr": 11.31699101631107,
+      "theta_star_sigma": 1829.9740603078399,
+      "boss_fullshape_chi2": 123.23304405842804
+    }
+  ],
+  "claim_boundary": {
+    "derived": [
+      "The current H_IO stack plus the founding premises and assumption 2 fixes the form of C_bare and the global readout H_obs^2 = sqrt(Delta) C_bare.",
+      "Once H0_bare is given, the complete bare coefficient package is fixed by M_U, R_U, T_IO, N_eff, and closure.",
+      "The current stack does not derive H0_bare itself."
+    ],
+    "no_go": [
+      "There is still no direct modular identity deriving the full bare Friedmann equation and its present-epoch H0_bare from reduced H_IO alone.",
+      "The underclosed legacy hybrid package is not a valid bare package under the global-readout architecture."
+    ]
+  }
+}

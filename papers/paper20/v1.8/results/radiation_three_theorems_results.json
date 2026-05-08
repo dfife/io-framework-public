@@ -1,0 +1,96 @@
+{
+  "claim_discipline": {
+    "theorem_A_full_reduced_stack_derives_species_count": "no-go",
+    "theorem_A_gamma_reduced_stack_derives_photon_thermal_sector": "derived",
+    "theorem_B_gamma_maps_to_photon_energy_density": "derived",
+    "theorem_B_full_extra_radiation_from_reduced_center": "no-go",
+    "theorem_C_full_maps_deltaNeff_into_friedmann_slot_on_reduced_stack": "no-go"
+  },
+  "inputs": {
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.7255,
+    "R4_FIRAS": 1.0031014644,
+    "temperature_status": "IMPORTED/EMPIRICAL FIRAS-fixed observer-side datum; not an independent CMB prediction",
+    "x": 1.51899,
+    "gamma": 0.2375,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "K_geom": 1.6721825612539731,
+    "K_CMP": 1.7270553789968879,
+    "N_eff_SM": 3.044,
+    "N_eff_DH_match": 3.41293,
+    "delta_N_eff_required": 0.36892999999999976,
+    "radiation_slot_coefficient": 0.22710731766
+  },
+  "theorem_A": {
+    "target": "count effective radiation degrees of freedom from the reduced stack",
+    "available_reduced_objects": [
+      "M_red = M_th tensor Z_g",
+      "h_ph = L^2(R_+, d omega)",
+      "rho_IO = (exp(beta_IO Omega) - I)^(-1)",
+      "Z_g = W*(K_hat_g), K_hat_g = K_gauge I"
+    ],
+    "positive_result_A_gamma": {
+      "statement": "Within the continuous gauge-invariant quasi-free CCR class on h_ph, the reduced stack determines a unique bosonic thermal photon sector at T_IO.",
+      "operator_content": {
+        "one_particle_space": "h_ph = L^2(R_+, d omega)",
+        "covariance": "rho_IO = (exp(beta_IO Omega) - I)^(-1)",
+        "gauge_action": "central scalar only, K_hat_g = K_gauge I"
+      }
+    },
+    "no_go_A_full": {
+      "statement": "No functional of the reduced bosonic-plus-central data can recover fermionic species multiplicity.",
+      "reason": "Theorem 20.R5: for every N_f, M_full(N_f) = M_red tensor CAR(L^2(R,dnu) tensor C^2 tensor C^{N_f}) has identical restriction to M_red. Therefore multiplicity is invisible on the reduced stack.",
+      "missing_object": "a nontrivial family multiplicity operator on an unreduced CAR sector"
+    }
+  },
+  "theorem_B": {
+    "target": "map thermal count object to physical radiation energy density",
+    "photon_sector_mapping": {
+      "statement": "The unique reduced photon KMS covariance gives the standard photon blackbody energy density at T_IO.",
+      "formula": "rho_gamma(T) = (pi^2/15) T^4 in units c = hbar = k_B = 1",
+      "prefactor_check": {
+        "integral_int_y3_over_expm1": 6.493939402266829,
+        "pi4_over_15": 6.493939402266829,
+        "abs_residual": 1.0691058840368783e-50
+      }
+    },
+    "reduced_center_no_go": {
+      "statement": "The central scalar Z_g can dilate frequencies / temperatures, but it does not add an independent multiplicity prefactor.",
+      "reason": "K_gauge acts through omega -> exp(K_gauge lambda) omega and therefore changes T, not the number of one-particle copies. Extra species would require h_ph -> h_ph tensor C^m or a CAR extension, not a central scalar on the same h_ph."
+    }
+  },
+  "theorem_C": {
+    "target": "inject the resulting energy density into the bare Friedmann radiation slot",
+    "photon_only_slot": {
+      "statement": "On the reduced stack, the only theorem-grade radiation contribution is the photon slot rho_gamma(T_IO).",
+      "equivalent_ratio_to_photon_density": 1.0
+    },
+    "comparison_to_standard_parameterization": {
+      "sm_total_radiation_over_photon": 1.69131467495704,
+      "dh_matching_total_radiation_over_photon": 1.7751013776613438,
+      "extra_fraction_vs_sm": 0.08378670270430374,
+      "meaning": "To move from imported N_eff = 3.044 to the D/H-matching N_eff, the radiation slot needs an extra 0.083786702704 times the photon energy density."
+    },
+    "no_go_full": {
+      "statement": "No reduced-stack operator currently maps into an additional delta N_eff ~= 0.36893 radiation contribution.",
+      "reason": "The reduced algebra already fixes the photon thermal law, while fermionic multiplicity and reheating are invisible on M_red. So the full Friedmann radiation slot cannot be internally completed without extending the algebra."
+    }
+  },
+  "minimal_extension_schema": {
+    "algebra": "M_rad_ext(N_f) = M_th tensor CAR(L^2(R,dnu) tensor C^2 tensor C^{N_f}) tensor A_dec",
+    "roles": {
+      "CAR_family_factor": "supplies a genuine multiplicity operator Tr_{C^{N_f}} I = N_f",
+      "A_dec": "weak-decoupling / reheating algebra controlling T_nu / T_gamma",
+      "reduced_to_bare_map": "maps extension expectations into rho_r,bare"
+    },
+    "theorem_targets": {
+      "A_ext": "derive a thermal multiplicity count from the CAR family factor",
+      "B_ext": "derive fermion energy density with 7/8 weighting and reheating factor",
+      "C_ext": "insert that energy density into the bare Friedmann radiation slot"
+    }
+  },
+  "verdict": {
+    "summary": "The three desired full radiation-slot theorems do not close on the reduced stack. What does close is the photon subsector: unique photon KMS covariance, unique photon blackbody density, and therefore the photon-only piece of the radiation slot. The missing delta N_eff requires an unreduced fermionic CAR family sector plus weak-decoupling / reheating dynamics."
+  }
+}

@@ -1,0 +1,4 @@
+No system packages are required for the frozen-output validator.
+
+Optional heavyweight reruns may require a working compiler toolchain and the
+system libraries needed by CLASS, CAMB, and PRyMordial.
