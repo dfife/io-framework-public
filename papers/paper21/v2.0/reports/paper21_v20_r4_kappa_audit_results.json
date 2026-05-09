@@ -1,0 +1,113 @@
+{
+  "paper": "Paper 21",
+  "version": "v2.0 draft",
+  "audit_date": "2026-05-09",
+  "executive_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "active_claims_survive_r4_update": true,
+    "r4_enters_active_bbn_scorecard": false,
+    "manuscript_hygiene_required": true
+  },
+  "r4_update": {
+    "old_value": 1.0,
+    "new_value": 1.0031014644,
+    "source": "Paper 17 v1.5 FIRAS-fixed unique optical readout normalization",
+    "active_T_obs_K": 2.725499012374763,
+    "independent_cmb_temperature_prediction_retired": true
+  },
+  "audit_targets": [
+    {
+      "audit_target": "R4/FIRAS dependency",
+      "verdict": "VERIFIED dependency audit",
+      "evidence": "Paper 21 active Big Bang nucleosynthesis branch uses T_IO, not T_obs. Public script 01 records R4_FIRAS and confirms R4 does not enter active BBN scorecard.",
+      "recommendation": "Remove independent CMB-temperature prediction wording; keep R4 as imported empirical dependency inherited from Paper 17 v1.5."
+    },
+    {
+      "audit_target": "AC1 acoustic closure",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "J_theta = x^(-1/2) sqrt(1+gamma_BI^2) is fixed inside the reduced scalar/longitudinal acoustic-sector chain.",
+      "recommendation": "Replace CONDITIONAL/THEOREM or reduced-scope label forms with DERIVED/CONDITIONAL_VERIFIED unless the full dependency chain is stated locally as closed."
+    },
+    {
+      "audit_target": "L1 and L2 puncture loads",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "Given the isolated-horizon puncture Hamiltonian, local Unruh temperature pairing, Barbero-Immirzi input, and physical spin spectrum, L1 and L2 are fixed.",
+      "recommendation": "Keep as DERIVED/THEOREM for Paper 21 load values; state that downstream rate-dressing use belongs to Paper 22/Paper 25."
+    },
+    {
+      "audit_target": "Optical filtration theorem 21.J",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "The theorem is rigid inside the reduced RT/BY optical readout class.",
+      "recommendation": "Replace DERIVED/SCOPED-style wording with DERIVED/CONDITIONAL_VERIFIED and include the class dependency."
+    },
+    {
+      "audit_target": "Local nontraciality theorem 21.O",
+      "verdict": "DERIVED/THEOREM for math; DERIVED/CONDITIONAL_VERIFIED or OPEN/PREMISE_GAP for physical delivery",
+      "evidence": "The invariant-but-nontracial reduced-state calculation is rigid. The physical BBN-sector coupling path must be stated separately.",
+      "recommendation": "Split the mathematical theorem from the physical interpretation; remove CONDITIONAL/BRIDGE THEOREM label."
+    },
+    {
+      "audit_target": "Conformal transparency theorem 21.Ba",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "Source-free Maxwell conformal invariance on exact homogeneous 3+1 FRW/OS background is standard and fixed.",
+      "recommendation": "Keep theorem label, retain homogeneous-level scope."
+    },
+    {
+      "audit_target": "Big Bang nucleosynthesis branch assignment 21.L",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "Once TIO1 classifies BBN abundance/rate observables as local bulk thermodynamics, the T_IO branch is fixed and T_obs insertion is a class error.",
+      "recommendation": "Replace CONDITIONAL/THEOREM at reduced scope with DERIVED/CONDITIONAL_VERIFIED if TIO1 is retained and traceable."
+    }
+  ],
+  "r4_damage_locations": [
+    {"line": 22, "issue": "Overbroad independent CMB/cosmological-observable derivation language"},
+    {"line": 24, "issue": "Zero-fitted-parameters wording needs FIRAS/R4 qualification"},
+    {"line": 155, "issue": "R4 pending verification is stale after Paper 17 v1.5"},
+    {"line": 316, "issue": "T_obs = T_IO x^K_gauge old readout formula"},
+    {"line": 328, "issue": "gamma_required from FIRAS should not support CMB prediction wording"},
+    {"line": 336, "issue": "a = dim(S2)/2 = 1 normalization is stale if read as R4"},
+    {"line": 415, "issue": "GTTP old formula and independent 2.7253 K claim"},
+    {"line": 472, "issue": "R4 explicit premise old status"},
+    {"line": 579, "issue": "T_obs = 2.7253 K and FIRAS-band wording stale"}
+  ],
+  "label_noncompliance": [
+    "CONDITIONAL/THEOREM",
+    "CONDITIONAL/BRIDGE THEOREM",
+    "DERIVED/THEOREM within reduced ... class without canonical conditional-verified label",
+    "plain DERIVED scorecard labels",
+    "appendix plain THEOREM/DERIVED labels without canonical prefixes"
+  ],
+  "abbreviation_and_slang_flags": [
+    "IO",
+    "AC1",
+    "BBN",
+    "CMB",
+    "RT/BY",
+    "AH1-AH7",
+    "P1-P6",
+    "B1-B5",
+    "TIO1",
+    "CMP",
+    "BDP",
+    "GTTP",
+    "OS",
+    "YPCMB",
+    "YPBBN",
+    "one-slot",
+    "A-slot",
+    "A-action",
+    "sky-slot",
+    "dead routes",
+    "hunt",
+    "kill shot",
+    "private-lab",
+    "theorem-grade",
+    "P_resp",
+    "F_abs"
+  ],
+  "bundle_validation": {
+    "expected_summary": "SUMMARY total_checks=16 pass_count=16 fail_count=0",
+    "scripts_updated_for_r4": true,
+    "retired_route_scripts_excluded": true
+  }
+}

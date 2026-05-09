@@ -1,0 +1,25 @@
+{
+  "FIRAS_T_K": 2.7255,
+  "K_gauge": 0.05487281774291466,
+  "R4_FIRAS": 1.0031014644,
+  "R4_enters_active_BBN_scorecard": false,
+  "T_IO_K": 2.6635,
+  "active_T_obs_K": 2.725499012374763,
+  "active_minus_FIRAS_K": -9.876252367035931e-07,
+  "active_optical_readout_formula": "T_obs(R4) = T_IO * x**(R4_FIRAS * K_gauge)",
+  "checks": {
+    "R4_changed_from_retired_unity": true,
+    "active_T_obs_is_FIRAS_fixed": true,
+    "active_T_obs_matches_imported_value": true
+  },
+  "claim": "Paper 21 v2.0 R4/FIRAS dependency audit",
+  "claim_boundary": "Paper 21 only audits inheritance from Paper 17 v1.5. The active Paper 21 BBN branch assignment and scorecard remain on T_IO.",
+  "independent_CMB_temperature_prediction_retired": true,
+  "paper21_active_BBN_branch_uses": "T_IO",
+  "relative_change_from_retired_R4": 7.114808418795526e-05,
+  "retired_R4_value": 1.0,
+  "retired_T_obs_K": 2.725305112137207,
+  "retired_optical_readout_formula": "T_obs = T_IO * x**K_gauge",
+  "status": "VERIFIED dependency audit",
+  "x": 1.51899
+}

@@ -1,0 +1,65 @@
+{
+  "branch_assignment": {
+    "R4_FIRAS": 1.0031014644,
+    "R4_enters_active_BBN_scorecard": false,
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.725499012374763,
+    "T_obs_recomputed": 2.725499012374763,
+    "active_optical_readout_formula": "T_obs(R4) = T_IO x^(R4_FIRAS K_gauge)",
+    "label": "Theorem 21.L",
+    "legacy_T_IO_branch_demo": {
+      "D_over_H_sigma": -0.08092495266837785,
+      "N_eff_geometric": 3.4062213706967106,
+      "Y_p_sigma_published_legacy": 1.7216379594436337,
+      "chi2_DH_plus_Yp_published_legacy": 2.970586111361618
+    },
+    "legacy_T_obs_branch_mismatch": {
+      "D_over_H_sigma": 9.83,
+      "chi2_DH_plus_Yp": 99.02
+    },
+    "retired_GTTP_formula": "T_obs = T_IO x^K_gauge",
+    "status": "DERIVED/CONDITIONAL_VERIFIED theorem artifact"
+  },
+  "claim": "Paper 21 live operator-algebra theorem artifacts",
+  "claim_boundary": "Live theorem/status support only; dead-route reruns are intentionally excluded.",
+  "consistency_checks": {
+    "R4_does_not_enter_active_BBN_scorecard": true,
+    "T_obs_formula_matches_imported_value": true,
+    "local_nontraciality_trace_equals_one": true,
+    "rank2_allows_j_3_over_2": true
+  },
+  "local_nontraciality": {
+    "example": "four spin-1/2 punctures split as A = two, B = two, global state projected to invariant subspace",
+    "is_tracial_on_H_A": false,
+    "label": "Theorem 21.O",
+    "reduced_state_eigenvalues": {
+      "J_0_block": 0.5,
+      "J_1_block_each_state": 0.16666666666666666
+    },
+    "status": "DERIVED/CONDITIONAL_VERIFIED theorem artifact",
+    "trace_check": 1.0
+  },
+  "optical_filtration": {
+    "fixed_point_action_on_C2_spectral_functions": "E_punc(H_punc h(C2)) = H_punc h(C2)",
+    "label": "Theorem 21.J",
+    "statement": "Reduced RT/BY optical readouts pass through the fixed-point algebra and are blind to noncentral SU(2) puncture data.",
+    "status": "DERIVED/CONDITIONAL_VERIFIED theorem artifact"
+  },
+  "status": "VERIFIED theorem-artifact ledger",
+  "wigner_eckart_selection_boundary": {
+    "conclusion": "A diagonal rank-2 operator excludes j=1/2 but allows j=1, 3/2, 2, 5/2, ...; it does not select exactly {1,2}.",
+    "diagonal_rank2_allowed_first_values": [
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0,
+      4.5,
+      5.0
+    ],
+    "label": "No-go 21.P boundary retained as live selection-rule statement",
+    "status": "DERIVED/NO-GO theorem artifact"
+  }
+}

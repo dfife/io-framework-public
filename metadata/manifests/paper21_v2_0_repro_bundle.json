@@ -1,0 +1,54 @@
+{
+  "bundle": "paper21-v2.0",
+  "paper": "Paper 21",
+  "paper_version": "v2.0",
+  "path": "papers/paper21/v2.0",
+  "release_tag": "paper21-v2.0",
+  "status": "VERIFIED / public-reproducibility-support",
+  "created": "2026-05-09",
+  "validation_command": "python3 papers/paper21/v2.0/scripts/08_validate_expected_outputs.py",
+  "validation_expected_summary": "SUMMARY total_checks=16 pass_count=16 fail_count=0",
+  "included_claims": [
+    "R4/FIRAS dependency audit",
+    "L_1 puncture load",
+    "L_2 puncture load",
+    "AC1/theta_* reduced acoustic closure",
+    "YPCMB PRyMordial wrapper convention",
+    "Paper 21 corrected Big Bang nucleosynthesis scorecard arithmetic",
+    "live operator-algebra theorem artifacts"
+  ],
+  "excluded_by_policy": [
+    "retired radiation-response route reruns",
+    "historical P_resp dead-route reruns",
+    "old F_abs / Delta N_eff investigation",
+    "private scratch state",
+    "manuscript drafts",
+    "PRyMordial source code"
+  ],
+  "files": {
+    "scripts": [
+      "scripts/01_r4_firas_dependency_audit.py",
+      "scripts/02_derive_L1_puncture_load.py",
+      "scripts/03_derive_L2_puncture_load.py",
+      "scripts/04_compute_ac1_closure.py",
+      "scripts/05_prymordial_wrapper_conventions.py",
+      "scripts/06_generate_bbn_scorecard.py",
+      "scripts/07_operator_algebra_live_theorem_artifacts.py",
+      "scripts/08_validate_expected_outputs.py"
+    ],
+    "results": [
+      "results/r4_firas_dependency_audit_results.json",
+      "results/L1_puncture_load_results.json",
+      "results/L2_puncture_load_results.json",
+      "results/ac1_closure_results.json",
+      "results/prymordial_wrapper_conventions_results.json",
+      "results/bbn_scorecard_results.json",
+      "results/operator_algebra_live_theorem_artifacts_results.json"
+    ],
+    "reports": [
+      "reports/paper21_v20_r4_kappa_audit_report.md",
+      "reports/paper21_v20_r4_kappa_audit_results.json",
+      "reports/paper21_reproducibility_script_manifest.md"
+    ]
+  }
+}
