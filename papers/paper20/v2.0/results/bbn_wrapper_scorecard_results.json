@@ -1,0 +1,28 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "status": "VERIFIED as Paper 20 active BBN comparison table",
+  "inputs": {
+    "helium_output_component": "YPCMB / PRyMresults()[3]",
+    "epsilon_w": 0.012301,
+    "epsilon_n": 0.023842,
+    "amplitude_framework": "Paper 22 v1.5/v1.6",
+    "observational_denominators": "IO Framework Conventions v2.0 Section 1"
+  },
+  "scorecard": {
+    "D_over_H": 2.510410594954571e-5,
+    "D_over_H_sigma": -0.5529801681809717,
+    "Y_p": 0.24781814417284279,
+    "Y_p_sigma": 0.7045360432106975,
+    "Li7_over_H": 5.363335812718549e-10,
+    "Li7_over_H_sigma": 12.204309073285641,
+    "chi2_D_over_H_plus_Y_p": 0.8021581025844415
+  },
+  "manuscript_rounded": {
+    "D_over_H": "2.510 x 10^-5",
+    "D_over_H_sigma": "-0.55",
+    "Y_p": "0.24782",
+    "Y_p_sigma": "+0.70",
+    "chi2_D_over_H_plus_Y_p": "0.80"
+  }
+}

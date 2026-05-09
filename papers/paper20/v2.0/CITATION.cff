@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Paper 20 v2.0 Reproducibility Bundle"
+message: "If you use this reproducibility bundle, cite the associated Paper 20 manuscript and this release."
+type: dataset
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper20-v2.0"
+date-released: "2026-05-09"
+license: MIT
+version: "paper20-v2.0"
+abstract: "Reproducibility bundle for Paper 20 v2.0, including radiation scope-boundary, acoustic theorem, Big Bang nucleosynthesis radiation algebra, R4/FIRAS inheritance, corrected BBN wrapper scorecard, and validation artifacts."

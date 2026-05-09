@@ -1,0 +1,48 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "theorems": {
+    "20.1": {
+      "name": "Acoustic History Reduction Theorem",
+      "status": "DERIVED/THEOREM under AH1-AH7",
+      "J_r_geom": 1.2324731234392092,
+      "formula": "J_r,geom = x^(1/2)"
+    },
+    "20.2": {
+      "name": "Acoustic Phase-Calibration Theorem",
+      "status": "DERIVED/CONDITIONAL_VERIFIED through Paper 21 closure of AC1",
+      "J_theta": 0.8339461798286282,
+      "formula": "J_theta = x^(-1/2) * sqrt(1 + gamma_BI^2)",
+      "theta_star_pred_deg_manuscript_rounded": 0.599,
+      "theta_planck_deg": 0.59648,
+      "theta_planck_sigma_deg": 0.00026
+    }
+  },
+  "exact_rows": {
+    "legacy_exact_row": {
+      "theta_obs_deg": 0.5990414112379553,
+      "residual_percent": 0.42942114370226664,
+      "sigma_offset": 9.851581684443385
+    },
+    "current_bipartite_rounded_row": {
+      "theta_obs_deg": 0.598873398398795,
+      "residual_percent": 0.4012537551627957,
+      "sigma_offset": 9.205378456904015
+    }
+  },
+  "manuscript_note": "The v2.0 draft reports 0.429 percent and 9.2 sigma together. These come from adjacent exact rows. The bundle preserves both rows and validates the rounded theta* = 0.599 deg claim plus the exact J_theta factor.",
+  "eliminated_paths": [
+    "Background parameter sweep (conformal lock)",
+    "Baryon Jacobian ladder",
+    "Maximum physical baryon loading",
+    "Inside-horizon gravitational lensing",
+    "Bare baryon fraction 2 gamma",
+    "Perturbative CMB lensing",
+    "GTTP frequency channel",
+    "Full Rosetta norm 1 + gamma^2",
+    "S2 Laplacian eigenvalue dressing",
+    "dOmega measure modification",
+    "Literal signature-flip coordinate mapping",
+    "Uniform a_lm amplitude multiplier"
+  ]
+}

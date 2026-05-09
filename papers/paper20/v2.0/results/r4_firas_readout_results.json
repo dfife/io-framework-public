@@ -1,0 +1,32 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "source": "Paper 17 v1.5 Theorem 17.2 inherited by Paper 20 v2.0",
+  "status": {
+    "T_FIRAS": "IMPORTED/EMPIRICAL",
+    "readout_family": "DERIVED algebraic family",
+    "R4_FIRAS": "FIRAS-fixed unique readout normalization",
+    "independent_cmb_temperature_prediction": false
+  },
+  "formula": "T_obs(R4) = T_IO * x^(R4 * K_gauge)",
+  "inputs": {
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "x": 1.51899,
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644,
+    "R4_FIRAS_sigma": 0.0096
+  },
+  "computed": {
+    "old_R4_equals_1_factor": 1.023204472362383,
+    "old_R4_equals_1_T_obs_K": 2.725305112137207,
+    "firas_fixed_factor": 1.023277271400324,
+    "firas_fixed_T_obs_K": 2.725499012374763,
+    "direct_log_solution_from_rounded_inputs": 1.0031172610541779
+  },
+  "notes": [
+    "The fixed R4 value is inherited from Paper 17 v1.5 rather than recomputed in Paper 20.",
+    "The small difference between 1.0031014644 and the direct log solution shown here comes from rounded manuscript constants.",
+    "No downstream Paper 20 observable is used to tune R4."
+  ]
+}

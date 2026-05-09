@@ -1,0 +1,45 @@
+{
+  "paper": "Paper 20",
+  "target_version": "v2.0",
+  "hidden_continuous_parameter_found": false,
+  "unpublished_v18_replaced": true,
+  "independent_cmb_temperature_prediction_retired": true,
+  "removed_v18_sections_excluded": true,
+  "candidate_fields": [
+    {
+      "field": "R4 optical readout normalization",
+      "classification": "IMPORTED/EMPIRICAL / FIRAS-fixed inheritance from Paper 17 v1.5",
+      "verdict": "not a Paper 20 fitted parameter"
+    },
+    {
+      "field": "AC1 acoustic-ruler class membership",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED through Paper 21",
+      "verdict": "must cite Paper 21 closure; otherwise OPEN/PREMISE_GAP"
+    },
+    {
+      "field": "J_theta = x^(-1/2)*sqrt(1+gamma_BI^2)",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED",
+      "verdict": "fixed by premise chain, not tuned against theta*"
+    },
+    {
+      "field": "Standard Model N_eff = 3.044",
+      "classification": "IMPORTED/EMPIRICAL standard physics under Premise 2",
+      "verdict": "not IO-derived by reduced stack"
+    },
+    {
+      "field": "M_rad^BBN construction",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED as construction",
+      "verdict": "admissible construction, not uniqueness theorem"
+    },
+    {
+      "field": "bulk-vacuum radiation source",
+      "classification": "DERIVED/NO-GO",
+      "verdict": "wrong scaling and negligible magnitude"
+    }
+  ],
+  "manuscript_flags": [
+    "Acoustic residual line mixes 0.429 percent from a legacy exact row with 9.2 sigma from the current bipartite row.",
+    "No active CMB-temperature prediction claim remains in the v2.0 draft body.",
+    "The v2.0 bundle excludes the removed torsion-Lambda, assembly-gap, and Delta N_eff target materials."
+  ]
+}

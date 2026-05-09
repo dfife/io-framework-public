@@ -1,0 +1,24 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "status": {
+    "N_eff_species_count": "IMPORTED/EMPIRICAL standard physics under Premise 2",
+    "kinetic_correction": "VERIFIED against PRyMordial output",
+    "IO_native_delta_N_eff_source": "DERIVED/NO-GO on current stack"
+  },
+  "inputs": {
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "omega_b_h2": 0.02108
+  },
+  "computed": {
+    "N_eff_base_species": 3.0,
+    "N_eff_output": 3.044388520277016,
+    "delta_N_eff_kinetic": 0.044388520277015786,
+    "N_eff_manuscript_rounded": 3.044,
+    "T_IO_run_eta10": 6.183048605944518,
+    "T_obs_run_eta10": 5.770616388978064,
+    "Neff_output_difference_TIO_minus_TOBS": 0.0
+  },
+  "verdict": "MeV-era decoupling physics is local. T_IO does not appear in the local decoupling equations, so there is no IO-derived contribution beyond standard 3 + 0.044 on the current stack."
+}

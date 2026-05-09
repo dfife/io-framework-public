@@ -1,0 +1,31 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "theorems": {
+    "20.RAD1": {
+      "name": "BBN-Era Radiation Algebra",
+      "status": "DERIVED/CONDITIONAL_VERIFIED as construction",
+      "algebra": "M_rad^BBN = (M_gamma^CCR tensor_bar A_dec)_even tensor_hat CAR(h_e) tensor_hat CAR(h_nu)",
+      "boundary": "admissible extension compatible with H_IO; not the only conceivable BBN algebra"
+    },
+    "20.RAD2": {
+      "name": "Fermionic Bogoliubov Consistency",
+      "status": "DERIVED/CONDITIONAL_VERIFIED as consistency construction",
+      "rho_fermion_over_rho_gamma_pre_decoupling": 4.375,
+      "N_eff_post_annihilation": 3.044388520277016,
+      "boundary": "accommodates standard thermal physics; does not derive an IO-native radiation sector"
+    },
+    "20.RAD3": {
+      "name": "Bulk Vacuum No-Go",
+      "status": "DERIVED/NO-GO",
+      "w_vacuum": 1.6666666666666667,
+      "rho_vac_over_rho_rad_at_0p1MeV": 4.2476e-93,
+      "scaling": "rho_vac proportional to a^-8, not a^-4",
+      "boundary": "homogeneous OS/FRW bulk vacuum cannot supply radiation-like Delta N_eff"
+    }
+  },
+  "supporting_constants": {
+    "required_extra_radiation_fraction_vs_photons": 0.08369846690642226,
+    "standard_total_radiation_over_photon": 1.69131467495704
+  }
+}

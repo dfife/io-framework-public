@@ -1,0 +1,25 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "theorem": "Theorem 20.3 - Radiation Scope-Boundary Theorem",
+  "status": "DERIVED/NO-GO at reduced-core scope; full unreduced extension remains OPEN/PREMISE_GAP",
+  "reduced_stack": {
+    "algebra": "M_red = M_th tensor Z_g",
+    "sectors_present": ["bosonic CCR thermal photon sector", "reduced SU(2) gauge center Z_g"],
+    "sectors_absent": ["fermionic CAR sector", "family multiplicity operator"]
+  },
+  "no_go_arguments": [
+    "Reduced-algebra blindness: species count is invisible to bosonic-plus-central data.",
+    "V(alpha)/gauge-thermal-transfer route cannot produce the neutrino temperature ratio (4/11)^(1/3).",
+    "SU(2) seed dimension 3 is not a species theorem."
+  ],
+  "late_time_sensitivity": {
+    "N_eff_scan_range": [2, 6],
+    "Delta_H0_max_km_s_Mpc": 0.013,
+    "verdict": "late-time background response is numerically insensitive to N_eff over the scanned range"
+  },
+  "downstream_status": {
+    "Paper31": "full unreduced coexact-vector channel uniqueness is a later construction",
+    "Paper32": "fermionic/chiral bridge sector is a later construction"
+  }
+}

@@ -180,11 +180,11 @@ The current Paper 19 support bundle is:
 
 The current Paper 20 support bundle is:
 
-- `papers/paper20/v1.8/`
+- `papers/paper20/v2.0/`
 - validation command:
-  `python3 papers/paper20/v1.8/scripts/08_validate_expected_outputs.py`
+  `python3 papers/paper20/v2.0/scripts/08_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper20_v1_8_repro_bundle.json`
+  `metadata/manifests/paper20_v2_0_repro_bundle.json`
 
 The current Paper 24 support bundle is:
 

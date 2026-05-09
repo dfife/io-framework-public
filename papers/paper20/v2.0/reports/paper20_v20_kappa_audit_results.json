@@ -1,0 +1,43 @@
+{
+  "paper": "Paper 20",
+  "target_version": "v2.0",
+  "hidden_continuous_parameter_found": false,
+  "unpublished_v18_replaced": true,
+  "independent_cmb_temperature_prediction_retired": true,
+  "removed_v18_sections_excluded": true,
+  "action_required_before_manuscript_publication": [
+    "Align the acoustic residual percent and sigma to the same exact row."
+  ],
+  "candidate_fields": [
+    {
+      "field": "R4 optical readout normalization",
+      "classification": "IMPORTED/EMPIRICAL / FIRAS-fixed inheritance from Paper 17 v1.5",
+      "verdict": "not a Paper 20 fitted parameter"
+    },
+    {
+      "field": "AC1 acoustic-ruler class membership",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED through Paper 21",
+      "verdict": "must cite Paper 21 closure; otherwise OPEN/PREMISE_GAP"
+    },
+    {
+      "field": "J_theta",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED",
+      "verdict": "fixed by premise chain"
+    },
+    {
+      "field": "Standard Model N_eff",
+      "classification": "IMPORTED/EMPIRICAL standard physics under Premise 2",
+      "verdict": "not IO-derived by the reduced stack"
+    },
+    {
+      "field": "BBN radiation algebra M_rad^BBN",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED as construction",
+      "verdict": "admissible construction; uniqueness not claimed"
+    },
+    {
+      "field": "bulk-vacuum radiation source",
+      "classification": "DERIVED/NO-GO",
+      "verdict": "not a viable radiation-like Delta N_eff source"
+    }
+  ]
+}

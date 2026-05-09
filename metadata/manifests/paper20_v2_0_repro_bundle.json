@@ -1,0 +1,26 @@
+{
+  "bundle": "paper20-v2.0",
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "path": "papers/paper20/v2.0",
+  "release_tag": "paper20-v2.0",
+  "validation_command": "python3 papers/paper20/v2.0/scripts/08_validate_expected_outputs.py",
+  "expected_validation_summary": "SUMMARY total_checks=22 pass_count=22 fail_count=0",
+  "replaces_unpublished_bundle": "paper20-v1.8",
+  "included_surfaces": [
+    "Theorem 20.3 radiation scope-boundary",
+    "Theorem 20.1 acoustic history reduction",
+    "Theorem 20.2 acoustic phase calibration",
+    "Corrected BBN wrapper scorecard",
+    "N_eff import and kinetic correction",
+    "BBN measurement immunity",
+    "Theorems 20.RAD1, 20.RAD2, 20.RAD3"
+  ],
+  "excluded_v1_8_surfaces": [
+    "bare package reconstruction",
+    "assembly-gap diagnostic",
+    "torsion-Lambda branch",
+    "Delta N_eff target search",
+    "reduced-to-full extension sketch"
+  ]
+}

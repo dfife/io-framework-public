@@ -1,0 +1,24 @@
+{
+  "paper": "Paper 20",
+  "version": "v2.0",
+  "status": "DERIVED/NO-GO for simple measurement-geometry rescue of BBN abundance ratios",
+  "claim": "Abundance ratios are dimensionless. Same-channel geometric factors cancel in D/H, Y_p, and Li7/H measurement pipelines.",
+  "measurement_chains": {
+    "D_over_H_quasar_absorption": {
+      "geometric_class": "1D line-of-sight column",
+      "common_factor_cancels": true,
+      "needed_measurement_factor": 1.0487556460231702
+    },
+    "Y_p_HII_emission": {
+      "geometric_class": "3D volume emissivity / emission measure",
+      "common_factor_cancels": true,
+      "needed_measurement_factor": 0.9914587175809396
+    },
+    "Li7_stellar_photosphere": {
+      "geometric_class": "2D surface / photospheric absorption",
+      "common_factor_cancels": true,
+      "needed_measurement_factor": 0.28355490564223973
+    }
+  },
+  "verdict": "Observable-class Jacobians cannot be applied to nuclear reactions or same-channel abundance-ratio measurements without adding species-dependent measurement physics not present in the current stack."
+}
