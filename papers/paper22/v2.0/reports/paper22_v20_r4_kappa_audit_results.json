@@ -1,0 +1,162 @@
+{
+  "paper": "Paper 22",
+  "target_version": "v2.0",
+  "audit_date": "2026-05-10",
+  "target_manuscript": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper22_v2_0.docx",
+  "verdict": {
+    "hidden_continuous_fitted_parameter_found": false,
+    "active_scorecard_uses_R4": false,
+    "r4_damage_type": "manuscript_hygiene_and_inherited_appendix_language",
+    "cmb_prediction_status": "retired",
+    "bundle_action": "add R4/FIRAS dependency audit and freeze R4_FIRAS=1.0031014644"
+  },
+  "active_scorecard": {
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_n": 0.02384221534546833,
+    "D_over_H_sigma": -0.5529801681809717,
+    "Y_p_sigma": 0.7045360432106975,
+    "chi2_DH_plus_Yp": 0.8021581025844415,
+    "Li7_over_H": 5.363335812718549e-10,
+    "Li7_over_H_sigma": 12.204309073285641
+  },
+  "r4_repair": {
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "active_formula": "T_obs = T_IO * x^(R4_FIRAS * K_gauge)",
+    "retired_formula_R4_equals_one": "T_obs = T_IO * x^K_gauge",
+    "retired_formula_half_gauge": "T_obs = T_IO * exp(K_gauge/2)"
+  },
+  "candidate_fields": [
+    {
+      "field": "R4 optical readout normalization",
+      "classification": "IMPORTED/EMPIRICAL plus VERIFIED uniqueness in Paper 17",
+      "paper22_impact": "not used by active Paper 22 BBN scorecard",
+      "recommendation": "remove old CMB prediction wording; cite Paper 17 v1.5 FIRAS-fixed readout theorem only if needed"
+    },
+    {
+      "field": "K_gauge in epsilon_w",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED on WMR(H1-H3) plus GMP",
+      "paper22_impact": "load-bearing in Theorem 22.23",
+      "recommendation": "show WMR(H1-H3) inheritance explicitly"
+    },
+    {
+      "field": "L_1 weak puncture load",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED once WMR package is accepted",
+      "paper22_impact": "load-bearing in Theorem 22.23",
+      "recommendation": "retain; avoid sqrt(L_1) superseded branch"
+    },
+    {
+      "field": "<K>/10 nuclear payload",
+      "classification": "OPEN/PREMISE_GAP for TBS; DERIVED/CONDITIONAL_VERIFIED inside the premise package",
+      "paper22_impact": "load-bearing in Theorem 22.23",
+      "recommendation": "label TBS as OPEN/PREMISE_GAP and theorem as DERIVED/CONDITIONAL_VERIFIED on GMP+TBS"
+    },
+    {
+      "field": "GMP bridge mediation",
+      "classification": "OPEN/PREMISE_GAP",
+      "paper22_impact": "load-bearing for Theorems 22.23-22.25",
+      "recommendation": "replace NEW PREMISE / CONDITIONAL with OPEN/PREMISE_GAP"
+    },
+    {
+      "field": "PRyMordial helium output index",
+      "classification": "VERIFIED",
+      "paper22_impact": "active scorecard uses YPCMB / PRyMresults()[3]",
+      "recommendation": "retain YPBBN only as audit field"
+    }
+  ],
+  "manuscript_r4_locations": [
+    {
+      "line": 538,
+      "issue": "Master table lists T_obs = T_IO x^K_gauge and 2.7253 K",
+      "recommendation": "replace with FIRAS-fixed readout family or remove if not load-bearing"
+    },
+    {
+      "line": 636,
+      "issue": "Step 34 uses exp(K_gauge/2) and claims 2.7253 K",
+      "recommendation": "remove or rewrite under Paper 17 v1.5 Theorem 17.2"
+    },
+    {
+      "line": 637,
+      "issue": "Step 35 says five pieces force T_obs = T_IO x^K_gauge",
+      "recommendation": "retire old force-language; use FIRAS-fixed R4 uniqueness if included"
+    },
+    {
+      "line": 645,
+      "issue": "gamma_BI prediction from FIRAS inversion",
+      "recommendation": "retire as independent prediction language"
+    },
+    {
+      "line": 646,
+      "issue": "normalization eliminates last free parameter in temperature formula",
+      "recommendation": "remove old hidden-R4 overclaim"
+    },
+    {
+      "line": 696,
+      "issue": "R1-R4 rigidity package still treats R4 as one-e-fold normalization",
+      "recommendation": "update to FIRAS-fixed R4 or remove"
+    },
+    {
+      "line": 697,
+      "issue": "Modular Projection Theorem states T_obs = T_IO x^K_gauge",
+      "recommendation": "update observer-side readout to include R4_FIRAS"
+    },
+    {
+      "line": 938,
+      "issue": "Historical/superseded radiation-target scorecards remain in appendix",
+      "recommendation": "remove from active appendix unless retained as active no-go evidence"
+    }
+  ],
+  "noncanonical_label_findings": [
+    {
+      "label": "NEW PREMISE / CONDITIONAL",
+      "locations": [333, 346, 866],
+      "canonical_replacement": "OPEN/PREMISE_GAP"
+    },
+    {
+      "label": "PREMISE / CONDITIONAL or CONDITIONAL / OPEN",
+      "locations": [348, 878],
+      "canonical_replacement": "OPEN/PREMISE_GAP"
+    },
+    {
+      "label": "STATUS: OPEN",
+      "locations": [879],
+      "canonical_replacement": "OPEN/PREMISE_GAP"
+    },
+    {
+      "label": "CONDITIONAL/THEOREM",
+      "locations": [14],
+      "canonical_replacement": "DERIVED/CONDITIONAL_VERIFIED with dependency chain"
+    }
+  ],
+  "abbreviation_and_slang_flags": [
+    "IO",
+    "GTTP",
+    "GMP",
+    "TBS",
+    "WMR",
+    "P_resp",
+    "F_abs",
+    "DeltaN_eff",
+    "YPCMB",
+    "YPBBN",
+    "PRyMordial",
+    "OS",
+    "TT",
+    "KMS",
+    "CCR",
+    "CAR",
+    "ADM",
+    "RT/BY",
+    "AQFT",
+    "LQG",
+    "rate-dressing bridge",
+    "Channel Floor",
+    "puncture load",
+    "payload",
+    "singleton load",
+    "bridge operator",
+    "no-go landscape",
+    "theorem-grade"
+  ]
+}

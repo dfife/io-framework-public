@@ -1,0 +1,44 @@
+{
+  "script": "01_r4_firas_dependency_audit.py",
+  "claim_support": [
+    "Paper 17 v1.5 Theorem 17.2 FIRAS-fixed unique readout normalization",
+    "Paper 22 v2.0 R4/CMB damage audit"
+  ],
+  "status": "VERIFIED audit field; Paper 22 active BBN scorecard is not R4-dependent",
+  "active_readout": {
+    "formula": "T_obs = T_IO * x^(R4_FIRAS * K_gauge)",
+    "T_IO_K": 2.6635,
+    "x": 1.51899780195519,
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS_frozen": 1.0031014644,
+    "R4_from_FIRAS_formula": "ln(T_FIRAS/T_IO) / (K_gauge * ln(x))",
+    "R4_from_FIRAS_using_rounded_inputs": 1.0031049365320026,
+    "T_obs_from_frozen_R4_K": 2.725499782915561,
+    "T_FIRAS_K": 2.7255,
+    "absolute_temperature_difference_K": 2.170844388693638e-07
+  },
+  "retired_readouts": {
+    "R4_equals_one": {
+      "formula": "T_obs = T_IO * x^K_gauge",
+      "T_obs_K": 2.72530588024094,
+      "reason_retired": "R4=1 is not forced by the modular-projection stack; Paper 17 v1.5 uses FIRAS to fix R4 once."
+    },
+    "half_gauge": {
+      "formula": "T_obs = T_IO * exp(K_gauge/2)",
+      "T_obs_K": 2.7375885899549557,
+      "reason_retired": "exp(K_gauge/2) is not the active GTTP optical-readout law and evaluates to 2.7376 K, not 2.7255 K."
+    }
+  },
+  "paper22_dependency": {
+    "active_scorecard_depends_on_R4": false,
+    "independent_CMB_temperature_prediction_retired": true,
+    "dependency_note": "Paper 22's active BBN amplitude scorecard uses T_IO-local BBN branch outputs and the YPCMB helium wrapper convention. R4 is recorded here because the v2.0 manuscript imports the corrected observer-side thermal readout convention from Paper 17; it is not a fitted variable in Paper 22."
+  },
+  "checks": {
+    "frozen_R4_matches_paper17_value": true,
+    "active_T_obs_matches_firas_with_rounding": true,
+    "retired_R4_equals_one_differs_from_active": true,
+    "retired_half_gauge_differs_from_active": true,
+    "paper22_scorecard_not_R4_dependent": true
+  }
+}

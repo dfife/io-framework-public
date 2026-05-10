@@ -1,0 +1,195 @@
+{
+  "artifact": "paper22_theorem_22_23_kappa_audit_results",
+  "date": "2026-05-03",
+  "status": "verified / structural-audit / no-manuscript-edits",
+  "target": {
+    "paper": "Paper 22 v1.5",
+    "theorem": "Theorem 22.23",
+    "name": "Zero-Parameter Amplitude Construction",
+    "formula": {
+      "epsilon_w": "K_gauge * L_1",
+      "epsilon_n": "(<K> / mult_TT(n=2)) * L_2"
+    }
+  },
+  "constants": {
+    "gamma": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "Vprime_2gamma": 0.475,
+    "L_1": 0.22416889162576648,
+    "L_2": 0.13805247907094412,
+    "K_mean": 1.72704,
+    "mult_TT_n2": 10,
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_n": 0.02384221534546833,
+    "epsilon_w_if_Vprime_times_L1": 0.10648022352223907,
+    "epsilon_w_if_K_times_sqrt_L1": 0.025980346217022963,
+    "Vprime_payload_ratio_vs_K_gauge": 8.656380691537084,
+    "epsilon_n_if_denominator_9": 0.026491350383853703,
+    "epsilon_n_if_denominator_11": 0.021674741223153028
+  },
+  "headline_verdict": {
+    "unlabelled_continuous_hidden_parameter_found": false,
+    "theorem_retired": false,
+    "theorem_unconditionally_derived": false,
+    "summary": "No Paper-24-Step-D-style unlabelled continuous hidden parameter was found in Paper 22 v1.5. The load-bearing free fields are visible conditional/open dependencies: weak payload closure through WMR(H1-H3), and nuclear TT budget closure through TBS.",
+    "recommended_status_wording": "DERIVED/CONDITIONAL on GMP + TBS, with weak payload closure inherited from WMR(H1-H3)"
+  },
+  "candidate_fields": [
+    {
+      "field": "L_1",
+      "replacement_family": "lambda_1",
+      "rigidity_result": "Forced by Paper 21 singleton puncture-load derivation for j=1.",
+      "classification": "DERIVED",
+      "hidden_parameter": false
+    },
+    {
+      "field": "L_2",
+      "replacement_family": "lambda_2",
+      "rigidity_result": "Forced by Paper 21 singleton puncture-load derivation for j=2.",
+      "classification": "DERIVED",
+      "hidden_parameter": false
+    },
+    {
+      "field": "weak_payload_K_gauge",
+      "replacement_family": "a_w in epsilon_w = a_w * L_1",
+      "rigidity_result": "Not forced by local first-variation route; that route lands on Vprime=2gamma. Closed only under Paper 25 WMR/Quadratic Thermal Covariance premise package H1-H3.",
+      "classification": "DERIVED/CONDITIONAL if WMR(H1-H3) is accepted; otherwise RECONSTRUCTION",
+      "hidden_parameter": false,
+      "visibility": "WMR is explicitly labeled DERIVED/CONDITIONAL on H1-H3 in Paper 22 v1.5 Step 251, but Theorem 22.23's short status line should inherit this dependency explicitly."
+    },
+    {
+      "field": "nuclear_payload_K_mean_over_10",
+      "replacement_family": "a_n in epsilon_n = a_n * L_2",
+      "rigidity_result": "Current stack derives <K>, TT localization, and mult_TT=10, but does not force full modular-budget assignment to the active lowest TT block. Prior work proves underdetermination.",
+      "classification": "RECONSTRUCTION / PREMISE-CONDITIONAL",
+      "hidden_parameter": false,
+      "visibility": "Visible as TBS; Step 252 marks it CONDITIONAL / OPEN and states the underdetermination."
+    },
+    {
+      "field": "denominator_10",
+      "replacement_family": "m in epsilon_n = (<K>/m) * L_2",
+      "rigidity_result": "The multiplicity 10 is derived as mult_TT(n=2). Its use as a divisor of the full <K> budget depends on TBS.",
+      "classification": "DERIVED for multiplicity; RECONSTRUCTION / PREMISE-CONDITIONAL for budget division",
+      "hidden_parameter": false
+    },
+    {
+      "field": "weak_load_order",
+      "replacement_family": "p in epsilon_w = K_gauge * L_1^p",
+      "rigidity_result": "Modern v1.5 uses L_1 rather than sqrt(L_1) after Paper 25 Quadratic Thermal Covariance. This is conditional on WMR(H1-H3).",
+      "classification": "DERIVED/CONDITIONAL",
+      "hidden_parameter": false
+    },
+    {
+      "field": "nuclear_load_order",
+      "replacement_family": "p in epsilon_n = (<K>/10) * L_2^p",
+      "rigidity_result": "TT Linear Volume No-Go and tensor-channel branch structure select the linear L_2 response; remaining freedom is the budget scalar, not exponent.",
+      "classification": "DERIVED/CONDITIONAL",
+      "hidden_parameter": false
+    },
+    {
+      "field": "weak_sign_orientation",
+      "replacement_family": "s_w in {+1,-1}",
+      "rigidity_result": "Magnitude is positive by definition; suppressive sign is attached to rate-dressing operator orientation. Formal carrier orientation could flip without an explicit positivity/suppression theorem.",
+      "classification": "RECONSTRUCTION / ORIENTATION-CONVENTION",
+      "hidden_parameter": false,
+      "note": "Discrete sign convention, not a continuous fitted parameter. Should be documented if Paper 22 is edited."
+    },
+    {
+      "field": "nuclear_sign_orientation",
+      "replacement_family": "s_n in {+1,-1}",
+      "rigidity_result": "Same as weak sign. Suppressive direction is part of the physical rate-dressing orientation.",
+      "classification": "RECONSTRUCTION / ORIENTATION-CONVENTION",
+      "hidden_parameter": false
+    },
+    {
+      "field": "j_channel_assignment",
+      "replacement_family": "swap j=1 and j=2 assignments",
+      "rigidity_result": "Fixed by GMP plus Channel Floor: gauge-current couplings are vector/coexact j=1; metric-dependent phase-space corrections are TT j=2.",
+      "classification": "DERIVED/CONDITIONAL on GMP + Channel Floor",
+      "hidden_parameter": false
+    },
+    {
+      "field": "weak_vs_nuclear_sector_split",
+      "replacement_family": "mixed coefficients a_ij mapping L_1/L_2 into weak/nuclear sectors",
+      "rigidity_result": "Bridge operator typing blocks arbitrary sector mixing once GMP and channel-floor typing are accepted.",
+      "classification": "DERIVED/CONDITIONAL on GMP",
+      "hidden_parameter": false
+    },
+    {
+      "field": "multiplicative_payload_times_load_form",
+      "replacement_family": "generic functions f_w(K_gauge,L_1), f_n(<K>,L_2,mult_TT)",
+      "rigidity_result": "Product form follows inside the conditional bridge operator because scalar payloads multiply linear spatial-load projectors. The operator itself remains conditional on the premise package.",
+      "classification": "DERIVED/CONDITIONAL inside bridge-premise package",
+      "hidden_parameter": false
+    }
+  ],
+  "hidden_parameter_ranking": [
+    {
+      "rank": 1,
+      "field": "TT budget scalar a_n",
+      "is_hidden": false,
+      "why_ranked": "Highest surviving open coefficient freedom; epsilon_n scales linearly with the unforced active TT budget.",
+      "visibility": "Visible as TBS in Paper 22 v1.5.",
+      "promotion_path": "Prove modular intertwining for P_resp, a modular Gauss law, or a modular-energy transport theorem assigning <K> to E_TT,2."
+    },
+    {
+      "rank": 2,
+      "field": "Weak payload scalar a_w",
+      "is_hidden": false,
+      "why_ranked": "Very high leverage: Vprime=2gamma gives an 8.656x larger payload than K_gauge.",
+      "visibility": "Partly visible; WMR is labeled conditional on H1-H3, but Theorem 22.23's local status line should explicitly inherit WMR(H1-H3).",
+      "promotion_path": "Prove that the physical weak rate is exactly the Paper 25 two-time KMS/CCR bridge observable."
+    },
+    {
+      "rank": 3,
+      "field": "Suppressive sign/orientation",
+      "is_hidden": false,
+      "why_ranked": "Discrete and high-impact if reversed; not a continuous kappa field.",
+      "visibility": "Implicit in rate-dressing convention; should be documented more explicitly if Paper 22 is edited.",
+      "promotion_path": "State an explicit orientation convention or prove a positivity/suppression theorem for the rate-dressing operator."
+    }
+  ],
+  "conditional_visibility_check": {
+    "GMP": {
+      "visible": true,
+      "paper22_v15_status": "NEW PREMISE / CONDITIONAL",
+      "open_problem_path": "equivariant bridge uniqueness"
+    },
+    "TBS": {
+      "visible": true,
+      "paper22_v15_status": "PREMISE / CONDITIONAL; Step 252 CONDITIONAL / OPEN",
+      "open_problem_path": "modular intertwining, modular Gauss law, or modular-energy transport theorem"
+    },
+    "WMR_H1_H3": {
+      "visible": true,
+      "paper22_v15_status": "DERIVED/CONDITIONAL on H1-H3 in Step 251",
+      "visibility_issue": "Theorem 22.23's short status line says DERIVED/CONDITIONAL on GMP + TBS and omits explicit WMR(H1-H3) inheritance.",
+      "recommended_fix_if_manuscript_is_updated": "Use wording: DERIVED/CONDITIONAL on GMP + TBS, with weak payload closure inherited from WMR(H1-H3)."
+    },
+    "sign_orientation": {
+      "visible": "implicit",
+      "visibility_issue": "The theorem constructs positive epsilon magnitudes; the suppressive sign belongs to bridge-operator/rate-dressing orientation and should be explicit if edited.",
+      "requires_manuscript_edit_now": false
+    }
+  },
+  "claim_boundaries": [
+    "Do not claim Theorem 22.23 unconditionally derives K_gauge * L_1.",
+    "Do not claim Theorem 22.23 unconditionally derives (<K>/10) * L_2.",
+    "Do not claim the BBN scorecard proves TBS.",
+    "Do not omit WMR(H1-H3) when citing the weak payload closure.",
+    "It is safe to say Theorem 22.23 uses zero fitted observational parameters.",
+    "It is safe to say no unlabelled continuous hidden parameter was found in Paper 22 v1.5."
+  ],
+  "sources_reviewed": [
+    "/opt/cosmology-lab/results/paper22/Interior_Observer_Paper22_v1_5_extracted.txt",
+    "/opt/cosmology-lab/results/paper22/paper22_amplitude_energy_asymmetry_round13_report.txt",
+    "/opt/cosmology-lab/results/paper22/paper22_physics_paths_round21_report.txt",
+    "/opt/cosmology-lab/results/paper22/paper22_last_two_coefficients_round23_report.txt",
+    "/opt/cosmology-lab/results/paper22/paper22_scalar_modular_readout_round24_results.json",
+    "/opt/cosmology-lab/results/paper25/paper25_reverse_engineer_theorem22_23_report.txt",
+    "/opt/cosmology-lab/results/paper25/paper25_paper22_weak_amplitude_audit_report.txt",
+    "/opt/cosmology-lab/results/paper25/paper25_bridge_rigidity_joint_assessment_report.txt",
+    "/opt/cosmology-lab/results/paper25/paper25_primitive_weak_insertion_construction_report.txt",
+    "/opt/cosmology-lab/results/paper25/paper25_weak_two_time_correlator_report.txt"
+  ]
+}

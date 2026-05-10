@@ -1,0 +1,47 @@
+{
+  "script": "05_no_go_and_rate_paradigm_ledger.py",
+  "claim_support": [
+    "Theorem 22.14 Full-Radiation Scaling Equivalence",
+    "Theorem 22.17 Compact-Support Theta-Suppression Bound",
+    "Theorem 22.18 Response Matrix",
+    "Theorem 22.20 Weak-Nuclear Lever",
+    "Rate-vs-Stress Separation hostile-review checks"
+  ],
+  "status": "DERIVED/VERIFIED ledger; route scans are summarized, not rerun as active claims",
+  "full_radiation_scaling": {
+    "formula": "DeltaNeff_eq = ((1 + beta_rel*N_eff_base) / beta_rel) * F_abs",
+    "beta_rel": 0.22710731766023898,
+    "N_eff_base": 3.044,
+    "F_abs": 0.36878514007842433,
+    "DeltaNeff_equivalent": 2.7464184146374397,
+    "claim": "F_abs as a full radiation multiplier is not equivalent to DeltaNeff=F_abs; it catastrophically overdrives BBN."
+  },
+  "compact_support_theta_suppression": {
+    "one_window_bound_abs_fraction": 4.5e-07,
+    "two_window_bound_fraction": 1.93e-07,
+    "meaning": "MeV-window rate corrections are automatically too localized to repair the recombination acoustic residual directly."
+  },
+  "weak_nuclear_lever": {
+    "weak_plus_1pct": {
+      "D_over_H_sigma_shift": 0.268,
+      "Y_p_sigma_shift": 0.454
+    },
+    "nuclear_plus_1pct": {
+      "D_over_H_sigma_shift": 1.24,
+      "Y_p_sigma_shift": -0.011
+    },
+    "interpretation": "weak suppression is primarily the helium lever; broad nuclear-network suppression is primarily the deuterium lever."
+  },
+  "rate_vs_stress_bounds": {
+    "weak_thermodynamic_footprint_at_1MeV": 1.360439e-22,
+    "weak_thermodynamic_shift_for_Gf_change": 3.68679e-24,
+    "composition_feedback_freezeout": 1.542431e-13,
+    "composition_feedback_70keV": 4.934864e-12,
+    "claim": "rate dressing changes reaction kernels/matrix elements, not the equilibrium KMS bath stress tensor at leading order."
+  },
+  "checks": {
+    "DeltaNeff_equivalent_matches_frozen": true,
+    "one_window_theta_bound_less_than_1e_minus_6": true,
+    "composition_feedback_negligible": true
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "bundle": "paper22-v2.0",
+    "paper": "Paper 22",
+    "paper_version_supported": "v2.0",
+    "source_manuscript": "Paper 22 v2.0 working draft",
+    "created": "2026-05-10",
+    "claim_boundary": "This file records framework constants, wrapper conventions, R4/FIRAS readout repair metadata, and frozen outputs needed to audit Paper 22 live claims. It does not promote open premises to unconditional theorem status."
+  },
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "r_s_m": 6.685e26,
+    "eta_s": 1.893,
+    "R_U_m": 4.40092802727914e26,
+    "x": 1.51899780195519,
+    "Delta": 5.62418429896029,
+    "K_gauge": 0.05487281774291466,
+    "K_geom": 1.67220310631392,
+    "K_mean": 1.72704,
+    "K_total_from_delta": 1.72707592405684,
+    "F_abs": 0.36878514007842433,
+    "N_eff_base": 3.044,
+    "T_IO_K": 2.6635,
+    "omega_b_h2": 0.02108
+  },
+  "thermal_readout_r4_repair": {
+    "source": "Paper 17 v1.5 Theorem 17.2",
+    "T_FIRAS_K": 2.7255,
+    "T_FIRAS_sigma_K": 0.001,
+    "R4_FIRAS": 1.0031014644,
+    "R4_FIRAS_sigma": 0.0096,
+    "active_formula": "T_obs = T_IO * x^(R4_FIRAS * K_gauge)",
+    "active_T_obs_K": 2.725499782915561,
+    "retired_R4_equals_one_formula": "T_obs = T_IO * x^K_gauge",
+    "retired_R4_equals_one_T_obs_K": 2.72530588024094,
+    "retired_half_gauge_formula": "T_obs = T_IO * exp(K_gauge/2)",
+    "retired_half_gauge_T_obs_K": 2.7375885899549557,
+    "independent_CMB_temperature_prediction_retired": true,
+    "paper22_active_scorecard_depends_on_R4": false,
+    "paper22_dependency_note": "Paper 22's active BBN amplitude scorecard uses T_IO-local BBN branch outputs and the YPCMB helium wrapper convention. R4 is recorded here because the v2.0 manuscript imports the corrected observer-side thermal readout convention from Paper 17; it is not a fitted variable in Paper 22."
+  },
+  "puncture_loads": {
+    "L_1": 0.22416889162576648,
+    "L_2": 0.13805247907094412,
+    "L_1_plus_L_2": 0.36222137069671057
+  },
+  "spatial_channel_constants": {
+    "mult_TT_n2": 10,
+    "tt_rough_eigenvalue_unit_radius_n2": 6,
+    "tt_lichnerowicz_eigenvalue_unit_radius_n2": 12,
+    "channel_floor": {
+      "scalar_s0": 0,
+      "vector_s1": 1,
+      "tensor_s2": 2
+    }
+  },
+  "observational_conventions": {
+    "source": "IO Framework Conventions v2.0 Section 1, reproducing Observational Conventions v1.0",
+    "url": "https://dfife.github.io/data/conventions_v2.md",
+    "legacy_url": "https://dfife.github.io/data/observational_conventions_v1.md",
+    "Y_p": {
+      "value": 0.245,
+      "sigma": 0.004
+    },
+    "D_over_H": {
+      "value": 2.527e-5,
+      "sigma": 0.030e-5
+    },
+    "Li7_over_H": {
+      "value": 1.58e-10,
+      "sigma": 0.31e-10
+    }
+  },
+  "amplitude_construction": {
+    "epsilon_w_formula": "K_gauge * L_1",
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_n_formula": "(K_mean / mult_TT_n2) * L_2",
+    "epsilon_n": 0.02384221534546833,
+    "status": "DERIVED/CONDITIONAL_VERIFIED on GMP + TBS, with weak payload closure inherited from WMR(H1-H3)"
+  },
+  "corrected_bbn_scorecard": {
+    "source": "results/paper22/paper22_v14_ypbbn_to_ypcmb_correction_results.json",
+    "Y_p": 0.24781814417284279,
+    "Y_p_CMB": 0.24781814417284279,
+    "Y_p_BBN_audit_only": 0.24915220940738897,
+    "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+    "Y_p_sigma": 0.7045360432106975,
+    "D_over_H": 2.510410594954571e-5,
+    "D_over_H_sigma": -0.5529801681809717,
+    "Li7_over_H": 5.363335812718549e-10,
+    "Li7_over_H_sigma": 12.204309073285641,
+    "He3_over_H": 1.0487332753621735e-5,
+    "chi2_DH_plus_Yp": 0.8021581025844415
+  },
+  "li7_uniform_benchmark": {
+    "uniform_DeltaNeff_Fabs_Li7_over_H": 5.390793412702568e-10,
+    "uniform_DeltaNeff_Fabs_Li7_sigma": 12.292881976459897,
+    "zero_parameter_minus_uniform_fraction": -0.005093424637516164,
+    "absolute_fractional_difference": 0.005093424637516164,
+    "percent_difference": -0.5093424637516164
+  },
+  "two_parameter_comparator": {
+    "eps_freeze": 0.076,
+    "eps_nucleo": 0.067,
+    "D_over_H_sigma": 0.0959659810227855,
+    "Y_p_sigma": 1.3875791264812143,
+    "chi2_DH_plus_Yp": 1.9345853017600352,
+    "zero_parameter_margin": 1.1324271991755937
+  },
+  "no_go_and_response_numbers": {
+    "beta_rel": 0.22710731766023898,
+    "full_radiation_scaling_DeltaNeff_equivalent": 2.74641841463744,
+    "compact_support_theta_bound_abs_fraction": 4.5e-7,
+    "two_window_theta_shift_bound_fraction": 1.93e-7,
+    "weak_plus_1pct_DH_sigma_shift": 0.268,
+    "weak_plus_1pct_Yp_sigma_shift": 0.454,
+    "nuclear_plus_1pct_DH_sigma_shift": 1.240,
+    "nuclear_plus_1pct_Yp_sigma_shift": -0.011,
+    "full_nuclear_near_closure_target_distance_sq": 0.903663,
+    "weak_thermodynamic_footprint_at_1MeV": 1.360439e-22,
+    "weak_thermodynamic_shift_for_Gf_change": 3.686790e-24,
+    "composition_feedback_freezeout": 1.542431e-13,
+    "composition_feedback_70keV": 4.934864e-12
+  }
+}
