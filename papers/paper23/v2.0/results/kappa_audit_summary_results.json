@@ -1,0 +1,91 @@
+{
+  "abbreviations_to_expand": [
+    "IO",
+    "OS",
+    "FRW",
+    "CMB",
+    "BBN",
+    "LQG",
+    "CCR",
+    "KMS",
+    "TT",
+    "AQFT",
+    "PSRP",
+    "FIRAS",
+    "GTTP",
+    "GMP",
+    "TBS",
+    "WMR",
+    "PRyMordial",
+    "YPCMB",
+    "YPBBN",
+    "SU(2)",
+    "SO(4)",
+    "U(1)",
+    "n_s",
+    "n_t",
+    "A_s"
+  ],
+  "checks": {
+    "CCR_lift_visible_as_open": true,
+    "PSRP_visible_as_open": true,
+    "boundary_covariance_visible_as_open": true,
+    "hidden_continuous_parameter_found": false,
+    "r4_active_dependency": false
+  },
+  "io_slang_to_define_or_replace": [
+    "bridge",
+    "one-slot",
+    "two-slot",
+    "rung",
+    "payload",
+    "degree wall",
+    "no-doubling",
+    "live/open stack",
+    "theorem-grade",
+    "killed route",
+    "readout",
+    "Paper stack",
+    "white baseline",
+    "horizon puncture load",
+    "spatial Hodge complex",
+    "rate-dressing"
+  ],
+  "noncanonical_labels_to_migrate": [
+    "CONDITIONAL/THEOREM",
+    "CONDITIONAL",
+    "DERIVED/VERIFIED",
+    "unqualified DERIVED where a canonical status is required"
+  ],
+  "open_or_conditional_surfaces": [
+    {
+      "promotion_path": "Provide explicit chain to Premise 1, Premise 2, or frozen imported physics.",
+      "recommended_label": "OPEN/PREMISE_GAP",
+      "surface": "Primordial Scalar Readout Principle"
+    },
+    {
+      "promotion_path": "Provide explicit chain to Premise 1, Premise 2, or frozen imported physics.",
+      "recommended_label": "OPEN/PREMISE_GAP",
+      "surface": "Boundary Covariance Exponent"
+    },
+    {
+      "promotion_path": "Provide explicit chain to Premise 1, Premise 2, or frozen imported physics.",
+      "recommended_label": "OPEN/PREMISE_GAP",
+      "surface": "spatial canonical-commutation-relation lift"
+    },
+    {
+      "promotion_path": "Supply gamma-neutral tensor readout theorem or cite later closure.",
+      "recommended_label": "OPEN/PREMISE_GAP",
+      "surface": "tensor gamma-neutrality / n_t = 0"
+    }
+  ],
+  "paper": "Paper 23",
+  "verdict": {
+    "cmb_temperature_prediction_wording_present_in_draft": true,
+    "hidden_continuous_fitted_parameter_found": false,
+    "label_migration_required": true,
+    "r4_enters_active_spectral_index": false,
+    "stale_paper22_values_present_in_draft": true
+  },
+  "version": "v2.0"
+}

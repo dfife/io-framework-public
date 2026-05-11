@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "hopf_ell2_shell_n": 4,
+    "hopf_log_derivative": 1.0,
+    "weighted_Neff_over_N": 0.7696
+  },
+  "claim_status": {
+    "Hopf_halves_quadratic_slope": "DERIVED/NO-GO",
+    "Hopf_selection_rule": "DERIVED/THEOREM",
+    "S2_white_baseline": "DERIVED/CONDITIONAL_VERIFIED",
+    "weighted_white_baseline_numeric": "VERIFIED"
+  },
+  "hopf_selection": {
+    "bundle": "S1 -> S3 ~= SU(2) -> S2 ~= SU(2)/U(1)",
+    "ordinary_scalar_rule": "ordinary scalar functions on S2 use U(1) weight mu = 0, so n_S3 = 2 ell",
+    "samples": {
+      "1": {
+        "boundary_ell": 1,
+        "d_ln_n_d_ln_ell": 1.0,
+        "ordinary_scalar_pullback_S3_shell_n": 2
+      },
+      "10": {
+        "boundary_ell": 10,
+        "d_ln_n_d_ln_ell": 1.0,
+        "ordinary_scalar_pullback_S3_shell_n": 20
+      },
+      "2": {
+        "boundary_ell": 2,
+        "d_ln_n_d_ln_ell": 1.0,
+        "ordinary_scalar_pullback_S3_shell_n": 4
+      },
+      "3": {
+        "boundary_ell": 3,
+        "d_ln_n_d_ln_ell": 1.0,
+        "ordinary_scalar_pullback_S3_shell_n": 6
+      },
+      "30": {
+        "boundary_ell": 30,
+        "d_ln_n_d_ln_ell": 1.0,
+        "ordinary_scalar_pullback_S3_shell_n": 60
+      },
+      "356": {
+        "boundary_ell": 356,
+        "d_ln_n_d_ln_ell": 1.0,
+        "ordinary_scalar_pullback_S3_shell_n": 712
+      }
+    },
+    "slope_note": "The constant factor n = 2 ell drops out of logarithmic derivatives; it does not turn a two-slot covariance slope into a one-slot slope."
+  },
+  "paper": "Paper 23",
+  "version": "v2.0",
+  "white_baseline": {
+    "formula": "C_l = 4 pi / N for isotropic independent horizon puncture positions",
+    "note": "This is a boundary angular-noise baseline. It is not by itself a full derivation of the bulk primordial scalar shell spectrum.",
+    "samples": {
+      "N_100": 0.12566370614359174,
+      "N_1e6": 1.2566370614359173e-05,
+      "weighted_Neff_over_N": 0.7696
+    }
+  }
+}

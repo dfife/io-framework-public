@@ -1,0 +1,282 @@
+Paper 23 Round 19 - Tensor Perturbation Equations on Closed k = +1 FRW / OS Interior
+========================================================================================
+
+Status boundary
+---------------
+- derived: the physical TT Hilbert sector is
+      H_TT^(phys) = direct-sum_{n >= 2} H_n^(TT),
+  with
+      mult_TT(n) = 2 (n-1) (n+3),
+      -bar{nabla}^2 T_(ij)^(nA) = [n(n+2)-2] T_(ij)^(nA),
+      -Delta_L T_(ij)^(nA) = [n(n+2)+4] T_(ij)^(nA).
+- derived: the closed-FRW tensor mode equation is
+      h_(nA)'' + 2 H_conf h_(nA)' + n(n+2) h_(nA) = 16 pi G a^2 Pi_(nA)^(TT),
+  so the source-free canonical variable satisfies
+      u_(nA)'' + [ n(n+2) - a''/a ] u_(nA) = 0.
+- derived: the tensor shell dictionary is
+      k_tensor(n)^2 = n(n+2) / R_curv^2 = (mu_n - 4) / R_curv^2,
+      d ln k_tensor / d ln n = (n+1)/(n+2).
+- derived: TT perturbations do couple kinematically to the Immirzi parameter through
+      delta A^(TT) = delta Gamma^(TT) + gamma delta K^(TT),
+  but no current theorem transports
+      K_gauge = ln(1+gamma^2)
+  onto the primordial TT shell covariance.
+- conditional: if the TT seed covariance is shell-flat / gamma-neutral, then
+      n_t = 0.
+- derived / no-go: the current stack does not give a theorem-grade zero-parameter primordial
+  tensor-to-scalar ratio r. Paper 22 loads L_1, L_2 belong to the conditional BBN bridge,
+  not to a primordial tensor theorem.
+
+I. Hilbert-space TT sector on S^3
+---------------------------------
+Paper 22 fixes the TT branch as
+
+    H_TT^(phys) = direct-sum_{n >= 2} H_n^(TT),
+    H_n^(TT) ~= [V_((n+2)/2) tensor V_((n-2)/2)^*]
+                 direct-sum [V_((n-2)/2) tensor V_((n+2)/2)^*].
+
+Choose an orthonormal TT harmonic basis T_(ij)^(nA) with
+
+    gamma^(ij) T_(ij)^(nA) = 0,
+    bar{nabla}^i T_(ij)^(nA) = 0,
+    A = 1,...,2(n-1)(n+3).
+
+Then on the unit round S^3:
+
+    -bar{nabla}^2 T_(ij)^(nA) = [n(n+2)-2] T_(ij)^(nA),
+    -Delta_L T_(ij)^(nA)      = [n(n+2)+4] T_(ij)^(nA),
+    mult_TT(n) = 2(n-1)(n+3),
+    n >= 2.
+
+The diagonal-SU(2) range is
+
+    J = 2,3,...,n,
+
+so the exact tensor floor is
+
+    J_min = 2.
+
+Hence the tensor analog of the scalar physical bound n >= 2 is simply:
+
+    the TT spectrum starts at n = 2,
+
+and the lowest physical tensor block has multiplicity
+
+    mult_TT(2) = 10.
+
+II. Closed-FRW Tensor Equation
+------------------------------
+Take
+
+    ds^2 = a(eta)^2 [ -d eta^2 + (gamma_ij + h_ij) dx^i dx^j ],
+    gamma^(ij) h_ij = 0,
+    bar{nabla}^i h_ij = 0.
+
+The linear tensor equation on curved FRW is
+
+    h_ij'' + 2 H_conf h_ij' - bar{nabla}^2 h_ij + 2K h_ij = 16 pi G a^2 Pi_ij^(TT),
+
+with K = +1 here. Expand
+
+    h_ij(eta,x) = sum_{n >= 2,A} h_(nA)(eta) T_(ij)^(nA)(x),
+    Pi_ij^(TT)(eta,x) = sum_{n >= 2,A} Pi_(nA)^(TT)(eta) T_(ij)^(nA)(x).
+
+Using the Paper 22 rough-Laplacian eigenvalue
+
+    -bar{nabla}^2 T_(ij)^(nA) = [n(n+2)-2] T_(ij)^(nA),
+
+the mode equation becomes
+
+    h_(nA)'' + 2 H_conf h_(nA)' + [n(n+2)-2+2] h_(nA) = 16 pi G a^2 Pi_(nA)^(TT),
+
+hence
+
+    h_(nA)'' + 2 H_conf h_(nA)' + n(n+2) h_(nA) = 16 pi G a^2 Pi_(nA)^(TT).
+
+So the tensor wave operator is not the raw Lichnerowicz eigenvalue mu_n by itself.
+It is the closed-FRW combination
+
+    n(n+2) = [n(n+2)-2] + 2 = mu_n - 4.
+
+Equivalently
+
+    h_(nA)'' + 2 H_conf h_(nA)' + (mu_n - 4) h_(nA) = 16 pi G a^2 Pi_(nA)^(TT)
+
+in unit-S^3 conventions.
+
+III. Canonical Tensor Variable
+------------------------------
+The quadratic TT action is
+
+    S_T^(2) = (1 / 64 pi G) int d eta d^3x sqrt(gamma) a^2
+              [ h_ij' h'^(ij) - bar{nabla}_k h_ij bar{nabla}^k h^(ij) - 2K h_ij h^(ij) ].
+
+For orthonormal TT harmonics, define
+
+    u_(nA) = a h_(nA) / sqrt(32 pi G).
+
+Then
+
+    h_(nA)'' + 2 H_conf h_(nA)' = (sqrt(32 pi G)/a) [ u_(nA)'' - (a''/a) u_(nA) ],
+
+so the mode equation becomes
+
+    u_(nA)'' + [ n(n+2) - a''/a ] u_(nA) = sqrt(8 pi G) a^3 Pi_(nA)^(TT).
+
+In the source-free case:
+
+    u_(nA)'' + [ n(n+2) - a''/a ] u_(nA) = 0.
+
+This is exactly the TT / free-field analog of the Paper 22-Paper 23
+free mode equation.
+
+Convention boundary:
+
+    if one rescales the harmonics by sqrt(2),
+    the equivalent canonical variable is u = a h / sqrt(16 pi G).
+
+The canonical equation is unchanged.
+
+IV. Tensor k <-> n Dictionary
+-----------------------------
+For an observer-side curvature radius R_curv, define
+
+    k_tensor(n)^2 = n(n+2) / R_curv^2 = (mu_n - 4) / R_curv^2.
+
+Equivalently
+
+    k_tensor(n) = sqrt((n+1)^2 - 1) / R_curv.
+
+The exact tensor shell Jacobian is
+
+    d ln k_tensor / d ln n = (n+1)/(n+2).
+
+Examples:
+    n =   2 -> d ln k_tensor / d ln n = 0.750000000000
+    n =   3 -> d ln k_tensor / d ln n = 0.800000000000
+    n =  10 -> d ln k_tensor / d ln n = 0.916666666667
+    n =  30 -> d ln k_tensor / d ln n = 0.968750000000
+    n = 245 -> d ln k_tensor / d ln n = 0.995951417004
+    n = 300 -> d ln k_tensor / d ln n = 0.996688741722
+
+So the continuum limit is
+
+    k_tensor ~ (n+1)/R_curv,
+    d ln k_tensor / d ln n -> 1,
+
+but the exact low-n shells carry a definite closed-S^3 correction.
+
+V. Immirzi / Tensor-Tilt Boundary
+---------------------------------
+The kinematics in Ashtekar-Barbero variables are
+
+    A_a^i = Gamma_a^i + gamma K_a^i,
+    delta A_a^(TT)i = delta Gamma_a^(TT)i + gamma delta K_a^(TT)i.
+
+Therefore:
+
+1. derived:
+   TT perturbations do couple kinematically to gamma.
+
+2. derived:
+   the propagation equation for h_(nA) itself carries no explicit gamma.
+
+3. derived:
+   Paper 22's Channel Floor theorem puts TT on the
+       J >= 2
+   branch, so the tensor seed accesses a different boundary channel than the scalar
+   bridge, which passes through the vector
+       J >= 1
+   carrier.
+
+4. derived / boundary:
+   the current stack does not transport
+       K_gauge = ln(1+gamma^2)
+   onto the primordial TT shell covariance. Paper 22 closes the TT carrier but not
+   the TT modular payload.
+
+So the honest tensor-tilt status is:
+
+    n_t = 0
+
+is NOT derived. It is only conditional if the TT seed covariance
+
+    G_TT = sum_{n >= 2} g_n^(TT) Pi_(TT,n)
+
+is shell-flat / gamma-neutral, e.g.
+
+    g_n^(TT) = const.
+
+In that case
+
+    d ln P_T / d ln k_tensor = 0.
+
+Important correction:
+
+    if beta_T = 0, the closed-S^3 shell Jacobian does NOT create a tensor tilt by itself.
+    The Jacobian only modifies a nonzero exponent:
+
+    if g_n^(TT) propto k_tensor(n)^beta_T, then
+    d ln P_T / d ln n = beta_T (n+1)/(n+2).
+
+VI. Tensor-to-Scalar Ratio
+--------------------------
+At the covariance level the scalar and tensor sectors are different objects:
+
+    C_scal = B G_vec B^dagger,
+    C_TT   = G_TT
+
+up to the chosen tensor normalization.
+
+Therefore
+
+    r(k) = P_T(k) / P_R(k)
+
+requires both:
+
+    - the exact TT seed covariance G_TT,
+    - the exact scalar bridge normalization B G_vec B^dagger.
+
+Paper 22 representation content alone does not fix either normalization.
+
+Current hard boundary:
+
+    there is no theorem-grade zero-parameter primordial r on the present stack.
+
+Useful but non-closing carrier data:
+
+    dim E_vec,1 = 6,
+    dim E_TT,2  = 10,
+
+and the Paper 22 conditional BBN-response loads are
+
+    L_1 = 0.224168891625766,
+    L_2 = 0.138052479070944,
+    L_2 / L_1 = 0.615841377765353,
+    sqrt(L_2 / L_1) = 0.784755616587325.
+
+But these belong to the conditional BBN bridge of Paper 22, not to a primordial
+tensor-spectrum theorem. They must not be quoted as r.
+
+So the inflationary consistency relation
+
+    n_t = -r/8
+
+is not active in the current IO stack. If future work derives
+
+    n_t = 0
+
+with
+
+    n_s != 1,
+
+then the inflationary consistency relation would be broken.
+
+Sources
+-------
+- local: /opt/cosmology-lab/results/paper22/paper22_spatial_hodge_complex_report.txt  [TT S^3 irreps, multiplicities, rough and Lichnerowicz eigenvalues, channel floor law]
+- local: /opt/cosmology-lab/results/paper22/paper22_remaining_premises_round16_report.txt  [TT modular-budget boundary on the lowest TT block]
+- local: /opt/cosmology-lab/results/paper22/paper22_last_two_coefficients_round23_report.txt  [TT carrier closed but modular payload still open]
+- local: /opt/cosmology-lab/results/paper23/paper23_scalar_perturbations_report.txt  [closed-FRW perturbation conventions and canonical-variable style]
+- web primary: https://link.springer.com/article/10.1140/epjc/s10052-014-2917-0  [linear tensor equation on curved FRW background with explicit K term]
+

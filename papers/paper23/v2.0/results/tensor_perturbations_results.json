@@ -1,0 +1,67 @@
+{
+  "checks": {
+    "lichnerowicz_n2": 12,
+    "lowest_n": 2,
+    "mult_TT_n2": 10,
+    "rough_laplacian_n2": 6,
+    "tensor_jacobian_n30": 0.96875
+  },
+  "claim_status": {
+    "TT_spectrum_bookkeeping": "DERIVED/THEOREM",
+    "lowest_TT_block": "DERIVED/THEOREM",
+    "tensor_evolution_equation": "DERIVED/THEOREM within closed-FRW perturbation theory",
+    "tensor_tilt_n_t_equals_0": "OPEN/PREMISE_GAP unless gamma-neutrality chain is supplied"
+  },
+  "formulas": {
+    "TT_multiplicity": "mult_TT(n) = 2(n-1)(n+3), n >= 2",
+    "lichnerowicz": "lambda_TT^L(n) = n(n+2)+4",
+    "mode_equation": "u_n'' + [n(n+2) - a''/a] u_n = 0 in the reduced tensor bookkeeping",
+    "rough_laplacian": "lambda_TT^rough(n) = n(n+2)-2"
+  },
+  "paper": "Paper 23",
+  "samples": {
+    "10": {
+      "d_ln_k_d_ln_n_continuum_proxy": 0.9166666666666666,
+      "lichnerowicz_eigenvalue_unit_radius": 124,
+      "multiplicity": 234,
+      "n": 10,
+      "rough_laplacian_eigenvalue_unit_radius": 118
+    },
+    "100": {
+      "d_ln_k_d_ln_n_continuum_proxy": 0.9901960784313726,
+      "lichnerowicz_eigenvalue_unit_radius": 10204,
+      "multiplicity": 20394,
+      "n": 100,
+      "rough_laplacian_eigenvalue_unit_radius": 10198
+    },
+    "2": {
+      "d_ln_k_d_ln_n_continuum_proxy": 0.75,
+      "lichnerowicz_eigenvalue_unit_radius": 12,
+      "multiplicity": 10,
+      "n": 2,
+      "rough_laplacian_eigenvalue_unit_radius": 6
+    },
+    "3": {
+      "d_ln_k_d_ln_n_continuum_proxy": 0.8,
+      "lichnerowicz_eigenvalue_unit_radius": 19,
+      "multiplicity": 24,
+      "n": 3,
+      "rough_laplacian_eigenvalue_unit_radius": 13
+    },
+    "30": {
+      "d_ln_k_d_ln_n_continuum_proxy": 0.96875,
+      "lichnerowicz_eigenvalue_unit_radius": 964,
+      "multiplicity": 1914,
+      "n": 30,
+      "rough_laplacian_eigenvalue_unit_radius": 958
+    },
+    "4": {
+      "d_ln_k_d_ln_n_continuum_proxy": 0.8333333333333334,
+      "lichnerowicz_eigenvalue_unit_radius": 28,
+      "multiplicity": 42,
+      "n": 4,
+      "rough_laplacian_eigenvalue_unit_radius": 22
+    }
+  },
+  "version": "v2.0"
+}

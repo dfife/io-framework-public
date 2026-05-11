@@ -1,0 +1,3 @@
+# No non-standard system packages are required for the Paper 23 v2.0 bundle.
+# A POSIX shell and Python 3 are sufficient.
+

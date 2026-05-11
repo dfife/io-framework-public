@@ -1,0 +1,31 @@
+{
+  "paper": 23,
+  "paper_version": "v2.0",
+  "bundle_version": "paper23-v2.0",
+  "bundle_path": "papers/paper23/v2.0",
+  "release_tag": "paper23-v2.0",
+  "bundle_url": "https://github.com/dfife/io-framework-public/tree/main/papers/paper23/v2.0",
+  "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper23-v2.0",
+  "associated_zenodo_record": "https://zenodo.org/records/19210262/latest",
+  "build_date": "2026-05-11",
+  "validator": "papers/paper23/v2.0/scripts/08_validate_expected_outputs.py",
+  "validation_summary": {
+    "total_checks": 30,
+    "pass_count": 30,
+    "fail_count": 0
+  },
+  "headline_values": {
+    "R4_FIRAS": 1.0031014644,
+    "one_minus_ns": 0.03612435625139463,
+    "n_s": 0.9638756437486053,
+    "planck_sigma_residual": 0.24389434557015036
+  },
+  "audit_summary": {
+    "hidden_continuous_fitted_parameter_found": false,
+    "r4_enters_active_spectral_index": false,
+    "cmb_temperature_prediction_wording_present_in_draft": true,
+    "stale_paper22_values_present_in_draft": true,
+    "label_migration_required": true
+  }
+}
+

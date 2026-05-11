@@ -1,0 +1,88 @@
+{
+  "checks": {
+    "epsilon_candidate_independent": false,
+    "multiplicity_per_allowed_branch": 1,
+    "sample_n5_targets": [
+      4,
+      6
+    ],
+    "scalar_hom_space_dimension": 1
+  },
+  "claim_status": {
+    "TT_to_TT_global_uniqueness": "OPEN/PREMISE_GAP if claimed beyond shellwise Schur uniqueness",
+    "epsilon_f_candidate_proportionality": "DERIVED/NO-GO for independent second scalar bridge",
+    "global_scalar_branch_multiplicity": "DERIVED/CONDITIONAL_VERIFIED",
+    "local_scalar_trace_bridge": "DERIVED/CONDITIONAL_VERIFIED",
+    "vector_to_TT_bridge": "DERIVED/CONDITIONAL_VERIFIED"
+  },
+  "epsilon_f_candidate": {
+    "candidate": "epsilon^{abc} f_{ijk} Abar_a^i Abar_b^j delta A_c^k",
+    "finding": "proportional to the trace bridge on the homogeneous isotropic FRW background",
+    "homogeneous_background_relation": "B^(3)(delta A) = 2 alpha^2 Tr(X) = 2 alpha B^(1)(delta A)"
+  },
+  "local_scalar_bridge": {
+    "hom_space_dimension": 1,
+    "normalization_note": "The bridge is unique up to normalization. The active spectral-index slope is a logarithmic slope, so the overall bridge normalization cancels.",
+    "projected_bridge": "B_N(delta A) = Pi_N^(0) S_Abar(delta A)",
+    "representative": "S_Abar(delta A) = g^{ab} kappa_{ij} Abar_a^i delta A_b^j"
+  },
+  "paper": "Paper 23",
+  "scalar_branch_rules": {
+    "rule": "N = n - 1 or N = n + 1 on allowed multiplicity-one branches",
+    "samples": {
+      "2": {
+        "allowed_scalar_output_shells_N": [
+          3
+        ],
+        "multiplicity_per_allowed_branch": 1,
+        "source_shell_n": 2
+      },
+      "29": {
+        "allowed_scalar_output_shells_N": [
+          28,
+          30
+        ],
+        "multiplicity_per_allowed_branch": 1,
+        "source_shell_n": 29
+      },
+      "3": {
+        "allowed_scalar_output_shells_N": [
+          2,
+          4
+        ],
+        "multiplicity_per_allowed_branch": 1,
+        "source_shell_n": 3
+      },
+      "4": {
+        "allowed_scalar_output_shells_N": [
+          3,
+          5
+        ],
+        "multiplicity_per_allowed_branch": 1,
+        "source_shell_n": 4
+      },
+      "5": {
+        "allowed_scalar_output_shells_N": [
+          4,
+          6
+        ],
+        "multiplicity_per_allowed_branch": 1,
+        "source_shell_n": 5
+      },
+      "712": {
+        "allowed_scalar_output_shells_N": [
+          711,
+          713
+        ],
+        "multiplicity_per_allowed_branch": 1,
+        "source_shell_n": 712
+      }
+    }
+  },
+  "tensor_bridge_boundary": {
+    "TT_to_TT_status": "Schur uniqueness is shellwise. A global TT-to-TT bridge remains a spectral-multiplier family unless extra parity or weighting conditions are imposed.",
+    "vector_to_TT_representative": "T_Abar(delta A)_{ab} = STF_ab[kappa_{ij} Abar_(a)^i delta A_(b)^j]",
+    "vector_to_TT_status": "unique up to normalization at the local zero-order level"
+  },
+  "version": "v2.0"
+}

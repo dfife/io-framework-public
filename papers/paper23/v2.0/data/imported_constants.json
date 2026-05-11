@@ -1,0 +1,37 @@
+{
+  "paper": "Paper 23",
+  "version": "v2.0",
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "x": 1.51899780195519,
+    "K_gauge": 0.054872817742914665,
+    "R_U_m": 4.40092802727914e26,
+    "Mpc_m": 3.0856775814913673e22
+  },
+  "r4_firas_readout": {
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_K": 2.6635,
+    "T_FIRAS_K": 2.7255,
+    "status": "IMPORTED/EMPIRICAL from Paper 17 v1.5"
+  },
+  "spectral_index_reference": {
+    "one_minus_ns_planck": 0.0351,
+    "sigma": 0.0042,
+    "source_note": "Planck comparison value as used by Paper 23 v2.0"
+  },
+  "active_paper23_result": {
+    "one_minus_ns": 0.03612435625139463,
+    "n_s": 0.9638756437486053,
+    "sigma_residual": 0.24389434557015036
+  },
+  "current_paper22_values_for_inherited_rows": {
+    "D_over_H_sigma": -0.5529801681809717,
+    "Y_p_sigma": 0.7045360432106975,
+    "chi2_DH_plus_Yp": 0.8021581025844415,
+    "two_parameter_comparator_chi2": 1.9345853017600352,
+    "Li7_over_H": 5.363335812718549e-10,
+    "Li7_sigma": 12.204309073285641,
+    "uniform_benchmark_fraction": 0.005093424637516164
+  }
+}
+

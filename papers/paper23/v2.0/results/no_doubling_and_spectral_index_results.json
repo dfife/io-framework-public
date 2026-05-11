@@ -1,0 +1,108 @@
+{
+  "active_result": {
+    "formula": "1 - n_s = K_gauge / x",
+    "n_s": 0.9638756437486053,
+    "one_minus_ns": 0.03612435625139463,
+    "sigma_residual": 0.24389434557015036
+  },
+  "checks": {
+    "doubled_sigma_residual": 8.844931548283158,
+    "n_s": 0.9638756437486053,
+    "one_minus_ns": 0.03612435625139463,
+    "pivot_shell_k0_05": 712.1246248214703,
+    "shell_factor_n2": 0.8333333333333334,
+    "shell_factor_n3": 1.0,
+    "shell_factor_n7": 1.0714285714285714,
+    "sigma_residual": 0.24389434557015036
+  },
+  "claim_status": {
+    "No_Doubling_theorem": "DERIVED/CONDITIONAL_VERIFIED",
+    "Planck_residual": "VERIFIED",
+    "doubled_route": "DERIVED/NO-GO",
+    "finite_shell_correction": "DERIVED/THEOREM",
+    "scalar_spectral_index": "DERIVED/CONDITIONAL_VERIFIED"
+  },
+  "constants": {
+    "K_gauge": 0.054872817742914665,
+    "R_U_Mpc": 14262.436405141483,
+    "R_U_m": 4.40092802727914e+26,
+    "gamma_BI": 0.2375,
+    "planck_one_minus_ns": 0.0351,
+    "planck_sigma": 0.0042,
+    "x": 1.51899780195519
+  },
+  "finite_shell_correction": {
+    "formula": "1 - n_s(n) = (K_gauge/x) * (n-1)(n+3)/(n(n+1))",
+    "peak_note": "The factor is 5/6 at n=2, 1 at n=3, and peaks near n=6.5 at 15/14.",
+    "samples": {
+      "2": {
+        "factor": 0.8333333333333334,
+        "n": 2,
+        "n_s_shell_corrected": 0.9698963697905044,
+        "one_minus_ns_shell_corrected": 0.030103630209495528
+      },
+      "245": {
+        "factor": 1.0040152646424423,
+        "n": 245,
+        "n_s_shell_corrected": 0.9637305948982181,
+        "one_minus_ns_shell_corrected": 0.036269405101781844
+      },
+      "29": {
+        "factor": 1.0298850574712644,
+        "n": 29,
+        "n_s_shell_corrected": 0.96279606528592,
+        "one_minus_ns_shell_corrected": 0.037203934714079984
+      },
+      "3": {
+        "factor": 1.0,
+        "n": 3,
+        "n_s_shell_corrected": 0.9638756437486053,
+        "one_minus_ns_shell_corrected": 0.03612435625139463
+      },
+      "30": {
+        "factor": 1.0290322580645161,
+        "n": 30,
+        "n_s_shell_corrected": 0.9628268721155003,
+        "one_minus_ns_shell_corrected": 0.037173127884499634
+      },
+      "6": {
+        "factor": 1.0714285714285714,
+        "n": 6,
+        "n_s_shell_corrected": 0.9612953325877914,
+        "one_minus_ns_shell_corrected": 0.03870466741220853
+      },
+      "7": {
+        "factor": 1.0714285714285714,
+        "n": 7,
+        "n_s_shell_corrected": 0.9612953325877914,
+        "one_minus_ns_shell_corrected": 0.03870466741220853
+      },
+      "712": {
+        "factor": 1.0013966150306506,
+        "n": 712,
+        "n_s_shell_corrected": 0.9638251919296921,
+        "one_minus_ns_shell_corrected": 0.03617480807030791
+      },
+      "713": {
+        "factor": 1.0013946672638199,
+        "n": 713,
+        "n_s_shell_corrected": 0.963825262291515,
+        "one_minus_ns_shell_corrected": 0.03617473770848502
+      }
+    }
+  },
+  "paper": "Paper 23",
+  "pivot_shells": {
+    "formula": "sqrt((n-1)(n+3))/R_U = k",
+    "k_0_002_Mpc_inverse": 27.59490109867178,
+    "k_0_05_Mpc_inverse": 712.1246248214703
+  },
+  "rejected_doubled_route": {
+    "finding": "The doubled covariance route is not an adjustable branch; it is killed.",
+    "formula": "1 - n_s = 2 K_gauge / x",
+    "n_s": 0.9277512874972107,
+    "one_minus_ns": 0.07224871250278926,
+    "sigma_residual": 8.844931548283158
+  },
+  "version": "v2.0"
+}

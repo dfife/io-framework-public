@@ -1,0 +1,286 @@
+Paper 23 - the two closing lemmas
+=======================================
+
+Executive result
+----------------
+
+The two missing lemmas split cleanly.
+
+- derived / theorem on the minimal spatial CCR lift:
+  Lemma 23.A closes once the Paper 17 reduced bosonic KMS state is lifted to the
+  natural Paper 22 spatial one-particle carrier
+
+      h_vec = L^2(R,dnu) tensor H_g tensor Omega^1_coex(S^3).
+
+  On that Hilbert-space lift, the bridge algebra is a CCR subalgebra and the
+  restricted state is quasi-free.
+
+- derived / theorem on the existing Papers 16/19/23 stack:
+  Lemma 23.B closes outright. The Paper 23 bridge
+
+      B_N(delta A) = Pi_N^(0)[ g^(ab) kappa_ij Abar_a^i delta A_b^j ]
+
+  is a zero-order algebraic contraction followed by harmonic projection. It
+  introduces no new differential Jacobian, so it preserves the alpha = 1 rung.
+
+- derived / theorem on the bridge CCR sector:
+  Once Lemmas 23.A and 23.B are in place, the factor-of-two wall disappears on
+  the bridge algebra for the right reason:
+
+      the primordial tilt lives in the one-particle covariance G^(1),
+      and the scalar covariance is linear in G^(1), not quadratic in G^(1).
+
+- conditional boundary:
+  two premises still remain for the full spectral-index law:
+  the minimal spatial CCR lift must be accepted as the actual perturbation
+  sector of Paper 23, and the 1/x factor must be proved to act on the
+  logarithmic generator of G^(1), not merely on its amplitude.
+
+
+I. Lemma 23.A - quasi-free restriction
+--------------------------------------
+
+The current Paper 17 scope is the reduced thermal photon sector. Paper 22 already
+records the exact boundary:
+
+    the Ashtekar-Barbero connection is not presently realized as an operator
+    inside the bare photon algebra M_th.
+
+So the bridge algebra is not a literal subalgebra of bare M_th.
+
+The natural Hilbert-space repair is the minimal spatial one-particle lift
+
+    h_vec = L^2(R,dnu) tensor H_g tensor Omega^1_coex(S^3),
+    H_vec = Gamma_s(h_vec).
+
+For each scalar shell mode Q_(N,M), define the bridge functional
+
+    L_(N,M)(delta A)
+    = <Q_(N,M), B_N delta A>
+    = int_(S^3) overline(Q_(N,M)) g^(ab) kappa_ij Abar_a^i delta A_b^j dmu.
+
+Because S^3 is compact and the coefficients are smooth, L_(N,M) is bounded on the
+vector one-particle Hilbert space. Hence by Riesz there exists a unique
+
+    F_(N,M) in h_vec
+
+with
+
+    L_(N,M)(delta A) = <F_(N,M), delta A>_(h_vec).
+
+Define the real bridge test space
+
+    h_br = closure_R span { F_(N,M) }.
+
+Then the bridge algebra is the Weyl CCR subalgebra
+
+    W_br = CCR(h_br, sigma|_(h_br)) subset CCR(h_vec, sigma).
+
+If the ambient lifted A-vacuum is quasi-free, i.e.
+
+    omega_vec(W(f)) = exp[-mu_vec(f,f)/4],
+
+then on h_br we simply restrict the quadratic form:
+
+    mu_br = mu_vec|_(h_br),
+    omega_vec|_(W_br)(W(f)) = exp[-mu_br(f,f)/4].
+
+So the restriction is again quasi-free.
+
+In creation-annihilation form the bridge covariance is
+
+    C_(N,M;N',M')
+    = omega_vec(a^*(F_(N,M)) a(F_(N',M')))
+    = <F_(N',M'), G^(1) F_(N,M)>,
+
+where G^(1) is the one-particle covariance operator of the lifted state.
+
+This is the load-bearing point:
+
+    the bridge two-point function is one covariance kernel on one-particle space,
+    not two independently dressed bridge legs.
+
+
+II. Lemma 23.B - zero-order bridge preserves alpha = 1
+------------------------------------------------------
+
+Write the bridge as
+
+    B_N = Pi_N^(0) S_Abar,
+    S_Abar(delta A) = g^(ab) kappa_ij Abar_a^i delta A_b^j.
+
+The active perturbation delta A is processed by:
+
+1. pointwise metric contraction g^(ab),
+2. pointwise internal trace kappa_ij,
+3. multiplication by the fixed background Abar,
+4. orthogonal harmonic projection Pi_N^(0).
+
+Each of these is zero-order in the active field:
+
+    ord(S_Abar) = 0,
+    ord(Pi_N^(0)) = -infinity
+
+because Pi_N^(0) is finite-rank / smoothing.
+
+Paper 19 already identified the only theorem-grade rung-changing mechanisms:
+
+    alpha = 3/2  from free-fall / timelike continuity scalarization,
+    alpha = 2    from intrinsic slice codifferential scalarization.
+
+Both require differentiation of the active one-form or insertion of a new
+Jacobian factor. The bridge does neither.
+
+Therefore if O^(1) is on the primitive one-form rung,
+
+    alpha(O^(1)) = 1,
+
+then
+
+    alpha(B_N O^(1)) = alpha(O^(1)) = 1.
+
+So the bridge preserves the alpha = 1 rung.
+
+
+III. Theorem 23.S
+-----------------
+
+Premise chain
+-------------
+
+1. Paper 12 alpha-ladder:
+   the one-form transfer class is the alpha = 1 rung.
+
+2. Paper 16 Theorem 16.36:
+   reduction that preserves observable type / slot count preserves one-slot
+   transfer structure.
+
+3. Paper 17 Theorems 17.25, 17.26, 17.27 and Corollary 17.28:
+   the A-vacuum exists explicitly, reduces to the central gauge sector, and
+   carries the modular generator
+
+       D tensor K_hat_g.
+
+4. Paper 18 Theorems 18.22, 18.26, 18.28 and 18.43:
+   the 1-form BDP class is fixed, V(alpha) = K_gauge is the unique reduced-center
+   generator, V' belongs to response observables, and the reduced bosonic thermal
+   state is quasi-free / covariance-controlled in the Araki-Woods class.
+
+5. Paper 19 Theorems 19.JC1-19.JC3 plus the scalarization audit:
+   alpha = 1 is the primitive one-form rung, while alpha = 3/2 and alpha = 2
+   arise only through explicit derivative/Jacobian scalarizations.
+
+6. Paper 22 Theorems 22.4 and 22.5:
+   the Ashtekar-Barbero background sits in the coexact vector channel on S^3.
+
+7. Paper 23 bridge theorem:
+
+       B_N(delta A) = Pi_N^(0)[ g^(ab) kappa_ij Abar_a^i delta A_b^j ],
+
+   with exact shell rule
+
+       N = n-1 or N = n+1.
+
+8. Lemma 23.A:
+   on the minimal spatial CCR lift, the bridge algebra is quasi-free and its
+   independent spectral datum is the one-particle covariance kernel.
+
+9. Lemma 23.B:
+   the bridge preserves the alpha = 1 rung.
+
+
+Theorem 23.S (conditional spectral index theorem on the bridge CCR sector)
+---------------------------------------------------------------------------
+
+On the minimal spatial CCR lift of the Paper 17/22 Hilbert package, the
+one-particle bridge covariance is the primitive state datum by Lemma 23.A. By
+Lemma 23.B together with Papers 12, 18, and 19, that covariance remains on the
+state-level reduced-center one-form rung.
+
+If, in addition, a generator-level projection theorem acts on that covariance so
+that
+
+    G^(1) = sum_(n>=1,sigma) g_n^(sigma) Pi_n^(sigma),
+    g_n^(sigma) = g_* [k_MS(n)/k_*]^(-K_gauge/x),
+    k_MS(n)^2 = (n-1)(n+3) / R_curv^2.
+
+Then the scalar bridge covariance is
+
+    C^(0) = B G^(1) B^dagger,
+
+with exact shell form
+
+    C_N
+    = beta_(N,-)^(+) g_(N-1)^(+)
+    + beta_(N,-)^(-) g_(N-1)^(-)
+    + beta_(N,+)^(+) g_(N+1)^(+)
+    + beta_(N,+)^(-) g_(N+1)^(-).
+
+In the parity-symmetric case this reduces to
+
+    C_N = B_(N,-) g_(N-1) + B_(N,+) g_(N+1).
+
+Therefore the effective scalar-shell tilt is
+
+    1 - n_s^(eff)(N)
+    = (K_gauge/x) * N(N+1)/[(N-1)(N+3)] - d ln A_N / d ln N,
+
+    A_N = B_(N,-) exp[-(K_gauge/x) Delta_(N,-)]
+        + B_(N,+) exp[-(K_gauge/x) Delta_(N,+)],
+
+    Delta_(N,pm) = ln[k_MS(N pm 1)/k_MS(N)].
+
+Hence the leading spectral exponent is
+
+    K_gauge / x = 0.036124303978219,
+
+not
+
+    2 K_gauge / x.
+
+If the bridge branch norms are shell-flat at leading order, this reduces to the
+closed-universe shell law
+
+    1 - n_s(N)
+    = (K_gauge/x) * N(N+1)/[(N-1)(N+3)]
+
+up to lower-order adjacency corrections.
+
+
+IV. Strongest honest status
+---------------------------
+
+- derived:
+  the factor-of-two wall is gone on the bridge CCR sector.
+
+- derived:
+  the scalar covariance is linear in the one-particle covariance G^(1).
+
+- derived:
+  zero-order bridge scalarization preserves alpha = 1.
+
+- conditional:
+  the full K_gauge / x shell law still requires a new generator-level
+  projection theorem acting on ln G^(1), plus physical identification of the
+  minimal spatial CCR lift.
+
+- open but no longer load-bearing:
+  the exact numerical branch norms beta_(N,pm) remain to be computed if one wants
+  the finite-shell correction in completely explicit closed form.
+
+
+V. Memory lock
+--------------
+
+Do NOT say:
+
+    "Lemma 23.A already holds on the bare Paper 17 photon algebra M_th."
+
+Paper 22 explicitly blocks that claim.
+
+Do NOT say:
+
+    "the factor-of-two wall kills the bridge-CCR route."
+
+It does not. It only kills routes that try to place the tilt on repeated
+insertions of B itself rather than on the one-particle covariance kernel.

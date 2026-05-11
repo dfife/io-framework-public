@@ -1,0 +1,102 @@
+{
+  "OS_branch": {
+    "a_double_prime_over_a": -0.24050109902240538,
+    "eta_sample": 1.893,
+    "interpretation": "negative at the sampled expanding branch point used in the private analysis"
+  },
+  "checks": {
+    "lambda_2": 8,
+    "lambda_2_minus_3": 5,
+    "multiplicity_2": 9,
+    "physical_start_n": 2
+  },
+  "claim_status": {
+    "OS_branch_sample": "VERIFIED",
+    "closed_S3_Mukhanov_Sasaki_wavenumber_dictionary": "DERIVED/THEOREM",
+    "closed_S3_scalar_harmonic_spectrum": "DERIVED/THEOREM",
+    "physical_scalar_start_n_equals_2": "DERIVED/THEOREM"
+  },
+  "formulas": {
+    "OS_dust_branch_sample": "a''/a = cos(eta)/(1-cos(eta))",
+    "closed_MS_wavenumber": "k_MS(n) = sqrt((n-1)(n+3)) / R",
+    "multiplicity": "dim H_n^(0) = (n+1)^2",
+    "scalar_laplacian": "-Delta_{S3} Q_nlm = n(n+2) Q_nlm",
+    "scalar_mode_equation": "v_n'' + [k_MS(n)^2 - z''/z] v_n = 0"
+  },
+  "paper": "Paper 23",
+  "samples": [
+    {
+      "k_MS_R": null,
+      "lambda_n": 0,
+      "lambda_n_minus_3": -3,
+      "multiplicity": 1,
+      "n": 0,
+      "physical_scalar_status": "homogeneous/background"
+    },
+    {
+      "k_MS_R": null,
+      "lambda_n": 3,
+      "lambda_n_minus_3": 0,
+      "multiplicity": 4,
+      "n": 1,
+      "physical_scalar_status": "gauge"
+    },
+    {
+      "k_MS_R": 2.23606797749979,
+      "lambda_n": 8,
+      "lambda_n_minus_3": 5,
+      "multiplicity": 9,
+      "n": 2,
+      "physical_scalar_status": "physical"
+    },
+    {
+      "k_MS_R": 3.4641016151377544,
+      "lambda_n": 15,
+      "lambda_n_minus_3": 12,
+      "multiplicity": 16,
+      "n": 3,
+      "physical_scalar_status": "physical"
+    },
+    {
+      "k_MS_R": 4.58257569495584,
+      "lambda_n": 24,
+      "lambda_n_minus_3": 21,
+      "multiplicity": 25,
+      "n": 4,
+      "physical_scalar_status": "physical"
+    },
+    {
+      "k_MS_R": 5.656854249492381,
+      "lambda_n": 35,
+      "lambda_n_minus_3": 32,
+      "multiplicity": 36,
+      "n": 5,
+      "physical_scalar_status": "physical"
+    },
+    {
+      "k_MS_R": 6.708203932499369,
+      "lambda_n": 48,
+      "lambda_n_minus_3": 45,
+      "multiplicity": 49,
+      "n": 6,
+      "physical_scalar_status": "physical"
+    },
+    {
+      "k_MS_R": 7.745966692414834,
+      "lambda_n": 63,
+      "lambda_n_minus_3": 60,
+      "multiplicity": 64,
+      "n": 7,
+      "physical_scalar_status": "physical"
+    },
+    {
+      "k_MS_R": 8.774964387392123,
+      "lambda_n": 80,
+      "lambda_n_minus_3": 77,
+      "multiplicity": 81,
+      "n": 8,
+      "physical_scalar_status": "physical"
+    }
+  ],
+  "version": "v2.0"
+}

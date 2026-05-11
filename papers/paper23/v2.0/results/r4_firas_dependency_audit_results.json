@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "active_T_obs_matches_FIRAS_with_rounding": true,
+    "paper23_spectral_index_not_R4_dependent": true
+  },
+  "manuscript_hygiene_flags": [
+    {
+      "action": "Remove any claim that T_CMB is an independent zero-parameter Paper 23 or framework prediction. FIRAS fixes R4 in Paper 17 v1.5.",
+      "issue": "stale CMB-temperature prediction wording"
+    },
+    {
+      "action": "Allowed only as imported empirical input, not as a counted prediction.",
+      "issue": "T0 or CMB temperature used as external thermal datum"
+    }
+  ],
+  "paper": "Paper 23",
+  "paper23_active_dependency": {
+    "depends_on_FIRAS_temperature": false,
+    "depends_on_R4": false,
+    "depends_on_T_obs": false,
+    "finding": "Paper 23 uses gamma_BI, K_gauge, and x for the scalar spectral index. The observer-side thermal readout normalization R4 is inherited for cross-paper consistency but does not move the active Paper 23 number.",
+    "spectral_index_formula": "1 - n_s = K_gauge / x"
+  },
+  "purpose": "R4/FIRAS dependency audit for the Paper 23 spectral-index bundle.",
+  "r4_readout": {
+    "K_gauge": 0.054872817742914665,
+    "R4_FIRAS_frozen": 1.0031014644,
+    "R4_recomputed_from_T_FIRAS": 1.0031049365320024,
+    "T_FIRAS_K": 2.7255,
+    "T_IO_K": 2.6635,
+    "T_obs_from_frozen_R4_K": 2.725499782915561,
+    "formula": "T_obs(R4) = T_IO * x^(R4 * K_gauge)",
+    "status": "IMPORTED/EMPIRICAL from Paper 17 v1.5 FIRAS-fixed readout theorem",
+    "x": 1.51899780195519
+  },
+  "version": "v2.0"
+}

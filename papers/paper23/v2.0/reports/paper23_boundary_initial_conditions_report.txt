@@ -1,0 +1,278 @@
+Paper 23 Round 2 - Boundary-State Initial Conditions for Scalar Perturbations
+===========================================================================
+
+Status boundary
+---------------
+- derived: Paper 21 fixes the one-puncture Gibbs spectrum
+      chi_j = 2 pi gamma_BI sqrt(j(j+1)),
+      w_j = (2j+1) exp(-chi_j),
+      Z_punc = 1.422066584592...
+  and the corresponding energy weights p_j^(E).
+- derived: Paper 22 plus Paper 23 Round 1 fix the physical scalar Hilbert space
+      h_scal^(phys) = direct-sum_(n >= 2) H_n^(0),
+      H_n^(0) ~= V_(n/2) tensor V_(n/2)^*,
+      k_MS(n)^2 = (lambda_n - 3) / R_curv^2 = (n-1)(n+3) / R_curv^2.
+- conditional: a unique mode-by-mode scalar power spectrum requires the missing
+  boundary-to-bulk bridge kernel B_scal or its shell covariance coefficients.
+- reconstruction: the most rigid representation-matched shell map is n = 2j.
+- verified: under that sharp shell map the raw puncture energy weights produce a
+  very low-n-heavy spectrum, not a nearly scale-invariant one.
+- derived/no-go: S^3 discreteness gives only O(n^-2) infrared corrections and
+  cannot by itself generate the observed broad red tilt.
+
+I. Boundary state on the puncture Hilbert space
+-----------------------------------------------
+Paper 21 gives the temperature-independent puncture Hamiltonian spectrum
+
+    chi_j = beta E_j = 2 pi gamma_BI sqrt(j(j+1)),
+    w_j = (2j+1) exp(-chi_j),
+    Z_punc = sum_(j >= 1/2) w_j = 1.422066584592.
+
+Important source-of-truth correction:
+
+    the live Paper 21 exponent is 2 pi gamma_BI sqrt(j(j+1)), not 8 pi gamma_BI sqrt(j(j+1)).
+
+The natural energy comparator is the energy-weighted sector fraction
+
+    p_j^(E) = chi_j (2j+1) exp(-chi_j) / sum_r chi_r (2r+1) exp(-chi_r).
+
+First sectors:
+    j = 1/2: p_j^(E) = 0.207380934
+    j =   1: p_j^(E) = 0.224168892
+    j = 3/2: p_j^(E) = 0.187731592
+    j =   2: p_j^(E) = 0.138052479
+
+Asymptotically,
+
+    p_j^(E) ~ j^2 exp(-2 pi gamma_BI j),
+
+so the boundary state is UV-soft before any bulk evolution is applied.
+
+II. Hilbert-space bridge
+------------------------
+Paper 17 and Paper 22 give the ambient Hilbert-space architecture
+
+    H_IO = Gamma_s(L^2(R,dnu) tensor H_g),
+    H_IO^(spatial) = H_IO tensor H_spatial.
+
+The physical scalar one-particle space is
+
+    h_scal^(phys) = direct-sum_(n >= 2) H_n^(0),
+    H_n^(0) ~= V_(n/2) tensor V_(n/2)^*,
+    dim H_n^(0) = (n+1)^2.
+
+The key representation fact is:
+
+    H_n^(0) has the same Peter-Weyl block type as End(V_(n/2)).
+
+So whenever one uses the unreduced spin-j puncture operator block, the most
+rigid shell identification is
+
+    j <-> n/2,
+    equivalently n = 2j.
+
+More generally, if B_scal is any SU(2)-equivariant bridge into h_scal^(phys),
+isotropy and Schur's lemma force shell covariance of the form
+
+    C_n = 1/(n+1)^2 sum_j p_j^(E) sum_(J in overlap(n,j)) (2J+1) |b_(n,j,J)|^2.
+
+This is the clean Hilbert-space answer to part A.
+What remains open is not the existence of a covariance operator, but the exact
+cross-shell coefficients b_(n,j,J). That is the scalar version of the surviving
+Paper 21 / Paper 22 bridge gap.
+
+III. Canonical sharp shell map
+------------------------------
+Minimal reconstruction:
+
+    each spin-j puncture block feeds only the scalar shell n = 2j,
+    and the covariance on H_n^(0) is isotropic.
+
+Then the shell power and per-mode variance are
+
+    P_shell(n) proportional to p_(n/2)^(E),
+    |R_(n l m)|^2_init proportional to p_(n/2)^(E) / (n+1)^2.
+
+The crucial S^3 subtlety is that the dominant j = 1/2 block lands on n = 1,
+which is pure gauge. Under the sharp map:
+
+    physical scalar share after projecting out n = 1: 0.792619066
+    gauge-projected share from j = 1/2 -> n = 1: 0.207380934
+
+Numerically:
+    n =  2, j = 1.0, raw share = 0.224168892, physical-shell share = 0.282820463, per-mode variance ~ 0.024907655
+    n =  3, j = 1.5, raw share = 0.187731592, physical-shell share = 0.236849705, per-mode variance ~ 0.011733224
+    n =  4, j = 2.0, raw share = 0.138052479, physical-shell share = 0.174172544, per-mode variance ~ 0.005522099
+    n =  5, j = 2.5, raw share = 0.093664130, physical-shell share = 0.118170423, per-mode variance ~ 0.002601781
+    n =  6, j = 3.0, raw share = 0.060136595, physical-shell share = 0.075870739, per-mode variance ~ 0.001227277
+    n =  7, j = 3.5, raw share = 0.037085852, physical-shell share = 0.046788999, per-mode variance ~ 0.000579466
+
+So the first physical matched shell is j = 1 -> n = 2, not j = 1/2.
+This gives a distinctive low-n IO signature, but it is not close to a broad,
+nearly scale-invariant inflationary spectrum.
+
+IV. Scale invariance or not?
+----------------------------
+Paper 1's
+
+    C_l = 4 pi / N
+
+is a boundary S^2 angular-white-noise statement. It is not yet a derived theorem
+for the bulk S^3 scalar shell spectrum P_R(n). Once Paper 23 distinguishes
+boundary angular data from bulk scalar shells, an explicit boundary-to-bulk
+kernel is required.
+
+Two sharp conclusions now follow:
+
+1. Raw puncture energy weights are not scale-invariant.
+   Under the sharp shell map they decay exponentially with n and are far too red.
+
+2. S^3 discreteness alone does not generate the observed tilt.
+   Since
+
+       k_MS(n) = (n+1)/R_curv * sqrt(1 - 4/(n+1)^2),
+
+   the curvature correction is only O(n^-2). Representative infrared sizes are
+
+       4/(21^2)  = 0.009070295
+       4/(31^2)  = 0.004162331
+       4/(51^2)  = 0.001537870
+       4/(101^2) = 0.000392118
+
+   So closed-geometry discreteness can produce low-l distortions, but not a
+   nearly constant 1 - n_s approximately 0.035 across the CMB lever arm.
+
+This kills the idea that the discrete S^3 spectrum by itself replaces inflation.
+
+V. Where could a red tilt live?
+-------------------------------
+Paper 21 Theorem 21.G and Paper 22 Theorem 22.9 are decisive here:
+
+    the puncture Gibbs weights are temperature-independent and permanent.
+
+Therefore the old Paper 1 story
+
+    "the horizon was hotter earlier, so w_j tilted the spectrum"
+
+does not survive in that literal form once the Paper 21 puncture Hamiltonian is
+used. Any genuine red tilt must instead live in
+
+    boundary-to-bulk emission window
+or
+    bulk transfer through the closed Mukhanov-Sasaki evolution.
+
+High-n WKB modes satisfy T_n = 1 + O(k_n^-2), so the bulk transfer alone again
+mainly changes the infrared tail. A broad power-law tilt therefore still points
+to a scale-dependent bridge window B_n.
+
+VI. Spectral-index constants
+----------------------------
+No current theorem derives n_s from K_geom, K_gauge, or V(alpha).
+
+What is true:
+
+    K_geom/(16 pi)  = 0.033267538929
+    K_total/(16 pi) = 0.034359198952
+
+These are numerically close to the observed 1 - n_s, especially K_total/(16 pi),
+but this is still numerology at the present stage. Paper 21 explicitly
+reconfirms that V(alpha) governs lens/gauge rules, not bulk particle inventory,
+so V(alpha) is not currently a derived scalar-tilt engine.
+
+The only disciplined way to use these constants is:
+
+    if a future bridge window B_n is derived, these constants are plausible
+    exponents or normalizations for that window.
+
+Until then, they are speculative pattern candidates, not a theorem.
+
+VII. Adiabatic vacuum question
+------------------------------
+The clean IO answer is not to replace the UV vacuum with raw puncture weights.
+It is to dress the adiabatic UV vacuum with puncture occupations.
+
+On the radiation / mixed-fluid branch, define the state on the canonical
+Mukhanov-Sasaki variable v_n:
+
+    <a_(n l m)^dagger a_(n' l' m')> = N_n delta_(n n') delta_(l l') delta_(m m'),
+    |v_n|^2_init = (N_n + 1/2) / omega_n,
+    omega_n^2 = c_s^2 (lambda_n - 3) - z''/z.
+
+Then:
+
+Under the sharp puncture shell map, N_n decays like n^2 exp(-pi gamma_BI n), so N_n -> 0 rapidly and the state reduces automatically to the usual adiabatic vacuum at high n.
+
+So the IO boundary state naturally reduces to the usual adiabatic vacuum at high
+n while leaving low n = 2,3,4,... with puncture-controlled non-Bunch-Davies
+occupancies. That is the best current answer to part D.
+
+Important boundary:
+Paper 21 gives sector weights, not coherent phases, so the theorem-safe state is
+an unsqueezed mixed Gaussian unless a new boundary phase theorem is derived.
+
+VIII. k <-> n dictionary
+------------------------
+Exact closed-universe dictionary:
+
+    k_Lap(n) = sqrt(n(n+2)) / R_curv,
+    k_MS(n)  = sqrt((n-1)(n+3)) / R_curv.
+
+Large-n limit:
+
+    k_MS(n) = (n+1)/R_curv [1 - 2/(n+1)^2 + O(n^-4)].
+
+Sky projection:
+
+    l = 0,1,...,n for the scalar harmonic Q_(n l m),
+    l_peak(n) approximately equals k_MS(n) D_M(z_*) = sqrt((n-1)(n+3)) sin chi_*.
+
+Illustrative observer-side mapping using H0 = 67.58,
+Omega_k,obs = -0.046, and Paper 1's quoted D_M(z_*) = 18526.0 Mpc:
+
+    R_curv,obs = 20683.479473 Mpc
+    sin chi_*  = 0.895690690
+    chi_*      = 1.109982019 rad
+
+Sample modes:
+    n =   2: k_MS R_curv = 2.236068, l_peak ~= 2.003, relative continuum error = -2.546440e-01
+    n =   3: k_MS R_curv = 3.464102, l_peak ~= 3.103, relative continuum error = -1.339746e-01
+    n =   4: k_MS R_curv = 4.582576, l_peak ~= 4.105, relative continuum error = -8.348486e-02
+    n =  10: k_MS R_curv = 10.816654, l_peak ~= 9.688, relative continuum error = -1.666783e-02
+    n =  20: k_MS R_curv = 20.904545, l_peak ~= 18.724, relative continuum error = -4.545478e-03
+    n =  30: k_MS R_curv = 30.935417, l_peak ~= 27.709, relative continuum error = -2.083336e-03
+    n =  50: k_MS R_curv = 50.960769, l_peak ~= 45.645, relative continuum error = -7.692309e-04
+    n = 100: k_MS R_curv = 100.980196, l_peak ~= 90.447, relative continuum error = -1.960784e-04
+    n = 245: k_MS R_curv = 245.991870, l_peak ~= 220.333, relative continuum error = -3.304966e-05
+
+So the first acoustic peak near l approximately 220 corresponds to n approximately 245 on this observer-side
+dictionary, while n approximately 30 still sits in the low-l curvature-sensitive regime.
+
+IX. Bottom line
+---------------
+Best current Paper 23 answer:
+
+1. The boundary puncture state does determine a natural scalar initial-state
+   covariance operator on the Paper 22 scalar Hilbert space.
+2. What it does NOT yet determine uniquely is the bridge kernel that turns the
+   puncture sector weights into a unique shell spectrum C_n.
+3. The cleanest reconstruction is the sharp Peter-Weyl shell map n = 2j, but it
+   gives a low-n-heavy spectrum, not a near-scale-invariant one.
+4. The most defensible IO initial state is therefore:
+      adiabatic UV vacuum + puncture-controlled low-n occupations.
+5. A realistic derivation of n_s still has to come from a scale-dependent
+   boundary-to-bulk crossing window or equivalent bridge operator, not from the
+   static puncture Gibbs weights or from S^3 discreteness alone.
+
+Memory lock
+-----------
+- Do NOT use
+      exp(-8 pi gamma_BI sqrt(j(j+1)))
+  as the live Paper 21 puncture Gibbs weight.
+  Correct statement:
+      the Paper 21 source-of-truth exponent is 2 pi gamma_BI sqrt(j(j+1)).
+- Do NOT say that Paper 21's raw puncture Gibbs weights themselves generate a
+  time-dependent spectral tilt. Paper 21 / Paper 22 make them permanent.
+- Do NOT say that Paper 1's white boundary C_l is already a theorem for the bulk
+  primordial scalar spectrum P_R(n). The bridge kernel is still missing.
+- Do NOT say that closed-S^3 discreteness explains n_s approximately 0.965 by itself.
+  It gives infrared structure, not the full broad tilt.

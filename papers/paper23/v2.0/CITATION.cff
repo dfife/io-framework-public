@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Paper 23 v2.0 Reproducibility Bundle"
+message: "If you use this reproducibility bundle, cite the associated Paper 23 manuscript and this GitHub release."
+type: software
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper23/v2.0"
+version: "paper23-v2.0"
+date-released: "2026-05-11"
+repository-code: "https://github.com/dfife/io-framework-public"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19210262"
+    description: "Associated Paper 23 Zenodo record"
+

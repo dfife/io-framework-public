@@ -1,0 +1,162 @@
+{
+  "paper": "Paper 23",
+  "version": "v2.0",
+  "audit_date": "May 2026",
+  "draft_reviewed": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper23_v2_0.docx",
+  "verdict": {
+    "hidden_continuous_fitted_parameter_found": false,
+    "r4_enters_active_spectral_index": false,
+    "cmb_temperature_prediction_wording_present": true,
+    "stale_inherited_paper22_values_present": true,
+    "label_hygiene_required": true
+  },
+  "active_spectral_index": {
+    "gamma_BI": 0.2375,
+    "x": 1.51899780195519,
+    "K_gauge": 0.054872817742914665,
+    "one_minus_ns": 0.03612435625139463,
+    "n_s": 0.9638756437486053,
+    "planck_one_minus_ns_reference": 0.0351,
+    "planck_sigma": 0.0042,
+    "sigma_residual": 0.24389434557015036,
+    "status_recommendation": "DERIVED/CONDITIONAL_VERIFIED if the Paper 23 bridge/premise chain is made explicit; numerical comparison VERIFIED"
+  },
+  "r4_audit": {
+    "R4_FIRAS": 1.0031014644,
+    "status": "IMPORTED/EMPIRICAL from Paper 17 v1.5 FIRAS-fixed readout theorem",
+    "active_paper23_dependency": "not used in active scalar spectral-index computation",
+    "stale_claim": "The conclusion still says the spectral index joins T_CMB as a zero-parameter prediction; remove or rewrite this."
+  },
+  "candidate_kappa_fields": [
+    {
+      "field": "R4 / optical readout normalization",
+      "classification": "IMPORTED/EMPIRICAL",
+      "finding": "Free under the old modular-projection stack; fixed by FIRAS in Paper 17 v1.5; not used by Paper 23 spectral index."
+    },
+    {
+      "field": "K_gauge",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED",
+      "finding": "Fixed as ln(1+gamma_BI^2) once the upstream gauge chain and gamma_BI input are accepted."
+    },
+    {
+      "field": "x",
+      "classification": "upstream framework constant",
+      "finding": "Fixed by geometric normalization; no Paper 23 freedom."
+    },
+    {
+      "field": "one-slot slope K_gauge/x",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED",
+      "finding": "No-Doubling theorem rejects the two-slot route; not fitted."
+    },
+    {
+      "field": "shell correction factor",
+      "classification": "DERIVED/THEOREM",
+      "finding": "Fixed by closed-S3 Mukhanov-Sasaki wavenumber dictionary."
+    },
+    {
+      "field": "Primordial Scalar Readout Principle",
+      "classification": "OPEN/PREMISE_GAP",
+      "finding": "Load-bearing premise package component unless a direct P1/P2 chain is inserted."
+    },
+    {
+      "field": "Boundary Covariance Exponent",
+      "classification": "OPEN/PREMISE_GAP",
+      "finding": "Load-bearing premise package component unless a direct P1/P2 chain is inserted."
+    },
+    {
+      "field": "spatial canonical-commutation-relation lift",
+      "classification": "OPEN/PREMISE_GAP",
+      "finding": "Load-bearing premise package component unless a direct P1/P2 chain is inserted."
+    },
+    {
+      "field": "tensor gamma-neutrality / n_t = 0",
+      "classification": "OPEN/PREMISE_GAP",
+      "finding": "Not closed by Paper 23 scalar theorem alone."
+    }
+  ],
+  "stale_paper22_values": {
+    "draft_values": {
+      "D_over_H_sigma": -0.61,
+      "Y_p_sigma": 1.06,
+      "chi2_DH_plus_Yp": 1.5,
+      "comparator_chi2": 3.067,
+      "Li7_over_H": 5.391e-10,
+      "Li7_sigma": 12.29,
+      "uniform_benchmark_fraction_percent": 0.07
+    },
+    "current_paper22_v2_values": {
+      "D_over_H_sigma": -0.5529801681809717,
+      "Y_p_sigma": 0.7045360432106975,
+      "chi2_DH_plus_Yp": 0.8021581025844415,
+      "comparator_chi2": 1.9345853017600352,
+      "Li7_over_H": 5.363335812718549e-10,
+      "Li7_sigma": 12.204309073285641,
+      "uniform_benchmark_fraction": 0.005093424637516164
+    }
+  },
+  "label_migration": {
+    "noncanonical_labels_found": [
+      "CONDITIONAL/THEOREM",
+      "CONDITIONAL",
+      "DERIVED/VERIFIED",
+      "unqualified DERIVED"
+    ],
+    "canonical_labels": [
+      "DERIVED/THEOREM",
+      "DERIVED/CONDITIONAL_VERIFIED",
+      "DERIVED/NO-GO",
+      "VERIFIED",
+      "IMPORTED/EMPIRICAL",
+      "RECONSTRUCTION",
+      "RECONSTRUCTION/RESEARCH_ONLY",
+      "OPEN/PREMISE_GAP",
+      "SUPERSEDED",
+      "Historical/SUPERSEDED"
+    ]
+  },
+  "abbreviations_to_expand": [
+    "IO",
+    "OS",
+    "FRW",
+    "CMB",
+    "BBN",
+    "LQG",
+    "CCR",
+    "KMS",
+    "TT",
+    "AQFT",
+    "PSRP",
+    "FIRAS",
+    "GTTP",
+    "GMP",
+    "TBS",
+    "WMR",
+    "PRyMordial",
+    "YPCMB",
+    "YPBBN",
+    "SU(2)",
+    "SO(4)",
+    "U(1)",
+    "n_s",
+    "n_t",
+    "A_s"
+  ],
+  "io_slang_to_define_or_replace": [
+    "bridge",
+    "one-slot",
+    "two-slot",
+    "rung",
+    "payload",
+    "degree wall",
+    "no-doubling",
+    "live/open stack",
+    "theorem-grade",
+    "killed route",
+    "readout",
+    "Paper stack",
+    "white baseline",
+    "horizon puncture load",
+    "spatial Hodge complex",
+    "rate-dressing"
+  ]
+}

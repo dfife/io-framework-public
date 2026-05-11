@@ -132,11 +132,11 @@ The current Paper 35 support bundle is:
 
 The current Paper 21 support bundle is:
 
-- `papers/paper21/v1.7/`
+- `papers/paper21/v2.0/`
 - validation command:
-  `python3 papers/paper21/v1.7/scripts/07_validate_expected_outputs.py`
+  `python3 papers/paper21/v2.0/scripts/08_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper21_v1_7_repro_bundle.json`
+  `metadata/manifests/paper21_v2_0_repro_bundle.json`
 
 The current Paper 17 support bundle is:
 
@@ -148,11 +148,19 @@ The current Paper 17 support bundle is:
 
 The current Paper 22 support bundle is:
 
-- `papers/paper22/v1.6/`
+- `papers/paper22/v2.0/`
 - validation command:
-  `python3 papers/paper22/v1.6/scripts/07_validate_expected_outputs.py`
+  `python3 papers/paper22/v2.0/scripts/08_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper22_v1_6_repro_bundle.json`
+  `metadata/manifests/paper22_v2_0_repro_bundle.json`
+
+The current Paper 23 support bundle is:
+
+- `papers/paper23/v2.0/`
+- validation command:
+  `python3 papers/paper23/v2.0/scripts/08_validate_expected_outputs.py`
+- manifest:
+  `metadata/manifests/paper23_v2_0_repro_bundle.json`
 
 The current Paper 25 support bundle is:
 
@@ -224,6 +232,9 @@ The manifest is in:
 - `metadata/manifests/paper35_v1_1_repro_bundle.json`
 - `metadata/manifests/paper17_v1_5_repro_bundle.json`
 - `metadata/manifests/paper20_v1_8_repro_bundle.json`
+- `metadata/manifests/paper21_v2_0_repro_bundle.json`
+- `metadata/manifests/paper22_v2_0_repro_bundle.json`
+- `metadata/manifests/paper23_v2_0_repro_bundle.json`
 - `metadata/manifests/paper21_v1_7_repro_bundle.json`
 - `metadata/manifests/paper22_v1_6_repro_bundle.json`
 - `metadata/manifests/paper25_v1_3_repro_bundle.json`
