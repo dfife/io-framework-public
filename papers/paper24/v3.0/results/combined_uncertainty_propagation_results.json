@@ -1,0 +1,111 @@
+{
+  "chain": [
+    "Premise 1: IO closed-interior geometry fixes x and the branch projection used in the Paper 24 rate-dressing chain.",
+    "Premise 2: A=7 nuclear response inputs are imported from accepted exterior nuclear physics without IO retuning.",
+    "Navratil et al. 2011 / NCSM input: |Q_GS(7Be)| = 0.068 +/- 0.005 b as used in Paper 24 v3.0.",
+    "Henderson et al. 2019, Phys. Rev. C 99, 064320: B(E2; 3/2- -> 1/2-) = 26(6)_stat(3)_syst e^2 fm^4; detailed balance gives B_down = 2 B_up.",
+    "Paper 24 v3.0 branch-sum formula: R34_tot = f_gs R_gs + (1-f_gs) R_ex.",
+    "Paper 24 banked PRyMordial sensitivity exponent: d ln(Li7/H) / d ln(R34_tot) = 0.963 for this channel.",
+    "Standard Monte Carlo propagation with fixed random seed."
+  ],
+  "classification": "VERIFIED / Monte Carlo combined uncertainty propagation",
+  "comparison_to_observation": {
+    "central_residual_sigma": 0.46446639063406275,
+    "median_residual_sigma": 0.48427384329206674,
+    "observation_inside_predicted_1sigma_band": false,
+    "observation_inside_predicted_2sigma_band": true,
+    "observed_Li7_H": 1.58e-10,
+    "observed_Li7_sigma": 3.1e-11
+  },
+  "generated_utc": "2026-05-13T21:23:31Z",
+  "inputs": {
+    "Henderson_B_E2_down_central_e2fm4": 52.0,
+    "Henderson_B_E2_stat_e2fm4": 6.0,
+    "Henderson_B_E2_sys_e2fm4": 3.0,
+    "Henderson_B_E2_up_e2fm4": 26.0,
+    "Li7_R34_sensitivity_exponent": 0.963,
+    "Q_GS_7Be_barn": 0.068,
+    "Q_GS_7Be_sigma_barn": 0.005,
+    "Q_d_barn": 0.0028578,
+    "amp_weighted_avg_F0": 0.24320694787438585,
+    "central_Li7_H": 1.7239845810965594e-10,
+    "central_R34_tot": 0.306711121403594,
+    "chi_ME_7Be": 0.84,
+    "epsilon_n": 0.023843043660342757,
+    "f_gs": 0.711237553342816,
+    "nu_34_T9eff": 5.324728611585001,
+    "x": 1.519
+  },
+  "method": {
+    "Henderson_B_E2_sampling": "B_up = 26 + N(0,6_stat) + N(0,3_sys) e^2 fm^4, reject non-positive draws, B_down = 2*B_up",
+    "Li7_mapping": "Li7/H(sample) = Li7/H(central) * (R34_tot(sample)/R34_tot(central))^0.963",
+    "Q_GS_sampling": "positive Gaussian, mean 0.068 b, sigma 0.005 b",
+    "full_network_note": "Full PRyMordial network reruns for 100000 samples are not shipped; the public propagation uses the banked Paper 24 PRyMordial sensitivity exponent for the 3He(alpha,gamma)7Be channel.",
+    "nonlinear_propagation": "q_trans = sqrt(B_down)/100 * <F0>_amp,ex; R = exp(-epsilon_n * Xi); output quantiles are not symmetrized",
+    "samples": 100000,
+    "seed": 240630
+  },
+  "paper": "Paper 24 v3.0",
+  "sample_summaries": {
+    "Henderson_B_E2_down_e2fm4": {
+      "max": 115.46200679352073,
+      "mean": 52.022569974093074,
+      "median": 52.07416229219711,
+      "min": 0.6481688157544614,
+      "p16": 38.62853004815394,
+      "p2_3": 25.181261668195603,
+      "p84": 65.37745189267841,
+      "p97_7": 78.66895080946306
+    },
+    "Henderson_B_E2_up_e2fm4": {
+      "max": 57.731003396760364,
+      "mean": 26.011284987046537,
+      "median": 26.037081146098554,
+      "min": 0.3240844078772307,
+      "p16": 19.31426502407697,
+      "p2_3": 12.590630834097801,
+      "p84": 32.688725946339204,
+      "p97_7": 39.33447540473153
+    },
+    "Li7_H": {
+      "max": 2.4004899034070785e-10,
+      "mean": 1.736064428321407e-10,
+      "median": 1.7301248914205407e-10,
+      "min": 1.310502104058743e-10,
+      "p16": 1.6264166644761962e-10,
+      "p2_3": 1.531387503371378e-10,
+      "p84": 1.8452092390522347e-10,
+      "p97_7": 1.9765791200856804e-10
+    },
+    "Q_GS_7Be_barn": {
+      "max": 0.08841194696987391,
+      "mean": 0.06798645181722501,
+      "median": 0.0679914288127484,
+      "min": 0.04561512353841824,
+      "p16": 0.06301040129204791,
+      "p2_3": 0.057967267042871626,
+      "p84": 0.07295552332078932,
+      "p97_7": 0.07800030670431767
+    },
+    "R34_tot_T9eff": {
+      "max": 0.43253351973868404,
+      "mean": 0.30896837844975483,
+      "median": 0.3078455831618201,
+      "min": 0.23070554007999772,
+      "p16": 0.2887060172587597,
+      "p2_3": 0.271209264065951,
+      "p84": 0.3291362181137696,
+      "p97_7": 0.3535019845014519
+    },
+    "q_trans_ex_barn": {
+      "max": 0.02613337668173327,
+      "mean": 0.01738376009545429,
+      "median": 0.01755040422625067,
+      "min": 0.0019580331667261295,
+      "p16": 0.015115762812232977,
+      "p2_3": 0.012204351858891824,
+      "p84": 0.019664819864287766,
+      "p97_7": 0.021571366452648594
+    }
+  }
+}

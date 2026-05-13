@@ -13,6 +13,7 @@ Fast validation without PRyMordial:
 
 ```bash
 python3 scripts/04_r4_firas_kappa_audit.py
+python3 scripts/06_combined_uncertainty_propagation.py
 python3 scripts/05_validate_expected_outputs.py
 ```
 
@@ -21,6 +22,7 @@ Optional non-PRyMordial recomputation:
 ```bash
 python3 scripts/01_compute_qtrans_carrier.py
 python3 scripts/04_r4_firas_kappa_audit.py
+python3 scripts/06_combined_uncertainty_propagation.py
 python3 scripts/05_validate_expected_outputs.py
 ```
 
@@ -31,6 +33,7 @@ export PRYM_ROOT=/path/to/PRyMordial
 python3 scripts/03_run_final_bbn_scorecard.py
 python3 scripts/02_recompute_excited_state_import.py
 python3 scripts/04_r4_firas_kappa_audit.py
+python3 scripts/06_combined_uncertainty_propagation.py
 python3 scripts/05_validate_expected_outputs.py
 ```
 
@@ -125,6 +128,25 @@ Writes: no files; prints a JSON pass/fail summary.
 
 Claim boundary: verifies integrity of the public bundle outputs. It does not
 rerun PRyMordial.
+
+### `06_combined_uncertainty_propagation.py`
+
+Purpose: propagate the combined `Q_GS` and Henderson `B(E2)` uncertainty band
+through the Paper 24 branch-sum formula and the banked PRyMordial sensitivity
+map.
+
+Dependencies: Python standard library only.
+
+Writes:
+
+```text
+results/combined_uncertainty_propagation_results.json
+```
+
+Claim boundary: verifies the combined imported nuclear-input uncertainty band.
+It uses the frozen Paper 24 v3.0 branch-sum arithmetic and the banked
+PRyMordial sensitivity exponent instead of running 100,000 full PRyMordial
+network solves.
 
 ## Public-Review Notes
 

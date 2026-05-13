@@ -21,13 +21,17 @@
     "chi_ME_7Be": 0.84,
     "f_gs": 0.711237553342816,
     "Q_GS_7Be_barn": 0.068,
+    "Q_GS_7Be_sigma_barn": 0.005,
+    "Q_GS_source_note": "Paper 24 v3.0 imports |Q_GS(7Be)| = 0.068 +/- 0.005 b from the cited Navratil/NCSM nuclear-theory input; sign is irrelevant for the TT deformation magnitude.",
     "T9_eff": 0.5160778165182853,
-    "nu_34_T9eff": 5.324728611585001
+    "nu_34_T9eff": 5.324728611585001,
+    "Li7_R34_sensitivity_exponent": 0.963
   },
   "henderson_2019": {
     "B_E2_up_e2fm4": 26.0,
     "B_E2_stat_e2fm4": 6.0,
     "B_E2_sys_e2fm4": 3.0,
+    "B_E2_uncertainty_handling": "Sample statistical and systematic Gaussian terms independently as reported, reject non-positive B(E2), then propagate nonlinear q=sqrt(B_down)/100 and Gamow response without symmetrizing output bands.",
     "B_E2_down_corrected_e2fm4": 52.0,
     "spin_multiplicity_rule": "(2Ji+1) B(i->f) = (2Jf+1) B(f->i)",
     "doi": "10.1103/PhysRevC.99.064320"

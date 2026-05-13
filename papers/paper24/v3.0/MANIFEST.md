@@ -33,6 +33,9 @@
     discipline, abbreviations, and IO slang.
 - `scripts/05_validate_expected_outputs.py`
   - Fast validation of frozen outputs.
+- `scripts/06_combined_uncertainty_propagation.py`
+  - PRyMordial-free Monte Carlo propagation of combined `Q_GS` and Henderson
+    `B(E2)` uncertainty through the branch-sum formula.
 
 ## Data
 
@@ -50,6 +53,9 @@
   - Output of the Paper 24 v3.0 Henderson excited-state import recomputation.
 - `results/r4_firas_kappa_audit_results.json`
   - R4/FIRAS audit result showing no R4 damage to the active BBN scorecard.
+- `results/combined_uncertainty_propagation_results.json`
+  - Frozen `N = 100000` Monte Carlo propagation of the combined imported
+    nuclear-input uncertainty band.
 
 ## Reports
 
@@ -61,6 +67,8 @@
   - Audit formula for `B(E2 down) -> Q_trans,ex,imp`.
 - `reports/paper24_v30_r4_firas_kappa_audit_report.md`
   - Kappa-style R4/FIRAS audit report and manuscript hygiene flags.
+- `reports/combined_uncertainty_propagation_memo.md`
+  - Human-readable summary and manuscript handoff text for §15 item 6 closure.
 
 ## Excluded
 

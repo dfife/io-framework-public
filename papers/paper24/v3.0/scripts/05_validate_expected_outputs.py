@@ -13,6 +13,7 @@ Inputs:
     - results/final_excited_branch_results.json
     - results/excited_state_import_recomputation_results.json
     - results/r4_firas_kappa_audit_results.json
+    - results/combined_uncertainty_propagation_results.json
 
 Outputs:
     Prints a JSON pass/fail summary to stdout.
@@ -48,6 +49,15 @@ CHECKS = [
     ("excited_state_import_recomputation_results.json", ("import_cases", 0, "Li7_H"), 1.7239845810965594e-10, 1e-22),
     ("r4_firas_kappa_audit_results.json", ("framework_constants", "R4_FIRAS"), 1.0031014644, 1e-12),
     ("r4_firas_kappa_audit_results.json", ("r4_impact", "r4_enters_active_bbn_scorecard"), False, 0.0),
+    ("combined_uncertainty_propagation_results.json", ("method", "samples"), 100000, 0.0),
+    ("combined_uncertainty_propagation_results.json", ("method", "seed"), 240630, 0.0),
+    ("combined_uncertainty_propagation_results.json", ("sample_summaries", "R34_tot_T9eff", "median"), 0.3078455831618201, 1e-15),
+    ("combined_uncertainty_propagation_results.json", ("sample_summaries", "R34_tot_T9eff", "p16"), 0.2887060172587597, 1e-15),
+    ("combined_uncertainty_propagation_results.json", ("sample_summaries", "R34_tot_T9eff", "p84"), 0.3291362181137696, 1e-15),
+    ("combined_uncertainty_propagation_results.json", ("sample_summaries", "Li7_H", "median"), 1.7301248914205407e-10, 1e-22),
+    ("combined_uncertainty_propagation_results.json", ("sample_summaries", "Li7_H", "p16"), 1.6264166644761962e-10, 1e-22),
+    ("combined_uncertainty_propagation_results.json", ("sample_summaries", "Li7_H", "p84"), 1.8452092390522347e-10, 1e-22),
+    ("combined_uncertainty_propagation_results.json", ("comparison_to_observation", "observation_inside_predicted_2sigma_band"), True, 0.0),
 ]
 
 
