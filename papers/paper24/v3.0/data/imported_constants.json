@@ -22,7 +22,7 @@
     "f_gs": 0.711237553342816,
     "Q_GS_7Be_barn": 0.068,
     "Q_GS_7Be_sigma_barn": 0.005,
-    "Q_GS_source_note": "Paper 24 v3.0 imports |Q_GS(7Be)| = 0.068 +/- 0.005 b from the cited Navratil/NCSM nuclear-theory input; sign is irrelevant for the TT deformation magnitude.",
+    "Q_GS_source_note": "Paper 24 v3.0 banked input: |Q_GS(7Be)| = 0.068 +/- 0.005 b. Sign is irrelevant for the TT deformation magnitude. Manuscript citation should verify the exact source of this banked value before presenting item 6 as source-closed.",
     "T9_eff": 0.5160778165182853,
     "nu_34_T9eff": 5.324728611585001,
     "Li7_R34_sensitivity_exponent": 0.963

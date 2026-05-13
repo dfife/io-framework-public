@@ -7,6 +7,13 @@ Open Problem item 6: combined propagation of the imported ground-state
 `Q_GS` uncertainty and the Henderson excited-state `B(E2)` uncertainty through
 the Paper 24 branch-sum lithium calculation.
 
+Source-citation caveat: the public script propagates the banked Paper 24 v3.0
+input `Q_GS(7Be) = 0.068 +/- 0.005 b`. A source-level manuscript check should
+verify the exact external citation for that banked value before presenting
+item 6 as closed all the way to the Navratil/NCSM literature. The propagation
+arithmetic is complete; the source citation should not be treated as silently
+verified by this script.
+
 ## Method
 
 Script:
@@ -24,7 +31,8 @@ papers/paper24/v3.0/results/combined_uncertainty_propagation_results.json
 The script runs `N = 100000` Monte Carlo samples with fixed seed `240630`.
 The input distributions are:
 
-- `Q_GS(7Be) = 0.068 +/- 0.005 b`, sampled as a positive Gaussian.
+- `Q_GS(7Be) = 0.068 +/- 0.005 b`, sampled as a positive Gaussian from the
+  banked Paper 24 v3.0 input.
 - Henderson `B(E2; 3/2- -> 1/2-) = 26(6)_stat(3)_syst e^2 fm^4`, sampled
   with independent statistical and systematic Gaussian terms and rejected if
   non-positive.
@@ -125,10 +133,11 @@ papers/paper24/v3.0/scripts/06_combined_uncertainty_propagation.py).
 
 Chain: Premise 1 (closed interior geometry fixes x and the branch projection)
 + Premise 2 (A=7 nuclear inputs imported from exterior nuclear physics without
-IO retuning) + Navratil et al. 2011 / NCSM Q_GS input + Henderson et al. 2019
-Phys. Rev. C 99, 064320 B(E2) input + Paper 24 v3.0 branch-sum formula
-R_34,tot = f_gs R_gs + (1 - f_gs) R_ex + banked Paper 24 PRyMordial
-sensitivity exponent 0.963 + standard Monte Carlo propagation with fixed seed.
+IO retuning) + banked Paper 24 v3.0 Q_GS input, pending exact source-citation
+verification + Henderson et al. 2019 Phys. Rev. C 99, 064320 B(E2) input +
+Paper 24 v3.0 branch-sum formula R_34,tot = f_gs R_gs + (1 - f_gs) R_ex +
+banked Paper 24 PRyMordial sensitivity exponent 0.963 + standard Monte Carlo
+propagation with fixed seed.
 ```
 
 Suggested scorecard note:
@@ -152,4 +161,3 @@ Closed the combined Q_GS + Henderson B(E2) uncertainty-propagation item by
 adding Sec. 8.x and public-bundle script 06, yielding Li-7/H 1sigma
 [1.6264, 1.8452]e-10 and 2sigma [1.5314, 1.9766]e-10.
 ```
-

@@ -204,7 +204,7 @@ def compute() -> dict[str, object]:
 
     return {
         "paper": "Paper 24 v3.0",
-        "classification": "VERIFIED / Monte Carlo combined uncertainty propagation",
+        "classification": "VERIFIED / Monte Carlo combined uncertainty propagation using banked Paper 24 v3.0 nuclear inputs",
         "generated_utc": timestamp(),
         "method": {
             "samples": N_SAMPLES,
@@ -232,6 +232,7 @@ def compute() -> dict[str, object]:
             "central_R34_tot": central_r34,
             "central_Li7_H": central_li7,
             "Li7_R34_sensitivity_exponent": sensitivity_exp,
+            "Q_GS_source_caveat": "The propagation uses the banked Paper 24 v3.0 value 0.068 +/- 0.005 b. The exact external source citation for that value must be verified in the manuscript before claiming source-level item-6 closure.",
         },
         "sample_summaries": {
             "Q_GS_7Be_barn": summarize(q_samples),
@@ -252,7 +253,7 @@ def compute() -> dict[str, object]:
         "chain": [
             "Premise 1: IO closed-interior geometry fixes x and the branch projection used in the Paper 24 rate-dressing chain.",
             "Premise 2: A=7 nuclear response inputs are imported from accepted exterior nuclear physics without IO retuning.",
-            "Navratil et al. 2011 / NCSM input: |Q_GS(7Be)| = 0.068 +/- 0.005 b as used in Paper 24 v3.0.",
+            "Paper 24 v3.0 banked Q_GS input: |Q_GS(7Be)| = 0.068 +/- 0.005 b; exact source citation remains a manuscript verification requirement.",
             "Henderson et al. 2019, Phys. Rev. C 99, 064320: B(E2; 3/2- -> 1/2-) = 26(6)_stat(3)_syst e^2 fm^4; detailed balance gives B_down = 2 B_up.",
             "Paper 24 v3.0 branch-sum formula: R34_tot = f_gs R_gs + (1-f_gs) R_ex.",
             "Paper 24 banked PRyMordial sensitivity exponent: d ln(Li7/H) / d ln(R34_tot) = 0.963 for this channel.",
