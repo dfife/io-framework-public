@@ -1,0 +1,196 @@
+{
+  "audit_type": "R4/FIRAS kappa-style field-redefinition and reproducibility-script audit",
+  "candidate_fields": [
+    {
+      "classification": "IMPORTED/EMPIRICAL input plus DERIVED uniqueness theorem in Paper 17 v1.5",
+      "current_value": 1.0031014644,
+      "field": "R4 optical readout normalization",
+      "hidden_parameter": false,
+      "original_retired_value": 1.0,
+      "paper24_impact": "Does not enter active BBN scorecard; only observer-side thermal readout bookkeeping.",
+      "rigidity_test": "Not internally forced by the old modular-projection stack; uniquely fixed by FIRAS within the Paper 17 v1.5 readout family."
+    },
+    {
+      "classification": "DERIVED/CONDITIONAL_VERIFIED through Paper 21/Paper 22 BBN branch assignment",
+      "current_value": 2.6635,
+      "field": "T_IO_BBN_BRANCH_K",
+      "hidden_parameter": false,
+      "paper24_impact": "Used as PRyMordial T0CMB baseline in the active scorecard.",
+      "rigidity_test": "Fixed by the inherited local interior thermal branch used for BBN abundance/rate observables."
+    },
+    {
+      "classification": "VERIFIED wrapper convention",
+      "current_value": "obj.YPCMB()",
+      "field": "Y_p readout",
+      "hidden_parameter": false,
+      "paper24_impact": "Matches the Paper 24 v3.0 scorecard convention.",
+      "rigidity_test": "The wrapper reads the observationally relevant PRyMordial helium output, not YPBBN."
+    },
+    {
+      "classification": "IMPORTED/EMPIRICAL plus VERIFIED conversion",
+      "current_value": "B(E2 down) = 52 e^2 fm^4",
+      "field": "Henderson B(E2) import",
+      "hidden_parameter": false,
+      "paper24_impact": "Sets the primary q_trans,ex row; not tuned to BBN residuals.",
+      "rigidity_test": "Imported primary nuclear datum; detailed-balance conversion is arithmetic and visible."
+    },
+    {
+      "classification": "DERIVED/CONDITIONAL_VERIFIED within imported nuclear-data branch package",
+      "current_value": 0.017537902422203915,
+      "field": "q_trans,ex projection",
+      "hidden_parameter": false,
+      "paper24_impact": "Load-bearing for the Henderson primary lithium row.",
+      "rigidity_test": "Forced by sqrt(B(E2))/100 multiplied by the amplitude-weighted Coulomb kernel in the declared branch model."
+    }
+  ],
+  "canonical_labels": [
+    "DERIVED/THEOREM",
+    "DERIVED/CONDITIONAL_VERIFIED",
+    "DERIVED/NO-GO",
+    "VERIFIED",
+    "IMPORTED/EMPIRICAL",
+    "RECONSTRUCTION",
+    "RECONSTRUCTION/RESEARCH_ONLY",
+    "OPEN/PREMISE_GAP",
+    "SUPERSEDED",
+    "Historical/SUPERSEDED"
+  ],
+  "executive_verdict": {
+    "bbn_scorecard_numerically_unchanged": true,
+    "cmb_temperature_prediction_claim_must_remain_retired": true,
+    "hidden_continuous_fitted_parameter_found": false,
+    "primary_reason": "R4_FIRAS fixes observer-side optical readout only; Paper 24's active BBN scorecard uses the local T_IO branch and YPCMB output.",
+    "r4_damage_to_active_scorecard": false
+  },
+  "framework_constants": {
+    "K_gauge": 0.05487281774291466,
+    "R4_FIRAS": 1.0031014644,
+    "T_IO_BBN_BRANCH_K": 2.6635,
+    "T_obs_FIRAS_readout_K": 2.725499999999342,
+    "gamma_BI": 0.2375,
+    "x": 1.519
+  },
+  "generated_at_utc": "2026-05-13T09:56:48.567207+00:00",
+  "manuscript_review": {
+    "abbreviations_flagged_for_reader_expansion": [
+      "BBN",
+      "CMB",
+      "CG",
+      "FRW",
+      "GR",
+      "KMS",
+      "LQG",
+      "OS",
+      "TT",
+      "ANC",
+      "NCSM",
+      "IO",
+      "CMP",
+      "BDP",
+      "GTTP",
+      "PSRP",
+      "GMP",
+      "TBS",
+      "WMR"
+    ],
+    "independent_cmb_temperature_prediction": {
+      "finding": "No Paper 24 active scorecard should count observed CMB temperature as an independent IO prediction. CMB tensor-bound references are separate and not an R4 temperature claim.",
+      "status": "removed/retired in Paper 24 v3.0 scope"
+    },
+    "io_slang_flagged_for_rewrite_or_definition": [
+      "one-slot",
+      "two-slot",
+      "alpha-ladder",
+      "horizon puncture",
+      "generating-potential hierarchy",
+      "bridge-dressing",
+      "branch package",
+      "mass-7 TT dressing"
+    ],
+    "noncanonical_labels_seen_in_v3_0_draft": [
+      {
+        "label": "DERIVED/SCOPED",
+        "recommendation": "Replace with DERIVED/CONDITIONAL_VERIFIED if the scoped chain reaches Premise 1, Premise 2, or a frozen imported empirical/physics input; otherwise OPEN/PREMISE_GAP."
+      },
+      {
+        "label": "CONDITIONAL on ...",
+        "recommendation": "Replace load-bearing cases with DERIVED/CONDITIONAL_VERIFIED and include the explicit chain. Use OPEN/PREMISE_GAP if the chain cannot be stated."
+      },
+      {
+        "label": "IMPORTED/SCOPED",
+        "recommendation": "Use IMPORTED/EMPIRICAL for external data, then separately state the theorem chain that consumes the import."
+      },
+      {
+        "label": "DERIVED/IMPORTED",
+        "recommendation": "Split into VERIFIED arithmetic/derivation and IMPORTED/EMPIRICAL input."
+      }
+    ]
+  },
+  "paper": "Paper 24 v3.0",
+  "r4_impact": {
+    "active_R4_value": 1.0031014644,
+    "active_prymordial_temperature_K": 2.6635,
+    "observer_side_readout_temperature_K": 2.725499999999342,
+    "r4_enters_active_bbn_scorecard": false,
+    "retired_R4_value": 1.0,
+    "scorecard_change_required": "none"
+  },
+  "recommendations": [
+    "Keep the Paper 24 v3.0 BBN scorecard unchanged.",
+    "Do not describe observed CMB temperature as an independent Paper 24 or IO prediction.",
+    "Keep R4_FIRAS visible as inherited observer-side readout normalization, not as a tunable BBN parameter.",
+    "Migrate noncanonical labels in the manuscript to the published claim-discipline scheme.",
+    "Expand first-use abbreviations and replace IO slang with standard physics wording or explicit definitions."
+  ],
+  "script_review": {
+    "01_compute_qtrans_carrier.py": {
+      "contains": {
+        "R4": false,
+        "R4_FIRAS": false,
+        "T0CMB": false,
+        "T_IO_BBN_BRANCH_K": false,
+        "YPBBN": false,
+        "YPCMB()": false
+      },
+      "impact": "No R4 damage. This script uses nuclear carrier constants, x, gamma_BI, and observational Li-7 denominator only.",
+      "purpose": "Q_trans carrier arithmetic and simplified lithium response.",
+      "r4_usage": "none"
+    },
+    "02_recompute_excited_state_import.py": {
+      "contains": {
+        "R4": false,
+        "R4_FIRAS": false,
+        "T0CMB": false,
+        "T_IO_BBN_BRANCH_K": false,
+        "YPBBN": false,
+        "YPCMB()": false
+      },
+      "impact": "No R4 damage. Imported A=7 nuclear data are independent of optical readout normalization.",
+      "purpose": "Henderson B(E2) import, detailed balance, q_trans,ex, and branch scorecard handoff.",
+      "r4_usage": "none directly; calls script 03 for PRyMordial scorecard when rerun."
+    },
+    "03_run_final_bbn_scorecard.py": {
+      "contains": {
+        "R4": true,
+        "R4_FIRAS": true,
+        "T0CMB": true,
+        "T_IO_BBN_BRANCH_K": true,
+        "YPBBN": false,
+        "YPCMB()": true
+      },
+      "impact": "No numerical R4 damage. The active BBN branch uses T_IO_BBN_BRANCH_K = 2.6635 K and YPCMB().",
+      "purpose": "Excited-branch kernel and PRyMordial BBN scorecard.",
+      "r4_usage": "records R4_FIRAS for audit visibility; does not use it in the PRyMordial T0CMB assignment."
+    },
+    "04_r4_firas_kappa_audit.py": {
+      "impact": "Audit support only.",
+      "purpose": "This audit report.",
+      "r4_usage": "computes observer-side readout bookkeeping and records non-entry into active BBN."
+    },
+    "05_validate_expected_outputs.py": {
+      "impact": "Validation support only.",
+      "purpose": "Frozen-output validation.",
+      "r4_usage": "validates R4_FIRAS in the audit JSON; does not recompute BBN."
+    }
+  }
+}

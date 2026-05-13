@@ -196,14 +196,13 @@ The current Paper 20 support bundle is:
 
 The current Paper 24 support bundle is:
 
-- `papers/paper24/v2.3/`
+- `papers/paper24/v3.0/`
 - validation command:
-  `python3 papers/paper24/v2.3/scripts/04_validate_expected_outputs.py`
+  `python3 papers/paper24/v3.0/scripts/05_validate_expected_outputs.py`
 - manifest:
-  `metadata/manifests/paper24_v2_3_repro_bundle.json`
+  `metadata/manifests/paper24_v3_0_repro_bundle.json`
 
-The Paper 24 v2.2 bundle remains frozen at `papers/paper24/v2.2/` for
-backward compatibility.
+The Paper 24 v2.3 and v2.2 bundles remain frozen for backward compatibility.
 
 The initial bundle included here is a Paper 31 practical calculator bundle:
 
@@ -224,6 +223,7 @@ The current source/readout-foundation release is:
 
 The manifest is in:
 
+- `metadata/manifests/paper24_v3_0_repro_bundle.json`
 - `metadata/manifests/paper24_v2_3_repro_bundle.json`
 - `metadata/manifests/paper32_v1_6_repro_bundle.json`
 - `metadata/manifests/paper32_v1_5_repro_bundle.json`
@@ -264,6 +264,7 @@ Examples:
 ```text
 paper24-v2.3
 paper24-v2.2
+paper24-v3.0
 ```
 
 For each new paper-version bundle:
@@ -279,13 +280,13 @@ For each new paper-version bundle:
 The branch URL remains useful for readers:
 
 ```text
-https://github.com/dfife/io-framework-public/tree/main/papers/paper24/v2.3
+https://github.com/dfife/io-framework-public/tree/main/papers/paper24/v3.0
 ```
 
 The release tag is the immutable archival reference:
 
 ```text
-https://github.com/dfife/io-framework-public/releases/tag/paper24-v2.3
+https://github.com/dfife/io-framework-public/releases/tag/paper24-v3.0
 ```
 
 This convention applies prospectively to future paper versions. Existing public
