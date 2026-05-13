@@ -47,7 +47,7 @@ def compute() -> dict:
     q_d_barn = 0.0028578
     epsilon_n = 0.023843043660342757
     q_7li_barn = 0.04
-    q_7be_theory_barn = 0.068
+    q_7be_theory_barn = 0.067
     q_req_old_barn = 0.026352749999399957
     li_obs = 1.58e-10
     li_sigma = 3.1e-11

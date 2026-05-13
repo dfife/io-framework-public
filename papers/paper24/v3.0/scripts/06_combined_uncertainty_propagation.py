@@ -4,8 +4,8 @@ Paper 24 v3.0 reproducibility script 06.
 
 Purpose:
     Propagate the combined imported nuclear-input uncertainty for the Paper 24
-    Henderson primary lithium row. The script samples the ground-state
-    quadrupole input Q_GS and the Henderson excited-state B(E2) input, pushes
+    Henderson primary lithium row. The script samples the Pastore et al. (2013)
+    ground-state quadrupole input Q_GS and the Henderson excited-state B(E2) input, pushes
     both through the Paper 24 branch-sum rate formula, and maps the resulting
     R_34,tot variation to Li-7/H using the banked PRyMordial local sensitivity
     exponent.
@@ -209,7 +209,7 @@ def compute() -> dict[str, object]:
         "method": {
             "samples": N_SAMPLES,
             "seed": SEED,
-            "Q_GS_sampling": "positive Gaussian, mean 0.068 b, sigma 0.005 b",
+            "Q_GS_sampling": "positive Gaussian, mean 0.067 b, sigma 0.001 b from Pastore et al. 2013 Table II",
             "Henderson_B_E2_sampling": "B_up = 26 + N(0,6_stat) + N(0,3_sys) e^2 fm^4, reject non-positive draws, B_down = 2*B_up",
             "nonlinear_propagation": "q_trans = sqrt(B_down)/100 * <F0>_amp,ex; R = exp(-epsilon_n * Xi); output quantiles are not symmetrized",
             "Li7_mapping": "Li7/H(sample) = Li7/H(central) * (R34_tot(sample)/R34_tot(central))^0.963",
@@ -232,7 +232,7 @@ def compute() -> dict[str, object]:
             "central_R34_tot": central_r34,
             "central_Li7_H": central_li7,
             "Li7_R34_sensitivity_exponent": sensitivity_exp,
-            "Q_GS_source_caveat": "The propagation uses the banked Paper 24 v3.0 value 0.068 +/- 0.005 b. The exact external source citation for that value must be verified in the manuscript before claiming source-level item-6 closure.",
+            "Q_GS_source": "Pastore et al. 2013, Phys. Rev. C 87, 035503, Table II reports Q(7Be, 3/2-) = -6.7(1) e fm^2 = -0.067(1) b; Paper 24 samples the magnitude |Q_GS|.",
         },
         "sample_summaries": {
             "Q_GS_7Be_barn": summarize(q_samples),
@@ -253,7 +253,7 @@ def compute() -> dict[str, object]:
         "chain": [
             "Premise 1: IO closed-interior geometry fixes x and the branch projection used in the Paper 24 rate-dressing chain.",
             "Premise 2: A=7 nuclear response inputs are imported from accepted exterior nuclear physics without IO retuning.",
-            "Paper 24 v3.0 banked Q_GS input: |Q_GS(7Be)| = 0.068 +/- 0.005 b; exact source citation remains a manuscript verification requirement.",
+            "Pastore et al. 2013, Phys. Rev. C 87, 035503, Table II: Q(7Be, 3/2-) = -6.7(1) e fm^2 = -0.067(1) b; Paper 24 uses |Q_GS| = 0.067 +/- 0.001 b.",
             "Henderson et al. 2019, Phys. Rev. C 99, 064320: B(E2; 3/2- -> 1/2-) = 26(6)_stat(3)_syst e^2 fm^4; detailed balance gives B_down = 2 B_up.",
             "Paper 24 v3.0 branch-sum formula: R34_tot = f_gs R_gs + (1-f_gs) R_ex.",
             "Paper 24 banked PRyMordial sensitivity exponent: d ln(Li7/H) / d ln(R34_tot) = 0.963 for this channel.",

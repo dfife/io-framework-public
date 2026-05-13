@@ -11,7 +11,7 @@ url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper24/v3.0
 date-released: "2026-05"
 abstract: >
   Curated support bundle for reproducing the Paper 24 v3.0 lithium calculation
-  chain, including the Henderson excited-state import recomputation, transition
-  quadrupole projection, R4/FIRAS non-entry audit, frozen outputs, and
-  validation scripts.
+  chain, including the Pastore ground-state quadrupole import, Henderson
+  excited-state import recomputation, transition quadrupole projection,
+  R4/FIRAS non-entry audit, frozen outputs, and validation scripts.
 license: "Apache-2.0"

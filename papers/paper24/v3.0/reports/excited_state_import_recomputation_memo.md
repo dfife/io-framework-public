@@ -9,10 +9,10 @@ Outcome: `B`, with a stable lithium conclusion.
 The imported primary Henderson response does not reproduce the stated comparison value `R_ex = 0.666` as an exact central number under every convention. The corrected excited-state de-excitation convention gives:
 
 - `R_ex(T9_eff) = 0.598746399`
-- `R_34,tot(T9_eff) = 0.306711121`
-- PRyMordial rerun: `Li7/H = 1.7239845810965594e-10` (`+0.464466 sigma`)
-- `D/H = 2.5072194689896718e-05` (`-0.659351 sigma`)
-- `Y_p = 0.2477087716917260` (`+0.677193 sigma`)
+- `R_34,tot(T9_eff) = 0.310039259`
+- PRyMordial rerun: `Li7/H = 1.7414708079857392e-10` (`+0.520874 sigma`)
+- `D/H = 2.5072097840055007e-05` (`-0.659674 sigma`)
+- `Y_p = 0.2477087718290924` (`+0.677193 sigma`)
 
 This means v3.0 should not say the central value is literally unchanged. It can say the primary-source excited-state response preserves the Paper 24 lithium result within the imported-source/convention band.
 
@@ -57,7 +57,7 @@ Primary excited-state de-excitation convention:
 - `q_trans,ex = 0.017537902422 b`
 - `R_ex(T9_eff) = 0.598746399`
 - `R_ex(T9_eff)` 1-sigma B(E2) range = `0.562540169` to `0.642864359` (larger B gives stronger suppression)
-- `Li7/H = 1.7239845810965594e-10`
+- `Li7/H = 1.7414708079857392e-10`
 
 Published upward Coulomb-excitation convention:
 
@@ -66,23 +66,23 @@ Published upward Coulomb-excitation convention:
 - `q_trans,ex = 0.012401169731 b`
 - `R_ex(T9_eff) = 0.695804053`
 - `R_ex(T9_eff)` 1-sigma B(E2) range = `0.665781730` to `0.731677820` (larger B gives stronger suppression)
-- `Li7/H = 1.8722765602073408e-10`
+- `Li7/H = 1.8896536096253060e-10`
 
 Rejected half-factor diagnostic:
 
 - `B(E2) = 13.000000 e^2 fm^4`
 - `R_ex(T9_eff) = 0.773787050`
-- `Li7/H = 1.9910571801847104e-10`
+- `Li7/H = 2.0085029327308256e-10`
 - This case is not load-bearing.
 
 Paper 24 v2.1 comparison:
 
 - stated comparison `R_ex = 0.666`
-- old amplitude-weighted `q_trans,ex = 0.016538072455 b`
-- old-q effective `R_ex(T9_eff) = 0.616512976`
-- old-q effective `R_34,tot(T9_eff) = 0.311841442`
+- old amplitude-weighted `q_trans,ex = 0.016294865508 b`
+- old-q effective `R_ex(T9_eff) = 0.620913792`
+- old-q effective `R_34,tot(T9_eff) = 0.316440370`
 
-The corrected Henderson de-excitation scale `q_scale=0.072111 b` is close to the old cluster scale `0.068 b`; this is the important physical stability check.
+The corrected Henderson de-excitation scale `q_scale=0.072111 b` is close to the Pastore et al. (2013) ground-state scale `0.067 b`; this is the important physical stability check.
 
 ## Lichtenstadt / Li-7 Mirror Cross-Check
 
@@ -120,6 +120,7 @@ This confirms the lifetime is M1 dominated and cannot determine `R_ex` by itself
 
 ## References
 
+- Pastore et al., Phys. Rev. C 87, 035503 (2013), Table II, DOI `10.1103/PhysRevC.87.035503`.
 - Henderson et al., Phys. Rev. C 99, 064320 (2019), DOI `10.1103/PhysRevC.99.064320`.
 - Lichtenstadt et al., Phys. Lett. B 219, 394-398 (1989), DOI `10.1016/0370-2693(89)91083-6`.
 - Tilley et al., Nucl. Phys. A 708, 3-163 (2002), DOI `10.1016/S0375-9474(02)00597-3`.

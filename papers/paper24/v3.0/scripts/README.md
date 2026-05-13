@@ -131,9 +131,9 @@ rerun PRyMordial.
 
 ### `06_combined_uncertainty_propagation.py`
 
-Purpose: propagate the combined `Q_GS` and Henderson `B(E2)` uncertainty band
-through the Paper 24 branch-sum formula and the banked PRyMordial sensitivity
-map.
+Purpose: propagate the combined Pastore et al. (2013) `Q_GS` and Henderson
+`B(E2)` uncertainty band through the Paper 24 branch-sum formula and the banked
+PRyMordial sensitivity map.
 
 Dependencies: Python standard library only.
 

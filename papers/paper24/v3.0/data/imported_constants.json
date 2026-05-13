@@ -20,9 +20,10 @@
     "Q_d_barn": 0.0028578,
     "chi_ME_7Be": 0.84,
     "f_gs": 0.711237553342816,
-    "Q_GS_7Be_barn": 0.068,
-    "Q_GS_7Be_sigma_barn": 0.005,
-    "Q_GS_source_note": "Paper 24 v3.0 banked input: |Q_GS(7Be)| = 0.068 +/- 0.005 b. Sign is irrelevant for the TT deformation magnitude. Manuscript citation should verify the exact source of this banked value before presenting item 6 as source-closed.",
+    "Q_GS_7Be_barn": 0.067,
+    "Q_GS_7Be_sigma_barn": 0.001,
+    "Q_GS_source_note": "Pastore et al. 2013, Phys. Rev. C 87, 035503, Table II reports Q(7Be, 3/2-) = -6.7(1) e fm^2 = -0.067(1) b. Paper 24 uses |Q_GS| = 0.067 b; the sign is irrelevant for the TT deformation magnitude.",
+    "Q_GS_source_doi": "10.1103/PhysRevC.87.035503",
     "T9_eff": 0.5160778165182853,
     "nu_34_T9eff": 5.324728611585001,
     "Li7_R34_sensitivity_exponent": 0.963

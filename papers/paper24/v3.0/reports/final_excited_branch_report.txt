@@ -35,7 +35,7 @@ offdiag/diag ratio = 1.414213562373095
 deltaB_C,max = 4.430045719791646 keV
 V_mix estimate = 6.265030738862226 keV
 theta_mix estimate = 0.014596996129688
-inherited Q scale = 0.000992595736819 b
+inherited Q scale = 0.000977998740689 b
 So mixing is subleading, not dominant.
 
 V. Weaker-binding excited external-capture tail
@@ -59,17 +59,17 @@ Excited-state kernel summary:
   amp-weighted <F0> = 0.243206947874386
   rate-weighted <F0> = 0.164493051817830
 
-Using Q_scale = 0.068000 b gives
-  Q_trans,ex^(rate) = 0.011185527523612 b
-  Q_trans,ex^(amp)  = 0.016538072455458 b
+Using Q_scale = 0.067000 b gives
+  Q_trans,ex^(rate) = 0.011021034471795 b
+  Q_trans,ex^(amp)  = 0.016294865507584 b
 
 VI. Full-network outputs
 ------------------------
-1 sigma threshold in effective-T proxy: Q_trans,ex = 0.009770746615960 b
-  current_excited_blind: q_trans_ex = 0.000000000000000 b -> Li7/H = 2.338010963136271e-10 (2.445197 sigma), D/H = 2.508725275000808e-05 (-0.609157 sigma), Y_p = 0.247708750630989 (0.677188 sigma)
-  excited_rate_weighted_avg: q_trans_ex = 0.011185527523612 b -> Li7/H = 1.909810735446168e-10 (1.063906 sigma), D/H = 2.508592729310558e-05 (-0.613576 sigma), Y_p = 0.247708752291880 (0.677188 sigma)
-  excited_threshold_1sigma: q_trans_ex = 0.009770746615960 b -> Li7/H = 1.956939483244485e-10 (1.215934 sigma), D/H = 2.509929785030313e-05 (-0.569007 sigma), Y_p = 0.247708730815011 (0.677183 sigma)
-  excited_amp_weighted_avg: q_trans_ex = 0.016538072455458 b -> Li7/H = 1.751310646846206e-10 (0.552615 sigma), D/H = 2.507221174847143e-05 (-0.659294 sigma), Y_p = 0.247708771716053 (0.677193 sigma)
+1 sigma threshold in effective-T proxy: Q_trans,ex = 0.010299247680051 b
+  current_excited_blind: q_trans_ex = 0.000000000000000 b -> Li7/H = 2.355328922965505e-10 (2.501061 sigma), D/H = 2.508720740867382e-05 (-0.609309 sigma), Y_p = 0.247708750762245 (0.677188 sigma)
+  excited_rate_weighted_avg: q_trans_ex = 0.011021034471795 b -> Li7/H = 1.933404080413100e-10 (1.140013 sigma), D/H = 2.508490411708671e-05 (-0.616986 sigma), Y_p = 0.247708753189455 (0.677188 sigma)
+  excited_threshold_1sigma: q_trans_ex = 0.010299247680051 b -> Li7/H = 1.956597297811617e-10 (1.214830 sigma), D/H = 2.509929547407228e-05 (-0.569015 sigma), Y_p = 0.247708730834319 (0.677183 sigma)
+  excited_amp_weighted_avg: q_trans_ex = 0.016294865507584 b -> Li7/H = 1.775589750474716e-10 (0.630935 sigma), D/H = 2.507159147361074e-05 (-0.661362 sigma), Y_p = 0.247708772707705 (0.677193 sigma)
 
 Conclusion
 ----------

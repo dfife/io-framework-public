@@ -106,7 +106,7 @@ x = X_IO
 Q_d = 0.0028578
 chi_ME_7Be = 21.0 / 25.0
 f_gs = 0.711237553342816
-Q_GS_7Be = 0.068
+Q_GS_7Be = 0.067
 Li0_baseline = 5.387612546353705e-10
 Li_current_full = 2.350416223788592e-10
 
@@ -118,7 +118,7 @@ mu_mev = mu_amu * amu_mev
 E_cm_mev = 0.300
 Z1 = 2.0
 Z2 = 2.0
-Q_scale_mass7 = 0.068
+Q_scale_mass7 = 0.067
 B_gs_mev = 1.5866
 E_x_mev = 0.4292
 B_ex_mev = B_gs_mev - E_x_mev

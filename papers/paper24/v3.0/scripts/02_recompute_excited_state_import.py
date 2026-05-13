@@ -473,7 +473,7 @@ Paper 24 v2.1 comparison:
 - old-q effective `R_ex(T9_eff) = {v21['R_ex_T9eff_from_old_q_trans']:.9f}`
 - old-q effective `R_34,tot(T9_eff) = {v21['R_34_tot_T9eff_from_old_q_trans']:.9f}`
 
-The corrected Henderson de-excitation scale `q_scale={primary['q_scale_b']:.6f} b` is close to the old cluster scale `0.068 b`; this is the important physical stability check.
+The corrected Henderson de-excitation scale `q_scale={primary['q_scale_b']:.6f} b` is close to the Pastore et al. (2013) ground-state scale `0.067 b`; this is the important physical stability check.
 
 ## Lichtenstadt / Li-7 Mirror Cross-Check
 
@@ -511,6 +511,7 @@ This confirms the lifetime is M1 dominated and cannot determine `R_ex` by itself
 
 ## References
 
+- Pastore et al., Phys. Rev. C 87, 035503 (2013), Table II, DOI `10.1103/PhysRevC.87.035503`.
 - Henderson et al., Phys. Rev. C 99, 064320 (2019), DOI `10.1103/PhysRevC.99.064320`.
 - Lichtenstadt et al., Phys. Lett. B 219, 394-398 (1989), DOI `10.1016/0370-2693(89)91083-6`.
 - Tilley et al., Nucl. Phys. A 708, 3-163 (2002), DOI `10.1016/S0375-9474(02)00597-3`.
