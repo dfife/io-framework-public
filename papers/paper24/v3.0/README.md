@@ -5,11 +5,21 @@ Classification: `VERIFIED / public-reproducibility-support`
 This bundle contains the curated scripts, frozen outputs, and calculation
 reports needed to audit the Paper 24 v3.0 lithium result.
 
-The BBN scorecard outputs are numerically unchanged from the Paper 24 v2.3
-support bundle. The v3.0 bundle adds the R4/FIRAS audit required by the current
-framework convention: observed CMB temperature is not counted as an independent
-IO prediction, and `R4_FIRAS = 1.0031014644` is recorded as an observer-side
+The v3.0 bundle reflects the final Paper 24 v3.0 Pastore/Henderson input
+package: the ground-state quadrupole import is `|Q_GS(7Be)| = 0.067 +/- 0.001 b`
+from Pastore et al. (2013), Table II, and the primary Henderson row gives
+`Li7/H = 1.7414708079857392e-10` at `+0.520873574147546` observational sigma.
+The bundle also adds the R4/FIRAS audit required by the current framework
+convention: observed CMB temperature is not counted as an independent IO
+prediction, and `R4_FIRAS = 1.0031014644` is recorded as an observer-side
 readout normalization that does not enter the active PRyMordial BBN branch.
+
+Scope note: the final Paper 24 v3.0 manuscript narrows the Geometric Mediation
+Principle closure to the Paper 24 transverse-traceless observable class
+(`Theorem 24.G1`). This bundle supports the lithium scorecard and associated
+transverse-traceless rate-dressing computations only; it does not claim or
+attempt universal Geometric Mediation Principle closure over the full abstract
+local algebra.
 
 It is intentionally not a mirror of the private research lab. Exploratory
 GSM/AZURE2 class-search automation, failed route searches, private scratch
@@ -86,7 +96,7 @@ Expected output:
 
 ```json
 {
-  "checks": 19,
+  "checks": 24,
   "state": "passed"
 }
 ```
@@ -187,8 +197,8 @@ Y_p sigma = +0.6771931769261608
   validation, combined uncertainty propagation, and local PRyMordial reruns in
   the private lab.
 - `DERIVED/CONDITIONAL_VERIFIED`: mapping the imported `B(E2)` response into
-  the Paper 24 branch-dressing scale, with dependency on the stated bridge premises
-  and imported A=7 nuclear data.
+  the Paper 24 branch-dressing scale, with dependency on the Paper 24
+  transverse-traceless observable class closure and imported A=7 nuclear data.
 - `IMPORTED/EMPIRICAL`: FIRAS fixes the observer-side `R4_FIRAS` readout
   normalization inherited from Paper 17 v1.5; it is not tuned against BBN.
 - `not included`: private class-search automation, exploratory GSM/AZURE2

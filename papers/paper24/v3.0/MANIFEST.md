@@ -1,5 +1,9 @@
 # Paper 24 v3.0 Bundle Manifest
 
+Scope: this bundle supports the Paper 24 v3.0 lithium scorecard and the
+Paper 24 transverse-traceless observable class calculations. It does not claim
+universal Geometric Mediation Principle closure outside that observable class.
+
 ## Documentation
 
 - `README.md`: run instructions, scope, headline values, and claim boundary.
