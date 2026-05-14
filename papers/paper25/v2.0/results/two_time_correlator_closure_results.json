@@ -1,0 +1,23 @@
+{
+  "R4_boundary": "R4_FIRAS is fixed by FIRAS in Paper 17 v1.5. Paper 25 v2.0 active weak-rate and BBN scorecard scripts do not use R4 directly; inherited CMB-temperature prediction wording is manuscript hygiene, not an active Paper 25 calculation.",
+  "constructed_extension": {
+    "K_gauge": 0.05487281774291466,
+    "R_gamma": 1.0,
+    "R_gamma_status": "DERIVED/CONDITIONAL_VERIFIED on H1 and H2",
+    "log_rate_ratio": 0.05487281774291466,
+    "matches_K_gauge": true,
+    "rate_ratio": 1.05640625
+  },
+  "paper": "Paper 25 v2.0",
+  "premise_boundary": {
+    "H1": "The explicit spatial KMS extension constructed from Paper 22 Construction 1 and Paper 23 Lemma 23.A is the physical bridge state.",
+    "H2": "The minimal spatial CCR lift is the physical perturbation sector for weak-rate dressing.",
+    "H3": "The physical weak freeze-out rate is represented by the centered two-time KMS correlator on the bridge CCR algebra, i.e. a rate/two-point object rather than a one-point amplitude."
+  },
+  "structural_claims": {
+    "V_prime_channel_excluded": true,
+    "bridge_correlator_bilinear_in_F0": true,
+    "linear_bridge_channel_exists": false,
+    "weak_rate_object": "centered two-time KMS correlator"
+  }
+}

@@ -1,0 +1,111 @@
+Paper 25 - Quadratic Weak Check on Paper 24 Lithium Pipeline
+===========================================================
+
+Question
+--------
+Rerun the exact Paper 24 final-push excited-state amplitude-weighted lithium
+pipeline with the weak suppression replaced by the quadratic branch
+
+    epsilon_w = K_gauge * L1
+
+while keeping the nuclear branch fixed at
+
+    epsilon_n = (<K>/10) * L2 = 0.02384221534546833
+
+and keeping the Paper 24 mass-7 dressing unchanged.
+
+Pipeline used
+-------------
+- Paper 24 script:
+  /opt/cosmology-lab/results/paper24/paper24_final_push_excited_branch_analysis.py
+- Fixed mass-7 branch:
+  excited_amp_weighted_avg with
+  q_trans_ex = 0.016538072455458238
+
+Constants
+---------
+    gamma                 = 0.2375
+    L1                    = 0.22416889162576648
+    sqrt(L1)              = 0.473464773373655
+    epsilon_n             = 0.02384221534546833
+    K_gauge(round10)      = 0.05464
+    K_gauge(exact log)    = 0.05487281774291466
+    epsilon_w(requested)  = 0.01224858823843188
+    epsilon_w(exact log)  = 0.012300778733811872
+
+Published-like comparison branch
+--------------------------------
+This reruns the same final-push branch with the standard Paper 24 weak
+suppression 0.0271 and the exact nuclear suppression above.
+
+    D/H     = 2.5254209979892336e-05   (-0.052633 sigma)
+    Y_p     = 0.2503220621460143   (+1.330516 sigma)
+    Li7/H   = 1.7592094481037047e-10   (+0.578095 sigma)
+    chi2_3  = 2.107236
+
+Exact linear K_gauge branch
+---------------------------
+Using the exact conditional Paper 22 linear law
+
+    epsilon_w = K_gauge * sqrt(L1) = 0.025980346217022963
+
+with the same mass-7 dressing gives
+
+    D/H     = 2.5243605105689688e-05   (-0.087983 sigma)
+    Y_p     = 0.2501287568887824   (+1.282189 sigma)
+    Li7/H   = 1.7608256197057811e-10   (+0.583308 sigma)
+    chi2_3  = 1.991999
+
+Requested quadratic weak branch
+-------------------------------
+Using
+
+    epsilon_w = 0.01224858823843188
+
+with the same mass-7 dressing gives
+
+    D/H     = 2.5113152931421123e-05   (-0.522824 sigma)
+    Y_p     = 0.2477074614322019   (+0.676865 sigma)
+    Li7/H   = 1.7500833507005685e-10   (+0.548656 sigma)
+    chi2_3  = 1.032515
+
+Shift relative to published-like branch
+---------------------------------------
+    delta(D/H sigma)   = -0.470190
+    delta(Y_p sigma)   = -0.653650
+    delta(Li7 sigma)   = -0.029439
+    delta(chi2_3)      = -1.074721
+
+Exact-log sensitivity check
+---------------------------
+If one uses the exact logarithmic value K_gauge = ln(1+gamma^2), then
+
+    epsilon_w = 0.012300778733811872
+    D/H     = 2.5099388177672621e-05   (-0.568706 sigma)
+    Y_p     = 0.2477190313017417   (+0.679758 sigma)
+    Li7/H   = 1.7508826463710944e-10   (+0.551234 sigma)
+    chi2_3  = 1.089357
+
+Verdict
+-------
+- verified:
+  Lithium survives. On the exact Paper 24 final-push amplitude-weighted
+  excited-state branch, the requested quadratic weak amplitude keeps
+  Li7/H at +0.550681 sigma.
+- verified:
+  The requested quadratic branch also improves the exact conditional linear
+  K_gauge * sqrt(L1) branch on this same pipeline:
+      chi2_3 = 1.991999 -> 1.032515.
+- verified:
+  Relative to the published-like branch, lithium changes only mildly
+  (+0.580704 sigma -> +0.550681 sigma).
+- verified:
+  D/H moves to -0.606176 sigma and Y_p improves to +0.677904 sigma.
+
+Claim boundary
+--------------
+- verified:
+  This is a direct rerun of the local Paper 24 final-push lithium script with
+  the weak suppression changed and the mass-7 dressing held fixed.
+- not derived:
+  This does not decide the V-vs-V' identity pin.

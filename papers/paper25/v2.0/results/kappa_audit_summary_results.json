@@ -1,0 +1,31 @@
+{
+  "R4_FIRAS": 1.0031014644,
+  "R4_damage_verdict": "No active Paper 25 script uses R4. Inherited appendix/master-reference CMB prediction wording is stale manuscript hygiene and should not be treated as active Paper 25 evidence.",
+  "audit": "kappa_style_field_redefinition",
+  "classifications": {
+    "R_gamma_equals_1": "DERIVED/CONDITIONAL_VERIFIED on H1 and H2",
+    "V_double_prime_exclusion": "DERIVED/CONDITIONAL_VERIFIED on H1 via 25.12",
+    "V_prime_exclusion": "DERIVED/THEOREM under centered two-time rate formulation",
+    "bbn_scorecard": "VERIFIED computational support",
+    "bilinearity_theorem": "DERIVED/THEOREM inside CCR/KMS package",
+    "epsilon_w_Kgauge_L1": "DERIVED/CONDITIONAL_VERIFIED on H1-H3 plus upstream L_1"
+  },
+  "core_verdict": "survives audit with visible H1-H3 conditional verification and no unlabelled fitted scalar",
+  "hidden_continuous_parameter_found": false,
+  "label_drift_flags": [
+    "Paper 25 v2.0 manuscript still contains CONDITIONAL/THEOREM and bare DERIVED status lines; these should migrate to canonical Claims Discipline labels before publication.",
+    "Appendix master-reference entries still include retired independent CMB-temperature prediction wording and a Paper 17 R4 premise reference."
+  ],
+  "must_not_say": [
+    "Paper 25 unconditionally proves weak-sector closure outside H1-H3.",
+    "The BBN chi2 proves the theorem.",
+    "Paper 25 independently predicts the CMB temperature.",
+    "The V' branch is excluded only because its numerical chi2 is bad."
+  ],
+  "paper": "Paper 25 v2.0",
+  "visible_conditionals": [
+    "H1",
+    "H2",
+    "H3"
+  ]
+}

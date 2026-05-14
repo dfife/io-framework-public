@@ -1,0 +1,74 @@
+{
+  "claim_boundary": "The scorecard is VERIFIED computational support, not the theorem proof; R4_FIRAS is not an active variable in this computation.",
+  "comparisons": {
+    "active_all_three_within_one_sigma": true,
+    "linear_minus_active_chi2": 0.8269297633355388,
+    "vprime_catastrophic": true,
+    "vprime_minus_active_chi2": 400.57826893705806
+  },
+  "observational_conventions": {
+    "D_over_H_obs": 2.527e-05,
+    "D_over_H_sigma": 3e-07,
+    "Li7_over_H_obs": 1.58e-10,
+    "Li7_over_H_sigma": 3.1e-11,
+    "Y_p_obs": 0.245,
+    "Y_p_sigma": 0.004,
+    "url": "https://dfife.github.io/data/observational_conventions_v1.md"
+  },
+  "paper": "Paper 25 v2.0",
+  "rows": {
+    "active_exact_log_quadratic_branch": {
+      "D_over_H": 2.5072097840055007e-05,
+      "D_over_H_sigma": -0.659673866483311,
+      "Li7_over_H": 1.7414708079857392e-10,
+      "Li7_over_H_sigma": 0.520873574147546,
+      "R_34_tot_T9eff": 0.31003925909097196,
+      "Y_p": 0.24770877182909237,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma": 0.6771929572730941,
+      "chi2_3obs": 1.1650691917465592,
+      "chi2_3obs_recomputed_from_sigmas": 1.1650691917465592,
+      "chi2_delta_recomputed_minus_frozen": 0.0,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.012300778733811872,
+      "label": "exact_log_quadratic_branch",
+      "note": "Rounds in the manuscript as D/H = 2.507e-5 at -0.66 sigma, Y_p = 0.247709 at +0.68 sigma, Li-7/H = 1.741e-10 at +0.52 sigma, chi2 = 1.17.",
+      "q_trans_ex": 0.017537902422203915,
+      "source": "Paper 24 v3.0 excited_state_import_recomputation_results.json, Henderson primary/Pastore Q_GS branch"
+    },
+    "linear_exact_log_branch": {
+      "D_over_H": 2.524360510568969e-05,
+      "D_over_H_sigma": -0.08798298103437327,
+      "Li7_over_H": 1.760825619705781e-10,
+      "Li7_over_H_sigma": 0.58330845066381,
+      "Y_p": 0.25012875688878244,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma": 1.2821892221956122,
+      "chi2_3obs": 1.991998955082098,
+      "chi2_3obs_recomputed_from_sigmas": 1.991998955082098,
+      "chi2_delta_recomputed_minus_frozen": 0.0,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.025980346217022963,
+      "label": "linear_exact_log_branch",
+      "q_trans_ex": 0.016538072455458238,
+      "source": "paper25_quadratic_weak_paper24_lithium_check_results.json"
+    },
+    "vprime_branch": {
+      "D_over_H": 2.7881763252099333e-05,
+      "D_over_H_sigma": 8.705877506997776,
+      "Li7_over_H": 5.844155907162359e-10,
+      "Li7_over_H_sigma": 13.755341636007609,
+      "Y_p": 0.2917746275561733,
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "Y_p_sigma": 11.693656889043321,
+      "chi2_3obs": 401.7433381288046,
+      "chi2_3obs_recomputed_from_sigmas": 401.7433381288046,
+      "chi2_DH_plus_Yp": 212.53391460552015,
+      "chi2_delta_recomputed_minus_frozen": 0.0,
+      "epsilon_n": 0.02384221534546833,
+      "epsilon_w": 0.22489576735248612,
+      "label": "A_only_Vprime_sqrtL1",
+      "source": "paper25_weak_mechanism_comparison_results.json"
+    }
+  }
+}

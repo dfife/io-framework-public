@@ -1,0 +1,23 @@
+{
+  "bundle": "paper25_v2_0_repro_bundle",
+  "paper": "Paper 25",
+  "version": "v2.0",
+  "path": "papers/paper25/v2.0/",
+  "release_tag": "paper25-v2.0",
+  "validation_command": "python3 papers/paper25/v2.0/scripts/07_validate_expected_outputs.py",
+  "expected_validation_summary": "SUMMARY total_checks=27 pass_count=27 fail_count=0",
+  "headline_values": {
+    "epsilon_w": 0.012300778733811872,
+    "epsilon_n": 0.02384221534546833,
+    "D_over_H": 2.5072097840055007e-05,
+    "D_over_H_sigma": -0.659673866483311,
+    "Y_p": 0.24770877182909237,
+    "Y_p_sigma": 0.6771929572730941,
+    "Li7_over_H": 1.7414708079857392e-10,
+    "Li7_over_H_sigma": 0.520873574147546,
+    "chi2_3obs": 1.1650691917465592,
+    "R4_FIRAS": 1.0031014644
+  },
+  "claim_boundary": "Weak-sector identity pin DERIVED/CONDITIONAL_VERIFIED on H1-H3; BBN scorecard VERIFIED computational support; R4_FIRAS recorded but not used by active Paper 25 scripts.",
+  "created": "2026-05-14"
+}

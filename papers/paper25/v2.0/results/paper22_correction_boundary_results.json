@@ -1,0 +1,24 @@
+{
+  "boundary": "Paper 25 corrects the weak amplitude branch; it does not alter Paper 22's spatial Hodge/TT/channel infrastructure.",
+  "correction": {
+    "absolute_delta": -0.013679567483211091,
+    "new_divided_by_old": 0.473464773373655,
+    "old_divided_by_new": 2.112089549713569
+  },
+  "paper": "Paper 25 v2.0",
+  "paper22_old_branch": {
+    "epsilon_w": 0.025980346217022963,
+    "formula": "epsilon_w = K_gauge * sqrt(L_1)",
+    "status": "SUPERSEDED one-point/amplitude branch"
+  },
+  "paper25_active_branch": {
+    "epsilon_w": 0.012300778733811872,
+    "formula": "epsilon_w = K_gauge * L_1",
+    "status": "DERIVED/CONDITIONAL_VERIFIED on H1-H3 plus upstream L_1"
+  },
+  "scorecard_comparison": {
+    "linear_chi2_3obs": 1.991998955082098,
+    "quadratic_chi2_3obs": 1.1650691917465592,
+    "quadratic_improvement": 0.8269297633355388
+  }
+}

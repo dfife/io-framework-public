@@ -1,0 +1,86 @@
+{
+  "channel_budget_equation": {
+    "formula": "epsilon_w/L_1 + K_geom = 10*epsilon_n/L_2 = <K>",
+    "status": "DERIVED/CONDITIONAL_VERIFIED on channel-to-payload assignment; weak modular readout resolved by Paper 25 inside H1-H3"
+  },
+  "claim_boundary": "This ledger preserves labels; it does not upgrade conditional results to unconditional theorems.",
+  "closed_open_problem": {
+    "id": "WMR",
+    "statement": "weak rate reads V = K_gauge, not V'",
+    "status": "closed inside H1-H3 as DERIVED/CONDITIONAL_VERIFIED"
+  },
+  "killed_route_count": 29,
+  "paper": "Paper 25 v2.0",
+  "premises": {
+    "H1": "The explicit spatial KMS extension constructed from Paper 22 Construction 1 and Paper 23 Lemma 23.A is the physical bridge state.",
+    "H2": "The minimal spatial CCR lift is the physical perturbation sector for weak-rate dressing.",
+    "H3": "The physical weak freeze-out rate is represented by the centered two-time KMS correlator on the bridge CCR algebra, i.e. a rate/two-point object rather than a one-point amplitude."
+  },
+  "theorems": [
+    {
+      "id": "25.1",
+      "name": "Centrality Neutralization",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.2",
+      "name": "Scalarization Preserves V-Type",
+      "status": "DERIVED/CONDITIONAL_VERIFIED"
+    },
+    {
+      "id": "25.3",
+      "name": "K_geom is gamma-independent",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.4",
+      "name": "j=1 transport is gamma-blind",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.5",
+      "name": "Reaction and CAR legs gauge-trivial",
+      "status": "DERIVED"
+    },
+    {
+      "id": "25.6",
+      "name": "gamma-localization to Z_g",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.7",
+      "name": "TT multiplicity factor 10",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.8",
+      "name": "Channel-carrier localization",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.9",
+      "name": "Bilinearity of the Bridge Correlator",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.10",
+      "name": "Structural Exclusion of V'",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "25.11",
+      "name": "Structural Exclusion of V''",
+      "status": "DERIVED/CONDITIONAL_VERIFIED on H1 via 25.12"
+    },
+    {
+      "id": "25.12",
+      "name": "R(gamma)=1 on constructed extension",
+      "status": "DERIVED/CONDITIONAL_VERIFIED on H1 and H2"
+    },
+    {
+      "id": "25.13",
+      "name": "Geometric-Mediation Closure for the Weak Observable Class",
+      "status": "DERIVED/CONDITIONAL_VERIFIED on H1-H3"
+    }
+  ]
+}

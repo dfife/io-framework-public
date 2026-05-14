@@ -1,0 +1,92 @@
+{
+  "paper": "Paper 25",
+  "bundle_version": "v2.0",
+  "source_manuscript_state": "Paper 25 v2.0 working draft; active BBN support row aligned to Paper 24 v3.0 Pastore Q_GS branch and R4/FIRAS claim boundary.",
+  "observational_conventions": {
+    "url": "https://dfife.github.io/data/observational_conventions_v1.md",
+    "D_over_H_obs": 2.527e-05,
+    "D_over_H_sigma": 3e-07,
+    "Y_p_obs": 0.245,
+    "Y_p_sigma": 0.004,
+    "Li7_over_H_obs": 1.58e-10,
+    "Li7_over_H_sigma": 3.1e-11
+  },
+  "framework_constants": {
+    "gamma_BI": 0.2375,
+    "x": 1.519,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "V_prime": 0.475,
+    "V_double_prime": 2.1128125,
+    "L1": 0.22416889162576648,
+    "sqrt_L1": 0.473464773373655,
+    "L2": 0.13805247907094412,
+    "K_mean_aligned": 1.72704,
+    "K_geom": 1.6721671822570854,
+    "TT_multiplicity_n2": 10,
+    "q_trans_ex_b": 0.017537902422203915,
+    "R4_FIRAS": 1.0031014644,
+    "R4_boundary": "R4_FIRAS is fixed by FIRAS in Paper 17 v1.5. Paper 25 v2.0 active weak-rate and BBN scorecard scripts do not use R4 directly; inherited CMB-temperature prediction wording is manuscript hygiene, not an active Paper 25 calculation."
+  },
+  "amplitudes": {
+    "epsilon_w_quadratic": 0.012300778733811872,
+    "epsilon_w_linear": 0.025980346217022963,
+    "epsilon_w_published_like": 0.0271,
+    "epsilon_w_vprime": 0.22489576735248612,
+    "epsilon_n": 0.02384221534546833
+  },
+  "scorecards": {
+    "active_exact_log_quadratic_branch": {
+      "label": "exact_log_quadratic_branch",
+      "source": "Paper 24 v3.0 excited_state_import_recomputation_results.json, Henderson primary/Pastore Q_GS branch",
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "epsilon_w": 0.012300778733811872,
+      "epsilon_n": 0.02384221534546833,
+      "D_over_H": 2.5072097840055007e-05,
+      "D_over_H_sigma": -0.659673866483311,
+      "Y_p": 0.24770877182909237,
+      "Y_p_sigma": 0.6771929572730941,
+      "Li7_over_H": 1.7414708079857392e-10,
+      "Li7_over_H_sigma": 0.520873574147546,
+      "chi2_3obs": 1.1650691917465592,
+      "q_trans_ex": 0.017537902422203915,
+      "R_34_tot_T9eff": 0.31003925909097196,
+      "note": "Rounds in the manuscript as D/H = 2.507e-5 at -0.66 sigma, Y_p = 0.247709 at +0.68 sigma, Li-7/H = 1.741e-10 at +0.52 sigma, chi2 = 1.17."
+    },
+    "linear_exact_log_branch": {
+      "label": "linear_exact_log_branch",
+      "source": "paper25_quadratic_weak_paper24_lithium_check_results.json",
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "epsilon_w": 0.025980346217022963,
+      "epsilon_n": 0.02384221534546833,
+      "D_over_H": 2.524360510568969e-05,
+      "D_over_H_sigma": -0.08798298103437327,
+      "Y_p": 0.25012875688878244,
+      "Y_p_sigma": 1.2821892221956122,
+      "Li7_over_H": 1.760825619705781e-10,
+      "Li7_over_H_sigma": 0.58330845066381,
+      "chi2_3obs": 1.991998955082098,
+      "q_trans_ex": 0.016538072455458238
+    },
+    "vprime_branch": {
+      "label": "A_only_Vprime_sqrtL1",
+      "source": "paper25_weak_mechanism_comparison_results.json",
+      "Y_p_output_component": "YPCMB / PRyMresults()[3]",
+      "epsilon_w": 0.22489576735248612,
+      "epsilon_n": 0.02384221534546833,
+      "D_over_H": 2.7881763252099333e-05,
+      "D_over_H_sigma": 8.705877506997776,
+      "Y_p": 0.2917746275561733,
+      "Y_p_sigma": 11.693656889043321,
+      "Li7_over_H": 5.844155907162359e-10,
+      "Li7_over_H_sigma": 13.755341636007609,
+      "chi2_3obs": 401.7433381288046,
+      "chi2_DH_plus_Yp": 212.53391460552015
+    }
+  },
+  "premises": {
+    "H1": "The explicit spatial KMS extension constructed from Paper 22 Construction 1 and Paper 23 Lemma 23.A is the physical bridge state.",
+    "H2": "The minimal spatial CCR lift is the physical perturbation sector for weak-rate dressing.",
+    "H3": "The physical weak freeze-out rate is represented by the centered two-time KMS correlator on the bridge CCR algebra, i.e. a rate/two-point object rather than a one-point amplitude."
+  }
+}

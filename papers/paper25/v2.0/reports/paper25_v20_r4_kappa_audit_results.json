@@ -1,0 +1,116 @@
+{
+  "paper": "Paper 25",
+  "version_audited": "v2.0",
+  "audit_date": "2026-05-14",
+  "R4_FIRAS": 1.0031014644,
+  "hidden_continuous_parameter_found": false,
+  "active_scripts_use_R4": false,
+  "verdict": "No hidden continuous fitted parameter was found in the active Paper 25 v2.0 weak-sector support surface. R4 damage is confined to inherited manuscript appendix/master-reference wording, not active scripts.",
+  "active_scorecard": {
+    "source": "Paper 24 v3.0 Pastore Q_GS / Henderson primary branch",
+    "D_over_H": 2.5072097840055007e-05,
+    "D_over_H_sigma": -0.659673866483311,
+    "Y_p": 0.24770877182909237,
+    "Y_p_sigma": 0.6771929572730941,
+    "Li7_over_H": 1.7414708079857392e-10,
+    "Li7_over_H_sigma": 0.520873574147546,
+    "chi2_3obs": 1.1650691917465592
+  },
+  "candidate_fields": [
+    {
+      "field": "gamma_BI",
+      "classification": "IMPORTED/EMPIRICAL upstream input",
+      "rigidity": "Framework-wide Barbero-Immirzi input; not fitted in Paper 25."
+    },
+    {
+      "field": "K_gauge = ln(1+gamma_BI^2)",
+      "classification": "DERIVED/THEOREM upstream",
+      "rigidity": "Algebraically forced once gamma_BI is fixed."
+    },
+    {
+      "field": "V_prime = 2 gamma_BI",
+      "classification": "DERIVED/THEOREM comparator",
+      "rigidity": "Forced tangent covector; structurally excluded for weak rates."
+    },
+    {
+      "field": "V_double_prime = 2(1+gamma_BI^2)",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED exclusion",
+      "rigidity": "Forced curvature rung; excluded by constructed-extension rate ratio."
+    },
+    {
+      "field": "H1-H3",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED premise package",
+      "rigidity": "Visible conditional physical identification package; not hidden."
+    },
+    {
+      "field": "epsilon_w = K_gauge * L_1",
+      "classification": "DERIVED/CONDITIONAL_VERIFIED",
+      "rigidity": "Forced by centered two-time rate/covariance structure on H1-H3."
+    },
+    {
+      "field": "BBN scorecard",
+      "classification": "VERIFIED",
+      "rigidity": "Frozen PRyMordial row validates selected branch; it does not select the branch."
+    },
+    {
+      "field": "R4_FIRAS",
+      "classification": "not active in Paper 25 scripts",
+      "rigidity": "Recorded for dependency hygiene only."
+    }
+  ],
+  "r4_damage_flags": [
+    "Master table T_obs = T_IO x^K_gauge = 2.7253 K should not be presented as independent CMB-temperature prediction.",
+    "Master table gamma_required (FIRAS) and a = dim(S^2)/2 entries are stale under Paper 17 v1.5 R4 repair.",
+    "Master table sigma = K_gauge DERIVED (Theorem 17.1; R4 premise) should point to FIRAS-fixed R4_FIRAS status.",
+    "Appendix Step 11 COBE/FIRAS wording should be narrowed to blackbody/greybody structure if retained."
+  ],
+  "label_drift_flags": [
+    "CONDITIONAL/THEOREM",
+    "CONDITIONAL on ...",
+    "bare STATUS: DERIVED",
+    "FRAMEWORK CORRECTION"
+  ],
+  "abbreviation_flags": [
+    "IO",
+    "BBN",
+    "GTTP",
+    "BDP",
+    "CMP",
+    "WMR",
+    "GMP",
+    "TBS",
+    "TBSb",
+    "KMS",
+    "CCR",
+    "CAR",
+    "TT",
+    "RN",
+    "YPCMB",
+    "PRyMordial",
+    "H_IO",
+    "Z_g",
+    "F_0",
+    "LQG"
+  ],
+  "io_slang_flags": [
+    "identity pin",
+    "V-vs-V'",
+    "weak modular readout",
+    "channel-budget equation",
+    "scalarization",
+    "bridge",
+    "puncture load",
+    "A-vacuum",
+    "one-cell normalization",
+    "spatial KMS extension",
+    "minimal spatial CCR lift",
+    "bridge Riesz vector",
+    "weak observable class"
+  ],
+  "manuscript_hygiene_flags": [
+    {
+      "issue": "Version-history chi2 mismatch",
+      "detail": "Paragraph reports chi2 = 1.13; active v2.0 row is chi2 = 1.1650691917465592, rounded to 1.17."
+    }
+  ]
+}
