@@ -1,0 +1,93 @@
+{
+  "paper": "Paper 27",
+  "version_context": "v2.0 draft",
+  "artifact": "joint_observable_exhaustion_attempt",
+  "source_report": "results/paper27/paper27_v2_joint_observable_exhaustion_attempt.md",
+  "question": "Can residual shell-tail freedom on h_vec be eliminated by proving it is physically null for IO observables that read h_vec?",
+  "executive_verdict": {
+    "summary": "Scoped exhaustion closes for the current scalar-bridge quotient observable class. Universal all-future-observable exhaustion does not close.",
+    "current_scalar_bridge_observable_exhaustion_status": "DERIVED/THEOREM",
+    "native_As_fit_freedom_status": "excluded",
+    "universal_all_future_observable_exhaustion_status": "DERIVED/NO-GO",
+    "full_h_vec_state_status": "OPEN/PREMISE_GAP"
+  },
+  "definitions": [
+    {
+      "id": "27.O1",
+      "name": "Current Scalar-Bridge Quotient Observable",
+      "status": "DERIVED/THEOREM",
+      "membership_test": "Observable dependence on G^(1) enters only through B G^(1) B^dagger and, for the scalar-amplitude slot, through the Paper 31 rank-one active-line quotient."
+    },
+    {
+      "id": "27.O2",
+      "name": "Scalar-Bridge Residual",
+      "status": "DERIVED/THEOREM",
+      "definition": "A covariance difference DeltaG satisfying B DeltaG B^dagger = 0 on the gauge/null-reduced source carrier."
+    }
+  ],
+  "theorems": [
+    {
+      "id": "27.O3",
+      "name": "Bridge-Null Residuals Are Invisible to Scalar-Bridge Quotient Observables",
+      "status": "DERIVED/THEOREM",
+      "claim": "If two covariances have the same B G B^dagger compression, every observable in the current scalar-bridge quotient class has the same value on both."
+    },
+    {
+      "id": "27.O4",
+      "name": "Current Paper 27 Source-Side Scalar Inputs Belong to the Class",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "claim": "The current Paper 27 scalar-source inputs that depend on h_vec belong to the current scalar-bridge quotient observable class."
+    },
+    {
+      "id": "27.O5",
+      "name": "Current Scalar-Bridge Observable Exhaustion",
+      "status": "DERIVED/THEOREM",
+      "claim": "For every current scalar-bridge quotient observable O and every residual DeltaG with B DeltaG B^dagger = 0, O(G+DeltaG)=O(G).",
+      "chain": [
+        "Definition 27.O1",
+        "Definition 27.O2",
+        "Lemma 27.O3",
+        "Lemma 27.O4",
+        "Theorem 27.R5",
+        "Theorem 27.G6",
+        "Theorem 27.B8",
+        "Paper 23 Theorem 23.3",
+        "Paper 27 Spatial CCR Lift Theorem",
+        "Paper 31 rank-one scalar-amplitude quotient theorem",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.O6",
+      "name": "No Hidden Native A_s Fit Parameter",
+      "status": "DERIVED/THEOREM",
+      "claim": "Residual shell-tail freedom on h_vec cannot tune native A_s."
+    },
+    {
+      "id": "27.O7",
+      "name": "Universal All-Future-Observable Exhaustion No-Go",
+      "status": "DERIVED/NO-GO",
+      "claim": "Bridge-nullity for B G B^dagger does not imply nullity for every conceivable future observable on h_vec; higher-shell projectors or future polarization/non-Gaussian/vector diagnostics could separate residual shell tails unless an admissible-observable classification theorem excludes them.",
+      "chain": [
+        "Theorem 27.O5",
+        "existence of higher-shell projectors in Omega^1_coex(S3)",
+        "Theorem 27.G7",
+        "standard operator algebra separation by linear functionals",
+        "P1",
+        "P2"
+      ]
+    }
+  ],
+  "remaining_frontier": {
+    "needed_theorem": "Admissible Observable Classification Theorem",
+    "candidate_statement": "Every IO-admissible physical observable on h_vec either factors through the Paper 23 scalar bridge quotient, belongs to a separate carrier sector, is stress-energy/backreaction-forbidden by P1, is gauge/null, or is an imported exterior observable with a separately fixed state.",
+    "status": "OPEN/PREMISE_GAP"
+  },
+  "must_not_overclaim": [
+    "Do not claim current scalar-bridge quotient exhaustion selects the full h_vec state.",
+    "Do not claim bridge-null residuals are null for all future observables.",
+    "Do not claim higher-shell residual functionals are excluded without a separate admissible-observable theorem.",
+    "Do not claim tensor, vector, polarization, or non-Gaussian observables are covered unless they factor through B G B^dagger."
+  ]
+}

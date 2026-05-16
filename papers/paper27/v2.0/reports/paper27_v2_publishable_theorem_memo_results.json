@@ -1,0 +1,108 @@
+{
+  "paper": "Paper 27",
+  "version": "v2.0",
+  "artifact": "paper27_v2_publishable_theorem_memo.md",
+  "date": "2026-05-16",
+  "purpose": "Consolidated theorem package for Paper 27 insertion on boundary-state residuals, scalar-bridge quotient exhaustion, banked observable classification, and P1 background/perturbation separation.",
+  "overall_verdict": {
+    "current_scalar_bridge_observable_exhaustion": "DERIVED/THEOREM",
+    "banked_io_observable_classification": "DERIVED/THEOREM",
+    "p1_background_perturbation_separation": "DERIVED/CONDITIONAL_VERIFIED",
+    "native_a_s_residual_fit_freedom": "excluded by theorem",
+    "full_h_vec_state_selection": "OPEN/PREMISE_GAP",
+    "universal_all_future_h_vec_observable_exhaustion": "DERIVED/NO-GO"
+  },
+  "recommended_insertion": {
+    "section_title": "Boundary-State Residuals: Quotient Exhaustion and P1 Background Separation",
+    "insert_after": "Paper 27 Spatial CCR Lift / boundary-state discussion",
+    "guardrail": "Do not claim P1 selects the full h_vec state. Claim only that residual higher-shell freedom is not a hidden fit parameter for current scalar predictions."
+  },
+  "theorems": [
+    {
+      "id": "27.O1",
+      "name": "Current Scalar-Bridge Quotient Observable",
+      "label": "DERIVED/THEOREM",
+      "role": "Definition of the current scalar-bridge observable class."
+    },
+    {
+      "id": "27.O2",
+      "name": "Scalar-Bridge Residual",
+      "label": "DERIVED/THEOREM",
+      "role": "Definition of bridge-null covariance residuals."
+    },
+    {
+      "id": "27.O3",
+      "name": "Bridge-Null Residuals Are Invisible to Scalar-Bridge Quotient Observables",
+      "label": "DERIVED/THEOREM",
+      "role": "Proves invariance of quotient observables under bridge-null residuals."
+    },
+    {
+      "id": "27.O4",
+      "name": "Current Paper 27 Source-Side Scalar Inputs Belong to the Class",
+      "label": "DERIVED/CONDITIONAL_VERIFIED",
+      "role": "Verifies current Paper 27 scalar-source inputs are in the quotient observable class."
+    },
+    {
+      "id": "27.O5",
+      "name": "Current Scalar-Bridge Observable Exhaustion",
+      "label": "DERIVED/THEOREM",
+      "role": "Closes residual invisibility for current scalar-bridge quotient observables."
+    },
+    {
+      "id": "27.O6",
+      "name": "No Hidden Native A_s Fit Parameter",
+      "label": "DERIVED/THEOREM",
+      "role": "Excludes residual shell-tail tuning of native scalar amplitude."
+    },
+    {
+      "id": "27.AO5",
+      "name": "Banked IO Observable Classification Closure",
+      "label": "DERIVED/THEOREM",
+      "role": "Classifies all currently banked IO observables involving h_vec."
+    },
+    {
+      "id": "27.AO6",
+      "name": "Universal Admissible-Observable Classification No-Go",
+      "label": "DERIVED/NO-GO",
+      "role": "Shows broad all-future P2-admissible observable exhaustion is false under current inputs."
+    },
+    {
+      "id": "27.P1B7",
+      "name": "P1 Background/Perturbation Separation for h_vec",
+      "label": "DERIVED/CONDITIONAL_VERIFIED",
+      "role": "Classifies higher-shell residual diagnostics as quotient-null, perturbative, backreaction-constrained, gauge/null, or imported."
+    },
+    {
+      "id": "27.P1B8",
+      "name": "Full State Selection Remains Open but Non-Damaging for Current Scalar Predictions",
+      "label": "DERIVED/CONDITIONAL_VERIFIED",
+      "role": "Keeps full h_vec state selection open while excluding hidden fit impact on current scalar predictions."
+    },
+    {
+      "id": "27.E7",
+      "name": "No Full Exterior-Generator Embedding from P1+P2 Alone",
+      "label": "DERIVED/NO-GO",
+      "role": "Guardrail no-go: external Hawking state theorems do not identify CCR(h_vec) as invariant exterior subalgebra."
+    },
+    {
+      "id": "27.X1",
+      "name": "Natural Interior Coexact Dynamics Does Not Equal the Active Hawking Quotient",
+      "label": "DERIVED/THEOREM and DERIVED/NO-GO as direct full-state route",
+      "role": "Guardrail: natural S3 exponent is 8 pi, active S2 quotient exponent is 4 pi sqrt(2)."
+    },
+    {
+      "id": "27.X2",
+      "name": "Full State Selection Requires Generator-Transfer or Observable-Exhaustion Closure",
+      "label": "DERIVED/NO-GO",
+      "role": "Characterizes remaining full-state closure routes."
+    }
+  ],
+  "source_artifacts": [
+    "results/paper27/paper27_v2_residual_state_freedom_classification.md",
+    "results/paper27/paper27_v2_backreaction_passivity_residual_reduction.md",
+    "results/paper27/paper27_v2_generator_embedding_all_routes_exhaustion.md",
+    "results/paper27/paper27_v2_joint_observable_exhaustion_attempt.md",
+    "results/paper27/paper27_v2_admissible_observable_classification_attempt.md",
+    "results/paper27/paper27_v2_p1_background_perturbation_residual_classification.md"
+  ]
+}

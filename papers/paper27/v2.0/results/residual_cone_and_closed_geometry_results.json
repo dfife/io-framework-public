@@ -1,0 +1,26 @@
+{
+  "audit_targets": [
+    "Theorem 27.5.8 scalar-quotient residual freedom",
+    "Theorem 27.6.6 closed-geometry residual reduction",
+    "Theorem 27.6.7 exact-P1 backreaction boundary"
+  ],
+  "closed_geometry_exponents": {
+    "boundary_l1_beta_omega": 17.771531752633464,
+    "boundary_l1_formula": "4*pi*sqrt(2)",
+    "frozen_boundary_l1_beta_omega": 17.771531752633464,
+    "frozen_s3_n1_reference_exponent": 25.132741228718345,
+    "s3_n1_formula": "8*pi",
+    "s3_n1_reference_exponent": 25.132741228718345
+  },
+  "full_carrier_residual_state_freedom": "infinite-dimensional",
+  "paper": 27,
+  "rank_one_quotient_dimension": 1,
+  "residual_is_hidden_scalar_amplitude_fit": false,
+  "scope": "Current scalar bridge quotient only; full h_vec state selection remains OPEN/PREMISE_GAP.",
+  "statuses": {
+    "27.5.8": "DERIVED/THEOREM",
+    "27.6.6": "DERIVED/THEOREM",
+    "27.6.7": "DERIVED/THEOREM"
+  },
+  "version": "v2.0"
+}

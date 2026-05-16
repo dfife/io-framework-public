@@ -1,0 +1,58 @@
+{
+  "paper": "Paper 27",
+  "target_section": "v2.0 section 9",
+  "topic": "Boundary State on the Lifted Carrier",
+  "carrier": "h_vec = L^2(R,dnu) tensor H_g tensor Omega^1_coex(S^3)",
+  "executive_verdict": "carrier fixed theorem-grade; full carrier state not uniquely forced by current stack; rank-one lowest-shell scalar-amplitude quotient state is Hawking-KMS selected by Paper 31 bridge quotient",
+  "results": [
+    {
+      "id": "Definition 27.9.1",
+      "name": "Lifted Scalar-Bridge Carrier",
+      "status": "DERIVED/THEOREM",
+      "summary": "Paper 27 Theorem 27.1 fixes the unique minimal scalar-bridge carrier h_vec."
+    },
+    {
+      "id": "Lemma 27.9.5",
+      "name": "Full h_vec State Non-Selection",
+      "status": "DERIVED/THEOREM",
+      "summary": "A CCR carrier plus SU(2) symmetry constrains but does not determine a unique full quasifree covariance or KMS state."
+    },
+    {
+      "id": "Lemma 27.9.6",
+      "name": "Reduced Paper 17 KMS Class Spectral No-Go",
+      "status": "DERIVED/NO-GO",
+      "summary": "The current reduced Paper 17 modular class has continuous spectral type and cannot already contain the discrete full coexact Hawking carrier as an exact modular subsystem."
+    },
+    {
+      "id": "Theorem 27.9.7",
+      "name": "Boundary State Non-Selection on the Full Lifted Carrier",
+      "status": "DERIVED/NO-GO for full-state uniqueness from the current stack; OPEN/PREMISE_GAP for full h_vec state selection",
+      "summary": "The full equilibrium state on h_vec is constrained but not selected by Papers 1-26 plus the Paper 31 bridge-quotient picture."
+    },
+    {
+      "id": "Corollary 27.9.8",
+      "name": "Rank-One Lowest-Shell Quotient State Selection",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "summary": "On the rank-one lowest-shell scalar-amplitude bridge quotient, the state is uniquely the Hawking beta_H-KMS one-mode state with g_H = 1/(exp(4*pi*sqrt(2))-1)."
+    },
+    {
+      "id": "Theorem 27.9.9",
+      "name": "Bridge-Readable State Rigidity and Full-Carrier Residual Freedom",
+      "status": "DERIVED/CONDITIONAL_VERIFIED for the Paper 31 scalar-amplitude bridge-readable quotient; OPEN/PREMISE_GAP for full h_vec state selection",
+      "summary": "Any Paper 31-compatible scalar-amplitude source state has the same rank-one quotient covariance and therefore the same B G B^dagger for A_s; residual full-carrier freedom lives in ker(B), non-amplitude shell directions, or later observable sectors."
+    }
+  ],
+  "does_not_cover": [
+    "full coexact carrier Hawking state selection",
+    "full shell covariance on h_vec",
+    "arbitrary scalar-bridge observables outside the rank-one lowest-shell quotient",
+    "claim that Paper 17 KMS inheritance already proves C2c"
+  ],
+  "extension_needed_for_full_closure": [
+    "invariant embedding of the full Omega^1_coex(S^3) carrier into the relevant Hawking/Hartle-Hawking field algebra",
+    "identification of the induced one-particle generator on that carrier",
+    "equality of bridge covariance G^(1) with the restricted Hawking/Hartle-Hawking two-point function",
+    "compatibility of the full shell covariance with Paper 28/Paper 31 primitive DtN window law"
+  ],
+  "artifact": "/opt/cosmology-lab/results/paper27/paper27_v2_section9_boundary_state_on_lifted_carrier.md"
+}

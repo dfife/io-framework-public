@@ -1,0 +1,83 @@
+{
+  "paper": 27,
+  "version": "v2.0",
+  "audit_type": "kappa-style hidden-parameter and R4 damage audit",
+  "overall_verdict": "no hidden fitted parameter found in active v2.0 theorem chain or bundle scripts",
+  "r4": {
+    "R4_FIRAS": 1.0031014644,
+    "active_R4_equals_one_found": false,
+    "active_R4_use_in_bundle_scripts": false,
+    "active_independent_CMB_temperature_prediction": false,
+    "retired_CMB_temperature_scripts_excluded": [
+      "paper27_full_io_native_planck_tt_confrontation.py",
+      "paper27_io_geometry_floor_scan.py",
+      "paper27_theta_s_constrained_geometry_floor_scan.py",
+      "paper27_baryon_diagnostics.py",
+      "paper27_c3_candidate_discriminator_scan.py",
+      "paper27_trgb_jwst_scope.py"
+    ]
+  },
+  "audit_targets": [
+    {
+      "audit_target": "gamma_BI import",
+      "verdict": "IMPORTED/EMPIRICAL",
+      "evidence": "Used as frozen framework Barbero-Immirzi input; not fit in Paper 27.",
+      "recommendation": "Keep source citation explicit."
+    },
+    {
+      "audit_target": "Theorem 27.2 C1a cross-term vanishing",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "SU(2) representation mismatch gives zero equivariant cross-map.",
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "Theorem 27.1 Spatial CCR Lift",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "Closed S3 Hodge/coexact carrier plus channel-floor structure.",
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "rank-one scalar quotient",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "Current scalar bridge reads a rank-one quotient.",
+      "recommendation": "Keep full h_vec state-selection gap explicit."
+    },
+    {
+      "audit_target": "full h_vec state selection",
+      "verdict": "OPEN/PREMISE_GAP",
+      "evidence": "Residual state freedom remains after the rank-one quotient.",
+      "recommendation": "Do not present as closed."
+    },
+    {
+      "audit_target": "backreaction/passivity residual reduction",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "Backreaction and passivity restrict residual states but do not select a unique full state.",
+      "recommendation": "Keep restriction/result distinction visible."
+    },
+    {
+      "audit_target": "bridge-readable covariance",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "Rank-one bridge-readable Hawking/KMS factor computed as 1/(exp(4*pi*sqrt(2))-1).",
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "universal future-observable closure",
+      "verdict": "DERIVED/NO-GO",
+      "evidence": "Current banked observables are exhausted; all future possible observables cannot be exhausted without future specification.",
+      "recommendation": "Keep no-go boundary explicit."
+    },
+    {
+      "audit_target": "visibility-slot inheritance",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "omega_b,vis = omega_b,eff = 0.02910 is inherited as slot equality, not fit in Paper 27.",
+      "recommendation": "No action."
+    }
+  ],
+  "noncanonical_label_findings": [
+    "Historical/version-history text includes DERIVED/SCOPED.",
+    "Historical/version-history text includes SEMICLASSICAL PRINCIPLE.",
+    "Archive-style language includes KILLED/dead-route terms."
+  ],
+  "abbreviation_review_required": true,
+  "io_slang_review_required": true
+}

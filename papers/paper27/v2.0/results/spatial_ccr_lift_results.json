@@ -1,0 +1,21 @@
+{
+  "audit_target": "Theorem 27.1 Spatial CCR Lift",
+  "carrier": "L2(R,dnu) tensor H_g tensor Omega1_coex(S3)",
+  "chain": [
+    "P1: closed K=+1 interior spatial slice",
+    "Hodge decomposition on compact S3",
+    "Paper 22 v2.0 Channel Floor Theorem",
+    "Paper 27 v2.0 Theorem 27.1"
+  ],
+  "hidden_fitted_parameter": false,
+  "paper": 27,
+  "status": "DERIVED/THEOREM",
+  "topology_check": {
+    "coexact_branch_available": true,
+    "first_betti_number": 0,
+    "harmonic_one_form_dimension": 0,
+    "lowest_coexact_vector_shell": 1,
+    "manifold": "S3"
+  },
+  "version": "v2.0"
+}

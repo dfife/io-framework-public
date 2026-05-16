@@ -1,0 +1,22 @@
+{
+  "audit_targets": [
+    "Theorem 27.7.5 bridge-readable state rigidity",
+    "Theorem 27.8.5 current scalar-bridge observable exhaustion",
+    "Theorem 27.9.5 banked IO observable classification",
+    "Theorem 27.11.4 universal all-future-observable no-go"
+  ],
+  "boundary_covariance_l1_occupation": 1.9139114172056972e-08,
+  "boundary_l1_beta_omega": 17.771531752633464,
+  "claim_boundary": "The rank-one scalar quotient is fixed; the full h_vec state is not uniquely selected.",
+  "formula": "1/(exp(4*pi*sqrt(2)) - 1)",
+  "frozen_boundary_covariance_l1_occupation": 1.9139114172056972e-08,
+  "hidden_fitted_parameter": false,
+  "paper": 27,
+  "statuses": {
+    "27.11.4": "DERIVED/NO-GO",
+    "27.7.5": "DERIVED/CONDITIONAL_VERIFIED",
+    "27.8.5": "DERIVED/THEOREM",
+    "27.9.5": "DERIVED/THEOREM"
+  },
+  "version": "v2.0"
+}

@@ -1,0 +1,31 @@
+{
+  "R4_FIRAS": 1.0031014644,
+  "abbreviation_and_slang_review_required": true,
+  "active_R4_equals_one_found": false,
+  "active_R4_use_in_bundle_scripts": false,
+  "active_independent_CMB_temperature_prediction": false,
+  "audit_target": "Paper 27 v2.0 kappa/R4 audit",
+  "hidden_fitted_parameter_found": false,
+  "historical_label_language_flagged": [
+    "DERIVED/SCOPED in older version-history text",
+    "SEMICLASSICAL PRINCIPLE in older version-history text",
+    "KILLED or dead-route language in archive-style material"
+  ],
+  "noncanonical_active_labels_found": false,
+  "open_premise_gaps_preserved": [
+    "full h_vec state selection",
+    "AV1 beyond visibility-slot inheritance"
+  ],
+  "paper": 27,
+  "recommendation": "Keep retired CMB-temperature scripts out of the v2.0 bundle and define or replace IO-internal abbreviations in manuscript-facing text.",
+  "retired_scripts_excluded_for_CMB_temperature_dependency": [
+    "paper27_full_io_native_planck_tt_confrontation.py",
+    "paper27_io_geometry_floor_scan.py",
+    "paper27_theta_s_constrained_geometry_floor_scan.py",
+    "paper27_baryon_diagnostics.py",
+    "paper27_c3_candidate_discriminator_scan.py",
+    "paper27_trgb_jwst_scope.py"
+  ],
+  "status": "VERIFIED",
+  "version": "v2.0"
+}

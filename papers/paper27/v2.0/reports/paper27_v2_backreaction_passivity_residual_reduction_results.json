@@ -1,0 +1,145 @@
+{
+  "paper": "Paper 27",
+  "version_context": "v2.0 draft",
+  "artifact": "backreaction_passivity_residual_reduction",
+  "source_report": "results/paper27/paper27_v2_backreaction_passivity_residual_reduction.md",
+  "question": "Can residual state-selection freedom on h_vec be reduced further using P1, P2, exterior physics, semiclassical backreaction, and thermodynamic passivity?",
+  "executive_verdict": {
+    "summary": "Yes. Positive-energy residual additions are excluded from the exact P1 background, and background equilibrium replacement states reduce to Hawking-KMS candidates. Full state uniqueness still requires a full exterior-generator embedding theorem or joint-observable exhaustion theorem.",
+    "full_state_status": "OPEN/PREMISE_GAP",
+    "positive_residual_addition_status": "DERIVED/CONDITIONAL_VERIFIED",
+    "passivity_reduction_status": "DERIVED/THEOREM on the defined equilibrium class",
+    "fixed_generator_kms_status": "DERIVED/THEOREM conditional on fixed exterior generator"
+  },
+  "theorems": [
+    {
+      "id": "27.B2",
+      "name": "Positive-Energy Residual Addition Exclusion",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "scope": "exterior-realizable positive-energy residual sectors",
+      "claim": "A nonzero positive residual covariance increment on strictly positive coexact shell modes is not exact-P1 background-admissible if it adds exterior energy, flux, or stress-energy not already included in the banked Hawking background.",
+      "chain": [
+        "Definition 27.B1",
+        "positivity of the one-particle energy generator",
+        "positivity of quasifree bosonic energy expectation",
+        "Theorem 27.G6",
+        "H1(S3)=0 and gauge-null removal",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.B3",
+      "name": "Non-Hawking Flux Exclusion",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "scope": "exterior-realizable residual states",
+      "claim": "A residual state producing independent non-Hawking net horizon flux is not admissible as the fixed P1 background state.",
+      "chain": [
+        "Definition 27.B1",
+        "Hawking 1975 Schwarzschild horizon thermality",
+        "semiclassical stress-energy conservation on fixed Schwarzschild background",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.B4",
+      "name": "Horizon Symmetry Stress Exclusion",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "scope": "exterior-realizable residual states",
+      "claim": "A residual state producing anisotropic horizon stress-energy incompatible with the round Schwarzschild horizon is not admissible as the fixed P1 background state.",
+      "chain": [
+        "Definition 27.B1",
+        "spherical symmetry of Schwarzschild horizon geometry",
+        "semiclassical Einstein equation compatibility",
+        "standard QFT stress-energy transformation under rotations",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.B6",
+      "name": "Complete Passivity Implies KMS",
+      "status": "DERIVED/THEOREM",
+      "scope": "defined background equilibrium residual state class",
+      "claim": "A faithful normal completely passive equilibrium state for the exterior horizon time flow is a KMS state, with the Schwarzschild thermal branch at Hawking inverse temperature.",
+      "chain": [
+        "Definition 27.B5",
+        "Pusz-Woronowicz 1978 complete passivity theorem",
+        "Hawking 1975 Schwarzschild horizon temperature",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.B7",
+      "name": "Fixed-Generator Quasifree KMS Uniqueness",
+      "status": "DERIVED/THEOREM",
+      "scope": "CCR algebra with fixed positive exterior one-particle generator",
+      "claim": "For a fixed positive one-particle generator H_ext, the gauge-invariant quasifree beta_H-KMS covariance is unique: G_beta = (exp(beta_H H_ext)-1)^(-1).",
+      "chain": [
+        "Lemma 27.B6",
+        "Araki-Woods quasifree CCR KMS uniqueness",
+        "fixed positive exterior one-particle generator H_ext",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.B8",
+      "name": "Backreaction-Passivity Residual Reduction",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "scope": "exterior-realizable exact-P1 background-equilibrium state class",
+      "claim": "Within the exterior-realizable background-state class, residual freedom reduces to stress-energy-null/gauge-null residuals or replacement-state freedom in sectors whose exterior one-particle generator or Hartle-Hawking restriction embedding has not yet been proved.",
+      "chain": [
+        "Theorem 27.G6",
+        "Theorem 27.G7",
+        "Definition 27.B1",
+        "Lemma 27.B2",
+        "Lemma 27.B3",
+        "Lemma 27.B4",
+        "Definition 27.B5",
+        "Lemma 27.B6",
+        "Lemma 27.B7",
+        "Hawking 1975",
+        "Pusz-Woronowicz 1978",
+        "Araki-Woods quasifree CCR KMS uniqueness",
+        "semiclassical Einstein equation compatibility",
+        "P1",
+        "P2"
+      ]
+    }
+  ],
+  "remaining_gap": {
+    "name": "Full Exterior-Generator Embedding Theorem",
+    "statement_needed": "The physical one-particle dynamics on the complete lifted carrier h_vec is the restriction of the exterior Schwarzschild Hawking/Hartle-Hawking one-particle generator to the coexact bridge carrier.",
+    "why_needed": "Without it, passivity reduces equilibrium states to KMS candidates but cannot select the unique full covariance on every residual shell."
+  },
+  "routes_exhausted": [
+    {
+      "route": "fixed mass kills positive additions",
+      "verdict": "successful but scoped; it kills DeltaG >= 0 physical additions with positive energy, not arbitrary signed replacement states"
+    },
+    {
+      "route": "no-flux and no-anisotropic-stress",
+      "verdict": "successful but scoped; excludes states that alter Schwarzschild flux or spherical symmetry"
+    },
+    {
+      "route": "complete passivity",
+      "verdict": "successful reduction; forces equilibrium states to be KMS candidates"
+    },
+    {
+      "route": "fixed-generator KMS uniqueness",
+      "verdict": "successful conditional theorem; covariance is unique once H_ext is fixed"
+    },
+    {
+      "route": "P1 alone",
+      "verdict": "does not close full state selection because it does not identify the full residual one-particle generator"
+    }
+  ],
+  "must_not_overclaim": [
+    "Do not claim full h_vec state selection is closed.",
+    "Do not claim passivity selects a unique full covariance without fixed-generator identification.",
+    "Do not claim positive-energy exclusion handles arbitrary signed covariance replacement states.",
+    "Do not claim P1 alone proves the full exterior Hawking generator on h_vec."
+  ]
+}

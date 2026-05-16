@@ -1,0 +1,16 @@
+{
+  "audit_target": "Theorem 27.2 C1a cross-term vanishing",
+  "claim": "The cross covariance term vanishes by SU(2) representation mismatch.",
+  "hidden_fitted_parameter": false,
+  "paper": 27,
+  "representation_check": {
+    "invariant_hom_dimension": 0,
+    "selection_rule": "Hom_SU2(V_0, V_1) = 0",
+    "source_block": "scalar singlet",
+    "source_spin": 0,
+    "target_block": "S3 coexact vector shell",
+    "target_spin": 1
+  },
+  "status": "DERIVED/THEOREM",
+  "version": "v2.0"
+}

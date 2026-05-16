@@ -1,0 +1,95 @@
+{
+  "paper": "Paper 27",
+  "version_context": "v2.0 draft",
+  "artifact": "p1_background_perturbation_residual_classification",
+  "source_report": "results/paper27/paper27_v2_p1_background_perturbation_residual_classification.md",
+  "question": "Can P1 protect current scalar predictions from residual h_vec state freedom by classifying higher-shell residuals as perturbations rather than background normalization freedoms?",
+  "executive_verdict": {
+    "summary": "Yes. P1 does not select the full h_vec state, but it separates exact-background data from perturbative carrier data. Residual higher-shell freedom cannot be used as a hidden background normalization parameter for current scalar observables.",
+    "p1_background_perturbation_separation_status": "DERIVED/CONDITIONAL_VERIFIED",
+    "native_As_residual_fit_freedom_status": "excluded",
+    "full_h_vec_state_status": "OPEN/PREMISE_GAP"
+  },
+  "definitions": [
+    {
+      "id": "27.P1B1",
+      "name": "Exact P1 Background Sector",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "definition": "Schwarzschild horizon radius and mass parameter, closed K=+1 OS support geometry, round horizon symmetry, banked Hawking-compatible active quotient, and framework constants fixed independently of residual h_vec shell-tail choices."
+    },
+    {
+      "id": "27.P1B2",
+      "name": "h_vec Perturbation Sector",
+      "status": "DERIVED/THEOREM",
+      "definition": "Gauge/null-reduced coexact one-particle carrier used by the Paper 23 scalar bridge and upgraded by the Paper 27 Spatial CCR Lift Theorem."
+    },
+    {
+      "id": "27.P1B3",
+      "name": "Background-Normalization Freedom",
+      "status": "DERIVED/THEOREM",
+      "definition": "A variable changeable while leaving the exact P1 background interpretation intact and changing a current cosmological prediction."
+    },
+    {
+      "id": "27.P1B4",
+      "name": "Higher-Shell Residual Diagnostic",
+      "status": "DERIVED/THEOREM",
+      "definition": "Observable or diagnostic functional on h_vec that reads covariance outside the rank-one scalar-amplitude quotient, such as O_n(G)=Tr(P_n G P_n)."
+    }
+  ],
+  "theorems": [
+    {
+      "id": "27.P1B5",
+      "name": "Higher-Shell Residuals Are Not Exact-Background Normalizations",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "claim": "A nonzero higher-shell residual diagnostic on h_vec is not a background normalization freedom of the exact P1 sector."
+    },
+    {
+      "id": "27.P1B6",
+      "name": "Higher-Shell Diagnostics Are Future Perturbative Observables If Physical",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "claim": "If a higher-shell residual diagnostic is physical and not gauge/null or backreaction-forbidden, it is a perturbative observable of the h_vec sector, not a hidden parameter in the current scalar-amplitude chain."
+    },
+    {
+      "id": "27.P1B7",
+      "name": "P1 Background/Perturbation Separation for h_vec",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "claim": "Residual higher-shell freedom on h_vec cannot be used as a hidden background normalization parameter for current IO scalar observables. It is scalar-quotient null, a perturbative observable, a backreaction-constrained deformation, gauge/null, or a separately fixed exterior import.",
+      "chain": [
+        "Definition 27.P1B1",
+        "Definition 27.P1B2",
+        "Definition 27.P1B3",
+        "Definition 27.P1B4",
+        "Lemma 27.P1B5",
+        "Lemma 27.P1B6",
+        "Theorem 27.O5",
+        "Corollary 27.O6",
+        "Theorem 27.B8",
+        "Theorem 27.AO5",
+        "Theorem 27.AO6",
+        "Paper 31 rank-one active-line quotient closure",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.P1B8",
+      "name": "Full State Selection Remains Open but Non-Damaging for Current Scalar Predictions",
+      "status": "DERIVED/CONDITIONAL_VERIFIED",
+      "claim": "The full ambient h_vec state remains open, but that open status does not create a hidden fitted parameter in current scalar predictions."
+    }
+  ],
+  "classification_cases": [
+    "scalar-quotient null",
+    "future perturbative observable",
+    "backreaction-constrained deformation",
+    "gauge/null",
+    "external imported sector"
+  ],
+  "recommended_wording": "The full state on h_vec is not selected in this paper. This is not a hidden normalization freedom for the scalar amplitude. P1 separates exact-background data from perturbative carrier data: residual higher-shell covariance either is null under the scalar bridge quotient, is constrained by backreaction, is gauge/null, is separately fixed by imported exterior physics, or becomes a future perturbative observable. It is not adjustable inside the current scalar prediction chain.",
+  "must_not_overclaim": [
+    "Do not claim P1 selects the full h_vec state.",
+    "Do not claim higher-shell h_vec observables are unphysical.",
+    "Do not claim full state selection is no longer open.",
+    "Do not treat future perturbative observables as hidden background parameters."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "AV1_promoted": false,
+  "audit_targets": [
+    "Theorem 27.3 AV1 visibility-slot inheritance",
+    "H2 spatial CCR lift inheritance",
+    "H3 quadratic thermal covariance inheritance"
+  ],
+  "formula": "omega_b,vis = omega_b,eff",
+  "full_h_vec_state_selected": false,
+  "hidden_fitted_parameter": false,
+  "omega_b_effective": 0.0291,
+  "omega_b_visibility": 0.0291,
+  "paper": 27,
+  "statuses": {
+    "H2": "DERIVED/THEOREM via Paper 27 v2.0 Theorem 27.1",
+    "H3": "DERIVED/THEOREM via Paper 25 v2.0 Theorems 25.9-25.11",
+    "Theorem 27.3": "DERIVED/THEOREM"
+  },
+  "version": "v2.0"
+}

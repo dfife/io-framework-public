@@ -1,0 +1,69 @@
+{
+  "paper": 27,
+  "version": "v2.0",
+  "framework_constants": {
+    "gamma_BI": {
+      "value": 0.2375,
+      "unit": "dimensionless",
+      "source": "Imported Barbero-Immirzi parameter used by the IO framework."
+    },
+    "x": {
+      "value": 1.51899,
+      "unit": "dimensionless",
+      "source": "Framework horizon-to-interior radius ratio."
+    },
+    "K_gauge": {
+      "value": 0.05487281774291466,
+      "unit": "dimensionless",
+      "formula": "ln(1 + gamma_BI^2)"
+    },
+    "R4_FIRAS": {
+      "value": 1.0031014644,
+      "unit": "dimensionless",
+      "source": "Paper 17 v1.5 FIRAS-fixed optical readout normalization."
+    },
+    "r_s_m": {
+      "value": 6.685e+26,
+      "unit": "m",
+      "source": "Framework Schwarzschild radius snapshot."
+    },
+    "M_U_kg": {
+      "value": 4.5e+53,
+      "unit": "kg",
+      "source": "Framework mass snapshot."
+    }
+  },
+  "paper27_values": {
+    "hawking_boundary_beta_omega_l1": {
+      "value": 17.771531752633464,
+      "unit": "dimensionless",
+      "formula": "4*pi*sqrt(2)"
+    },
+    "boundary_covariance_l1_occupation": {
+      "value": 1.9139114172056972e-08,
+      "unit": "dimensionless",
+      "formula": "1/(exp(4*pi*sqrt(2)) - 1)"
+    },
+    "closed_geometry_n1_reference_exponent": {
+      "value": 25.132741228718345,
+      "unit": "dimensionless",
+      "formula": "8*pi"
+    },
+    "omega_b_visibility": {
+      "value": 0.0291,
+      "unit": "dimensionless",
+      "formula": "omega_b,vis = omega_b,eff"
+    }
+  },
+  "claim_taxonomy": [
+    "DERIVED/THEOREM",
+    "DERIVED/CONDITIONAL_VERIFIED",
+    "DERIVED/NO-GO",
+    "VERIFIED",
+    "IMPORTED/EMPIRICAL",
+    "RECONSTRUCTION",
+    "RECONSTRUCTION/RESEARCH_ONLY",
+    "OPEN/PREMISE_GAP",
+    "SUPERSEDED"
+  ]
+}

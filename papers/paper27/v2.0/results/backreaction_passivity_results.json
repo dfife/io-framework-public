@@ -1,0 +1,21 @@
+{
+  "audit_target": "Theorem 27.6.15 backreaction-passivity residual reduction",
+  "excluded_classes": [
+    "negative-energy residuals violating the closed-geometry backreaction sign condition",
+    "non-passive residuals that fail equilibrium admissibility"
+  ],
+  "full_state_selected": false,
+  "hidden_scalar_amplitude_fit": false,
+  "paper": 27,
+  "scope": "Restriction theorem, not full state-selection closure.",
+  "standard_physics_inputs": [
+    "Pusz-Woronowicz passivity",
+    "KMS equilibrium-state structure",
+    "standard stress-energy backreaction constraint"
+  ],
+  "status": "DERIVED/CONDITIONAL_VERIFIED",
+  "surviving_classes": [
+    "positive passive residual states invisible to the current scalar quotient"
+  ],
+  "version": "v2.0"
+}

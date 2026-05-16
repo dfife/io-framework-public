@@ -1,0 +1,64 @@
+{
+  "paper": "Paper 27",
+  "target": "v2.0 residual state freedom after fixed scalar-amplitude quotient",
+  "artifact": "/opt/cosmology-lab/results/paper27/paper27_v2_residual_state_freedom_classification.md",
+  "executive_verdict": "P1 fixes the geometry, horizon temperature, coexact spectrum, and rank-one Hawking quotient, but does not reduce the full h_vec state space to finite freedom. An infinite-dimensional residual covariance cone remains outside the current scalar-amplitude readout.",
+  "main_theorem": {
+    "id": "Theorem 27.R5",
+    "name": "Infinite Residual State Freedom after Fixed Scalar-Amplitude Quotient",
+    "status": "DERIVED/THEOREM",
+    "scope": "relative to the current scalar-amplitude observable family",
+    "statement": "After imposing P1, P2, the Paper 27 Spatial CCR Lift, and the Paper 31 rank-one scalar-amplitude quotient selection, the admissible full-carrier covariance space contains an infinite-dimensional residual cone R_A of covariance perturbations satisfying B DeltaG B^dagger = 0."
+  },
+  "supporting_results": [
+    {
+      "id": "Definition 27.R1",
+      "name": "Fixed Scalar-Amplitude Quotient",
+      "status": "DERIVED/CONDITIONAL_VERIFIED by Paper 31 quotient chain"
+    },
+    {
+      "id": "Definition 27.R2",
+      "name": "Scalar-Amplitude Residual Cone",
+      "status": "definition",
+      "formula": "R_A = {Delta G >= 0 : B DeltaG B^dagger = 0}"
+    },
+    {
+      "id": "Lemma 27.R3",
+      "name": "Residual Perturbation Preserves the Native Scalar Amplitude",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "Lemma 27.R4",
+      "name": "Infinite Residual Directions Exist",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "Corollary 27.R6",
+      "name": "Residual Freedom Is Not a Hidden A_s Parameter",
+      "status": "DERIVED/THEOREM"
+    },
+    {
+      "id": "Corollary 27.R7",
+      "name": "What Would Make the Freedom Finite",
+      "status": "OPEN/PREMISE_GAP for full state selection"
+    }
+  ],
+  "what_p1_fixes": [
+    "Schwarzschild horizon boundary",
+    "r_s",
+    "round horizon coexact spectrum",
+    "beta_H",
+    "omega_1 = sqrt(2)c/r_s",
+    "beta_H hbar omega_1 = 4*pi*sqrt(2)",
+    "rank-one lowest-shell Hawking quotient with P2 and one-mode KMS uniqueness"
+  ],
+  "what_p1_does_not_fix": [
+    "positive one-particle generator on full h_vec",
+    "full quasifree covariance on all coexact shells",
+    "covariances in ker(B)",
+    "non-amplitude shell directions",
+    "future observable sectors not represented by the Paper 31 rank-one quotient"
+  ],
+  "anti_fit_boundary": "The infinite residual cone is not a hidden A_s parameter because every DeltaG in R_A satisfies B DeltaG B^dagger = 0.",
+  "full_state_status": "OPEN/PREMISE_GAP"
+}

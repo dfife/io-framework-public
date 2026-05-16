@@ -1,0 +1,102 @@
+{
+  "paper": "Paper 27",
+  "version_context": "v2.0 draft",
+  "artifact": "closed_geometry_residual_reduction",
+  "source_report": "results/paper27/paper27_v2_closed_geometry_residual_reduction.md",
+  "question": "Can P1 closed Hilbert-space geometry reduce the residual state-selection freedom on the lifted scalar-bridge carrier h_vec?",
+  "executive_verdict": {
+    "summary": "Yes, P1 adds theorem-grade restrictions, but it does not make the full carrier state finite or unique.",
+    "full_state_status": "OPEN/PREMISE_GAP",
+    "residual_classification_status": "DERIVED/THEOREM",
+    "scalar_amplitude_quotient_status": "DERIVED/CONDITIONAL_VERIFIED"
+  },
+  "p1_restrictions": [
+    {
+      "factor": "closed compact spatial geometry",
+      "effect": "forces a discrete pure-point coexact Hodge spectrum with finite shell multiplicities"
+    },
+    {
+      "factor": "S3 Hodge topology",
+      "effect": "removes exact and harmonic one-form sectors from the coexact carrier; H1(S3)=0"
+    },
+    {
+      "factor": "homogeneity and isotropy",
+      "effect": "forces covariance blocks to be scalar on irreducible coexact shells by Schur's lemma"
+    },
+    {
+      "factor": "geometric locality and naturality",
+      "effect": "reduces admissible residual covariance to functional calculus of the coexact Hodge Laplacian, modulo smoothing terms"
+    },
+    {
+      "factor": "finite-energy/Hadamard regularity",
+      "effect": "constrains high-shell behavior so residual differences are rapidly decaying smoothing shell tails"
+    },
+    {
+      "factor": "fixed scalar-amplitude quotient",
+      "effect": "requires residual covariance increments to satisfy B DeltaG B^dagger = 0, preventing native A_s tuning"
+    }
+  ],
+  "theorems": [
+    {
+      "id": "27.G6",
+      "name": "Closed-Geometry Residual Shell Classification",
+      "status": "DERIVED/THEOREM",
+      "claim": "Every geometrically admissible residual state on h_vec is represented, up to bridge-null equivalence, by a positive shell-functional covariance on the coexact S3 Hodge tower whose residual increments are rapidly decaying smoothing tails invisible to the scalar-amplitude bridge compression.",
+      "chain": [
+        "Definition 27.G1",
+        "Lemma 27.G2",
+        "Lemma 27.G3",
+        "Lemma 27.G4",
+        "Lemma 27.G5",
+        "Theorem 27.R5",
+        "Corollary 27.R6",
+        "Paper 27 Theorem 27.1 / Theorem 27.5",
+        "Paper 31 Bridge-Quotient Theorem and C2q rank-one quotient closure",
+        "Paper 22 v2.0 Hodge/channel theorems",
+        "standard Hodge theory",
+        "compact elliptic spectral theory",
+        "Schur's lemma",
+        "Hadamard QFT on curved spacetime",
+        "P1",
+        "P2"
+      ]
+    },
+    {
+      "id": "27.G7",
+      "name": "Closed Geometry Does Not Make the Residual Finite",
+      "status": "DERIVED/THEOREM",
+      "claim": "The closed-geometry restrictions of Theorem 27.G6 do not reduce the residual state-selection freedom to a finite-dimensional set or a unique covariance. Infinitely many rapidly decaying shell-tail perturbations remain.",
+      "chain": [
+        "Theorem 27.G6",
+        "infinite coexact shell tower on S3",
+        "existence of infinitely many compactly supported smooth spectral tails",
+        "P1",
+        "P2"
+      ]
+    }
+  ],
+  "remaining_open_routes": [
+    {
+      "name": "Full geometric KMS generator theorem",
+      "would_close_if": "the complete physical lifted-carrier dynamics are proved to be H_full = c sqrt(Delta_coex) and the state is beta_H KMS for that generator"
+    },
+    {
+      "name": "Hartle-Hawking restriction theorem",
+      "would_close_if": "the exterior Hartle-Hawking-Israel quasifree state is proved to restrict uniquely to h_vec with the required coexact carrier embedding"
+    },
+    {
+      "name": "Joint observable exhaustion theorem",
+      "would_close_if": "the intersection of kernels of all active IO observables is proved to be gauge/null only"
+    },
+    {
+      "name": "Full quotient-collapse theorem",
+      "would_close_if": "h_vec modulo the joint-null sector of active observables is proved finite-dimensional or rank-one"
+    }
+  ],
+  "must_not_overclaim": [
+    "Do not claim P1 fixes the full quasifree covariance on h_vec.",
+    "Do not claim the residual state freedom is finite.",
+    "Do not claim the residual shell-tail freedom can tune native A_s.",
+    "Do not claim full C2c state selection is closed by closed geometry alone."
+  ]
+}

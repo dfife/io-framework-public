@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, please cite the associated Paper 27 v2.0 Zenodo record and this GitHub release."
+title: "Paper 27 v2.0 Reproducibility Bundle"
+authors:
+  - family-names: "Fife"
+    given-names: "David"
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+version: "v2.0"
+date-released: "2026-05-16"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper27/v2.0"
+license: "MIT"
+keywords:
+  - "Interior Observer Framework"
+  - "black hole cosmology"
+  - "scalar perturbations"
+  - "canonical commutation relations"
+  - "Hawking boundary radiation"
+  - "reproducibility"
