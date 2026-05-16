@@ -1,0 +1,27 @@
+{
+  "appendix_formula_guard": {
+    "matches_body_A_s": false,
+    "note": "If the manuscript still contains an A_s formula proportional to [2/(exp(4*pi*sqrt(2))-1)]^2, that formula is not the active body formula and is numerically inconsistent with 2.007e-9.",
+    "squared_occupation_candidate": 2.173188623577422e-16
+  },
+  "c2c_fixed_carrier_terms": {
+    "beta_hbar_omega_l1": 17.771531752633464,
+    "canonical_source_covariance": 1.353339741696504e-08,
+    "hawking_occupation_l1": 1.9139114172056972e-08
+  },
+  "claim_boundary": "Forward arithmetic only. C2c full state selection is not proved by this script.",
+  "inputs": {
+    "Planck_A_s_reference": 2.1e-09,
+    "Planck_A_s_sigma": 3e-11,
+    "Q": 1.05640625,
+    "gamma_BI": 0.2375
+  },
+  "paper": "Paper 26 v2.0 C2c analysis",
+  "paper26_body_formula_terms": {
+    "A_s": 2.0072459972737347e-09,
+    "dust_conversion_factor": 2.7777777777777777,
+    "extrinsic_fraction_gamma2_over_Q": 0.053394468273923974,
+    "fractional_delta_vs_Planck": -0.044168572726793066,
+    "sigma_delta_vs_Planck": -3.0918000908755148
+  }
+}

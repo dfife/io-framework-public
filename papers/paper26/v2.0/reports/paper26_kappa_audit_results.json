@@ -1,0 +1,91 @@
+{
+  "paper": "Paper 26",
+  "version_audited": "v2.0",
+  "audit_type": "r4_repair_and_kappa_style_field_redefinition",
+  "date": "2026-05-16",
+  "executive_verdict": {
+    "hidden_continuous_parameter_found": false,
+    "r4_script_damage_found": false,
+    "r4_value": 1.0031014644,
+    "cmb_temperature_prediction_retired": true,
+    "summary": "No hidden continuous fitted parameter was found in active Paper 26 v2.0 scripted claims. R4 is metadata inherited from Paper 17 v1.5 and is not used to tune Paper 26 outputs."
+  },
+  "active_values": {
+    "A_s": 2.0072459972737347e-9,
+    "tau_eff_IO": 0.02743640887145733,
+    "A_eff": 1.9000701645543414e-9,
+    "omega_b_eff": 0.0291,
+    "typed_native_chi2_TT_highl": 8133.4934835173035,
+    "onefluid_eff_chi2_TT_highl": 2281.086162276891,
+    "high_l_TT_reionization_shape_delta_chi2": 0.3706526281876412
+  },
+  "open_premise_gaps": {
+    "C1": "Fluctuation covariance inherits the background gauge partition.",
+    "C2c": "Boundary covariance on the proved S2 coexact carrier is the Hawking thermal covariance.",
+    "AV1": "Thomson-gated scalar CMB observables belong to the acoustic baryon class.",
+    "low_l_EE": "Geometric source damping does not close the low-l EE reionization bump or ionization history."
+  },
+  "closed_conditional_verified": {
+    "C3": "Closed only as Theorem 26.C3 on the reduced centered Gaussian source-covariance class and Definition 26.C3.3; does not close astrophysical tau_reion, ionization history, low-l EE, or full Boltzmann transfer."
+  },
+  "r4_damage": {
+    "scripts_using_r4_equals_1": [],
+    "scripts_changed": [
+      "06_kappa_audit_summary.py",
+      "07_validate_expected_outputs.py",
+      "data/imported_constants.json"
+    ],
+    "manuscript_stale_entries": [
+      {
+        "surface": "Step 35 Piece 5",
+        "issue": "Uses ln(T_obs/T_IO)=K_gauge*ln(x) and omits R4_FIRAS.",
+        "recommendation": "Replace with ln(T_obs/T_IO)=R4_FIRAS*K_gauge*ln(x) within the FIRAS-normalized readout family."
+      },
+      {
+        "surface": "Step 88",
+        "issue": "Uses T_obs=T_IO*x^K_gauge.",
+        "recommendation": "Replace with T_obs(R4)=T_IO*x^(R4*K_gauge), R4=R4_FIRAS fixed by FIRAS; not an independent CMB-temperature prediction."
+      }
+    ]
+  },
+  "label_drift_recommendations": [
+    "Use DERIVED/CONDITIONAL_VERIFIED for A_s on C1+C2c.",
+    "Use DERIVED/CONDITIONAL_VERIFIED for Theorem 26.AV' on AV1.",
+    "Use DERIVED/CONDITIONAL_VERIFIED for Theorem 26.C3 on the reduced source-covariance class.",
+    "Keep C1, C2c, and AV1 as OPEN/PREMISE_GAP endpoints.",
+    "Do not use retired DERIVED/SCOPED or bare CONDITIONAL labels for active Paper 26 claims."
+  ],
+  "abbreviations_to_review": [
+    "IO",
+    "CMB",
+    "BBN",
+    "CLASS",
+    "LambdaCDM/LCDM",
+    "GTTP",
+    "CMP",
+    "BDP",
+    "GMP",
+    "TBS/TBSb",
+    "WMR",
+    "PSRP",
+    "KMS",
+    "CCR",
+    "OS",
+    "FRW",
+    "LQG",
+    "TT/TE/EE",
+    "C1/C2c/AV1/C3/H1/H2/R4"
+  ],
+  "io_slang_to_review": [
+    "slot",
+    "readout",
+    "branch",
+    "rung",
+    "alpha-ladder",
+    "bridge",
+    "no-doubling",
+    "puncture",
+    "one-slot/two-slot",
+    "Rosetta"
+  ]
+}

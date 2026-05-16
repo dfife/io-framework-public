@@ -1,0 +1,27 @@
+{
+  "reference_bounds": {
+    "BK18_Planck_PR4_plus_BAO_bound_from_2112_07961": 0.032,
+    "user_stated_BICEP_Keck_bound": 0.036
+  },
+  "scalar": {
+    "betaomega": 17.771531752633464,
+    "g": 1.9139114172056972e-08,
+    "omega_hat": 1.4142135623730951
+  },
+  "tensor_cases": {
+    "naive_l2_scalar_like_lambda6": {
+      "betaomega_tensor": 30.781195923884734,
+      "g_tensor": 4.2844636629021835e-14,
+      "omega_hat_tensor": 2.449489742783178,
+      "r_canonical_g_over_omega_ratio": 1.2924507513107606e-06,
+      "r_raw_g_ratio": 2.2385903675508047e-06
+    },
+    "rank2_tensor_like_lambda4": {
+      "betaomega_tensor": 25.132741228718345,
+      "g_tensor": 1.2161556709557224e-11,
+      "omega_hat_tensor": 2.0,
+      "r_canonical_g_over_omega_ratio": 0.0004493164700207459,
+      "r_raw_g_ratio": 0.000635429445700943
+    }
+  }
+}

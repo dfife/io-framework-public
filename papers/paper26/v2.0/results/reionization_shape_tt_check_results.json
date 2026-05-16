@@ -1,0 +1,10 @@
+{
+  "baseline_reio_camb_chi2_TT_highl": 2281.086162276892,
+  "low_ell_EE_caveat": true,
+  "max_delta_chi2_TT_highl": 0.3706526281876412,
+  "max_shape_shift_case": "reio_none_posthoc_geometric_damping",
+  "max_shape_shift_chi2_TT_highl": 2281.4568149050797,
+  "paper": "Paper 26 v2.0",
+  "passes_less_than_0p4_claim": true,
+  "status": "VERIFIED computational diagnostic for high-l TT only"
+}

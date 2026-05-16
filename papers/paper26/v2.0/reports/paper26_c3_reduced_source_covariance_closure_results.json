@@ -1,0 +1,55 @@
+{
+  "paper": "Paper 26",
+  "date": "2026-05-16",
+  "target": "C3 propagator identification",
+  "verdict": "closed_on_reduced_source_covariance_class",
+  "canonical_label": "DERIVED/CONDITIONAL_VERIFIED",
+  "old_statement_status": "too_broad_if_read_as_all_CMB_source_or_reionization_physics",
+  "replacement_theorem": "Reduced Source-Covariance Propagator Theorem",
+  "closed_claims": [
+    "G_A^(1) = exp(-K_gauge) G_Gamma^(1) on the reduced centered Gaussian source-covariance class",
+    "C_ell^A = exp(-K_gauge) C_ell^Gamma for the Paper 23 linear scalar bridge covariance",
+    "tau_eff_IO = K_gauge / 2 for the effective high-ell source damping convention"
+  ],
+  "not_closed": [
+    "astrophysical reionization optical depth tau_reio",
+    "ionization history x_e(z)",
+    "low-ell EE reionization bump",
+    "full IO-native Boltzmann transfer pipeline",
+    "absolute primordial scalar amplitude A_s",
+    "C1",
+    "C2c",
+    "literal nonabelian WZW current-current propagator",
+    "arbitrary horizon observables outside the reduced centered Gaussian source-covariance class"
+  ],
+  "numeric_values": {
+    "gamma_BI": 0.2375,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "tau_eff_IO": 0.02743640887145733,
+    "damping_factor_exp_minus_K_gauge": 0.9466055317260761
+  },
+  "dependency_chain": [
+    "Premise 1",
+    "Premise 2",
+    "Paper 10 reduced tangential operator calculation",
+    "Paper 14 Theorem 14.1 horizon-intrinsic reformulation",
+    "Paper 17/Paper 18 reduced central tangential sector and K_gauge definition",
+    "Paper 23 Theorem 23.3 no-doubling linear scalar bridge",
+    "standard Chern-Simons boundary-descent literature: Witten 1989; Elitzur-Moore-Schwimmer-Seiberg 1989; Gallardo-Montesinos 2011; Cattaneo-Mnev-Wernli 2022/2023",
+    "standard Gaussian inverse-kernel covariance theorem"
+  ],
+  "anti_fit_check": {
+    "uses_observational_tau": false,
+    "uses_planck_to_select_value": false,
+    "planck_tau_not_matched": true,
+    "comment": "The derived tau_eff_IO is approximately half the LCDM-reported Planck tau and is therefore not selected by fitting to that number."
+  },
+  "recommended_manuscript_action": [
+    "Retire broad C3 wording.",
+    "Insert Reduced Source-Covariance Propagator Theorem.",
+    "Remove C3 from the independent OPEN/PREMISE_GAP list only under the reduced-class wording.",
+    "Keep reionization history and low-ell EE as open caveats."
+  ],
+  "report_path": "/opt/cosmology-lab/results/paper26/paper26_c3_reduced_source_covariance_closure_report.md"
+}

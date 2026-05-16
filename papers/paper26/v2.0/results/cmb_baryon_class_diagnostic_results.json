@@ -1,0 +1,27 @@
+{
+  "baryon_values": {
+    "omega_b_clustering": 0.01705,
+    "omega_b_eff": 0.0291,
+    "omega_b_geom": 0.02108
+  },
+  "claim_boundary": "The no-authorization statement is theorem-backed; chi-square values are verified CLASS diagnostics.",
+  "conditionals": [
+    "AV1"
+  ],
+  "diagnostic_rows": {
+    "onefluid_eff": {
+      "100theta_s": 1.0408337342190783,
+      "chi2_TT_highl": 2281.086162276891
+    },
+    "typed_native_geomchem_effacoustic": {
+      "100theta_s": 1.0357858057791183,
+      "chi2_TT_highl": 8133.4934835173035,
+      "delta_chi2_TT_highl_vs_onefluid": 5852.407321240413
+    }
+  },
+  "legacy_text_note": {
+    "hygiene_note": "v2.0 still quotes chi2=7714 in the body diagnostic while the current bundled typed-native row gives chi2=8133.4934835173035 for the comparable geometry-chemistry/effective-acoustic route. Keep the row explicitly scoped or align the manuscript to the bundled artifact.",
+    "manuscript_v1_1_legacy_clustering_claim": 7714
+  },
+  "paper": "Paper 26 v2.0"
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, cite the associated Paper 26 manuscript and this GitHub release."
+title: "Paper 26 v2.0 reproducibility bundle"
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+type: software
+version: "v2.0"
+date-released: 2026-05-16
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper26-v2.0"

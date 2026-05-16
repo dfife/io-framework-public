@@ -1,0 +1,26 @@
+{
+  "CMB_temperature_status": "IMPORTED/EMPIRICAL via FIRAS; not counted as an independent Interior Observer prediction",
+  "R4_FIRAS": 1.0031014644,
+  "audit": "kappa_style_field_redefinition",
+  "bridge_variable_hygiene": "Step 382 is aligned to the body theorem in the v2.0 draft, but Step 383 still carries older Levi-Civita-only language and should be reconciled with Theorem 26.2.",
+  "closed_conditional_verified": {
+    "C3": "The broad Paper 26 v1.1 propagator-identification premise is replaced by Theorem 26.C3, closed as DERIVED/CONDITIONAL_VERIFIED on the reduced centered Gaussian source-covariance class and Definition 26.C3.3."
+  },
+  "core_verdict": "no hidden continuous fitted parameter found; A_s remains conditional on C1+C2c, visibility remains conditional on AV1, and C3 is narrowed/closed by Theorem 26.C3 for the reduced centered Gaussian source-covariance class",
+  "hidden_continuous_parameter_found": false,
+  "hygiene_finding": "v2.0 still quotes chi2=7714 in the body diagnostic while the current bundled typed-native row gives chi2=8133.4934835173035 for the comparable geometry-chemistry/effective-acoustic route. Keep the row explicitly scoped or align the manuscript to the bundled artifact.",
+  "must_not_say": [
+    "Paper 26 proves all CMB inputs theorem-grade.",
+    "Paper 26 independently predicts the observed CMB temperature.",
+    "tau_eff_IO is identical to astrophysical tau_reio.",
+    "high-l TT reionization-shape insensitivity closes low-l EE.",
+    "Theorem 26.C3 closes arbitrary CMB transfer, ionization history, or low-l EE.",
+    "the chi2=7714 row is the current bundled reproducible CLASS row without qualification."
+  ],
+  "paper": "Paper 26 v2.0",
+  "visible_conditionals": {
+    "AV1": "Thomson-gated scalar CMB observables belong to the acoustic baryon class.",
+    "C1": "Background extrinsic/intrinsic gauge partition inherited by fluctuation covariance.",
+    "C2c": "Boundary covariance on the proved S2 coexact carrier is the Hawking thermal covariance."
+  }
+}
