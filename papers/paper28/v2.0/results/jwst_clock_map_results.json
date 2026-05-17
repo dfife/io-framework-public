@@ -1,0 +1,36 @@
+{
+  "audit_target": "homogeneous OS JWST formation-clock map",
+  "formula": "tau(z) = (r_s/(2c))[acos(1 - 2/[x(1+z)]) - 2 sqrt(u(1-u))]",
+  "hidden_fitted_parameter": false,
+  "inputs": {
+    "c_m_s": 299792458.0,
+    "r_s_m": 6.6835e+26,
+    "x": 1.519
+  },
+  "paper": 28,
+  "rows": [
+    {
+      "t_form_gyr": 0.7023379333234323,
+      "z": 10
+    },
+    {
+      "t_form_gyr": 0.5450883247302419,
+      "z": 12
+    },
+    {
+      "t_form_gyr": 0.43886595571758996,
+      "z": 14
+    },
+    {
+      "t_form_gyr": 0.3331013377565061,
+      "z": 17
+    },
+    {
+      "t_form_gyr": 0.2639107601144995,
+      "z": 20
+    }
+  ],
+  "scope": "Peculiar velocities, local potentials, and nonlinear structure are perturbative corrections around this background theorem.",
+  "status": "DERIVED/THEOREM on the homogeneous OS background",
+  "version": "v2.0"
+}

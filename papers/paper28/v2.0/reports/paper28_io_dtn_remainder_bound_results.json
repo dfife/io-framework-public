@@ -1,0 +1,40 @@
+{
+  "constants": {
+    "gamma_BI": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "x": 1.519,
+    "beta_target": 0.036124303978219,
+    "ell_pivot": 711,
+    "m_pivot": 712
+  },
+  "theorem": {
+    "assumption": "If the full IO DtN eigenvalues satisfy sigma_ell = (ell+1) + eps_ell with |eps_ell| <= A/(ell+1), i.e. the deviation from the flat-PG coexact ball DtN law is order -1 shellwise.",
+    "conclusion": "Then for the determinant-selected shell covariance G_ell proportional to sigma_ell^(-beta), the shell-slope error obeys |d ln G / d ln(ell+1) + beta| <= 2 beta A / ((ell+1)^2 - A)."
+  },
+  "rows": [
+    {
+      "A": 1,
+      "pivot_bound_abs_slope_error": 1.4251820807553908e-07
+    },
+    {
+      "A": 5,
+      "pivot_bound_abs_slope_error": 7.125966630742358e-07
+    },
+    {
+      "A": 10,
+      "pivot_bound_abs_slope_error": 1.4252073831393832e-06
+    },
+    {
+      "A": 50,
+      "pivot_bound_abs_slope_error": 7.126599245250289e-06
+    },
+    {
+      "A": 100,
+      "pivot_bound_abs_slope_error": 1.4254604564015358e-05
+    },
+    {
+      "A": 500,
+      "pivot_bound_abs_slope_error": 7.132931573524221e-05
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "paper": 28,
+  "version": "v2.0",
+  "audit_type": "kappa-style hidden-parameter and R4 damage audit",
+  "overall_verdict": "no hidden fitted parameter found in active v2.0 bundle chain",
+  "source_manuscript_warning": "Interior_Observer_Paper28_v2_0.docx was not present in Full Papers at bundle build time; audit used available Paper 28 working draft and support artifacts.",
+  "r4": {
+    "R4_FIRAS": 1.0031014644,
+    "active_R4_equals_one_found": false,
+    "active_R4_use_in_bundle_scripts": false,
+    "active_independent_CMB_temperature_prediction": false,
+    "excluded_CMB_temperature_artifacts": [
+      "paper28_archive_review_results.json historical excerpts",
+      "paper28_archive_review_report.txt",
+      "paper28_mixed_fluid_transfer_investigation.py",
+      "paper28_mixed_fluid_transfer_results.json",
+      "working-draft lines containing T_cmb = 2.7253"
+    ]
+  },
+  "audit_targets": [
+    {
+      "audit_target": "primitive line-scale root uniqueness",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "One-form line transport has inverse-length dimension, forcing q=1/2.",
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "one-form trace-log Gaussian extension",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "Trace-log determinant shell law follows inside centered one-loop Gaussian coexact one-form class.",
+      "recommendation": "Keep A-vacuum extension identification condition visible."
+    },
+    {
+      "audit_target": "coexact DtN Hessian spectral-index chain",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "Flat PG collar gives coexact DtN shell law sigma_l=l+1 and reproduces pivot n_s values.",
+      "recommendation": "Keep full IO Hessian identification condition visible."
+    },
+    {
+      "audit_target": "DtN lower-order remainder and O(1) exclusion",
+      "verdict": "DERIVED/CONDITIONAL_VERIFIED",
+      "evidence": "Lower-order remainder bound validated at pivot shell; O(1) deformation excluded on flat collar under Laplace-type hypothesis.",
+      "recommendation": "No action."
+    },
+    {
+      "audit_target": "homogeneous OS JWST formation-clock map",
+      "verdict": "DERIVED/THEOREM",
+      "evidence": "Proper-time and radial-null redshift map gives closed homogeneous-background clock formula.",
+      "recommendation": "State nonlinear/peculiar corrections as perturbative scope."
+    },
+    {
+      "audit_target": "mixed-fluid CMB-temperature transfer script",
+      "verdict": "SUPERSEDED",
+      "evidence": "Hardcodes T_cmb=2.7253 and belongs to excluded diagnostic branch.",
+      "recommendation": "Do not include in active v2.0 bundle."
+    }
+  ],
+  "noncanonical_label_findings": [
+    "lowercase derived/verified/conditional in working draft",
+    "derived / scoped theorem",
+    "SEMICLASSICAL PRINCIPLE",
+    "conditional_effective_fluid_proxy",
+    "verified_no_go",
+    "not derived"
+  ],
+  "abbreviation_review_required": true,
+  "io_slang_review_required": true
+}

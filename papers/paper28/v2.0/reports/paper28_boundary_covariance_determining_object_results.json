@@ -1,0 +1,52 @@
+{
+  "constants": {
+    "gamma_BI": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "x": 1.519,
+    "alpha_K_over_x": 0.036124303978219
+  },
+  "theorem": {
+    "statement": "In linear SO(3)-invariant Gaussian perturbation theory on the canonical coexact carrier, the shell law G^(1)(ell) is determined by the quadratic boundary operator Q = Gamma_eff''[Abar] restricted to the coexact sector. Once Q and the state-to-covariance functional are fixed, G^(1) is fixed.",
+    "typed_forms": {
+      "free_gaussian_field": "field covariance proportional to Q^(-1/2)",
+      "gaussian_kernel_covariance": "kernel-selected covariance proportional to Q^(-1)",
+      "KMS_occupation": "occupation proportional to (exp(beta Q^(1/2)) - 1)^(-1)"
+    }
+  },
+  "candidate_Q_objects": {
+    "free_field": {
+      "Q": "Q = Delta_1^coex",
+      "one_particle_scale": "sqrt(Q) = sqrt(Delta_1^coex)",
+      "bridge_relevant_shell_law": "lambda_ell^(-1/2)",
+      "pivot_ns": -0.0020678886285103726
+    },
+    "hawking_kms": {
+      "Q": "Q = Delta_1^coex, state = Hawking KMS on sqrt(Q)",
+      "bridge_relevant_shell_law": "exp(-4 pi sqrt(lambda_ell))",
+      "pivot_ns": -8958.75392930734
+    },
+    "determinant_selected_gaussian": {
+      "Q": "Q = (sqrt(Delta_1^coex))^(K_gauge/x)",
+      "bridge_relevant_shell_law": "lambda_ell^(-K_gauge/(2x))",
+      "pivot_ns": 0.963832748116771
+    },
+    "exact_shell_target": {
+      "bridge_relevant_shell_law": "k_MS(N)^(-K_gauge/x)",
+      "pivot_ns": 0.9639086392821637
+    }
+  },
+  "claim_boundary": {
+    "derived": [
+      "Linearity and Gaussianity alone do not fix G^(1)(ell); they only reduce the problem to the quadratic coexact-sector operator Q = Gamma_eff''[Abar] and the chosen state-to-covariance functional.",
+      "The physically determining object is the boundary effective Hessian on the coexact carrier."
+    ],
+    "verified": [
+      "Free-field covariance Q=Delta gives pivot n_s = -0.002067888629, far too red.",
+      "Ordinary Hawking/KMS on sqrt(Delta) gives pivot n_s = -8958.753929307341, catastrophically wrong.",
+      "The determinant-selected Gaussian operator Q=(sqrt(Delta))^(K_gauge/x) gives pivot n_s = 0.963832748117, close to the exact shell target 0.963908639282."
+    ],
+    "conditional": [
+      "The physical coexact-sector Hessian is the determinant-selected Gaussian operator rather than the standard free-field Laplacian or ordinary Hawking/KMS generator."
+    ]
+  }
+}

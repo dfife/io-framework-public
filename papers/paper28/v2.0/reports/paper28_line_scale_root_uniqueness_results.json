@@ -1,0 +1,184 @@
+{
+  "constants": {
+    "gamma_BI": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "x": 1.519,
+    "alpha_K_over_x": 0.036124303978219
+  },
+  "theorem": {
+    "statement": "Let A_q = (Delta_1^coex)^q on the canonical S^2 coexact carrier. Under metric length rescaling g -> L^2 g, one has Delta_1^coex -> L^(-2) Delta_1^coex, hence A_q -> L^(-2q) A_q. If A_q is to generate primitive line transport parameterized by arclength, it must have inverse-length dimension and therefore must scale as L^(-1). Hence 2q = 1 and q = 1/2. Equivalently, among homogeneous functional-calculus choices of Delta, only sqrt(Delta_1^coex) has the correct dimension for first-order line transport.",
+    "principal_symbol_version": "The Hodge Laplacian has principal symbol sigma_2(Delta_1^coex)(x,xi)=|xi|_g^2 Id. A reparametrization-invariant line generator must depend on the cotangent norm |xi|_g, not on |xi|_g^2. Therefore the unique isotropic first-order spectral scale is sigma_1(sqrt(Delta_1^coex))=|xi|_g Id."
+  },
+  "q_family": [
+    {
+      "q": 0.25,
+      "length_scaling_power": -0.5,
+      "generator_dimension": "L^(-0.5)",
+      "principal_symbol_order": 0.5,
+      "pivot_pure_slope": -0.018100097534250657,
+      "pivot_ns_total": 0.9819328457344046,
+      "sample_rows": [
+        {
+          "N": 10,
+          "pure_slope": -0.020278870636389418,
+          "ns_total": 0.9670121600440439
+        },
+        {
+          "N": 50,
+          "pure_slope": -0.01858276692926172,
+          "ns_total": 0.9808032209438885
+        },
+        {
+          "N": 100,
+          "pure_slope": -0.01832771928514431,
+          "ns_total": 0.9815162272017515
+        },
+        {
+          "N": 500,
+          "pure_slope": -0.018116122175955852,
+          "ns_total": 0.9818755892858446
+        },
+        {
+          "N": 712,
+          "pure_slope": -0.018100097534250657,
+          "ns_total": 0.9819328457344046
+        },
+        {
+          "N": 1000,
+          "pure_slope": -0.018089191117008876,
+          "ns_total": 0.9819562184866824
+        }
+      ]
+    },
+    {
+      "q": 0.5,
+      "length_scaling_power": -1.0,
+      "generator_dimension": "L^(-1.0)",
+      "principal_symbol_order": 1.0,
+      "pivot_pure_slope": -0.03620019504070697,
+      "pivot_ns_total": 0.963832748116771,
+      "sample_rows": [
+        {
+          "N": 10,
+          "pure_slope": -0.040557741294920215,
+          "ns_total": 0.9467332893781326
+        },
+        {
+          "N": 50,
+          "pure_slope": -0.03716553387265701,
+          "ns_total": 0.9622204540004932
+        },
+        {
+          "N": 100,
+          "pure_slope": -0.03665543858429969,
+          "ns_total": 0.963188507902596
+        },
+        {
+          "N": 500,
+          "pure_slope": -0.0362322442823851,
+          "ns_total": 0.9637594671446521
+        },
+        {
+          "N": 712,
+          "pure_slope": -0.03620019504070697,
+          "ns_total": 0.963832748116771
+        },
+        {
+          "N": 1000,
+          "pure_slope": -0.0361783821645597,
+          "ns_total": 0.9638670274113483
+        }
+      ]
+    },
+    {
+      "q": 0.75,
+      "length_scaling_power": -1.5,
+      "generator_dimension": "L^(-1.5)",
+      "principal_symbol_order": 1.5,
+      "pivot_pure_slope": -0.054300292658340646,
+      "pivot_ns_total": 0.9457326506103146,
+      "sample_rows": [
+        {
+          "N": 10,
+          "pure_slope": -0.06083661195345101,
+          "ns_total": 0.9264544187417432
+        },
+        {
+          "N": 50,
+          "pure_slope": -0.05574830091498733,
+          "ns_total": 0.9436376869157622
+        },
+        {
+          "N": 100,
+          "pure_slope": -0.05498315785543293,
+          "ns_total": 0.9448607885754186
+        },
+        {
+          "N": 500,
+          "pure_slope": -0.054348366395767,
+          "ns_total": 0.9456433451147022
+        },
+        {
+          "N": 712,
+          "pure_slope": -0.054300292658340646,
+          "ns_total": 0.9457326506103146
+        },
+        {
+          "N": 1000,
+          "pure_slope": -0.05426757319821891,
+          "ns_total": 0.9457778362804479
+        }
+      ]
+    },
+    {
+      "q": 1.0,
+      "length_scaling_power": -2.0,
+      "generator_dimension": "L^(-2.0)",
+      "principal_symbol_order": 2.0,
+      "pivot_pure_slope": -0.0724003901925913,
+      "pivot_ns_total": 0.9276325531038583,
+      "sample_rows": [
+        {
+          "N": 10,
+          "pure_slope": -0.08111548253079676,
+          "ns_total": 0.9061755481053538
+        },
+        {
+          "N": 50,
+          "pure_slope": -0.07433106780184832,
+          "ns_total": 0.9250549200571683
+        },
+        {
+          "N": 100,
+          "pure_slope": -0.07331087702848868,
+          "ns_total": 0.9265330694724181
+        },
+        {
+          "N": 500,
+          "pure_slope": -0.07246448845352761,
+          "ns_total": 0.9275272229735095
+        },
+        {
+          "N": 712,
+          "pure_slope": -0.0724003901925913,
+          "ns_total": 0.9276325531038583
+        },
+        {
+          "N": 1000,
+          "pure_slope": -0.0723567643291194,
+          "ns_total": 0.9276886451495474
+        }
+      ]
+    }
+  ],
+  "claim_boundary": {
+    "derived": [
+      "Among homogeneous SO(3)-invariant functional-calculus choices of Delta_1^coex, the only primitive line-scale generator is sqrt(Delta_1^coex).",
+      "The choice q=1/2 is forced by inverse-length dimensionality of line transport, not by target-fitting.",
+      "The principal-symbol form of primitive line transport is the cotangent norm |xi|, hence the square root of the Laplacian symbol."
+    ],
+    "conditional": [
+      "The physical Paper 28 shell dressing is indeed generated by primitive line transport on the canonical coexact carrier."
+    ]
+  }
+}

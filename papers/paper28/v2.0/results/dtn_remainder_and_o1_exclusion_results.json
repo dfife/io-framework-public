@@ -1,0 +1,20 @@
+{
+  "audit_target": "DtN lower-order remainder and O(1) deformation exclusion",
+  "beta": 0.036124303978219,
+  "bound_formula": "2 beta A / ((ell+1)^2 - A)",
+  "condition": "full IO reduced operator is Laplace-type on the exact flat Painleve-Gullstrand source collar",
+  "ell": 711,
+  "ell_plus_one": 712,
+  "hidden_fitted_parameter": false,
+  "o1_shell_deformations_excluded_on_flat_collar": true,
+  "paper": 28,
+  "slope_error_bounds": {
+    "1": 1.4251820807553908e-07,
+    "10": 1.4252073831393832e-06,
+    "100": 1.4254604564015358e-05,
+    "5": 7.125966630742358e-07,
+    "50": 7.126599245250289e-06
+  },
+  "status": "DERIVED/CONDITIONAL_VERIFIED",
+  "version": "v2.0"
+}

@@ -1,0 +1,81 @@
+{
+  "paper": 28,
+  "version": "v2.0",
+  "framework_constants": {
+    "gamma_BI": {
+      "value": 0.2375,
+      "unit": "dimensionless",
+      "source": "Imported Barbero-Immirzi parameter used by the IO framework."
+    },
+    "Q": {
+      "value": 1.05640625,
+      "unit": "dimensionless",
+      "formula": "1 + gamma_BI^2"
+    },
+    "K_gauge": {
+      "value": 0.05487281774291466,
+      "unit": "dimensionless",
+      "formula": "ln(1 + gamma_BI^2)"
+    },
+    "x": {
+      "value": 1.519,
+      "unit": "dimensionless",
+      "source": "Framework horizon-to-interior radius ratio used by the Paper 28 support scripts."
+    },
+    "R4_FIRAS": {
+      "value": 1.0031014644,
+      "unit": "dimensionless",
+      "source": "Paper 17 v1.5 FIRAS-fixed optical readout normalization."
+    },
+    "r_s_m": {
+      "value": 6.6835e+26,
+      "unit": "m",
+      "source": "Paper 28 OS/JWST clock-map support script value."
+    },
+    "c_m_s": {
+      "value": 299792458.0,
+      "unit": "m/s",
+      "source": "SI speed of light."
+    }
+  },
+  "paper28_values": {
+    "beta_K_over_x": {
+      "value": 0.036124303978219,
+      "unit": "dimensionless",
+      "formula": "K_gauge/x"
+    },
+    "ns_continuum": {
+      "value": 0.963875696021781,
+      "unit": "dimensionless",
+      "formula": "1 - K_gauge/x"
+    },
+    "ns_dtn_equal_branch_average_pivot": {
+      "value": 0.963908849852,
+      "unit": "dimensionless",
+      "source": "Paper 28 DtN Hessian support result at N=712."
+    },
+    "ns_exact_shell_target_pivot": {
+      "value": 0.963908639282,
+      "unit": "dimensionless",
+      "source": "Paper 28 shell-target comparison at N=712."
+    },
+    "jwst_clock_gyr": {
+      "z10": 0.7023379333,
+      "z12": 0.5450883247,
+      "z14": 0.4388659557,
+      "z17": 0.3331013378,
+      "z20": 0.2639107601
+    }
+  },
+  "claim_taxonomy": [
+    "DERIVED/THEOREM",
+    "DERIVED/CONDITIONAL_VERIFIED",
+    "DERIVED/NO-GO",
+    "VERIFIED",
+    "IMPORTED/EMPIRICAL",
+    "RECONSTRUCTION",
+    "RECONSTRUCTION/RESEARCH_ONLY",
+    "OPEN/PREMISE_GAP",
+    "SUPERSEDED"
+  ]
+}

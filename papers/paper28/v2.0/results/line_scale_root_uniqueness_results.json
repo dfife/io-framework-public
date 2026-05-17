@@ -1,0 +1,10 @@
+{
+  "K_gauge_over_x": 0.036124303978219,
+  "audit_target": "primitive line-scale root uniqueness",
+  "formula": "Delta_1^q has line-transport dimension only when 2q = 1",
+  "hidden_fitted_parameter": false,
+  "paper": 28,
+  "q_line": 0.5,
+  "status": "DERIVED/THEOREM",
+  "version": "v2.0"
+}

@@ -1,0 +1,18 @@
+{
+  "audit_target": "coexact DtN Hessian spectral-index chain",
+  "beta_K_over_x": 0.036124303978219,
+  "condition": "full reduced IO boundary Hessian agrees with the coexact DtN class through the stated collar reduction",
+  "dtn_shell_law": "sigma_l = l + 1",
+  "hidden_fitted_parameter": false,
+  "ns_continuum": 0.963875696021781,
+  "paper": 28,
+  "pivot_N": 712,
+  "pivot_values": {
+    "dtn_equal_branch_average": 0.963908849852,
+    "dtn_minus_branch": 0.963959517376,
+    "dtn_plus_branch": 0.963858187553,
+    "exact_shell_target": 0.963908639282
+  },
+  "status": "DERIVED/CONDITIONAL_VERIFIED",
+  "version": "v2.0"
+}

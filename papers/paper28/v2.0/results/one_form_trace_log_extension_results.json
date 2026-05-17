@@ -1,0 +1,16 @@
+{
+  "audit_target": "one-form trace-log Gaussian extension",
+  "condition": "physical A-vacuum canonical extension belongs to the centered one-loop Gaussian coexact one-form class",
+  "hidden_fitted_parameter": false,
+  "paper": 28,
+  "payload_coefficient": 0.036124303978219,
+  "per_mode_generator": "w_l = log(s_l) = (1/2) log(lambda_l)",
+  "pivot_ns_values": {
+    "equal_branch_average": 0.963883481680499,
+    "exact_shell_target": 0.963908639282,
+    "minus_branch": 0.963934220358385,
+    "plus_branch": 0.963832748116771
+  },
+  "status": "DERIVED/CONDITIONAL_VERIFIED",
+  "version": "v2.0"
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, please cite the associated Paper 28 v2.0 Zenodo record and this GitHub release."
+title: "Paper 28 v2.0 Reproducibility Bundle"
+authors:
+  - family-names: "Fife"
+    given-names: "David"
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+version: "v2.0"
+date-released: "2026-05-17"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper28/v2.0"
+license: "MIT"
+keywords:
+  - "Interior Observer Framework"
+  - "black hole cosmology"
+  - "primordial spectral index"
+  - "Dirichlet-to-Neumann operator"
+  - "Oppenheimer-Snyder interior"
+  - "JWST formation clock"
+  - "reproducibility"

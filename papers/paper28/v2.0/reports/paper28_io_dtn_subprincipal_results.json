@@ -1,0 +1,160 @@
+{
+  "constants": {
+    "gamma_BI": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "x": 1.519,
+    "beta_target": 0.036124303978219,
+    "r_s_m": 6.6835442422068e+26
+  },
+  "exact_euclidean_coexact_ball_operator": {
+    "boundary_hodge_shell": "lambda_ell = ell(ell+1) / r_s^2",
+    "DtN_shell": "sigma_ell = (ell+1) / r_s",
+    "exact_shell_identity": "sigma_ell = sqrt(lambda_ell + 1/(4 r_s^2)) + 1/(2 r_s)",
+    "dimensionless_operator_form": "r_s Lambda_DtN = sqrt(r_s^2 Delta_1^coex + 1/4) + 1/2"
+  },
+  "theorem_boundary": {
+    "derived": [
+      "On the exact Euclidean B^3(r_s) / S^2(r_s) coexact 1-form problem, the DtN eigenvalues are sigma_ell = (ell+1)/r_s.",
+      "Equivalently, the exact operator identity on the shell decomposition is Lambda_DtN = sqrt(Delta_1^coex + 1/(4 r_s^2)) + 1/(2 r_s).",
+      "This fixes the first-order DtN class and the subprincipal constant term for the flat-collar model.",
+      "If the reduced source-side IO perturbation problem is the flat-collar Maxwell/Laplace coexact 1-form problem, then its boundary effective Hessian equals the Karpukhin/Raulot-Savo coexact DtN operator exactly."
+    ],
+    "conditional": [
+      "If the full IO reduced bulk operator agrees with the flat-collar model to the boundary first jet, then the full IO DtN map differs from the exact coexact-ball DtN operator only by lower-order pseudodifferential terms.",
+      "Any such same-class lower-order shell deformation shifts the Paper 28 pivot tilt only at the 10^-4 level or smaller."
+    ],
+    "not_derived": [
+      "The current stack still does not derive the full reduced Ashtekar-Barbero bulk operator on the entire boundary-to-entry strip without the flat-collar reduction.",
+      "Therefore exact equality of the full IO Hessian with the Euclidean coexact DtN operator remains open outside the flat-collar model."
+    ]
+  },
+  "identity_rows": [
+    {
+      "ell": 1,
+      "lambda_ell_unit": 2.0,
+      "sigma_ball_unit": 2.0,
+      "sigma_from_identity": 2.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 2,
+      "lambda_ell_unit": 6.0,
+      "sigma_ball_unit": 3.0,
+      "sigma_from_identity": 3.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 5,
+      "lambda_ell_unit": 30.0,
+      "sigma_ball_unit": 6.0,
+      "sigma_from_identity": 6.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 10,
+      "lambda_ell_unit": 110.0,
+      "sigma_ball_unit": 11.0,
+      "sigma_from_identity": 11.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 20,
+      "lambda_ell_unit": 420.0,
+      "sigma_ball_unit": 21.0,
+      "sigma_from_identity": 21.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 50,
+      "lambda_ell_unit": 2550.0,
+      "sigma_ball_unit": 51.0,
+      "sigma_from_identity": 51.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 100,
+      "lambda_ell_unit": 10100.0,
+      "sigma_ball_unit": 101.0,
+      "sigma_from_identity": 101.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 200,
+      "lambda_ell_unit": 40200.0,
+      "sigma_ball_unit": 201.0,
+      "sigma_from_identity": 201.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 500,
+      "lambda_ell_unit": 250500.0,
+      "sigma_ball_unit": 501.0,
+      "sigma_from_identity": 501.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 711,
+      "lambda_ell_unit": 506232.0,
+      "sigma_ball_unit": 712.0,
+      "sigma_from_identity": 712.0,
+      "identity_gap": 0.0
+    },
+    {
+      "ell": 1000,
+      "lambda_ell_unit": 1001000.0,
+      "sigma_ball_unit": 1001.0,
+      "sigma_from_identity": 1001.0,
+      "identity_gap": 0.0
+    }
+  ],
+  "subprincipal_sensitivity": [
+    {
+      "a_over_l_shift": -5.0,
+      "pivot_ns": 0.9638574740167553
+    },
+    {
+      "a_over_l_shift": -2.0,
+      "pivot_ns": 0.9638579021607605
+    },
+    {
+      "a_over_l_shift": -1.0,
+      "pivot_ns": 0.963858044912488
+    },
+    {
+      "a_over_l_shift": -0.5,
+      "pivot_ns": 0.9638581162327631
+    },
+    {
+      "a_over_l_shift": 0.0,
+      "pivot_ns": 0.9638581875530382
+    },
+    {
+      "a_over_l_shift": 0.5,
+      "pivot_ns": 0.963858258928902
+    },
+    {
+      "a_over_l_shift": 1.0,
+      "pivot_ns": 0.9638583301935884
+    },
+    {
+      "a_over_l_shift": 2.0,
+      "pivot_ns": 0.9638584730564933
+    },
+    {
+      "a_over_l_shift": 5.0,
+      "pivot_ns": 0.9638589010337325
+    }
+  ],
+  "pivot": {
+    "N": 712,
+    "k_MS": 712.9971949453939,
+    "Delta_geom": 0.666667715741955,
+    "ns_geom": 1.000032943240861,
+    "ns_dtn_plus": 0.9638581875530382,
+    "ns_dtn_minus": 0.9639595173764567,
+    "ns_dtn_avg": 0.9639088498520796,
+    "pure_shell_slope_plus": -0.03617475568782273,
+    "pure_shell_slope_minus": -0.036073425892198585,
+    "pure_shell_slope_avg": -0.03612409333319272
+  }
+}

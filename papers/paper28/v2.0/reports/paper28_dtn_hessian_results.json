@@ -1,0 +1,78 @@
+{
+  "constants": {
+    "gamma_BI": 0.2375,
+    "K_gauge": 0.05487281774291466,
+    "x": 1.519,
+    "alpha_K_over_x": 0.036124303978219,
+    "pivot_N": 712.0
+  },
+  "theorem": {
+    "statement": "For the unit Euclidean 3-ball with S^2 boundary, the differential-form Dirichlet-to-Neumann operator on coexact 1-forms is a positive first-order self-adjoint shell operator with exact eigenvalue sigma_ell = ell + 1. Its one-loop trace-log generator is therefore w_ell = log(ell + 1), which lies in the same logarithmic shell class as (1/2) log lambda_ell.",
+    "exact_spectra": {
+      "S2_coexact_Hodge_eigenvalue": "lambda_ell = ell(ell+1)",
+      "DtN_eigenvalue": "sigma_ell = ell + 1",
+      "trace_log_generator": "w_ell = log(sigma_ell) = log(ell + 1)"
+    }
+  },
+  "covariance_laws": {
+    "determinant_selected_DtN": "N_ell proportional to sigma_ell^(-K_gauge/x) = (ell+1)^(-K_gauge/x)",
+    "exact_shell_target": "N_shell proportional to k_MS(N)^(-K_gauge/x)"
+  },
+  "pivot_results": {
+    "ns_geom_times_dtn_plus": 0.9638581875530382,
+    "ns_geom_times_dtn_minus": 0.9639595173764567,
+    "ns_geom_times_dtn_avg": 0.9639088498520796,
+    "ns_geom_times_target": 0.9639086392821637,
+    "pure_covariance_slope_dtn_plus": -0.03617475568782273,
+    "pure_covariance_slope_dtn_minus": -0.036073425892198585,
+    "pure_covariance_slope_dtn_avg": -0.03612409333319272,
+    "pure_covariance_slope_target": -0.03612430398649159
+  },
+  "same_symbol_shift_family": {
+    "-2.0": {
+      "pivot_ns": 0.9637562868338869,
+      "pure_covariance_slope": -0.036276656434768344
+    },
+    "-1.0": {
+      "pivot_ns": 0.9638073088472697,
+      "pure_covariance_slope": -0.036225634407488376
+    },
+    "-0.5": {
+      "pivot_ns": 0.9638327661275029,
+      "pure_covariance_slope": -0.03620017718284386
+    },
+    "0.0": {
+      "pivot_ns": 0.9638581875530382,
+      "pure_covariance_slope": -0.03617475568782273
+    },
+    "0.5": {
+      "pivot_ns": 0.9638835732350529,
+      "pure_covariance_slope": -0.03614936993632217
+    },
+    "1.0": {
+      "pivot_ns": 0.9639089234514905,
+      "pure_covariance_slope": -0.0361240197337818
+    },
+    "2.0": {
+      "pivot_ns": 0.9639595173764567,
+      "pure_covariance_slope": -0.036073425892198585
+    }
+  },
+  "claim_boundary": {
+    "derived": [
+      "Integrating out linear bulk propagation naturally produces a boundary effective Hessian of Dirichlet-to-Neumann type.",
+      "On the model B^3/S^2 coexact 1-form problem, the exact shell eigenvalue is sigma_ell = ell + 1.",
+      "The associated one-loop generator is logarithmic: w_ell = log(ell + 1)."
+    ],
+    "verified": [
+      "At N=712, the DtN determinant plus branch gives n_s = 0.963858187553.",
+      "At N=712, the DtN determinant minus branch gives n_s = 0.963959517376.",
+      "At N=712, the equal branch average gives n_s = 0.963908849852.",
+      "At N=712, the exact shell target gives n_s = 0.963908639282."
+    ],
+    "conditional": [
+      "The physical IO coexact-sector Hessian is the differential-form Dirichlet-to-Neumann operator (or a same-symbol first-order deformation) for the relevant boundary-to-bulk linear problem.",
+      "The covariance payload coefficient is K_gauge/x on that DtN determinant kernel."
+    ]
+  }
+}

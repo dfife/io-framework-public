@@ -1,0 +1,48 @@
+{
+  "constants": {
+    "gamma_BI": 0.2375,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "x": 1.519,
+    "beta_target": 0.036124303978219,
+    "pivot_ell": 711,
+    "pivot_m": 712,
+    "r_s_m": 6.6835442422068e+26
+  },
+  "theorem": {
+    "statement": "On the exact flat PG spatial collar, if the reduced source-side bulk operator is Laplace-type on the coexact carrier, then after fixing the Euclidean first jet the only remaining Ashtekar-Barbero corrections enter as bounded shell-blind endomorphisms or scalar factors in the square-root symbol. Consequently sigma_ell^IO = (ell+1) + O((ell+1)^(-1)). In particular, O(1) shell deformations are excluded.",
+    "mechanism": "For shell-blind endomorphism eigenvalue mu^2, the DtN shell law takes the flat-collar form sigma_ell(mu^2) = sqrt(ell(ell+1)+1/4+mu^2) + 1/2, so sigma_ell(mu^2) - (ell+1) = mu^2 / (sqrt(ell(ell+1)+1/4+mu^2) + ell + 1/2) = O(1/ell)."
+  },
+  "rows": [
+    {
+      "mu2": 0.0,
+      "pivot_shell_shift": 0.0,
+      "pivot_shell_shift_bound": 0.0,
+      "pivot_ns_plus_branch": 0.9638581875530382
+    },
+    {
+      "mu2": 0.05640624999999999,
+      "pivot_shell_shift": 3.963896585901239e-05,
+      "pivot_shell_shift_bound": 7.922226123595505e-05,
+      "pivot_ns_plus_branch": 0.9638581915554231
+    },
+    {
+      "mu2": 1.0,
+      "pivot_shell_shift": 0.0007027403416941524,
+      "pivot_shell_shift_bound": 0.0014044943820224719,
+      "pivot_ns_plus_branch": 0.9638582588733133
+    },
+    {
+      "mu2": 10.0,
+      "pivot_shell_shift": 0.007027372182733416,
+      "pivot_shell_shift_bound": 0.014044943820224719,
+      "pivot_ns_plus_branch": 0.9638589017563853
+    },
+    {
+      "mu2": 100.0,
+      "pivot_shell_shift": 0.07027059876520525,
+      "pivot_shell_shift_bound": 0.1404494382022472,
+      "pivot_ns_plus_branch": 0.9638653295309206
+    }
+  ]
+}

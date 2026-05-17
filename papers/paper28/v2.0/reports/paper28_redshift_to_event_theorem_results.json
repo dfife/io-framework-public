@@ -1,0 +1,108 @@
+{
+  "inputs": {
+    "r_s_m": 6.6835e+26,
+    "c_m_s": 299792458.0,
+    "x": 1.519,
+    "u_obs": 0.6583278472679395,
+    "eta_s": 1.8929979913888775
+  },
+  "theorem_formulas": {
+    "metric_conformal": "ds^2 = a(eta)^2[-deta^2 + dchi^2 + sin^2(chi) dOmega^2]",
+    "radial_null": "dchi = +- deta",
+    "redshift": "1 + z = a(eta_s) / a(eta_e)",
+    "u_of_z": "u(z) = 1/[x(1+z)]",
+    "eta_of_z": "eta(z) = arccos(1 - 2/[x(1+z)])",
+    "chi_of_z": "chi(z) = eta_s - eta(z)",
+    "tau_of_z": "tau(z) = (r_s/(2c))[eta(z) - sin eta(z)]"
+  },
+  "rows": [
+    {
+      "z": 0,
+      "u_exact": 0.6583278472679395,
+      "eta_exact_rad": 1.8929979913888775,
+      "chi_exact_rad": 0.0,
+      "tau_exact_gyr": 33.360433115990745,
+      "redshift_identity_check": 0.0
+    },
+    {
+      "z": 1,
+      "u_exact": 0.32916392363396973,
+      "eta_exact_rad": 1.2221007753052096,
+      "chi_exact_rad": 0.6708972160836679,
+      "tau_exact_gyr": 9.970841435718489,
+      "redshift_identity_check": 1.0
+    },
+    {
+      "z": 2,
+      "u_exact": 0.21944261575597984,
+      "eta_exact_rad": 0.975064375712191,
+      "chi_exact_rad": 0.9179336156766865,
+      "tau_exact_gyr": 5.203909753172753,
+      "redshift_identity_check": 1.9999999999999996
+    },
+    {
+      "z": 3,
+      "u_exact": 0.16458196181698487,
+      "eta_exact_rad": 0.8354607266665426,
+      "chi_exact_rad": 1.057537264722335,
+      "tau_exact_gyr": 3.31517911435682,
+      "redshift_identity_check": 3.0
+    },
+    {
+      "z": 5,
+      "u_exact": 0.10972130787798992,
+      "eta_exact_rad": 0.6752393105722865,
+      "chi_exact_rad": 1.217758680816591,
+      "tau_exact_gyr": 1.7715975980543215,
+      "redshift_identity_check": 4.999999999999999
+    },
+    {
+      "z": 8,
+      "u_exact": 0.0731475385853266,
+      "eta_exact_rad": 0.5477374924745605,
+      "chi_exact_rad": 1.345260498914317,
+      "tau_exact_gyr": 0.9530119808912102,
+      "redshift_identity_check": 8.0
+    },
+    {
+      "z": 10,
+      "u_exact": 0.059847986115267225,
+      "eta_exact_rad": 0.4942936523696491,
+      "chi_exact_rad": 1.3987043390192284,
+      "tau_exact_gyr": 0.7023379333234342,
+      "redshift_identity_check": 10.0
+    },
+    {
+      "z": 12,
+      "u_exact": 0.05064060363599534,
+      "eta_exact_rad": 0.45395724166133933,
+      "chi_exact_rad": 1.4390407497275381,
+      "tau_exact_gyr": 0.5450883247302458,
+      "redshift_identity_check": 12.000000000000002
+    },
+    {
+      "z": 14,
+      "u_exact": 0.043888523151195964,
+      "eta_exact_rad": 0.42211873859500404,
+      "chi_exact_rad": 1.4708792527938734,
+      "tau_exact_gyr": 0.4388659557175919,
+      "redshift_identity_check": 14.0
+    },
+    {
+      "z": 17,
+      "u_exact": 0.0365737692926633,
+      "eta_exact_rad": 0.384856112312415,
+      "chi_exact_rad": 1.5081418790764625,
+      "tau_exact_gyr": 0.33310133775650214,
+      "redshift_identity_check": 17.0
+    },
+    {
+      "z": 20,
+      "u_exact": 0.03134894510799712,
+      "eta_exact_rad": 0.35598944087955353,
+      "chi_exact_rad": 1.537008550509324,
+      "tau_exact_gyr": 0.26391076011449943,
+      "redshift_identity_check": 19.999999999999996
+    }
+  ]
+}
