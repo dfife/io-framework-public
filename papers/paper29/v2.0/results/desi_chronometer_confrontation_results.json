@@ -1,0 +1,132 @@
+{
+  "claim": "DESI DR2 GCcomb plus 35-point cosmic chronometer confrontation",
+  "derived": {
+    "bao_chi2": 27.735229301342457,
+    "cc_chi2_banked": 14.701523963980787,
+    "cc_chi2_recomputed": 14.701523963980787,
+    "combined_chi2": 42.43675326532325,
+    "planck_bao_chi2": 31.25101137291248,
+    "planck_combined_chi2": 46.40432046950788
+  },
+  "external_data": "DESI DR2 mean/covariance are fetched from Cobaya bao_data and SHA256 checked.",
+  "inputs": {
+    "chronometer_rows": 35,
+    "desi_dr2_rows": 13,
+    "eta": 0.036124605346983495,
+    "f_parallel": 1.0182264126413767,
+    "f_perp": 1.036785027400527
+  },
+  "paper_values": {
+    "bao_chi2": 27.74,
+    "cc_chi2": 14.7,
+    "combined_chi2": 42.44,
+    "planck_combined_chi2": 46.4
+  },
+  "residual_rows": [
+    {
+      "block": "galaxy_quasar",
+      "model": 7.942559718848149,
+      "quantity": "DV_over_rs",
+      "residual": 0.0008833288481495671,
+      "value": 7.94167639,
+      "z": 0.295
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 13.204088937760611,
+      "quantity": "DM_over_rs",
+      "residual": -0.3834954022393884,
+      "value": 13.58758434,
+      "z": 0.51
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 22.59022779635007,
+      "quantity": "DH_over_rs",
+      "residual": 0.7272809363500699,
+      "value": 21.86294686,
+      "z": 0.51
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 17.2701697294283,
+      "quantity": "DM_over_rs",
+      "residual": -0.0805212105716997,
+      "value": 17.35069094,
+      "z": 0.706
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 19.96705583405687,
+      "quantity": "DH_over_rs",
+      "residual": 0.5117066540568693,
+      "value": 19.45534918,
+      "z": 0.706
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 21.3963230412431,
+      "quantity": "DM_over_rs",
+      "residual": -0.1793165187568988,
+      "value": 21.57563956,
+      "z": 0.934
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 17.32519477713582,
+      "quantity": "DH_over_rs",
+      "residual": -0.3162998628641809,
+      "value": 17.64149464,
+      "z": 0.934
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 27.183462917666123,
+      "quantity": "DM_over_rs",
+      "residual": -0.41739320233387645,
+      "value": 27.60085612,
+      "z": 1.321
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 13.790728442338834,
+      "quantity": "DH_over_rs",
+      "residual": -0.3852931076611661,
+      "value": 14.17602155,
+      "z": 1.321
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 29.249930277442903,
+      "quantity": "DM_over_rs",
+      "residual": -1.2619703525570962,
+      "value": 30.51190063,
+      "z": 1.484
+    },
+    {
+      "block": "galaxy_quasar",
+      "model": 12.603385752078895,
+      "quantity": "DH_over_rs",
+      "residual": -0.21361388792110603,
+      "value": 12.81699964,
+      "z": 1.484
+    },
+    {
+      "block": "lya",
+      "model": 8.518995415889362,
+      "quantity": "DH_over_rs",
+      "residual": -0.11255025895693116,
+      "value": 8.631545674846294,
+      "z": 2.33
+    },
+    {
+      "block": "lya",
+      "model": 38.90469303402637,
+      "quantity": "DM_over_rs",
+      "residual": -0.08428092793241149,
+      "value": 38.988973961958784,
+      "z": 2.33
+    }
+  ],
+  "status": "VERIFIED"
+}

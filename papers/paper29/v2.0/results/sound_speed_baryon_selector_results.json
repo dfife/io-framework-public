@@ -1,0 +1,26 @@
+{
+  "claim": "sound-speed baryon selector and drag sound horizon",
+  "derived": {
+    "camb_rdrag_Mpc": 144.01351425392883,
+    "camb_zdrag": 1058.0903557310514,
+    "delta_camb_minus_banked_Mpc": 0.0,
+    "omega_m_h2": 0.15922640008111233,
+    "paper29_banked_r_d_Mpc": 144.01351425392883
+  },
+  "inputs": {
+    "H0": 67.57585653582628,
+    "N_eff": 3.044,
+    "Omega_k": -0.04579112576013168,
+    "Omega_m": 0.34868395067621694,
+    "T_CMB": 2.7255,
+    "YHe": 0.2477,
+    "omega_b_h2": 0.020995719061702847,
+    "omega_c_h2": 0.1382306810194095
+  },
+  "paper_values": {
+    "omega_b_h2": 0.021,
+    "r_d_Mpc": 144.01
+  },
+  "scope": "CAMB is used as the accepted external drag-epoch solver under Premise 2.",
+  "status": "VERIFIED"
+}

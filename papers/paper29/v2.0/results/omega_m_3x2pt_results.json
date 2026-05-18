@@ -1,0 +1,20 @@
+{
+  "boundary": "This verifies the active branch value used by Paper 29. It is not a new independent derivation of the branch package from gamma_BI alone.",
+  "claim": "Euclid DR1 3x2pt matter-density prediction",
+  "derived": {
+    "Omega_m_IO": 0.34868395067621694,
+    "Omega_m_from_friedmann_closure": 0.3486839506762171,
+    "delta": 1.6653345369377348e-16
+  },
+  "inputs": {
+    "H0": 67.57585653582628,
+    "Omega_k": -0.04579112576013168,
+    "Omega_lambda": 0.6970157307777745,
+    "Omega_r": 9.144430614023334e-05,
+    "branch": "active Paper 10 legacy projected observer branch"
+  },
+  "paper_values": {
+    "Omega_m_IO": 0.349
+  },
+  "status": "VERIFIED"
+}

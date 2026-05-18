@@ -1,0 +1,28 @@
+{
+  "boundary": "T_CMB is a FIRAS-fixed empirical input, not an independent IO CMB-temperature prediction.",
+  "claim": "CMB inventory and cross-paper inherited constants",
+  "imported_or_inherited": {
+    "H0_km_s_Mpc": 67.57585653582628,
+    "N_eff": 3.044,
+    "Omega_k_IO": -0.04579112576013168,
+    "Omega_lambda": 0.6970157307777745,
+    "Omega_m": 0.34868395067621694,
+    "R4_FIRAS": 1.0031014644,
+    "T_CMB_FIRAS_K": 2.7255,
+    "omega_b_h2": 0.020995719061702847,
+    "r_d_Mpc": 144.01351425392883,
+    "x": 1.5189873277742727,
+    "z_dec": 123.67217038722819
+  },
+  "paper_values": {
+    "H0": 67.58,
+    "N_eff": 3.044,
+    "Omega_k_IO": -0.046,
+    "Omega_lambda": 0.697,
+    "Omega_m": 0.349,
+    "omega_b_h2": 0.021,
+    "r_d_Mpc": 144.01,
+    "z_dec": 123.67
+  },
+  "status": "VERIFIED"
+}

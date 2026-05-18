@@ -1,0 +1,53 @@
+{
+  "claim": "reduced 21cm brightness-temperature diagnostic at z=17",
+  "derived": {
+    "io_local_reduced_object": {
+      "T21_mK": -293.8064603697769,
+      "T_gamma_K": 49.059,
+      "T_gas_K": 7.0830723268652065,
+      "prefactor_mK": 49.57728212952134,
+      "y21_reduced": -5.926231688179344,
+      "z_dec": 123.67217038722819
+    },
+    "io_observer_brightness_diagnostic": {
+      "T21_mK": -190.78729466061188,
+      "T_gamma_K": 49.059,
+      "T_gas_K": 7.0830723268652065,
+      "prefactor_mK": 32.19369486366226,
+      "y21_reduced": -5.926231688179344,
+      "z_dec": 123.67217038722819
+    }
+  },
+  "inputs": {
+    "T_CMB": 2.7255,
+    "io_local_bare": {
+      "H0": 58.422219957755004,
+      "Omega_k": -0.12950335870178542,
+      "Omega_lambda": 0.9326670536476507,
+      "Omega_m": 0.19671396077221812,
+      "Omega_r": 0.00012234428191662807,
+      "YHe": 0.2477,
+      "label": "IO local bare branch",
+      "omega_b_h2": 0.020995719061702847
+    },
+    "io_observer": {
+      "H0": 67.57585653582628,
+      "Omega_k": -0.04579112576013168,
+      "Omega_lambda": 0.6970157307777745,
+      "Omega_m": 0.34868395067621694,
+      "Omega_r": 9.144430614023334e-05,
+      "YHe": 0.2477,
+      "label": "IO observer branch",
+      "omega_b_h2": 0.020995719061702847
+    },
+    "residual_x_e": 0.0002,
+    "z": 17.0
+  },
+  "paper_values": {
+    "T21_mK": -191.0,
+    "y21": -5.926,
+    "z_dec": 123.67
+  },
+  "scope": "Reduced benchmark: x_HI=1, saturated spin-temperature coupling, no heating or radio-background source law.",
+  "status": "VERIFIED"
+}

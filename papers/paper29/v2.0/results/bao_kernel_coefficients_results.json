@@ -1,0 +1,24 @@
+{
+  "claim": "BAO galaxy/quasar readout kernel coefficients",
+  "derived": {
+    "eta": 0.036124605346983495,
+    "eta_over_2": 0.018062302673491747,
+    "excess_ratio": 0.49548454709362444,
+    "exponent_coefficient_ratio": 0.5,
+    "f_parallel": 1.0182264126413767,
+    "f_perp": 1.036785027400527
+  },
+  "inputs": {
+    "K_gauge": 0.05487281774291466,
+    "gamma_BI": 0.2375,
+    "r_d_Mpc": 144.01351425392883,
+    "x": 1.5189873277742727
+  },
+  "note": "The exponent coefficients have exact ratio 1:2. The ratio of exponential excesses (f_parallel-1)/(f_perp-1) is not exactly 1/2.",
+  "paper_values": {
+    "eta": 0.036124,
+    "f_parallel": 1.0182,
+    "f_perp": 1.0368
+  },
+  "status": "VERIFIED"
+}
