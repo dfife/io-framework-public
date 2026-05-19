@@ -1,0 +1,217 @@
+{
+  "inputs": {
+    "io": {
+      "H0": 67.57585653582628,
+      "Omega_m": 0.34868395067621694,
+      "Omega_k": -0.04579112576013168,
+      "Omega_lambda": 0.69701575761593,
+      "Omega_r": 9.141746798467538e-05,
+      "r_d": 144.01351425392883
+    },
+    "planck": {
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_k": 0.0,
+      "Omega_lambda": 0.6849081048663765,
+      "Omega_r": 9.189513362352906e-05
+    }
+  },
+  "headline": {
+    "io_chi2": 7.88341490487783,
+    "io_pte": 0.24676969705560073,
+    "planck_chi2": 6.702669976136264,
+    "planck_pte": 0.3492212777775587,
+    "delta_chi2": 1.1807449287415661
+  },
+  "rows": [
+    {
+      "z": 0.51,
+      "F_AP_obs": 0.6218244751363502,
+      "F_AP_sigma_diag": 0.017159067622570235,
+      "F_AP_io": 0.5951578711226371,
+      "F_AP_planck": 0.5936603303517112,
+      "data_minus_io": 0.026666604013713124,
+      "pull_io_sigma": 1.5540823429495156,
+      "chi2_io_fullcov_contribution": 2.3979315711096536,
+      "data_minus_planck": 0.028164144784639022,
+      "pull_planck_sigma": 1.6413563606214374,
+      "chi2_planck_fullcov_contribution": 2.6781720750468003,
+      "io_better_fullcov_contribution": true
+    },
+    {
+      "z": 0.706,
+      "F_AP_obs": 0.8920768224067843,
+      "F_AP_sigma_diag": 0.02080808607379221,
+      "F_AP_io": 0.8806978202596372,
+      "F_AP_planck": 0.877555663896066,
+      "data_minus_io": 0.011379002147147155,
+      "pull_io_sigma": 0.5468548191695061,
+      "chi2_io_fullcov_contribution": 0.30096157134544005,
+      "data_minus_planck": 0.014521158510718335,
+      "pull_planck_sigma": 0.6978613246418535,
+      "chi2_planck_fullcov_contribution": 0.48806747261299416,
+      "io_better_fullcov_contribution": true
+    },
+    {
+      "z": 0.934,
+      "F_AP_obs": 1.2232562900983188,
+      "F_AP_sigma_diag": 0.019207363358700612,
+      "F_AP_io": 1.2574923887955245,
+      "F_AP_planck": 1.251834333857548,
+      "data_minus_io": -0.034236098697205675,
+      "pull_io_sigma": -1.7824465574915724,
+      "chi2_io_fullcov_contribution": 3.179539072433945,
+      "data_minus_planck": -0.02857804375922912,
+      "pull_planck_sigma": -1.4878691690019885,
+      "chi2_planck_fullcov_contribution": 2.2162616667723807,
+      "io_better_fullcov_contribution": false
+    },
+    {
+      "z": 1.321,
+      "F_AP_obs": 1.94778782117719,
+      "F_AP_sigma_diag": 0.04516019356637831,
+      "F_AP_io": 2.0070671997298337,
+      "F_AP_planck": 1.9964766078914111,
+      "data_minus_io": -0.05927937855264376,
+      "pull_io_sigma": -1.312646688848056,
+      "chi2_io_fullcov_contribution": 1.7227174831831258,
+      "data_minus_planck": -0.048688786714221166,
+      "pull_planck_sigma": -1.0781350315218732,
+      "chi2_planck_fullcov_contribution": 1.1607230116346319,
+      "io_better_fullcov_contribution": false
+    },
+    {
+      "z": 1.484,
+      "F_AP_obs": 2.3856048054706602,
+      "F_AP_sigma_diag": 0.13683464915162505,
+      "F_AP_io": 2.363099147351117,
+      "F_AP_planck": 2.350470123171005,
+      "data_minus_io": 0.02250565811954308,
+      "pull_io_sigma": 0.16447338637602524,
+      "chi2_io_fullcov_contribution": 0.026902051206839434,
+      "data_minus_planck": 0.03513468229965522,
+      "pull_planck_sigma": 0.2567674380538137,
+      "chi2_planck_fullcov_contribution": 0.06554948365657579,
+      "io_better_fullcov_contribution": true
+    },
+    {
+      "z": 2.33,
+      "F_AP_obs": 4.517943458541448,
+      "F_AP_sigma_diag": 0.09674800932603408,
+      "F_AP_io": 4.566816658567283,
+      "F_AP_planck": 4.547539398396198,
+      "data_minus_io": -0.04887320002583451,
+      "pull_io_sigma": -0.5051597481570418,
+      "chi2_io_fullcov_contribution": 0.25536315559880973,
+      "data_minus_planck": -0.029595939854750064,
+      "pull_planck_sigma": -0.30590748131068823,
+      "chi2_planck_fullcov_contribution": 0.0938962664128693,
+      "io_better_fullcov_contribution": false
+    }
+  ],
+  "loo": [
+    {
+      "removed_z": 0.51,
+      "io_chi2": 5.493277952988253,
+      "planck_chi2": 4.03186729480298,
+      "delta_chi2": 1.4614106581852724
+    },
+    {
+      "removed_z": 0.706,
+      "io_chi2": 7.58264971137006,
+      "planck_chi2": 6.215347785100809,
+      "delta_chi2": 1.367301926269251
+    },
+    {
+      "removed_z": 0.934,
+      "io_chi2": 4.703615262965337,
+      "planck_chi2": 4.486479599396095,
+      "delta_chi2": 0.21713566356924208
+    },
+    {
+      "removed_z": 1.321,
+      "io_chi2": 6.162156855564475,
+      "planck_chi2": 5.544432633819308,
+      "delta_chi2": 0.6177242217451671
+    },
+    {
+      "removed_z": 1.484,
+      "io_chi2": 7.857620415950891,
+      "planck_chi2": 6.639208800394715,
+      "delta_chi2": 1.2184116155561764
+    },
+    {
+      "removed_z": 2.33,
+      "io_chi2": 7.631073498757127,
+      "planck_chi2": 6.610132957568235,
+      "delta_chi2": 1.0209405411888923
+    }
+  ],
+  "regression": {
+    "io": {
+      "intercept": 0.63814354144587,
+      "slope": -0.7088131358513166,
+      "intercept_se": 1.175495621666295,
+      "slope_se": 0.867881442235042,
+      "slope_t": -0.8167165483178448,
+      "slope_p": 0.45993854820740165
+    },
+    "planck": {
+      "intercept": 0.7856680814737965,
+      "slope": -0.6849601986767636,
+      "intercept_se": 1.0986508965171395,
+      "slope_se": 0.8111461302003901,
+      "slope_t": -0.8444350199976264,
+      "slope_p": 0.4459722226731613
+    }
+  },
+  "curvature_signature": [
+    {
+      "z": 0.51,
+      "F_AP_io_minus_planck": 0.001497540770925898,
+      "residual_difference_data_minus_io_minus_data_minus_planck": -0.001497540770925898
+    },
+    {
+      "z": 0.706,
+      "F_AP_io_minus_planck": 0.0031421563635711802,
+      "residual_difference_data_minus_io_minus_data_minus_planck": -0.0031421563635711802
+    },
+    {
+      "z": 0.934,
+      "F_AP_io_minus_planck": 0.005658054937976553,
+      "residual_difference_data_minus_io_minus_data_minus_planck": -0.005658054937976553
+    },
+    {
+      "z": 1.321,
+      "F_AP_io_minus_planck": 0.010590591838422592,
+      "residual_difference_data_minus_io_minus_data_minus_planck": -0.010590591838422592
+    },
+    {
+      "z": 1.484,
+      "F_AP_io_minus_planck": 0.012629024180112136,
+      "residual_difference_data_minus_io_minus_data_minus_planck": -0.012629024180112136
+    },
+    {
+      "z": 2.33,
+      "F_AP_io_minus_planck": 0.019277260171084443,
+      "residual_difference_data_minus_io_minus_data_minus_planck": -0.019277260171084443
+    }
+  ],
+  "jackknife": {
+    "values": [
+      1.4614106581852724,
+      1.367301926269251,
+      0.21713566356924208,
+      0.6177242217451671,
+      1.2184116155561764,
+      1.0209405411888923
+    ],
+    "mean": 0.9838207710856669,
+    "std_sample": 0.4802901989025273,
+    "min": 0.21713566356924208,
+    "max": 1.4614106581852724
+  },
+  "notes": {
+    "per_point_chi2": "symmetric inverse-square-root whitened full-covariance contributions; contributions sum to total chi2"
+  }
+}

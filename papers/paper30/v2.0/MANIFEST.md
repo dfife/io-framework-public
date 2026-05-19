@@ -30,6 +30,8 @@
 ## Results
 
 - `results/full_twenty_test_recompute_results.json`
+- `results/paper30_v2_0_AP_residual_analysis.md`
+- `results/paper30_v2_0_AP_residual_analysis_data.json`
 - `results/validation_results.json`
 
 ## Reports

@@ -11,7 +11,7 @@
 - `scripts/02_validate_expected_outputs.py`
   - Inputs: `scripts/01_full_twenty_test_recompute.py` and frozen expected values embedded in the validator.
   - Outputs: `results/validation_results.json`.
-  - Verifies: 18 frozen checks, including canonical label checks for the active baryon slots. Use `--recompute` to regenerate the active output before validation.
+  - Verifies: 50 frozen checks, including canonical label checks for the active baryon slots and post-tightening AP residual-analysis checks. Use `--recompute` to regenerate the active output before validation.
   - External dependencies: same Python environment as the recomputation script.
 
 ## Manuscript Values Checked
@@ -29,7 +29,10 @@
 - `TDCOSMO IO chi2 = 31.597640376134585`
 - `TDCOSMO Planck chi2 = 34.46226106589568`
 - `AP IO chi2 = 7.88341490487783`
+- `AP IO probability-to-exceed = 0.24676969705560073` at `dof = 6`
 - `AP Planck chi2 = 6.702669976136264`
+- `AP Planck probability-to-exceed = 0.3492212777775587` at `dof = 6`
+- `AP residual analysis report = results/paper30_v2_0_AP_residual_analysis.md`
 - `x = 1.5189873277742727`
 - `K_gauge = 0.05487281774291466`
 - `eta_BAO = 0.036124605346983495`
