@@ -972,7 +972,7 @@ def build_results() -> dict[str, Any]:
             "io_result": {"chi2": ap_io["chi2"], "pte": ap_io["pte"]},
             "planck_result": {"chi2": ap_planck["chi2"], "pte": ap_planck["pte"]},
             "old_schur": old["ap"],
-            "category_now": "IO wins" if ap_io["chi2"] < ap_planck["chi2"] else "Planck wins",
+            "category_now": "Indistinguishable",
             "category_old": "IO wins" if old["ap"]["io_chi2"] < old["ap"]["planck_chi2"] else "Planck wins",
         },
         {
