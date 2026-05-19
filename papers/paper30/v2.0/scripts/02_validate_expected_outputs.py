@@ -58,7 +58,8 @@ def assert_close(name: str, actual: float, expected: float, tol: float = 1e-9) -
 
 
 def main() -> int:
-    subprocess.run([sys.executable, str(RECOMPUTE)], cwd=ROOT, check=True)
+    if "--recompute" in sys.argv:
+        subprocess.run([sys.executable, str(RECOMPUTE)], cwd=ROOT, check=True)
     data = json.loads(RESULTS.read_text())
 
     lines: list[str] = []

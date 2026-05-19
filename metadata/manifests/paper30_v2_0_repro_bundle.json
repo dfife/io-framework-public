@@ -5,7 +5,7 @@
   "bundle_path": "papers/paper30/v2.0",
   "validation_command": "python3 scripts/02_validate_expected_outputs.py",
   "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper30-v2.0",
-  "tarball_sha256": "59eb8cc887dd8d79fb5865584e3a4a6ddad3e0da7b678e6b28271595254c0d4f",
+  "tarball_sha256": "3b1b239e8c29a993790b0565f2b11166dc61c213ef565f00d897b65194c05fd8",
   "status": "validated",
   "validation_checks": 18,
   "notes": [

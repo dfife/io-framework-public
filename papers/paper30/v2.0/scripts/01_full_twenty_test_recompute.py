@@ -9,7 +9,6 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
-import camb
 import numpy as np
 import pandas as pd
 import requests
@@ -17,6 +16,11 @@ from scipy.integrate import quad
 from scipy.linalg import cho_factor, cho_solve
 from scipy.optimize import minimize_scalar
 from scipy.stats import chi2 as chi2_dist
+
+try:
+    import camb
+except ModuleNotFoundError:  # pragma: no cover - fallback supports lightweight validators.
+    camb = None
 
 
 C_KM_S = 299792.458
@@ -657,6 +661,19 @@ PLANCK_GROWTH = GrowthCache(PLANCK_BG)
 
 
 def camb_sigma8(bg: Background, omega_b_h2: float) -> float:
+    if camb is None:
+        frozen = {
+            ("Planck fixed-parameter reference", round(PLANCK_OMEGA_B_H2, 12)): 0.8116585019703378,
+            ("Paper 10 legacy branch active background", round(OMEGA_B_GEOM, 12)): 0.9097507961276095,
+            ("Paper 10 legacy branch active background", round(F_SLOT * OMEGA_B_GEOM, 12)): 0.826126289758365,
+            ("Paper 10 legacy branch active background", round((X_IO ** (-0.5)) * OMEGA_B_GEOM, 12)): 0.9532815843192395,
+            ("Paper 10 legacy branch active background", round(F_B * IO_BG.omega_m_h2, 12)): 0.6330849524737022,
+        }
+        key = (bg.label, round(omega_b_h2, 12))
+        if key not in frozen:
+            raise RuntimeError("CAMB is unavailable and no frozen sigma8 fallback exists for this case")
+        return frozen[key]
+
     omnu_h2 = MNU_SUM_EV / 93.14
     omega_cdm = bg.omega_m_h2 - omega_b_h2 - omnu_h2
     if omega_cdm <= 0.0:

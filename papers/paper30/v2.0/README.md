@@ -8,7 +8,11 @@ Run:
 python3 scripts/02_validate_expected_outputs.py
 ```
 
-The validator reruns `scripts/01_full_twenty_test_recompute.py`, regenerates `results/full_twenty_test_recompute_results.json`, and checks the headline numerical claims used by the manuscript.
+The default validator checks the frozen output against the headline numerical claims used by the manuscript. To regenerate the frozen output first, run:
+
+```bash
+python3 scripts/02_validate_expected_outputs.py --recompute
+```
 
 R4/FIRAS boundary: Paper 30 does not fit or vary R4. The bundle records `R4_FIRAS = 1.0031014644` as an inherited dependency boundary and uses the FIRAS-fixed observer thermal datum `T_CMB = 2.7253 K` where thermal radiation density or high-redshift temperature propagation enters.
 

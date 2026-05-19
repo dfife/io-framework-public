@@ -11,7 +11,7 @@
 - `scripts/02_validate_expected_outputs.py`
   - Inputs: `scripts/01_full_twenty_test_recompute.py` and frozen expected values embedded in the validator.
   - Outputs: `results/validation_results.json`.
-  - Verifies: 18 frozen checks, including canonical label checks for the active baryon slots.
+  - Verifies: 18 frozen checks, including canonical label checks for the active baryon slots. Use `--recompute` to regenerate the active output before validation.
   - External dependencies: same Python environment as the recomputation script.
 
 ## Manuscript Values Checked
