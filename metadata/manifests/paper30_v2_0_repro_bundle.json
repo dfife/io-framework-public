@@ -1,0 +1,16 @@
+{
+  "paper": 30,
+  "version": "v2.0",
+  "tag": "paper30-v2.0",
+  "bundle_path": "papers/paper30/v2.0",
+  "validation_command": "python3 scripts/02_validate_expected_outputs.py",
+  "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper30-v2.0",
+  "tarball_sha256": "59eb8cc887dd8d79fb5865584e3a4a6ddad3e0da7b678e6b28271595254c0d4f",
+  "status": "validated",
+  "validation_checks": 18,
+  "notes": [
+    "R4_FIRAS recorded as dependency boundary; no active Paper 30 script fits or varies R4.",
+    "CMB-temperature confrontation is FIRAS-normalized propagation, not an independent CMB-temperature prediction.",
+    "Historical fun-run JSON files are legacy comparison context only."
+  ]
+}

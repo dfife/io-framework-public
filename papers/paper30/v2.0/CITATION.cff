@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Paper 30 v2.0 Reproducibility Bundle"
+message: "If you use this bundle, cite the corresponding Paper 30 Zenodo record and this GitHub release."
+authors:
+  - family-names: Fife
+    given-names: David
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+version: "v2.0"
+date-released: "2026-05-19"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper30-v2.0"
+repository-code: "https://github.com/dfife/io-framework-public/tree/main/papers/paper30/v2.0"
+license: MIT

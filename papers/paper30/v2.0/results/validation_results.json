@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "checks": 18,
+  "checks_detail": [
+    "PASS tests.paper29_scorecard.io_cc_chi2: 14.701523964",
+    "PASS tests.paper29_scorecard.io_bao_chi2: 27.7352293013",
+    "PASS tests.paper29_scorecard.io_combined_chi2: 42.4367532653",
+    "PASS tests.paper29_scorecard.planck_combined_chi2: 46.4043204695",
+    "PASS tests.pantheon.io.chi2: 1757.47981741",
+    "PASS tests.pantheon.planck.chi2: 1759.69478471",
+    "PASS tests.strong_lensing.io.chi2: 31.5976403761",
+    "PASS tests.strong_lensing.planck.chi2: 34.4622610659",
+    "PASS tests.alcock_paczynski.io.chi2: 7.88341490488",
+    "PASS tests.alcock_paczynski.planck.chi2: 6.70266997614",
+    "PASS inputs.x: 1.51898732777",
+    "PASS inputs.K_gauge: 0.0548728177429",
+    "PASS inputs.eta_bao: 0.036124605347",
+    "PASS inputs.J_phi: 0.811377433381",
+    "PASS canonical label omega_b_geom: DERIVED/CONDITIONAL_VERIFIED",
+    "PASS canonical label omega_b_eff: DERIVED/CONDITIONAL_VERIFIED",
+    "PASS canonical label omega_b_clustering: DERIVED/CONDITIONAL_VERIFIED",
+    "PASS canonical label omega_b_naive_bdp: DERIVED/NO-GO diagnostic"
+  ]
+}

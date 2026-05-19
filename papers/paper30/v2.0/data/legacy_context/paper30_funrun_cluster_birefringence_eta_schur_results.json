@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "script_path": "/opt/cosmology-lab/results/paper30/paper30_funrun_cluster_birefringence_eta_schur.py",
+    "io_geometry_discipline": "K=+1 closed FRW formulas only; no flat substitutions; this run does not use FRW lookback time for local-physics clocks."
+  },
+  "cluster_gas_fraction_fun_run": {
+    "claim": "conditional",
+    "geometry": {
+      "label": "IO Schur definitive branch",
+      "H0": 68.91,
+      "Omega_m": 0.33577637957547024,
+      "Omega_k": -0.005613722564238656,
+      "Omega_lambda": 0.6698373429887684
+    },
+    "omega_m_h2_schur": 0.15944637203131606,
+    "benchmark_observed_range": {
+      "f_gas_min": 0.12,
+      "f_gas_max": 0.15,
+      "source": "Representative Mantz relaxed-cluster shell measurements at 0.8-1.2 r2500 cluster around 0.12-0.15, with individual points spanning roughly 0.096-0.159.",
+      "url": "https://academic.oup.com/mnras/article/510/1/131/6442289"
+    },
+    "depletion_model": {
+      "formula": "f_gas = Upsilon * (Omega_b / Omega_m)",
+      "Upsilon0_prior": [
+        0.71,
+        0.87
+      ],
+      "midpoint_used_for_quick_comparison": 0.8,
+      "source": "Mantz et al. 2022, Table B1 and equation (1)-(2).",
+      "url": "https://academic.oup.com/mnras/article/510/1/131/6442289"
+    },
+    "latest_context": {
+      "source": "Gonzalez et al. 2024, Unveiling the Hubble constant through galaxy cluster gas mass fractions",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0370269324005409",
+      "notes": "Latest gas-fraction cosmology context found in this run; combines a 44-cluster r2500-like sample with a 103-observation broader sample."
+    },
+    "rows": [
+      {
+        "label": "omega_b_geom",
+        "claim": "conditional",
+        "notes": "Geometric / BBN-like baryon slot carried in the IO stack.",
+        "omega_b_h2": 0.02108,
+        "Omega_b_over_Omega_m_undepleted": 0.1322074609252306,
+        "f_gas_predicted_depletion_0p71": 0.09386729725691373,
+        "f_gas_predicted_depletion_0p80": 0.1057659687401845,
+        "f_gas_predicted_depletion_0p87": 0.11502049100495064,
+        "pull_vs_midpoint_undepleted_sigma": -0.18616927165129304,
+        "pull_vs_midpoint_depletion_0p80_sigma": -1.948935417321034,
+        "depleted_band_overlaps_observed_0p12_to_0p15": false
+      },
+      {
+        "label": "omega_b_eff",
+        "claim": "conditional",
+        "notes": "Effective / acoustic baryon slot carried in the IO stack.",
+        "omega_b_h2": 0.0291,
+        "Omega_b_over_Omega_m_undepleted": 0.18250650440816937,
+        "f_gas_predicted_depletion_0p71": 0.12957961812980026,
+        "f_gas_predicted_depletion_0p80": 0.1460052035265355,
+        "f_gas_predicted_depletion_0p87": 0.15878065883510736,
+        "pull_vs_midpoint_undepleted_sigma": 3.1671002938779576,
+        "pull_vs_midpoint_depletion_0p80_sigma": 0.7336802351023668,
+        "depleted_band_overlaps_observed_0p12_to_0p15": true
+      },
+      {
+        "label": "omega_b_clustering",
+        "claim": "derived",
+        "notes": "Paper 19 clustering rung (alpha = 3/2) carried in the stack.",
+        "omega_b_h2": 0.01705,
+        "Omega_b_over_Omega_m_undepleted": 0.10693250516011298,
+        "f_gas_predicted_depletion_0p71": 0.07592207866368021,
+        "f_gas_predicted_depletion_0p80": 0.08554600412809038,
+        "f_gas_predicted_depletion_0p87": 0.09303127948929829,
+        "pull_vs_midpoint_undepleted_sigma": -1.8711663226591355,
+        "pull_vs_midpoint_depletion_0p80_sigma": -3.296933058127309,
+        "depleted_band_overlaps_observed_0p12_to_0p15": false
+      },
+      {
+        "label": "omega_b_raw_bdp_times_Omega_m",
+        "claim": "speculative",
+        "notes": "Literal raw BDP fraction f_b = 2 gamma / x injected into Schur Omega_m for sanity-check only.",
+        "omega_b_h2": 0.04985888053419253,
+        "Omega_b_over_Omega_m_undepleted": 0.3127,
+        "f_gas_predicted_depletion_0p71": 0.22201699999999996,
+        "f_gas_predicted_depletion_0p80": 0.25016,
+        "f_gas_predicted_depletion_0p87": 0.272049,
+        "pull_vs_midpoint_undepleted_sigma": 11.846666666666666,
+        "pull_vs_midpoint_depletion_0p80_sigma": 7.6773333333333325,
+        "depleted_band_overlaps_observed_0p12_to_0p15": false
+      }
+    ],
+    "best_match_undepleted": {
+      "label": "omega_b_geom",
+      "claim": "conditional",
+      "notes": "Geometric / BBN-like baryon slot carried in the IO stack.",
+      "omega_b_h2": 0.02108,
+      "Omega_b_over_Omega_m_undepleted": 0.1322074609252306,
+      "f_gas_predicted_depletion_0p71": 0.09386729725691373,
+      "f_gas_predicted_depletion_0p80": 0.1057659687401845,
+      "f_gas_predicted_depletion_0p87": 0.11502049100495064,
+      "pull_vs_midpoint_undepleted_sigma": -0.18616927165129304,
+      "pull_vs_midpoint_depletion_0p80_sigma": -1.948935417321034,
+      "depleted_band_overlaps_observed_0p12_to_0p15": false
+    },
+    "best_match_depleted_midpoint": {
+      "label": "omega_b_eff",
+      "claim": "conditional",
+      "notes": "Effective / acoustic baryon slot carried in the IO stack.",
+      "omega_b_h2": 0.0291,
+      "Omega_b_over_Omega_m_undepleted": 0.18250650440816937,
+      "f_gas_predicted_depletion_0p71": 0.12957961812980026,
+      "f_gas_predicted_depletion_0p80": 0.1460052035265355,
+      "f_gas_predicted_depletion_0p87": 0.15878065883510736,
+      "pull_vs_midpoint_undepleted_sigma": 3.1671002938779576,
+      "pull_vs_midpoint_depletion_0p80_sigma": 0.7336802351023668,
+      "depleted_band_overlaps_observed_0p12_to_0p15": true
+    },
+    "interpretation_notes": [
+      "conditional: if one compares directly to a raw baryon fraction target around 0.12-0.15, omega_b,geom is the closest IO slot.",
+      "conditional: if one compares to the actual gas-only observable f_gas = M_gas / M_tot with standard depletion, omega_b,eff is the closest IO slot.",
+      "derived boundary: the proved Paper 19 clustering rung omega_b,clustering undershoots the observed gas fraction once depletion is applied.",
+      "verified sanity check: the raw BDP fraction f_b = 0.3127 is far too large for cluster gas fractions on the Schur branch."
+    ]
+  },
+  "cosmic_birefringence_fun_run": {
+    "claim": "conditional",
+    "current_stack_prediction_if_gamma_is_constant_only": {
+      "beta_deg": 0.0,
+      "claim": "derived",
+      "reason": "Under the standard axion-like rotation law beta = g_{a gamma} Delta a / 2, a fixed Barbero-Immirzi parameter with no promoted propagating field gives Delta a = 0, hence no cosmic birefringence."
+    },
+    "measurements": [
+      {
+        "label": "WMAP + Planck nearly full-sky",
+        "beta_deg": 0.342,
+        "err_plus_deg": 0.094,
+        "err_minus_deg": 0.091,
+        "date": "2022-05-27",
+        "source": "Eskilt & Komatsu 2022, Improved Constraints on Cosmic Birefringence from the WMAP and Planck Cosmic Microwave Background Polarization Data",
+        "url": "https://arxiv.org/abs/2205.13962",
+        "claim": "verified",
+        "beta_rad": 0.005969026041820607,
+        "sigma_deg_sym": 0.0925,
+        "required_g_delta_a_rad": 0.011938052083641215,
+        "required_g_delta_a_sigma_rad": 0.0032288591161895096
+      },
+      {
+        "label": "ACT DR6",
+        "beta_deg": 0.215,
+        "err_plus_deg": 0.074,
+        "err_minus_deg": 0.074,
+        "date": "2025-09-17",
+        "source": "Diego-Palazuelos & Komatsu 2025, Cosmic Birefringence from the Atacama Cosmology Telescope Data Release 6",
+        "url": "https://arxiv.org/abs/2509.13654",
+        "claim": "conditional",
+        "beta_rad": 0.0037524578917878084,
+        "sigma_deg_sym": 0.074,
+        "required_g_delta_a_rad": 0.007504915783575617,
+        "required_g_delta_a_sigma_rad": 0.0025830872929516074
+      }
+    ],
+    "conditional_inverse_variance_average": {
+      "beta_deg": 0.2645609756097561,
+      "sigma_deg": 0.05778429189878424,
+      "required_g_delta_a_rad": 0.009234920193357313,
+      "required_g_delta_a_sigma_rad": 0.002017052299134542,
+      "claim": "conditional",
+      "notes": "Naive combination for orientation only; no shared-systematics covariance model was used."
+    },
+    "theory_context": {
+      "bi_field_as_pseudoscalar_source": {
+        "source_1": "Calcagni & Mercuri 2009, Barbero-Immirzi field in canonical formalism of pure gravity",
+        "url_1": "https://arxiv.org/abs/0902.0957",
+        "source_2": "Mercuri & Taveras 2009, Interaction of the Barbero-Immirzi Field with Matter and Pseudo-Scalar Perturbations",
+        "url_2": "https://arxiv.org/abs/0903.4407"
+      },
+      "generic_rotation_law_source": {
+        "source": "BDS et al. 2023, Cosmic birefringence tomography and calibration independence with reionization signals in the CMB",
+        "url": "https://academic.oup.com/mnras/article/520/3/3298/7036642",
+        "formula": "beta = g_{a gamma} Delta a / 2"
+      }
+    },
+    "boundary_notes": [
+      "derived boundary: current IO constants H0, Omega_i, gamma_BI, and x do not by themselves determine an axion-photon or torsion-photon coupling coefficient.",
+      "derived boundary: no local theorem in the current IO stack identifies a unique dynamical Immirzi field excursion Delta a from recombination to today.",
+      "conditional: a smoking-gun prediction would require an explicit optical coupling law and a solved background evolution for the parity-odd field, not just the constant gamma_BI = 0.2375."
+    ],
+    "illustrative_non_theorem_numbers": {
+      "if_one_forces_Delta_a_equals_gamma_BI_then_g_required_from_WMAP_Planck": 0.05026548245743669,
+      "if_one_forces_Delta_a_equals_K_gauge_then_g_required_from_WMAP_Planck": 0.21753010356489094,
+      "claim": "speculative",
+      "notes": "These are pure normalization games, included only to show scale. They are not derived IO predictions."
+    }
+  },
+  "baryon_to_photon_fun_run": {
+    "claim": "verified",
+    "T_CMB_K": 2.7253,
+    "n_gamma_cm3": 410.63643663582843,
+    "eta_per_omega_b_h2": 2.7347605938944503e-08,
+    "eta10_per_omega_b_h2": 273.476059389445,
+    "benchmarks": [
+      {
+        "label": "BBN 2025 PDG",
+        "omega_b_h2": 0.02205,
+        "omega_b_h2_sigma": 0.00043,
+        "eta": 6.030147109537263e-10,
+        "eta_sigma": 1.1759470553746136e-11,
+        "eta10": 6.030147109537263,
+        "eta10_sigma": 0.11759470553746136,
+        "source": "PDG 2025 Big-Bang Nucleosynthesis review",
+        "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-bbang-nucleosynthesis.pdf",
+        "claim": "verified"
+      },
+      {
+        "label": "CMB 2025 PDG / Planck TT,TE,EE+lowE+lensing",
+        "omega_b_h2": 0.02237,
+        "omega_b_h2_sigma": 0.00015,
+        "eta": 6.117659448541886e-10,
+        "eta_sigma": 4.102140890841675e-12,
+        "eta10": 6.117659448541885,
+        "eta10_sigma": 0.041021408908416754,
+        "source": "PDG 2025 Cosmic Microwave Background review",
+        "url": "https://pdg.lbl.gov/2025/reviews/rpp2025-rev-cosmic-microwave-background.pdf",
+        "claim": "verified"
+      }
+    ],
+    "rows": [
+      {
+        "label": "omega_b_geom",
+        "claim": "conditional",
+        "omega_b_h2": 0.02108,
+        "eta": 5.764875331929501e-10,
+        "eta10": 5.764875331929502,
+        "pull_vs_BBN_sigma": -2.255813953488369,
+        "pull_vs_CMB_sigma": -8.599999999999998
+      },
+      {
+        "label": "omega_b_eff",
+        "claim": "conditional",
+        "omega_b_h2": 0.0291,
+        "eta": 7.95815332823285e-10,
+        "eta10": 7.95815332823285,
+        "pull_vs_BBN_sigma": 16.395348837209305,
+        "pull_vs_CMB_sigma": 44.86666666666667
+      },
+      {
+        "label": "omega_b_clustering",
+        "claim": "derived",
+        "omega_b_h2": 0.01705,
+        "eta": 4.662766812590038e-10,
+        "eta10": 4.662766812590038,
+        "pull_vs_BBN_sigma": -11.627906976744189,
+        "pull_vs_CMB_sigma": -35.46666666666668
+      },
+      {
+        "label": "omega_b_raw_bdp_times_Omega_m",
+        "claim": "speculative",
+        "omega_b_h2": 0.04985888053419253,
+        "eta": 1.3635210174060082e-09,
+        "eta10": 13.635210174060083,
+        "pull_vs_BBN_sigma": 64.67181519579658,
+        "pull_vs_CMB_sigma": 183.25920356128356
+      }
+    ],
+    "best_match_to_BBN": {
+      "label": "omega_b_geom",
+      "claim": "conditional",
+      "omega_b_h2": 0.02108,
+      "eta": 5.764875331929501e-10,
+      "eta10": 5.764875331929502,
+      "pull_vs_BBN_sigma": -2.255813953488369,
+      "pull_vs_CMB_sigma": -8.599999999999998
+    },
+    "best_match_to_CMB": {
+      "label": "omega_b_geom",
+      "claim": "conditional",
+      "omega_b_h2": 0.02108,
+      "eta": 5.764875331929501e-10,
+      "eta10": 5.764875331929502,
+      "pull_vs_BBN_sigma": -2.255813953488369,
+      "pull_vs_CMB_sigma": -8.599999999999998
+    },
+    "notes": [
+      "verified: eta is constant in redshift for standard adiabatic scalings once T_CMB and omega_b h^2 are fixed.",
+      "derived boundary: none of the three carried IO baryon slots lands exactly on the modern BBN/CMB eta benchmark.",
+      "conditional: omega_b,geom is the closest carried slot, but is still low relative to both BBN and especially CMB.",
+      "verified sanity check: the raw Schur-translated BDP baryon fraction produces eta10 ~ 13.64, which is wildly too high."
+    ]
+  }
+}

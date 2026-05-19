@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "script_path": "/opt/cosmology-lab/results/paper30/paper30_funrun_lya_counts_drift_schur.py",
+    "io_geometry_discipline": "K=+1 closed FRW with sin(chi) focusing and no flat-space substitutions."
+  },
+  "lya_mean_flux_fun_run": {
+    "claim": "conditional",
+    "latest_tau_eff_dataset": {
+      "source": "Turner et al. 2024, LyCAN + DESI Y1",
+      "url": "https://arxiv.org/abs/2405.06743",
+      "sample_size": 83635,
+      "redshift_range": [
+        2.1,
+        4.2
+      ],
+      "fit": {
+        "tau0": 0.00246,
+        "tau0_sigma": 0.00014,
+        "gamma": 3.62,
+        "gamma_sigma": 0.04
+      }
+    },
+    "high_z_boundary_context": {
+      "source": "Bosman et al. 2022, XQR-30",
+      "url": "https://doi.org/10.1093/mnras/stac1046",
+      "statement": "Homogeneous-UVB simulations remain in excellent agreement up to z <= 5.2 and fail at z >= 5.4 because reionization-related UVB / temperature / residual-neutral fluctuations persist."
+    },
+    "uvb_benchmark_context": {
+      "source": "Bolton et al. 2005",
+      "url": "https://arxiv.org/abs/astro-ph/0411072",
+      "statement": "Benchmark metagalactic hydrogen ionization rates inferred from Ly-alpha opacity in Lambda-CDM: Gamma_HI(z=[2,3,4]) = [1.3(+0.8,-0.5), 0.9\u00b10.3, 1.0(+0.5,-0.3)] x 10^-12 s^-1."
+    },
+    "observed_rows": [
+      {
+        "z": 2.2,
+        "tau_eff": 0.16579751944158883,
+        "tau_eff_sigma": 0.01218751003476245,
+        "mean_flux_decrement_DA": 0.1527822380511693
+      },
+      {
+        "z": 3.0,
+        "tau_eff": 0.37187096923093055,
+        "tau_eff_sigma": 0.029548447336297374,
+        "mean_flux_decrement_DA": 0.3105568038289481
+      },
+      {
+        "z": 4.0,
+        "tau_eff": 0.8340777245794151,
+        "tau_eff_sigma": 0.07166896270928058,
+        "mean_flux_decrement_DA": 0.5657251822153528
+      },
+      {
+        "z": 4.2,
+        "tau_eff": 0.9613183028444564,
+        "tau_eff_sigma": 0.08373812644534395,
+        "mean_flux_decrement_DA": 0.6176115502326913
+      }
+    ],
+    "uvb_rows": [
+      {
+        "z": 2.0,
+        "benchmark": {
+          "Gamma_HI_1e12_s": 1.3,
+          "err_plus": 0.8,
+          "err_minus": 0.5
+        },
+        "slot_rows": [
+          {
+            "label": "omega_b_geom",
+            "claim": "conditional",
+            "omega_b_h2": 0.02108,
+            "tau_scaling_vs_flat_standard_uvb": 0.8274967394282677,
+            "Gamma_HI_required_1e12_s": 1.075745761256748,
+            "pull_vs_benchmark_sigma": -0.34500652114346464,
+            "notes": "IO geometric / BBN-like slot."
+          },
+          {
+            "label": "omega_b_eff",
+            "claim": "conditional",
+            "omega_b_h2": 0.0291,
+            "tau_scaling_vs_flat_standard_uvb": 1.5769250643506152,
+            "Gamma_HI_required_1e12_s": 2.0500025836558,
+            "pull_vs_benchmark_sigma": 1.1538501287012304,
+            "notes": "IO effective / acoustic slot."
+          },
+          {
+            "label": "omega_b_clustering",
+            "claim": "derived",
+            "omega_b_h2": 0.01705,
+            "tau_scaling_vs_flat_standard_uvb": 0.5413446446303003,
+            "Gamma_HI_required_1e12_s": 0.7037480380193905,
+            "pull_vs_benchmark_sigma": -0.9173107107393993,
+            "notes": "Paper 19 alpha = 3/2 clustering slot."
+          },
+          {
+            "label": "omega_b_raw_bdp_times_Omega_m",
+            "claim": "speculative",
+            "omega_b_h2": 0.04985888053419253,
+            "tau_scaling_vs_flat_standard_uvb": 4.6292445561600415,
+            "Gamma_HI_required_1e12_s": 6.018017923008054,
+            "pull_vs_benchmark_sigma": 7.258489112320084,
+            "notes": "Literal raw BDP fraction injected into Schur Omega_m, included only as a sanity check."
+          }
+        ]
+      },
+      {
+        "z": 3.0,
+        "benchmark": {
+          "Gamma_HI_1e12_s": 0.9,
+          "err_plus": 0.3,
+          "err_minus": 0.3
+        },
+        "slot_rows": [
+          {
+            "label": "omega_b_geom",
+            "claim": "conditional",
+            "omega_b_h2": 0.02108,
+            "tau_scaling_vs_flat_standard_uvb": 0.825595302516677,
+            "Gamma_HI_required_1e12_s": 0.7430357722650093,
+            "pull_vs_benchmark_sigma": -0.5232140924499692,
+            "notes": "IO geometric / BBN-like slot."
+          },
+          {
+            "label": "omega_b_eff",
+            "claim": "conditional",
+            "omega_b_h2": 0.0291,
+            "tau_scaling_vs_flat_standard_uvb": 1.5733015775363466,
+            "Gamma_HI_required_1e12_s": 1.415971419782712,
+            "pull_vs_benchmark_sigma": 1.71990473260904,
+            "notes": "IO effective / acoustic slot."
+          },
+          {
+            "label": "omega_b_clustering",
+            "claim": "derived",
+            "omega_b_h2": 0.01705,
+            "tau_scaling_vs_flat_standard_uvb": 0.5401007331559141,
+            "Gamma_HI_required_1e12_s": 0.48609065984032274,
+            "pull_vs_benchmark_sigma": -1.3796978005322578,
+            "notes": "Paper 19 alpha = 3/2 clustering slot."
+          },
+          {
+            "label": "omega_b_raw_bdp_times_Omega_m",
+            "claim": "speculative",
+            "omega_b_h2": 0.04985888053419253,
+            "tau_scaling_vs_flat_standard_uvb": 4.618607394643315,
+            "Gamma_HI_required_1e12_s": 4.156746655178984,
+            "pull_vs_benchmark_sigma": 10.855822183929947,
+            "notes": "Literal raw BDP fraction injected into Schur Omega_m, included only as a sanity check."
+          }
+        ]
+      },
+      {
+        "z": 4.0,
+        "benchmark": {
+          "Gamma_HI_1e12_s": 1.0,
+          "err_plus": 0.5,
+          "err_minus": 0.3
+        },
+        "slot_rows": [
+          {
+            "label": "omega_b_geom",
+            "claim": "conditional",
+            "omega_b_h2": 0.02108,
+            "tau_scaling_vs_flat_standard_uvb": 0.824741158600237,
+            "Gamma_HI_required_1e12_s": 0.824741158600237,
+            "pull_vs_benchmark_sigma": -0.4381471034994075,
+            "notes": "IO geometric / BBN-like slot."
+          },
+          {
+            "label": "omega_b_eff",
+            "claim": "conditional",
+            "omega_b_h2": 0.0291,
+            "tau_scaling_vs_flat_standard_uvb": 1.5716738720890386,
+            "Gamma_HI_required_1e12_s": 1.5716738720890386,
+            "pull_vs_benchmark_sigma": 1.4291846802225965,
+            "notes": "IO effective / acoustic slot."
+          },
+          {
+            "label": "omega_b_clustering",
+            "claim": "derived",
+            "omega_b_h2": 0.01705,
+            "tau_scaling_vs_flat_standard_uvb": 0.539541956047949,
+            "Gamma_HI_required_1e12_s": 0.539541956047949,
+            "pull_vs_benchmark_sigma": -1.1511451098801275,
+            "notes": "Paper 19 alpha = 3/2 clustering slot."
+          },
+          {
+            "label": "omega_b_raw_bdp_times_Omega_m",
+            "claim": "speculative",
+            "omega_b_h2": 0.04985888053419253,
+            "tau_scaling_vs_flat_standard_uvb": 4.613829078443436,
+            "Gamma_HI_required_1e12_s": 4.613829078443436,
+            "pull_vs_benchmark_sigma": 9.034572696108588,
+            "notes": "Literal raw BDP fraction injected into Schur Omega_m, included only as a sanity check."
+          }
+        ]
+      }
+    ],
+    "best_slot_by_uvb_consistency": "omega_b_geom",
+    "notes": [
+      "conditional: with a canonical post-reionization UVB normalization, the geometric slot is the cleanest Ly-alpha match on the Schur background.",
+      "conditional: the clustering slot is somewhat low but still within the broad factor-of-two UVB / thermal-history degeneracy envelope.",
+      "conditional: the acoustic slot needs roughly 1.5-2.2 x 10^-12 s^-1 at z = 2-4, i.e. a substantially stronger UVB than the standard benchmark.",
+      "verified sanity check: the raw BDP baryon fraction overpredicts Ly-alpha opacity by factors ~4.4-6.3 and is not viable here.",
+      "derived boundary: Ly-alpha tau_eff alone cannot theorem-grade identify the baryon slot because Gamma_HI and IGM temperature-density history are genuine degeneracies."
+    ]
+  },
+  "number_counts_fun_run": {
+    "claim": "conditional",
+    "formula_note": {
+      "comoving": "dV_c/dz = 4 pi c D_M^2 / H(z)",
+      "proper": "dV_prop/dz = dV_c/dz / (1+z)^3",
+      "notes": "The user's /(1+z)^3 form is the proper-volume version. For Schur/flat ratios at fixed z, the extra factor cancels."
+    },
+    "survey_context": {
+      "DESI_2024": {
+        "source": "DESI 2024 III: BAO from Galaxies and Quasars",
+        "url": "https://arxiv.org/abs/2404.03000",
+        "statement": "DESI Year 1 used 300,017 BGS galaxies (0.1<z<0.4), 2,138,600 LRGs (0.4<z<1.1), 2,432,022 ELGs (0.8<z<1.6), and 856,652 QSOs (0.8<z<2.1)."
+      },
+      "DES_Y3": {
+        "source": "DES Y3 clustering-redshift calibration",
+        "url": "https://academic.oup.com/mnras/article-abstract/510/1/1223/6431641",
+        "statement": "DES source n(z) is a calibrated selection function rather than a raw cosmology-only count distribution."
+      },
+      "Euclid": {
+        "source": "Euclid Collaboration preparation paper on wide spectroscopic survey",
+        "url": "https://www.aanda.org/articles/aa/full_html/2025/05/aa52480-24/aa52480-24.html",
+        "statement": "Euclid NISP spectroscopy targets H-alpha galaxies over roughly 0.9 < z < 1.8."
+      }
+    },
+    "pointwise_rows": [
+      {
+        "z": 0.3,
+        "dV_comoving_4pi_schur_Mpc3_per_dz": 67110688364.90534,
+        "dV_comoving_4pi_flat_Mpc3_per_dz": 72818903657.97575,
+        "ratio_comoving_schur_over_flat": 0.9216108042510305,
+        "dV_proper_4pi_schur_Mpc3_per_dz": 30546512677.851112,
+        "dV_proper_4pi_flat_Mpc3_per_dz": 33144698973.674732,
+        "ratio_proper_schur_over_flat": 0.9216108042529746
+      },
+      {
+        "z": 0.6,
+        "dV_comoving_4pi_schur_Mpc3_per_dz": 187690918111.9173,
+        "dV_comoving_4pi_flat_Mpc3_per_dz": 206334228009.09332,
+        "ratio_comoving_schur_over_flat": 0.9096450934143878,
+        "dV_proper_4pi_schur_Mpc3_per_dz": 45822978051.951836,
+        "dV_proper_4pi_flat_Mpc3_per_dz": 50374567381.91596,
+        "ratio_proper_schur_over_flat": 0.9096450934167604
+      },
+      {
+        "z": 1.0,
+        "dV_comoving_4pi_schur_Mpc3_per_dz": 324334007648.82556,
+        "dV_comoving_4pi_flat_Mpc3_per_dz": 361191117749.26,
+        "ratio_comoving_schur_over_flat": 0.8979567650220547,
+        "dV_proper_4pi_schur_Mpc3_per_dz": 40541750956.62796,
+        "dV_proper_4pi_flat_Mpc3_per_dz": 45148889719.141884,
+        "ratio_proper_schur_over_flat": 0.8979567650240439
+      },
+      {
+        "z": 1.5,
+        "dV_comoving_4pi_schur_Mpc3_per_dz": 421329177266.67,
+        "dV_comoving_4pi_flat_Mpc3_per_dz": 474212211006.2643,
+        "ratio_comoving_schur_over_flat": 0.8884823450088346,
+        "dV_proper_4pi_schur_Mpc3_per_dz": 26965067346.29307,
+        "dV_proper_4pi_flat_Mpc3_per_dz": 30349581505.735237,
+        "ratio_proper_schur_over_flat": 0.8884823450101746
+      },
+      {
+        "z": 2.0,
+        "dV_comoving_4pi_schur_Mpc3_per_dz": 459103126514.92664,
+        "dV_comoving_4pi_flat_Mpc3_per_dz": 520285083742.39496,
+        "ratio_comoving_schur_over_flat": 0.8824068589716462,
+        "dV_proper_4pi_schur_Mpc3_per_dz": 17003819501.441858,
+        "dV_proper_4pi_flat_Mpc3_per_dz": 19269817917.3733,
+        "ratio_proper_schur_over_flat": 0.8824068589725251
+      },
+      {
+        "z": 3.0,
+        "dV_comoving_4pi_schur_Mpc3_per_dz": 453548857900.99854,
+        "dV_comoving_4pi_flat_Mpc3_per_dz": 518210425475.7806,
+        "ratio_comoving_schur_over_flat": 0.8752214073743985,
+        "dV_proper_4pi_schur_Mpc3_per_dz": 7086700905.005621,
+        "dV_proper_4pi_flat_Mpc3_per_dz": 8097037898.401091,
+        "ratio_proper_schur_over_flat": 0.8752214073747908
+      }
+    ],
+    "survey_rows": [
+      {
+        "label": "DESI BGS",
+        "z_min": 0.1,
+        "z_max": 0.4,
+        "observed_count": 300017,
+        "source": "DESI 2024 III abstract",
+        "integrated_comoving_volume_schur_Mpc3": 15633796096.399082,
+        "integrated_comoving_volume_flat_Mpc3": 16960322467.721691,
+        "volume_ratio_schur_over_flat": 0.9217864887977685,
+        "expected_count_if_volume_traced_selection_fixed": 276551.6170096401,
+        "count_difference_vs_flat_expectation": -23465.382990359896
+      },
+      {
+        "label": "DESI LRG",
+        "z_min": 0.4,
+        "z_max": 1.1,
+        "observed_count": 2138600,
+        "source": "DESI 2024 III abstract",
+        "integrated_comoving_volume_schur_Mpc3": 167255522153.17517,
+        "integrated_comoving_volume_flat_Mpc3": 185136900113.27325,
+        "volume_ratio_schur_over_flat": 0.9034153755995826,
+        "expected_count_if_volume_traced_selection_fixed": 1932044.1222572674,
+        "count_difference_vs_flat_expectation": -206555.87774273258
+      },
+      {
+        "label": "DESI ELG",
+        "z_min": 0.8,
+        "z_max": 1.6,
+        "observed_count": 2432022,
+        "source": "DESI 2024 III abstract",
+        "integrated_comoving_volume_schur_Mpc3": 291173705928.8064,
+        "integrated_comoving_volume_flat_Mpc3": 325887807969.55707,
+        "volume_ratio_schur_over_flat": 0.8934783652784166,
+        "expected_count_if_volume_traced_selection_fixed": 2172959.0408811453,
+        "count_difference_vs_flat_expectation": -259062.95911885466
+      },
+      {
+        "label": "DESI QSO",
+        "z_min": 0.8,
+        "z_max": 2.1,
+        "observed_count": 856652,
+        "source": "DESI 2024 III abstract",
+        "integrated_comoving_volume_schur_Mpc3": 516464418373.5497,
+        "integrated_comoving_volume_flat_Mpc3": 580730744870.6171,
+        "volume_ratio_schur_over_flat": 0.8893354156556917,
+        "expected_count_if_volume_traced_selection_fixed": 761850.9624922796,
+        "count_difference_vs_flat_expectation": -94801.03750772036
+      }
+    ],
+    "notes": [
+      "verified: on the Schur branch the full-sky comoving volume element is lower than the flat comparator by about 7.8% at z = 0.3, 10.2% at z = 1.0, and 12.5% at z = 3.0.",
+      "conditional: if selection and luminosity evolution were held fixed, DESI-like raw counts would be lower on Schur by about 7.8% (BGS), 9.7% (LRG), 10.7% (ELG), and 11.1% (QSO).",
+      "derived boundary: observed dN/dz from SDSS, DES, DESI, or Euclid is not a clean cosmology likelihood by itself because selection, target cuts, evolution, and completeness dominate the raw shape.",
+      "conditional: the geometry effect is percent-level and therefore in principle measurable, but not from unmodeled raw number counts alone."
+    ]
+  },
+  "redshift_drift_fun_run": {
+    "claim": "verified",
+    "formula": "dot(z) = (1+z) H0 - H(z),  dot(v) = c dot(z)/(1+z) = c [H0 - H(z)/(1+z)]",
+    "instrument_context": {
+      "source": "Marconi et al. 2024, Cosmology and fundamental physics with the ELT-ANDES spectrograph",
+      "url": "https://link.springer.com/article/10.1007/s10686-024-09928-w",
+      "statement": "Redshift drift is ~6 cm/s over a decade in scale, likely requires a few 1000 observing hours over 20-25 years, and pushes toward cm/s total precision and ~1 cm/s long-term stability."
+    },
+    "rows": [
+      {
+        "z": 2.0,
+        "schur_cm_per_s_per_decade": -0.7896033730720805,
+        "flat_cm_per_s_per_decade": -0.21699061133031947,
+        "delta_schur_minus_flat_cm_per_s_per_decade": -0.572612761741761,
+        "delta_schur_minus_flat_cm_per_s_over_20yr": -1.145225523483522
+      },
+      {
+        "z": 3.0,
+        "schur_cm_per_s_per_decade": -3.685976831791935,
+        "flat_cm_per_s_per_decade": -2.922189491112738,
+        "delta_schur_minus_flat_cm_per_s_per_decade": -0.7637873406791971,
+        "delta_schur_minus_flat_cm_per_s_over_20yr": -1.5275746813583941
+      },
+      {
+        "z": 4.0,
+        "schur_cm_per_s_per_decade": -6.420011570069076,
+        "flat_cm_per_s_per_decade": -5.493966770745295,
+        "delta_schur_minus_flat_cm_per_s_per_decade": -0.9260447993237815,
+        "delta_schur_minus_flat_cm_per_s_over_20yr": -1.852089598647563
+      },
+      {
+        "z": 5.0,
+        "schur_cm_per_s_per_decade": -8.957304236108783,
+        "flat_cm_per_s_per_decade": -7.887303410171698,
+        "delta_schur_minus_flat_cm_per_s_per_decade": -1.0700008259370852,
+        "delta_schur_minus_flat_cm_per_s_over_20yr": -2.1400016518741705
+      }
+    ],
+    "notes": [
+      "verified: Schur predicts a more negative Sandage-Loeb drift than the flat comparator at every z = 2-5 point checked here.",
+      "verified: the Schur-flat difference grows from about 0.57 cm/s/decade at z = 2 to about 1.07 cm/s/decade at z = 5.",
+      "conditional: over a 20-year baseline the Schur-flat separation doubles to about 1.15-2.14 cm/s, which is comparable to the long-term ANDES target scale.",
+      "derived: this is one of the cleanest future Schur-vs-LCDM discriminators in the current fun-run set because it does not depend on standard candles, sound horizons, or baryon-slot assignment."
+    ]
+  }
+}

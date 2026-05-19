@@ -1,0 +1,760 @@
+{
+  "status": {
+    "frb_dm_run": "verified",
+    "frb_baryon_slot_interpretation": "conditional",
+    "angular_size_minimum": "verified",
+    "qso_standard_ruler_comparison": "conditional"
+  },
+  "models": {
+    "schur": {
+      "label": "IO Schur definitive branch",
+      "H0": 68.91,
+      "Omega_m": 0.33577637957547024,
+      "Omega_k": -0.005613722564238656,
+      "Omega_lambda": 0.6698373429887684
+    },
+    "flat_lcdm_comparator": {
+      "label": "Flat LCDM comparator",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_k": 0.0,
+      "Omega_lambda": 0.685
+    }
+  },
+  "frb_dm": {
+    "sample_notes": [
+      "verified: the direct comparison uses the 17 localized FRBs with published DM_cosmic values from Hsu et al. 2025 Table 2.",
+      "conditional: these DM_cosmic values depend on the paper's host-scattering model, MW halo prior, and fiducial diffuse-gas fraction fd = 0.85.",
+      "verified: the Schur prediction uses the standard observed-FRB integral DM(z) proportional to integral[(1+z)/E(z)] dz, which is the cosmological version of the electron-column integral.",
+      "conditional: FRBs are line-of-sight electron counts, so this run tests which IO baryon slot best reproduces the observed DM amplitude, not a theorem about the Paper 19 alpha-ladder."
+    ],
+    "assumptions": {
+      "diffuse_baryon_fraction_fd": 0.85,
+      "free_electron_fraction_fe": 0.875,
+      "uncertainty_convention": "Symmetrized sigma = (sigma_plus + sigma_minus) / 2 on the published asymmetric DM_cosmic errors."
+    },
+    "fit_summary": {
+      "best_fit_omega_b": 0.023048609721944394,
+      "best_fit_chi2": 103.46827477158185,
+      "omega_b_1sigma_low": 0.021725345069013805,
+      "omega_b_1sigma_high": 0.02437187437487498
+    },
+    "cases": [
+      {
+        "label": "omega_b_geom",
+        "omega_b": 0.02108,
+        "Omega_b_schur": 0.04439214258233938,
+        "claim": "conditional",
+        "notes": "IO geometric baryon density from the stack.",
+        "chi2": 105.68056557973816,
+        "chi2_per_point": 6.216503857631657,
+        "mean_delta_dm": 19.51670595494628,
+        "rows": [
+          {
+            "name": "FRB 20190102C",
+            "z": 0.2913,
+            "dm_cosmic_measured": 125.0,
+            "sigma_sym": 56.0,
+            "dm_predicted": 235.74176241894483,
+            "delta": 110.74176241894483,
+            "pull_sigma": 1.977531471766872
+          },
+          {
+            "name": "FRB 20190523A",
+            "z": 0.66,
+            "dm_cosmic_measured": 458.0,
+            "sigma_sym": 95.5,
+            "dm_predicted": 551.0445476641191,
+            "delta": 93.04454766411914,
+            "pull_sigma": 0.9742884572159072
+          },
+          {
+            "name": "FRB 20190608B",
+            "z": 0.1178,
+            "dm_cosmic_measured": -194.0,
+            "sigma_sym": 183.0,
+            "dm_predicted": 92.6435643557828,
+            "delta": 286.6435643557828,
+            "pull_sigma": 1.5663582751682121
+          },
+          {
+            "name": "FRB 20190714A",
+            "z": 0.2365,
+            "dm_cosmic_measured": 215.0,
+            "sigma_sym": 135.5,
+            "dm_predicted": 189.89564111443772,
+            "delta": -25.104358885562277,
+            "pull_sigma": -0.18527202129566256
+          },
+          {
+            "name": "FRB 20191001A",
+            "z": 0.234,
+            "dm_cosmic_measured": 171.0,
+            "sigma_sym": 103.5,
+            "dm_predicted": 187.81634357467948,
+            "delta": 16.81634357467948,
+            "pull_sigma": 0.16247674951381139
+          },
+          {
+            "name": "FRB 20200430A",
+            "z": 0.1608,
+            "dm_cosmic_measured": 140.0,
+            "sigma_sym": 109.0,
+            "dm_predicted": 127.49526957798483,
+            "delta": -12.504730422015172,
+            "pull_sigma": -0.11472229744968047
+          },
+          {
+            "name": "FRB 20200906A",
+            "z": 0.3688,
+            "dm_cosmic_measured": 416.0,
+            "sigma_sym": 40.0,
+            "dm_predicted": 301.299902716091,
+            "delta": -114.70009728390897,
+            "pull_sigma": -2.8675024320977243
+          },
+          {
+            "name": "FRB 20210320C",
+            "z": 0.2797,
+            "dm_cosmic_measured": 178.0,
+            "sigma_sym": 51.0,
+            "dm_predicted": 225.99700216427385,
+            "delta": 47.99700216427385,
+            "pull_sigma": 0.9411176894955657
+          },
+          {
+            "name": "FRB 20210603A",
+            "z": 0.1772,
+            "dm_cosmic_measured": 352.0,
+            "sigma_sym": 35.5,
+            "dm_predicted": 140.90853055744927,
+            "delta": -211.09146944255073,
+            "pull_sigma": -5.9462385758464995
+          },
+          {
+            "name": "FRB 20211127I",
+            "z": 0.0469,
+            "dm_cosmic_measured": 40.0,
+            "sigma_sym": 50.0,
+            "dm_predicted": 36.33056357943667,
+            "delta": -3.669436420563329,
+            "pull_sigma": -0.07338872841126659
+          },
+          {
+            "name": "FRB 20211212A",
+            "z": 0.0707,
+            "dm_cosmic_measured": 24.0,
+            "sigma_sym": 49.5,
+            "dm_predicted": 55.05930576576997,
+            "delta": 31.05930576576997,
+            "pull_sigma": 0.6274607225408074
+          },
+          {
+            "name": "FRB 20220105A",
+            "z": 0.2785,
+            "dm_cosmic_measured": 427.0,
+            "sigma_sym": 42.0,
+            "dm_predicted": 224.99007961526206,
+            "delta": -202.00992038473794,
+            "pull_sigma": -4.809760009160427
+          },
+          {
+            "name": "FRB 20220310F",
+            "z": 0.478,
+            "dm_cosmic_measured": 204.0,
+            "sigma_sym": 67.0,
+            "dm_predicted": 394.61812966658835,
+            "delta": 190.61812966658835,
+            "pull_sigma": 2.845046711441617
+          },
+          {
+            "name": "FRB 20220418A",
+            "z": 0.6214,
+            "dm_cosmic_measured": 320.0,
+            "sigma_sym": 90.0,
+            "dm_predicted": 517.8669342685241,
+            "delta": 197.86693426852412,
+            "pull_sigma": 2.1985214918724902
+          },
+          {
+            "name": "FRB 20220914A",
+            "z": 0.1139,
+            "dm_cosmic_measured": 405.0,
+            "sigma_sym": 81.0,
+            "dm_predicted": 89.50691581730926,
+            "delta": -315.4930841826907,
+            "pull_sigma": -3.8949763479344535
+          },
+          {
+            "name": "FRB 20220920A",
+            "z": 0.1582,
+            "dm_cosmic_measured": -9.0,
+            "sigma_sym": 105.0,
+            "dm_predicted": 125.37463958879903,
+            "delta": 134.37463958879903,
+            "pull_sigma": 1.2797584722742765
+          },
+          {
+            "name": "FRB 20221012A",
+            "z": 0.2847,
+            "dm_cosmic_measured": 123.0,
+            "sigma_sym": 143.5,
+            "dm_predicted": 230.19486878863438,
+            "delta": 107.19486878863438,
+            "pull_sigma": 0.7470025699556403
+          }
+        ]
+      },
+      {
+        "label": "omega_b_eff",
+        "omega_b": 0.0291,
+        "Omega_b_schur": 0.06128137329914971,
+        "claim": "conditional",
+        "notes": "IO effective/acoustic baryon density from Paper 12.",
+        "chi2": 124.35509021880792,
+        "chi2_per_point": 7.315005306988701,
+        "mean_delta_dm": 102.92112522578392,
+        "rows": [
+          {
+            "name": "FRB 20190102C",
+            "z": 0.2913,
+            "dm_cosmic_measured": 125.0,
+            "sigma_sym": 56.0,
+            "dm_predicted": 325.43099081552634,
+            "delta": 200.43099081552634,
+            "pull_sigma": 3.579124835991542
+          },
+          {
+            "name": "FRB 20190523A",
+            "z": 0.66,
+            "dm_cosmic_measured": 458.0,
+            "sigma_sym": 95.5,
+            "dm_predicted": 760.6924258551171,
+            "delta": 302.6924258551171,
+            "pull_sigma": 3.1695541974357813
+          },
+          {
+            "name": "FRB 20190608B",
+            "z": 0.1178,
+            "dm_cosmic_measured": -194.0,
+            "sigma_sym": 183.0,
+            "dm_predicted": 127.8903094285237,
+            "delta": 321.89030942852366,
+            "pull_sigma": 1.7589634395001292
+          },
+          {
+            "name": "FRB 20190714A",
+            "z": 0.2365,
+            "dm_cosmic_measured": 215.0,
+            "sigma_sym": 135.5,
+            "dm_predicted": 262.1424647262874,
+            "delta": 47.142464726287415,
+            "pull_sigma": 0.3479148688286894
+          },
+          {
+            "name": "FRB 20191001A",
+            "z": 0.234,
+            "dm_cosmic_measured": 171.0,
+            "sigma_sym": 103.5,
+            "dm_predicted": 259.2720871927502,
+            "delta": 88.27208719275018,
+            "pull_sigma": 0.852870407659422
+          },
+          {
+            "name": "FRB 20200430A",
+            "z": 0.1608,
+            "dm_cosmic_measured": 140.0,
+            "sigma_sym": 109.0,
+            "dm_predicted": 176.00153437947623,
+            "delta": 36.001534379476226,
+            "pull_sigma": 0.3302893062337268
+          },
+          {
+            "name": "FRB 20200906A",
+            "z": 0.3688,
+            "dm_cosmic_measured": 416.0,
+            "sigma_sym": 40.0,
+            "dm_predicted": 415.9310801251541,
+            "delta": -0.06891987484590345,
+            "pull_sigma": -0.0017229968711475862
+          },
+          {
+            "name": "FRB 20210320C",
+            "z": 0.2797,
+            "dm_cosmic_measured": 178.0,
+            "sigma_sym": 51.0,
+            "dm_predicted": 311.97878382259813,
+            "delta": 133.97878382259813,
+            "pull_sigma": 2.6270349769136887
+          },
+          {
+            "name": "FRB 20210603A",
+            "z": 0.1772,
+            "dm_cosmic_measured": 352.0,
+            "sigma_sym": 35.5,
+            "dm_predicted": 194.51794303708604,
+            "delta": -157.48205696291396,
+            "pull_sigma": -4.436114280645463
+          },
+          {
+            "name": "FRB 20211127I",
+            "z": 0.0469,
+            "dm_cosmic_measured": 40.0,
+            "sigma_sym": 50.0,
+            "dm_predicted": 50.15272296781817,
+            "delta": 10.152722967818171,
+            "pull_sigma": 0.20305445935636343
+          },
+          {
+            "name": "FRB 20211212A",
+            "z": 0.0707,
+            "dm_cosmic_measured": 24.0,
+            "sigma_sym": 49.5,
+            "dm_predicted": 76.00691640341111,
+            "delta": 52.00691640341111,
+            "pull_sigma": 1.0506447758264872
+          },
+          {
+            "name": "FRB 20220105A",
+            "z": 0.2785,
+            "dm_cosmic_measured": 427.0,
+            "sigma_sym": 42.0,
+            "dm_predicted": 310.5887721444082,
+            "delta": -116.41122785559179,
+            "pull_sigma": -2.771695901323614
+          },
+          {
+            "name": "FRB 20220310F",
+            "z": 0.478,
+            "dm_cosmic_measured": 204.0,
+            "sigma_sym": 67.0,
+            "dm_predicted": 544.7527311811064,
+            "delta": 340.75273118110636,
+            "pull_sigma": 5.085861659419498
+          },
+          {
+            "name": "FRB 20220418A",
+            "z": 0.6214,
+            "dm_cosmic_measured": 320.0,
+            "sigma_sym": 90.0,
+            "dm_predicted": 714.892210019642,
+            "delta": 394.892210019642,
+            "pull_sigma": 4.387691222440466
+          },
+          {
+            "name": "FRB 20220914A",
+            "z": 0.1139,
+            "dm_cosmic_measured": 405.0,
+            "sigma_sym": 81.0,
+            "dm_predicted": 123.56030599068784,
+            "delta": -281.4396940093122,
+            "pull_sigma": -3.4745641235717555
+          },
+          {
+            "name": "FRB 20220920A",
+            "z": 0.1582,
+            "dm_cosmic_measured": -9.0,
+            "sigma_sym": 105.0,
+            "dm_predicted": 173.07409924260207,
+            "delta": 182.07409924260207,
+            "pull_sigma": 1.734039040405734
+          },
+          {
+            "name": "FRB 20221012A",
+            "z": 0.2847,
+            "dm_cosmic_measured": 123.0,
+            "sigma_sym": 143.5,
+            "dm_predicted": 317.77375150613193,
+            "delta": 194.77375150613193,
+            "pull_sigma": 1.3573083728650308
+          }
+        ]
+      },
+      {
+        "label": "omega_b_naive_f_b_times_Omega_m",
+        "omega_b": 0.04985888053419253,
+        "Omega_b_schur": 0.10499727389324953,
+        "claim": "speculative",
+        "notes": "Naive baryon slot from f_b * Omega_m, included only as a sanity check.",
+        "chi2": 513.514624928009,
+        "chi2_per_point": 30.206742642824057,
+        "mean_delta_dm": 318.8042144610736,
+        "rows": [
+          {
+            "name": "FRB 20190102C",
+            "z": 0.2913,
+            "dm_cosmic_measured": 125.0,
+            "sigma_sym": 56.0,
+            "dm_predicted": 557.5816114500079,
+            "delta": 432.5816114500079,
+            "pull_sigma": 7.724671633035856
+          },
+          {
+            "name": "FRB 20190523A",
+            "z": 0.66,
+            "dm_cosmic_measured": 458.0,
+            "sigma_sym": 95.5,
+            "dm_predicted": 1303.342707353106,
+            "delta": 845.3427073531061,
+            "pull_sigma": 8.851756097938283
+          },
+          {
+            "name": "FRB 20190608B",
+            "z": 0.1178,
+            "dm_cosmic_measured": -194.0,
+            "sigma_sym": 183.0,
+            "dm_predicted": 219.122599975178,
+            "delta": 413.122599975178,
+            "pull_sigma": 2.257500546312448
+          },
+          {
+            "name": "FRB 20190714A",
+            "z": 0.2365,
+            "dm_cosmic_measured": 215.0,
+            "sigma_sym": 135.5,
+            "dm_predicted": 449.14535504215604,
+            "delta": 234.14535504215604,
+            "pull_sigma": 1.7280100003111147
+          },
+          {
+            "name": "FRB 20191001A",
+            "z": 0.234,
+            "dm_cosmic_measured": 171.0,
+            "sigma_sym": 103.5,
+            "dm_predicted": 444.2273546802089,
+            "delta": 273.2273546802089,
+            "pull_sigma": 2.6398778229971875
+          },
+          {
+            "name": "FRB 20200430A",
+            "z": 0.1608,
+            "dm_cosmic_measured": 140.0,
+            "sigma_sym": 109.0,
+            "dm_predicted": 301.5546211842228,
+            "delta": 161.5546211842228,
+            "pull_sigma": 1.4821524879286496
+          },
+          {
+            "name": "FRB 20200906A",
+            "z": 0.3688,
+            "dm_cosmic_measured": 416.0,
+            "sigma_sym": 40.0,
+            "dm_predicted": 712.6411695676193,
+            "delta": 296.6411695676193,
+            "pull_sigma": 7.416029239190482
+          },
+          {
+            "name": "FRB 20210320C",
+            "z": 0.2797,
+            "dm_cosmic_measured": 178.0,
+            "sigma_sym": 51.0,
+            "dm_predicted": 534.5330897530446,
+            "delta": 356.5330897530446,
+            "pull_sigma": 6.990844897118521
+          },
+          {
+            "name": "FRB 20210603A",
+            "z": 0.1772,
+            "dm_cosmic_measured": 352.0,
+            "sigma_sym": 35.5,
+            "dm_predicted": 333.27996163721446,
+            "delta": -18.720038362785544,
+            "pull_sigma": -0.5273250243038181
+          },
+          {
+            "name": "FRB 20211127I",
+            "z": 0.0469,
+            "dm_cosmic_measured": 40.0,
+            "sigma_sym": 50.0,
+            "dm_predicted": 85.9298495847732,
+            "delta": 45.929849584773194,
+            "pull_sigma": 0.9185969916954639
+          },
+          {
+            "name": "FRB 20211212A",
+            "z": 0.0707,
+            "dm_cosmic_measured": 24.0,
+            "sigma_sym": 49.5,
+            "dm_predicted": 130.22748332405612,
+            "delta": 106.22748332405612,
+            "pull_sigma": 2.146009764122346
+          },
+          {
+            "name": "FRB 20220105A",
+            "z": 0.2785,
+            "dm_cosmic_measured": 427.0,
+            "sigma_sym": 42.0,
+            "dm_predicted": 532.1514943508452,
+            "delta": 105.15149435084516,
+            "pull_sigma": 2.5036070083534563
+          },
+          {
+            "name": "FRB 20220310F",
+            "z": 0.478,
+            "dm_cosmic_measured": 204.0,
+            "sigma_sym": 67.0,
+            "dm_predicted": 933.3594963791711,
+            "delta": 729.3594963791711,
+            "pull_sigma": 10.885962632524942
+          },
+          {
+            "name": "FRB 20220418A",
+            "z": 0.6214,
+            "dm_cosmic_measured": 320.0,
+            "sigma_sym": 90.0,
+            "dm_predicted": 1224.8702850238558,
+            "delta": 904.8702850238558,
+            "pull_sigma": 10.054114278042842
+          },
+          {
+            "name": "FRB 20220914A",
+            "z": 0.1139,
+            "dm_cosmic_measured": 405.0,
+            "sigma_sym": 81.0,
+            "dm_predicted": 211.7037297305147,
+            "delta": -193.2962702694853,
+            "pull_sigma": -2.3863737070306827
+          },
+          {
+            "name": "FRB 20220920A",
+            "z": 0.1582,
+            "dm_cosmic_measured": -9.0,
+            "sigma_sym": 105.0,
+            "dm_predicted": 296.5388604020577,
+            "delta": 305.5388604020577,
+            "pull_sigma": 2.909893908591026
+          },
+          {
+            "name": "FRB 20221012A",
+            "z": 0.2847,
+            "dm_cosmic_measured": 123.0,
+            "sigma_sym": 143.5,
+            "dm_predicted": 544.4619764002204,
+            "delta": 421.46197640022035,
+            "pull_sigma": 2.937017257144393
+          }
+        ]
+      },
+      {
+        "label": "omega_b_best_fit_from_frbs",
+        "omega_b": 0.023048609721944394,
+        "Omega_b_schur": 0.048537816371027,
+        "claim": "verified",
+        "notes": "Best-fit effective baryon density inferred from the localized-FRB DM_cosmic sample under the Schur background.",
+        "chi2": 103.46827477158185,
+        "chi2_per_point": 6.086369104210696,
+        "mean_delta_dm": 39.98936812822525,
+        "rows": [
+          {
+            "name": "FRB 20190102C",
+            "z": 0.2913,
+            "dm_cosmic_measured": 125.0,
+            "sigma_sym": 56.0,
+            "dm_predicted": 257.7571099220872,
+            "delta": 132.75710992208718,
+            "pull_sigma": 2.3706626771801282
+          },
+          {
+            "name": "FRB 20190523A",
+            "z": 0.66,
+            "dm_cosmic_measured": 458.0,
+            "sigma_sym": 95.5,
+            "dm_predicted": 602.5052523015023,
+            "delta": 144.5052523015023,
+            "pull_sigma": 1.5131440031570922
+          },
+          {
+            "name": "FRB 20190608B",
+            "z": 0.1178,
+            "dm_cosmic_measured": -194.0,
+            "sigma_sym": 183.0,
+            "dm_predicted": 101.2953205923281,
+            "delta": 295.2953205923281,
+            "pull_sigma": 1.6136356316520661
+          },
+          {
+            "name": "FRB 20190714A",
+            "z": 0.2365,
+            "dm_cosmic_measured": 215.0,
+            "sigma_sym": 135.5,
+            "dm_predicted": 207.62953130669322,
+            "delta": -7.370468693306776,
+            "pull_sigma": -0.05439460290263304
+          },
+          {
+            "name": "FRB 20191001A",
+            "z": 0.234,
+            "dm_cosmic_measured": 171.0,
+            "sigma_sym": 103.5,
+            "dm_predicted": 205.35605324741016,
+            "delta": 34.35605324741016,
+            "pull_sigma": 0.33194254345323826
+          },
+          {
+            "name": "FRB 20200430A",
+            "z": 0.1608,
+            "dm_cosmic_measured": 140.0,
+            "sigma_sym": 109.0,
+            "dm_predicted": 139.4017414562174,
+            "delta": -0.598258543782606,
+            "pull_sigma": -0.005488610493418404
+          },
+          {
+            "name": "FRB 20200906A",
+            "z": 0.3688,
+            "dm_cosmic_measured": 416.0,
+            "sigma_sym": 40.0,
+            "dm_predicted": 329.4375648464419,
+            "delta": -86.56243515355811,
+            "pull_sigma": -2.164060878838953
+          },
+          {
+            "name": "FRB 20210320C",
+            "z": 0.2797,
+            "dm_cosmic_measured": 178.0,
+            "sigma_sym": 51.0,
+            "dm_predicted": 247.1023103042586,
+            "delta": 69.1023103042586,
+            "pull_sigma": 1.3549472608678155
+          },
+          {
+            "name": "FRB 20210603A",
+            "z": 0.1772,
+            "dm_cosmic_measured": 352.0,
+            "sigma_sym": 35.5,
+            "dm_predicted": 154.06763412292807,
+            "delta": -197.93236587707193,
+            "pull_sigma": -5.57555960217104
+          },
+          {
+            "name": "FRB 20211127I",
+            "z": 0.0469,
+            "dm_cosmic_measured": 40.0,
+            "sigma_sym": 50.0,
+            "dm_predicted": 39.723386191685144,
+            "delta": -0.27661380831485616,
+            "pull_sigma": -0.005532276166297123
+          },
+          {
+            "name": "FRB 20211212A",
+            "z": 0.0707,
+            "dm_cosmic_measured": 24.0,
+            "sigma_sym": 49.5,
+            "dm_predicted": 60.20115987459368,
+            "delta": 36.20115987459368,
+            "pull_sigma": 0.7313365631231046
+          },
+          {
+            "name": "FRB 20220105A",
+            "z": 0.2785,
+            "dm_cosmic_measured": 427.0,
+            "sigma_sym": 42.0,
+            "dm_predicted": 246.00135371733262,
+            "delta": -180.99864628266738,
+            "pull_sigma": -4.309491578158747
+          },
+          {
+            "name": "FRB 20220310F",
+            "z": 0.478,
+            "dm_cosmic_measured": 204.0,
+            "sigma_sym": 67.0,
+            "dm_predicted": 431.47055312565664,
+            "delta": 227.47055312565664,
+            "pull_sigma": 3.395082882472487
+          },
+          {
+            "name": "FRB 20220418A",
+            "z": 0.6214,
+            "dm_cosmic_measured": 320.0,
+            "sigma_sym": 90.0,
+            "dm_predicted": 566.2292626117193,
+            "delta": 246.22926261171926,
+            "pull_sigma": 2.7358806956857697
+          },
+          {
+            "name": "FRB 20220914A",
+            "z": 0.1139,
+            "dm_cosmic_measured": 405.0,
+            "sigma_sym": 81.0,
+            "dm_predicted": 97.86574810664577,
+            "delta": -307.13425189335425,
+            "pull_sigma": -3.7917808875722745
+          },
+          {
+            "name": "FRB 20220920A",
+            "z": 0.1582,
+            "dm_cosmic_measured": -9.0,
+            "sigma_sym": 105.0,
+            "dm_predicted": 137.08307101098993,
+            "delta": 146.08307101098993,
+            "pull_sigma": 1.3912673429618088
+          },
+          {
+            "name": "FRB 20221012A",
+            "z": 0.2847,
+            "dm_cosmic_measured": 123.0,
+            "sigma_sym": 143.5,
+            "dm_predicted": 251.69220544133933,
+            "delta": 128.69220544133933,
+            "pull_sigma": 0.8968097940163019
+          }
+        ]
+      }
+    ],
+    "sample_size": 17
+  },
+  "angular_size_minimum": {
+    "schur_z_max": 1.5631078155390776,
+    "schur_DA_max_Mpc": 1730.0129508232092,
+    "schur_theta_min_mas_for_11p03pc": 1.3150785656936355,
+    "flat_z_max": 1.5880079400397,
+    "flat_DA_max_Mpc": 1794.302927376308,
+    "flat_theta_min_mas_for_11p03pc": 1.2679592254395609,
+    "delta_z_max_schur_minus_flat": -0.0249001245006224,
+    "delta_DA_max_Mpc_schur_minus_flat": -64.28997655309877
+  },
+  "qso_comparison": {
+    "sample_size": 120,
+    "sample_source": "Cao et al. 2017 120 intermediate-luminosity compact radio quasars derived from the Preston/Jackson VLBI compilation.",
+    "published_linear_size_pc": 11.03,
+    "extra_fractional_scatter_added": 0.1,
+    "fixed_linear_size": {
+      "schur": {
+        "chi2": 609.4819534953328,
+        "chi2_per_point": 5.0790162791277735
+      },
+      "flat": {
+        "chi2": 607.1890073559099,
+        "chi2_per_point": 5.059908394632583
+      }
+    },
+    "fit_linear_size": {
+      "schur": {
+        "best_fit_linear_size_pc": 10.783869681378826,
+        "chi2": 606.2301867076861,
+        "chi2_per_dof": 5.094371316871312
+      },
+      "flat": {
+        "best_fit_linear_size_pc": 11.160345246102528,
+        "chi2": 606.337543751071,
+        "chi2_per_dof": 5.095273476899757
+      }
+    },
+    "binned_minimum_examples": [
+      {
+        "bin_size": 10,
+        "z_at_minimum": 1.7685,
+        "theta_minimum_mas": 1.1905000000000001
+      },
+      {
+        "bin_size": 12,
+        "z_at_minimum": 1.3475000000000001,
+        "theta_minimum_mas": 1.2774999999999999
+      }
+    ]
+  },
+  "plot_status": {
+    "frb_plot": "written",
+    "angular_plot": "written"
+  }
+}

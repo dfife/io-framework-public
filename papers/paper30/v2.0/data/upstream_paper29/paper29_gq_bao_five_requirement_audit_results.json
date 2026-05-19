@@ -1,0 +1,163 @@
+{
+  "scope": {
+    "label": "current DESI DR2 GCcomb galaxy/quasar observable on the surviving i.i.d. branch",
+    "status": "derived / scoped",
+    "imports_under_premise_2": [
+      "standard reconstructed anisotropic AP-shell BAO readout",
+      "standard isotropic Gaussian bulk-displacement template stage",
+      "gauge-neutral late-time linear/quasi-linear galaxy evolution",
+      "gauge-neutral Landy-Szalay style pair-count extraction"
+    ]
+  },
+  "baseline": {
+    "hybrid_r_d_Mpc": 144.0135142634564,
+    "eta": 0.036124605346983495,
+    "f_perp": 1.036785027400527,
+    "f_par": 1.0182264126413767,
+    "bao_chi2": 27.735229301342457,
+    "cc_chi2": 14.701523963980787,
+    "combined_chi2": 42.43675326532325,
+    "planck_bao_chi2": 31.25101137291248,
+    "planck_combined_chi2": 46.40432046950788,
+    "delta_bao_vs_planck": -3.5157820715700225,
+    "delta_combined_vs_planck": -3.9675672041846326
+  },
+  "five_requirements": [
+    {
+      "id": 1,
+      "requirement": "Primitive galaxy/quasar BAO observable defined at operator level",
+      "status": "derived / scoped",
+      "closure": "The current DESI DR2 GCcomb galaxy/quasar statistic is the reconstructed redshift-space pair-count observable in the Gaussian-template / anisotropic AP-shell class, O_BAO^gal = R_W o D_Sigma[xi_raw].",
+      "authorities": [
+        "Paper 31 readout operator section in Interior_Observer_Paper31_v1_1.docx",
+        "paper31_seam2_bao_observable_theorem.md Theorem B1/B2",
+        "paper29_iid_readout_selection_promotion_report.md"
+      ]
+    },
+    {
+      "id": 2,
+      "requirement": "Radial AP-shell leg factors through a one-slot history field before bilinear pair counting",
+      "status": "derived / scoped",
+      "closure": "The radial shell map is Q_parallel(z_eff): Delta_z -> c Delta_z / (H(z_eff) r_d). It is scalar, one-slot, and degree-1 before the pair-count bilinear.",
+      "authorities": [
+        "paper29_bao_radial_factorization_theorem_report.md Theorem 29.RF",
+        "paper29_bao_radial_class_membership_upgrade_report.md"
+      ]
+    },
+    {
+      "id": 3,
+      "requirement": "BAO-sector no-second-slot theorem",
+      "status": "derived / scoped",
+      "closure": "After primitive operator placement and radial factorization, no second independent A-sensitive BAO payload slot survives: D_A/D_M remain gauge-neutral, downstream evolution and pair counting are gauge-neutral, amplitude dressing cannot move the shell, and template redefinition cannot absorb anisotropic AP dilation.",
+      "authorities": [
+        "paper29_bao_no_second_slot_payload_exclusion_report.md Theorem 29.BAO.NS.1",
+        "Interior_Observer_Paper21_v1_4.docx (AB3/AB4 and P21.A3 no-second-A-action)",
+        "paper29_bao_template_normal_form_theorem_report.md",
+        "paper29_bao_coordinate_vs_field_nogo_report.md",
+        "paper29_h1h4_dual_possibility_resolution_report.md"
+      ]
+    },
+    {
+      "id": 4,
+      "requirement": "BAO-specific payload exclusion killing both identity and K_gauge/2",
+      "status": "derived / scoped",
+      "closure": "Identity is excluded because a nonzero parent coefficient eta survives on the fixed template class and cannot hide in amplitude or template sectors. K_gauge/2 is excluded because it is a post-bridge field-amplitude law, not a BAO AP-shell coordinate kernel.",
+      "authorities": [
+        "paper29_bao_no_second_slot_payload_exclusion_report.md Corollary 29.BAO.PE.1",
+        "paper29_bao_coordinate_sector_descent_theorem_report.md",
+        "paper29_bao_coordinate_vs_field_nogo_report.md",
+        "paper29_bao_parent_coefficient_selector_theorem_report.md",
+        "paper31_post_bridge_field_readout_theorem.md"
+      ]
+    },
+    {
+      "id": 5,
+      "requirement": "Half-order radial coefficient derived from class theorem",
+      "status": "derived / scoped",
+      "closure": "The radial AP-shell line scale is the unique positive descendant of the shell quadratic form, so it carries the unique square-root coefficient exp(eta/2) while the transverse covariance leg carries exp(eta).",
+      "authorities": [
+        "paper29_bao_radial_sqrt_descent_theorem_report.md Theorems 29.BAO.SD.1-.3",
+        "paper29_bao_radial_factorization_theorem_report.md"
+      ]
+    },
+    {
+      "id": "eta",
+      "requirement": "Eta scope jump resolved",
+      "status": "derived / scoped",
+      "closure": "Eta is not freshly rederived in late-time BAO. It is propagated from the active reduced source block into the galaxy covariance through the narrowed H1-H4 bridge: active-source P4 closure, gauge-neutral late-time evolution, gauge-neutral pair-count extraction, and no downstream second mild coefficient.",
+      "authorities": [
+        "Interior_Observer_Paper32_v1_2.docx Step 564/565",
+        "paper29_galaxy_covariance_eta_transport_report.md",
+        "paper29_h1h4_dual_possibility_resolution_report.md"
+      ]
+    }
+  ],
+  "theorem_chain": [
+    {
+      "step": "Primitive observable",
+      "result": "O_BAO^gal = R_W o D_Sigma[xi_raw]",
+      "status": "derived / scoped"
+    },
+    {
+      "step": "Radial factorization",
+      "result": "Q_parallel(z_eff): Delta_z -> c Delta_z / (H(z_eff) r_d)",
+      "status": "derived / scoped"
+    },
+    {
+      "step": "No-second-slot",
+      "result": "No second independent BAO-sector payload slot survives",
+      "status": "derived / scoped"
+    },
+    {
+      "step": "Payload exclusion",
+      "result": "Identity and K_gauge/2 killed on BAO-sector grounds",
+      "status": "derived / scoped"
+    },
+    {
+      "step": "Radial half-order",
+      "result": "f_par = exp(eta/2)",
+      "status": "derived / scoped"
+    },
+    {
+      "step": "Eta propagation",
+      "result": "eta = K_gauge/x transported from active source block by H1-H4",
+      "status": "derived / scoped"
+    },
+    {
+      "step": "Final galaxy/quasar kernel",
+      "result": "R_W^gal = exp[-eta D_perp - (eta/2) D_par]",
+      "status": "derived / scoped"
+    }
+  ],
+  "active_boundaries": {
+    "derived_scoped_now": [
+      "The current GCcomb galaxy/quasar BAO operator ladder is closed on its stated scope.",
+      "The surviving galaxy/quasar kernel is R_W^gal = exp[-eta D_perp - (eta/2) D_par].",
+      "Identity and K_gauge/2 are excluded on BAO-sector operator grounds."
+    ],
+    "not_claimed": [
+      "Full BAO sector theorem-grade closure across galaxy/quasar plus Lyalpha.",
+      "Universal BAO closure across all tracers, estimators, and readout conventions.",
+      "Internal theorem-grade non-identity Lyalpha selector.",
+      "Paper 17 R4 normalization."
+    ],
+    "do_not_say": [
+      "full BAO sector is now universally theorem-grade closed",
+      "eta was rederived natively in the late-time BAO sector itself",
+      "Lyalpha is internally closed beyond the IO identity component"
+    ]
+  },
+  "authoritative_inputs": {
+    "hybrid_rd_audit": {
+      "isolated_predrag_input_routing": "derived/scoped",
+      "hybrid_rdrag_numeric_value": "verified",
+      "full_bao_observable": "conditional/open",
+      "full_stage2_cmb_solver": "open"
+    },
+    "readout_selection": "derived / scoped on the current DESI DR2 GCcomb galaxy/quasar observable definition under Premise 1 and Premise 2",
+    "h1h4_bridge": "derived / scoped within the standard reconstructed AP-shell and isotropic bulk-displacement imports under Premise 2",
+    "radial_factorization": "derived_scoped_factorization_theorem_plus_conditional_kernel_closure",
+    "parent_selector": "derived_scoped_parent_selector",
+    "coordinate_descent": "derived / conditional / scoped within the standard AP-shell import under Premise 2"
+  }
+}

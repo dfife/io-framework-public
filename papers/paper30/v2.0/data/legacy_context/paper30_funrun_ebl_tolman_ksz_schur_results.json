@@ -1,0 +1,265 @@
+{
+  "status": {
+    "gamma_horizon_geometry_run": "conditional",
+    "tolman_surface_brightness_run": "derived",
+    "ksz_pairwise_scaling_run": "conditional"
+  },
+  "models": {
+    "schur": {
+      "label": "IO Schur definitive branch",
+      "H0": 68.91,
+      "Omega_m": 0.33577637957547024,
+      "Omega_k": -0.005613722564238656,
+      "Omega_lambda": 0.6698373429887684
+    },
+    "flat_lcdm_comparator": {
+      "label": "Flat LCDM comparator",
+      "H0": 67.4,
+      "Omega_m": 0.315,
+      "Omega_k": 0.0,
+      "Omega_lambda": 0.685
+    }
+  },
+  "gamma_horizon": {
+    "latest_observational_context": {
+      "source_catalogue": "1CGH Catalogue of Fermi-LAT detections above 10 GeV",
+      "n_sources": 2791,
+      "n_absorption_sensitive_sources": 525,
+      "redshift_range": [
+        0.0,
+        3.0
+      ]
+    },
+    "rows": [
+      {
+        "z_flat": 0.1,
+        "D_c_schur_Mpc": 424.0578258864608,
+        "D_c_flat_Mpc": 434.1109946309708,
+        "D_c_ratio_schur_over_flat": 0.9768419393453602,
+        "dVdz_schur_Mpc3_per_sr": 742551579.3457944,
+        "dVdz_flat_Mpc3_per_sr": 797674526.8003145,
+        "dVdz_ratio_schur_over_flat": 0.9308954396780941,
+        "tau_kernel_ratio_schur_over_flat": 0.9986858720092466,
+        "z_schur_for_equal_tau_kernel": 0.1001231054770764,
+        "delta_z_horizon_like_shift": 0.00012310547707639063
+      },
+      {
+        "z_flat": 0.3,
+        "D_c_schur_Mpc": 1204.851705459206,
+        "D_c_flat_Mpc": 1236.4442931407882,
+        "D_c_ratio_schur_over_flat": 0.9744488386117813,
+        "dVdz_schur_Mpc3_per_sr": 5340498893.586415,
+        "dVdz_flat_Mpc3_per_sr": 5794744233.624585,
+        "dVdz_ratio_schur_over_flat": 0.9216108042521763,
+        "tau_kernel_ratio_schur_over_flat": 0.9959515485055989,
+        "z_schur_for_equal_tau_kernel": 0.30103944155847384,
+        "delta_z_horizon_like_shift": 0.0010394415584738526
+      },
+      {
+        "z_flat": 0.5,
+        "D_c_schur_Mpc": 1897.3219378760054,
+        "D_c_flat_Mpc": 1951.3869861447342,
+        "D_c_ratio_schur_over_flat": 0.9722940407758163,
+        "dVdz_schur_Mpc3_per_sr": 11699966695.586023,
+        "dVdz_flat_Mpc3_per_sr": 12810361140.15784,
+        "dVdz_ratio_schur_over_flat": 0.9133205978798709,
+        "tau_kernel_ratio_schur_over_flat": 0.9932800635345381,
+        "z_schur_for_equal_tau_kernel": 0.502722240806086,
+        "delta_z_horizon_like_shift": 0.0027222408060859626
+      },
+      {
+        "z_flat": 1.0,
+        "D_c_schur_Mpc": 3292.9342957505046,
+        "D_c_flat_Mpc": 3401.2629173368873,
+        "D_c_ratio_schur_over_flat": 0.9681504710987759,
+        "dVdz_schur_Mpc3_per_sr": 25809680265.251133,
+        "dVdz_flat_Mpc3_per_sr": 28742675895.589413,
+        "dVdz_ratio_schur_over_flat": 0.8979567650210205,
+        "tau_kernel_ratio_schur_over_flat": 0.9876514897271713,
+        "z_schur_for_equal_tau_kernel": 1.009409384989561,
+        "delta_z_horizon_like_shift": 0.009409384989560898
+      },
+      {
+        "z_flat": 2.0,
+        "D_c_schur_Mpc": 5118.841118305507,
+        "D_c_flat_Mpc": 5312.075392461528,
+        "D_c_ratio_schur_over_flat": 0.9636235821445147,
+        "dVdz_schur_Mpc3_per_sr": 36534265986.71446,
+        "dVdz_flat_Mpc3_per_sr": 41402971447.1393,
+        "dVdz_ratio_schur_over_flat": 0.8824068589704753,
+        "tau_kernel_ratio_schur_over_flat": 0.9808677638770614,
+        "z_schur_for_equal_tau_kernel": 2.0283638705893825,
+        "delta_z_horizon_like_shift": 0.0283638705893825
+      },
+      {
+        "z_flat": 3.0,
+        "D_c_schur_Mpc": 6254.999924698577,
+        "D_c_flat_Mpc": 6506.062225247827,
+        "D_c_ratio_schur_over_flat": 0.9614110206977483,
+        "dVdz_schur_Mpc3_per_sr": 36092271333.95743,
+        "dVdz_flat_Mpc3_per_sr": 41237875387.74761,
+        "dVdz_ratio_schur_over_flat": 0.8752214073734987,
+        "tau_kernel_ratio_schur_over_flat": 0.9773878885127939,
+        "z_schur_for_equal_tau_kernel": 3.049932999051289,
+        "delta_z_horizon_like_shift": 0.049932999051288895
+      }
+    ],
+    "notes": [
+      "conditional: the optical-depth comparison uses a geometry-only absorption kernel proportional to integral[(1+z)^2/E(z)] dz, which isolates the expansion-history dependence while holding the detailed EBL spectral model fixed.",
+      "conditional: direct gamma-ray horizon predictions also depend on EBL emissivity evolution and pair-production kinematics, so these numbers should be read as horizon-shift estimates rather than a full EBL likelihood."
+    ]
+  },
+  "tolman": {
+    "derived_statement": "In any FRW spacetime that obeys distance duality, including K=+1 closed FRW, the bolometric Tolman test is exactly I_obs = I_emit / (1+z)^4.",
+    "rows": [
+      {
+        "z": 0.5,
+        "surface_brightness_dimming_factor_expanding": 5.0625,
+        "surface_brightness_dimming_factor_tired_light": 1.5,
+        "surface_brightness_dimming_mag_expanding": 1.7609125905568124,
+        "surface_brightness_dimming_mag_tired_light": 0.4402281476392031
+      },
+      {
+        "z": 0.85,
+        "surface_brightness_dimming_factor_expanding": 11.713506250000002,
+        "surface_brightness_dimming_factor_tired_light": 1.85,
+        "surface_brightness_dimming_mag_expanding": 2.6717172840301378,
+        "surface_brightness_dimming_mag_tired_light": 0.6679293210075344
+      },
+      {
+        "z": 1.0,
+        "surface_brightness_dimming_factor_expanding": 16.0,
+        "surface_brightness_dimming_factor_tired_light": 2.0,
+        "surface_brightness_dimming_mag_expanding": 3.010299956639812,
+        "surface_brightness_dimming_mag_tired_light": 0.752574989159953
+      },
+      {
+        "z": 2.0,
+        "surface_brightness_dimming_factor_expanding": 81.0,
+        "surface_brightness_dimming_factor_tired_light": 3.0,
+        "surface_brightness_dimming_mag_expanding": 4.771212547196624,
+        "surface_brightness_dimming_mag_tired_light": 1.192803136799156
+      }
+    ],
+    "latest_data_status": "No newer mainstream JWST/HST direct Tolman-test compilation was identified in this search; the comparison is anchored to the Sandage et al. HST-cluster benchmark at z ~ 0.85.",
+    "benchmark_observational_context": {
+      "paper": "Sandage et al. 2009 Tolman Test V",
+      "redshift_focus": 0.85,
+      "result_summary": "The HST cluster data show a highly significant Tolman signal once luminosity evolution is modeled."
+    },
+    "notes": [
+      "derived: the K=+1 geometry cancels out of the Tolman surface-brightness law because D_L = (1+z)^2 D_A.",
+      "verified: Schur therefore predicts the same (1+z)^4 dimming as standard expanding FRW cosmology and does not generate a distinctive Tolman signature of its own."
+    ]
+  },
+  "ksz": {
+    "observational_context": {
+      "latest_pairwise_detection": "DESI DR1 LRGs + ACT DR6 + Planck",
+      "detection_sigma": 9.3,
+      "best_fit_mass_averaged_taubar_10e5_context": 7.45,
+      "best_fit_mass_averaged_taubar_sigma_10e5_context": 1.45,
+      "BGS_cosmology_proxy": {
+        "z_mean": 0.33,
+        "f_sigma8sq_measured": 0.38,
+        "f_sigma8sq_sigma": 0.076
+      }
+    },
+    "rows": [
+      {
+        "label": "flat_reference",
+        "claim": "verified",
+        "notes": "Reference ACT/flat-LCDM-like normalization.",
+        "background": "flat",
+        "sigma8": 0.813,
+        "baryon_fraction": 0.157,
+        "growth_rate_f_z033": 0.6974890159932577,
+        "H0_f_sigma8sq": 31.072654813572008,
+        "H0_f_sigma8sq_ratio_to_flat": 1.0,
+        "f_sigma8sq_z033": 0.4610186174120475,
+        "f_sigma8sq_pull_vs_DESI_ACT": 1.0660344396322043,
+        "pairwise_amplitude_ratio_vs_flat_if_tau_propto_fb": 1.0,
+        "equivalent_log10_tau_shift_dex": 0.0,
+        "equivalent_tau_shift_sigma": 0.0,
+        "taubar_10e5_if_rescaled_from_BGS": 7.45
+      },
+      {
+        "label": "schur_acoustic_slot",
+        "claim": "conditional",
+        "notes": "Acoustic one-fluid slot from the prior Schur sigma8 scan.",
+        "background": "schur",
+        "sigma8": 0.8182898895005987,
+        "baryon_fraction": 0.18250650440816935,
+        "growth_rate_f_z033": 0.7162650428027743,
+        "H0_f_sigma8sq": 33.049917243915736,
+        "H0_f_sigma8sq_ratio_to_flat": 1.0636335209272203,
+        "f_sigma8sq_z033": 0.47960988599500415,
+        "f_sigma8sq_pull_vs_DESI_ACT": 1.3106563946711072,
+        "pairwise_amplitude_ratio_vs_flat_if_tau_propto_fb": 1.236433349527264,
+        "equivalent_log10_tau_shift_dex": 0.09217071049700636,
+        "equivalent_tau_shift_sigma": 1.090427748143463,
+        "taubar_10e5_if_rescaled_from_BGS": 9.211428453978117
+      },
+      {
+        "label": "schur_alpha1_geometric_slot",
+        "claim": "conditional",
+        "notes": "Geometric alpha=1 baryon slot from the prior Schur sigma8 scan.",
+        "background": "schur",
+        "sigma8": 0.9017545100091864,
+        "baryon_fraction": 0.13220746092523059,
+        "growth_rate_f_z033": 0.7162650428027743,
+        "H0_f_sigma8sq": 40.135867292627566,
+        "H0_f_sigma8sq_ratio_to_flat": 1.2916780858743007,
+        "f_sigma8sq_z033": 0.5824389390890664,
+        "f_sigma8sq_pull_vs_DESI_ACT": 2.6636702511719266,
+        "pairwise_amplitude_ratio_vs_flat_if_tau_propto_fb": 1.0877036946891927,
+        "equivalent_log10_tau_shift_dex": 0.03651060373766101,
+        "equivalent_tau_shift_sigma": 0.4319395521889687,
+        "taubar_10e5_if_rescaled_from_BGS": 8.103392525434487
+      },
+      {
+        "label": "schur_clustering_slot",
+        "claim": "conditional",
+        "notes": "Theorem-grade clustering slot from the prior Schur sigma8 scan.",
+        "background": "schur",
+        "sigma8": 0.9458679283784299,
+        "baryon_fraction": 0.10695158722708001,
+        "growth_rate_f_z033": 0.7162650428027743,
+        "H0_f_sigma8sq": 44.15877386400498,
+        "H0_f_sigma8sq_ratio_to_flat": 1.4211458315662546,
+        "f_sigma8sq_z033": 0.6408180795821358,
+        "f_sigma8sq_pull_vs_DESI_ACT": 3.43181683660705,
+        "pairwise_amplitude_ratio_vs_flat_if_tau_propto_fb": 0.9681133908736269,
+        "equivalent_log10_tau_shift_dex": -0.014073772705372274,
+        "equivalent_tau_shift_sigma": -0.16650009744148023,
+        "taubar_10e5_if_rescaled_from_BGS": 7.212444762008521
+      },
+      {
+        "label": "schur_naive_bdp_fraction",
+        "claim": "speculative",
+        "notes": "Literal BDP baryon fraction f_b = 2 gamma / x injected directly into kSZ.",
+        "background": "schur",
+        "sigma8": 0.9458679283784299,
+        "baryon_fraction": 0.3127,
+        "growth_rate_f_z033": 0.7162650428027743,
+        "H0_f_sigma8sq": 44.15877386400498,
+        "H0_f_sigma8sq_ratio_to_flat": 1.4211458315662546,
+        "f_sigma8sq_z033": 0.6408180795821358,
+        "f_sigma8sq_pull_vs_DESI_ACT": 3.43181683660705,
+        "pairwise_amplitude_ratio_vs_flat_if_tau_propto_fb": 2.830524213571769,
+        "equivalent_log10_tau_shift_dex": 0.4518668743859996,
+        "equivalent_tau_shift_sigma": 5.345821635099082,
+        "taubar_10e5_if_rescaled_from_BGS": 21.08740539110968
+      }
+    ],
+    "notes": [
+      "conditional: the pairwise kSZ amplitude is treated as A_kSZ proportional to tau_bar * H0 * f * sigma8^2, following the DESI/ACT low-z analysis language.",
+      "conditional: tau_bar is not a pure cosmological parameter; mapping it directly to a cosmic baryon fraction is a model assumption.",
+      "verified: a literal insertion of the raw BDP baryon fraction f_b = 0.3127 would overpredict the pairwise amplitude by roughly a factor of three relative to the flat reference.",
+      "conditional: the Schur clustering-slot baryon fraction, combined with the Schur growth amplitude, lands very close to the standard reference amplitude, so kSZ may prefer an observable-class baryon slot rather than the raw BDP fraction."
+    ]
+  },
+  "plot_status": {
+    "gamma_plot": "written",
+    "ksz_plot": "written"
+  }
+}

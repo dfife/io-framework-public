@@ -1,0 +1,1377 @@
+{
+  "IO": {
+    "inputs": {
+      "name": "IO_iid_clean",
+      "H0": 67.57585653582628,
+      "omega_b": 0.020995719061702847,
+      "omega_cdm": 0.13823068101940947,
+      "Omega_k_input": -0.04579112576013168,
+      "N_eff": 3.044,
+      "T_cmb": 2.7255,
+      "YHe": 0.2477,
+      "published_r_d": null
+    },
+    "formula_background": {
+      "h": 0.6757585653582627,
+      "omega_gamma_h2": 2.469e-05,
+      "omega_r_h2_formula": 4.1758009356e-05,
+      "Omega_r_formula": 9.144430614023334e-05,
+      "omega_m_h2_input": 0.15922640008111233,
+      "Omega_m_from_physical_densities": 0.34868395067621694,
+      "Omega_lambda_naive": 0.6971071750839147
+    },
+    "runtime_background": {
+      "Omega_b": 0.04597774154281665,
+      "Omega_cdm": 0.3027062091334003,
+      "Omega_nu": 0.0,
+      "Omega_de": 0.6970155823373374,
+      "Omega_k": -0.04579112576013168,
+      "Omega_m_total": 0.34868395067621694,
+      "rdrag_Mpc": 144.01351425392883,
+      "zdrag": 1058.0903557310514,
+      "zstar": 1093.5096837732804,
+      "rstar_Mpc": 140.96979854135077,
+      "thetad": 0.1759728135382191,
+      "thetastar": 1.1276919719991791
+    },
+    "chi2": {
+      "CC_35": 14.701524591915398,
+      "BAO_13": 69.48423127827361,
+      "combined": 84.18575587018901
+    },
+    "preview": {
+      "cc_first5": [
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.07,
+          "source": "Zhang et al. (2014)",
+          "H_obs": 69.0,
+          "sigma": 19.6,
+          "H_model": 69.96181051824372,
+          "residual": 0.9618105182437233,
+          "pull": 0.049071965216516494
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.09,
+          "source": "Simon, Verde & Jimenez (2005)",
+          "H_obs": 69.0,
+          "sigma": 12.0,
+          "H_model": 70.6901686041536,
+          "residual": 1.6901686041535982,
+          "pull": 0.1408473836794665
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.12,
+          "source": "Zhang et al. (2014)",
+          "H_obs": 68.6,
+          "sigma": 26.2,
+          "H_model": 71.82125192639953,
+          "residual": 3.221251926399532,
+          "pull": 0.12294854680914244
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.17,
+          "source": "Simon et al. (2005)",
+          "H_obs": 83.0,
+          "sigma": 8.0,
+          "H_model": 73.80819589201016,
+          "residual": -9.191804107989839,
+          "pull": -1.1489755134987298
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.179,
+          "source": "Moresco et al. (2012)",
+          "H_obs": 75.0,
+          "sigma": 4.0,
+          "H_model": 74.17922822417081,
+          "residual": -0.8207717758291864,
+          "pull": -0.2051929439572966
+        }
+      ],
+      "bao_first5": [
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.295,
+          "quantity": "DV_over_rs",
+          "obs": 7.94167639,
+          "sigma_diag": 0.07609196324185624,
+          "DM_Mpc": 1212.0546627053739,
+          "DH_Mpc": 3779.6056698031844,
+          "DV_Mpc": 1178.7932500099946,
+          "model_ratio": 8.185296054448834,
+          "residual": 0.24361966444883443,
+          "naive_pull": 3.2016477702710326
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.51,
+          "quantity": "DM_over_rs",
+          "obs": 13.58758434,
+          "sigma_diag": 0.16836678472905517,
+          "DM_Mpc": 1971.5162958662563,
+          "DH_Mpc": 3312.5934706612725,
+          "DV_Mpc": 1872.6057530621567,
+          "model_ratio": 13.689800614059186,
+          "residual": 0.10221627405918632,
+          "naive_pull": 0.6071047458896255
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.51,
+          "quantity": "DH_over_rs",
+          "obs": 21.86294686,
+          "sigma_diag": 0.42886832478046216,
+          "DM_Mpc": 1971.5162958662563,
+          "DH_Mpc": 3312.5934706612725,
+          "DV_Mpc": 1872.6057530621567,
+          "model_ratio": 23.00196261317817,
+          "residual": 1.1390157531781675,
+          "naive_pull": 2.6558635538337554
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.706,
+          "quantity": "DM_over_rs",
+          "obs": 17.35069094,
+          "sigma_diag": 0.17993122074837373,
+          "DM_Mpc": 2578.6269848466095,
+          "DH_Mpc": 2927.9356940745943,
+          "DV_Mpc": 2395.4168150417513,
+          "model_ratio": 17.905451430758777,
+          "residual": 0.5547604907587775,
+          "naive_pull": 3.083180831272116
+        },
+        {
+          "branch": "IO_iid_clean",
+          "z": 0.706,
+          "quantity": "DH_over_rs",
+          "obs": 19.45534918,
+          "sigma_diag": 0.33387003159912393,
+          "DM_Mpc": 2578.6269848466095,
+          "DH_Mpc": 2927.9356940745943,
+          "DV_Mpc": 2395.4168150417513,
+          "model_ratio": 20.330978722677184,
+          "residual": 0.875629542677185,
+          "naive_pull": 2.6226658873311184
+        }
+      ]
+    },
+    "cc_rows": [
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.07,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 69.0,
+        "sigma": 19.6,
+        "H_model": 69.96181051824372,
+        "residual": 0.9618105182437233,
+        "pull": 0.049071965216516494
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.09,
+        "source": "Simon, Verde & Jimenez (2005)",
+        "H_obs": 69.0,
+        "sigma": 12.0,
+        "H_model": 70.6901686041536,
+        "residual": 1.6901686041535982,
+        "pull": 0.1408473836794665
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.12,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 68.6,
+        "sigma": 26.2,
+        "H_model": 71.82125192639953,
+        "residual": 3.221251926399532,
+        "pull": 0.12294854680914244
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.17,
+        "source": "Simon et al. (2005)",
+        "H_obs": 83.0,
+        "sigma": 8.0,
+        "H_model": 73.80819589201016,
+        "residual": -9.191804107989839,
+        "pull": -1.1489755134987298
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.179,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 4.0,
+        "H_model": 74.17922822417081,
+        "residual": -0.8207717758291864,
+        "pull": -0.2051929439572966
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.199,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 5.0,
+        "H_model": 75.01821993315176,
+        "residual": 0.018219933151755185,
+        "pull": 0.003643986630351037
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.2,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 72.9,
+        "sigma": 29.6,
+        "H_model": 75.06069155244653,
+        "residual": 2.1606915524465222,
+        "pull": 0.07299633623130142
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.27,
+        "source": "Simon et al. (2005)",
+        "H_obs": 77.0,
+        "sigma": 14.0,
+        "H_model": 78.155666802699,
+        "residual": 1.1556668026990025,
+        "pull": 0.08254762876421447
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.28,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 88.8,
+        "sigma": 36.6,
+        "H_model": 78.6171983452696,
+        "residual": -10.182801654730397,
+        "pull": -0.2782186244461857
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.352,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 83.0,
+        "sigma": 14.0,
+        "H_model": 82.07981789609067,
+        "residual": -0.9201821039093261,
+        "pull": -0.06572729313638044
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.3802,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 83.0,
+        "sigma": 13.5,
+        "H_model": 83.50153291776468,
+        "residual": 0.5015329177646777,
+        "pull": 0.037150586501087234
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.4,
+        "source": "Simon et al. (2005)",
+        "H_obs": 95.0,
+        "sigma": 17.0,
+        "H_model": 84.52131397368585,
+        "residual": -10.47868602631415,
+        "pull": -0.6163932956655382
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.4004,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 77.0,
+        "sigma": 10.2,
+        "H_model": 84.54209718779205,
+        "residual": 7.542097187792052,
+        "pull": 0.7394212929207895
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.4247,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 87.1,
+        "sigma": 11.2,
+        "H_model": 85.81804996822041,
+        "residual": -1.281950031779587,
+        "pull": -0.11445982426603457
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.4497,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 92.8,
+        "sigma": 12.9,
+        "H_model": 87.15795224709751,
+        "residual": -5.642047752902485,
+        "pull": -0.4373680428606577
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.47,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 89.0,
+        "sigma": 50.0,
+        "H_model": 88.26596395418451,
+        "residual": -0.7340360458154862,
+        "pull": -0.014680720916309724
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.4783,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 80.9,
+        "sigma": 9.0,
+        "H_model": 88.72410354273504,
+        "residual": 7.824103542735031,
+        "pull": 0.8693448380816702
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.48,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 97.0,
+        "sigma": 62.0,
+        "H_model": 88.81830308566505,
+        "residual": -8.18169691433495,
+        "pull": -0.1319628534570153
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.593,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 104.0,
+        "sigma": 13.0,
+        "H_model": 95.35022101052076,
+        "residual": -8.649778989479245,
+        "pull": -0.6653676145753266
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.68,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 92.0,
+        "sigma": 8.0,
+        "H_model": 100.72736924054588,
+        "residual": 8.727369240545883,
+        "pull": 1.0909211550682354
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.75,
+        "source": "Borghi et al. (2022)",
+        "H_obs": 98.8,
+        "sigma": 33.6,
+        "H_model": 105.26156813111956,
+        "residual": 6.461568131119563,
+        "pull": 0.19230857533093937
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.75,
+        "source": "Jimenez et al. (2023)",
+        "H_obs": 105.0,
+        "sigma": 7.9,
+        "H_model": 105.26156813111956,
+        "residual": 0.2615681311195601,
+        "pull": 0.03310989001513419
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.781,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 105.0,
+        "sigma": 12.0,
+        "H_model": 107.32647301396003,
+        "residual": 2.326473013960026,
+        "pull": 0.1938727511633355
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.8,
+        "source": "Jiao et al. (2023)",
+        "H_obs": 113.1,
+        "sigma": 15.1,
+        "H_model": 108.60890047332366,
+        "residual": -4.4910995266763365,
+        "pull": -0.29742380971366467
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.875,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 125.0,
+        "sigma": 17.0,
+        "H_model": 113.7929466612405,
+        "residual": -11.207053338759493,
+        "pull": -0.6592384316917349
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.88,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 90.0,
+        "sigma": 40.0,
+        "H_model": 114.14532528203519,
+        "residual": 24.145325282035188,
+        "pull": 0.6036331320508797
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.9,
+        "source": "Simon et al. (2005)",
+        "H_obs": 117.0,
+        "sigma": 23.0,
+        "H_model": 115.56314123371642,
+        "residual": -1.436858766283578,
+        "pull": -0.06247212027319904
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.037,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 154.0,
+        "sigma": 20.0,
+        "H_model": 125.62126921804189,
+        "residual": -28.37873078195811,
+        "pull": -1.4189365390979056
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.26,
+        "source": "Tomasetti et al. (2023b)",
+        "H_obs": 135.0,
+        "sigma": 65.0,
+        "H_model": 143.19772806831855,
+        "residual": 8.197728068318554,
+        "pull": 0.126118893358747
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.3,
+        "source": "Simon et al. (2005)",
+        "H_obs": 168.0,
+        "sigma": 17.0,
+        "H_model": 146.49755732975538,
+        "residual": -21.50244267024462,
+        "pull": -1.2648495688379189
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.363,
+        "source": "Moresco (2015)",
+        "H_obs": 160.0,
+        "sigma": 33.6,
+        "H_model": 151.78078705717854,
+        "residual": -8.219212942821457,
+        "pull": -0.24461943282206716
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.43,
+        "source": "Simon et al. (2005)",
+        "H_obs": 177.0,
+        "sigma": 18.0,
+        "H_model": 157.51192584242466,
+        "residual": -19.48807415757534,
+        "pull": -1.0826707865319634
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.53,
+        "source": "Simon et al. (2005)",
+        "H_obs": 140.0,
+        "sigma": 14.0,
+        "H_model": 166.27435108269367,
+        "residual": 26.27435108269367,
+        "pull": 1.876739363049548
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.75,
+        "source": "Simon et al. (2005)",
+        "H_obs": 202.0,
+        "sigma": 40.0,
+        "H_model": 186.38561814035376,
+        "residual": -15.614381859646244,
+        "pull": -0.3903595464911561
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.965,
+        "source": "Moresco (2015)",
+        "H_obs": 186.5,
+        "sigma": 50.4,
+        "H_model": 207.0769911385554,
+        "residual": 20.5769911385554,
+        "pull": 0.40827363370149605
+      }
+    ],
+    "bao_rows": [
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.295,
+        "quantity": "DV_over_rs",
+        "obs": 7.94167639,
+        "sigma_diag": 0.07609196324185624,
+        "DM_Mpc": 1212.0546627053739,
+        "DH_Mpc": 3779.6056698031844,
+        "DV_Mpc": 1178.7932500099946,
+        "model_ratio": 8.185296054448834,
+        "residual": 0.24361966444883443,
+        "naive_pull": 3.2016477702710326
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.51,
+        "quantity": "DM_over_rs",
+        "obs": 13.58758434,
+        "sigma_diag": 0.16836678472905517,
+        "DM_Mpc": 1971.5162958662563,
+        "DH_Mpc": 3312.5934706612725,
+        "DV_Mpc": 1872.6057530621567,
+        "model_ratio": 13.689800614059186,
+        "residual": 0.10221627405918632,
+        "naive_pull": 0.6071047458896255
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.51,
+        "quantity": "DH_over_rs",
+        "obs": 21.86294686,
+        "sigma_diag": 0.42886832478046216,
+        "DM_Mpc": 1971.5162958662563,
+        "DH_Mpc": 3312.5934706612725,
+        "DV_Mpc": 1872.6057530621567,
+        "model_ratio": 23.00196261317817,
+        "residual": 1.1390157531781675,
+        "naive_pull": 2.6558635538337554
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.706,
+        "quantity": "DM_over_rs",
+        "obs": 17.35069094,
+        "sigma_diag": 0.17993122074837373,
+        "DM_Mpc": 2578.6269848466095,
+        "DH_Mpc": 2927.9356940745943,
+        "DV_Mpc": 2395.4168150417513,
+        "model_ratio": 17.905451430758777,
+        "residual": 0.5547604907587775,
+        "naive_pull": 3.083180831272116
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.706,
+        "quantity": "DH_over_rs",
+        "obs": 19.45534918,
+        "sigma_diag": 0.33387003159912393,
+        "DM_Mpc": 2578.6269848466095,
+        "DH_Mpc": 2927.9356940745943,
+        "DV_Mpc": 2395.4168150417513,
+        "model_ratio": 20.330978722677184,
+        "residual": 0.875629542677185,
+        "naive_pull": 2.6226658873311184
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.934,
+        "quantity": "DM_over_rs",
+        "obs": 21.57563956,
+        "sigma_diag": 0.1617815860968114,
+        "DM_Mpc": 3194.7071203224214,
+        "DH_Mpc": 2540.537414673589,
+        "DV_Mpc": 2893.198226943779,
+        "model_ratio": 22.18338422524306,
+        "residual": 0.6077446652430609,
+        "naive_pull": 3.7565750213338966
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 0.934,
+        "quantity": "DH_over_rs",
+        "obs": 17.64149464,
+        "sigma_diag": 0.20104324858099562,
+        "DM_Mpc": 3194.7071203224214,
+        "DH_Mpc": 2540.537414673589,
+        "DV_Mpc": 2893.198226943779,
+        "model_ratio": 17.640965348529996,
+        "residual": -0.0005292914700056883,
+        "naive_pull": -0.002632724419952104
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.321,
+        "quantity": "DM_over_rs",
+        "obs": 27.60085612,
+        "sigma_diag": 0.32455587500459765,
+        "DM_Mpc": 4058.7907649499084,
+        "DH_Mpc": 2022.2489831687267,
+        "DV_Mpc": 3530.559948306081,
+        "model_ratio": 28.183401995130332,
+        "residual": 0.5825458751303323,
+        "naive_pull": 1.794901648667059
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.321,
+        "quantity": "DH_over_rs",
+        "obs": 14.17602155,
+        "sigma_diag": 0.22455135092000672,
+        "DM_Mpc": 4058.7907649499084,
+        "DH_Mpc": 2022.2489831687267,
+        "DV_Mpc": 3530.559948306081,
+        "model_ratio": 14.04207788168434,
+        "residual": -0.13394366831565918,
+        "naive_pull": -0.596494600308037
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.484,
+        "quantity": "DM_over_rs",
+        "obs": 30.51190063,
+        "sigma_diag": 0.763557644844186,
+        "DM_Mpc": 4367.337049659909,
+        "DH_Mpc": 1848.1389849277218,
+        "DV_Mpc": 3739.9630917533605,
+        "model_ratio": 30.325883458126665,
+        "residual": -0.18601717187333477,
+        "naive_pull": -0.24361902880468708
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 1.484,
+        "quantity": "DH_over_rs",
+        "obs": 12.81699964,
+        "sigma_diag": 0.5180117691713191,
+        "DM_Mpc": 4367.337049659909,
+        "DH_Mpc": 1848.1389849277218,
+        "DV_Mpc": 3739.9630917533605,
+        "model_ratio": 12.83309413357575,
+        "residual": 0.01609449357574988,
+        "naive_pull": 0.031069745001154673
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 2.33,
+        "quantity": "DH_over_rs",
+        "obs": 8.631545674846294,
+        "sigma_diag": 0.10106245296844917,
+        "DM_Mpc": 5602.799959526944,
+        "DH_Mpc": 1226.8496184399523,
+        "DV_Mpc": 4476.986955202331,
+        "model_ratio": 8.518989518419328,
+        "residual": -0.11255615642696526,
+        "naive_pull": -1.113728720419089
+      },
+      {
+        "branch": "IO_iid_clean",
+        "z": 2.33,
+        "quantity": "DM_over_rs",
+        "obs": 38.988973961958784,
+        "sigma_diag": 0.5316820280957407,
+        "DM_Mpc": 5602.799959526944,
+        "DH_Mpc": 1226.8496184399523,
+        "DV_Mpc": 4476.986955202331,
+        "model_ratio": 38.90468188733957,
+        "residual": -0.08429207461921351,
+        "naive_pull": -0.1585385064097651
+      }
+    ]
+  },
+  "Planck": {
+    "inputs": {
+      "name": "Planck_reference",
+      "H0": 67.4,
+      "omega_b": 0.02237,
+      "omega_cdm": 0.12,
+      "Omega_k_input": 0.0,
+      "N_eff": 3.044,
+      "T_cmb": 2.7255,
+      "YHe": 0.2478,
+      "published_r_d": 147.09
+    },
+    "formula_background": {
+      "h": 0.674,
+      "omega_gamma_h2": 2.469e-05,
+      "omega_r_h2_formula": 4.1758009356e-05,
+      "Omega_r_formula": 9.192211201120022e-05,
+      "omega_m_h2_input": 0.14237,
+      "Omega_m_from_physical_densities": 0.31339978339159447,
+      "Omega_lambda_naive": 0.6866002166084055
+    },
+    "runtime_background": {
+      "Omega_b": 0.04924319136384048,
+      "Omega_cdm": 0.264156592027754,
+      "Omega_nu": 0.0,
+      "Omega_de": 0.6865081452803407,
+      "Omega_k": 0.0,
+      "Omega_m_total": 0.31339978339159447,
+      "rdrag_Mpc": 147.10243933012308,
+      "zdrag": 1060.0092806536954,
+      "zstar": 1090.0117697938454,
+      "rstar_Mpc": 144.44035982934656,
+      "thetad": 0.16065720294436955,
+      "thetastar": 1.0397013155264812
+    },
+    "chi2": {
+      "CC_35": 15.153309096595398,
+      "BAO_13": 31.25101137291248,
+      "combined": 46.40432046950788
+    },
+    "preview": {
+      "cc_first5": [
+        {
+          "branch": "Planck_reference",
+          "z": 0.07,
+          "source": "Zhang et al. (2014)",
+          "H_obs": 69.0,
+          "sigma": 19.6,
+          "H_model": 69.73724766579804,
+          "residual": 0.7372476657980371,
+          "pull": 0.037614676826430465
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.09,
+          "source": "Simon, Verde & Jimenez (2005)",
+          "H_obs": 69.0,
+          "sigma": 12.0,
+          "H_model": 70.44831392289618,
+          "residual": 1.448313922896176,
+          "pull": 0.12069282690801468
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.12,
+          "source": "Zhang et al. (2014)",
+          "H_obs": 68.6,
+          "sigma": 26.2,
+          "H_model": 71.5506524961839,
+          "residual": 2.9506524961839062,
+          "pull": 0.11262032428182848
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.17,
+          "source": "Simon et al. (2005)",
+          "H_obs": 83.0,
+          "sigma": 8.0,
+          "H_model": 73.48225594230036,
+          "residual": -9.517744057699645,
+          "pull": -1.1897180072124556
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.179,
+          "source": "Moresco et al. (2012)",
+          "H_obs": 75.0,
+          "sigma": 4.0,
+          "H_model": 73.8423491171548,
+          "residual": -1.1576508828452035,
+          "pull": -0.28941272071130086
+        }
+      ],
+      "bao_first5": [
+        {
+          "branch": "Planck_reference",
+          "z": 0.295,
+          "quantity": "DV_over_rs",
+          "obs": 7.94167639,
+          "sigma_diag": 0.07609196324185624,
+          "DM_Mpc": 1217.8437646124214,
+          "DH_Mpc": 3803.7700113890937,
+          "DV_Mpc": 1185.058546270417,
+          "model_ratio": 8.056008803572201,
+          "residual": 0.11433241357220147,
+          "naive_pull": 1.5025557062944874
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.51,
+          "quantity": "DM_over_rs",
+          "obs": 13.58758434,
+          "sigma_diag": 0.16836678472905517,
+          "DM_Mpc": 1985.9298978063175,
+          "DH_Mpc": 3347.0685518692653,
+          "DV_Mpc": 1888.227002098095,
+          "model_ratio": 13.500319279883255,
+          "residual": -0.08726506011674395,
+          "naive_pull": -0.5183032998888442
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.51,
+          "quantity": "DH_over_rs",
+          "obs": 21.86294686,
+          "sigma_diag": 0.42886832478046216,
+          "DM_Mpc": 1985.9298978063175,
+          "DH_Mpc": 3347.0685518692653,
+          "DV_Mpc": 1888.227002098095,
+          "model_ratio": 22.75331780432186,
+          "residual": 0.8903709443218588,
+          "naive_pull": 2.0760939730805252
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.706,
+          "quantity": "DM_over_rs",
+          "obs": 17.35069094,
+          "sigma_diag": 0.17993122074837373,
+          "DM_Mpc": 2604.262736468037,
+          "DH_Mpc": 2969.676932855649,
+          "DV_Mpc": 2422.671331136866,
+          "model_ratio": 17.703735902187354,
+          "residual": 0.35304496218735437,
+          "naive_pull": 1.9621106371588117
+        },
+        {
+          "branch": "Planck_reference",
+          "z": 0.706,
+          "quantity": "DH_over_rs",
+          "obs": 19.45534918,
+          "sigma_diag": 0.33387003159912393,
+          "DM_Mpc": 2604.262736468037,
+          "DH_Mpc": 2969.676932855649,
+          "DV_Mpc": 2422.671331136866,
+          "model_ratio": 20.187815690745854,
+          "residual": 0.732466510745855,
+          "naive_pull": 2.1938671980758184
+        }
+      ]
+    },
+    "cc_rows": [
+      {
+        "branch": "Planck_reference",
+        "z": 0.07,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 69.0,
+        "sigma": 19.6,
+        "H_model": 69.73724766579804,
+        "residual": 0.7372476657980371,
+        "pull": 0.037614676826430465
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.09,
+        "source": "Simon, Verde & Jimenez (2005)",
+        "H_obs": 69.0,
+        "sigma": 12.0,
+        "H_model": 70.44831392289618,
+        "residual": 1.448313922896176,
+        "pull": 0.12069282690801468
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.12,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 68.6,
+        "sigma": 26.2,
+        "H_model": 71.5506524961839,
+        "residual": 2.9506524961839062,
+        "pull": 0.11262032428182848
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.17,
+        "source": "Simon et al. (2005)",
+        "H_obs": 83.0,
+        "sigma": 8.0,
+        "H_model": 73.48225594230036,
+        "residual": -9.517744057699645,
+        "pull": -1.1897180072124556
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.179,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 4.0,
+        "H_model": 73.8423491171548,
+        "residual": -1.1576508828452035,
+        "pull": -0.28941272071130086
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.199,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 75.0,
+        "sigma": 5.0,
+        "H_model": 74.6559742702501,
+        "residual": -0.34402572974990164,
+        "pull": -0.06880514594998033
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.2,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 72.9,
+        "sigma": 29.6,
+        "H_model": 74.6971394481149,
+        "residual": 1.7971394481148906,
+        "pull": 0.06071417054442198
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.27,
+        "source": "Simon et al. (2005)",
+        "H_obs": 77.0,
+        "sigma": 14.0,
+        "H_model": 77.6917800979391,
+        "residual": 0.6917800979391018,
+        "pull": 0.04941286413850727
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.28,
+        "source": "Zhang et al. (2014)",
+        "H_obs": 88.8,
+        "sigma": 36.6,
+        "H_model": 78.13756969012456,
+        "residual": -10.662430309875432,
+        "pull": -0.2913232325102577
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.352,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 83.0,
+        "sigma": 14.0,
+        "H_model": 81.47678418819581,
+        "residual": -1.5232158118041923,
+        "pull": -0.10880112941458517
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.3802,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 83.0,
+        "sigma": 13.5,
+        "H_model": 82.84547454698428,
+        "residual": -0.1545254530157223,
+        "pull": -0.011446329853016466
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.4,
+        "source": "Simon et al. (2005)",
+        "H_obs": 95.0,
+        "sigma": 17.0,
+        "H_model": 83.82649534473065,
+        "residual": -11.173504655269355,
+        "pull": -0.6572649797217267
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.4004,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 77.0,
+        "sigma": 10.2,
+        "H_model": 83.84648268177082,
+        "residual": 6.846482681770823,
+        "pull": 0.6712237923304729
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.4247,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 87.1,
+        "sigma": 11.2,
+        "H_model": 85.07314356271078,
+        "residual": -2.0268564372892115,
+        "pull": -0.18096932475796532
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.4497,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 92.8,
+        "sigma": 12.9,
+        "H_model": 86.36042553030478,
+        "residual": -6.439574469695216,
+        "pull": -0.4991918193562183
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.47,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 89.0,
+        "sigma": 50.0,
+        "H_model": 87.42431348288396,
+        "residual": -1.57568651711604,
+        "pull": -0.0315137303423208
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.4783,
+        "source": "Moresco et al. (2016)",
+        "H_obs": 80.9,
+        "sigma": 9.0,
+        "H_model": 87.86405749604964,
+        "residual": 6.964057496049634,
+        "pull": 0.773784166227737
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.48,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 97.0,
+        "sigma": 62.0,
+        "H_model": 87.95446408366499,
+        "residual": -9.045535916335012,
+        "pull": -0.1458957405860486
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.593,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 104.0,
+        "sigma": 13.0,
+        "H_model": 94.21574515947174,
+        "residual": -9.784254840528263,
+        "pull": -0.7526349877329432
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.68,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 92.0,
+        "sigma": 8.0,
+        "H_model": 99.36113444850778,
+        "residual": 7.361134448507784,
+        "pull": 0.920141806063473
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.75,
+        "source": "Borghi et al. (2022)",
+        "H_obs": 98.8,
+        "sigma": 33.6,
+        "H_model": 103.69525896404423,
+        "residual": 4.895258964044231,
+        "pull": 0.14569223107274498
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.75,
+        "source": "Jimenez et al. (2023)",
+        "H_obs": 105.0,
+        "sigma": 7.9,
+        "H_model": 103.69525896404423,
+        "residual": -1.3047410359557716,
+        "pull": -0.16515709315895843
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.781,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 105.0,
+        "sigma": 12.0,
+        "H_model": 105.66789983553427,
+        "residual": 0.6678998355342713,
+        "pull": 0.055658319627855946
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.8,
+        "source": "Jiao et al. (2023)",
+        "H_obs": 113.1,
+        "sigma": 15.1,
+        "H_model": 106.89270717252222,
+        "residual": -6.207292827477772,
+        "pull": -0.4110789951972035
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.875,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 125.0,
+        "sigma": 17.0,
+        "H_model": 111.84164010738476,
+        "residual": -13.158359892615238,
+        "pull": -0.7740211701538375
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.88,
+        "source": "Ratsimbazafy et al. (2017)",
+        "H_obs": 90.0,
+        "sigma": 40.0,
+        "H_model": 112.17792180174685,
+        "residual": 22.177921801746848,
+        "pull": 0.5544480450436712
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.9,
+        "source": "Simon et al. (2005)",
+        "H_obs": 117.0,
+        "sigma": 23.0,
+        "H_model": 113.53083643413993,
+        "residual": -3.4691635658600717,
+        "pull": -0.1508331985156553
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.037,
+        "source": "Moresco et al. (2012)",
+        "H_obs": 154.0,
+        "sigma": 20.0,
+        "H_model": 123.12323982755574,
+        "residual": -30.876760172444264,
+        "pull": -1.5438380086222132
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.26,
+        "source": "Tomasetti et al. (2023b)",
+        "H_obs": 135.0,
+        "sigma": 65.0,
+        "H_model": 139.86984217461253,
+        "residual": 4.869842174612529,
+        "pull": 0.07492064884019276
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.3,
+        "source": "Simon et al. (2005)",
+        "H_obs": 168.0,
+        "sigma": 17.0,
+        "H_model": 143.01225197250827,
+        "residual": -24.987748027491733,
+        "pull": -1.4698675310289255
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.363,
+        "source": "Moresco (2015)",
+        "H_obs": 160.0,
+        "sigma": 33.6,
+        "H_model": 148.0426133482523,
+        "residual": -11.957386651747697,
+        "pull": -0.3558746027305862
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.43,
+        "source": "Simon et al. (2005)",
+        "H_obs": 177.0,
+        "sigma": 18.0,
+        "H_model": 153.49841820286136,
+        "residual": -23.50158179713864,
+        "pull": -1.305643433174369
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.53,
+        "source": "Simon et al. (2005)",
+        "H_obs": 140.0,
+        "sigma": 14.0,
+        "H_model": 161.83809987485537,
+        "residual": 21.838099874855374,
+        "pull": 1.5598642767753839
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.75,
+        "source": "Simon et al. (2005)",
+        "H_obs": 202.0,
+        "sigma": 40.0,
+        "H_model": 180.9725764851589,
+        "residual": -21.027423514841104,
+        "pull": -0.5256855878710276
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.965,
+        "source": "Moresco (2015)",
+        "H_obs": 186.5,
+        "sigma": 50.4,
+        "H_model": 200.6517027718055,
+        "residual": 14.151702771805503,
+        "pull": 0.2807877534088394
+      }
+    ],
+    "bao_rows": [
+      {
+        "branch": "Planck_reference",
+        "z": 0.295,
+        "quantity": "DV_over_rs",
+        "obs": 7.94167639,
+        "sigma_diag": 0.07609196324185624,
+        "DM_Mpc": 1217.8437646124214,
+        "DH_Mpc": 3803.7700113890937,
+        "DV_Mpc": 1185.058546270417,
+        "model_ratio": 8.056008803572201,
+        "residual": 0.11433241357220147,
+        "naive_pull": 1.5025557062944874
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.51,
+        "quantity": "DM_over_rs",
+        "obs": 13.58758434,
+        "sigma_diag": 0.16836678472905517,
+        "DM_Mpc": 1985.9298978063175,
+        "DH_Mpc": 3347.0685518692653,
+        "DV_Mpc": 1888.227002098095,
+        "model_ratio": 13.500319279883255,
+        "residual": -0.08726506011674395,
+        "naive_pull": -0.5183032998888442
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.51,
+        "quantity": "DH_over_rs",
+        "obs": 21.86294686,
+        "sigma_diag": 0.42886832478046216,
+        "DM_Mpc": 1985.9298978063175,
+        "DH_Mpc": 3347.0685518692653,
+        "DV_Mpc": 1888.227002098095,
+        "model_ratio": 22.75331780432186,
+        "residual": 0.8903709443218588,
+        "naive_pull": 2.0760939730805252
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.706,
+        "quantity": "DM_over_rs",
+        "obs": 17.35069094,
+        "sigma_diag": 0.17993122074837373,
+        "DM_Mpc": 2604.262736468037,
+        "DH_Mpc": 2969.676932855649,
+        "DV_Mpc": 2422.671331136866,
+        "model_ratio": 17.703735902187354,
+        "residual": 0.35304496218735437,
+        "naive_pull": 1.9621106371588117
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.706,
+        "quantity": "DH_over_rs",
+        "obs": 19.45534918,
+        "sigma_diag": 0.33387003159912393,
+        "DM_Mpc": 2604.262736468037,
+        "DH_Mpc": 2969.676932855649,
+        "DV_Mpc": 2422.671331136866,
+        "model_ratio": 20.187815690745854,
+        "residual": 0.732466510745855,
+        "naive_pull": 2.1938671980758184
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.934,
+        "quantity": "DM_over_rs",
+        "obs": 21.57563956,
+        "sigma_diag": 0.1617815860968114,
+        "DM_Mpc": 3236.6091845792657,
+        "DH_Mpc": 2587.5614734092046,
+        "DV_Mpc": 2936.337865722931,
+        "model_ratio": 22.00241681455574,
+        "residual": 0.42677725455574134,
+        "naive_pull": 2.637984117057391
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 0.934,
+        "quantity": "DH_over_rs",
+        "obs": 17.64149464,
+        "sigma_diag": 0.20104324858099562,
+        "DM_Mpc": 3236.6091845792657,
+        "DH_Mpc": 2587.5614734092046,
+        "DV_Mpc": 2936.337865722931,
+        "model_ratio": 17.590200986417862,
+        "residual": -0.05129365358213889,
+        "naive_pull": -0.2551374092101077
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.321,
+        "quantity": "DM_over_rs",
+        "obs": 27.60085612,
+        "sigma_diag": 0.32455587500459765,
+        "DM_Mpc": 4133.248069562104,
+        "DH_Mpc": 2072.133993905122,
+        "DV_Mpc": 3602.7533617364084,
+        "model_ratio": 28.09775343212622,
+        "residual": 0.4968973121262188,
+        "naive_pull": 1.5310069864524245
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.321,
+        "quantity": "DH_over_rs",
+        "obs": 14.17602155,
+        "sigma_diag": 0.22455135092000672,
+        "DM_Mpc": 4133.248069562104,
+        "DH_Mpc": 2072.133993905122,
+        "DV_Mpc": 3602.7533617364084,
+        "model_ratio": 14.086333328945678,
+        "residual": -0.08968822105432217,
+        "naive_pull": -0.3994107391777498
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.484,
+        "quantity": "DM_over_rs",
+        "obs": 30.51190063,
+        "sigma_diag": 0.763557644844186,
+        "DM_Mpc": 4456.490085856094,
+        "DH_Mpc": 1897.743887002929,
+        "DV_Mpc": 3824.3044940206164,
+        "model_ratio": 30.29514742345616,
+        "residual": -0.21675320654383867,
+        "naive_pull": -0.2838727475357411
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 1.484,
+        "quantity": "DH_over_rs",
+        "obs": 12.81699964,
+        "sigma_diag": 0.5180117691713191,
+        "DM_Mpc": 4456.490085856094,
+        "DH_Mpc": 1897.743887002929,
+        "DV_Mpc": 3824.3044940206164,
+        "model_ratio": 12.900832206759445,
+        "residual": 0.08383256675944395,
+        "naive_pull": 0.1618352550050238
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 2.33,
+        "quantity": "DH_over_rs",
+        "obs": 8.631545674846294,
+        "sigma_diag": 0.10106245296844917,
+        "DM_Mpc": 5769.018658329351,
+        "DH_Mpc": 1269.7865145648377,
+        "DV_Mpc": 4617.747404420146,
+        "model_ratio": 8.63198815972874,
+        "residual": 0.00044248488244669204,
+        "naive_pull": 0.004378331115561108
+      },
+      {
+        "branch": "Planck_reference",
+        "z": 2.33,
+        "quantity": "DM_over_rs",
+        "obs": 38.988973961958784,
+        "sigma_diag": 0.5316820280957407,
+        "DM_Mpc": 5769.018658329351,
+        "DH_Mpc": 1269.7865145648377,
+        "DV_Mpc": 4617.747404420146,
+        "model_ratio": 39.21769540056834,
+        "residual": 0.22872143860955418,
+        "naive_pull": 0.43018463390372114
+      }
+    ],
+    "rdrag_vs_published": {
+      "published_Mpc": 147.09,
+      "bias_Mpc": 0.012439330123072523,
+      "bias_fraction": 8.456951609948007e-05
+    }
+  }
+}
