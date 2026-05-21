@@ -1,0 +1,66 @@
+Paper 31 - Schur Branch N_eff Necessity Audit
+============================================
+
+Question
+--------
+Does the active Schur definitive branch observationally require Friedmann N_eff = Delta,
+or can N_eff remain standard (3.044) while Delta enters only through sqrt(Delta) and P_k?
+
+Executive result
+----------------
+- verified: the active Schur branch already runs with N_eff = 3.044.
+- derived: low-z direct-expansion probes on the fixed Schur branch are structurally insensitive to N_eff.
+- verified: Schur carried-ruler BAO chi2 stays 26.905763 at fixed branch, independent of N_eff.
+- verified: Schur chronometer chi2 stays 15.578248 at fixed branch, independent of N_eff.
+- verified / problem: the Schur branch already misses Planck theta* at standard N_eff.
+- verified / stronger no-go: forcing N_eff = Delta makes the early-time ruler sector much worse.
+
+Early-time ruler comparison on the same Schur branch
+----------------------------------------------------
+standard_3p044:
+  N_eff = 3.044000000000
+  100theta* = 1.048082460
+  theta* pull vs Planck = +22.524 sigma
+  r_d = 137.944543 Mpc
+  BAO chi2 with CLASS r_d = 232.842016
+  shift parameter R = 1.748221849
+  R pull vs Planck = -0.396 sigma
+  CLASS age = 13.269798 Gyr
+  sigma8 = 0.817581
+delta:
+  N_eff = 5.624068750944
+  100theta* = 0.970929363
+  theta* pull vs Planck = -226.357 sigma
+  r_d = 127.642283 Mpc
+  BAO chi2 with CLASS r_d = 2020.354623
+  shift parameter R = 1.745857887
+  R pull vs Planck = -0.868 sigma
+  CLASS age = 13.268167 Gyr
+  sigma8 = 0.693561
+
+Low-z H(z) sensitivity with radiation retained explicitly
+--------------------------------------------------------
+z = 0.0: H_Delta / H_3.044 - 1 = +0.000000000
+z = 0.5: H_Delta / H_3.044 - 1 = +0.000034599
+z = 1.0: H_Delta / H_3.044 - 1 = +0.000068600
+z = 2.0: H_Delta / H_3.044 - 1 = +0.000125882
+z = 10.0: H_Delta / H_3.044 - 1 = +0.000498072
+z = 1100.0: H_Delta / H_3.044 - 1 = +0.038082502
+
+S8 check on the Schur acoustic slot
+-----------------------------------
+standard_3p044: sigma8 = 0.799698, S8 = 0.846039
+delta: sigma8 = 0.678250, S8 = 0.717553
+
+Interpretation
+--------------
+- derived: Pantheon+, standard sirens, FRB D_A, and the fixed-branch chronometer/BAO shape tests are late-time observables of the Schur background and do not use Friedmann N_eff once the branch is fixed.
+- verified: the current Schur branch with standard N_eff still has three main issues: theta* mismatch, BAO-class closure, and clustering excess.
+- verified: replacing standard N_eff by Delta would not solve theta* on the active Schur branch; it drives 100theta* from 1.04808 down to 0.97093 and explodes the standard-drag BAO chi2 from 232.84 to 2020.35.
+- verified: low-z expansion is essentially unchanged by that replacement: even with radiation retained, H(z) shifts by only 3.46e-05 at z = 0.5 and 1.26e-04 at z = 2.
+
+Bottom line
+-----------
+On the active Schur definitive branch, the framework does not currently appear to require Friedmann N_eff = Delta.
+The branch already uses N_eff = 3.044, and the surviving low-z observational performance comes from sqrt(Delta), P_k, and the chosen late-time Schur background package.
+If one insists on identifying Friedmann N_eff with Delta on this branch, the active early-time ruler sector gets substantially worse rather than better.

@@ -1,0 +1,18 @@
+Paper 31 Planck Weyl Exact Curved Refit
+========================================
+
+x = 1.519
+lcmb_rescale = x^(-1/2) = 0.811374048924378
+lcmb_curved_shift = -3.000000
+lcmb_curved_order = -0.250000
+Kernel: x^(-1/2) * ((k^2 - 3K)/(k_p^2 - 3K))^(-1/4)
+Branch: one-fluid IO control
+start A_s = 2.0072459972737347e-09
+start tau = 0.027436408871
+evaluations = 155
+
+best-fit A_s = 1.9962209972737350e-09
+best-fit tau = 0.002100000000
+best-fit A_eff = 1.9878544511309045e-09
+best-fit chi2 = 2832.381618
+best-fit 100theta_s = 1.048176097

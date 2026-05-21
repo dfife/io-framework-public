@@ -1,0 +1,32 @@
+{
+  "raw_ruler_Mpc": 143.06250283686956,
+  "lya_target_ruler_Mpc": 140.790554518058,
+  "lya_target_sigma_Mpc": 0.9453747567311059,
+  "best_imported_shift_case": {
+    "name": "sinigaglia2024_redshift_iso",
+    "label": "Sinigaglia 2024 redshift-space isotropic shift",
+    "source": "arXiv:2407.03918",
+    "alpha_parallel": 0.9905,
+    "alpha_perp": 0.9905,
+    "alpha_iso": 0.9905,
+    "alpha_iso_sigma": 0.0027,
+    "class_status": "imported external Ly-alpha flux-shift class",
+    "predicted_rows_with_imported_shift": [
+      8.512914926513668,
+      39.08781088625377
+    ],
+    "chi2_against_lya_block": 1.5032934200001475,
+    "delta_chi2_vs_raw_no_shift": -4.673097821792369,
+    "effective_shifted_ruler_Mpc": 141.7034090599193,
+    "effective_shifted_ruler_sigma_Mpc": 0.3862687576595478,
+    "shifted_minus_lya_target_Mpc": 0.912854541861293,
+    "shifted_minus_lya_target_fractional": 0.006483776876837322,
+    "shifted_minus_lya_target_sigma_combined": 0.8938662638985017
+  },
+  "conditional_end_to_end_closure": {
+    "premise_2_inherited_flux_class": true,
+    "primitive_raw_ruler_is_same_object": true,
+    "late_time_lya_kernel_is_flux_correlation_not_pair_counts": true,
+    "best_published_redshift_space_shift_closes_current_desi_precision": true
+  }
+}

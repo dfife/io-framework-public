@@ -1,0 +1,22 @@
+Paper 31 Recombination Clock Transport Check
+============================================
+
+Exact Stage-2 OS-clock transport factor:
+R_rec(z) := |d tau_OS / dz| / |d t_proj / dz|
+
+z =  800.0: R_rec = 1.672575973, required net-drive fraction = 0.597880166
+z =  900.0: R_rec = 1.691037690, required net-drive fraction = 0.591352875
+z = 1000.0: R_rec = 1.709312032, required net-drive fraction = 0.585030692
+z = 1080.0: R_rec = 1.723798212, required net-drive fraction = 0.580114304
+z = 1100.0: R_rec = 1.727401581, required net-drive fraction = 0.578904182
+z = 1200.0: R_rec = 1.745310043, required net-drive fraction = 0.572964101
+z = 1400.0: R_rec = 1.780600094, required net-drive fraction = 0.561608417
+
+Baseline projected-history recombination window:
+z_peak = 1091.267500, FWHM_z = 199.000000, g_peak = 0.022294045
+Naive OS-time pullback benchmark (age-match the same local history to tau_OS):
+z_peak = 1599.712500, FWHM_z = 84.077500, g_peak = 0.075088801
+
+Point check at z = 1100:
+x_e baseline = 0.152178091213, x_e transport = 0.002236783090, ratio = 0.014698456740
+dkappa ratio at z = 1100 = 0.014698456740

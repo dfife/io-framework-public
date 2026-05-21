@@ -1,0 +1,301 @@
+{
+  "constants": {
+    "x": 1.519,
+    "A_s_active": 2.1141000090331526e-09,
+    "n_s_active": 0.963872644987,
+    "tau_reio": 0.054,
+    "N_eff_standard": 3.044,
+    "omega_b_clustering": 0.017053042566348757
+  },
+  "benchmarks": [
+    {
+      "id": "blake2015_z032",
+      "label": "Blake et al. 2015 RCSLenS galaxy lensing",
+      "z": 0.32,
+      "mean": 0.48,
+      "sigma": 0.1,
+      "channel": "galaxy_lensing",
+      "source": "https://arxiv.org/abs/1507.03086"
+    },
+    {
+      "id": "blake2015_z057",
+      "label": "Blake et al. 2015 RCSLenS galaxy lensing",
+      "z": 0.57,
+      "mean": 0.3,
+      "sigma": 0.07,
+      "channel": "galaxy_lensing",
+      "source": "https://arxiv.org/abs/1507.03086"
+    },
+    {
+      "id": "pullen2015_z057",
+      "label": "Pullen et al. 2015 Planck CMB lensing",
+      "z": 0.57,
+      "mean": 0.243,
+      "sigma": 0.06139218191268331,
+      "sigma_note": "stat and sys combined in quadrature",
+      "channel": "cmb_lensing",
+      "source": "https://arxiv.org/abs/1511.04457"
+    },
+    {
+      "id": "alam2016_z057",
+      "label": "Alam et al. 2016 CFHTLenS + BOSS CMASS",
+      "z": 0.57,
+      "mean": 0.42,
+      "sigma": 0.056,
+      "channel": "galaxy_lensing",
+      "source": "https://arxiv.org/abs/1610.09410"
+    }
+  ],
+  "cases": {
+    "projected_schur_active": {
+      "background_label": "projected_schur_active",
+      "H0": 68.91,
+      "Omega_m": 0.33577637957547024,
+      "Omega_k": -0.005613722564238656,
+      "sigma8": 0.9486404440522879,
+      "rows": {
+        "0.32": {
+          "z": 0.32,
+          "f_sigma8": 0.5657837223942498,
+          "growth_factor_D": 0.8397043038080447,
+          "f": 0.7102683018559759,
+          "E_G_no_slip": 0.47274583238202433
+        },
+        "0.57": {
+          "z": 0.57,
+          "f_sigma8": 0.5570993653001155,
+          "growth_factor_D": 0.736604231490037,
+          "f": 0.797254204019306,
+          "E_G_no_slip": 0.42116601942351023
+        }
+      }
+    },
+    "bare_geometry_branch": {
+      "background_label": "bare_geometry_branch",
+      "H0": 58.4,
+      "Omega_m": 0.197,
+      "Omega_k": -0.13,
+      "sigma8": 0.5413563485379385,
+      "rows": {
+        "0.32": {
+          "z": 0.32,
+          "f_sigma8": 0.2817891224796107,
+          "growth_factor_D": 0.8705353718649205,
+          "f": 0.5979358161114032,
+          "E_G_no_slip": 0.32946680010099333
+        },
+        "0.57": {
+          "z": 0.57,
+          "f_sigma8": 0.3049300829300577,
+          "growth_factor_D": 0.7760759523190011,
+          "f": 0.7257930600816561,
+          "E_G_no_slip": 0.27142723020503434
+        }
+      }
+    }
+  },
+  "group_fits": {
+    "projected": {
+      "all": {
+        "alpha_best": 1.992,
+        "chi2_best": 5.823556425091603,
+        "alpha_1sigma_lo": 1.772,
+        "alpha_1sigma_hi": 2.234,
+        "mu_best": 0.8140921654521539
+      },
+      "galaxy_lensing_only": {
+        "alpha_best": 1.723,
+        "chi2_best": 2.093050007032664,
+        "alpha_1sigma_lo": 1.49,
+        "alpha_1sigma_hi": 1.98,
+        "mu_best": 0.910987916445263
+      },
+      "cmb_lensing_only": {
+        "alpha_best": 2.816,
+        "chi2_best": 5.718477979433729e-07,
+        "alpha_1sigma_lo": 2.277,
+        "alpha_1sigma_hi": 3.0,
+        "mu_best": 0.5768593942710047
+      }
+    },
+    "bare": {
+      "all": {
+        "alpha_best": 0.9630000000000001,
+        "chi2_best": 5.316608113852453,
+        "alpha_1sigma_lo": 0.744,
+        "alpha_1sigma_hi": 1.204,
+        "mu_best": 1.2516892563653985
+      },
+      "galaxy_lensing_only": {
+        "alpha_best": 0.7070000000000001,
+        "chi2_best": 1.848956370134906,
+        "alpha_1sigma_lo": 0.5,
+        "alpha_1sigma_hi": 0.9650000000000001,
+        "mu_best": 1.393077618071789
+      },
+      "cmb_lensing_only": {
+        "alpha_best": 1.7650000000000001,
+        "chi2_best": 3.581537326662168e-07,
+        "alpha_1sigma_lo": 1.226,
+        "alpha_1sigma_hi": 2.4610000000000003,
+        "mu_best": 0.8951322204631118
+      }
+    }
+  },
+  "projected_measurement_rows": [
+    {
+      "id": "blake2015_z032",
+      "label": "Blake et al. 2015 RCSLenS galaxy lensing",
+      "channel": "galaxy_lensing",
+      "z": 0.32,
+      "measured": 0.48,
+      "sigma": 0.1,
+      "source": "https://arxiv.org/abs/1507.03086",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.47274583238202433,
+          "pull_sigma": -0.07254167617975649
+        },
+        "alpha_2": {
+          "prediction": 0.3835737001319286,
+          "pull_sigma": -0.9642629986807139
+        }
+      }
+    },
+    {
+      "id": "blake2015_z057",
+      "label": "Blake et al. 2015 RCSLenS galaxy lensing",
+      "channel": "galaxy_lensing",
+      "z": 0.57,
+      "measured": 0.3,
+      "sigma": 0.07,
+      "source": "https://arxiv.org/abs/1507.03086",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.42116601942351023,
+          "pull_sigma": 1.7309431346215747
+        },
+        "alpha_2": {
+          "prediction": 0.3417231784490169,
+          "pull_sigma": 0.5960454064145272
+        }
+      }
+    },
+    {
+      "id": "pullen2015_z057",
+      "label": "Pullen et al. 2015 Planck CMB lensing",
+      "channel": "cmb_lensing",
+      "z": 0.57,
+      "measured": 0.243,
+      "sigma": 0.06139218191268331,
+      "source": "https://arxiv.org/abs/1511.04457",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.42116601942351023,
+          "pull_sigma": 2.902096225817673
+        },
+        "alpha_2": {
+          "prediction": 0.3417231784490169,
+          "pull_sigma": 1.608074112586984
+        }
+      }
+    },
+    {
+      "id": "alam2016_z057",
+      "label": "Alam et al. 2016 CFHTLenS + BOSS CMASS",
+      "channel": "galaxy_lensing",
+      "z": 0.57,
+      "measured": 0.42,
+      "sigma": 0.056,
+      "source": "https://arxiv.org/abs/1610.09410",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.42116601942351023,
+          "pull_sigma": 0.020821775419825803
+        },
+        "alpha_2": {
+          "prediction": 0.3417231784490169,
+          "pull_sigma": -1.3978003848389837
+        }
+      }
+    }
+  ],
+  "bare_measurement_rows": [
+    {
+      "id": "blake2015_z032",
+      "label": "Blake et al. 2015 RCSLenS galaxy lensing",
+      "channel": "galaxy_lensing",
+      "z": 0.32,
+      "measured": 0.48,
+      "sigma": 0.1,
+      "source": "https://arxiv.org/abs/1507.03086",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.32946680010099333,
+          "pull_sigma": -1.5053319989900664
+        },
+        "alpha_2": {
+          "prediction": 0.26732081158410176,
+          "pull_sigma": -2.126791884158982
+        }
+      }
+    },
+    {
+      "id": "blake2015_z057",
+      "label": "Blake et al. 2015 RCSLenS galaxy lensing",
+      "channel": "galaxy_lensing",
+      "z": 0.57,
+      "measured": 0.3,
+      "sigma": 0.07,
+      "source": "https://arxiv.org/abs/1507.03086",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.27142723020503434,
+          "pull_sigma": -0.40818242564236634
+        },
+        "alpha_2": {
+          "prediction": 0.22022901075978804,
+          "pull_sigma": -1.1395855605744563
+        }
+      }
+    },
+    {
+      "id": "pullen2015_z057",
+      "label": "Pullen et al. 2015 Planck CMB lensing",
+      "channel": "cmb_lensing",
+      "z": 0.57,
+      "measured": 0.243,
+      "sigma": 0.06139218191268331,
+      "source": "https://arxiv.org/abs/1511.04457",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.27142723020503434,
+          "pull_sigma": 0.4630431647708131
+        },
+        "alpha_2": {
+          "prediction": 0.22022901075978804,
+          "pull_sigma": -0.370910245096006
+        }
+      }
+    },
+    {
+      "id": "alam2016_z057",
+      "label": "Alam et al. 2016 CFHTLenS + BOSS CMASS",
+      "channel": "galaxy_lensing",
+      "z": 0.57,
+      "measured": 0.42,
+      "sigma": 0.056,
+      "source": "https://arxiv.org/abs/1610.09410",
+      "predictions": {
+        "alpha_1.5": {
+          "prediction": 0.27142723020503434,
+          "pull_sigma": -2.6530851749101005
+        },
+        "alpha_2": {
+          "prediction": 0.22022901075978804,
+          "pull_sigma": -3.5673390935752134
+        }
+      }
+    }
+  ]
+}

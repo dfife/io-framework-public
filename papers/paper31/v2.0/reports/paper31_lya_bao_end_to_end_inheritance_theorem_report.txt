@@ -1,0 +1,35 @@
+Paper 31 Ly-alpha BAO End-to-End Inheritance Theorem Report
+===========================================================
+
+Fixed Schur inputs
+------------------
+Raw Schur ruler = 143.062502836870 Mpc
+DESI Ly-alpha fixed-shape target = 140.790554518058 Mpc
+Ly-alpha target sigma = 0.945374756731 Mpc
+
+Best imported exterior Ly-alpha class
+-------------------------------------
+Source = arXiv:2407.03918
+Label = Sinigaglia 2024 redshift-space isotropic shift
+alpha_parallel = 0.990500
+alpha_perp = 0.990500
+Effective shifted ruler = 141.703409059919 Mpc
+Residual vs DESI Ly-alpha target = +0.912854541861 Mpc
+Residual significance including shift uncertainty = +0.893866263899 sigma
+Ly-alpha block chi2 raw = 6.176391241793
+Ly-alpha block chi2 shifted = 1.503293420000
+Delta chi2 = -4.673097821792
+
+End-to-end status
+-----------------
+1. derived/conditional: under Premise 2, the Ly-alpha BAO observable inherits the accepted exterior flux-correlation grammar rather than the galaxy pair-count grammar.
+2. derived/conditional: the primitive Schur pre-drag ruler remains the same early-time object for the Ly-alpha block.
+3. verified: the published redshift-space negative-shift class from arXiv:2407.03918 is the best currently available inherited Ly-alpha late-time kernel on the Schur raw ruler.
+4. verified: that inherited class moves the Schur Ly-alpha block inside current DR2 precision.
+5. conditional: Seam 2 is end-to-end closed if that inherited redshift-space Ly-alpha flux-shift class is admitted as the physical late-time Ly-alpha kernel under Premise 2.
+6. not derived: the unique internal IO Ly-alpha flux kernel remains open.
+
+Reproducibility
+---------------
+JSON:   /opt/cosmology-lab/results/paper31/paper31_lya_bao_end_to_end_inheritance_theorem_results.json
+Report: /opt/cosmology-lab/results/paper31/paper31_lya_bao_end_to_end_inheritance_theorem_report.txt

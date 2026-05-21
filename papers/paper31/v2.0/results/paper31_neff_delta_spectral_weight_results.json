@@ -1,0 +1,132 @@
+{
+  "claim_status": {
+    "g_eff_IO_equals_Delta_if_unreduced_hawking_covariance_uses_that_weight": "conditional",
+    "io_boundary_weight_equals_Delta": "derived_from_Paper15_Paper18_object_type",
+    "standard_BBN_N_eff_equals_Delta": "not_established",
+    "thermal_multiplicity_scaling_on_S1xS3": "derived"
+  },
+  "date": "2026-04-01",
+  "inputs": {
+    "Delta": 5.624216852624105,
+    "gamma_BI": 0.2375,
+    "ln_Delta": 1.7270817121974578,
+    "x": 1.519
+  },
+  "literature_notes": {
+    "compact_partition_function": "Beccaria, Bekaert, Tseytlin (2014), JHEP 08 (2014) 113, https://repo.scoap3.org/records/3732 and PDF https://scoap3-prod-backend.s3.cern.ch/media/files/3732/10.1007/JHEP08%282014%29113_a.pdf",
+    "heat_kernel_free_energy": "Gusev (2015), https://arxiv.org/abs/1612.03023",
+    "heat_kernel_vector_bundles": "Avramidi (2001), https://arxiv.org/abs/math-ph/0107018"
+  },
+  "normalization_boundary": {
+    "interpretation": "The later Paper 20 / Paper 30 BBN slot uses the standard neutrino-normalized N_eff parameter. That is not automatically the same object as the total compact-space multiplicity coefficient g_eff used in this derivation.",
+    "standard_Neff_equivalent_if_total_g_equals_Delta": 7.979084271625898,
+    "standard_total_g_from_DH_matching_Neff_3_41293": 3.5502027553226876,
+    "standard_total_g_from_Neff_3_044": 3.38262934991408
+  },
+  "scalar_unit_S3_checks": {
+    "energy_density_unit_S3": "rho(T) = (1 / (2 pi^2)) sum_{n>=0} (n+1)^3 / (exp[(n+1)/T] - 1)",
+    "grand_partition_function": "ln Z(q) = sum_{m>=1} Z_1(q^m) / m",
+    "one_particle_partition_function": "Z_1(q) = sum_{n>=0} (n+1)^2 q^(n+1) = q (1+q) / (1-q)^3",
+    "q_samples": [
+      {
+        "closed_form_error": -1.7763568394002505e-15,
+        "logZ_base": 17.28880661565315,
+        "logZ_delta": 97.23599752951559,
+        "logZ_delta_over_logZ_base": 5.624216852624106,
+        "q": 0.6065306597126334,
+        "z_closed_form": 15.995914931852221,
+        "z_delta_closed_form": 89.96449433286483,
+        "z_delta_over_z_base": 5.624216852624105,
+        "z_mode_sum": 15.99591493185222
+      },
+      {
+        "closed_form_error": 0.0,
+        "logZ_base": 2.1383646770305496,
+        "logZ_delta": 12.02662665361132,
+        "logZ_delta_over_logZ_base": 5.624216852624106,
+        "q": 0.36787944117144233,
+        "z_closed_form": 1.9922947671249875,
+        "z_delta_closed_form": 11.205097804659173,
+        "z_delta_over_z_base": 5.624216852624106,
+        "z_mode_sum": 1.9922947671249875
+      },
+      {
+        "closed_form_error": -2.7755575615628914e-17,
+        "logZ_base": 0.24846565548787053,
+        "logZ_delta": 1.3974247268931765,
+        "logZ_delta_over_logZ_base": 5.624216852624106,
+        "q": 0.1353352832366127,
+        "z_closed_form": 0.23767962743150492,
+        "z_delta_closed_form": 1.3367617661256885,
+        "z_delta_over_z_base": 5.624216852624105,
+        "z_mode_sum": 0.2376796274315049
+      }
+    ],
+    "temperature_samples": [
+      {
+        "rho_base": 0.32877572757039086,
+        "rho_base_over_stefan_boltzmann_limit": 0.9993583761090837,
+        "rho_delta": 1.849105987735144,
+        "rho_delta_over_delta_times_stefan_boltzmann_limit": 0.9993583761090837,
+        "rho_delta_over_rho_base": 5.624216852624105,
+        "temperature_unit_radius": 1.0
+      },
+      {
+        "rho_base": 5.263577928115071,
+        "rho_base_over_stefan_boltzmann_limit": 0.999959898506818,
+        "rho_delta": 29.60350368840505,
+        "rho_delta_over_delta_times_stefan_boltzmann_limit": 0.9999598985068179,
+        "rho_delta_over_rho_base": 5.624216852624104,
+        "temperature_unit_radius": 2.0
+      },
+      {
+        "rho_base": 205.61654727022903,
+        "rho_base_over_stefan_boltzmann_limit": 0.9999989734017746,
+        "rho_delta": 1156.4320503356025,
+        "rho_delta_over_delta_times_stefan_boltzmann_limit": 0.9999989734017741,
+        "rho_delta_over_rho_base": 5.6242168526241025,
+        "temperature_unit_radius": 5.0
+      },
+      {
+        "rho_base": 3289.8679226106483,
+        "rho_base_over_stefan_boltzmann_limit": 0.9999999358376095,
+        "rho_delta": 18502.930613254302,
+        "rho_delta_over_delta_times_stefan_boltzmann_limit": 0.9999999358376115,
+        "rho_delta_over_rho_base": 5.624216852624117,
+        "temperature_unit_radius": 10.0
+      }
+    ]
+  },
+  "theorem_31A": {
+    "proof_identity": [
+      "Z_1(q) = sum_n d_n q^{omega_n}",
+      "if d_n -> c d_n, then Z_1 -> c Z_1",
+      "ln Z(q) = sum_{m>=1} Z_1(q^m)/m, so ln Z -> c ln Z",
+      "U = - d/d beta ln Z, so U -> c U",
+      "rho = U / Vol(S^3), so rho -> c rho"
+    ],
+    "statement": "For a compact free bosonic thermal bath on S^1_beta x S^3, a uniform spectral multiplicity weight c rescales the one-particle partition function, the grand partition function, the thermal energy, and the radiation energy density by the same factor c.",
+    "status": "derived"
+  },
+  "theorem_31B": {
+    "proof_identity": [
+      "half-density amplitude transgression contributes x^2",
+      "covariance / spectral measure is norm-squared, giving x^4",
+      "quaternionic SU(2) norm contributes 1 + gamma^2",
+      "hence the total weight is Delta = x^4 (1 + gamma^2)"
+    ],
+    "statement": "Within the Paper 15 / Paper 18 object class, the unique positive boundary-to-bulk norm-squared weight on the horizon carrier is Delta = x^4 (1 + gamma^2).",
+    "status": "derived"
+  },
+  "theorem_31C": {
+    "premises": [
+      "all interior radiation is the Paper 1 Hawking bath",
+      "Gamma(omega) = 1, so there is no mode-dependent greybody suppression inside the horizon",
+      "the physically relevant unreduced one-particle Hawking covariance is the Paper 15 / Paper 18 weighted pushforward, before reduced-algebra projection",
+      "Paper 22 S^3 ~= SU(2) lets that weight act uniformly across the bulk mode ladder"
+    ],
+    "statement": "Under these premises, the IO compact-space radiation multiplicity coefficient is g_eff^IO = Delta.",
+    "status": "conditional"
+  },
+  "title": "Paper 31 spectral-weight route to g_eff = Delta"
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Interior Observer Paper 31 v2.0 Reproducibility Bundle"
+message: "If you use this bundle, cite the Paper 31 Zenodo record and the IO Framework public repository."
+type: software
+authors:
+  - family-names: Fife
+    given-names: David
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper31/v2.0"
+date-released: "2026-05-21"

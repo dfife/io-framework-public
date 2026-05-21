@@ -1,0 +1,17 @@
+Paper 31 Planck Weyl Tilt Refit
+================================
+
+x = 1.519
+lcmb_rescale = x^(-1/2) = 0.811374048924378
+Branch: one-fluid IO control
+start A_s = 2.0072459972737347e-09
+start tau = 0.027436408871
+start lcmb_tilt = -0.400
+evaluations = 369
+
+best-fit A_s = 2.1066959972737349e-09
+best-fit tau = 0.029011408871
+best-fit lcmb_tilt = -0.462500
+best-fit A_eff = 1.9879382063122387e-09
+best-fit chi2 = 2827.196413
+best-fit 100theta_s = 1.048176079

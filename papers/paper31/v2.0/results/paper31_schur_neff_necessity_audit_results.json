@@ -1,0 +1,99 @@
+{
+  "status_labels": [
+    "derived",
+    "verified",
+    "conditional",
+    "reconstruction",
+    "speculative"
+  ],
+  "schur_branch": {
+    "label": "Schur definitive branch",
+    "H0": 68.91,
+    "Omega_m": 0.33577637957547024,
+    "Omega_k": -0.005613722564238656,
+    "Omega_lambda": 0.6698373429887684,
+    "T_cmb": 2.7253,
+    "N_eff": 3.044
+  },
+  "delta": 5.624068750943681,
+  "class_standard_vs_delta": {
+    "standard_3p044": {
+      "chi2": 232.84201634033693,
+      "r_d_Mpc": 137.94454253600975,
+      "amplitude_c_over_H0rd": 31.53798408921048,
+      "100theta_star": 1.04808246007466,
+      "theta_star_sigma_from_planck": 22.524064756968357,
+      "shift_parameter_R": 1.7482218492379207,
+      "shift_parameter_sigma_from_planck": -0.3956301524158601,
+      "age_Gyr_CLASS": 13.269797766423402,
+      "sigma8_CLASS": 0.8175812280567074
+    },
+    "delta": {
+      "chi2": 2020.354623113124,
+      "r_d_Mpc": 127.64228319794046,
+      "amplitude_c_over_H0rd": 34.08347671866379,
+      "100theta_star": 0.9709293629831325,
+      "theta_star_sigma_from_planck": -226.35689360279818,
+      "shift_parameter_R": 1.7458578868732653,
+      "shift_parameter_sigma_from_planck": -0.8684226253469429,
+      "age_Gyr_CLASS": 13.268167445233317,
+      "sigma8_CLASS": 0.6935614231915139
+    }
+  },
+  "radiation_sensitive_Hz_compare": {
+    "0.0": {
+      "H_standard": 68.91,
+      "H_delta": 68.91,
+      "frac_shift": 0.0
+    },
+    "0.5": {
+      "H_standard": 92.2161396899632,
+      "H_delta": 92.21933029352272,
+      "frac_shift": 3.45991880623675e-05
+    },
+    "1.0": {
+      "H_standard": 125.84170197867644,
+      "H_delta": 125.85033465986113,
+      "frac_shift": 6.859952661919522e-05
+    },
+    "2.0": {
+      "H_standard": 214.5339954937668,
+      "H_delta": 214.5610015056348,
+      "frac_shift": 0.0001258822025191897
+    },
+    "10.0": {
+      "H_standard": 1458.8720062341504,
+      "H_delta": 1459.5986301144785,
+      "frac_shift": 0.0004980723992393798
+    },
+    "1100.0": {
+      "H_standard": 1656010.0932848405,
+      "H_delta": 1719075.1011419373,
+      "frac_shift": 0.038082502101181026
+    }
+  },
+  "s8_compare": {
+    "standard_3p044": {
+      "sigma8": 0.7996976406278583,
+      "S8": 0.846038756812956
+    },
+    "delta": {
+      "sigma8": 0.6782495639983516,
+      "S8": 0.7175529709998559
+    }
+  },
+  "late_time_structural_independence": {
+    "chronometer_chi2_fixed_schur": 15.57824849621855,
+    "bao_chi2_carried_ruler_fixed_schur": 26.90576259044807,
+    "bao_free_amplitude_fixed_schur_shape": {
+      "chi2": 26.799116461521393,
+      "best_amplitude": 30.33189629793561,
+      "implied_H0_if_r_d_143p3": 68.9723383538609,
+      "required_r_d_if_H0_fixed": 143.42963410402362
+    },
+    "reason": "Once H0, Omega_m, Omega_k, and Omega_lambda are fixed to the Schur branch, the Paper 29 direct-H(z) and carried-ruler BAO confrontations depend only on that late-time background shape and not on N_eff."
+  },
+  "conclusion": {
+    "statement": "On the active Schur branch, keeping N_eff = 3.044 does not introduce a new observational failure in the low-z expansion history. The branch already uses 3.044. The live low-z issues are BAO-class closure and late-time clustering. Forcing N_eff = Delta worsens the early-time ruler sector dramatically."
+  }
+}
