@@ -23,7 +23,7 @@ from planck_lite_py import PlanckLitePy  # type: ignore  # noqa: E402
 
 L_MAX = 2508
 T_CMB = 2.7253
-X = 1.519
+X = 1.5189873277742727
 LCMB_RESCALE = X ** (-0.5)
 LCMB_TILT = -0.5
 

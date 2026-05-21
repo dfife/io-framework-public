@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent
 REPORT_PATH = ROOT / "paper31_neff_delta_spectral_weight_report.md"
 JSON_PATH = ROOT / "paper31_neff_delta_spectral_weight_results.json"
 
-X = 1.519
+X = 1.5189873277742727
 GAMMA_BI = 0.2375
 DELTA = X**4 * (1.0 + GAMMA_BI**2)
 LN_DELTA = math.log(DELTA)

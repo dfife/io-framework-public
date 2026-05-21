@@ -1,0 +1,45 @@
+Paper 31 CMB Acoustic Operator Family Theorem
+=============================================
+
+## Discipline label
+
+- label state: `CONDITIONAL_VERIFIED`
+- registry check: Vectors 1-5 reviewed. No unresolved load-bearing circularity-vector hit remains on this surface after the present audit.
+- chain verification: inline-verified through the cited Paper 31 chain to assumed-good Papers 1-31 nodes; no hidden admission remains load-bearing on the active Paper 32 chain.
+- admitted inputs surfaced here: none.
+- usage rule: this theorem may be cited as a premise because it is `CONDITIONAL_VERIFIED`.
+
+
+ODE-level operator family on a fixed exact-kernel branch:
+1. acoustic inertia leg: R -> r R inside photon-baryon evolution only
+2. acoustic metric-driving leg: metric_euler -> m metric_euler inside photon-baryon evolution only
+3. acoustic Thomson leg: dkappa -> s dkappa inside photon-baryon evolution/TCA only
+
+All scans are forward-only and keep the exact curved IO Weyl kernel fixed.
+
+control
+-------
+baseline: r = 1, m = 1, s = 1, chi2 = 2834.716042
+r_geom: r = 0.777859779, m = 1.000000000, s = 1.000000000, chi2 = 20683.683798, delta = +17848.967756
+r_eff: r = 1.073800738, m = 1.000000000, s = 1.000000000, chi2 = 4206.728413, delta = +1372.012371
+r_cluster: r = 0.629263563, m = 1.000000000, s = 1.000000000, chi2 = 69000.513344, delta = +66165.797301
+metric_weyl: r = 1.000000000, m = 0.811374049, s = 1.000000000, chi2 = 2834.716042, delta = +0.000000
+scatter_geom: r = 1.000000000, m = 1.000000000, s = 0.777859779, chi2 = 8099.558178, delta = +5264.842136
+scatter_eff: r = 1.000000000, m = 1.000000000, s = 1.073800738, chi2 = 4195.255939, delta = +1360.539896
+R-leg optimum: r_best = 0.997728266, chi2 = 2833.175504, delta = -1.540538
+metric-leg optimum: m_best = 1.197601375, chi2 = 2834.716042, delta = +0.000000
+scatter-leg optimum: s_best = 0.959764553, chi2 = 2619.355100, delta = -215.360942
+R+metric optimum: r_best = 0.997728266, m_best = 1.197601360, chi2 = 2833.171294, delta = -1.544748
+R+scatter optimum: r_best = 1.005987338, s_best = 0.957050782, chi2 = 2606.463034, delta = -228.253009
+full three-leg optimum: r_best = 1.005867355, m_best = 1.199823073, s_best = 0.960724645, chi2 = 2608.783144, delta = -225.932898
+
+native
+------
+baseline: r = 1, m = 1, s = 1, chi2 = 3850.237903
+r_geom: r = 0.724398625, m = 1.000000000, s = 1.000000000, chi2 = 47237.115383, delta = +43386.877481
+r_cluster: r = 0.586015208, m = 1.000000000, s = 1.000000000, chi2 = 120769.037230, delta = +116918.799327
+metric_weyl: r = 1.000000000, m = 0.811374049, s = 1.000000000, chi2 = 3850.237903, delta = +0.000000
+scatter_geom: r = 1.000000000, m = 1.000000000, s = 0.724398625, chi2 = 12974.360949, delta = +9124.123047
+R-leg optimum: r_best = 1.053660200, chi2 = 3096.429558, delta = -753.808345
+metric-leg optimum: m_best = 1.197601375, chi2 = 3850.237903, delta = +0.000000
+scatter-leg optimum: s_best = 0.959112466, chi2 = 3639.285869, delta = -210.952033

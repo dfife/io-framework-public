@@ -28,7 +28,7 @@ from planck_lite_py import PlanckLitePy  # type: ignore  # noqa: E402
 
 
 L_MAX = 2508
-X = 1.519
+X = 1.5189873277742727
 GAMMA = 0.2375
 F_GAMMA = 1.0 / (1.0 + GAMMA**2)
 F_GAMMA2 = F_GAMMA**2

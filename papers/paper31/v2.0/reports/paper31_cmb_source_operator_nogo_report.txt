@@ -1,0 +1,85 @@
+Paper 31 CMB Source Operator No-Go Audit
+=========================================
+
+x = 1.519
+exact Weyl kernel = x^(-1/2) * ((k^2 - 3K)/(k_p^2 - 3K))^(-1/4)
+uniform local factor J_b = omega_b_eff / omega_b_geom = 1.380455407969639
+geom/control = 0.777859778597786
+eff/control = 1.073800738007380
+
+All cases evaluated at the same exact-kernel one-fluid control best-fit point:
+A_s = 2.0240459972737345e-09
+tau = 0.009300000000
+
+onefluid_control
+----------------
+chi2_TTTEEE_lowTT = 2834.716042
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.048176079
+z_rec = 1085.242363329
+rs_rec = 138.049592942
+
+native_zero_borrow
+------------------
+chi2_TTTEEE_lowTT = 3845.667111
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.040833734
+z_rec = 1083.627653329
+rs_rec = 137.079542347
+
+typed_geom_eff_eff_opacity_geom
+-------------------------------
+chi2_TTTEEE_lowTT = 6173.882076
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.035785791
+z_rec = 1091.839955111
+rs_rec = 136.429981171
+
+typed_geom_eff_eff_opacity_eff
+------------------------------
+chi2_TTTEEE_lowTT = 5589.192222
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.051212820
+z_rec = 1067.015614770
+rs_rec = 138.414569134
+
+typed_geom_eff_eff_opacity_geom_uniform_local
+---------------------------------------------
+chi2_TTTEEE_lowTT = 255291.471770
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.035785791
+z_rec = 1091.839955111
+rs_rec = 136.429981171
+
+typed_geom_eff_eff_opacity_eff_uniform_local
+--------------------------------------------
+chi2_TTTEEE_lowTT = 265476.882462
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.051212820
+z_rec = 1067.015614770
+rs_rec = 138.414569134
+
+onefluid_control_sw_geom_dop_eff_pol_eff
+----------------------------------------
+chi2_TTTEEE_lowTT = 23085.108141
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.048176079
+z_rec = 1085.242363329
+rs_rec = 138.049592942
+
+onefluid_control_sw_geom_dop_eff_pol_one
+----------------------------------------
+chi2_TTTEEE_lowTT = 22691.630766
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.048176079
+z_rec = 1085.242363329
+rs_rec = 138.049592942
+
+onefluid_control_sw_geom_only
+-----------------------------
+chi2_TTTEEE_lowTT = 29917.864261
+A_eff = 1.9867467005168077e-09
+100theta_s = 1.048176079
+z_rec = 1085.242363329
+rs_rec = 138.049592942
+

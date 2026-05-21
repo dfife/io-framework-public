@@ -1,0 +1,130 @@
+{
+  "constants": {
+    "x": 1.519,
+    "gamma": 0.2375,
+    "j_phi": 0.8113740489243784,
+    "f_gamma": 0.946605531726076,
+    "f_gamma_squared": 0.896062032694407,
+    "omega_b_geom": 0.02108,
+    "omega_b_control": 0.0271,
+    "sqrt_geom_over_control": 0.8819635925579843
+  },
+  "baseline": {
+    "c_visibility": 1.0,
+    "d_drag": 1.0,
+    "h_hierarchy": 1.0,
+    "chi2": 2834.716042331566,
+    "100theta_s": 1.048176079405297,
+    "z_rec": 1085.2423633294034,
+    "rs_rec": 138.0495929417993
+  },
+  "named_points": {
+    "baseline": {
+      "c_visibility": 1.0,
+      "d_drag": 1.0,
+      "h_hierarchy": 1.0,
+      "chi2": 2834.716042331566,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": 0.0
+    },
+    "theorem_candidate_common_fGamma2": {
+      "c_visibility": 0.896062032694407,
+      "d_drag": 1.0,
+      "h_hierarchy": 0.896062032694407,
+      "chi2": 2239.7273016045647,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": -594.9887407270012
+    },
+    "theorem_candidate_hierarchy_only_fGamma2": {
+      "c_visibility": 1.0,
+      "d_drag": 1.0,
+      "h_hierarchy": 0.896062032694407,
+      "chi2": 2585.708637791705,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": -249.007404539861
+    },
+    "theorem_candidate_visibility_only_fGamma2": {
+      "c_visibility": 0.896062032694407,
+      "d_drag": 1.0,
+      "h_hierarchy": 1.0,
+      "chi2": 3982.683495272726,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": 1147.96745294116
+    },
+    "exploratory_fGamma2_visibility_fGamma3_hierarchy": {
+      "c_visibility": 0.896062032694407,
+      "d_drag": 1.0,
+      "h_hierarchy": 0.8482172769182377,
+      "chi2": 2003.5314091725,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": -831.1846331590659
+    },
+    "one_leg_common_fGamma": {
+      "c_visibility": 0.946605531726076,
+      "d_drag": 1.0,
+      "h_hierarchy": 0.946605531726076,
+      "chi2": 2399.462128383675,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": -435.25391394789085
+    },
+    "one_leg_hierarchy_only_fGamma": {
+      "c_visibility": 1.0,
+      "d_drag": 1.0,
+      "h_hierarchy": 0.946605531726076,
+      "chi2": 2503.6343243833985,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": -331.08171794816735
+    },
+    "common_sqrt_geom_over_control": {
+      "c_visibility": 0.8819635925579843,
+      "d_drag": 1.0,
+      "h_hierarchy": 0.8819635925579843,
+      "chi2": 2245.021699831775,
+      "100theta_s": 1.048176079405297,
+      "z_rec": 1085.2423633294034,
+      "rs_rec": 138.0495929417993,
+      "delta_chi2_vs_baseline": -589.6943424997908
+    }
+  },
+  "common_optimum": {
+    "a_best": 0.8912167968750001,
+    "chi2_best": 2238.840992395766,
+    "100theta_s": 1.048176079405297,
+    "z_rec": 1085.2423633294034,
+    "rs_rec": 138.0495929417993,
+    "delta_chi2_vs_baseline": -595.8750499357998
+  },
+  "visibility_hierarchy_optimum": {
+    "c_best": 0.9030102109909057,
+    "h_best": 0.8523763113021847,
+    "chi2_best": 2000.5222889281167,
+    "100theta_s": 1.048176079405297,
+    "z_rec": 1085.2423633294034,
+    "rs_rec": 138.0495929417993,
+    "delta_chi2_vs_baseline": -834.1937534034491
+  },
+  "visibility_drag_hierarchy_optimum": {
+    "c_best": 0.8975942771675105,
+    "d_best": 0.9775585176426438,
+    "h_best": 0.8532059988434955,
+    "chi2_best": 1997.6998594267404,
+    "100theta_s": 1.048176079405297,
+    "z_rec": 1085.2423633294034,
+    "rs_rec": 138.0495929417993,
+    "delta_chi2_vs_baseline": -837.0161829048254
+  }
+}

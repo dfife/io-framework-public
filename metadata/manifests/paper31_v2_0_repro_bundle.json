@@ -1,0 +1,14 @@
+{
+  "bundle": "paper31_v2_0_repro_bundle",
+  "paper": 31,
+  "version": "v2.0",
+  "date": "2026-05-21",
+  "repo_path": "papers/paper31/v2.0",
+  "release_tag": "paper31-v2.0",
+  "release_asset": "paper31-v2.0.tar.gz",
+  "sha256": "52381e0abe3fcfb2a3087b403ef569ef733b8976ccefaffa5f0db934ad2fe454",
+  "validator": "papers/paper31/v2.0/scripts/08_validate_expected_outputs.py",
+  "validator_state": "62/62 PASS",
+  "description": "Paper 31 v2.0 public reproducibility bundle with canonical active-branch manuscript reconciliation, CMB/Weyl-kernel artifacts, E_G/lensing outputs, BAO inheritance, R-leg kill audit, transfer-function complement audit, and source-route exclusion audit.",
+  "claim_boundary": "The chronometer + DESI chi2 = 42.48 cross-paper value is exposed for traceability from public Paper 29 data, but the available upstream source labels it as legacy Schur-context material rather than as an active-branch reproducer."
+}

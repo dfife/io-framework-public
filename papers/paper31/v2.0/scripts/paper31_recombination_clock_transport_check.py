@@ -13,7 +13,7 @@ from scipy.interpolate import interp1d
 ROOT = Path("/opt/cosmology-lab")
 OUT = ROOT / "results" / "paper31"
 
-X = 1.519
+X = 1.5189873277742727
 RS = 6.685e26
 C = 2.998e8
 MPC = 3.0856775814913673e22

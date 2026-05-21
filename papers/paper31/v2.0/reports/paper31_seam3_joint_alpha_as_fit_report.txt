@@ -1,0 +1,93 @@
+Paper 31 Seam 3 - Joint alpha_Phi / A_s Fit
+===========================================
+
+Question
+--------
+Given the projected-branch E_G-preferred alpha_Phi values, what primordial amplitude A_s
+is required to satisfy the carried weak-lensing target S8 = 0.79 +/- 0.02?
+
+Input relation
+--------------
+Projected-branch Weyl-response theorem:
+    S8_lens(alpha, A_s) = x^(1.5 - alpha) * S8_clustering_active * sqrt(A_s / A_s_active)
+
+x = 1.519
+S8_clustering_active = 1.003612535681
+S8_target = 0.790 +/- 0.020
+A_s_active = 2.1141000090331526e-09
+A_s_old = 2.0072459970000000e-09
+
+Results from projected-branch E_G fits
+--------------------------------------
+all:
+  alpha_best = 1.992
+  mu_ratio = 0.814092165452
+  S8 if active A_s kept fixed = 0.817033102447
+  required A_s fraction of active = 0.934920919543
+  required A_s = 1.9765163244508007e-09
+  S8 if old A_s is used instead = 0.796117533321
+galaxy_lensing_only:
+  alpha_best = 1.723
+  mu_ratio = 0.910987916445
+  S8 if active A_s kept fixed = 0.914278892798
+  required A_s fraction of active = 0.746615144859
+  required A_s = 1.5784190844896934e-09
+  S8 if old A_s is used instead = 0.890873888367
+cmb_lensing_only:
+  alpha_best = 2.816
+  mu_ratio = 0.576859394271
+  S8 if active A_s kept fixed = 0.578943319416
+  required A_s fraction of active = 1.862010342249
+  required A_s = 3.9364760813681315e-09
+  S8 if old A_s is used instead = 0.564122709355
+
+Package comparison
+------------------
+active_no_slip:
+  alpha_phi = 1.500
+  A_s = 2.1141000090331526e-09
+  S8 = 1.003612535681
+  chi2_S8 = 114.075789
+  chi2_EG_all = 11.424022
+  chi2_total = 125.499811
+alpha2_active_As:
+  alpha_phi = 2.000
+  A_s = 2.1141000090331526e-09
+  S8 = 0.814305166627
+  chi2_S8 = 1.476853
+  chi2_EG_all = 5.824822
+  chi2_total = 7.301674
+alpha2_old_As:
+  alpha_phi = 2.000
+  A_s = 2.0072459970000000e-09
+  S8 = 0.793459431060
+  chi2_S8 = 0.029919
+  chi2_EG_all = 5.824822
+  chi2_total = 5.854741
+allfit_alpha_old_As:
+  alpha_phi = 1.992
+  A_s = 2.0072459970000000e-09
+  S8 = 0.796117533321
+  chi2_S8 = 0.093561
+  chi2_EG_all = 5.823556
+  chi2_total = 5.917117
+
+Interpretation
+--------------
+1. The projected all-benchmark E_G fit lands at alpha_Phi ~ 1.992, effectively the same as
+   the alpha = 2 Weyl theorem, and requires A_s ~ 1.98e-9 to satisfy S8.
+2. That required amplitude is very close to the older IO value A_s_old ~ 2.007e-9.
+3. The galaxy-lensing-only E_G fit prefers a lower alpha and therefore requires a significantly
+   lower A_s than the old IO package.
+4. The CMB-lensing-only E_G fit prefers a much larger alpha and therefore an implausibly large
+   A_s if one insists on the same S8 target.
+5. The package-level comparison shows that alpha=2 + old A_s improves the combined
+   S8 + all-benchmark E_G score dramatically relative to the active no-slip package.
+
+Claim boundary
+--------------
+1. verified: projected all-benchmark E_G + S8 jointly point back toward the older IO amplitude.
+2. verified: the split between galaxy-lensing and CMB-lensing E_G subsets remains the main
+   external inconsistency in the Weyl-response program.
+3. honest status: the best current joint package is projected growth + alpha_Phi ~ 2 +
+   A_s near the older IO value, but this is still conditional rather than fully theorem-closed.

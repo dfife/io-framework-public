@@ -5,6 +5,11 @@ v2.0. The computational scripts are copied from the active lab run directory and
 preserve their original absolute lab paths in comments and output settings so
 that provenance remains auditable.
 
+`09_reconcile_manuscript_claims.py` is the lightweight public reconciliation
+entry point for manuscript-level values. It reads committed JSON outputs and
+rewrites `../results/paper31_v2_0_manuscript_reconciliation_results.json` plus
+the matching report; it does not rerun CLASS/PlanckLite.
+
 The scripts that call `classy` and `PlanckLitePy` require an external CLASS /
 PlanckLite environment. The public validator,
 `08_validate_expected_outputs.py`, does not rerun those expensive external

@@ -11,7 +11,7 @@ ROOT = Path("/opt/cosmology-lab/results/paper31")
 OUT_JSON = ROOT / "paper31_seam3_eg_pipeline_results.json"
 OUT_TXT = ROOT / "paper31_seam3_eg_pipeline_report.txt"
 
-X = 1.519
+X = 1.5189873277742727
 
 SCHUR_ACTIVE = {
     "label": "projected_schur_active",

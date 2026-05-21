@@ -1,0 +1,50 @@
+Paper 31 CMB Optical-History Complement Theorem Scan
+====================================================
+
+Exact curved IO Weyl kernel fixed throughout.
+
+Constants
+---------
+gamma = 0.237500000000000
+f_Gamma = 1 / (1 + gamma^2) = 0.946605531726076
+f_Gamma^2 = 0.896062032694407
+sqrt(omega_b_geom / omega_b_control) = 0.881963592557984
+
+Control branch baseline
+-----------------------
+chi2 = 2834.716042
+100theta_s = 1.048176079
+z_rec = 1085.242363329
+rs_rec = 138.049592942
+
+Named points
+------------
+baseline: c = 1.000000000, d = 1.000000000, h = 1.000000000, chi2 = 2834.716042, delta = +0.000000
+theorem_candidate_common_fGamma2: c = 0.896062033, d = 1.000000000, h = 0.896062033, chi2 = 2239.727302, delta = -594.988741
+theorem_candidate_hierarchy_only_fGamma2: c = 1.000000000, d = 1.000000000, h = 0.896062033, chi2 = 2585.708638, delta = -249.007405
+theorem_candidate_visibility_only_fGamma2: c = 0.896062033, d = 1.000000000, h = 1.000000000, chi2 = 3982.683495, delta = +1147.967453
+exploratory_fGamma2_visibility_fGamma3_hierarchy: c = 0.896062033, d = 1.000000000, h = 0.848217277, chi2 = 2003.531409, delta = -831.184633
+one_leg_common_fGamma: c = 0.946605532, d = 1.000000000, h = 0.946605532, chi2 = 2399.462128, delta = -435.253914
+one_leg_hierarchy_only_fGamma: c = 1.000000000, d = 1.000000000, h = 0.946605532, chi2 = 2503.634324, delta = -331.081718
+common_sqrt_geom_over_control: c = 0.881963593, d = 1.000000000, h = 0.881963593, chi2 = 2245.021700, delta = -589.694342
+
+One-parameter common optical-history family
+------------------------------------------
+a_best = 0.891216797
+chi2_best = 2238.840992
+delta = -595.875050
+
+Two-parameter optical-history family with drag fixed
+---------------------------------------------------
+c_best = 0.903010211
+h_best = 0.852376311
+chi2_best = 2000.522289
+delta = -834.193753
+
+Three-parameter visibility+drag+hierarchy family
+-----------------------------------------------
+c_best = 0.897594277
+d_best = 0.977558518
+h_best = 0.853205999
+chi2_best = 1997.699859
+delta = -837.016183

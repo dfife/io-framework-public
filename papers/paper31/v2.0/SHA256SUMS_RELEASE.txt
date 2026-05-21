@@ -1,0 +1,6 @@
+52381e0abe3fcfb2a3087b403ef569ef733b8976ccefaffa5f0db934ad2fe454  paper31-v2.0.tar.gz
+
+# The release asset hash above is computed for the immutable GitHub release
+# tarball. This checksum file is published in the repository bundle directory
+# for public visibility; it is intentionally not part of the tarball payload,
+# avoiding a self-referential archive hash.
