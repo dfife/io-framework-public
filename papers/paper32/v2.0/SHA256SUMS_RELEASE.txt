@@ -1,1 +1,6 @@
-2e1ff99e182c27234575c8a1687281bea86e9d05a84eeed4b27cd5930322d70b  paper32-v2.0.tar.gz
+fadeea1d3f3d3a3d0c930d17b438ebbe4c226b3ac29f9d1b7d9674570d2e6fd4  paper32-v2.0.tar.gz
+
+# The release asset hash above is computed for the immutable GitHub release
+# tarball. This checksum file is published in the repository bundle directory
+# for public visibility; it is intentionally not part of the tarball payload,
+# avoiding a self-referential archive hash.

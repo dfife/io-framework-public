@@ -22,6 +22,10 @@ repair inherited from Paper 17 v1.5:
   readout family;
 - the v2.0 kappa audit separates Paper 32 KB7/P4 source-block closure from the
   Paper 17 optical thermal R4 normalization.
+- the post-audit §16.5 selector-closure reports document the scoped
+  `DERIVED/CONDITIONAL_VERIFIED` closure of the four Part VIII
+  fermionic/chiral sub-objects inside the admitted extended IO-EC support
+  branch.
 
 This version continues to provide public reproducibility support for:
 
@@ -34,6 +38,7 @@ This version continues to provide public reproducibility support for:
 - universal-GMP characterization;
 - framework-closure kappa audit;
 - R4/FIRAS impact audit.
+- §16.5 fermionic/chiral selector-closure theorem memos.
 
 ## Release Tag
 

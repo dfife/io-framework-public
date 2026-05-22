@@ -60,6 +60,9 @@ The scripts reproduce the public arithmetic and structural ledgers for:
 - the Paper 32 framework-closure kappa audit;
 - the v2.0 R4/FIRAS impact audit identifying CMB-prediction language that must
   be removed or reframed.
+- the §16.5 fermionic/chiral selector-closure package for the four Part VIII
+  sub-objects: horizon spinor/chiral boundary state, radial spin transport,
+  connected EC source normalization, and conservative ECKS/Nieh-Yan selector.
 
 ## Quick Validation
 
@@ -124,7 +127,9 @@ A_s = 2.0072459972737347e-9
 - `verified`: arithmetic reproduction of the constants, R4/FIRAS repair,
   recollapse, cycle, scalar-index, scalar-amplitude, and validation JSONs.
 - `DERIVED/CONDITIONAL_VERIFIED`: KB.7 source-block validation, scalar-source results, and
-  realized typed-bridge GMP classification at their stated scopes.
+  realized typed-bridge GMP classification at their stated scopes; the §16.5
+  four-selector closure package inside the admitted extended fermionic/chiral
+  IO-EC support branch.
 - `conditional`: the full 222 Gyr cycle and hard-restart morphology, which
   require explicit bounce/restart selector packages.
 - `FIRAS-fixed`: the observed CMB temperature is an empirical observer-side
@@ -139,6 +144,6 @@ A_s = 2.0072459972737347e-9
 ## Reports
 
 The `reports/` directory includes the framework-closure kappa audit, the v2.0
-R4/FIRAS kappa audit and damage report, and the support reports cited by those
-audits. These reports are included so readers can audit the scope boundaries
-behind the numerical values.
+R4/FIRAS kappa audit and damage report, the §16.5 selector-closure theorem
+memos, and the support reports cited by those audits. These reports are
+included so readers can audit the scope boundaries behind the numerical values.

@@ -74,6 +74,9 @@ Classification: `verified / public-reproducibility-support / R4-FIRAS repaired`
 - `reports/paper32_p4_source_class_lock_theorem.md`
 - `reports/paper32_conditional_verified_audit_results.md`
 - `reports/paper32_post_bounce_hard_scalar_selector_theorem.md`
+- `reports/paper32_v2_0_fermionic_chiral_subobject_closure_memo.md`
+- `reports/paper32_v2_0_connected_spin_flux_selector_theorem.md`
+- `reports/paper32_v2_0_four_selector_closure_theorem_memo.md`
 
 ## Excluded
 
