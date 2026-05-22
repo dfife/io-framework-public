@@ -1,0 +1,14 @@
+{
+  "bundle": "paper32_v2_0_repro_bundle",
+  "paper": 32,
+  "version": "v2.0",
+  "date": "2026-05-21",
+  "repo_path": "papers/paper32/v2.0",
+  "release_tag": "paper32-v2.0",
+  "release_asset": "paper32-v2.0.tar.gz",
+  "sha256": "a9fe6f0ae9f54d1736e432591e661e17207c62e99fff4374b5b66818df836168",
+  "validator": "papers/paper32/v2.0/scripts/10_validate_expected_outputs.py",
+  "validator_state": "18/18 PASS",
+  "description": "Paper 32 v2.0 public reproducibility bundle regenerated from the v1.6 R4/FIRAS-repaired bundle, with canonical Claims Discipline label migration in support files and a K-style R4/hidden-parameter audit report.",
+  "claim_boundary": "R4_FIRAS is fixed once by FIRAS through Paper 17 v1.5 and is not retuned downstream. KB7/P4 and related source-block closures are DERIVED/CONDITIONAL_VERIFIED on stated active reduced source-block scopes, not universal thermal/readout normalizations."
+}

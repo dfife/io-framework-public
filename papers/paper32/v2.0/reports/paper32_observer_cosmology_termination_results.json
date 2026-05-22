@@ -1,0 +1,97 @@
+{
+  "question": "Does the active reduced scalar optical-history cosmology admit any admissible observer-accessible continuation below x_crit?",
+  "inputs": {
+    "gamma_BI": 0.2375,
+    "Q": 1.05640625,
+    "K_gauge": 0.05487281774291466,
+    "x0": 1.519,
+    "Omega_m_geom": 0.197,
+    "h_geom": 0.5842,
+    "omega_m_geom_h2": 0.06723405908000002
+  },
+  "supporting_internal_theorems": [
+    "Paper 31 complete transfer map: observer-side scalar visibility/readout packaging sits on the reduced optical scalar-acoustic class, while Stage 2 local bulk evolution carries no observer-side readout leg.",
+    "Paper 31 Stage-2 characteristic-field inheritance theorem: no observer-side kappa/visibility/Cl/lensing operator acts inside the exact FULL Stage-2 update.",
+    "Paper 32 observer-readout transition theorem: the reduced visibility family is admissible iff x >= x_crit, closes uniquely to g=0 and exp(-kappa_c)=1 at x_crit, and is inadmissible below.",
+    "Paper 31/32 typed architecture: scalar lensing/Weyl remains a separate alpha=2 class and does not replace the scalar optical-history branch."
+  ],
+  "derived_facts": [
+    "On the active reduced scalar optical-history branch, every observer-side last-scattering readout factors through the visibility family.",
+    "The visibility family is admissible exactly for x >= x_crit = Q^(-1/4).",
+    "At x = x_crit, the unique positive closure is zero visibility / transparent readout: g = 0 and exp(-kappa_c) = 1.",
+    "For x < x_crit, the present passive observer-side optical-history class is inadmissible because g < 0 and exp(-kappa_c) > 1.",
+    "Therefore there is no admissible observer-accessible continuation below x_crit within the active scalar optical-history class.",
+    "Any continuation below x_crit must leave that observer-side class and live, if at all, in hidden local bulk sectors not uniquely fixed by the current stack."
+  ],
+  "samples": {
+    "current_x0": {
+      "x": 1.519,
+      "Delta": 5.624216852624105,
+      "K_mean": 1.7270817121974578,
+      "omega_b_eff": 0.029029678468467865,
+      "omega_b_geom": 0.02102447535418039,
+      "c_vis": 1.0,
+      "attenuation_exp(-kappa_c)_at_kappa=1": 0.36787944117144233,
+      "visibility_density_g_at_kappa=1_dkappa=1": 0.36787944117144233,
+      "status": "admissible"
+    },
+    "x_eq_1": {
+      "x": 1.0,
+      "Delta": 1.05640625,
+      "K_mean": 0.05487281774291466,
+      "omega_b_eff": 0.0009223305675032993,
+      "omega_b_geom": 0.03193617806300001,
+      "c_vis": 0.03177198702028815,
+      "attenuation_exp(-kappa_c)_at_kappa=1": 0.9687274393290509,
+      "visibility_density_g_at_kappa=1_dkappa=1": 0.03077839562855958,
+      "status": "admissible"
+    },
+    "x_crit": {
+      "x": 0.9863754613328337,
+      "Delta": 0.9999999999999999,
+      "K_mean": -1.1102230246251565e-16,
+      "omega_b_eff": -1.8661200107406023e-18,
+      "omega_b_geom": 0.032377303891812606,
+      "c_vis": -6.428317877401184e-17,
+      "attenuation_exp(-kappa_c)_at_kappa=1": 1.0,
+      "visibility_density_g_at_kappa=1_dkappa=1": -6.428317877401184e-17,
+      "status": "boundary_zero_visibility"
+    },
+    "x_0p95": {
+      "x": 0.95,
+      "Delta": 0.8604494931640624,
+      "K_mean": -0.1503003598072876,
+      "omega_b_eff": -0.0025263258177571084,
+      "omega_b_geom": 0.03361702954000001,
+      "c_vis": -0.08702562174435421,
+      "attenuation_exp(-kappa_c)_at_kappa=1": 1.090924630752198,
+      "visibility_density_g_at_kappa=1_dkappa=1": -0.09493839426744008,
+      "status": "inadmissible"
+    },
+    "x_0p5": {
+      "x": 0.5,
+      "Delta": 0.066025390625,
+      "K_mean": -2.7177159044968664,
+      "omega_b_eff": -0.0456807679213995,
+      "omega_b_geom": 0.06387235612600002,
+      "c_vis": -1.5735884905173203,
+      "attenuation_exp(-kappa_c)_at_kappa=1": 4.823927790530361,
+      "visibility_density_g_at_kappa=1_dkappa=1": -7.590877250265223,
+      "status": "inadmissible"
+    }
+  },
+  "past_lightcone_check": {
+    "z=0": 1.519,
+    "z=1": 3.038,
+    "z=10": 16.709,
+    "z=1100": 1672.4189999999999,
+    "conclusion": "All currently observable redshifts satisfy x(z) >= 1.519 > x_crit."
+  },
+  "claim_boundary": [
+    "This is a theorem about the active reduced scalar optical-history observer map, not about arbitrary unreduced observables.",
+    "It does not derive a bulk equation of state below x_crit.",
+    "It does not derive recollapse.",
+    "It does not exclude hidden local bulk continuation; it only proves that such continuation is not observer-accessible within the current scalar optical readout class."
+  ],
+  "final_verdict": "The active reduced scalar optical-history cosmology terminates at x_crit in a unique zero-visibility closure. There is no admissible observer-accessible continuation below x_crit within that class. Any post-boundary continuation is hidden bulk physics outside the terminated observer-side readout class and is not uniquely derived by the present stack."
+}

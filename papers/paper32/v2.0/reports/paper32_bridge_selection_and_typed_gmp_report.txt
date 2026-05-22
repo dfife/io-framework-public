@@ -1,0 +1,41 @@
+Paper 32 - Bridge Selection and Typed GMP Audit
+================================================
+
+Constants
+---------
+- x = 1.519
+- gamma = 0.2375
+- K_gauge = 0.05487281774291466
+- f_Gamma = 0.9466055317260761
+
+Transfer factors
+----------------
+- lowest-shell T_field factor (N=2): 0.9875583160465907
+- lowest-shell R_cov factor (N=2): 0.9752714275927781
+- one-cell field factor exp(-K_gauge/2): 0.9729365507195605
+- active-shell positivity check: passed
+
+Bridge-selection grading
+------------------------
+- SP-2 / H1 on bridge-readable quotient: derived / scoped
+- SP-2 / H1 on full ambient extension: not derived / no-go boundary
+- SP-3 / C2q on lowest-shell quotient: derived / scoped
+
+C2q numerics
+------------
+- g_H = 1.913911417205697222e-08
+- A_s(native) = 2.007245997273734750e-09
+
+Typed GMP grading
+-----------------
+- scalar floor J_min = 0
+- vector floor J_min = 1
+- tensor floor J_min = 2
+- typed bridge-class GMP: derived / scoped
+- universal GMP on larger operator algebra: not derived / no-go boundary
+
+Bottom line
+-----------
+- Paper 32 transfer theory removes quotient degeneracy, not full ambient bridge-extension degeneracy.
+- Hawking quotient selection is transfer-locked on the lowest-shell branch.
+- GMP is forced inside the realized typed bridge architecture only.

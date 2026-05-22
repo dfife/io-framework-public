@@ -1,0 +1,37 @@
+{
+  "c2q": {
+    "A_s_native": 2.0072459972737347e-09,
+    "g_H": 1.9139114172056972e-08,
+    "statement": "The lowest-shell bridge-readable quotient is one-dimensional, the Hawking beta_H-KMS one-mode state is unique, and the Paper 32 transfer is injective on that quotient."
+  },
+  "constants": {
+    "K_gauge": 0.05487281774291466,
+    "f_Gamma": 0.9466055317260761,
+    "gamma": 0.2375,
+    "x": 1.519
+  },
+  "gmp": {
+    "background_placement": "Abar in lowest coexact 1-form channel",
+    "bridge_selection_rule": "N = n - 1 or N = n + 1",
+    "channel_floor": {
+      "scalar": 0,
+      "tensor": 2,
+      "vector": 1
+    },
+    "typed_statement": "Inside the realized typed bridge class, tensor type plus channel floor plus background placement fixes geometric mode placement."
+  },
+  "statuses": {
+    "SP2_H1_bridge_readable_quotient": "derived / scoped",
+    "SP2_H1_full_ambient_extension": "not derived / no-go boundary",
+    "SP3_C2q_lowest_shell_quotient": "derived / scoped",
+    "SP4_GMP_typed_bridge_class": "derived / scoped",
+    "SP4_GMP_universal_operator_class": "not derived / no-go boundary"
+  },
+  "transfer": {
+    "R_cov_lowest_shell_factor": 0.9752714275927781,
+    "T_field_lowest_shell_factor": 0.9875583160465907,
+    "active_shell_factors_positive": true,
+    "field_one_cell_factor": 0.9729365507195605,
+    "quotient_injectivity_statement": "On active shells N >= 1, T_field|_N = N^(-K_gauge/(2x)) > 0, so the derived one-slot transfer has no kernel there."
+  }
+}

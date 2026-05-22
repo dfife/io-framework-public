@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, please cite the corresponding Paper 32 v2.0 manuscript and this public bundle."
+title: "Paper 32 v2.0 reproducibility bundle"
+authors:
+  - family-names: "Fife"
+    given-names: "David"
+    orcid: "https://orcid.org/0009-0001-0090-5825"
+version: "1.6"
+date-released: "2026-05-06"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper32/v2.0"
+repository-code: "https://github.com/dfife/io-framework-public"
+abstract: "Curated public scripts, frozen outputs, and support reports for reproducing the Paper 32 v2.0 framework-closure calculations, R4/FIRAS repair, and kappa-audit support artifacts."
+license: "CC-BY-4.0"

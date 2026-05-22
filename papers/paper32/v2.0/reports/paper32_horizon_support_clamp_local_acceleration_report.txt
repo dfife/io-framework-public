@@ -1,0 +1,16 @@
+Paper 32: Horizon Support Clamp Local Acceleration Audit
+
+Question
+- At the physical hidden-support clamp R = r_s with Rdot = 0, what is Rddot on
+  the local support equation implied by the Paper 1 / 3 torsion-Lambda law?
+
+Executive result
+- derived: on the local support variable, the Paper 1 / 3 torsion-Lambda term
+  scales as 1/R^2 and contributes only a constant to Rdot^2.
+- derived: therefore it cancels out of the local acceleration equation.
+- derived:
+    Rddot = - c^2 r_s / (2 R^2)
+  and at the clamp
+    Rddot(r_s) = -6.722177851434710e-11 m s^-2.
+
+So the local support tendency at the clamp is inward, not outward.
