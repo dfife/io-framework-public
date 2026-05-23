@@ -28,6 +28,8 @@ It is not a replacement for the manuscript bibliography.
   `https://www.desi.lbl.gov/2025/03/19/desi-dr2-results-march-19-guide/`
 - Public BAO data mirror used by the script:
   `https://github.com/CobayaSampler/bao_data/tree/master/desi_bao_dr2`
+- Imported exterior Ly-alpha redshift-space BAO shift class for the conditional
+  branch: `https://arxiv.org/abs/2407.03918`
 
 ## JWST
 

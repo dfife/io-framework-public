@@ -24,7 +24,8 @@ the already-banked Paper 29 scoped BAO readout kernel.
 
 The active theorem-supported Paper 35 v2.0 DESI comparison applies the Paper 29
 scoped BAO readout kernel to the galaxy/quasar block and leaves the Ly-alpha
-block as the current identity component:
+block as the current identity component. The subsequent full RCA report also
+archives the conditional P2-imported Ly-alpha shift branch separately:
 
 - `eta = K_gauge/x = 0.03612460534699016`,
 - `f_perp = exp(eta) = 1.0367850274005339`,
@@ -40,6 +41,10 @@ On the same DESI DR2 GCcomb data vector and covariance this gives
 - fixed flat LambdaCDM reduced chi-square: `2.2976731177455596`,
 - fixed flat LambdaCDM survival probability: `0.004917478561859067`,
 - scoped-readout `Delta chi2(IO - LambdaCDM) = -2.1346376544265304`.
+- conditional P2-imported Ly-alpha shift branch with imported shift uncertainty
+  propagated: `chi2 = 26.290695872127714`,
+  `PTE = 0.01553556040587586`,
+  `Delta chi2(IO - LambdaCDM) = -3.5790546585645586`.
 
 Therefore the apparent DESI failure was a calculation-selection error: Paper 35
 script 07 originally evaluated the raw active background after Paper 29 had
@@ -72,7 +77,9 @@ The repaired DESI claim inherits the Paper 29 scoped BAO-route boundaries:
 - scoped to the standard AP-shell / anisotropic BAO readout imported under P2;
 - hybrid isolated pre-drag ruler only, not full Stage-2 CMB closure;
 - galaxy/quasar kernel only on the typed covariance genealogy;
-- Ly-alpha block only through the current internal IO identity component;
+- Ly-alpha block through the current internal IO identity component in the
+  primary internal branch, with a separate conditional P2-imported exterior
+  Ly-alpha shift branch archived in `paper35_v2_desi_full_rca_report.md`;
 - not universal BAO closure across all tracer/readout definitions.
 
 Do not describe the repaired result as universal DESI closure or full CMB

@@ -1,6 +1,6 @@
-48eedec2b3e9ecc334d1b734a4f2a9ce365dc56b7393211e46b9d7af47a7c1be  paper35-v2.0.tar.gz
+c2c850c6bceaa26bf5bf6fe687ec11323a53a87b13b90bd69d57f87c63bd05a6  paper35-v2.0.tar.gz
 
-# The release asset hash above is computed for the immutable GitHub release
+# The release asset hash above is computed for the deterministic bundle
 # tarball. This checksum file is published in the repository bundle directory
 # for public visibility; it is intentionally not part of the tarball payload,
 # avoiding a self-referential archive hash.

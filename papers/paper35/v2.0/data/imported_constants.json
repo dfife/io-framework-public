@@ -143,6 +143,14 @@
     "T_cmb_K": 2.7255,
     "N_eff": 3.046
   },
+  "desi_lya_imported_shift": {
+    "description": "Imported exterior Ly-alpha redshift-space flux-correlation BAO shift class used only for the conditional P2-imported Ly-alpha branch.",
+    "source": "Sinigaglia et al. 2024 redshift-space isotropic Ly-alpha shift class, arXiv:2407.03918; audited in the Paper 31 Ly-alpha BAO Shift Inheritance Theorem and Paper 29 full-DESI imported Ly-alpha closure report.",
+    "alpha_parallel": 0.9905,
+    "alpha_perp": 0.9905,
+    "alpha_iso_sigma": 0.0027,
+    "status": "IMPORTED/EMPIRICAL exterior Ly-alpha flux-shift class under Premise 2; not an internal IO derivation"
+  },
   "dark_matter_limits": {
     "LZ_2024": {
       "experiment": "LZ",

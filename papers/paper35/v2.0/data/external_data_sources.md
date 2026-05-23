@@ -21,6 +21,12 @@ recompute the frozen outputs.
 - Paper references:
   DESI DR2 cosmology `https://arxiv.org/abs/2503.14738`;
   DESI DR2 dark-energy analysis `https://arxiv.org/abs/2503.14743`.
+- Conditional Ly-alpha shift branch:
+  the branch uses the imported exterior redshift-space Ly-alpha BAO shift class
+  `alpha = 0.9905 +/- 0.0027`, as banked in the Paper 29 full-DESI imported
+  Ly-alpha closure report and Paper 31 Ly-alpha BAO Shift Inheritance Theorem.
+  The source pointer recorded for the imported class is
+  `https://arxiv.org/abs/2407.03918`.
 
 ## Planck / CMB Comparison Values
 

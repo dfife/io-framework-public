@@ -130,6 +130,145 @@
     "status": "primary Paper 35 v2.0 DESI result, inherited from Paper 29 scoped BAO route"
   },
   "claim_boundary": "verified DESI data confrontation; primary active IO result uses the Paper 29 scoped BAO readout kernel; raw no-readout IO is retained as diagnostic-only; flat LambdaCDM same-data comparator is fixed-parameter; external DESI files are fetched and checksummed, not redistributed",
+  "conditional_imported_lya_shift_bao_readout": {
+    "alpha_iso_sigma": 0.0027,
+    "alpha_parallel": 0.9905,
+    "alpha_perp": 0.9905,
+    "chi2_central_shift_only": 26.296401887105667,
+    "chi2_with_shift_uncertainty_covariance": 26.290695872127714,
+    "covariance_update": "rank-one first-order covariance term sigma_alpha^2 J J^T added on Ly-alpha rows only, with J=d(M/alpha)/dalpha at the imported central alpha",
+    "delta_chi2_central_shift_minus_lcdm": -3.5733486435866055,
+    "delta_chi2_with_shift_uncertainty_minus_lcdm": -3.5790546585645586,
+    "diagnostics_central_shift_only": {
+      "chi2": 26.296401887105667,
+      "dof": 13,
+      "pte_chi2_survival": 0.015508017004462981,
+      "pte_method": "fixed-parameter Gaussian chi-square survival Q(dof/2, chi2/2)",
+      "reduced_chi2": 2.022800145161974
+    },
+    "diagnostics_with_shift_uncertainty_covariance": {
+      "chi2": 26.290695872127714,
+      "dof": 13,
+      "pte_chi2_survival": 0.01553556040587586,
+      "pte_method": "fixed-parameter Gaussian chi-square survival Q(dof/2, chi2/2)",
+      "reduced_chi2": 2.022361220932901
+    },
+    "fixed_lcdm_comparator_diagnostics": {
+      "chi2": 29.869750530692272,
+      "dof": 13,
+      "pte_chi2_survival": 0.004917478561859067,
+      "pte_method": "fixed-parameter Gaussian chi-square survival Q(dof/2, chi2/2)",
+      "reduced_chi2": 2.2976731177455596
+    },
+    "rows": [
+      {
+        "active_io_scoped_lya_shift_model": 7.942559809760962,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 8.057119610385575,
+        "observed": 7.94167639,
+        "quantity": "DV_over_rs",
+        "z": 0.295
+      },
+      {
+        "active_io_scoped_lya_shift_model": 13.204089129102414,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 13.50056581350262,
+        "observed": 13.58758434,
+        "quantity": "DM_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_scoped_lya_shift_model": 22.590228506013432,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 22.738885041464826,
+        "observed": 21.86294686,
+        "quantity": "DH_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_scoped_lya_shift_model": 17.270170072212192,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 17.700537005213626,
+        "observed": 17.35069094,
+        "quantity": "DM_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_scoped_lya_shift_model": 19.967056705942188,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 20.167667983378426,
+        "observed": 19.45534918,
+        "quantity": "DH_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_scoped_lya_shift_model": 21.39632358976347,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 21.99421335482917,
+        "observed": 21.57563956,
+        "quantity": "DM_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_scoped_lya_shift_model": 17.32519576753878,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 17.56695367042322,
+        "observed": 17.64149464,
+        "quantity": "DH_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_scoped_lya_shift_model": 27.18346385062431,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 28.08032434932336,
+        "observed": 27.60085612,
+        "quantity": "DM_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_scoped_lya_shift_model": 13.790729519777722,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 14.062568053545494,
+        "observed": 14.17602155,
+        "quantity": "DH_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_scoped_lya_shift_model": 29.24993137721497,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 30.27389297389533,
+        "observed": 30.51190063,
+        "quantity": "DM_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_scoped_lya_shift_model": 12.603386840176944,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 12.877709248423026,
+        "observed": 12.81699964,
+        "quantity": "DH_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_scoped_lya_shift_model": 8.600703162199093,
+        "block": "lya",
+        "fixed_lcdm_model": 8.613910295395652,
+        "observed": 8.631545674846294,
+        "quantity": "DH_over_rs",
+        "z": 2.33
+      },
+      {
+        "active_io_scoped_lya_shift_model": 39.277834476816395,
+        "block": "lya",
+        "fixed_lcdm_model": 39.178963531505545,
+        "observed": 38.988973961958784,
+        "quantity": "DM_over_rs",
+        "z": 2.33
+      }
+    ],
+    "source": "Sinigaglia et al. 2024 redshift-space isotropic Ly-alpha shift class, arXiv:2407.03918; audited in the Paper 31 Ly-alpha BAO Shift Inheritance Theorem and Paper 29 full-DESI imported Ly-alpha closure report.",
+    "status": "conditional P2-imported Ly-alpha branch; galaxy/quasar block uses the Paper 29 scoped BAO kernel, Ly-alpha block uses the imported exterior redshift-space flux-shift class; not an internal IO derivation of the Ly-alpha shift"
+  },
   "external_files": {
     "cov_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
     "cov_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",

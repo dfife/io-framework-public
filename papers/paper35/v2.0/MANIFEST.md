@@ -63,6 +63,8 @@ files are finalized.
 - `reports/paper35_kappa_audit_report.md`
 - `reports/paper35_kappa_audit_results.json`
 - `reports/paper35_v2_desi_rca_report.md`
+- `reports/paper35_v2_desi_full_rca_report.md`
+- `reports/paper35_layer2_lya_shift_import_evidence_memo.md`
 - `reports/paper35_conditional_verified_audit_results.md`
 - `reports/paper35_conditional_verified_audit_results.json`
 - `reports/theorem_registry/`: 48 theorem-surface report/result pairs plus index.
@@ -84,5 +86,5 @@ python3 scripts/10_validate_expected_outputs.py
 Expected final line:
 
 ```text
-SUMMARY total_checks=49 pass_count=49 fail_count=0
+SUMMARY total_checks=58 pass_count=58 fail_count=0
 ```

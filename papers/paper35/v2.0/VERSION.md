@@ -23,8 +23,9 @@ The v2.0 bundle reproduces:
 - JWST formation-time table;
 - DESI Paper 29 scoped BAO readout-kernel chi-square, fixed-model degrees of
   freedom, reduced chi-square, Gaussian chi-square survival probability,
-  diagnostic raw no-readout active-branch chi-square, same-data fixed flat
-  LambdaCDM comparator, and flat-CPL reinterpretation check;
+  conditional P2-imported Ly-alpha shift branch, diagnostic raw no-readout
+  active-branch chi-square, same-data fixed flat LambdaCDM comparator, and
+  flat-CPL reinterpretation check;
 - geometric dark-sector consistency ledger;
 - R4/FIRAS impact audit, kappa audit, and conditional-verification reports.
 
@@ -48,10 +49,20 @@ diagnostic. The new output shows:
 - fixed flat LambdaCDM chi-square survival probability `0.004917478561859067`;
 - `Delta chi2(active scoped - LambdaCDM) = -2.1346376544265304`;
 - raw no-readout active branch diagnostic `chi2 = 69.48480893315653`.
+- conditional P2-imported Ly-alpha shift branch
+  `chi2 = 26.296401887105667`, `PTE = 0.015508017004462981`;
+- conditional P2-imported Ly-alpha shift branch with the imported
+  `alpha = 0.9905 +/- 0.0027` shift uncertainty propagated as a rank-one
+  covariance term: `chi2 = 26.290695872127714`,
+  `PTE = 0.01553556040587586`;
+- `Delta chi2(imported Ly-alpha branch with shift uncertainty - LambdaCDM) =
+  -3.5790546585645586`.
 
 These are same-data fixed-model diagnostics. They do not fit IO parameters and
 do not convert the DESI erratum into a universal BAO theorem. The active DESI
-claim inherits the Paper 29 scoped BAO-route boundaries.
+claim inherits the Paper 29 scoped BAO-route boundaries. The imported Ly-alpha
+branch is conditional on the external redshift-space Ly-alpha shift class under
+Premise 2; it is not an internal IO derivation of the Ly-alpha shift.
 
 ## v1.2 Inherited Boundary
 

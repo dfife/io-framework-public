@@ -24,8 +24,9 @@ python3 scripts/10_validate_expected_outputs.py
 `07_desi_confrontation.py` fetches public DESI DR2 files at runtime and checks
 SHA256. It archives the Paper 29 scoped BAO readout-kernel chi-square as the
 primary active IO DESI result, retains the raw no-readout active branch as a
-diagnostic, and includes a same-data fixed flat LambdaCDM comparator. No
-external data files are redistributed.
+diagnostic, archives the conditional P2-imported Ly-alpha shift branch and its
+first-order shift-uncertainty propagation, and includes a same-data fixed flat
+LambdaCDM comparator. No external data files are redistributed.
 
 Every script writes one frozen JSON output into `results/`, except
 `10_validate_expected_outputs.py`, which validates all frozen outputs and exits

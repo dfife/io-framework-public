@@ -4,7 +4,8 @@
 Purpose:
     Recompute the active Paper 29 scoped DESI DR2 GCcomb BAO readout-kernel
     chi^2 from public DESI mean/covariance files, retain the raw no-readout
-    active-branch calculation as a diagnostic, verify the fixed flat-CPL
+    active-branch calculation as a diagnostic, archive the conditional
+    P2-imported Ly-alpha shift branch, verify the fixed flat-CPL
     reinterpretation point, and archive the fixed flat LambdaCDM same-data
     comparator.
 
@@ -16,10 +17,11 @@ Outputs:
 
 Claim boundary:
     VERIFIED data confrontation on the Paper 29 scoped BAO observable route.
-    The active IO scoped readout, raw IO diagnostic, and LambdaCDM comparator
-    are fixed-parameter models on this data vector; no parameter is fitted to
-    DESI by this script. External DESI files are not redistributed; this script
-    fetches them and checks SHA256 before use.
+    The active IO scoped readout, conditional P2-imported Ly-alpha readout,
+    raw IO diagnostic, and LambdaCDM comparator are fixed-parameter models on
+    this data vector; no parameter is fitted to DESI by this script. External
+    DESI files are not redistributed; this script fetches them and checks
+    SHA256 before use.
 """
 
 from __future__ import annotations
@@ -176,8 +178,16 @@ def scoped_bao_model_vector(
     *,
     f_perp: float,
     f_parallel: float,
+    lya_alpha_parallel: float = 1.0,
+    lya_alpha_perp: float = 1.0,
 ) -> list[float]:
-    """Paper 29 scoped BAO readout: galaxy/quasar kernel plus Ly-alpha identity."""
+    """Paper 29 scoped BAO readout.
+
+    The default branch applies the theorem-grade galaxy/quasar kernel and
+    leaves Ly-alpha at identity. The optional Ly-alpha alpha values implement
+    the imported exterior redshift-space flux-shift class banked in the Paper 29
+    and Paper 31 Ly-alpha reports; they are not fitted in this script.
+    """
     values = []
     for z, _, quantity in rows:
         dm = d_m_mpc(z, h0, omega_k, e_func)
@@ -186,8 +196,8 @@ def scoped_bao_model_vector(
             dm_eff = dm / f_perp
             dh_eff = dh / f_parallel
         else:
-            dm_eff = dm
-            dh_eff = dh
+            dm_eff = dm / lya_alpha_perp
+            dh_eff = dh / lya_alpha_parallel
         dv_eff = (z * dm_eff * dm_eff * dh_eff) ** (1.0 / 3.0)
         if quantity == "DM_over_rs":
             values.append(dm_eff / rd_mpc)
@@ -198,6 +208,35 @@ def scoped_bao_model_vector(
         else:
             raise ValueError(quantity)
     return values
+
+
+def add_lya_shift_covariance(
+    cov: list[list[float]],
+    rows: list[tuple[float, float, str]],
+    baseline_identity_model: list[float],
+    *,
+    alpha_parallel: float,
+    alpha_perp: float,
+    alpha_sigma: float,
+) -> list[list[float]]:
+    """Add first-order Ly-alpha alpha-shift uncertainty as a rank-one covariance.
+
+    For the imported isotropic shift class alpha_parallel = alpha_perp = alpha.
+    DESI rows are ratios D/r_d, and applying the shift maps M -> M/alpha.
+    The Jacobian at the imported central value is d(M/alpha)/d alpha = -M/alpha^2
+    on the Ly-alpha rows and zero elsewhere.
+    """
+    augmented = [row[:] for row in cov]
+    jac = [0.0 for _ in rows]
+    for i, (z, _, quantity) in enumerate(rows):
+        if z < 2.0:
+            continue
+        alpha = alpha_perp if quantity in {"DM_over_rs", "DV_over_rs"} else alpha_parallel
+        jac[i] = -baseline_identity_model[i] / (alpha * alpha)
+    for i in range(len(rows)):
+        for j in range(len(rows)):
+            augmented[i][j] += alpha_sigma * alpha_sigma * jac[i] * jac[j]
+    return augmented
 
 
 def chi2(model: list[float], obs: list[float], inv_cov: list[list[float]]) -> float:
@@ -291,6 +330,33 @@ def main() -> int:
     )
     active_scoped_chi2 = chi2(active_scoped, obs, inv_cov)
 
+    lya_shift = constants["desi_lya_imported_shift"]
+    active_scoped_lya_shift = scoped_bao_model_vector(
+        rows,
+        branch["H0"],
+        branch["Omega_k"],
+        branch["rd_mpc"],
+        active_e(branch),
+        f_perp=f_perp,
+        f_parallel=f_parallel,
+        lya_alpha_parallel=lya_shift["alpha_parallel"],
+        lya_alpha_perp=lya_shift["alpha_perp"],
+    )
+    active_scoped_lya_shift_chi2 = chi2(active_scoped_lya_shift, obs, inv_cov)
+    lya_augmented_cov = add_lya_shift_covariance(
+        cov,
+        rows,
+        active_scoped,
+        alpha_parallel=lya_shift["alpha_parallel"],
+        alpha_perp=lya_shift["alpha_perp"],
+        alpha_sigma=lya_shift["alpha_iso_sigma"],
+    )
+    active_scoped_lya_shift_chi2_augmented = chi2(
+        active_scoped_lya_shift,
+        obs,
+        invert_matrix(lya_augmented_cov),
+    )
+
     lcdm = constants["desi_lcdm_fixed_comparator"]
     lcdm_model = model_vector(rows, lcdm["H0"], lcdm["Omega_k"], lcdm["rd_mpc"], active_e(lcdm))
     lcdm_chi2 = chi2(lcdm_model, obs, inv_cov)
@@ -342,6 +408,41 @@ def main() -> int:
                 for (z, o, q), m, l in zip(rows, active_scoped, lcdm_model)
             ],
         },
+        "conditional_imported_lya_shift_bao_readout": {
+            "status": (
+                "conditional P2-imported Ly-alpha branch; galaxy/quasar block uses the Paper 29 scoped "
+                "BAO kernel, Ly-alpha block uses the imported exterior redshift-space flux-shift class; "
+                "not an internal IO derivation of the Ly-alpha shift"
+            ),
+            "source": lya_shift["source"],
+            "alpha_parallel": lya_shift["alpha_parallel"],
+            "alpha_perp": lya_shift["alpha_perp"],
+            "alpha_iso_sigma": lya_shift["alpha_iso_sigma"],
+            "covariance_update": (
+                "rank-one first-order covariance term sigma_alpha^2 J J^T added on Ly-alpha rows only, "
+                "with J=d(M/alpha)/dalpha at the imported central alpha"
+            ),
+            "chi2_central_shift_only": active_scoped_lya_shift_chi2,
+            "diagnostics_central_shift_only": chi2_diagnostics(active_scoped_lya_shift_chi2, dof_fixed),
+            "chi2_with_shift_uncertainty_covariance": active_scoped_lya_shift_chi2_augmented,
+            "diagnostics_with_shift_uncertainty_covariance": chi2_diagnostics(
+                active_scoped_lya_shift_chi2_augmented, dof_fixed
+            ),
+            "fixed_lcdm_comparator_diagnostics": chi2_diagnostics(lcdm_chi2, dof_fixed),
+            "delta_chi2_central_shift_minus_lcdm": active_scoped_lya_shift_chi2 - lcdm_chi2,
+            "delta_chi2_with_shift_uncertainty_minus_lcdm": active_scoped_lya_shift_chi2_augmented - lcdm_chi2,
+            "rows": [
+                {
+                    "z": z,
+                    "quantity": q,
+                    "block": "galaxy_quasar" if z < 2.0 else "lya",
+                    "observed": o,
+                    "active_io_scoped_lya_shift_model": m,
+                    "fixed_lcdm_model": l,
+                }
+                for (z, o, q), m, l in zip(rows, active_scoped_lya_shift, lcdm_model)
+            ],
+        },
         "raw_gccomb_diagnostic": {
             "status": "diagnostic-only raw active branch without Paper 29 BAO readout kernel",
             "active_branch_chi2": active_raw_chi2,
@@ -365,6 +466,14 @@ def main() -> int:
             {
                 "active_scoped_bao_chi2": active_scoped_chi2,
                 "active_scoped_bao_pte": payload["active_scoped_bao_readout"]["diagnostics"]["pte_chi2_survival"],
+                "conditional_imported_lya_shift_chi2": active_scoped_lya_shift_chi2,
+                "conditional_imported_lya_shift_pte": payload["conditional_imported_lya_shift_bao_readout"][
+                    "diagnostics_central_shift_only"
+                ]["pte_chi2_survival"],
+                "conditional_imported_lya_shift_covariance_chi2": active_scoped_lya_shift_chi2_augmented,
+                "conditional_imported_lya_shift_covariance_pte": payload[
+                    "conditional_imported_lya_shift_bao_readout"
+                ]["diagnostics_with_shift_uncertainty_covariance"]["pte_chi2_survival"],
                 "raw_active_branch_chi2_diagnostic": active_raw_chi2,
                 "fixed_lcdm_chi2": lcdm_chi2,
                 "fixed_lcdm_pte": payload["active_scoped_bao_readout"]["fixed_lcdm_comparator_diagnostics"]["pte_chi2_survival"],
