@@ -1,0 +1,42 @@
+{
+  "mission": "Determine whether the residual Paper 35 surface route is fundamentally an operator problem or a state/representation problem on the physical puncture algebra.",
+  "theorem_1_current_surface_predictions_use_a_symmetric_tracial_state": {
+    "status": "derived / scoped",
+    "statement": "On the current stack the natural physical surface state is the ABCK area-shell microcanonical state. It is tracial and puncture-symmetric, so it carries no visible-sector preference.",
+    "formulas": {
+      "state": "omega_mc(X) = Tr(P_shell X) / dim(H_shell)",
+      "tracial": "omega_mc(XY) = omega_mc(YX)",
+      "symmetry": "omega_mc(alpha_sigma(X)) = omega_mc(X)"
+    },
+    "imports": {
+      "paper20_natural_state": "/opt/cosmology-lab/results/paper20/paper20_puncture_resolved_horizon_algebra_report.txt"
+    }
+  },
+  "theorem_2_operator_only_selector_has_no_theorem_grade_physical_meaning": {
+    "status": "derived / strongest current-stack surface reduction",
+    "statement": "A symmetry-breaking selector B_sel on the same algebra does not by itself define a theorem-grade physical visible sector. Physical predictions require a state. Under the current symmetric tracial state, any label-independent observable extracted from B_sel is obtained by permutation averaging, and that averaged selector is equivariant. By the previous equivariant no-go, its induced visible charge must vanish.",
+    "formulas": {
+      "group_average": "B_avg = |Sym_n|^{-1} sum_sigma alpha_sigma(B_sel)",
+      "state_reduction": "omega_mc(B_sel) = omega_mc(B_avg)",
+      "equivariant_consequence": "q(B_avg) = 0",
+      "conclusion": "operator-only route cannot realize q != 0"
+    },
+    "imports": {
+      "equivariant_boundary": "No nontrivial visible-sector selector exists as a current-stack equivariant observable on the neutral puncture sector. The only surviving positive surface route is an explicitly symmetry-breaking selector B_sel with nonzero q."
+    }
+  },
+  "theorem_3_exact_future_surface_object": {
+    "status": "derived / sharpened future surface target",
+    "statement": "The remaining positive surface route is therefore not a bare operator B_sel. It is a nontracial, puncture-symmetry-breaking surface state or representation together with the induced nonzero charge. Equivalently, the exact future surface object is (omega_sb, q), or a representation-level refinement carrying the same data.",
+    "formulas": {
+      "future_exact_object": "(omega_sb, q) or equivalent symmetry-breaking representation datum",
+      "state_breaking": "omega_sb o alpha_sigma != omega_sb for some sigma",
+      "nontracial": "omega_sb(XY) != omega_sb(YX) in general",
+      "current_value": "omega_sb,current = none,   q_current = 0"
+    }
+  },
+  "final_boundary": {
+    "status": "derived / exhausted operator-only surface boundary",
+    "safe_statement": "The Paper 35 surface route is no longer an operator-selection problem. On the current algebra, any positive route requires a new nontracial symmetry-breaking surface state or representation datum, not a bare selector operator."
+  }
+}

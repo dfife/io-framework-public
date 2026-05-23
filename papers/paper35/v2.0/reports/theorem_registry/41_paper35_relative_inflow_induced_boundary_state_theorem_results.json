@@ -1,0 +1,42 @@
+{
+  "mission": "Determine whether a genuinely relative or singular Abelian inflow extension automatically induces the residual boundary-state datum, thereby compressing the future Paper 35 frontier from two objects to one inside that extension.",
+  "theorem_1_relative_inflow_assigns_boundary_state": {
+    "status": "derived / conditional / scoped within a quantized relative inflow extension",
+    "statement": "In any quantized topological field theory with boundary, a bulk manifold together with its relative/singular field data determines a state in the Hilbert space attached to the boundary. Applied to a genuine relative or singular Abelian inflow extension on Y with boundary S^2, the datum (A_rel, m_odd) determines a boundary vector Psi_{A_rel,m_odd} and hence a boundary state omega_{A_rel,m_odd}.",
+    "formulas": {
+      "bulk_to_boundary_vector": "Z(Y; A_rel, m_odd) = Psi_{A_rel,m_odd} in H_{S^2,q}",
+      "induced_state": "omega_{A_rel,m_odd}(X) = <Psi, pi_q(X) Psi> / <Psi, Psi>",
+      "charge_sector": "q = q(A_rel)"
+    }
+  },
+  "theorem_2_induced_state_is_outside_current_tracial_sector": {
+    "status": "derived / conditional / scoped within the extension",
+    "statement": "If the relative/singular inflow datum carries nonzero boundary charge q or a localized singular source, then the induced boundary state does not belong to the current neutral tracial ABCK sector. It is a charged or symmetry-refined boundary state, and therefore supplies the missing surface datum automatically.",
+    "formulas": {
+      "charged_sector": "q(A_rel) != 0  =>  omega_{A_rel,m_odd} != omega_mc",
+      "localized_singularity": "localized A_rel  =>  omega o alpha_sigma != omega for some sigma",
+      "surface_datum_induced": "(omega_sb, q) := (omega_{A_rel,m_odd}, q(A_rel))"
+    }
+  },
+  "theorem_3_future_frontier_compression_within_extension": {
+    "status": "derived / conditional / scoped frontier compression",
+    "statement": "Within the genuine relative/singular inflow extension, the residual surface datum is not independent. It is functorially induced by the inflow datum. Therefore the future Paper 35 frontier compresses from the pair {(omega_sb, q), (A_rel, m_odd)} to the single inflow object (A_rel, m_odd), understood as carrying its induced boundary state.",
+    "formulas": {
+      "compression_map": "(A_rel, m_odd) -> (omega_{A_rel,m_odd}, q(A_rel))",
+      "compressed_frontier": "(A_rel, m_odd)",
+      "current_stack_boundary": "this does not alter the exhausted present-stack boundary"
+    },
+    "imports": {
+      "previous_boundary": "Paper 35 is now reduced to two irreducible future objects on the present stack: the surface-state datum (omega_sb, q) and the genuinely relative inflow datum (A_rel, m_odd). No further theorem-grade reduction remains without new charged or CP-odd structure, or a new theorem relating those two categories."
+    }
+  },
+  "final_boundary": {
+    "status": "derived / conditional / scoped within the relative/singular inflow extension",
+    "safe_statement": "On the present stack the final Paper 35 frontier remains the disjoint pair {(omega_sb, q), (A_rel, m_odd)}. But inside any genuinely quantized relative or singular inflow extension, the surface datum is induced by the inflow datum, so the future frontier compresses to the single object (A_rel, m_odd)."
+  },
+  "primary_external_support": [
+    "Atiyah TQFT axioms: a manifold with boundary determines a boundary state",
+    "Freed classical Chern-Simons theory on surfaces with boundary / gluing laws",
+    "Witten Chern-Simons / conformal-block boundary-state correspondence"
+  ]
+}

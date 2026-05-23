@@ -1,0 +1,26 @@
+{
+  "assignment": {
+    "BBN_reaction_network_temperature": "T_IO",
+    "observer_photon_bath_temperature": "T_obs(R4_FIRAS) = T_IO x_R4_source^(R4_FIRAS K_gauge) = T_FIRAS"
+  },
+  "claim_boundary": "DERIVED/SCOPED typed-observable temperature assignment",
+  "formulae": {
+    "conversion": "x_R4_source^(3 R4_FIRAS K_gauge)",
+    "conversion_R4_equals_1": "historical diagnostic only",
+    "eta_BBN": "eta_obs * (T_obs/T_IO)^3"
+  },
+  "numbers": {
+    "R4_FIRAS": 1.0031014644105183,
+    "T_FIRAS_K": 2.7255,
+    "T_IO_K": 2.6635,
+    "T_obs_K": 2.7255,
+    "T_obs_R4_equals_1_K_historical": 2.7253048490552736,
+    "eta_BBN_proton_mass": 6.150846821132321e-10,
+    "eta_obs_proton_mass": 5.74056258234731e-10,
+    "temperature_conversion_factor_R4_equals_1_historical": 1.0712409438605732,
+    "temperature_conversion_factor_direct": 1.0714710854379792,
+    "temperature_conversion_factor_symbolic": 1.0714710854379792
+  },
+  "script": "02_temperature_assignment.py",
+  "status": "verified"
+}

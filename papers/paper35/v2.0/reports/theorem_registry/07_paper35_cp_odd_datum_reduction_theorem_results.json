@@ -1,0 +1,33 @@
+{
+  "mission": "Reduce the remaining coefficient-side CP-odd frontier to its minimal boundary datum on the lowest-shell fermionic bridge sector.",
+  "theorem_1_minimal_cp_odd_bilinear": {
+    "status": "derived / conditional / scoped reduction",
+    "conditions": [
+      "restrict to the admitted lowest-shell fermionic bridge sector",
+      "require a gauge-neutral SO(3)-invariant bilinear datum",
+      "require oddness under chirality exchange / parity reversal on the bridge sector"
+    ],
+    "statement": "Under the stated minimality conditions, the unique CP-odd boundary bilinear is the chiral imbalance operator Q5 = N_+ - N_-, equivalently a chiral chemical-potential datum mu5 conjugate to Q5.",
+    "exact_datum": "Q5 = N_+ - N_-"
+  },
+  "theorem_2_current_stack_value": {
+    "status": "derived / conditional / scoped no-go",
+    "statement": "On the current Hawking/KMS seed, no chirality selector is derived. The two chiral sectors remain symmetry-related, so the minimal CP-odd datum vanishes on the current stack.",
+    "imports": {
+      "seed_boundary": "The current extension does not derive a preferred chirality. Without a parity-odd or chiral selector theorem, the two horizon chiral sectors remain symmetry-related."
+    },
+    "current_value": "Q5 = 0"
+  },
+  "theorem_3_coefficient_boundary_reduction": {
+    "status": "derived / exact sharpening",
+    "statement": "The remaining coefficient-side frontier does not consist of a generic CP-odd theorem. It reduces exactly to one minimal boundary pseudoscalar datum Q5 together with the CP-even magnitude selector (M1, m_tilde1).",
+    "remaining_objects": [
+      "a CP-even magnitude selector theorem for (M1, m_tilde1)",
+      "a theorem deriving nonzero Q5, or equivalently nonzero mu5, on the boundary sector"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / sharpened exhausted Paper 35 coefficient boundary",
+    "safe_statement": "The coefficient-side CP-odd frontier is now reduced as far as the current stack permits. It is one missing pseudoscalar datum Q5, not a broad undefined CP sector."
+  }
+}

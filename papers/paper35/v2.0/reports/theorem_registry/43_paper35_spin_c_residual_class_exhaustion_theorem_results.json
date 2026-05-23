@@ -1,0 +1,44 @@
+{
+  "mission": "Reduce the post-normalization Paper 35 frontier to the exact residual spin^c-class debt and determine whether any hidden current-stack route survives after the canonical spin-bundle degree is absorbed.",
+  "theorem_1_spin_c_torsor_reduction": {
+    "status": "derived / exact geometric reduction",
+    "statement": "Once the fixed horizon spin bundle Q is admitted, every additional admissible charged fermionic horizon carrier is obtained by tensoring the canonical spin carrier with an ordinary complex line bundle L. On S^2 these line bundles are classified by H^2(S^2,Z) ≅ Z. Therefore the residual charged route is exactly a residual spin^c-class shift beyond the canonical spin structure.",
+    "formulas": {
+      "torsor_law": "S -> S ⊗ L",
+      "sphere_classification": "Pic(S^2) ≅ H^2(S^2,Z) ≅ Z",
+      "line_realization": "L ≅ Q^n up to isomorphism",
+      "residual_integer": "n ∈ Z"
+    }
+  },
+  "theorem_2_current_stack_value": {
+    "status": "derived / sharpened current-stack value",
+    "statement": "The present stack already fixes the canonical spin carrier and its unit spin degree. What it does not derive is any nontrivial residual spin^c shift. Therefore the current-stack value of the residual spin^c integer is n = 0.",
+    "imports": {
+      "spin_normalization": "The old phrase 'current carrier is neutral' was too coarse. The fixed horizon spin bundle already has unit degree, and the chiral half-spin branches already carry degrees ±1. What remains absent on the current stack is only an extra determinant twist beyond that canonical spin geometry. This sharpens the Paper 35 frontier but does not reopen Q5 on the current stack.",
+      "fixed_bundle": "After this fixed-bundle reduction, the exact remaining positive route is no longer a puncture-label lift. It is a theorem deriving a charged fermionic spin^c lift of the IO bridge into the fixed horizon U(1) bundle sector, or an equivalent new puncture-resolved operator sector carrying that charge.",
+      "neutral_additive_route": "Every group homomorphism from the finite torsion group K_N to the torsion-free group Z is zero. Therefore any additive puncture-charge-to-integer lift from the standard neutral Z_k data to an integral index degree vanishes identically."
+    },
+    "current_values": {
+      "n_spin_c_current": 0,
+      "determinant_degree_current": 0,
+      "index_current": 0
+    }
+  },
+  "theorem_3_degree_one_map_not_extra_twist": {
+    "status": "derived / scoped no-go refinement",
+    "statement": "The degree-one internal radial map r: S^2 -> su(2) fixes the horizon reduction Q itself. It does not produce an extra line-bundle tensor factor beyond Q. Therefore the degree-one map that defines the isolated-horizon U(1) sector cannot by itself be reused as the missing residual twist theorem.",
+    "formulas": {
+      "degree_one_map": "deg(r) = 1",
+      "what_it_fixes": "r determines Q",
+      "what_it_does_not_fix": "r does not determine extra L = Q^n with n ≠ 0"
+    }
+  },
+  "theorem_4_final_post_normalization_boundary": {
+    "status": "derived / strongest current Paper 35 post-normalization boundary",
+    "statement": "After absorbing the canonical spin-bundle degree, no hidden current-stack charged-lift route survives. The exact remaining positive Paper 35 object is a genuinely new nontrivial spin^c-class shift n ≠ 0 beyond the canonical spin structure, or an independent CP-odd seed/inflow theorem. That object is not derived on the current stack."
+  },
+  "final_boundary": {
+    "status": "derived / exhausted current-stack Paper 35 charged boundary",
+    "safe_statement": "The Paper 35 charged frontier is now exact after spin normalization. The fixed horizon spin bundle already contributes the canonical unit degree. No current-stack theorem produces any extra spin^c shift beyond it. So the only live positive route is a genuinely new residual spin^c class n ≠ 0, not a hidden completion of the existing carrier."
+  }
+}

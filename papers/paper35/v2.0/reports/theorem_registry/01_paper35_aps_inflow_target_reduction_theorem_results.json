@@ -1,0 +1,37 @@
+{
+  "mission": "Reduce the non-live APS/anomaly-inflow route to its exact future datum and determine whether any hidden inflow object remains on the current closed-horizon stack.",
+  "theorem_1_inflow_requires_odd_bulk_and_boundary_coupling": {
+    "status": "derived / scoped",
+    "statement": "A genuine boundary eta-shift from APS/anomaly inflow requires more than a closed 2D boundary carrier. It requires a 3D bulk/cobordism datum Y with boundary S^2 together with a parity-odd action or transport law whose variation couples to the boundary fermionic sector.",
+    "formulas": {
+      "bulk_datum": "partial Y = S^2",
+      "boundary_effect": "delta eta_boundary != 0 only through parity-odd bulk coupling",
+      "minimal_pair": "(Y, kappa_odd)"
+    }
+  },
+  "theorem_2_current_stack_has_no_inflow_pair": {
+    "status": "derived / strongest current-stack inflow no-go",
+    "statement": "The present stack derives no open boundary end, no 3D parity-odd action, and no bulk-to-boundary eta-shift law. Therefore the minimal inflow pair (Y, kappa_odd) is absent on the current stack.",
+    "formulas": {
+      "current_bulk_datum": "Y_current = none",
+      "current_parity_odd_level": "kappa_odd,current = 0",
+      "current_eta_shift": "delta eta_current = 0"
+    },
+    "imports": {
+      "aps_boundary": "APS/anomaly inflow is not a live route on the current stack. The admitted horizon carrier is a closed S^2 problem with no derived open boundary end and no derived 3D parity-odd Chern-Simons functional whose variation would generate a boundary eta-shift. So anomaly inflow is not currently hidden in the existing IO data; it would require a genuinely new 3D parity-odd boundary extension."
+    }
+  },
+  "theorem_3_exact_future_inflow_target": {
+    "status": "derived / sharpened future-extension target",
+    "statement": "The APS/anomaly-inflow route is therefore reduced to one exact future object class: a parity-odd 3D extension datum (Y, kappa_odd) that induces a nonzero boundary eta shift. Without that pair, no inflow-based Paper 35 closure can occur.",
+    "formulas": {
+      "future_object": "(Y, kappa_odd)",
+      "effect": "delta eta_boundary(Y, kappa_odd) != 0",
+      "current_stack_value": "(none, 0)"
+    }
+  },
+  "final_boundary": {
+    "status": "derived / exhausted current-stack inflow boundary",
+    "safe_statement": "The APS/anomaly-inflow route is fully reduced. On the current stack there is no hidden inflow object. Any future positive route must explicitly derive a parity-odd 3D extension pair (Y, kappa_odd) producing a nonzero boundary eta shift."
+  }
+}

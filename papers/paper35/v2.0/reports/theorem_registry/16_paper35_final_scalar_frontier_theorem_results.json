@@ -1,0 +1,29 @@
+{
+  "mission": "State the tightest exact remaining Paper 35 frontier after all current-stack reductions.",
+  "theorem_1_exact_scalar_frontier": {
+    "status": "derived / exact final reduction",
+    "statement": "After the full current-stack reduction, the remaining Paper 35 baryogenesis frontier is no longer an open family of operator sectors. It is exactly the following residual data: one CP-even magnitude pair, one CP-odd boundary scalar, and one support-side scalar production history.",
+    "exact_remaining_data": [
+      "CP-even magnitude pair: (M1, m_tilde1)",
+      "CP-odd boundary scalar: Q5 = N_+ - N_-",
+      "support-side scalar production history: lambda(R), equivalently theta(R)"
+    ]
+  },
+  "theorem_2_current_stack_values_and_targets": {
+    "status": "derived / exact boundary summary",
+    "statement": "On the current stack, the CP-odd scalar vanishes, while the support-side scalar history remains completely open except for its exact target at the source crossing.",
+    "current_boundary": {
+      "Q5": 0,
+      "theta_req_rad": 0.0005651829699589429,
+      "f_req": 3.1943175551939013e-07
+    }
+  },
+  "theorem_3_no_further_reduction": {
+    "status": "derived / exhausted final Paper 35 boundary",
+    "statement": "No further theorem-grade reduction remains on the current stack. Any positive Paper 35 closure must derive at least one nonzero boundary pseudoscalar Q5, one CP-even magnitude selector for (M1, m_tilde1), and one support-side scalar production history lambda(R) or theta(R)."
+  },
+  "final_boundary": {
+    "status": "derived / exhausted final Paper 35 boundary",
+    "safe_statement": "The Paper 35 baryogenesis program is now reduced to an exact residual list of scalar data. There is no remaining hidden operator-class ambiguity on the current stack."
+  }
+}

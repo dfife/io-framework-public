@@ -2,6 +2,9 @@
 
 Available bundles:
 
+- `v2.0/` - Paper 35 v2.0 reproducibility bundle with FIRAS-fixed R4 carried
+  forward, DESI scoped BAO readout-kernel repair, raw no-readout diagnostic,
+  DESI RCA report, 48-surface theorem registry, and refreshed validation.
 - `v1.2/` - Paper 35 v1.2 reproducibility bundle with Paper 17 v1.5
   FIRAS-fixed R4 repair, updated eta/leptogenesis target values, R4 impact
   audit, and refreshed validation.

@@ -1,0 +1,258 @@
+{
+  "active_scoped_bao_readout": {
+    "chi2": 27.73511287626574,
+    "delta_chi2_active_scoped_minus_lcdm": -2.1346376544265304,
+    "diagnostics": {
+      "chi2": 27.73511287626574,
+      "dof": 13,
+      "pte_chi2_survival": 0.009851388595481134,
+      "pte_method": "fixed-parameter Gaussian chi-square survival Q(dof/2, chi2/2)",
+      "reduced_chi2": 2.133470221251211
+    },
+    "dof_convention": "13 DESI DR2 GCcomb BAO entries; both IO and LambdaCDM entries are fixed-parameter models in this bundle, so dof=13 for the Gaussian chi-square PTE diagnostic.",
+    "eta": 0.036124605346989976,
+    "f_parallel_galaxy_quasar": 1.01822641264138,
+    "f_perp_galaxy_quasar": 1.036785027400534,
+    "fixed_lcdm_comparator_diagnostics": {
+      "chi2": 29.869750530692272,
+      "dof": 13,
+      "pte_chi2_survival": 0.004917478561859067,
+      "pte_method": "fixed-parameter Gaussian chi-square survival Q(dof/2, chi2/2)",
+      "reduced_chi2": 2.2976731177455596
+    },
+    "lyalpha_kernel": "identity",
+    "rows": [
+      {
+        "active_io_scoped_model": 7.942559809760962,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 8.057119610385575,
+        "observed": 7.94167639,
+        "quantity": "DV_over_rs",
+        "z": 0.295
+      },
+      {
+        "active_io_scoped_model": 13.204089129102414,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 13.50056581350262,
+        "observed": 13.58758434,
+        "quantity": "DM_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_scoped_model": 22.590228506013432,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 22.738885041464826,
+        "observed": 21.86294686,
+        "quantity": "DH_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_scoped_model": 17.270170072212192,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 17.700537005213626,
+        "observed": 17.35069094,
+        "quantity": "DM_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_scoped_model": 19.967056705942188,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 20.167667983378426,
+        "observed": 19.45534918,
+        "quantity": "DH_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_scoped_model": 21.39632358976347,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 21.99421335482917,
+        "observed": 21.57563956,
+        "quantity": "DM_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_scoped_model": 17.32519576753878,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 17.56695367042322,
+        "observed": 17.64149464,
+        "quantity": "DH_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_scoped_model": 27.18346385062431,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 28.08032434932336,
+        "observed": 27.60085612,
+        "quantity": "DM_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_scoped_model": 13.790729519777722,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 14.062568053545494,
+        "observed": 14.17602155,
+        "quantity": "DH_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_scoped_model": 29.24993137721497,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 30.27389297389533,
+        "observed": 30.51190063,
+        "quantity": "DM_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_scoped_model": 12.603386840176944,
+        "block": "galaxy_quasar",
+        "fixed_lcdm_model": 12.877709248423026,
+        "observed": 12.81699964,
+        "quantity": "DH_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_scoped_model": 8.518996482158201,
+        "block": "lya",
+        "fixed_lcdm_model": 8.613910295395652,
+        "observed": 8.631545674846294,
+        "quantity": "DH_over_rs",
+        "z": 2.33
+      },
+      {
+        "active_io_scoped_model": 38.90469504928664,
+        "block": "lya",
+        "fixed_lcdm_model": 39.178963531505545,
+        "observed": 38.988973961958784,
+        "quantity": "DM_over_rs",
+        "z": 2.33
+      }
+    ],
+    "status": "primary Paper 35 v2.0 DESI result, inherited from Paper 29 scoped BAO route"
+  },
+  "claim_boundary": "verified DESI data confrontation; primary active IO result uses the Paper 29 scoped BAO readout kernel; raw no-readout IO is retained as diagnostic-only; flat LambdaCDM same-data comparator is fixed-parameter; external DESI files are fetched and checksummed, not redistributed",
+  "external_files": {
+    "cov_sha256": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+    "cov_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "mean_sha256": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "mean_url": "https://raw.githubusercontent.com/CobayaSampler/bao_data/master/desi_bao_dr2/desi_gaussian_bao_ALL_GCcomb_mean.txt"
+  },
+  "flat_cpl_reinterpretation_fixed_point": {
+    "H0": 62.63699225718755,
+    "Omega_m": 0.341977536144968,
+    "chi2_to_io_synthetic": 0.8578882977742515,
+    "chi2_to_io_synthetic_recomputed": 0.8578882978724461,
+    "h": 0.6263699225718755,
+    "max_abs_residual": 0.3804709190822848,
+    "max_abs_residual_recomputed": 0.38047091909907493,
+    "rd_mpc": 155.58428581907293,
+    "w0": -1.030263043675755,
+    "wa": -0.1115075206254369
+  },
+  "raw_gccomb_diagnostic": {
+    "active_branch_chi2": 69.48480893315653,
+    "active_branch_diagnostics": {
+      "chi2": 69.48480893315653,
+      "dof": 13,
+      "pte_chi2_survival": 9.984758165266819e-10,
+      "pte_method": "fixed-parameter Gaussian chi-square survival Q(dof/2, chi2/2)",
+      "reduced_chi2": 5.344985302550502
+    },
+    "delta_chi2_raw_active_minus_lcdm": 39.61505840246426,
+    "rows": [
+      {
+        "active_io_raw_model": 8.185296666148004,
+        "fixed_lcdm_model": 8.057119610385575,
+        "observed": 7.94167639,
+        "quantity": "DV_over_rs",
+        "z": 0.295
+      },
+      {
+        "active_io_raw_model": 13.68980190951554,
+        "fixed_lcdm_model": 13.50056581350262,
+        "observed": 13.58758434,
+        "quantity": "DM_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_raw_model": 23.0019673324271,
+        "fixed_lcdm_model": 22.738885041464826,
+        "observed": 21.86294686,
+        "quantity": "DH_over_rs",
+        "z": 0.51
+      },
+      {
+        "active_io_raw_model": 17.9054537515304,
+        "fixed_lcdm_model": 17.700537005213626,
+        "observed": 17.35069094,
+        "quantity": "DM_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_raw_model": 20.330984520698525,
+        "fixed_lcdm_model": 20.167667983378426,
+        "observed": 19.45534918,
+        "quantity": "DH_over_rs",
+        "z": 0.706
+      },
+      {
+        "active_io_raw_model": 22.18338793928361,
+        "fixed_lcdm_model": 21.99421335482917,
+        "observed": 21.57563956,
+        "quantity": "DM_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_raw_model": 17.640971934690633,
+        "fixed_lcdm_model": 17.56695367042322,
+        "observed": 17.64149464,
+        "quantity": "DH_over_rs",
+        "z": 0.934
+      },
+      {
+        "active_io_raw_model": 28.183408313210947,
+        "fixed_lcdm_model": 28.08032434932336,
+        "observed": 27.60085612,
+        "quantity": "DM_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_raw_model": 14.04208504663085,
+        "fixed_lcdm_model": 14.062568053545494,
+        "observed": 14.17602155,
+        "quantity": "DH_over_rs",
+        "z": 1.321
+      },
+      {
+        "active_io_raw_model": 30.32589090438956,
+        "fixed_lcdm_model": 30.27389297389533,
+        "observed": 30.51190063,
+        "quantity": "DM_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_raw_model": 12.833101369404947,
+        "fixed_lcdm_model": 12.877709248423026,
+        "observed": 12.81699964,
+        "quantity": "DH_over_rs",
+        "z": 1.484
+      },
+      {
+        "active_io_raw_model": 8.518996482158201,
+        "fixed_lcdm_model": 8.613910295395652,
+        "observed": 8.631545674846294,
+        "quantity": "DH_over_rs",
+        "z": 2.33
+      },
+      {
+        "active_io_raw_model": 38.90469504928664,
+        "fixed_lcdm_model": 39.178963531505545,
+        "observed": 38.988973961958784,
+        "quantity": "DM_over_rs",
+        "z": 2.33
+      }
+    ],
+    "status": "diagnostic-only raw active branch without Paper 29 BAO readout kernel"
+  },
+  "script": "07_desi_confrontation.py",
+  "status": "verified"
+}

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "Paper 35 v2.0 Reproducibility Bundle"
+message: "If you use this reproducibility bundle, cite the associated Paper 35 v2.0 manuscript and this repository release."
+type: software
+authors:
+  - family-names: Fife
+    given-names: David
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/tree/main/papers/paper35/v2.0"
+version: "paper35-v2.0"
+date-released: "2026-05-06"
+license: "MIT"
+keywords:
+  - cosmology
+  - baryon asymmetry
+  - reproducibility
+  - Interior Observer framework
+  - FIRAS
+  - DESI
+  - JWST
+  - dark matter

@@ -1,0 +1,35 @@
+{
+  "mission": "Determine whether the two residual Paper 35 portal debts collapse further or are irreducibly independent on the current stack.",
+  "theorem_1_coefficient_data_nonuniqueness": {
+    "status": "derived / exact residual nonuniqueness",
+    "imported_dimension": 3,
+    "statement": "Even after target reduction inside the type-I portal class, the Yukawa/Majorana data remain positive-dimensional. Therefore coefficient selection is a genuine remaining theorem debt and cannot be eliminated by the existing target constraints."
+  },
+  "theorem_2_source_abundance_nonuniqueness": {
+    "status": "derived / exact internal nonuniqueness",
+    "imported_missing_object": "V_tr: a charged transfer interaction generator from the neutral collective carrier to a visible charged/B-L sector",
+    "witness_family": {
+      "history_A": "f_N^(A)(R) = 0",
+      "history_B": "f_N^(B)(R) = lambda f_seed(R), lambda > 0"
+    },
+    "statement": "At fixed portal coefficient data (Y,M), the current stack still permits multiple admissible nonthermal source-abundance histories because no support-branch production theorem exists. Distinct histories produce distinct visible yields through the same portal class. Therefore source abundance is a genuine remaining theorem debt."
+  },
+  "theorem_3_twin_debt_irreducibility": {
+    "status": "derived / exact final reduction",
+    "statement": "The two remaining Paper 35 portal debts are irreducible on the current stack. Coefficient data (Y,M) live in the visible transfer interaction sector, while source abundance f_N lives in the neutral support-branch production sector. No current theorem maps one to the other, and explicit nonuniqueness survives separately on both sides.",
+    "exact_remaining_objects": [
+      "a theorem selecting Yukawa/Majorana coefficient data Y,M from IO boundary data",
+      "a theorem deriving the nonthermal support-branch source-abundance history f_N"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / exhausted Paper 35 portal boundary",
+    "safe_statement": "No further theorem-grade reduction remains on the current stack after portal-class closure. The Paper 35 baryogenesis line is exhausted at two irreducible residual theorems: coefficient selection and nonthermal source abundance."
+  },
+  "sources": [
+    "https://arxiv.org/abs/2104.08248",
+    "https://cds.cern.ch/record/2772611/files/2106.05913.pdf",
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0202239"
+  ]
+}

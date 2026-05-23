@@ -1,0 +1,29 @@
+{
+  "claim_boundary": "DERIVED/CONDITIONAL on standard external leptogenesis class",
+  "formulae": {
+    "Davidson_Ibarra_bound": "|eps1| <= 3 m_atm M1 / (16 pi v^2)",
+    "T_f_poplawski_eta_target": "sqrt(Y_B) Mbar_Pl,reduced",
+    "Y_B": "eta_late / 7.04",
+    "Y_B_minus_L": "(79/28) Y_B",
+    "Y_N1_eq": "135 zeta(3) g_N1 / (8 pi^4 g_*)",
+    "eps1_kappa_target": "Y_B / (c_sph Y_N1_eq)"
+  },
+  "numbers": {
+    "M1_floor_kappa_equals_1_GeV": 598996588.1019313,
+    "Poplawski_reduced_mass_scale_GeV": 2.435e+18,
+    "T_f_chiral_diagnostic_GeV": 22003938597477.8,
+    "T_f_over_M1_floor_absolute": 36730.71899155796,
+    "T_f_poplawski_eta_target_GeV": 22001575354474.027,
+    "T_f_target_GeV": 22001575354474.027,
+    "Y_B_minus_L_target": 2.303449446730229e-10,
+    "Y_B_target": 8.16412462132233e-11,
+    "Y_N1_eq": 0.003901498367656259,
+    "c_DI_per_GeV": 9.856504105473108e-17,
+    "eps1_kappa_target": 5.9040123297910706e-08,
+    "epsilon_max_at_T_f": 0.002168586178082492,
+    "eta_late": 5.74754373341092e-10,
+    "kappa_required_if_M1_equals_T_f": 2.722516812779614e-05
+  },
+  "script": "04_leptogenesis_target_reduction.py",
+  "status": "verified"
+}

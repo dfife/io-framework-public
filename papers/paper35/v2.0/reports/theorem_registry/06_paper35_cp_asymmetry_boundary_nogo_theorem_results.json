@@ -1,0 +1,42 @@
+{
+  "mission": "Determine whether the current IO boundary data can derive a nonzero leptogenesis CP asymmetry inside the already-closed type-I portal class.",
+  "theorem_1_current_boundary_data_are_cp_even": {
+    "status": "derived / conditional / scoped",
+    "statement": "On the current stack, the admitted boundary seed and transport data used in the fermionic sector are CP-even in the sense relevant to the portal coefficients: the Hawking/KMS quasi-free CAR seed is fixed by a real thermal covariance, radial transport is unitary geometric parallel transport, and no theorem-grade complex phase or chiral-selector datum is derived.",
+    "imports": {
+      "seed_boundary": "The current extension does not derive a preferred chirality. Without a parity-odd or chiral selector theorem, the two horizon chiral sectors remain symmetry-related.",
+      "transport_boundary": "After admitting the new fermionic/chiral bridge carrier, the radial support-branch transport is not a mystery object. It is the ordinary spin parallel transport on the support geometry, unitary and representation-preserving."
+    }
+  },
+  "theorem_2_real_portal_completion_gives_zero_epsilon1": {
+    "status": "derived / exact conditional no-go",
+    "conditions": [
+      "portal coefficients are derived only from the current CP-even boundary data",
+      "no additional CP-odd/chiral selector theorem is added",
+      "the portal class is the type-I singlet-fermion completion already closed"
+    ],
+    "formulae": {
+      "cp_asymmetry": "epsilon1 = [1/(8 pi (Y^dagger Y)11)] sum_{j!=1} Im[(Y^dagger Y)1j^2] g(M_j^2/M1^2)",
+      "real_data_implication": "Y, M can be taken real up to orthogonal basis changes"
+    },
+    "statement": "If the portal coefficients are built only from the current boundary data, then no theorem-grade CP-odd invariant exists from which a nonzero imaginary portal invariant can be formed. In that case Y^dagger Y is real-symmetric on the active slice and the leptogenesis numerator Im[(Y^dagger Y)1j^2] vanishes. Therefore epsilon1 = 0 on the current CP-even boundary stack."
+  },
+  "theorem_3_exact_remaining_coefficient_objects": {
+    "status": "derived / exact sharpening",
+    "statement": "The coefficient side does not remain an undifferentiated invariant triple. It splits exactly into: (i) CP-even portal magnitudes, represented minimally by (M1, m_tilde1), and (ii) a genuinely new CP-odd boundary theorem capable of generating epsilon1 != 0.",
+    "remaining_objects": [
+      "a CP-even magnitude selector theorem for (M1, m_tilde1)",
+      "a genuinely CP-odd/chiral selector theorem producing epsilon1 != 0"
+    ]
+  },
+  "final_boundary": {
+    "status": "derived / sharpened exhausted Paper 35 coefficient boundary",
+    "safe_statement": "On the current boundary stack, nonzero epsilon1 is not derivable. Any positive Paper 35 coefficient closure now requires a new CP-odd boundary theorem in addition to any CP-even magnitude selector."
+  },
+  "sources": [
+    "https://arxiv.org/abs/2104.08248",
+    "https://cds.cern.ch/record/2772611/files/2106.05913.pdf",
+    "https://arxiv.org/abs/hep-ph/0502169",
+    "https://arxiv.org/abs/hep-ph/0202239"
+  ]
+}

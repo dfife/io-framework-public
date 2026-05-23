@@ -1,0 +1,40 @@
+{
+  "bundle": "paper35-v2.0-repro",
+  "classification": "verified / public-reproducibility-support / R4-FIRAS repaired / DESI scoped BAO readout repaired",
+  "paper": "Paper 35 v2.0",
+  "root": "papers/paper35/v2.0",
+  "tarball": "papers/paper35/paper35-v2.0.tar.gz",
+  "tarball_sha256": "48eedec2b3e9ecc334d1b734a4f2a9ce365dc56b7393211e46b9d7af47a7c1be",
+  "release_tag": "paper35-v2.0",
+  "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper35-v2.0",
+  "validation_command": "python3 papers/paper35/v2.0/scripts/10_validate_expected_outputs.py",
+  "validation_expected_summary": "SUMMARY total_checks=49 pass_count=49 fail_count=0",
+  "r4_boundary": {
+    "R4_FIRAS": 1.0031014644105183,
+    "source": "Paper 17 v1.5 FIRAS-fixed unique observer-side thermal readout normalization",
+    "cmb_temperature_prediction_retired": true
+  },
+  "desi_boundary": {
+    "primary_active_io_result": "Paper 29 scoped BAO readout kernel",
+    "active_scoped_bao_chi2": 27.735112876265742,
+    "fixed_flat_lcdm_chi2": 29.869750530692272,
+    "delta_chi2_active_scoped_minus_lcdm": -2.1346376544265304,
+    "raw_no_readout_chi2_diagnostic": 69.48480893315653,
+    "raw_no_readout_status": "diagnostic only"
+  },
+  "core_files": [
+    "papers/paper35/v2.0/README.md",
+    "papers/paper35/v2.0/MANIFEST.md",
+    "papers/paper35/v2.0/VERSION.md",
+    "papers/paper35/v2.0/CITATION.cff",
+    "papers/paper35/v2.0/SHA256SUMS.txt",
+    "papers/paper35/v2.0/SHA256SUMS_RELEASE.txt",
+    "papers/paper35/v2.0/data/imported_constants.json",
+    "papers/paper35/v2.0/scripts/07_desi_confrontation.py",
+    "papers/paper35/v2.0/scripts/10_validate_expected_outputs.py",
+    "papers/paper35/v2.0/results/desi_confrontation_results.json",
+    "papers/paper35/v2.0/reports/paper35_v2_desi_rca_report.md",
+    "papers/paper35/v2.0/results/r4_firas_impact_audit_results.json",
+    "papers/paper35/v2.0/reports/paper35_v12_r4_firas_kappa_audit_report.md"
+  ]
+}
