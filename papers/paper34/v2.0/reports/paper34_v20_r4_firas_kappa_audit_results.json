@@ -1,0 +1,130 @@
+{
+  "paper": "Paper 34 v2.0",
+  "date": "2026-05-06",
+  "classification": "verified / structural-audit / R4-FIRAS impact audit",
+  "executive_verdict": {
+    "r4_damage_found_in_calculations": false,
+    "h0_scorecard_changed": false,
+    "cmb_temperature_prediction_present": false,
+    "wording_hygiene_needed": true,
+    "summary": "Paper 34 H_ext uses the stellar-photometric half-leg payload x^((n/2)*K_gauge), not the Paper 17 optical thermal readout T_obs(R4)=T_IO*x^(R4*K_gauge). R4_FIRAS is recorded for provenance only."
+  },
+  "r4_constants": {
+    "R4_FIRAS": 1.0031014644105183,
+    "sigma_R4_FIRAS_only": 0.009596597151571828,
+    "source": "Paper 17 v1.5 FIRAS-fixed unique observer-side thermal readout normalization"
+  },
+  "active_formula": "H_ext(alpha,n) = H0_active * f_Gamma^(1-alpha) * x^((n/2)*K_gauge)",
+  "retired_or_not_used_formula": "T_obs(R4) = T_IO * x^(R4*K_gauge)",
+  "script_inventory": [
+    {
+      "script": "01_compute_hext_grid.py",
+      "uses_R4": false,
+      "classification": "verified arithmetic reproduction",
+      "v1_2_action": "Added claim-boundary note and x_half_leg consistency check."
+    },
+    {
+      "script": "02_compare_to_published_measurements.py",
+      "uses_R4": false,
+      "classification": "verified comparison arithmetic",
+      "v1_2_action": "Clarified Planck CMB as H0 method class, not T_CMB prediction."
+    },
+    {
+      "script": "03_run_anti_fit_check.py",
+      "uses_R4": false,
+      "classification": "verified anti-fit diagnostic",
+      "v1_2_action": "Added R4_times_K_gauge only as rejected counterfactual payload."
+    },
+    {
+      "script": "04_r4_firas_impact_audit.py",
+      "uses_R4": "audit only",
+      "classification": "verified structural impact audit",
+      "v1_2_action": "New script."
+    },
+    {
+      "script": "05_validate_expected_outputs.py",
+      "uses_R4": "validation only",
+      "classification": "frozen-output validation",
+      "v1_2_action": "Validates no Paper 34 scorecard change."
+    }
+  ],
+  "unchanged_scorecard": {
+    "Planck_CMB_class": {
+      "alpha": 1.0,
+      "n": 0,
+      "H_ext": 67.57585653582628,
+      "pull_sigma": 0.35171307165254007
+    },
+    "GW_sirens": {
+      "alpha": 1.0,
+      "n": 0,
+      "H_ext": 67.57585653582628,
+      "pull_sigma": -0.5668642595545683
+    },
+    "TRGB_direct": {
+      "alpha": 1.5,
+      "n": 1,
+      "H_ext": 70.25677881443751,
+      "pull_sigma": -0.06867071420746934
+    },
+    "TDCOSMO": {
+      "alpha": 2.0,
+      "n": 0,
+      "H_ext": 71.38755719355022,
+      "pull_sigma": -0.05901189068049224
+    },
+    "SH0ES": {
+      "alpha": 2.0,
+      "n": 2,
+      "H_ext": 73.04406074030152,
+      "pull_sigma": 0.04406074030151785
+    },
+    "TRGB_SN": {
+      "alpha": 2.0,
+      "n": 2,
+      "H_ext": 73.04406074030152,
+      "pull_sigma": -0.15447643147555565
+    }
+  },
+  "kappa_candidates": [
+    {
+      "candidate": "optical R4",
+      "replacement_test": "rho in T_obs(rho)=T_IO*x^(rho*K_gauge)",
+      "paper34_result": "not used in H_ext",
+      "classification": "not a Paper 34 field; Paper 17 FIRAS-fixed readout normalization",
+      "hidden_parameter": false
+    },
+    {
+      "candidate": "K_gauge photometric payload",
+      "replacement_test": "k in x^((n/2)*k)",
+      "paper34_result": "unchanged from v1.1 audit; scoped to stellar-photometric extension",
+      "classification": "DERIVED/SCOPED",
+      "hidden_parameter": false
+    },
+    {
+      "candidate": "n/2 leg count",
+      "replacement_test": "continuous beta replacing n/2",
+      "paper34_result": "discrete photometric-leg count; not optical R4",
+      "classification": "DERIVED/SCOPED",
+      "hidden_parameter": false
+    },
+    {
+      "candidate": "Planck CMB row",
+      "replacement_test": "interpret as CMB-temperature prediction",
+      "paper34_result": "rejected; row is Planck CMB-inferred H0 class only",
+      "classification": "DERIVED/SCOPED H0 baseline class",
+      "hidden_parameter": false
+    }
+  ],
+  "rejected_counterfactual": {
+    "formula": "H_wrong(alpha,n)=H0_active*f_Gamma^(1-alpha)*x^((n/2)*R4_FIRAS*K_gauge)",
+    "max_abs_H0_delta_km_s_Mpc": 0.005196923130114328,
+    "reason_rejected": "R4 belongs to the optical thermal readout, not the H0 photometric half-leg payload."
+  },
+  "recommendations": [
+    "Do not change Paper 34 H0 numerical scorecard for R4/FIRAS.",
+    "Remove or avoid any CMB-temperature prediction language in Paper 34.",
+    "Use 'Planck CMB-inferred H0 class' for the Planck row.",
+    "Do not insert R4 into x^((n/2)*K_gauge)."
+  ]
+}

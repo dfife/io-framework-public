@@ -1,0 +1,97 @@
+{
+  "claim_boundary": {
+    "cmb_temperature_prediction": "retired framework-wide; Paper 34 does not claim an independent CMB-temperature prediction",
+    "hext_r4_dependency": "none",
+    "planck_cmb_wording": "Planck CMB is a compound CMB-inference / baseline projected-background scorecard row, not a T_CMB prediction and not a single primitive alpha-rung.",
+    "reason": "The Paper 34 x^((n/2)*K_gauge) factor is a stellar-photometric half-leg payload in the H0 observable-class ladder, not the Paper 17 optical thermal readout normalization."
+  },
+  "classification": "verified / public-reproducibility-support",
+  "consistency_checks": {
+    "K_gauge_matches_log_Q": true,
+    "Q_matches_1_plus_gamma_squared": true,
+    "f_Gamma_matches_exp_minus_K": true,
+    "x_half_leg_matches_x_pow_K_over_2": true
+  },
+  "constants": {
+    "H0_active": 67.57585653582628,
+    "H0_active_branch": "Paper 10 / Paper 29 projected-observer H0 baseline; sole active branch for Paper 34 v2.0",
+    "K_gauge": 0.05487281774291466,
+    "Q": 1.05640625,
+    "R4_FIRAS": 1.0031014644105183,
+    "R4_scope_note": "R4 belongs to the optical thermal readout family T_obs(R4)=T_IO*x^(R4*K_gauge). Paper 34 H_ext does not use this thermal readout.",
+    "R4_source": "Paper 17 v1.5 FIRAS-fixed unique observer-side thermal readout normalization",
+    "alpha_grid": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "f_Gamma": 0.9466055317260761,
+    "gamma_BI": 0.2375,
+    "n_grid": [
+      0,
+      1,
+      2
+    ],
+    "sigma_R4_FIRAS_only": 0.009596597151571828,
+    "x": 1.518987327774,
+    "x_half_leg": 1.0115356511707163
+  },
+  "formula": "H_ext(alpha,n) = H0_active * f_Gamma^(1-alpha) * x^((n/2)*K_gauge)",
+  "grid": [
+    {
+      "H_eff": 67.57585653582628,
+      "H_ext": 67.57585653582628,
+      "alpha": 1.0,
+      "n": 0
+    },
+    {
+      "H_eff": 67.57585653582628,
+      "H_ext": 68.35538804438593,
+      "alpha": 1.0,
+      "n": 1
+    },
+    {
+      "H_eff": 67.57585653582628,
+      "H_ext": 69.14391195650492,
+      "alpha": 1.0,
+      "n": 2
+    },
+    {
+      "H_eff": 69.4555636601881,
+      "H_ext": 69.4555636601881,
+      "alpha": 1.5,
+      "n": 0
+    },
+    {
+      "H_eff": 69.4555636601881,
+      "H_ext": 70.25677881443751,
+      "alpha": 1.5,
+      "n": 1
+    },
+    {
+      "H_eff": 69.4555636601881,
+      "H_ext": 71.06723650721904,
+      "alpha": 1.5,
+      "n": 2
+    },
+    {
+      "H_eff": 71.38755719355022,
+      "H_ext": 71.38755719355022,
+      "alpha": 2.0,
+      "n": 0
+    },
+    {
+      "H_eff": 71.38755719355022,
+      "H_ext": 72.21105915126458,
+      "alpha": 2.0,
+      "n": 1
+    },
+    {
+      "H_eff": 71.38755719355022,
+      "H_ext": 73.04406074030152,
+      "alpha": 2.0,
+      "n": 2
+    }
+  ],
+  "paper": "Paper 34 v2.0"
+}
