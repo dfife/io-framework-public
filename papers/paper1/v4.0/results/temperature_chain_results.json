@@ -1,0 +1,22 @@
+{
+  "claim_boundary": {
+    "T_FIRAS_status": "IMPORTED/EMPIRICAL observer-side readout datum inherited through Paper 17 v1.5",
+    "T_IO_status": "local Paper 1 formula arithmetic",
+    "independent_CMB_temperature_prediction": false
+  },
+  "headline": {
+    "FIRAS_readout_ratio": 1.0234029697706684,
+    "M_U_from_T_IO_kg": 4.500000000000003e+53,
+    "T_Hawking_K": 2.726445932982825e-31,
+    "T_IO_K": 2.6631738235142604,
+    "T_local_K": 4.141436822062615e-31,
+    "T_planck_identity_K": 2.6631736518020115,
+    "mass_relative_error": 5.671372782015641e-16
+  },
+  "manuscript_comparison": {
+    "T_Hawking_rounds_to_2p73e_minus31": true,
+    "T_IO_rounds_to_2p6635": true,
+    "T_local_rounds_to_4p14e_minus31": true
+  },
+  "script": "02_temperature_chain.py"
+}

@@ -1,0 +1,88 @@
+{
+  "paper": "Paper 1 v4.0",
+  "classification": "verified / public-reproducibility-support / foundational-arithmetic",
+  "notes": [
+    "This bundle reverse-engineers the Paper 1 v4.0 local arithmetic from the manuscript because no complete saved script set was found.",
+    "The CMB observer-side temperature is not claimed as an independent Paper 1 prediction. It is recorded as the FIRAS-fixed readout datum inherited through Paper 17 v1.5.",
+    "The dark-energy script exposes both the formula result from the stated v4.0 constants and the manuscript-quoted legacy values. The validator treats the mismatch as an explicit audit finding, not as a silent pass."
+  ],
+  "physical_constants": {
+    "c_m_s": 299792458.0,
+    "G_m3_kg_s2": 6.6743e-11,
+    "hbar_J_s": 1.054571817e-34,
+    "k_B_J_K": 1.380649e-23,
+    "planck_length_m": 1.616255e-35,
+    "planck_temperature_K": 1.416784e32,
+    "julian_year_s": 31557600.0
+  },
+  "paper1_inputs": {
+    "M_U_kg": 4.5e53,
+    "R_U_m": 4.4e26,
+    "gamma_BI": 0.2375,
+    "T_FIRAS_K": 2.7255,
+    "sigma_T_FIRAS_K": 0.0006,
+    "rho_Lambda_observed_kg_m3": 5.96e-27
+  },
+  "manuscript_quoted_values": {
+    "r_s_m": 6.685e26,
+    "x": 1.519,
+    "gamma_geometric": 6.431e30,
+    "T_Hawking_K": 2.73e-31,
+    "T_IO_K": 2.6635,
+    "T_local_K": 4.14e-31,
+    "rho_Lambda_torsion_kg_m3": 2.62e-27,
+    "rho_Lambda_eff_kg_m3": 6.05e-27,
+    "dark_energy_error_percent": 1.5,
+    "Delta": 5.6240,
+    "K_gauge": 0.0549,
+    "x_crit": 0.9864,
+    "recollapse_time_Gyr": 110.99,
+    "cycle_time_Gyr": 221.99,
+    "R_bounce_m": 1.12e-15
+  },
+  "derived_formulae": {
+    "r_s": "2*G*M_U/c^2",
+    "x": "r_s/R_U",
+    "gamma_geometric": "sqrt(r_s/l_P)",
+    "T_Hawking": "hbar*c/(4*pi*k_B*r_s)",
+    "T_IO": "hbar*c*gamma_geometric/(4*pi*k_B*R_U)",
+    "T_planck_identity": "sqrt(T_Hawking*T_P)*r_s/(2*sqrt(pi)*R_U)",
+    "T_local": "T_Hawking/x",
+    "Q": "1 + gamma_BI^2",
+    "K_gauge": "ln(Q)",
+    "Delta": "x^4*Q",
+    "rho_Lambda_torsion": "9*pi*c^2/(32*G*r_s^2*(1+gamma_BI^2))",
+    "rho_Lambda_eff": "rho_Lambda_torsion*x^2",
+    "Lambda_torsion": "9*pi^2/(4*r_s^2*(1+gamma_BI^2))",
+    "x_crit": "Q^(-1/4)"
+  },
+  "cross_paper_sources": {
+    "paper17_v1_5": {
+      "role": "FIRAS-fixed observer-side thermal readout normalization",
+      "T_IO_K": 2.6635,
+      "R4_FIRAS": 1.0031014644105183,
+      "status": "VERIFIED inherited support"
+    },
+    "paper32_v2_0": {
+      "role": "recollapse, cycle, and bounce attachment support",
+      "repo_path": "papers/paper32/v2.0",
+      "release_tag": "paper32-v2.0",
+      "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper32-v2.0",
+      "current_repo_manifest_sha256": "2e1ff99e182c27234575c8a1687281bea86e9d05a84eeed4b27cd5930322d70b",
+      "manuscript_sha_prefix": "fadeea1d",
+      "validator_expected": "18/18 PASS",
+      "status": "VERIFIED inherited support; manuscript SHA prefix needs synchronization if current repo manifest is authoritative"
+    },
+    "paper34_v1_2": {
+      "role": "six-method Hubble scorecard anchor",
+      "max_abs_pull_sigma": 0.57,
+      "status": "VERIFIED inherited support"
+    },
+    "paper35_v2_0": {
+      "role": "four-problems confrontation anchor",
+      "desi_delta_chi2_layer2": -3.58,
+      "status": "conditional P2-import branch as recorded in Paper 35 v2.0"
+    }
+  }
+}
+

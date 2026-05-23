@@ -1,0 +1,39 @@
+{
+  "audit_flags": {
+    "paper32_manuscript_sha_prefix_matches_current_repo_manifest": false,
+    "paper32_sha_sync_note": "Paper 1 v4.0 manuscript cites prefix fadeea1d; current public repo manifest records 2e1ff99e... for paper32-v2.0."
+  },
+  "inherited_values": {
+    "paper17_v1_5_R4_FIRAS": {
+      "R4_FIRAS": 1.0031014644105183,
+      "T_IO_K": 2.6635,
+      "role": "FIRAS-fixed observer-side thermal readout normalization",
+      "status": "VERIFIED inherited support"
+    },
+    "paper32_v2_0_lifecycle": {
+      "R_bounce_m": 1.12e-15,
+      "current_repo_manifest_sha256": "2e1ff99e182c27234575c8a1687281bea86e9d05a84eeed4b27cd5930322d70b",
+      "cycle_time_Gyr": 221.99,
+      "manuscript_sha_prefix": "fadeea1d",
+      "recollapse_time_Gyr": 110.99,
+      "release_tag": "paper32-v2.0",
+      "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper32-v2.0",
+      "repo_path": "papers/paper32/v2.0",
+      "role": "recollapse, cycle, and bounce attachment support",
+      "status": "VERIFIED inherited support; manuscript SHA prefix needs synchronization if current repo manifest is authoritative",
+      "validator_expected": "18/18 PASS",
+      "x_crit": 0.9864
+    },
+    "paper34_v1_2_hubble_scorecard": {
+      "max_abs_pull_sigma": 0.57,
+      "role": "six-method Hubble scorecard anchor",
+      "status": "VERIFIED inherited support"
+    },
+    "paper35_v2_0_four_problems_anchor": {
+      "desi_delta_chi2_layer2": -3.58,
+      "role": "four-problems confrontation anchor",
+      "status": "conditional P2-import branch as recorded in Paper 35 v2.0"
+    }
+  },
+  "script": "05_cross_paper_consistency.py"
+}

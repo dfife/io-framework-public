@@ -1,0 +1,24 @@
+{
+  "audit_finding": {
+    "formula_reproduces_manuscript_dark_energy_values": false,
+    "interpretation": "With the v4.0 stated constants M_U=4.50e53 kg and R_U=4.40e26 m, the formula gives rho_eff=5.8176e-27 kg/m^3, not the manuscript-quoted 6.05e-27 kg/m^3.",
+    "rho_eff_formula_minus_manuscript_percent": -3.8417842078867266,
+    "rho_eff_formula_minus_manuscript_relative": -0.03841784207886727,
+    "rho_torsion_formula_minus_manuscript_relative": -0.037651933124992154
+  },
+  "headline": {
+    "Lambda_torsion_m_minus2": 4.70584531073711e-53,
+    "formula_vs_observed_percent": -2.3897306137105168,
+    "formula_vs_observed_relative": -0.023897306137105168,
+    "rho_Lambda_eff_kg_m3": 5.817572055422853e-27,
+    "rho_Lambda_observed_kg_m3": 5.96e-27,
+    "rho_Lambda_torsion_kg_m3": 2.5213519352125205e-27
+  },
+  "manuscript_quoted_legacy_values": {
+    "quoted_vs_observed_percent": 1.5100671140939628,
+    "quoted_vs_observed_relative": 0.015100671140939628,
+    "rho_Lambda_eff_kg_m3": 6.05e-27,
+    "rho_Lambda_torsion_kg_m3": 2.62e-27
+  },
+  "script": "04_dark_energy_chain.py"
+}

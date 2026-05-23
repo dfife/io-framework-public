@@ -1,0 +1,41 @@
+{
+  "bundle": "paper1-v4.0-repro",
+  "classification": "verified / public-reproducibility-support / foundational-arithmetic",
+  "paper": "Paper 1 v4.0",
+  "root": "papers/paper1/v4.0",
+  "tarball": "papers/paper1/paper1-v4.0.tar.gz",
+  "tarball_sha256": "812ed6803275c4410d7d0a2a4aff86365797d96418e666da14f8ab2dd2d045e6",
+  "release_tag": "paper1-v4.0",
+  "release_url": "https://github.com/dfife/io-framework-public/releases/tag/paper1-v4.0",
+  "validation_command": "python3 papers/paper1/v4.0/scripts/06_validate_expected_outputs.py",
+  "validation_expected_summary": "SUMMARY total_checks=24 pass_count=24 fail_count=0",
+  "audit_flags": {
+    "script_set_reconstructed": true,
+    "dark_energy_formula_current_constants_rho_eff": 5.817572055422853e-27,
+    "dark_energy_manuscript_quoted_rho_eff": 6.05e-27,
+    "paper32_manuscript_sha_prefix": "fadeea1d",
+    "paper32_current_repo_manifest_sha256": "2e1ff99e182c27234575c8a1687281bea86e9d05a84eeed4b27cd5930322d70b"
+  },
+  "core_files": [
+    "papers/paper1/v4.0/README.md",
+    "papers/paper1/v4.0/MANIFEST.md",
+    "papers/paper1/v4.0/VERSION.md",
+    "papers/paper1/v4.0/CITATION.cff",
+    "papers/paper1/v4.0/SHA256SUMS.txt",
+    "papers/paper1/v4.0/SHA256SUMS_RELEASE.txt",
+    "papers/paper1/v4.0/data/imported_constants.json",
+    "papers/paper1/v4.0/scripts/01_foundation_constants.py",
+    "papers/paper1/v4.0/scripts/02_temperature_chain.py",
+    "papers/paper1/v4.0/scripts/03_spectral_theorem_flags.py",
+    "papers/paper1/v4.0/scripts/04_dark_energy_chain.py",
+    "papers/paper1/v4.0/scripts/05_cross_paper_consistency.py",
+    "papers/paper1/v4.0/scripts/06_validate_expected_outputs.py",
+    "papers/paper1/v4.0/results/foundation_constants_results.json",
+    "papers/paper1/v4.0/results/temperature_chain_results.json",
+    "papers/paper1/v4.0/results/spectral_theorem_flags_results.json",
+    "papers/paper1/v4.0/results/dark_energy_chain_results.json",
+    "papers/paper1/v4.0/results/cross_paper_consistency_results.json",
+    "papers/paper1/v4.0/reports/paper1_v4_0_reproducibility_reconstruction_report.md"
+  ]
+}
+
