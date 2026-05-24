@@ -1,0 +1,30 @@
+{
+  "headline": {
+    "Delta": 5.624029175326855,
+    "K_gauge": 0.05487281774291466,
+    "K_mean": 1.7270483421419307,
+    "Q": 1.05640625,
+    "gamma_geometric": 6.430555234663423e+30,
+    "kretschmann_horizon_m_minus4": 6.013868632267841e-107,
+    "r_s_m": 6.6835442422068e+26,
+    "x": 1.5189873277742727,
+    "x_crit": 0.9863754613328337
+  },
+  "inputs": {
+    "G_m3_kg_s2": 6.6743e-11,
+    "M_U_kg": 4.5e+53,
+    "R_U_m": 4.4e+26,
+    "c_m_s": 299792458.0,
+    "gamma_BI": 0.2375,
+    "planck_length_m": 1.616255e-35
+  },
+  "manuscript_comparison": {
+    "Delta_rounds_to_5p6240": true,
+    "K_gauge_rounds_to_0p0549": true,
+    "gamma_rounds_to_6p431e30": true,
+    "r_s_rounds_to_6p685e26": true,
+    "x_crit_rounds_to_0p9864": true,
+    "x_rounds_to_1p519": true
+  },
+  "script": "01_foundation_constants.py"
+}

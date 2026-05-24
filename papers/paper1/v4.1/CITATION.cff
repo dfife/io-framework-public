@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this bundle, cite the Paper 1 v4.1 manuscript and this reproducibility bundle."
+title: "Paper 1 v4.1 Reproducibility Bundle"
+authors:
+  - family-names: "Fife"
+    given-names: "David"
+date-released: "2026-05-24"
+version: "v4.1"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper1-v4.1"
+keywords:
+  - "Interior Observer"
+  - "black hole cosmology"
+  - "reproducibility"
+license: "MIT"

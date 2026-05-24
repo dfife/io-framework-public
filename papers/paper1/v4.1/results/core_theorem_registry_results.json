@@ -1,0 +1,84 @@
+{
+  "all_required_registry_phrases_present": true,
+  "approved_closed_s3_reduction_chain": [
+    "Theorem 1.Z",
+    "Theorem 1.U",
+    "Theorem 1.V"
+  ],
+  "classification": "registry-audit / post-Cosmo theorem wording",
+  "not_approved": [
+    "standalone universal closed curve space theorem",
+    "automatic cross-class closed-S3 substitution",
+    "ban on local tangent-space Fourier methods",
+    "claim that continuum QFT is invalid"
+  ],
+  "script": "08_core_theorem_registry.py",
+  "theorem_checks": {
+    "1.T": {
+      "pass": true,
+      "required_phrase_results": {
+        "Parent neutrality does not prohibit internal charged sectors": true,
+        "Theorem 1.T - Schwarzschild Parent Neutrality": true,
+        "cannot be borrowed from a Kerr or Reissner-Nordstrom parent parameter": true
+      }
+    },
+    "1.U": {
+      "pass": true,
+      "required_phrase_results": {
+        "Local tangent-space Fourier transforms remain valid for local physics under P2": true,
+        "Theorem 1.U - Native Closed-\\(S^3\\) Spatial Mode Reduction Principle": true,
+        "not a standalone universal \"closed curve space\" theorem": true
+      }
+    },
+    "1.V": {
+      "pass": true,
+      "required_phrase_results": {
+        "DERIVED/CONDITIONAL_VERIFIED` on the typed observable architecture banked in Papers 19, 21, 32, 33, and 35": true,
+        "Theorem 1.V - Typed Observable / No Cross-Class Substitution": true,
+        "This theorem does not license post-hoc class definitions": true
+      }
+    },
+    "1.W": {
+      "pass": true,
+      "required_phrase_results": {
+        "Asymptotic-infinity or S-matrix constructions may be used as imported mathematical tools": true,
+        "IO observables may not be treated as operationally measured at exterior asymptotic infinity": true,
+        "Theorem 1.W - Horizon-Contained Dynamics / No Asymptotic-Infinity Readout": true
+      }
+    },
+    "1.X": {
+      "pass": true,
+      "required_phrase_results": {
+        "DERIVED/CONDITIONAL_VERIFIED": true,
+        "Finite Horizon-Readable Quotient": true,
+        "N_{\\rm read}": true,
+        "exp(S_H": true
+      }
+    },
+    "1.Y": {
+      "pass": true,
+      "required_phrase_results": {
+        "DERIVED/THEOREM` within the Paper 1 P1/P2 Schwarzschild-interior mass-accounting and closed-\\(S^3\\) geometry setting": true,
+        "Nor does \\(\\rho_{\\rm avg}(R)\\) identify a local stress-energy component": true,
+        "This average is a bookkeeping definition on a specified closed slice.": true,
+        "exterior Schwarzschild mass charge, treated as the global/quasi-local mass-energy parameter of the matched IO geometry": true
+      }
+    },
+    "1.Z": {
+      "pass": true,
+      "required_phrase_results": {
+        "DERIVED/THEOREM` within the IO homogeneous Oppenheimer-Snyder interior chassis": true,
+        "Theorem 1.Z - Closed \\(K=+1\\) Interior Geometry": true,
+        "This theorem fixes the background chassis. It does not exclude perturbations": true
+      }
+    },
+    "closed_s3_cosmo_reconciliation": {
+      "pass": true,
+      "required_phrase_results": {
+        "Cosmo approved the IO closed \\(K=+1\\), compact \\(S^3\\) reduction principles with terminology guardrails": true,
+        "Cosmo did not approve a standalone theorem named \"IO closed curve space\"": true,
+        "Theorem 1.V remains the controlling guardrail for cross-class use": true
+      }
+    }
+  }
+}

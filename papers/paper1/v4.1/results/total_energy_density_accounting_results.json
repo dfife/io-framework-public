@@ -1,0 +1,22 @@
+{
+  "accounting_separation": {
+    "E_total_role": "exterior Schwarzschild mass charge, treated as the global/quasi-local mass-energy parameter of the matched IO geometry",
+    "component_slot_sum_licensed_without_typed_measure_theorem": false,
+    "rho_avg_is_component_budget": false,
+    "rho_avg_is_local_quantum_input": false,
+    "rho_avg_is_local_stress_energy_component": false,
+    "rho_avg_role": "bookkeeping definition on a specified closed slice"
+  },
+  "headline": {
+    "E_total_J": 4.0443983043156795e+70,
+    "V_S3_R_U_m3": 1.6814647626047918e+81,
+    "rho_avg_at_R_U_kg_m3": 2.6762380634304562e-28
+  },
+  "inputs": {
+    "M_U_kg": 4.5e+53,
+    "R_U_m": 4.4e+26,
+    "c_m_s": 299792458.0
+  },
+  "script": "07_total_energy_density_accounting.py",
+  "status_label": "DERIVED/THEOREM within the Paper 1 P1/P2 Schwarzschild-interior mass-accounting and closed-S^3 geometry setting"
+}

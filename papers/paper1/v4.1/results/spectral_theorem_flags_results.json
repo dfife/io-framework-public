@@ -1,0 +1,13 @@
+{
+  "Gamma_omega": 1.0,
+  "chain_summary": "P1 Schwarzschild-interior observer placement + P2 local QFT equivalence + no exterior potential barrier in the reduced interior channel",
+  "greybody_attenuation_present": false,
+  "not_claimed": [
+    "Exterior-observer greybody factors are unity",
+    "Arbitrary exterior scattering channels vanish",
+    "The theorem replaces standard exterior black-hole greybody physics"
+  ],
+  "script": "03_spectral_theorem_flags.py",
+  "status_label": "DERIVED/THEOREM in manuscript scope",
+  "theorem_scope": "interior observer channel inside the Schwarzschild horizon"
+}
