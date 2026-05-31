@@ -1,0 +1,55 @@
+{
+  "old_curvature_diagnostic": {
+    "formula": "w0_apparent = -1 + (2/3) Omega_k/(Omega_k + Omega_Lambda)",
+    "presentation_boundary": "Diagnostic only; Paper 35 flat-CPL reinterpretation is the active presentation.",
+    "w0_apparent": -1.0471070148489503
+  },
+  "paper": "Paper 4",
+  "paper35_flat_cpl_reinterpretation": {
+    "chi2_to_io_synthetic": 0.8578882977742515,
+    "source": "/opt/cosmology-lab/results/paper35/paper35_desi_dark_energy_investigation_results.json",
+    "w": -1.0,
+    "w0": -1.030263043675755,
+    "wa": -0.1115075206254369
+  },
+  "projected_optical_age_rows": [
+    {
+      "difference_IO_minus_LCDM_Myr": -43.33511129857026,
+      "percent_difference": -4.675823822688086,
+      "ratio_IO_over_LCDM": 0.9532417617731191,
+      "t_IO_projected_Gyr": 0.8834558231309765,
+      "t_LCDM_Gyr": 0.9267909344295467,
+      "z": 6
+    },
+    {
+      "difference_IO_minus_LCDM_Myr": -22.865678744847074,
+      "percent_difference": -4.86399271765946,
+      "ratio_IO_over_LCDM": 0.9513600728234054,
+      "t_IO_projected_Gyr": 0.44723532822890444,
+      "t_LCDM_Gyr": 0.4701010069737515,
+      "z": 10
+    },
+    {
+      "difference_IO_minus_LCDM_Myr": -14.572178709629902,
+      "percent_difference": -4.9429270335021975,
+      "ratio_IO_over_LCDM": 0.950570729664978,
+      "t_IO_projected_Gyr": 0.2802365168438852,
+      "t_LCDM_Gyr": 0.2948086955535151,
+      "z": 14
+    },
+    {
+      "difference_IO_minus_LCDM_Myr": -8.869898896329055,
+      "percent_difference": -4.99496102095952,
+      "ratio_IO_over_LCDM": 0.9500503897904048,
+      "t_IO_projected_Gyr": 0.16870704032521391,
+      "t_LCDM_Gyr": 0.17757693922154297,
+      "z": 20
+    }
+  ],
+  "status": {
+    "old_curvature_diagnostic": "DERIVED but superseded as presentation by Paper 35",
+    "paper35_flat_cpl_reinterpretation": "VERIFIED inherited from Paper 35",
+    "projected_age_table": "DERIVED/CONDITIONAL_VERIFIED on active branch constants"
+  },
+  "version": "v2.0"
+}

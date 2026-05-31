@@ -1,0 +1,57 @@
+{
+  "paper": "Paper 4",
+  "version": "v2.0",
+  "created_utc": "2026-05-31",
+  "active_branch": {
+    "H0_km_s_Mpc": 67.58,
+    "Omega_m": 0.349,
+    "Omega_k": -0.046,
+    "Omega_Lambda": 0.697,
+    "Omega_r": 9.1575e-5,
+    "source": "Paper 10 / Paper 29 active projection branch, rounded manuscript constants"
+  },
+  "active_branch_exact_reference": {
+    "H0_km_s_Mpc": 67.57585653582628,
+    "Omega_m": 0.34868395067621694,
+    "Omega_k": -0.04579112576013168,
+    "Omega_Lambda": 0.69701575761593,
+    "Omega_r": 9.141746798467538e-5,
+    "source": "Paper 29 / Paper 30 exact active branch artifact"
+  },
+  "lcdm_comparator": {
+    "H0_km_s_Mpc": 67.4,
+    "Omega_m": 0.315,
+    "Omega_k": 0.0,
+    "Omega_r": 9.189513362352906e-5,
+    "Omega_Lambda": 0.6849081048663765
+  },
+  "framework_inputs": {
+    "M_U_kg": 4.50e53,
+    "gamma_BI": 0.2375,
+    "x": 1.51899,
+    "observed_rho_Lambda_kg_m3": 5.96e-27,
+    "observed_mond_a0_m_s2": 1.2e-10,
+    "T_FIRAS_K": 2.7255
+  },
+  "external_constants": {
+    "c_m_s": 299792458.0,
+    "G_m3_kg_s2": 6.67430e-11,
+    "hbar_J_s": 1.054571817e-34,
+    "k_B_J_K": 1.380649e-23,
+    "l_P_m": 1.616255e-35,
+    "Mpc_m": 3.0856775814913673e22,
+    "seconds_per_Gyr": 3.15576e16
+  },
+  "paper28_imports": {
+    "source_file": "/opt/cosmology-lab/tmp/io-framework-public/papers/paper28/v2.0/results/jwst_clock_map_results.json",
+    "status": "DERIVED/THEOREM on the homogeneous OS background"
+  },
+  "paper32_imports": {
+    "source_file": "/opt/cosmology-lab/results/paper32/paper32_s8_current_stack_closure_results.json",
+    "status": "DERIVED/CONDITIONAL_VERIFIED on active solver stack"
+  },
+  "paper35_imports": {
+    "source_file": "/opt/cosmology-lab/results/paper35/paper35_desi_dark_energy_investigation_results.json",
+    "status": "DERIVED/CONDITIONAL_VERIFIED for active observer-frame DESI dark-energy scope"
+  }
+}

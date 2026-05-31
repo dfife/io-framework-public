@@ -1,0 +1,40 @@
+{
+  "claim_boundary": {
+    "dark_energy_density": "Paper 1 torsion route is support/readout geometry; active observer branch density is Omega_Lambda rho_crit. Paper 35 maps the support law to observer-frame w=-1 on the active branch.",
+    "gamma_bridge": "Paper 4 cites the Paper 2 v2.0 reverse-bridge number. It is not refit on the active Paper 29 density tuple."
+  },
+  "derived": {
+    "R_U_m": 4.3999922594663554e+26,
+    "T_Hawking_K": 2.726445932982825e-31,
+    "T_IO_at_R_U_K": 2.6631785086103616,
+    "a0_m_s2": 1.344728404820229e-10,
+    "a0_percent_offset_vs_1p2e_minus10": 12.060700401685743,
+    "amplification_factor_TIO_over_TH": 9.767949095901394e+30,
+    "gamma_BI_recovered_paper2_v20": 0.24,
+    "gamma_BI_recovered_percent_offset_vs_0p2375": 1.0526315789473717,
+    "gamma_geom_sqrt_rs_over_lP": 6.430555234663423e+30,
+    "r_s_m": 6.6835442422068e+26,
+    "rho_Lambda_active_observer_kg_m3": 5.9792089957916785e-27,
+    "rho_Lambda_active_percent_offset_vs_observed": 0.32229858710870474,
+    "rho_Lambda_torsion_at_rs_kg_m3": 2.5213519352125205e-27,
+    "rho_Lambda_torsion_eff_kg_m3": 5.81759252416424e-27,
+    "rho_Lambda_torsion_eff_percent_offset_vs_observed": -2.38938717845234,
+    "rho_crit_active_kg_m3": 8.578492103000974e-27,
+    "thermal_invariant_K_m": 1.1717964823462745e+27
+  },
+  "inputs": {
+    "M_U_kg": 4.5e+53,
+    "gamma_BI": 0.2375,
+    "observed_mond_a0_m_s2": 1.2e-10,
+    "observed_rho_Lambda_kg_m3": 5.96e-27,
+    "x": 1.51899
+  },
+  "paper": "Paper 4",
+  "status": {
+    "active_observer_dark_energy_density": "DERIVED/CONDITIONAL_VERIFIED",
+    "gamma_bridge": "DERIVED/CONDITIONAL_VERIFIED inherited from Paper 2 v2.0",
+    "horizon_constants": "DERIVED",
+    "torsion_dark_energy_density": "DERIVED"
+  },
+  "version": "v2.0"
+}

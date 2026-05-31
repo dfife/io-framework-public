@@ -1,0 +1,58 @@
+{
+  "acoustic_scale": {
+    "source": "/opt/cosmology-lab/tmp/io-framework-public/papers/paper20/v2.0/results/acoustic_theorems_results.json",
+    "status": "DERIVED/CONDITIONAL_VERIFIED inherited from Paper 20 v2.0",
+    "theta_planck_deg": 0.59648,
+    "theta_planck_sigma_deg": 0.00026,
+    "theta_star_pred_deg_current_rounded_row": 0.598873398398795,
+    "theta_star_sigma_offset_current_rounded_row": 9.205378456904015
+  },
+  "bbn_scorecard": {
+    "D_H": 2.5072097840055007e-05,
+    "D_H_sigma": -0.659673866483311,
+    "Li7_H": 1.7414708079857392e-10,
+    "Li7_sigma": 0.520873574147546,
+    "Y_p": 0.24770877182909237,
+    "Y_p_sigma": 0.6771929572730941,
+    "source": "/opt/cosmology-lab/tmp/io-framework-public/papers/paper24/v3.0/results/excited_state_import_recomputation_results.json",
+    "status": "DERIVED/CONDITIONAL_VERIFIED inherited from Paper 24 v3.0"
+  },
+  "jwst_formation_clock": {
+    "rows": [
+      {
+        "t_form_gyr": 0.7023379333234323,
+        "z": 10
+      },
+      {
+        "t_form_gyr": 0.5450883247302419,
+        "z": 12
+      },
+      {
+        "t_form_gyr": 0.43886595571758996,
+        "z": 14
+      },
+      {
+        "t_form_gyr": 0.3331013377565061,
+        "z": 17
+      },
+      {
+        "t_form_gyr": 0.2639107601144995,
+        "z": 20
+      }
+    ],
+    "scope": "Peculiar velocities, local potentials, and nonlinear structure are perturbative corrections around this background theorem.",
+    "source": "/opt/cosmology-lab/tmp/io-framework-public/papers/paper28/v2.0/results/jwst_clock_map_results.json",
+    "status": "DERIVED/THEOREM on the homogeneous OS background"
+  },
+  "paper": "Paper 4",
+  "s8_growth": {
+    "S8": 0.8113047125049078,
+    "native_pull_sigma": 2.1936084837642422,
+    "pull_sigma_vs_weak_lensing": 1.0652356252453865,
+    "sigma8": 0.9274824965120387,
+    "source": "/opt/cosmology-lab/results/paper32/paper32_s8_current_stack_closure_results.json",
+    "status": "DERIVED/CONDITIONAL_VERIFIED on active solver stack"
+  },
+  "status": "inherited frozen-output support for Paper 4 reported claims",
+  "version": "v2.0"
+}
