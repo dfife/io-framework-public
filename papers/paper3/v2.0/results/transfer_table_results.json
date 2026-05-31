@@ -1,0 +1,98 @@
+{
+  "claim_boundary": "Illustrative table only; continuity and monotonicity are established by script 03.",
+  "constants": {
+    "R_U_m": 4.3999922594663554e+26,
+    "a0_m_s2": 1.344728404820229e-10,
+    "eta_s": 1.8930071296185438,
+    "r_s_m": 6.6835442422068e+26,
+    "thermal_invariant_K_m": 1.1717964823462745e+27
+  },
+  "rows": [
+    {
+      "H_km_s_Mpc": 4040.2028459730122,
+      "Q_y": 3574.1268788816415,
+      "R_m": 2.0260257798475954e+25,
+      "T_K": 57.837195064438966,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": false,
+      "eta": 0.35,
+      "redshift_like_y_minus_1": 20.717355737681373,
+      "tau_OS_Gyr": 0.2508676165425803,
+      "y": 21.717355737681373
+    },
+    {
+      "H_km_s_Mpc": 526.1018446417864,
+      "Q_y": 60.60427695517191,
+      "R_m": 7.85843822592351e+25,
+      "T_K": 14.911315055970515,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": false,
+      "eta": 0.7,
+      "redshift_like_y_minus_1": 4.59906705756318,
+      "tau_OS_Gyr": 1.9703740443723154,
+      "y": 5.59906705756318
+    },
+    {
+      "H_km_s_Mpc": 197.3309509089988,
+      "Q_y": 8.52617107742521,
+      "R_m": 1.5362049383853685e+26,
+      "T_K": 7.627865612630393,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": false,
+      "eta": 1.0,
+      "redshift_like_y_minus_1": 1.864196143055611,
+      "tau_OS_Gyr": 5.599650522656027,
+      "y": 2.864196143055611
+    },
+    {
+      "H_km_s_Mpc": 67.58309424841266,
+      "Q_y": 1.000091575,
+      "R_m": 4.3999922594663554e+26,
+      "T_K": 2.6631785086103616,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": true,
+      "eta": 1.8930071296185438,
+      "redshift_like_y_minus_1": 0.0,
+      "tau_OS_Gyr": 33.36107894823791,
+      "y": 1.0
+    },
+    {
+      "H_km_s_Mpc": 62.82327719423876,
+      "Q_y": 0.8641811731127649,
+      "R_m": 5.308408747985518e+26,
+      "T_K": 2.2074345401358895,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": false,
+      "eta": 2.2,
+      "redshift_like_y_minus_1": -0.1711278335271179,
+      "tau_OS_Gyr": 49.15146814094067,
+      "y": 0.8288721664728821
+    },
+    {
+      "H_km_s_Mpc": 60.082521416452074,
+      "Q_y": 0.7904236478792822,
+      "R_m": 6.362975200762249e+26,
+      "T_K": 1.8415858075415723,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": false,
+      "eta": 2.7,
+      "redshift_like_y_minus_1": -0.30850080023268667,
+      "tau_OS_Gyr": 80.27475869970034,
+      "y": 0.6914991997673133
+    },
+    {
+      "H_km_s_Mpc": 59.557043568918125,
+      "Q_y": 0.7766581202434925,
+      "R_m": 6.6835442422068e+26,
+      "T_K": 1.7532561166369507,
+      "a0_m_s2": 1.344728404820229e-10,
+      "current_spatial_epoch": false,
+      "eta": 3.141592653589793,
+      "redshift_like_y_minus_1": -0.3416678187479839,
+      "tau_OS_Gyr": 110.9690924612688,
+      "y": 0.6583321812520161
+    }
+  ],
+  "status": "VERIFIED transfer-table arithmetic",
+  "table_note": "The eta_s row is the current spatial epoch R=R_U. tau_OS is not the radiation-inclusive Paper 30 master clock."
+}

@@ -1,0 +1,30 @@
+{
+  "claim_boundary": "No observational matching is used. These are branch-internal inequalities over the full domain.",
+  "domain": {
+    "R": "(0, r_s]",
+    "eta": "(0, pi)",
+    "y": "y >= 1/x",
+    "y_min": 0.6583321812520161
+  },
+  "monotonicity": {
+    "dQ_dy_endpoint_y_min": 0.3933090729054952,
+    "dQ_dy_formula": "4 Omega_r y^3 + 3 Omega_m y^2 + 2 Omega_k y",
+    "dQ_dy_strictly_positive_on_domain": true,
+    "grouped_form": "y(4 Omega_r y^2 + 3 Omega_m y + 2 Omega_k)",
+    "three_Omega_m_over_x_plus_two_Omega_k": 0.5972737937708609
+  },
+  "radicand": {
+    "Omega_m_over_x_plus_Omega_k": 0.1837579312569536,
+    "Q_endpoint_y_min": 0.7766581202434925,
+    "Q_formula": "Omega_r y^4 + Omega_m y^3 + Omega_k y^2 + Omega_Lambda",
+    "grouped_form": "Omega_r y^4 + y^2(Omega_m y + Omega_k) + Omega_Lambda",
+    "strictly_positive_on_domain": true
+  },
+  "status": "DERIVED/THEOREM inside admitted active branch",
+  "transfer_set_ordering": {
+    "H_eta": "strictly decreasing because dQ/dy>0 and dy/deta<0",
+    "R_eta": "strictly increasing on eta in (0, pi)",
+    "T_R": "strictly decreasing because T=C/R with C>0",
+    "a0": "constant because a0=c^2/r_s and r_s is fixed by P1"
+  }
+}

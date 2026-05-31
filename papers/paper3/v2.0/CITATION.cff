@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this bundle, cite the Paper 3 v2.0 manuscript and this reproducibility bundle."
+title: "Paper 3 v2.0 Reproducibility Bundle"
+authors:
+  - family-names: Fife
+    given-names: David
+date-released: 2026-05-31
+version: "paper3-v2.0"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper3-v2.0"
+keywords:
+  - Interior Observer
+  - cosmology
+  - reproducibility
+  - theorem audit
+  - observer coordinate
+license: MIT

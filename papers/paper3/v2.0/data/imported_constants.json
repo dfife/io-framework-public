@@ -1,0 +1,50 @@
+{
+  "paper": "Paper 3",
+  "version": "v2.0",
+  "bundle": "paper3-v2.0",
+  "claim_boundary": "Paper 3 v2.0 supports input-structure, transfer-function, continuity, monotonicity, and sharp-EOS junction-limit claims. It does not perform observational confrontation and does not count the observed CMB temperature as an independent IO prediction.",
+  "p1_p2_chain": {
+    "P1": "The observable universe exists inside a Schwarzschild black hole, giving the closed K=+1 interior container, S3 bulk support, S2 horizon boundary, fixed parent Schwarzschild radius, and finite observer-side support domain.",
+    "P2": "Physics inside the horizon equals physics outside; standard GR, OS dust support, Israel-Darmois matching, and FRW/Raychaudhuri equations are imported only with typed placement inside P1."
+  },
+  "active_branch_constants": {
+    "M_U_kg": 4.5e53,
+    "gamma_BI": 0.2375,
+    "x": 1.51899,
+    "Omega_r": 9.1575e-5,
+    "Omega_m": 0.349,
+    "Omega_k": -0.046,
+    "Omega_Lambda": 0.697,
+    "H0_km_s_Mpc": 67.58
+  },
+  "physical_constants": {
+    "G_SI": 6.67430e-11,
+    "c_m_s": 299792458.0,
+    "hbar_J_s": 1.054571817e-34,
+    "k_B_J_K": 1.380649e-23,
+    "l_P_m": 1.616255e-35,
+    "Mpc_m": 3.0856775814913673e22,
+    "seconds_per_Gyr": 3.15576e16
+  },
+  "formulae": {
+    "r_s": "2 G M_U / c^2",
+    "R_U": "r_s / x",
+    "gamma_temp": "sqrt(r_s / l_P)",
+    "thermal_invariant": "hbar c sqrt(r_s/l_P) / (4 pi k_B)",
+    "R_eta": "(r_s / 2) * (1 - cos eta)",
+    "tau_eta": "(r_s / 2c) * (eta - sin eta)",
+    "T_R": "thermal_invariant / R",
+    "a0": "c^2 / r_s",
+    "Q_y": "Omega_r y^4 + Omega_m y^3 + Omega_k y^2 + Omega_Lambda",
+    "H_R": "H0 * sqrt(Q(R_U/R))",
+    "sharp_eos_acceleration_ratio": "(1 + 3 * (1/3)) / (1 + 3 * 0)"
+  },
+  "source_pointers": {
+    "Paper 1 v4.1": "P1 container, Schwarzschild radius, closed K=+1 interior, thermal invariant ingredients, a0.",
+    "Paper 2 v2.0": "Horizon amplification factor sqrt(r_s/l_P) and decoupling context.",
+    "Paper 5": "Continuous mixed-fluid FRW replacement for the retired discrete Vaidya phase.",
+    "Paper 10 / Paper 29": "Active projection branch constants used for H(R).",
+    "Paper 17 v1.5": "FIRAS fixes observer-side CMB readout normalization; observed CMB temperature is not an independent prediction.",
+    "Paper 30": "Radiation-inclusive master clock t_bare(0) = 19.181 Gyr and active z_eq placement."
+  }
+}

@@ -1,0 +1,6 @@
+a6a8703bac7233359efceab0eb40b4ec63bf5d3dff9c4545893a08de758ca9e6  paper3-v2.0.tar.gz
+
+# The release asset hash above is computed for the deterministic bundle
+# tarball. This checksum file is published in the repository bundle directory
+# for public visibility; it is intentionally not part of the tarball payload,
+# avoiding a self-referential archive hash.

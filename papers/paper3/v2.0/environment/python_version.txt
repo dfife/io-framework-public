@@ -1,0 +1,1 @@
+Tested with Python 3.12.3 on the local lab host. The scripts use only the Python standard library and should run on Python 3.10 or newer.
