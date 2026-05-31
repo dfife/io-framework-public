@@ -1,0 +1,49 @@
+{
+  "T_IO_schwarzschild_K": 2.6631785086103616,
+  "claim_boundary": "Kerr spin lowers horizon surface gravity monotonically. Since the Paper 5 temperature channel is proportional to surface gravity, nonzero spin can only lower the Schwarzschild value.",
+  "formula": "kappa_Kerr/kappa_Schwarzschild = 2*sqrt(1-j^2)/(1+sqrt(1-j^2))",
+  "manuscript_note": "The manuscript table rounds the spin rows for storytelling. The exact support formula is the surface-gravity ratio above.",
+  "monotonicity_check": {
+    "ratios_strictly_decrease_after_zero": true,
+    "sampled_spins_increasing": [
+      0.0,
+      0.096,
+      0.325,
+      0.5,
+      0.99
+    ]
+  },
+  "ratio_threshold_spins": {
+    "five_percent_temperature_drop": 0.42591770999996015,
+    "one_percent_temperature_drop": 0.19801980198019822,
+    "two_point_five_percent_temperature_drop": 0.3085148936749637
+  },
+  "rows": [
+    {
+      "interior_temperature_K": 2.6631785086103616,
+      "kappa_ratio_formula": 1.0,
+      "spin_a_over_M": 0.0
+    },
+    {
+      "interior_temperature_K": 2.657014106888518,
+      "kappa_ratio_formula": 0.997685321617791,
+      "spin_a_over_M": 0.096
+    },
+    {
+      "interior_temperature_K": 2.5888750576386967,
+      "kappa_ratio_formula": 0.9720997106534792,
+      "spin_a_over_M": 0.325
+    },
+    {
+      "interior_temperature_K": 2.4719708944924506,
+      "kappa_ratio_formula": 0.9282032302755091,
+      "spin_a_over_M": 0.5
+    },
+    {
+      "interior_temperature_K": 0.6584844578216941,
+      "kappa_ratio_formula": 0.2472550960037933,
+      "spin_a_over_M": 0.99
+    }
+  ],
+  "status": "DERIVED"
+}

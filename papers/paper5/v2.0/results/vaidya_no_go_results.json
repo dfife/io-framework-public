@@ -1,0 +1,14 @@
+{
+  "conclusion": "A Vaidya null-dust phase carries directed null flux, not an isotropic thermal radiation bath. It is therefore retired as the cosmological radiation fluid in Paper 5 v2.0.",
+  "diagnostic_components": {
+    "angular_pressure_T_phi_phi": 0,
+    "angular_pressure_T_theta_theta": 0,
+    "isotropic_radiation_requires_positive_angular_pressure": true,
+    "null_flux_component_nonzero_when_dMdv_nonzero": true,
+    "single_null_direction_selects_anisotropic_stress": true
+  },
+  "perfect_radiation_fluid_requirement": "T_ab = (rho+p)u_a u_b + p g_ab with p=rho/3",
+  "status": "DERIVED/NO-GO",
+  "surviving_scope": "This is a local stress-tensor incompatibility statement. It does not forbid using Vaidya geometry as a collapse or radiating-boundary model outside the isotropic interior-fluid role.",
+  "vaidya_stress_tensor": "T_ab = (dM/dv)/(4*pi*r^2) l_a l_b"
+}

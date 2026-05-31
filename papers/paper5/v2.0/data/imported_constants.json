@@ -1,0 +1,39 @@
+{
+  "bundle": "paper5-v2.0",
+  "paper": "Interior Observer Paper 5 v2.0",
+  "source_draft": "/opt/cosmology-lab/results/Full Papers/Interior_Observer_Paper5_v2_0.docx",
+  "physical_constants_si": {
+    "G": 6.6743e-11,
+    "c": 299792458.0,
+    "hbar": 1.054571817e-34,
+    "k_B": 1.380649e-23
+  },
+  "io_foundation": {
+    "M_U_kg": 4.50e53,
+    "gamma_BI": 0.2375,
+    "x_rs_over_RU": 1.51899,
+    "T_IO_schwarzschild_K": 2.6631785086103616
+  },
+  "active_branch_papers_10_29": {
+    "H0_km_s_Mpc": 67.58,
+    "Omega_m": 0.349,
+    "Omega_k": -0.046,
+    "Omega_Lambda": 0.697,
+    "Omega_r": 9.1575e-5,
+    "status": "DERIVED/CONDITIONAL_VERIFIED active projection branch"
+  },
+  "flat_lcdm_comparator": {
+    "H0_km_s_Mpc": 67.4,
+    "Omega_m": 0.315,
+    "Omega_k": 0.0,
+    "Omega_r": 9.19e-5,
+    "Omega_Lambda": 0.6849081,
+    "note": "Flat comparator supplied in the Paper 5 v2.0 Section 6 task."
+  },
+  "inherited_claims": {
+    "paper12_first_peak_ell1": 220,
+    "paper20_theta_star_deg": 0.5994,
+    "paper20_theta_star_sigma_residual": 9.2,
+    "paper22_24_bbn_interpretation": "Light-element improvements are rate-dressing cross-section effects and do not require modifying H(z)."
+  }
+}

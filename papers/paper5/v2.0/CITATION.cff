@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility bundle, cite the associated Interior Observer Paper 5 v2.0 Zenodo record and this GitHub release."
+title: "Paper 5 v2.0 Reproducibility Bundle"
+authors:
+  - family-names: "Fife"
+    given-names: "David"
+version: "v2.0"
+date-released: "2026-05-31"
+repository-code: "https://github.com/dfife/io-framework-public"
+url: "https://github.com/dfife/io-framework-public/releases/tag/paper5-v2.0"
+license: "MIT"
+keywords:
+  - "Interior Observer"
+  - "black hole cosmology"
+  - "Kerr"
+  - "Vaidya"
+  - "BBN"
+  - "reproducibility"

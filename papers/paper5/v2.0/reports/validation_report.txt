@@ -1,0 +1,22 @@
+/opt/cosmology-lab/tmp/io-framework-public/papers/paper5/v2.0/results/kerr_spin_temperature_results.json
+/opt/cosmology-lab/tmp/io-framework-public/papers/paper5/v2.0/results/vaidya_no_go_results.json
+/opt/cosmology-lab/tmp/io-framework-public/papers/paper5/v2.0/results/mixed_friedmann_bbn_results.json
+/opt/cosmology-lab/tmp/io-framework-public/papers/paper5/v2.0/results/inherited_claims_results.json
+PASS kerr_status
+PASS kerr_ratio_spin_0
+PASS kerr_ratio_spin_0096
+PASS kerr_temperature_spin_05
+PASS kerr_monotone
+PASS vaidya_status
+PASS vaidya_angular_pressure_zero
+PASS vaidya_isotropic_requirement
+PASS bbn_status
+PASS bbn_ratio_z1e9
+PASS recombination_ratio_z1100
+PASS z0_ratio
+PASS radiation_asymptotic_ratio
+PASS inherited_status
+PASS first_peak
+PASS theta_star
+PASS theta_star_sigma
+SUMMARY total_checks=17 pass_count=17 fail_count=0

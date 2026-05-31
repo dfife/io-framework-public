@@ -1,0 +1,39 @@
+{
+  "bbn_reconciliation": "At z=1e9 the active branch is only 0.0896 percent faster than the flat-LCDM comparator. Paper 22/24 light-element improvements should therefore be read as cross-section rate dressing on top of a near-standard background expansion, not as a modified-H(z) solution.",
+  "formula": "H^2 = H0^2*(Omega_r/u^4 + Omega_m/u^3 + Omega_k/u^2 + Omega_Lambda)",
+  "radiation_era_asymptotic_ratio": 1.0008961042812452,
+  "redshift_rows": [
+    {
+      "E2_IO": 9.157534936630105e+31,
+      "E2_LCDM": 9.190031536760098e+31,
+      "H_IO_km_s_Mpc": 6.467068774998461e+17,
+      "H_LCDM_km_s_Mpc": 6.461277556639423e+17,
+      "percent_offset": 0.08962961749086062,
+      "ratio_H_IO_over_H_LCDM": 1.0008962961749086,
+      "u": 9.99999999e-10,
+      "z": 1000000000.0
+    },
+    {
+      "E2_IO": 600294429.5375216,
+      "E2_LCDM": 555450223.6983602,
+      "H_IO_km_s_Mpc": 1655771.2753589146,
+      "H_LCDM_km_s_Mpc": 1588482.6276065984,
+      "percent_offset": 4.236032965226788,
+      "ratio_H_IO_over_H_LCDM": 1.0423603296522679,
+      "u": 0.0009082652134423251,
+      "z": 1100.0
+    },
+    {
+      "E2_IO": 1.000091575,
+      "E2_LCDM": 1.0,
+      "H_IO_km_s_Mpc": 67.58309424841266,
+      "H_LCDM_km_s_Mpc": 67.4,
+      "percent_offset": 0.27165318755586476,
+      "ratio_H_IO_over_H_LCDM": 1.0027165318755586,
+      "u": 1.0,
+      "z": 0.0
+    }
+  ],
+  "rounded_omega_note": "The z=0 row uses the rounded active Omegas supplied to Paper 5, whose sum is 1.000091575. If exact E(0)=1 normalization is imposed, the z=0 ratio is H0_IO/H0_LCDM = 67.58/67.4.",
+  "status": "DERIVED"
+}
